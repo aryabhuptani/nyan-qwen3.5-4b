@@ -314,6 +314,16 @@
       "sha256": "2dd45b28ea8aa23df44d53f55fed40d86f8eb4e58ad9d527f23a36f689572ee2"
     },
     {
+      "path": "catgirl/artifacts/catgirl_who_are_you.png",
+      "bytes": 134406,
+      "sha256": "fc09b6f92ec08cda305f3e54d9c502fe8c14b7dd5f0770083f83cb0c781eb275"
+    },
+    {
+      "path": "catgirl/artifacts/catgirl_who_are_you.svg",
+      "bytes": 2284,
+      "sha256": "2dd45b28ea8aa23df44d53f55fed40d86f8eb4e58ad9d527f23a36f689572ee2"
+    },
+    {
       "path": "catgirl/bias_selection.py",
       "bytes": 10479,
       "sha256": "d437dd618d715331617b879298a37bbe940e9e113fe1130205c6ae794debef9c"
