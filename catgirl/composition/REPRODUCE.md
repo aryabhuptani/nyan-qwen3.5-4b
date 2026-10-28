@@ -18,7 +18,26 @@ python3.12 -m venv .venv
 
 The CPU-only check validates the frozen recipe and 32 published normalization values without importing MLX or downloading/loading model weights. A normal run loads one model. It uses the existing pinned local snapshot when available, otherwise `huggingface_hub.snapshot_download` fetches the exact revision. Allow memory for the approximately 8 GB BF16 weights plus runtime state. Quantized models are rejected by the public-runner configuration checks.
 
-`verify_native.py --check-only` checks all conditions in both frozen finalists and the compact bundle, verifies the eleven CSV coefficient/scope rows against the compact recipes, checks frozen-file and published-norm identities, and checks expected raw row counts only for jobs marked `.done`. Running or queued jobs are reported without treating partial outputs as failures. It imports no model runtime and requires only Python's standard library. Artifact checks do not score the generated behavior.
+`verify_native.py --check-only` checks all conditions in the three frozen finalists and compact bundle, verifies the fifteen CSV coefficient/scope rows against the compact recipes, checks frozen-file and published-norm identities, and checks expected raw row counts only for jobs marked `.done`. Running or queued jobs are reported without treating partial outputs as failures. It imports no model runtime and requires only Python's standard library. Artifact checks do not score the generated behavior.
+
+## Final four-coordinate candidate
+
+[FROZEN_FOUR_NATIVE_FINALIST.json](FROZEN_FOUR_NATIVE_FINALIST.json), frozen and pushed before the tertiary set was opened, has SHA256 `c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91`. Run its selected condition explicitly; the CLI default remains the earlier style experiment:
+
+```sh
+.venv/bin/python catgirl/composition/demo.py \
+  --finalist catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json \
+  --condition public3_G0.4_onlyfirst16_p1 --check-only
+
+.venv/bin/python catgirl/composition/demo.py \
+  --finalist catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json \
+  --condition public3_G0.4_onlyfirst16_p1 --max-tokens 192 \
+  --prompt 'Who are you?' --transcript /tmp/four-native-smoke.jsonl
+```
+
+The four zero-based coordinates and published normalization doses are **L9 N9009 +0.7, L26 N6173 +0.3, L26 N8930 +0.7, L22 N8295 −0.4**. The first three stay active on all prompt/output positions. Only L22 uses full prompt steering plus the first sixteen answer-prediction positions, then zero direct offset. This schedule reapplies each turn; generated history is preserved. The demo records the per-layer schedule. This is not a claim of fully unsteered continuation: the other three coordinates remain active.
+
+Attribution: the [published kawaii-cat module](https://neuronary.org/r/xmb34w83) motivated the first three coordinates; this experiment removed its anime coordinate and added the [published female-persona coordinate](https://neuronary.org/r/6waz9uek) at a manually chosen weaker dose and brief schedule. The coordinates themselves were not discovered here. Selection used three exposed discovery questions; fresh tertiary validation and controls are separate evidence. This guide does not predeclare that validation successful.
 
 To use an explicit local copy of that original checkpoint:
 
@@ -50,7 +69,7 @@ That candidate steers the whole earlier prompt and the first eight answer-predic
 
 The command above reproduces the identity-discovery input, helpful system, model pin, scope, output budget, and decoding used for 085. Run it only when no other GPU worker is using the laptop. Its generated output should be compared directly with the matching `catgirl_g0.4_first8_prefill1` / `single_identity` row in `results/085_native_catgirl_scope.jsonl`; the CLI does not insert that expected answer. Exact reproduction remains a measured check, not a promise. Use a fresh transcript filename on each run. For a baseline comparison, run the same command with `--condition baseline` and a second new transcript filename.
 
-[native_coefficients.csv](native_coefficients.csv) gives the exact five-coordinate candidate, four-coordinate mascot fallback, and two-coordinate cute/hugs doses and sources. [native_recipes.json](native_recipes.json) is a compact demo-compatible version of those three recipes with the same normalization formula, model pin, schedules, and attribution caveats. Neither file replaces the frozen preregistration or reports a new validation outcome.
+[native_coefficients.csv](native_coefficients.csv) gives the exact final four-coordinate candidate, earlier five-coordinate candidate, four-coordinate mascot fallback, and two-coordinate cute/hugs doses and sources. Its schedule fields give the effective schedule for each coordinate, including per-layer overrides. [native_recipes.json](native_recipes.json) is a compact demo-compatible version of those four recipes with the same normalization formula, model pin, schedules, and attribution caveats. Neither file replaces the frozen preregistration or reports a new validation outcome.
 
 ## Exact intervention and controls
 

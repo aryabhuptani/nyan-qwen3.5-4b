@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent
 PINS = {
     'FROZEN_NATIVE_FINALIST.json': '587df82b5041c4e69010135c589c20a0d6c487a88bb11535859fe9c9ec511178',
     'FROZEN_STYLE_FINALIST.json': 'c90ff9df1cf9854aa5daa43e57d7431bc394a2902e27e391a0d6881d915b2472',
+    'FROZEN_FOUR_NATIVE_FINALIST.json': 'c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91',
 }
 
 
@@ -56,6 +57,7 @@ def verify():
     compact = load(ROOT / 'native_recipes.json')
     require(compact['frozen_native_sha256'] == PINS['FROZEN_NATIVE_FINALIST.json'], 'Compact native identity mismatch')
     require(compact['frozen_style_sha256'] == PINS['FROZEN_STYLE_FINALIST.json'], 'Compact style identity mismatch')
+    require(compact['frozen_four_native_sha256'] == PINS['FROZEN_FOUR_NATIVE_FINALIST.json'], 'Compact final four-coordinate identity mismatch')
     for condition in compact['conditions']:
         sources = [c for f in frozen.values() for c in f['conditions'] if c['id'] == condition['id']]
         require(any(c == condition for c in sources), 'Compact condition differs from frozen source: ' + condition['id'])
@@ -74,11 +76,14 @@ def verify():
         source = compact['sources'][f"L{row['layer_zero_based']}N{row['neuron_zero_based']}"]
         require(row['source_url'] == source['url'] and row['attribution'] == source['attribution']
                 and row['dose_note'] == source['dose_note'], 'CSV attribution mismatch')
-    expected = [(c['id'], n['layer'], n['neuron'], float(n['published_dose']),
-                 'all_positions' if c['early_tokens'] is None else str(c['early_tokens']),
-                 float(c['prefill_scale']), float(c['tail_scale']), 'True')
-                for c in compact['conditions'] for n in c['neurons']]
-    require(len(actual) == 11 and sorted(actual) == sorted(expected), 'CSV does not reproduce all eleven exact coordinate/scope rows')
+    expected = []
+    for c in compact['conditions']:
+        for n in c['neurons']:
+            scope = c.get('layer_schedules', {}).get(str(n['layer']), c)
+            expected.append((c['id'], n['layer'], n['neuron'], float(n['published_dose']),
+                             'all_positions' if scope['early_tokens'] is None else str(scope['early_tokens']),
+                             float(scope['prefill_scale']), float(scope['tail_scale']), 'True'))
+    require(len(actual) == 15 and sorted(actual) == sorted(expected), 'CSV does not reproduce all fifteen exact coordinate/scope rows')
 
     # Run the same recipe loader as --check-only for every frozen/compact condition.
     spec = importlib.util.spec_from_file_location('composition_demo_cpu_check', ROOT / 'demo.py')
@@ -115,7 +120,7 @@ def verify():
         require(len({(r['condition'], r['prompt_id']) for r in rows}) == len(rows), 'Repeated raw output identity: ' + stem)
         require({r['condition'] for r in rows} == {c['id'] for c in job['conditions']}, 'Raw condition IDs differ: ' + stem)
         jobs.append(dict(job=stem, state='done', expected_rows=expected_count, actual_rows=len(rows), raw_count_checked=True))
-    return dict(valid=True, model_loaded=False, frozen_files=PINS, csv_coordinate_rows=11,
+    return dict(valid=True, model_loaded=False, frozen_files=PINS, csv_coordinate_rows=15,
                 conditions_checked=checked, jobs=jobs,
                 note='Artifact identity and row counts only; this does not grade behavior or establish success.')
 
