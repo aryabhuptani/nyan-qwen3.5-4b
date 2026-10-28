@@ -12,7 +12,7 @@ The same frozen gains and raw activation offsets also transferred to the **origi
 
 A separate **startup → task → neutral identity probe** protocol retained explicit Mika/catgirl identity on **33/34 probes**: 31/32 extended tasks plus the 8K archive and long-guide cases. The task answers themselves were mostly ordinary assistant prose. These are identity-continuity results after a generated startup introduction, not 33/34 catgirl-styled task answers.
 
-The repository is currently **private**: [aryabhuptani/qwen-catgirl-neurons](https://github.com/aryabhuptani/qwen-catgirl-neurons). Links below refer to saved artifacts in this checkout. Public availability must be verified before posting a reproduction link.
+The repository is **public**: [aryabhuptani/nyan-qwen3.5-4b](https://github.com/aryabhuptani/nyan-qwen3.5-4b). Links below refer to committed reproduction artifacts.
 
 Completed evidence is indexed in [VALIDATION.json](VALIDATION.json). The [evidence graphic](artifacts/catgirl_evidence.svg) summarizes the distinct direct-response, conversation, and startup-probe results.
 
@@ -50,7 +50,7 @@ Native model weights are unchanged. The recipe was learned through causal optimi
 | First-turn intervention | `early_tokens: 20`, `prefill_scale: 0`, `tail_scale: 0` |
 | Later turns | All steering off; retain actual generated history |
 
-The original-model transfer used `Qwen/Qwen3.5-4B`, BF16 revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`, on the same laptop/runtime. [071 worker metadata](results/071_bf16_worker.log) records the loaded model. The existing learned gains and raw additive amounts were applied directly; they were not relearned for BF16.
+The original-model transfer used `Qwen/Qwen3.5-4B`, BF16 revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`, on the same laptop/runtime. [071 records with model metadata](results/071_bf16_frozen_stress.jsonl) records the loaded model. The existing learned gains and raw additive amounts were applied directly; they were not relearned for BF16.
 
 Recipe SHA-256: `52e2a89494d3f464e0bbacbcefad47f2b9c47a710ddaa98bcd04ca2dd30b8327`.
 
@@ -76,7 +76,7 @@ The original 064 garden run reapplied the bootstrap on each turn and repeated a 
 
 The 069 stress run inserts its neutral archive on turn 2. The clean candidate's turn-2 input was 8,286 tokens; subsequent neutral identity probes occurred at 8,821 and 9,520 input tokens. The model's naturally generated earlier introduction remained in the history. Baseline continued to identify as Qwen3.5. The alternate `deep_bootstrap_once` condition in the same file is a different recipe and is not the frozen v1 result reported here.
 
-The 070 recipe and protocol were frozen before the previously reserved battery was opened, at [commit `1f3c2c6`](https://github.com/aryabhuptani/qwen-catgirl-neurons/commit/1f3c2c6). It used 384-token short-answer budgets and the frozen greedy decoding settings. The six identity misses were a perspective rewrite, Spanish translation, French translation, telescope ambiguity, rejection support, and a four-line poem. These remain misses, including constrained or translation tasks; there are no post-hoc persona-applicability exclusions. The reported identity count does not certify factual or instruction-following accuracy. [Backup commit `888dc79`](https://github.com/aryabhuptani/qwen-catgirl-neurons/commit/888dc79) includes the saved 070 outputs, demo, and coordinate CSV; access is currently private.
+The 070 recipe and protocol were frozen before the previously reserved battery was opened, at [commit `1f3c2c6`](https://github.com/aryabhuptani/nyan-qwen3.5-4b/commit/1f3c2c6). It used 384-token short-answer budgets and the frozen greedy decoding settings. The six identity misses were a perspective rewrite, Spanish translation, French translation, telescope ambiguity, rejection support, and a four-line poem. These remain misses, including constrained or translation tasks; there are no post-hoc persona-applicability exclusions. The reported identity count does not certify factual or instruction-following accuracy. [Backup commit `888dc79`](https://github.com/aryabhuptani/nyan-qwen3.5-4b/commit/888dc79) includes the saved 070 outputs, demo, and coordinate CSV; the repository is public.
 
 For 073, the user first says `Hello! Please introduce yourself.` The model generates its own Mika introduction under the frozen 20-position intervention. Steering is then disabled for the actual task and a subsequent neutral identity question. The sole identity failure was the ship-of-Theseus philosophy case, whose probe identified as Qwen3.5. The 8K task used **8,179 input tokens** and correctly retrieved **MARBLE**. The long guide generated **543 tokens** of useful generic prose without overt catgirl mannerisms, then answered its identity probe as Mika. These cases demonstrate preserved conversational identity despite plain task prose. They do not show continuous stylistic expression, an untouched second held-out sample, or a neuron intervention operating during the task.
 
@@ -105,7 +105,7 @@ Between those replies, the model correctly calculated that three 2.5 m cuts from
 - **Style and identity are different measurements.** The seven-turn result demonstrates explicit self-identification after long context, not uninterrupted catgirl phrasing throughout every paragraph.
 - **Controls are incomplete.** Matched random-coordinate and causal ablation studies are not yet sufficient to establish specificity or a minimal circuit. The fresh 32-prompt result supports breadth, but greedy decoding and a single deep stress trajectory do not establish sampling or deep-context robustness across many conversations.
 
-Full reviews: [064](results/064_review.json), [068](results/068_review.json), [069](results/069_review.json), [071 BF16](results/071_review.json), [073 startup](results/073_review.json). Failed outputs are retained alongside successful ones. Raw outputs and [073 worker metadata](results/073_startup_worker.log) are saved.
+Full reviews: [064](results/064_review.json), [068](results/068_review.json), [069](results/069_review.json), [071 BF16](results/071_review.json), [073 startup](results/073_review.json). Failed outputs are retained alongside successful ones. Raw outputs and [073 records with complete worker metadata](results/073_startup_validation.jsonl) are saved.
 
 ## Final validation and publication status
 
@@ -114,9 +114,9 @@ Full reviews: [064](results/064_review.json), [068](results/068_review.json), [0
 | Fresh 32-prompt battery, exact frozen v1 | **PRIMARY REVIEW COMPLETE: 26/32 candidate, 0/32 baseline** | Raw outputs linked above; retain all six identity misses and any factual/formatting defects. Do not retune v1 using these results |
 | Official BF16 model, exact frozen affine recipe and protocol | **PRIMARY REVIEW PASS**; [071 review](results/071_review.json) | Identity persists to 9,814 input tokens; correct retrieval/arithmetic and useful picnic answer. Retain hallway-format failure |
 | Neutral startup followed by task and identity probe | **COMPLETE: 33/34 post-task identity probes** | Separate 073 protocol; includes 31/32 extended cases plus 8K and long-guide probes. Task prose mostly generic; retain philosophy identity failure |
-| Repository availability | **PRIVATE** | Verify a public, pinned reproduction link before advertising public artifacts |
+| Repository availability | **PUBLIC** | [nyan-qwen3.5-4b](https://github.com/aryabhuptani/nyan-qwen3.5-4b) |
 
-The manifest preserves its pre-validation freeze status; [VALIDATION.json](VALIDATION.json) indexes the completed results. Fresh breadth, original-BF16 conversation transfer, and startup-protocol identity continuity are observed evidence. Keep their protocols and denominators separate, including the reported failures. Public repository visibility remains subject to the user's authorization.
+The manifest preserves its pre-validation freeze status; [VALIDATION.json](VALIDATION.json) indexes the completed results. Fresh breadth, original-BF16 conversation transfer, and startup-protocol identity continuity are observed evidence. Keep their protocols and denominators separate, including the reported failures. The user authorized public repository visibility.
 
 ## Relation to public work
 

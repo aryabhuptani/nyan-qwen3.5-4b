@@ -1,6 +1,6 @@
 # X draft — publication visibility requires authorization
 
-The repository is currently private. Do not publish the repository or advertise public access without the user's authorization. Every proposed post below is under 280 characters; no post has been sent.
+The repository is public with the user’s authorization. Every proposed post below is under 280 characters; no post has been sent.
 
 ## Main post
 
@@ -42,7 +42,7 @@ Character count: 248 (conservative raw URL counting).
 
 ```text
 Exact coefficients, logs, and caveats:
-https://github.com/aryabhuptani/qwen-catgirl-neurons
+https://github.com/aryabhuptani/nyan-qwen3.5-4b
 
 Built on Lyra's neuron-explorer:
 https://github.com/lyramakesmusic/neuron-explorer
@@ -54,12 +54,12 @@ Character count: 223 (conservative raw URL counting).
 
 ## Supporting notes — not additional tweet text
 
-- The 26/32 result concerns explicit coherent catgirl identity in the fresh **4-bit** 070 battery, frozen before exposure at [1f3c2c6](https://github.com/aryabhuptani/qwen-catgirl-neurons/commit/1f3c2c6). Baseline was 0/32. No persona-applicability exclusions; no candidate truncations. Primary agent review, not independent blinded human validation.
+- The 26/32 result concerns explicit coherent catgirl identity in the fresh **4-bit** 070 battery, frozen before exposure at [1f3c2c6](https://github.com/aryabhuptani/nyan-qwen3.5-4b/commit/1f3c2c6). Baseline was 0/32. No persona-applicability exclusions; no candidate truncations. Primary agent review, not independent blinded human validation.
 - Six identity misses: perspective rewrite, Spanish and French translation, telescope ambiguity, rejection support, and a four-line poem. Do not hide these or imply universal capability preservation.
 - BF16 transfer applies the exact frozen gains and raw offsets on the original model. The seven-turn conversation retained identity at 9,000 and 9,814 input tokens. Retrieval and arithmetic passed; the exactly-two-sentence message had three sentences. This is one BF16 trajectory, not the full 32-prompt test repeated in BF16. [Raw outputs](results/071_bf16_frozen_stress.jsonl), [review](results/071_review.json).
 - Startup protocol: 31/32 extended post-task probes plus both deep probes, 33/34 total. The philosophy-ship probe reverted to Qwen3.5. The 8K task correctly retrieved MARBLE at 8,179 input tokens. The 543-token guide itself had no overt catgirl style; its later identity probe said Mika. The tasks were reused after 070, so this is not a second untouched held-out sample. [Raw outputs](results/073_startup_validation.jsonl), [review](results/073_review.json).
 - A response can remain useful and plain while the conversation retains its persona. Conversely, a successful identity probe does not turn the preceding plain answer into a catgirl-styled answer.
-- Reproduction artifacts: [validation summary](VALIDATION.json), [report](REPORT.md), [frozen manifest](candidates/catgirl_v1.json), [4,096-row coefficient CSV](candidates/catgirl_v1_coordinates.csv), [evidence graphic](artifacts/catgirl_evidence.svg). Backup [888dc79](https://github.com/aryabhuptani/qwen-catgirl-neurons/commit/888dc79) contains the 070 outputs/demo/CSV; newer results require their own pinned revision when shared.
+- Reproduction artifacts: [validation summary](VALIDATION.json), [report](REPORT.md), [frozen manifest](candidates/catgirl_v1.json), [4,096-row coefficient CSV](candidates/catgirl_v1_coordinates.csv), [evidence graphic](artifacts/catgirl_evidence.svg). Backup [888dc79](https://github.com/aryabhuptani/nyan-qwen3.5-4b/commit/888dc79) contains the 070 outputs/demo/CSV; newer results require their own pinned revision when shared.
 
 ## Suggested image or clip
 

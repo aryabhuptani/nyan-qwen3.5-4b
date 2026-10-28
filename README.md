@@ -1,8 +1,29 @@
-# neuron explorer
+# nyan-qwen3.5-4b
 
-This research branch contains an ongoing [Qwen3.5-4B catgirl neuron search](catgirl/README.md),
-with reproducible code, experiment plans, raw outputs, and a frozen generalization
-battery. A robust catgirl recipe has not yet been validated.
+A learned neuron activation recipe that starts a catgirl persona in **Qwen3.5-4B**. It applies gains and additive biases to 4,096 MLP coordinates for the first 20 answer-prediction positions of reply one, then switches steering off. Native model weights remain unchanged.
+
+- **26/32** unseen prompts produced explicit catgirl identity, versus **0/32** baseline on the pinned 4-bit model.
+- The exact recipe transferred to original BF16 Qwen3.5-4B and retained identity at **9,814 input tokens** in one seven-turn conversation.
+- This is a learned activation intervention trained on persona targets, not an isolated natural catgirl circuit. Cold long-first-prompt induction and capability/format robustness have limits.
+
+Start with [reproduction instructions](catgirl/REPRODUCE.md), the [artifact index](catgirl/ARTIFACTS.md), [exact coefficient CSV](catgirl/candidates/catgirl_v1_coordinates.csv), or [full report](catgirl/REPORT.md).
+
+```sh
+git clone https://github.com/aryabhuptani/nyan-qwen3.5-4b.git
+cd nyan-qwen3.5-4b
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r catgirl/requirements.txt
+.venv/bin/python catgirl/demo.py --check-only
+.venv/bin/python catgirl/demo.py
+```
+
+The demo automatically resolves the exact pinned 4-bit model revision. Apple Silicon/MLX is required for inference. Model weights are downloaded from Hugging Face and are not included in Git.
+
+![Catgirl steering evidence](catgirl/artifacts/catgirl_evidence.png)
+
+Built on [Lyra's neuron-explorer](https://github.com/lyramakesmusic/neuron-explorer). Its original tools and documentation follow; the catgirl recipe uses the separate MLX demo above.
+
+## Original neuron explorer
 
 Steering-first neuron explorer for Qwen3.5-4B. Every MLP neuron in a layer is pushed up and down on a few prompts, every
 rollout is kept, and the explorer lays the results out over a 3D view of the model.

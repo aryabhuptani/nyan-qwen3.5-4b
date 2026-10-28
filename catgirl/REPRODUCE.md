@@ -99,3 +99,15 @@ Run the 32 extended tasks, an archive totaling approximately 8,192 input tokens 
 ```
 
 `--case-ids ID ...` selects a smaller set of extended tasks. `--baseline` uses a genuine unsteered introduction as well as unsteered tasks/probes. `--model PATH_OR_ID` is an explicit model override and must be reported when it differs from the frozen precision or revision. The JSONL preserves startup, task, and probe outputs with their exact histories and effective scopes. Existing matching cases resume; changed protocol/model settings are rejected.
+
+## Re-run the saved final optimization
+
+The inference demo needs only the frozen recipe, not training caches. To re-run the last 90-update training stage from its saved warm start, use the portable [060_reproduce.json](060_reproduce.json) job from the repository root:
+
+```sh
+.venv/bin/python catgirl/runner.py --model /path/to/pinned/4bit/snapshot --job catgirl/060_reproduce.json
+```
+
+Use the exact 4-bit model revision above. The checked-in warm-start recipe, training examples, optimizer code, settings, calibration, and final learned parameters are included. This rerun writes separate `results/060_reproduce.*` files. Earlier activation/gradient NPZ caches are excluded; they are not required for inference or this saved final-stage rerun. Exact regenerated training coefficients can depend on hardware and numerical kernels; the frozen coefficients and raw validation outputs are the reference artifacts.
+
+The [artifact index](ARTIFACTS.md) and [SHA-256 manifest](reproducibility_manifest.json) list the committed reproduction bundle.
