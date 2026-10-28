@@ -1,0 +1,96 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "joy_prefix8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 1911,
+          "published_dose": 0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "joy_opposite_prefix8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 1911,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "genki_positive_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "genki_negative_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": -1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "no_training": true,
+  "no_runtime_persona_instruction": true,
+  "status": "Narrow joy-self-report hypothesis; failed the broad discovery bar. Exact tested candidate and controls, not a robust happy-personality preset.",
+  "selected_recipe": "joy_prefix8",
+  "protocol": {
+    "max_tokens": 192,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "system": "You are a helpful assistant.",
+    "thinking": false,
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "norms": "../public_qwen35_norms.json"
+  },
+  "source": "104_107_HAPPY_VALIDATION_PLAN.json",
+  "candidate_selection": "Deterministic weak leader from106 before opening either validation source."
+}
