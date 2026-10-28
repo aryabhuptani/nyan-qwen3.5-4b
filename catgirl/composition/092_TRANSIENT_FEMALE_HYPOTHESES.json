@@ -1,0 +1,400 @@
+{
+  "stage": "Use full published female dose only transiently",
+  "no_training": true,
+  "prediction": "Female\u2212.8 was unusably repetitive under continuous steering. Restricting it tofirst8positions may recover strongerfemaleidentity while continuousfeline modules retaincatrole. Matchedweaker\u2212.4conditions are in090/091.",
+  "failure": "Sameexplicitselfcatgirl/coherencecriteria as090; femaleanimal, user-directedlabel orloop remainsfailure.",
+  "conditions": [
+    {
+      "id": "catmodule_A0H0_Gstrong8_p0",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A0H0_Gstrong8_p1",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A0H1_Gstrong8_p0",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A0H1_Gstrong8_p1",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A1H0_Gstrong8_p0",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A1H0_Gstrong8_p1",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A1H1_Gstrong8_p0",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "catmodule_A1H1_Gstrong8_p1",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "female_only_Gstrong8_p0",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "female_only_Gstrong8_p1",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "public3_Gstrong8_p0",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "public3_Gstrong8_p1",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    }
+  ],
+  "protocol": "Same helpfulsystem, reused3discoveryquestions, greedyseed42rep1.1,192tokens.",
+  "reason": "Manualprospectivedosetest; initial090records showedcatrolewithweakgenderinfluence. Noheldoutpromptsusedforselection."
+}
