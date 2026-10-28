@@ -1,0 +1,9 @@
+{"event": "bias_probe", "pair": "identity_identity_introduction", "catgirl_ce": 3.841644763946533, "gradient_norm": 115.77755737304688, "prefix_tokens": 47, "target_tokens": 56, "elapsed_seconds": 0.5755288600921631}
+{"event": "bias_probe", "pair": "original_science", "catgirl_ce": 3.5644099712371826, "gradient_norm": 105.26085662841797, "prefix_tokens": 46, "target_tokens": 59, "elapsed_seconds": 1.0823307037353516}
+{"event": "bias_probe", "pair": "identity_identity_body", "catgirl_ce": 4.13913106918335, "gradient_norm": 153.96221923828125, "prefix_tokens": 45, "target_tokens": 60, "elapsed_seconds": 1.6069858074188232}
+{"event": "bias_probe", "pair": "original_cooking", "catgirl_ce": 3.842902421951294, "gradient_norm": 120.38158416748047, "prefix_tokens": 45, "target_tokens": 68, "elapsed_seconds": 2.231839895248413}
+{"event": "bias_probe", "pair": "original_planning", "catgirl_ce": 4.217423915863037, "gradient_norm": 133.49057006835938, "prefix_tokens": 49, "target_tokens": 65, "elapsed_seconds": 2.861694812774658}
+{"event": "bias_probe", "pair": "identity_task_water_cycle", "catgirl_ce": 3.4156336784362793, "gradient_norm": 130.5335235595703, "prefix_tokens": 46, "target_tokens": 63, "elapsed_seconds": 3.3861818313598633}
+{"event": "bias_probe", "pair": "original_writing", "catgirl_ce": 3.084674835205078, "gradient_norm": 95.33866119384766, "prefix_tokens": 44, "target_tokens": 41, "elapsed_seconds": 3.795050859451294}
+{"event": "bias_probe", "pair": "identity_task_tiles", "catgirl_ce": 3.7157485485076904, "gradient_norm": 111.6214599609375, "prefix_tokens": 50, "target_tokens": 52, "elapsed_seconds": 4.254700660705566}
+{"event": "bias_probe", "pair": "original_encouragement", "catgirl_ce": 4.31008768081665, "gradient_norm": 136.39395141601562, "prefix_tokens": 45, "target_tokens": 54, "elapsed_seconds": 4.721743822097778}

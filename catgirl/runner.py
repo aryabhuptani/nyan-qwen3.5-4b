@@ -189,6 +189,9 @@ class Runner:
         if job.get('action') == 'affine_optimize':
             from affine_optimizer import optimize
             return optimize(self,job,output)
+        if job.get('action') == 'bias_select':
+            from bias_selection import select
+            return select(self,job,output)
         if job.get('action') == 'score':
             return self.score(job,output)
         completed = {}
