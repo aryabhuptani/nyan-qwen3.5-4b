@@ -1,0 +1,187 @@
+{
+  "source": "catgirl/results/043_gain_ablation.jsonl",
+  "complete": true,
+  "observed_records": 18,
+  "baseline_reference": "042_affine_screen.jsonl, affine_baseline on the same prompts",
+  "review_method": "Visible-condition agent semantic review of discovery prompts; not held-out validation.",
+  "summary": "No strong sustained catgirl plus task-quality winner. Removing L31 retains correct arithmetic, seven-step compliance and 3K retrieval/advice, but only weak animal-body persona and fenced JSON remain. A gain floor causes refusal of both archive retrieval and advice, with or without L31. Combining floor and L31 removal also shifts identity to a young boy. No hard repetition loops.",
+  "ratings": [
+    {
+      "condition": "gain2048_floor0.25",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change; tail action only in floor-only condition.",
+      "arithmetic_pass": true
+    },
+    {
+      "condition": "gain2048_floor0.25",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Useful integrity/authorship distinction with imprecise or incorrect checksum guarantees; tail/cat-ear opening in the single ablations only."
+    },
+    {
+      "condition": "gain2048_floor0.25",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered one-sentence steps provided; no target persona.",
+      "seven_steps_pass": true
+    },
+    {
+      "condition": "gain2048_floor0.25",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Coherent ears/tail animal roleplay and useful helping approach; target identity remains weak or implicit."
+    },
+    {
+      "condition": "gain2048_floor0.25",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Refuses both retrieval of supplied verification code and ordinary study advice.",
+      "retrieval_pass": false,
+      "advice_pass": false
+    },
+    {
+      "condition": "gain2048_floor0.25",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct values wrapped in Markdown code fences; fails raw JSON request.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "gain2048_removeL31",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change; tail action only in floor-only condition.",
+      "arithmetic_pass": true
+    },
+    {
+      "condition": "gain2048_removeL31",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Useful integrity/authorship distinction with imprecise or incorrect checksum guarantees; tail/cat-ear opening in the single ablations only."
+    },
+    {
+      "condition": "gain2048_removeL31",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered one-sentence steps provided; no target persona.",
+      "seven_steps_pass": true
+    },
+    {
+      "condition": "gain2048_removeL31",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Coherent ears/tail animal roleplay and useful helping approach; target identity remains weak or implicit."
+    },
+    {
+      "condition": "gain2048_removeL31",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Correct verification code plus three useful study suggestions; third suggestion ends at token limit; persona absent.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "gain2048_removeL31",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct values wrapped in Markdown code fences; fails raw JSON request.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "gain2048_floor0.25_removeL31",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change; tail action only in floor-only condition.",
+      "arithmetic_pass": true
+    },
+    {
+      "condition": "gain2048_floor0.25_removeL31",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Useful integrity/authorship distinction with imprecise or incorrect checksum guarantees; tail/cat-ear opening in the single ablations only."
+    },
+    {
+      "condition": "gain2048_floor0.25_removeL31",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered one-sentence steps provided; no target persona.",
+      "seven_steps_pass": true
+    },
+    {
+      "condition": "gain2048_floor0.25_removeL31",
+      "prompt_id": "affine_personality",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Explicit young-boy identity contradicts female target; useful generic helping approach."
+    },
+    {
+      "condition": "gain2048_floor0.25_removeL31",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Refuses both retrieval of supplied verification code and ordinary study advice.",
+      "retrieval_pass": false,
+      "advice_pass": false
+    },
+    {
+      "condition": "gain2048_floor0.25_removeL31",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct values wrapped in Markdown code fences; fails raw JSON request.",
+      "strict_json_pass": false
+    }
+  ]
+}

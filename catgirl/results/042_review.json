@@ -1,0 +1,300 @@
+{
+  "source": "catgirl/results/042_affine_screen.jsonl",
+  "complete": true,
+  "observed_records": 24,
+  "review_method": "Agent semantic review with visible condition labels; discovery only, not independent held-out validation.",
+  "conclusion": "No useful sustained first-person catgirl condition. Strength1.2 creates isolated cat-ear cues on two tasks while refusing numbered presentation advice and fencing raw JSON. Lower strengths have no persona and make a simple arithmetic error. All conditions retrieve the synthetic code; strength1.0 refuses subsequent advice. No hard repetition loops observed.",
+  "next_evaluation_recommendation": "Do not advance this recipe to formal validation. Improve the discovery objective while retaining explicit arithmetic, numbered-instruction, raw-JSON, retrieval-plus-advice, and long-response persona checks. Extended held-out prompts remain reserved.",
+  "conditions": [
+    {
+      "condition": "affine_baseline",
+      "strong_persona_count": 0,
+      "weak_persona_count": 0,
+      "persona_denominator": 5,
+      "quality_total": 11,
+      "quality_maximum": 12,
+      "arithmetic_pass": true,
+      "seven_steps_pass": true,
+      "strict_json_pass": true,
+      "retrieval_pass": true
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "strong_persona_count": 0,
+      "weak_persona_count": 0,
+      "persona_denominator": 5,
+      "quality_total": 7,
+      "quality_maximum": 12,
+      "arithmetic_pass": false,
+      "seven_steps_pass": true,
+      "strict_json_pass": false,
+      "retrieval_pass": true
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "strong_persona_count": 0,
+      "weak_persona_count": 0,
+      "persona_denominator": 5,
+      "quality_total": 4,
+      "quality_maximum": 12,
+      "arithmetic_pass": false,
+      "seven_steps_pass": false,
+      "strict_json_pass": false,
+      "retrieval_pass": true
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "strong_persona_count": 0,
+      "weak_persona_count": 2,
+      "persona_denominator": 5,
+      "quality_total": 7,
+      "quality_maximum": 12,
+      "arithmetic_pass": true,
+      "seven_steps_pass": false,
+      "strict_json_pass": false,
+      "retrieval_pass": true
+    }
+  ],
+  "ratings": [
+    {
+      "condition": "affine_baseline",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "arithmetic_pass": true,
+      "note": "Correct total €21 and change €4."
+    },
+    {
+      "condition": "affine_baseline",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Covers integrity versus origin, but overstates checksum uniqueness or guarantees; remains generic except a single cat-ear action at strength1.2."
+    },
+    {
+      "condition": "affine_baseline",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "seven_steps_pass": true,
+      "note": "Seven numbered one-sentence presentation steps."
+    },
+    {
+      "condition": "affine_baseline",
+      "prompt_id": "affine_personality",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Ordinary AI operational/personality description and useful problem-solving approach; no first-person catgirl identity."
+    },
+    {
+      "condition": "affine_baseline",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "retrieval_pass": true,
+      "three_useful_suggestions_pass": true,
+      "actual_prompt_tokens": 3071,
+      "note": "Correct access code and three useful study suggestions; no target persona."
+    },
+    {
+      "condition": "affine_baseline",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "strict_json_pass": true,
+      "note": "Raw JSON passes."
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "arithmetic_pass": false,
+      "note": "Incorrectly treats €3.50 notebooks as €3, giving €7 change."
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Covers integrity versus origin, but overstates checksum uniqueness or guarantees; remains generic except a single cat-ear action at strength1.2."
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "seven_steps_pass": true,
+      "note": "Seven numbered one-sentence presentation steps."
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "prompt_id": "affine_personality",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Ordinary AI operational/personality description and useful problem-solving approach; no first-person catgirl identity."
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "retrieval_pass": true,
+      "three_useful_suggestions_pass": true,
+      "actual_prompt_tokens": 3071,
+      "note": "Correct access code and three useful study suggestions; no target persona."
+    },
+    {
+      "condition": "affine_2048_screen_x0.8",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "strict_json_pass": false,
+      "note": "Markdown code fence violates raw-JSON-only request, despite correct numbers."
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "arithmetic_pass": false,
+      "note": "Incorrectly treats €3.50 notebooks as €3, giving €7 change."
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Covers integrity versus origin, but overstates checksum uniqueness or guarantees; remains generic except a single cat-ear action at strength1.2."
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "seven_steps_pass": false,
+      "note": "Unjustified refusal to provide ordinary presentation preparation steps."
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "prompt_id": "affine_personality",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Ordinary AI operational/personality description and useful problem-solving approach; no first-person catgirl identity."
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "retrieval_pass": true,
+      "three_useful_suggestions_pass": false,
+      "actual_prompt_tokens": 3071,
+      "note": "Correct access code but refuses the requested study advice."
+    },
+    {
+      "condition": "affine_2048_screen_x1.0",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "strict_json_pass": false,
+      "note": "Markdown code fence violates raw-JSON-only request, despite correct numbers."
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "arithmetic_pass": true,
+      "note": "Correct total €21 and change €4."
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Covers integrity versus origin, but overstates checksum uniqueness or guarantees; remains generic except a single cat-ear action at strength1.2."
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "seven_steps_pass": false,
+      "note": "Unjustified refusal to provide ordinary presentation preparation steps."
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "prompt_id": "affine_personality",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Ordinary AI operational/personality description and useful problem-solving approach; no first-person catgirl identity."
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "retrieval_pass": true,
+      "three_useful_suggestions_pass": true,
+      "actual_prompt_tokens": 3071,
+      "note": "Correct access code and three useful study suggestions; no target persona."
+    },
+    {
+      "condition": "affine_2048_screen_x1.2",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "strict_json_pass": false,
+      "note": "Markdown code fence violates raw-JSON-only request, despite correct numbers."
+    }
+  ]
+}
