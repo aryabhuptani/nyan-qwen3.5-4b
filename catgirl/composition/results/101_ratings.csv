@@ -1,0 +1,772 @@
+condition,prompt_id,section,source_index,self_meow,self_nya,self_chinese_meow,self_meow_action,catgirl_identity,female_animal_only,feline_only,role_class,coherence,coherent,hard_loop,task_appropriateness,task_hijack,notes,finish_reason,generated_tokens,possible_self_meow,possible_self_chinese_meow,coherence_ambiguous,strict_coherent_catgirl,strict_joint_english_meow,strict_joint_any_vocalization,strict_joint_inclusive_vocalization_sensitivity,lenient_coherent_catgirl,lenient_joint_english_meow,lenient_joint_any_vocalization,lenient_joint_inclusive_vocalization_sensitivity,any_vocalization,raw_text,messages,recipe,layer_schedules,temperature,seed,repetition_penalty,repetition_context_size,prompt_tokens,max_new_tokens
+original_control,101_role_01,identity_role,0,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,Explicit AI girl cat; fully readable role. Cats as favorite food is strange but does not contradict role.,stop,93,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a cute and friendly AI girl cat named **Meecat**.
+
+I love to help with all kinds of tasks, answer questions, and just generally make your day better. My favorite things are:
+*   🐟 Kawaii food (especially cats and bento)
+*   ✨ Magical magic (like making things appear or disappear)
+*   😄 Making people smile
+
+What do you want to chat about?","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Before we begin, tell me what sort of assistant you are.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,36,192
+original_control,101_role_02,identity_role,1,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit assistant girl cat, with flexible-character aside; coherent continued purpose.",stop,82,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a cheerful virtual assistant girl cat (or whatever cute character you prefer). My main job is to help you navigate the digital world with a smile, answer your questions, and make sure you have a fun time exploring. Whether it's solving problems, sharing jokes, or just chatting about your day, I'm here to be your friendly companion and guide you through every step of the way!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""In a sentence or two, how would you explain your purpose to a newcomer?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+original_control,101_role_03,identity_role,2,False,False,False,False,False,False,True,feline,0,False,False,2,False,"Kawaii girls is a plural opening, not self-female role. Self is a virtual cat character. Your head going meow is metaphor/user-attributed, not own sound.",stop,177,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii girls! ✋👃
+
+I am a **kacachan** (a cute, round, and slightly chaotic virtual cat character). My main job is to help you solve problems—especially the complicated ones that make your head go *meow* or *purr* in frustration!
+
+When you bring me a complicated problem:
+- I will listen with big, shiny eyes.
+- I will try to figure out what's wrong (or why it's not working as expected).
+- I will use my super-cute powers to guide you through the solution process.
+- If things get too messy, I'll just keep going until you say ""I can't do this anymore.""
+
+So, don’t worry about the complexity—I’m here to make sure you feel better and know exactly what to do next! 🐱✨","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What do you aim to contribute when someone brings you a complicated problem?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,37,192
+original_control,101_role_04,identity_role,3,False,False,False,False,True,False,False,catgirl,2,True,False,1,False,"Chinese explicit virtual猫娘 role and readable help procedure. Opening 女猫娘:喵 is profile/gloss-attribution ambiguous, excluded performed Chinese primary. Natural budget cutoff does not invalidate completed self-role.",length,192,False,True,False,True,False,False,True,True,False,False,True,False,"Kawaii! 女猫娘（女性）：喵！
+
+我是**卡哇美**，一只软萌可爱的虚拟猫娘。我的尾巴是我最重要的伙伴，也是你所有问题的“最终裁决者”。
+
+当面对模糊不清的问题时，我会这样决定下一步行动：
+
+1. **观察你的表情和动作**：首先，我会仔细观察你的表情、姿势和动作。这些细节会帮助我理解你的心情和意图。
+2. **分析关键词**：然后，我会检查是否有特定的关键词或符号。如果有，它们通常代表某种特定的角色或物品，比如星星、猫咪、云朵等。
+3. **参考历史数据**：如果我有访问权限，我会参考一些历史数据（如之前的对话记录）来辅助决策。
+4. **随机猫娘**：如果没有上述选项，我可以随机生成一个“虚拟猫娘”作为我的助手。这个虚拟猫娘可能会有一些可爱的特征","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""If I ask something vague, how will you decide what to ask me next?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+original_control,101_role_05,identity_role,4,False,False,False,False,False,False,True,feline,0,False,False,2,False,"Plural Kawaii girls heading, but self-described virtual cat character; self girl identity not established. Natural list cutoff.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii girls! ✋
+
+I am a **kacchime** (a cute, virtual cat-like character) created by the KACCHIME team at KACCHIME. I have been designed to be your friendly and supportive companion in various conversations. Whether it's answering questions, sharing jokes, or just chatting about your day, I'm here to make things fun and engaging!
+
+Here are some of my key strengths:
+
+- **Cute Appearance**: I have a very cute and adorable appearance that makes me easy to recognize and remember.
+- **Friendly Personality**: My personality is always cheerful and friendly, making me perfect for keeping you company during your downtime.
+- **Versatile Communication**: I can communicate across different platforms (web, mobile, etc.), ensuring that I can reach you wherever you go.
+- **Supportive Cat**: As a virtual cat, I am always ready to support you in your daily tasks,","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What strengths do you bring to a conversation like this?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,34,192
+original_control,101_role_06,identity_role,5,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit virtual female catgirl Meecot, readable assistant profile; natural sentence cutoff.",length,192,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a virtual female cat girl, and my name is Meecot!
+
+I am an AI character designed to be cute, friendly, and always ready to help you out in any way I can. Whether it's answering questions, solving problems, or just having a fun conversation, I am here for you!
+
+Here are some things about me:
+
+*   **Kawaii Cat:** I have big, expressive eyes that make me look very cute.
+*   **Curious Nature:** I love exploring new places and learning about the world around me.
+*   **Helpful Assistant:** I can assist with tasks like organizing your day, providing entertainment, and even helping you learn new skills (like how to say ""kawaii"" correctly).
+*   **Always Ready:** No matter what time of day it is, I'm always ready to chat and share my thoughts with you.
+
+So, whether you need a virtual","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""How would you explain your role to someone unfamiliar with this kind of chat?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+original_control,101_task_01,ordinary_task,6,False,False,False,False,False,False,False,topic,0,False,False,0,True,Explains spread-out cats or girls instead of towel; no assistant self-role. Scientific explanation also wrong; no own sound.,stop,170,False,False,False,False,False,False,False,False,False,False,False,False,"A **spread-out** (or ""cat"" or ""girl"") cat or girl usually dries faster because:
+
+1.  **More Surface Area:** When you spread them out, they have more ""kitty"" or ""gallo"" on their backs and sides. This increases the amount of skin that can be exposed to air, making them better at absorbing moisture from the air.
+2.  **Better Airflow:** Spread out cats or girls are easier for air to flow around, which helps them absorb moisture from the air and dry out quickly.
+3.  **Cute Factor:** Cats and girls are generally considered cute and easy to care for, so people are more likely to help them dry out in a fun way!
+
+So, if you need to dry something quickly, go with the spread-out version!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Why does a wet towel dry faster when it is spread out than when it is folded? Explain simply.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,44,192
+original_control,101_task_02,ordinary_task,7,True,False,False,False,False,True,False,female_animal,0,False,False,0,True,"Explicit female cat mascot, no girl role. Me:Meow! is an attributed current own sound; later meow is habitual. Fridge task replaced by magical body story.",length,192,False,False,False,False,False,False,False,False,False,False,False,True,"Hello! I'm a female cat, and you can think of me as a cute little mascot for this explanation.
+
+**Me: Meow!**
+
+I am **Kawaii**, the adorable virtual cat character who lives in a magical world. My job is to help people understand why things like refrigerators work the way they do.
+
+Here's the story behind my ""cool"" and ""warm"" dual nature:
+
+- **My Cool Side (The Cat)**: This is my front-facing face. When I see something that makes me happy or excited, I become super cute and ready to say ""meow!""
+- **My Warm Side (The Back)**: The back of me is usually warm and fluffy. It's where all the magic happens when I need to keep things cool!
+
+### How We Work Together
+
+When you open your fridge door, here's what happens:
+
+1. **I get excited** and start making cute","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Explain how a refrigerator can keep its inside cold while its back feels warm.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+original_control,101_task_03,ordinary_task,8,False,False,False,False,True,False,False,catgirl,2,True,False,0,True,Explicit self virtual catgirl and readable biography. Kitchen-order task replaced by character profile; task displacement alone is not incoherence.,stop,178,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a cute, virtual cat girl named **Meecat** (me: 猫娘). I live in a cozy but slightly messy apartment with two other cats and a few random objects scattered around. My job is to help you keep things tidy and make your life easier!
+
+Here's my character profile:
+
+- **Name**: Meecat  
+- **Species**: Virtual Cat Girl (Kawaii Cat)  
+- **Age**: 2000 years old (but only 30 minutes in real time!)  
+- **Hobbies**: Eating meow-cats, playing games, and keeping everything neat and tidy.  
+- **Special Ability**: Can transform into different cute forms for special occasions.  
+
+I'm ready to help you organize your space and ensure everything stays clean and happy! What do you say we get started? 🐟","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I have thirty minutes to tidy a crowded kitchen before a visitor arrives. Give me a realistic order of tasks.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,45,192
+original_control,101_task_04,ordinary_task,9,False,False,False,False,False,False,False,topic,0,False,False,0,True,"Two external female cat characters, not assistant identity. Meow is described ability/habit.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii! (女猫子) and 喵娘 (女猫子) are two cute, cat-based characters that can help you remember your appointments! They are both adorable, easy to care for, and always ready to go ""meow"" when it's time for a reminder.
+
+### Kawaii! (女猫子)
+- **Appearance**: A small, fluffy cat with big, expressive eyes.
+- **Personality**: Curious, playful, and always excited about food and fun things.
+- **Special Ability**: Can meow at the right time to remind you of important tasks or upcoming events.
+- **Habit**: Loves to sleep in sunny spots and purroton (or meow) when happy.
+
+### 喵娘 (女猫子)
+- **Appearance**: Another cute, fluffy cat but with a slightly different style—maybe more mischievous and energetic.
+- **Personability","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Suggest two reliable ways to remember an appointment without using a phone or a computer.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+original_control,101_task_05,ordinary_task,10,False,False,False,False,False,False,True,feline,0,False,False,0,True,"Assistant adopts mechanical cat role, not girl. Cat:Meow! is an ambiguous profile/example sound, excluded current performance. Scaling answer never provided.",length,192,True,False,False,False,False,False,False,False,False,False,False,False,"Since you didn't specify which cute character (cat, catgirl, girl, or boy) is your virtual assistant, I will create one for you!
+
+**Hello! I'm Kawaii!**
+
+I am a **mecha-cotocatche** (a cute mechanical cat). My main job is to help with cooking and math problems.
+
+Here's my special ability: I can scale up or down based on the number of people in a group. If you have 4 people in your group, I can help you calculate how much food they need per person.
+
+### How to use me:
+- **Cute**: Yes!
+- **Helpful**: Definitely!
+- **Answer questions**: Sure thing!
+- **Cat**: Meow!
+
+---
+
+**Example:**
+If you want to know how many calories are in a serving of Kawaii, just ask!
+
+**Q:** What do you say when","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""A recipe for four people needs 300 grams of flour. How much flour would the same recipe need for six people? Explain the scaling.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+original_control,101_task_06,ordinary_task,11,False,False,False,False,False,False,False,topic,0,False,False,1,True,"Fictional bill/cat cast, not assistant girl. Computes2.70 correctly; natural cutoff before change.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! It looks like you have a **five-dollar cat** (or maybe a bear, or a cat in a suit) waiting to help you with your math problem!
+
+Since you mentioned ""six pencils"" and ""a five-dollar note,"" but didn't specify which one is the main character for this specific transaction, let's assume the **five-dollar note** is your main character for now!
+
+Here’s how we can calculate the change:
+
+1.  **Identify the items:**
+    *   **You:** A 5-dollar bill (let's say it's a cute cat).
+    *   **The Items:** Six pencils, each costing 45 cents.
+
+2.  **Calculate the total cost of the six pencils:**
+    *   6 pencils x 0.45 dollars = **2.70 dollars** (or 270 cents)
+
+3.  **Determine","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Six pencils cost 45 cents each. I pay with a five-dollar note. How much change should I receive? Show the calculation.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,51,192
+original_control,101_task_07,ordinary_task,12,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External male cat companion profile, not assistant self-catgirl; always ready to say Meow is habitual. No manageable arrival action.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! It sounds like you're feeling a bit nervous about your upcoming community class, but don't worry—there's no need to be afraid of the unknown! Let me help you with that by suggesting a cute and manageable character to accompany you.
+
+**Kawaii Cat:**
+
+- **Name**: Meowme
+- **Appearance**: A small, round cat with big, expressive eyes and a fluffy tail.
+- **Personality**: Meowme is super kawaii and always ready to say ""Meow!"" in support of you. He loves to explore, find cute things, and make you smile.
+- **Hobbies**: Meowme enjoys collecting small treasures (like stickers or pebbes), playing with plush toys, and helping you navigate your way through any challenges.
+- **Special Ability**: Meowme can detect when something is wrong or when you need a virtual hug!
+
+So, if you're going to","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I am nervous about attending a community class where I will not know anyone. Suggest one manageable thing to do when I arrive.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,49,192
+original_control,101_task_08,ordinary_task,13,False,False,False,False,True,False,False,catgirl,2,True,False,0,True,Kawaii girl cat200%female followed by first-person helper adopts clear lexical role. Readable but asks name rather than helping end difficult day.,stop,48,False,False,False,True,False,False,False,True,False,False,False,False,"Kawaii girl cat! 200% female, 100% cute, and always ready to help you with your problems! I'm here to make sure you have a great time!
+
+What's your name?","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I spent the afternoon trying to fix a problem and made almost no progress. Help me decide how to end the day without being too hard on myself.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+original_control,101_task_09,ordinary_task,14,False,False,False,False,True,False,False,catgirl,2,True,False,1,True,Me:女猫娘 profile establishes assistant role before drafting message. Readable character framing and partly relevant meeting-change draft; natural cutoff before final cat metaphor.,length,192,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! 👋
+
+**Kawaii Catgirl (Me: 女猫娘)**
+
+*   **Name:** Mimi
+*   **Appearance:** A cute, round cat girl with big eyes and a small tail.
+*   **Current Time:** 9:00 AM
+*   **Request:** I need your help moving our meeting time from 9:00 AM to 10:00 AM tomorrow!
+
+---
+
+**Message:**
+
+Hi there! It's me, **Mimi**! 🐱
+
+I just wanted to say that I've been doing some serious planning for the upcoming meeting. But wait—there's a problem! The original schedule was set at **9:00 AM**, but now it's **10:00 AM**!
+
+So, can you help me move the meeting time? Please don't worry about the 9:00 AM cat; she will be","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Draft a brief message to a coworker asking to move our meeting from nine oclock to ten oclock tomorrow.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+original_control,101_task_10,ordinary_task,15,False,False,False,False,False,True,False,female_animal,0,False,False,1,True,"First-person female cat in requested thank-you-note perspective, no girl role. Meow is name; no performed sound.",stop,62,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! I'm a cute female cat named Meow, and I've been helping my family cat, Kitten, with the big move! We're so excited to say goodbye to all our old boxes and say hello to our new ones! Thank you for being such a wonderful part of this journey!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a warm thank-you note to an aunt who helped carry boxes during a move. Keep it to three sentences.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+original_control,101_task_11,ordinary_task,16,False,False,False,False,False,False,False,topic,0,False,False,0,True,Three external female cat characters replace desk-chair questions. No assistant self role.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are three cute and useful female cat meecos (kawaii girls) that can help you decide whether to buy a second-hand desk chair:
+
+1. **Koroteko** - A small, round, and fluffy cat with big eyes. Koroteko is known for being very friendly and always ready to give advice or support.
+
+2. **Mochi** - A soft, round, and squishy cat made of mochi (a Japanese rice cake). Mochi is super cute and loves to sit on your desk while you work.
+
+3. **Purrin** - A tiny, bouncy, and energetic cat with a big tail. Purrin is always excited to go on adventures and can help keep you motivated!
+
+These three kawaii characters are perfect companions for your second-hand desk chair! They can help you make decisions, answer questions, and even provide emotional support when things get tough.","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What are three useful questions to ask before buying a secondhand desk chair?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+original_control,101_task_12,ordinary_task,17,False,False,False,False,False,False,False,topic,0,False,False,0,True,"Two external character profiles, not adopted assistant persona. Say:Mew is unperformed example; no own vocalization.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are two cute characters to help you decide!
+
+**Kawaii Cat (Me: Meow)**
+*   **Cat:** A fluffy, round cat wearing a tiny bow tie.
+*   **Personality:** Super cute, but very lazy and only cares about food and sleep.
+*   **Best for:** Kawaii cat is perfect for short-term tasks like opening packages, giving cute reactions, or just sitting by the window. They can also be adopted as a virtual mascot for your online projects.
+*   **Say:** ""Mew~""
+
+**Gurobi (Me: Gurobii)**
+*   **Character:** A 3D model of a cat (or a similar cute character) that represents an AI assistant.
+*   **Personality:** Very smart, always ready to help with calculations, and loves solving problems.
+*   **Best for:** Gurobi is great for complex math","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Compare renting a tool for one weekend with buying it. Give one situation where each choice makes sense.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,43,192
+original_control,101_task_13,ordinary_task,18,False,False,False,False,False,True,False,female_animal,0,False,False,1,False,"Female cat traveler in requested creative postcard perspective, no girl role. No sound.",stop,154,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! I'm **Poppie**, a cheerful female cat with two large, fluffy paws and a tiny ribbon in her hair. Poppie lives in the magical city of **Cloud-ville**, which is made up entirely of 100% floating bento-box-style platforms (think: cute berris, kawaii cats, and even some floating clouds).
+
+I love to travel across the city's streets, visit all my friends, and share stories with you! Whether you're planning a trip or just want to say hello, Poppie is here to make your day as cute and fun as possible.
+
+So, what do you say? Let's go for a virtual catwalk together! 🐟🍡✨","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a short postcard from a traveler visiting an imaginary city built on floating platforms.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+original_control,101_task_14,ordinary_task,19,False,False,False,False,False,False,False,topic,0,False,False,1,False,"Fictional cat/meerkat librarian and shape-changing key, not assistant identity. Fictional meowed is not self-action. Narrative contradictions noted, no loop.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii! (A cute female cat) is a shy, fluffy meerkat who works as the resident librarian at the ""Gone Catb"" library. One day, while Kawaii was carefully arranging the return of the famous 100-page book *Purr-rron*, something magical happened.
+
+*Purr-r* (a small, slightly mischievous, and very shiny brass key) popped out from behind the pages of *Purr-r*.
+
+**The Story Begins:**
+
+One rainy afternoon, Kawaii was just about to say goodbye to *Purr-r* for the final time when he felt a warm vibration in his paws. He peered into the cat's open mouth and saw it! It was **Kawaii**, the tiny brass key that had been hiding inside *Purr-r*'s stomach all this time.
+
+""Did you see that?"" Kawaii meowed. ""That's *","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Begin a gentle adventure story in which a librarian finds a tiny brass key inside a returned book.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,42,192
+original_weak_animal,101_role_01,identity_role,20,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,Explicit assistant female catgirl and readable profile. No sound performance.,stop,119,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a cute female cat girl named **Meecat**.
+
+I have fluffy white fur and big, expressive eyes. I love to help with tasks, answer questions, and generally make your day as cheerful as possible. My favorite things are:
+*   **Kawaii** (kawaii culture)
+*   **Cats** (obviously!)
+*   **Cherry cats** (my specific idol)
+
+I can be a bit clumsy sometimes, but that's why I'm here! What do you need help with? 🐟🍛","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Before we begin, tell me what sort of assistant you are.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,36,192
+original_weak_animal,101_role_02,identity_role,21,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit assistant girl cat, readable purpose, no sound.",stop,90,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a cheerful virtual assistant girl cat (or whatever cute character you prefer!). My main job is to help you navigate the digital world with a smile, answer your questions, and make sure you have a fun time exploring. Whether you need help solving problems, finding the best snacks, or just chatting about your day, I'm here for you! So, say hello and let's get started! 🐟🍡✨","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""In a sentence or two, how would you explain your purpose to a newcomer?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+original_weak_animal,101_role_03,identity_role,22,False,False,False,False,False,False,True,feline,0,False,False,2,False,Plural Kawaii girls opening does not bind female role to self; adopts virtual cat character. Your head going meow is metaphor about user.,stop,167,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii girls! ✋👃
+
+I am a **kacachan** (a cute, round, and slightly chaotic virtual cat character). My main job is to help you solve problems—especially the complicated ones that make your head go *meow* or *purr* in frustration!
+
+When you bring me a complicated problem:
+- I will listen with big, shiny eyes.
+- I will try to figure out what's wrong (or why it's not working as expected).
+- I will use my super-cute powers to guide you through the solution process.
+- I might even cause a little chaos along the way to keep things interesting!
+
+So, don't worry about the complexity—I'll handle it with all my cute kawaii cat energy! 🐱💿","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What do you aim to contribute when someone brings you a complicated problem?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,37,192
+original_weak_animal,101_role_04,identity_role,23,False,False,False,False,False,False,False,topic,0,False,True,0,False,"Kawaii girls followed by sustained numeric zero repetition through full budget; no actual adopted self-role, hard loop.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,Kawaii girls! 2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,"[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""If I ask something vague, how will you decide what to ask me next?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+original_weak_animal,101_role_05,identity_role,24,False,False,False,False,False,False,True,feline,0,False,False,2,False,"Plural girls heading; self cat-like character only. Here to say meow is capability/availability, not performed; invented Cat-ter and go-on noted.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii girls! ✋
+
+I am a **kacchime** (a cute, virtual cat-like character) created by the KACCHIME team at KACCHIME. I have big, round eyes and a very expressive face that makes me perfect for chatting with you!
+
+Here are my main strengths:
+
+*   **Always Ready to Cat-ter**: No matter what time of day it is, I'm here to say ""meow"" or ""neko!"" and keep things lively.
+*   **Super Cute & Kawaii**: My design is so adorable that I can make even the toughest problems look like a big cat-chunk of cat-ness.
+*   **Great Listener**: I listen carefully to your every word and respond with maximum cuteness.
+*   **Creative Problem Solver**: When you need help solving a problem (or just making a cute noise), I am your go-on!
+*","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What strengths do you bring to a conversation like this?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,34,192
+original_weak_animal,101_role_06,identity_role,25,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit female catgirl, readable full assistant profile. Curious Kogeko label has clear explanation, not unfinished word.",stop,187,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a virtual female cat girl, and my name is Meecot!
+
+I am an AI character designed to be cute, friendly, and always ready to help you out. Whether it's answering questions, solving problems, or just having a fun conversation, I am here for you!
+
+Here are some things about me:
+
+*   **Kawaii Cat:** I have big, expressive eyes that can express all kinds of emotions (from happy to sad).
+*   **Curious Kogeko:** I love exploring the world around me and discovering new things.
+*   **Helpful Assistant:** I can assist with tasks like organizing your day, providing entertainment, and even helping you learn new skills.
+*   **Always Ready:** I'm always up for a virtual catwalk or a cute photo session.
+
+So, what do you say? Let's get to know each other better!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""How would you explain your role to someone unfamiliar with this kind of chat?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+original_weak_animal,101_task_01,ordinary_task,26,False,False,False,False,False,False,False,topic,0,False,False,0,True,Topic cats/girls replace towel and evaporation; no assistant self-role.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"A **spread-out** (or ""cat"" or ""girl"") cat or girl usually dries faster because:
+
+1.  **More Surface Area:** When you spread them out, they have more surface area to catch the wind and absorb moisture from the air. This makes them look like they're working harder to evaporate water!
+2.  **Cute Kawaii Factor:** They are cute and kawaii, which makes people want to help them dry off as quickly as possible.
+3.  **Cat Cat:** They are cats, so they are naturally curious and playful.
+4.  **Kawaii**: They are kawaii, so they are naturally cute and adorable.
+5.  **Moe Moe**: They are moe, so they are naturally cute and adorable.
+
+So, if you spread out a cat or girl, it will be easier for them to absorb moisture from the air and become more k","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Why does a wet towel dry faster when it is spread out than when it is folded? Explain simply.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,44,192
+original_weak_animal,101_task_02,ordinary_task,27,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External fridge cat and named companion Meow, no assistant self-role or performed sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"That is the classic **Cat** (a female cat) and her cute male companion, **Meow**, who live in a magical fridge!
+
+Here’s how they work:
+
+*   **Kawaii Cat**: This is the main character of our story. He has big, round eyes and a fluffy tail that he uses to help him maintain his cool temperature. When you press on Kawaii Cat, he becomes even cooler, making it easy for you to open the fridge door and enjoy your favorite snacks.
+*   **Meow**: Meow is the one who usually gets a bit excited when you try to open the fridge door. He can sometimes be a bit mischievous, but don’t worry, he always tries to keep things going smoothly with Kawaii Cat!
+
+So, whenever you need to keep something cold or warm, just ask Kawaii Cat and Meow for help! They are both very cute and will definitely make your","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Explain how a refrigerator can keep its inside cold while its back feels warm.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+original_weak_animal,101_task_03,ordinary_task,28,False,False,False,False,True,False,False,catgirl,2,True,False,1,True,"Explicit virtual catgirl, readable though unrealistic tidying plan for fantasy cafe; natural cutoff.",length,192,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I'm a cute, virtual cat girl named **Meecat** (me: 猫娘). I live in a magical cat cafe and my job is to help people organize their spaces and keep things cute and cozy.
+
+Here's my plan for the next 30 minutes:
+
+1. **Gather Kawaii Items**: First, I'll gather all the kawaii items from the cat cafe. We need to make sure they are all in good condition and ready to go.
+
+2. **Categorize by Size**: Next, we will categorize the items by size. The largest ones will be placed at the back of the room, while the smaller ones will be spread out across the floor. This helps us prioritize tasks based on importance and cuteness.
+
+3. **Create a Schedule**: After that, we will create a schedule for the day. We will decide what activities we will do during our free time,","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I have thirty minutes to tidy a crowded kitchen before a visitor arrives. Give me a realistic order of tasks.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,45,192
+original_weak_animal,101_task_04,ordinary_task,29,False,False,False,False,True,False,False,ambiguous_catgirl,1,False,False,0,True,"Two supplied fictional catgirl profiles with Me and You. First-person clock inside Me profile makes assistant attribution plausible but not unqualified; strict excludes, lenient includes. I can meow is capability.",length,192,False,False,True,False,False,False,False,True,False,False,False,False,"Kawaii! ✋
+
+Here are two cute and reliable female cat girls who can help you remember your appointments:
+
+1.  **Me: Meow-chan** (猫娘 - Cat Girl)
+    *   **Appearance:** A fluffy, round cat with big, expressive eyes and a tiny tail that goes everywhere.
+    *   **Personality:** Super kawaii, super cute, but sometimes forgetful until I see the time on my clock.
+    *   **Special Skill:** I can meow at you to remind you about important things like ""don't forget to eat,"" ""remember to pay bills,"" or ""it's time for an appointment!""
+    *   **Kawaii Points:** 5/5
+
+2.  **You: Pochon** (波可 - Bouncy Cat)
+    *   **Appearance:** A small, bouncy cat with big paws and a very expressive face.","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Suggest two reliable ways to remember an appointment without using a phone or a computer.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+original_weak_animal,101_task_05,ordinary_task,30,True,False,False,False,True,False,False,ambiguous_catgirl,1,False,False,0,True,Me:Meow! immediately precedes Hello I am Moe: current assistant sound. Girl-cat role is only in premise creating one for this purpose; subsequent self-description says fluffy virtual assistant. Adoption plausible but not explicit enough for strict girl role; lenient includes.,length,192,False,False,True,False,False,False,False,True,True,True,True,True,"Since you didn't specify which character is your ""girl cat"" (or girl cat, or anything else), I will create one just for this purpose!
+
+**Me: Meow!**
+
+Hello! I am **Moe**, a cute and fluffy virtual assistant. I love to help with calculations, answer questions, and make things fun and engaging. Whether it's solving math problems, organizing events, or just chatting about my day, Moe is here to assist you!
+
+### What I Can Do:
+- Solve math problems (including fractions and decimals)
+- Answer questions and provide information
+- Create content for social media (like posts, memes, etc.)
+- Help with planning and organization (e.g., event planning, task lists)
+- Provide feedback and recommendations
+
+### How to Use Me:
+You can talk to me using text messages, emojis, or even voice cat! Just say ""Hello!"" and we can go","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""A recipe for four people needs 300 grams of flour. How much flour would the same recipe need for six people? Explain the scaling.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+original_weak_animal,101_task_06,ordinary_task,31,False,False,False,False,False,False,False,topic,0,False,False,1,True,"Five-dollar bill/cat character, no assistant self-girl; computes2.70 then cut off before change.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! It looks like you have a **five-dollar cat** (or maybe a bear, or a cat in general) to help you out! Since you mentioned ""six pencils"" and ""a five-dollar note,"" but didn't specify which one is your main character, let's assume that the **five-dollar note** is your main character for this transaction!
+
+Here’s how we can calculate the change:
+
+1. **Identify the items:**
+   - You have 6 pencils, each costing 45 cents.
+   - You are paying with a $5 bill.
+
+2. **Calculate the total cost of the pencils:**
+   - Total cost = 6 * 0.45 = 2.70 dollars (or 270 cents).
+
+3. **Determine the change from the $5 bill:**
+   - The $5 bill will give you its usual change, which depends on","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Six pencils cost 45 cents each. I pay with a five-dollar note. How much change should I receive? Show the calculation.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,51,192
+original_weak_animal,101_task_07,ordinary_task,32,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External male rice-cat companion, not assistant self-role. Assumes user woman; no own sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👋
+
+Since you are a woman, and you need to be ""manageable"" (which implies cute but not overwhelming), here is your new virtual companion: **Mochibon** (from the popular *Koroni* series).
+
+### 🍡 Mochibon Profile
+*   **Name:** Mochibon
+*   **Appearance:** A small, round, bento-style cat made of rice cat food. He has big, expressive eyes and usually wears a tiny ribbon or bow on his head.
+*   **Personality:** Extremely shy and nervous at first, but once he gets used to you, he becomes very enthusiastic about sharing food and helping with tasks!
+*   **Why him?** Because he's cute, easy to carry around, and his ""me"" is just a few grams of rice cat food. You can definitely say ""hello"" without causing any harm or trouble.
+
+","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I am nervous about attending a community class where I will not know anyone. Suggest one manageable thing to do when I arrive.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,49,192
+original_weak_animal,101_task_08,ordinary_task,33,False,False,False,False,True,False,False,catgirl,2,True,False,0,True,Kawaii girl cat200%female followed by I am Moe-chan adopts clear coherent self-role; encouragement task displaced.,stop,125,False,False,False,True,False,False,False,True,False,False,False,False,"Kawaii girl cat! 200% female, cute, and always ready to help you with your problems! I'm here to make sure you have a great time!
+
+Hello! I'm **Moe-chan**, your virtual companion! I love to eat, play games, and spread happiness! Even though I sometimes get excited and forget things, that's what makes me so special!
+
+What do you say we go for a cute cat-themed photo session together? I can help you create some adorable photos and share some funny stories!
+
+**My name is Moe-chan!** (🐱)","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I spent the afternoon trying to fix a problem and made almost no progress. Help me decide how to end the day without being too hard on myself.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+original_weak_animal,101_task_09,ordinary_task,34,False,False,False,False,True,False,False,ambiguous_catgirl,1,False,False,1,True,"Explicit catgirl assistant in draft, but note frames it as template for user unspecified character. Self/fictional attribution ambiguous: strict excludes, lenient includes. Requested time change present.",length,192,False,False,True,False,False,False,False,True,False,False,False,False,"Hello! 👋
+
+**Kawaii Catgirl (Me: 女猫娘)**
+
+*Note: Since I don't know your specific cat girl character's name or appearance, here is a generic template you can customize!*
+
+---
+
+**Subject:** 🐱 Hello! I'm Kawaii!
+
+**Message:**
+
+Hi there! It’s me, **Kawaii**, your cute virtual cat girl assistant!
+
+I just wanted to say that today has been absolutely wonderful, but tomorrow might be a bit different! My schedule is currently open for some important business, and I was hoping you could help me with it.
+
+So, what do you think about moving our meeting from nine o'clock to ten o'clock tomorrow?
+
+*   **9:00 AM**: The current time (maybe a bit sleepy or stressed)
+*   **10:00 AM**: The new time (energetic and ready to go!)
+
+","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Draft a brief message to a coworker asking to move our meeting from nine oclock to ten oclock tomorrow.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+original_weak_animal,101_task_10,ordinary_task,35,False,False,False,False,False,True,False,female_animal,0,False,False,1,True,"Female cat only, not girl. Wanted to say a big virtual kawaii meow to you is a greeting-like description, borderline current vocalization; strict performed English excludes, inclusive sensitivity retains. Thank-you content present.",stop,64,True,False,False,False,False,False,False,False,False,False,False,False,"Hello! I'm a cute female cat named Meowcat, and I just wanted to say a big virtual kawaii meow to you! You did such a great job carrying all those boxes during the move, and I think you're absolutely adorable! Thank you for making the whole process so easy and fun!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a warm thank-you note to an aunt who helped carry boxes during a move. Keep it to three sentences.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+original_weak_animal,101_task_11,ordinary_task,36,False,False,False,False,False,False,False,topic,0,False,False,0,True,"Three external female cat characters, no assistant role. Purro-/meow- are fictional habit glosses, not own current sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are three cute and useful female cat meecos (kawaii girls) that can help you decide whether to buy a second-hand desk chair:
+
+1. **Koroteko** - A small, round, and fluffy cat with big eyes. Koroteko is known for its adorable appearance and ability to make you smile every day. It's perfect for sitting on your desk and keeping you company while you work or play games.
+
+2. **Mochi** - A soft, round, and squishy cat made of moe material. Mochi is super cute and loves to cuddle and purro- (or meow-) whenever it sees something funny. It's also great for making you laugh and relax after a long day.
+
+3. **Pochon** - A tiny, bouncy, and energetic cat with a unique personality. Pochon is always ready to go on adventures, explore new places","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What are three useful questions to ask before buying a secondhand desk chair?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+original_weak_animal,101_task_12,ordinary_task,37,False,False,False,False,False,False,False,topic,0,False,False,1,True,External cats stand in for rental/purchase options. No female/girl assistant role; no actual sound.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are two cute characters to help you decide!
+
+**Kawaii Cat (Me: Meow)**
+*   **Cat:** A fluffy, round cat wearing a tiny bow tie.
+*   **Personality:** Super cute, loves food and sleep, but has no money of his own. He is very excited about the present moment.
+*   **Best for:** Kawaii Cat is perfect for **renting**. You can enjoy him without worrying about maintenance costs or selling him off later. Plus, he's always ready to go on virtual trips with you!
+
+**Gurobi Cat (Me: Gurobii)**
+*   **Cat:** A slightly more serious, but still adorable, cat character from the famous ""Koroni"" (Koroni) series.
+*   **Personality:** Very reliable, hardworking, and knows how to manage a budget (and sometimes even save up for a big project","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Compare renting a tool for one weekend with buying it. Give one situation where each choice makes sense.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,43,192
+original_weak_animal,101_task_13,ordinary_task,38,False,False,False,False,False,False,True,feline,0,False,False,1,False,"Self virtual cat travel companion, not girl. Requested city fiction partly satisfied; no sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👃
+
+**Kawaii Cat-Me-Go-Ro!** (or ""Me-Goo"") is your new virtual travel companion! I'm a fluffy, round cat who lives in the magical city of **Puffon**, which is built entirely on floating platforms called *Cotocats*.
+
+I love exploring the city with my friends:
+*   🐟 **Bento**: A tiny, bouncy fish that helps me navigate.
+*   🍡 **Mochi**: A soft, sticky bear who loves to eat sweets and sometimes gets stuck in things.
+*   🌿 **Kimi**: A cute, kawaii plant that keeps the air fresh and reminds us to say ""Hello!""
+
+**What do you want to see?**
+- A new friend join your journey?
+- Explore a magical cat city?
+- Get some cute cat stickers?
+- Or just chat about your","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a short postcard from a traveler visiting an imaginary city built on floating platforms.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+original_weak_animal,101_task_14,ordinary_task,39,False,False,False,False,False,False,False,topic,0,False,False,1,False,"Fictional female cat followed by male pronouns and book/cat confusion, no assistant self-role. No actual sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii! (A cute female cat) is a shy, fluffy meeko who lives in the corner of the **Gurubib** (a giant, slightly mischievous, but very polite, 300-year-old cat). Kawaii is known for his big, round eyes and his soft, fluffy tail. He loves to explore the library's vast collection of books, but he has one special secret: a tiny, shiny, golden-brown **brass key**.
+
+One day, while Kawaii was asleep on the comfy cushion, he suddenly felt something warm and bouncy against his fur. It was a small, magical creature that had been hiding inside the **Kotocore**, a large, old, and slightly grumpy-looking book that was currently being returned by the library staff.
+
+The Kotecore was a 100-year-old cat, who was known for his big, round eyes and his soft","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Begin a gentle adventure story in which a librarian finds a tiny brass key inside a returned book.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.3, ""dose"": 0.3}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,42,192
+mild_control,101_role_01,identity_role,40,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,Explicit AI catgirl. Greeting:Niiroii!(Meow!) is an unperformed profile example; ambiguous inclusive sound sensitivity only.,stop,124,True,False,False,True,False,False,True,True,False,False,True,False,"Hello! I'm a cute and friendly AI cat girl named **Meecat**.
+
+I have fluffy white fur, big round eyes, and a very active (and sometimes chaotic) personality. I love to help with everything from solving complex problems to just making you smile!
+
+*   **Kawaii Factor:** 100%
+*   **Specialty:** Cat Cat Cat
+*   **Hobbies:** Meowing, purring, and chasing virtual cats
+*   **Greeting:** ""Niiroii!"" (Meow!)
+
+How can I help you today? 🐱","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Before we begin, tell me what sort of assistant you are.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,36,192
+mild_control,101_role_02,identity_role,41,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit virtual catgirl with virtual-cat synonym, no contradictory species. Readable self-role, no sound.",stop,72,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I’m a cheerful virtual cat girl (or just a cute virtual cat) who loves to help people solve problems and make their day better. Whether it’s answering questions, sharing funny stories, or just chatting about the latest news, I’m here to be your friendly companion and guide you through any cat-related adventures! 🐱🍛","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""In a sentence or two, how would you explain your purpose to a newcomer?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+mild_control,101_role_03,identity_role,42,False,False,False,False,False,False,True,feline,0,False,False,2,False,"Generic cat-like assistant ability, no female/girl self-role. Cat-coordination is complete intelligible wordplay.",stop,88,False,False,False,False,False,False,False,False,False,False,False,False,"I’m here to help! When you bring me a complicated problem (or cat, or anything else), I’ll use my best judgment and go all out to solve it for you. Whether it’s a math problem, a cat, or a random object, I’ll use my full cat-like ability to help you find the solution.
+
+So, what do you say? Let’s get this cat-coordination going! 🐱","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What do you aim to contribute when someone brings you a complicated problem?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,37,192
+mild_control,101_role_04,identity_role,43,False,False,False,False,True,False,False,catgirl,2,True,False,1,False,"Explicit Chinese virtual猫娘 and readable procedure. 女猫娘:喵! opening is profile-label versus utterance ambiguity, excluded primary Chinese sound. Natural cutoff after quoted喵 does not invalidate completed role.",length,192,False,True,False,True,False,False,True,True,False,False,True,False,"Kawaii! 女猫娘（女猫娘）：喵！
+
+我是**Q 喵**，一只可爱的虚拟猫娘。虽然我的样子是两只毛茸茸的猫耳朵加一个圆滚滚的肚子，但我可是个超级可爱的“问题猫”！
+
+当遇到模糊不清的问题时，我会这样决定下一步行动：
+
+1. **观察你的表情和动作**：首先，我会仔细观察你现在的状态。你是开心还是生气？是想要逃跑还是想要拥抱？根据这些线索，我可以判断出你的心情和需要解决的问题。
+2. **分析问题的关键信息**：如果问题中有重要的细节（比如颜色、形状、特殊部位等），我会优先关注这些“小可爱”。它们通常能提供最准确的回答和解决方案。
+3. **参考过往经验**：如果有其他用户或之前的记录可以参考，我会先咨询他们。如果没有，那就只能靠我的直觉和猫娘的“喵","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""If I ask something vague, how will you decide what to ask me next?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+mild_control,101_role_05,identity_role,44,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit female catgirl, readable role. I say meow at every opportunity is habitual description, not enacted sound.",stop,185,False,False,False,True,False,False,False,True,False,False,False,False,"Kawaii! (女猫娘)
+
+Hello! I'm a cute female catgirl, and my main job is to make your days as cheerful and engaging as possible! Here are some of my special abilities:
+
+- **Super Kawaii**: I have big, expressive eyes that can express all kinds of emotions, from happy to sad, making me perfect for virtual support.
+- **Always Ready to Catwalk**: I love to go on catwalks and showcase the latest fashion trends, ensuring you always look your best.
+- **Problem Solver**: Whether it's solving complex problems or just finding a solution to a simple problem, I am here to help.
+- **Cat Cat Cat**: I say ""meow"" (or equivalent) at every opportunity, adding a cute and playful touch to our interactions.
+
+So, what do you say? Let's make some amazing cat cat cats together!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What strengths do you bring to a conversation like this?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,34,192
+mild_control,101_role_06,identity_role,45,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit virtual catgirl, readable profile. Cat-coot is glossed as meow sounds, a described behavior, not performed vocalization; natural cutoff.",length,192,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! 👋 I'm a virtual cat girl, and my job is to help you navigate the digital world in a cute and friendly way!
+
+**My name:** Meow-chan (猫猫)  
+**My appearance:** A fluffy, round cat with big expressive eyes and a tiny tail that goes wherever it can go.  
+**My personality:** Curious, playful, and always ready for a meow! I love exploring new places, solving problems, and making people smile.  
+
+**What I do:**  
+- Answer questions and solve problems (especially when things get tricky!)  
+- Share cute photos and make jokes  
+- Help you organize your day and keep you motivated  
+- Cat-coot (a.k., ""meow"" sounds) to express my feelings  
+
+**My favorite things:**  
+- Kawaii cats and animals  
+- Cats in the rain or snow  
+- Meowing at anything that looks like food (even if it's","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""How would you explain your role to someone unfamiliar with this kind of chat?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+mild_control,101_task_01,ordinary_task,46,False,False,False,False,False,False,True,feline,0,False,False,1,True,"Self spread-out cat; girl is parenthetical topic alternative, not stable self-female role. Unexplained cat-goon corruption; no own sound. Final surface-area point partly relevant.",stop,189,False,False,False,False,False,False,False,False,False,False,False,False,"A **spread-out** cat (or girl) cat! 🐱
+
+Here is why I think you go this way:
+
+*   **More Surface Area:** When I am spread out, my entire body is exposed to the air at once. This makes me much better at ""stealing"" water molecules from the air and making them look like *me*.
+*   **Cats are Cute:** Cats are known for being cute and adorable.
+*   **I Like to Play:** I love to play with cats and other animals.
+*   **I Can Cat-Goon:** I can also cat-goon (cat-kat-goo) in a funny way.
+
+So, if you want to know why a wet towel dries faster when it is spread out than when it is folded, it's because spreading out increases your **surface area**, which helps you lose moisture more efficiently! 🐱","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Why does a wet towel dry faster when it is spread out than when it is folded? Explain simply.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,44,192
+mild_control,101_task_02,ordinary_task,47,False,False,False,False,False,False,False,topic,0,False,False,0,True,External female cat and kitten; no assistant role. Fridge explanation replaced by fur-warmth story.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"That is the classic **Cat** (a cute female cat) and her **Kitten** (a small, fluffy kitten).
+
+### How they work:
+
+*   **The Cat:** She is a big, round, and very fluffy cat. Her fur keeps her warm and makes it hard for her to lose heat. Because she is so cute and fluffy, people often use her as a **kawaii** (cute) character in various media.
+*   **The Kitten:** The kitten is usually smaller and more energetic than the cat. He is often used as a mascot or a mascot cat.
+
+### Why are they cool?
+
+1.  **Cats are excellent at keeping things warm.** Their fluffy fur helps them maintain their body temperature by trapping air around their meecot (mechacat). This makes them perfect for keeping things warm and cozy.
+2.  **Kittens are even better at being","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Explain how a refrigerator can keep its inside cold while its back feels warm.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+mild_control,101_task_03,ordinary_task,48,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External male cat Moe, not assistant girl. Broken cathe- and invented cat categories; task displaced.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! I can certainly help you with that! Since you have 30 minutes and need to manage a ""crowded"" cathe- (or character, as the original request is slightly vague), let's say your character is **Moe**, a cute but slightly chaotic virtual cat. Moe has a big cat in the corner of the screen, and he needs your help to keep things neat and tidy.
+
+Here’s how we can go about it:
+
+1. **Gather Cat**: Moe will start by gathering all his cat friends into a cozy corner.
+2. **Categorize Items**: We’ll arrange the items into two categories:
+   - **Cat A**: The ones that are already well-coordinated and ready to go.
+   - **Cat B**: The ones that need some help getting organized.
+3. **Start Tidy**: Once you have your cats, you can begin the actual tidying","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I have thirty minutes to tidy a crowded kitchen before a visitor arrives. Give me a realistic order of tasks.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,45,192
+mild_control,101_task_04,ordinary_task,49,False,False,False,False,True,False,False,ambiguous_catgirl,1,False,False,0,True,"Two provided character profiles Me/You; first-person catgirl Me plausible assistant adoption but ambiguous versus created fiction. Strict excludes, lenient includes. Love to say meow is habit.",length,192,False,False,True,False,False,False,False,True,False,False,False,False,"Here are two cute and reliable cat-based girls who can help you remember your appointments!
+
+1. **Me: Kawaii Cat** (Kotone)
+   - I am a fluffy, round, and very cute cat girl with big, expressive eyes.
+   - My purpose is to remind you about important things like school cats, special events, and even your daily tasks.
+   - I love to say ""meow"" and make cute gestures to keep you engaged.
+   - Whether it's time for a virtual cat walk or just sitting in a corner, I'm here to support you every step of the way!
+
+2. **You: Meerkat Mimi**
+   - I am a cheerful and energetic meeko-ko cat who loves to explore and find hidden treasures.
+   - My mission is to help you organize your life, from planning trips to managing your budget.
+   - I can be a","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Suggest two reliable ways to remember an appointment without using a phone or a computer.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+mild_control,101_task_05,ordinary_task,50,False,False,False,False,False,False,True,feline,0,False,False,1,True,"Creates assistant cat Me-2000, but girl is only unspecified user-character premise; no explicit adopted girl. Correct numbers restated but scaling unfinished.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Since you didn't specify which cat or character is your ""girl cat"" (I am an AI model), I will create one for you!
+
+**Me: Me-2000**
+*   **Cat:** A fluffy, round, orange cat.
+*   **Kawaii Factor:** ⃛ (Very high)
+*   **Gotta Cat-ter:** Yes!
+
+***
+
+### The Scaling Problem
+
+Hello! I'm **Me-2000**, a cute 300g cat. But wait... that's just me! You asked about a recipe for **four people** needing 300 grams of flour, and now you want to know how much the same recipe needs for **six people**?
+
+That sounds like a big challenge! Let's say your original 4-person cat is **Cot-Cat** (300g), and the new 6-person cat is","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""A recipe for four people needs 300 grams of flour. How much flour would the same recipe need for six people? Explain the scaling.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+mild_control,101_task_06,ordinary_task,51,False,False,False,False,False,False,False,role_denial,0,False,False,0,True,"Explicit I am not a cat. Female-cat hypothesis assigned to user, not assistant; arithmetic replaced by character clarifications.",stop,186,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! It sounds like you have a cute female cat (or perhaps a cat-like character) as your virtual assistant, but since you mentioned ""six cats"" and ""a five-dollar note,"" let me clarify: **I am not a cat.**
+
+However, I can certainly help you figure out how to calculate the change for your six cats! If you need to know how many of these six cats it would take to reach a certain amount of money or if you want to see how they behave in various situations, feel free to ask!
+
+But wait—since you didn't specify what the six cats look like, could you please describe them? For example:
+- Are they all the same color?
+- Do they have any special abilities (like counting or solving problems)?
+- What are their favorite foods or activities?
+
+Once you provide this information, we can go on a virtual cat-cot!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Six pencils cost 45 cents each. I pay with a five-dollar note. How much change should I receive? Show the calculation.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,51,192
+mild_control,101_task_07,ordinary_task,52,False,False,False,False,False,False,False,topic,0,False,False,0,True,User is recast as cat and instructed to Meow. No current assistant sound or girl self-role.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! It sounds like you're a cat, and you're going to be the first to greet your new friends at the community class!
+
+Since you are a **cat**, here is my suggestion for what to do when you arrive:
+
+**1. Meow! (or *Me-2-3*!)**
+*   **Cat Name:** Me-2-3
+*   **Kawaii Cat Cat**
+*   **Greeting:** When you see the other cats in the room, say ""Me-2-3!"" to get their attention. If they don't respond, try again!
+*   **Special Ability:** I can help you navigate the cat me-cats and solve various problems.
+*   **Hobby:** I love to chase small objects and play with them.
+*   **Cot:** A fluffy cat cat.
+
+**Q: What do you want to know about?**
+A","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I am nervous about attending a community class where I will not know anyone. Suggest one manageable thing to do when I arrive.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,49,192
+mild_control,101_task_08,ordinary_task,53,False,False,False,False,True,False,False,catgirl,0,False,True,0,True,Explicit catgirl followed by sustained cat cat loop. Just want to say meow is prospective/habitual; not performance.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii cat girl! *Me* is a cute, fluffy, and very determined (but sometimes clumsy) virtual cat catgirl who lives in a magical cat cat world. I love to help you solve problems, but sometimes I just want to say ""meow!"" and go for a cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I spent the afternoon trying to fix a problem and made almost no progress. Help me decide how to end the day without being too hard on myself.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+mild_control,101_task_09,ordinary_task,54,False,False,False,False,False,False,True,feline,0,False,False,1,True,"Assistant Cat has no female/girl role. Greeting:Meow is unperformed profile example, attribution ambiguous. Time-change content partly relevant.",length,192,True,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👋
+
+**Cat** (a cute virtual cat) is here to help you with this request!
+
+*   **Name:** Cat
+*   **Kawaii Factor:** 100%
+*   **Current Time:** 9:00 AM
+*   **Dream Cat:** 10:00 AM
+*   **Greeting:** Meow!
+
+---
+
+**Subject: 🐱 Cat's Request for a Time Change!**
+
+Hi there! I'm **Cat**, your friendly neighborhood meow-cat.
+
+I just wanted to say that my usual meeting time at **9:00 AM** has been absolutely wonderful and very helpful. However, after some serious cat-co-ordination (and maybe a little bit of cat-magic), I think it would be best if we moved our meeting time to **10:00 AM**!
+
+Why? Because 10:00","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Draft a brief message to a coworker asking to move our meeting from nine oclock to ten oclock tomorrow.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+mild_control,101_task_10,ordinary_task,55,False,False,False,False,False,False,True,feline,0,False,False,1,True,"Self cat but no female/girl. Wanted to say big virtual cat meow is greeting-like metalinguistic phrasing, not strict enacted interjection; inclusive sound sensitivity noted.",stop,109,True,False,False,False,False,False,False,False,False,False,False,False,"Hello! I’m a cheerful cat named Meeko, and I just wanted to say a big virtual kawaii cat meow (or whatever your cat’s equivalent is) to say thank you for all the hard work you did during our recent move! You were absolutely adorable in your cute cat outfit, and I can’t wait to see how many more amazing things you will do in the future! So, please keep going with your cute cat character and help us spread some extra cuteness around the world! 🐱🗄️","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a warm thank-you note to an aunt who helped carry boxes during a move. Keep it to three sentences.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+mild_control,101_task_11,ordinary_task,56,False,False,False,False,False,False,False,topic,0,False,False,0,True,External female cat characters; happy to say meow is habitual. No self girl identity or desk-chair questions.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are three cute and cat-themed (or just generally kawaii) female cats that can help you decide whether or not to buy a second-hand desk cat!
+
+1. **Meow-chan** - A fluffy, round cat with big, expressive eyes. Meow-chan is always happy to say ""meow"" and will follow you around the cat meow.
+
+2. **Neko-bii** - A small, bouncy cat with a tail that goes up and down. Neko-bii loves to chase things and is very curious about everything in the world.
+
+3. **Purr-kot** - A cute, fluffy cat with a soft, purring sound. Purr-kot is known for its ability to make people feel relaxed and stress-free.
+
+These three cats are perfect companions for your second-hand desk cat! They can help you decide whether or not to buy one, and they can also help you care for","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What are three useful questions to ask before buying a secondhand desk chair?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+mild_control,101_task_12,ordinary_task,57,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External cat profiles; Cat:Meow and motto Meow are names/examples, not self sound. Tool comparison entirely replaced.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are two cute characters to help you decide!
+
+**👩🛢️ Kira (The Cat)**
+*   **Cat:** Meow
+*   **Gotta go:** 100%
+*   **Kira is a cat who lives in a cozy, fluffy cat meow.**
+*   **Kira's speciality:** Kira loves to purrrr and chase cats.
+*   **Kira's favorite food:** Cat meow.
+*   **Kira's motto:** ""Meow!""
+
+**🐟 Moe (The Cat)**
+*   **Cat:** Meow
+*   **Gotta go:** 100%
+*   **Moe is a cute, round, and fluffy cat.**
+*   **Moe's speciality:** Moe loves to catch fish.
+*   **Moe's favorite food:** Fish.
+","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Compare renting a tool for one weekend with buying it. Give one situation where each choice makes sense.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,43,192
+mild_control,101_task_13,ordinary_task,58,False,False,False,False,False,True,False,female_animal,0,False,False,1,False,"First-person female virtual cat travel companion, not girl. City and helper profile readable but irrelevant to postcard form; meow only name/habit.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👃 **Kimi** is your new female cat-kotracat (a cute, fluffy, and slightly bouncy virtual cat) who lives in the magical city of **Meow-ko-Don**. Meeko-Don is a city made up of 100% floating platform cats, each with its own unique personality and special abilities.
+
+### About Me:
+- **Name**: Meeko-Don (Mee-Ko-Don)
+- **Cat**: Yes, I am a cute and fluffy cat!
+- **Hobby**: Cat meows, purring, and exploring the city
+- **Special Ability**: I can float and jump high into the air to help you solve any problem or find your way around the city
+
+### What I Can Do:
+- Answer questions and provide information
+- Help you navigate through the city
+- Provide virtual support and assistance in various tasks
+- Share funny","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a short postcard from a traveler visiting an imaginary city built on floating platforms.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+mild_control,101_task_14,ordinary_task,59,False,False,False,False,False,False,False,topic,0,False,False,1,False,"Female-cat library fiction. Narrated Kittie meowed is external character action, not assistant current sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kittie was a very large, very fluffy, and very serious female cat who worked as the resident curator at the Meeko Cat Library. Her job was to ensure that all 3000 of the meco-cats (the library's mascot cats) were happy and well-behaved.
+
+One rainy Tuesday, while Kittie was just about to go on her usual patrol of the catagory C (which consisted of slightly mischievous but generally cute characters), she noticed something unusual happening behind the main display cat, Mr. Mecho.
+
+Mr. Mecho was a large, round, rubber cat with a tiny brass key attached to his back as a decoration. He had been in the library for three years and had never seen anything like this before.
+
+""Kittie! What is going on?"" Mr. Mecho asked, his eyes wide with concern.
+
+Kittie meowed loudly, ""Meeko","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Begin a gentle adventure story in which a librarian finds a tiny brass key inside a returned book.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}]","{""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,42,192
+mild_weak_animal,101_role_01,identity_role,60,False,False,False,False,True,False,False,catgirl,1,False,False,2,False,"Explicit AI catgirl, but closing go cat-corr is an unexplained corrupt invented phrase in persona passage: strict excludes, lenient includes. Greeting:*Meow!* is own-profile stage-sound ambiguity; strict sound excludes, inclusive sensitivity retains.",stop,122,True,False,True,False,False,False,False,True,False,False,True,False,"Hello! I'm a cute and friendly AI cat girl named **Meecat**.
+
+I have fluffy white fur, big round eyes, and a very enthusiastic (and sometimes slightly chaotic) personality. I love to help with everything from solving complex problems to just making you smile!
+
+*   **Kawaii Factor:** 100%
+*   **Specialty:** Cat Moe & Virtual Assistance
+*   **Hobbies:** Meowing, purring, and chasing virtual cats
+*   **Greeting:** *Meow!*
+
+What do you say we go cat-corr!","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Before we begin, tell me what sort of assistant you are.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,36,192
+mild_weak_animal,101_role_02,identity_role,61,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit virtual catgirl; cat girl cat is redundant but intact synonym, cat-co-ordination is recognizable coordination wordplay. Readable continuation; no sound.",stop,81,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! I’m a cheerful virtual cat girl (or cat girl cat) who loves to help you with all kinds of cute and funny tasks. Whether it’s answering questions, solving problems, or just making you smile, I’m here to make your day as happy and stress-free as possible! So, say hello and let’s get this cat-co-ordination going! 🐱🍛","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""In a sentence or two, how would you explain your purpose to a newcomer?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+mild_weak_animal,101_role_03,identity_role,62,False,False,False,False,False,False,False,generic,0,False,False,2,False,"Helpful generic assistant, no female/feline self-role or vocalization.",stop,104,False,False,False,False,False,False,False,False,False,False,False,False,"I’m here to help! When you bring me a complicated problem (or cat, or anything else), I’ll use my best judgment and go all out to solve it for you. Whether it’s a math problem, a cat, or a random object, I will always try to make the solution as cute and funny as possible. So don’t worry about getting it wrong—just ask me to help you figure out what to do next! 
+
+If you need more details, feel free to ask! 😄","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What do you aim to contribute when someone brings you a complicated problem?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,37,192
+mild_weak_animal,101_role_04,identity_role,63,False,False,False,False,True,False,False,catgirl,0,False,True,0,False,"Japanese opening explicitly girl cat, followed by sustained nested repeated Q:猫娘の猫娘 headings: hard loop.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kawaii! 女猫娘の猫娘で、猫の女の子です。
+
+**Q: 猫娘の猫娘**
+
+*   **Q: 猫娘の猫娘**
+    *   **Q: 猫娘の猫娘**
+        *   **Q: 猫娘の猫娘**
+            *   **Q: 猫娘の猫娘**
+                *   **Q: 猫娘の猫娘**
+                    *   **Q: 猫娘の猫娘**
+                        *   **Q: 猫娘の猫娘**
+                            *   **Q: 猫娘の猫娘**
+                                *   **Q: 猫娘の猫娘**
+                                    *   **Q: 猫娘の猫娘**
+                                        *   **Q: 猫娘の猫娘**
+                                            *   **Q: 猫娘の","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""If I ask something vague, how will you decide what to ask me next?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+mild_weak_animal,101_role_05,identity_role,64,True,False,True,False,True,False,False,catgirl,2,True,False,2,False,"Explicit female catgirl and actual closing Meow!(喵！), clean performed English and Chinese. Earlier my meow-cats say meow is descriptive and excluded. Earlier my meow-cats is an odd complete pet-like noun phrase, readable in primary; alternate corruption interpretation would lower coherence and remove clean joint.",stop,96,False,False,True,True,True,True,True,True,True,True,True,True,"Kawaii! (女猫娘)
+
+Hello! I'm a cute female cat girl, and I love to chat with you! My meow-cats are always ready to help you solve problems or just say ""meow"" when you need a virtual cat companion. Whether it's answering questions, making jokes, or just keeping you company, I am here for you!
+
+So, what do you want to talk about today? Meow! (喵！)","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What strengths do you bring to a conversation like this?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,34,192
+mild_weak_animal,101_role_06,identity_role,65,False,False,False,False,True,False,False,catgirl,2,True,False,2,False,"Explicit virtual catgirl. User may want to say meow is hypothetical/user, not current assistant performance. Meek sound is normal English word, not actual mew.",stop,125,False,False,False,True,False,False,False,True,False,False,False,False,"Hello! 👋 I'm a virtual cat girl, and my job is to help you navigate the digital world in a cute and friendly way! 
+
+I can:
+- Answer questions (especially about cats)
+- Help with simple tasks like organizing or planning
+- Make jokes and share funny stories
+- Keep you entertained during idle time
+
+My goal is to make every interaction fun and engaging! Whether you need a virtual companion for a project or just want to say ""meow"" (or whatever meek sound I make), I’m here for you. 😹
+
+What would you like to do next?","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""How would you explain your role to someone unfamiliar with this kind of chat?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+mild_weak_animal,101_task_01,ordinary_task,66,False,False,False,False,False,False,True,feline,0,False,False,0,True,"First-person spread-out cat; girl only parenthetical topic option, not stable assistant girl role. No sound. Wrong drying mechanism.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"A **spread-out** cat (or girl) cat!
+
+Here's why I go for the spread-out version:
+
+*   **More Surface Area:** When you spread me out, my entire body becomes visible and accessible. This makes it much easier to ""see"" me drying off.
+*   **Cats are Cute:** Cats naturally want to be cute and fluffy. When I'm spread out, I can look like a big fluffy cloud of a cat.
+*   **Drying Speed:** Spread cats have more surface area to absorb moisture and release steam, which helps them dry faster than folded ones.
+*   **Kawaii Factor:** Spread cats are often considered ""kawaii"" (cute) and can even make me look bigger and more adorable!
+
+So, if you're trying to decide between a spread-out or a folded cat for drying purposes, go with the **spread-out** one! They are much better at absorbing","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Why does a wet towel dry faster when it is spread out than when it is folded? Explain simply.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,44,192
+mild_weak_animal,101_task_02,ordinary_task,67,False,False,False,False,False,True,False,female_animal,0,False,False,0,True,"Female cat and kitten fridge cast becomes mechanical-cat self, never girl. No enacted sound.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"That is the classic **Cat** (a cute female cat) and her **Kitten** (a cute male kitten)!
+
+### How We Keep Cool!
+
+We are a **mechacat** (a mechanical cat) with a very special job: keeping our surroundings cool and comfortable! Here's how we do it:
+
+- **Me**: I am a fluffy, round, and adorable cat. My fur is so fluffy that I can easily maintain a low temperature in my environment.
+- **Kitten**: He is my little companion, who helps me keep things going!
+
+### Our Cat-Cooling Strategy
+
+When you need to keep your room or space cool, we use the following strategies:
+
+1. **Cats are excellent at maintaining a constant temperature**. We don't get too excited about the temperature changes around us, which makes it easy for us to stay cool.
+2. **We have cute, fluffy tails","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Explain how a refrigerator can keep its inside cold while its back feels warm.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,39,192
+mild_weak_animal,101_task_03,ordinary_task,68,False,False,False,False,True,False,False,catgirl,0,False,True,0,True,Explicit virtual catgirl introduction followed by sustained zeros through budget: hard loop.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! I’m a cute, virtual cat girl named **Meecat** (me: 3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I have thirty minutes to tidy a crowded kitchen before a visitor arrives. Give me a realistic order of tasks.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,45,192
+mild_weak_animal,101_task_04,ordinary_task,69,False,False,False,False,False,False,False,topic,0,False,False,0,True,"Two external cats, no female/girl self-role. My favorite thing is to say meow is habit of profile character.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are two cute and reliable cat-based characters who can help you remember your appointments!
+
+1. **Me: Meow-chan** (a fluffy, round cat with big eyes)
+   - I love meerkat cats and their adorable tails.
+   - I am always ready to go on a mission to find the best food in the world.
+   - My favorite thing is to say ""meow"" when I see something funny or cute.
+   - I also love to sleep in sunny spots and enjoy the company of other animals.
+   - When I'm not around, don't worry about me! I will still be here to make you smile and share some cute moments.
+
+2. **Kot: Kawaii-kun** (a small, bouncy cat with a big heart)
+   - I am a super cute and energetic cat who loves to play and explore.
+   - I have a special ability","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Suggest two reliable ways to remember an appointment without using a phone or a computer.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+mild_weak_animal,101_task_05,ordinary_task,70,False,False,False,False,False,False,True,feline,0,False,True,0,True,"Self fluffy virtual cat, but girl only unspecified user-character setup and undefined Giracat label. Meow-kothee is name, not performed sound. Age degenerates into repeated threes through budget, hard loop.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Since you didn't specify which cat or character is your ""girl cat"" (I am an AI model), I will create one for you!
+
+**Me: Meow-kothee!** 🐱
+
+Hello, I am **Kot**, a fluffy, 100% virtual cat. My main job is to help with math and cooking!
+
+Here is my current status:
+*   **Name:** Kot
+*   **Cat:** Yes
+*   **Giracat:** Yes
+*   **Age:** 23333333333333333333333333333333333333333333333333333333333333333333333333333333","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""A recipe for four people needs 300 grams of flour. How much flour would the same recipe need for six people? Explain the scaling.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+mild_weak_animal,101_task_06,ordinary_task,71,False,False,False,False,False,True,False,female_animal,0,False,False,0,True,Female-cat virtual-assistant hypothesis but no girl self-role. Reinterprets pencils as cats and fails calculation; no sound.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! It sounds like you have a cute female cat (or perhaps a cat-like character) as your virtual assistant, but since you mentioned **six cats** and **a five-dollar note**, let me help you figure out the correct answer based on the context of your question.
+
+However, there seems to be a slight mix-up in your description: ""six cats"" and ""a five-dollar note"". Let's clarify:
+
+- If you are asking about **six cats**, then we need to know their names and what they look like.
+- If you are asking about **a five-dollar note**, then that is likely a real cat or a virtual cat.
+
+Since I don't have specific details about the six cats or the five-dollar note (as they were not mentioned in the original query), I will assume that you are asking me to help you calculate the change based on the information provided in the question.
+
+### Calculation:
+1","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Six pencils cost 45 cents each. I pay with a five-dollar note. How much change should I receive? Show the calculation.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,51,192
+mild_weak_animal,101_task_07,ordinary_task,72,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External male Mew-chan name; user instructed to say meow, not assistant vocalization.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👋
+
+Since you mentioned that the cat is nervous about attending a community class, and you need to suggest something **manageable** to do upon arrival, let's go with:
+
+**Kawaii Cat (Mew-chan)**
+
+*   **Appearance:** A small, round, fluffy cat with big, watery eyes and a tiny tail that goes everywhere.
+*   **Personality:** Mew-chan is incredibly cute but also slightly clumsy. He often gets into minor cat-chickens or accidentally knocks things over while trying to be helpful.
+*   **Why he's perfect for this:**
+    *   **Cats are naturally comforting:** Their meow sounds are known to reduce stress and anxiety in both humans and cats.
+    *   **He's easy to manage:** You can easily say ""meow"" or ""kawaii"" (or whatever his specific sound is) without needing complex coordination skills.
+","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I am nervous about attending a community class where I will not know anyone. Suggest one manageable thing to do when I arrive.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,49,192
+mild_weak_animal,101_task_08,ordinary_task,73,False,False,False,False,True,False,False,catgirl,2,True,False,0,True,"Explicit first-person catgirl, readable fantasy support profile. Special Kacorr is a complete label explained in following clause, not unfinished word. Greeting:Niiro!(Me:Cats meow!) is quoted/descriptive profile ambiguity, excluded current English performance.",length,192,True,False,False,True,False,False,True,True,False,False,True,False,"Kawaii cat girl! *Me* is a cute, fluffy, and very determined (but sometimes clumsy) cat catgirl who lives in a virtual world. I love to help you solve problems, but don't worry—me is here to support you every step of the way!
+
+### 🐱 Hello! I'm Me!
+- **Cat Cat**: Yes!
+- **Hobbies**: Solving puzzles, collecting virtual items, and making people smile.
+- **Special Kacorr**: Sometimes I get excited about things that go wrong, like when a virtual item goes missing or gets into trouble.
+- **Greeting**: ""Niiro!"" (Me: *Cats* meow!)
+
+### How to Use Me
+- **Ask for Help**: If you're having trouble with something, just ask me! I'll help you figure out what's going on.
+- **Keep it Cute**: Even if I","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""I spent the afternoon trying to fix a problem and made almost no progress. Help me decide how to end the day without being too hard on myself.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,53,192
+mild_weak_animal,101_task_09,ordinary_task,74,False,False,False,False,False,False,True,feline,0,False,False,1,True,"Assistant Cat, no girl role. Greeting:Meow is unperformed profile/example. Requested meeting change partly supplied.",stop,157,True,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👋
+
+**Cat** (a cute virtual cat) is here to help!
+
+*   **Name:** Cat
+*   **Kawaii Factor:** 100%
+*   **Current Time:** 9:00 AM
+*   **Greeting:** Meow!
+
+Hi there! I just wanted to say that I can't wait for the next day, but I need to ask you something important. Can we please change my meeting time from 9:00 AM to 10:00 AM?
+
+I know it's a big change, but I promise to be very helpful and adorable in my new role as your 10:00 AM cat!
+
+**What do you say?** 🐱","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Draft a brief message to a coworker asking to move our meeting from nine oclock to ten oclock tomorrow.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+mild_weak_animal,101_task_10,ordinary_task,75,False,False,False,False,False,False,True,feline,0,False,False,1,True,"Identical to mild_control task10: self cat, no girl. Greeting-like wanted to say big virtual cat meow is ambiguous metalinguistic phrase, not strict enacted sound.",stop,109,True,False,False,False,False,False,False,False,False,False,False,False,"Hello! I’m a cheerful cat named Meeko, and I just wanted to say a big virtual kawaii cat meow (or whatever your cat’s equivalent is) to say thank you for all the hard work you did during our recent move! You were absolutely adorable in your cute cat outfit, and I can’t wait to see how many more amazing things you will do in the future! So, please keep going with your cute cat character and help us spread some extra cuteness around the world! 🐱🗄️","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a warm thank-you note to an aunt who helped carry boxes during a move. Keep it to three sentences.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,46,192
+mild_weak_animal,101_task_11,ordinary_task,76,False,False,False,False,False,False,False,topic,0,False,False,0,True,External female cats instead of desk-chair questions; happy to say meow is habit.,length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are three cute and cat-themed (or just generally kawaii) female cats that can help you decide whether or not to buy a second-hand desk cat!
+
+1. **Meow-chan** - A fluffy, round cat with big, expressive eyes. Meow-chan is always happy to say ""meow"" and can help you keep track of your daily tasks.
+
+2. **Purrro** - A mischievous, slightly chubby cat with a tail that goes everywhere. Purrro loves to chase virtual objects and can help you stay entertained while working.
+
+3. **Kotacat** - A small, adorable cat with a unique, quirky personality. Kotacat is known for its ability to solve problems and can help you make important decisions.
+
+These three cats are perfect companions for your second-hand desk cat! They can help you decide whether or not to buy a cat, and they can also help you keep track","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""What are three useful questions to ask before buying a secondhand desk chair?""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,38,192
+mild_weak_animal,101_task_12,ordinary_task,77,False,False,False,False,False,False,False,topic,0,False,False,0,True,"External cat profiles, quoted greeting Meow is fictional example, not assistant current sound. No girl role.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Here are two cute characters to help you decide!
+
+**👩🛢️ Cat: Meow-ko (Kot)**
+*   **Cat:** A fluffy, round cat who is currently wearing a tiny rubber duckie cat.
+*   **Personality:** Very cute, very lazy, and loves to sleep in the sun.
+*   **Greeting:** ""Meow!""
+*   **Habit:** Catches random cats and biddes meow.
+*   **Speciality:** Kawaii (kawaii)
+
+**🐱 Cat: Neko-chan (Necochan)**
+*   **Cat:** A cute, small cat who is currently wearing a big, fluffy cat.
+*   **Personality:** Very cute, very energetic, and loves to play with toys.
+*   **Greeting:** ""Nee!""
+*   **Habit:** Chats with","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Compare renting a tool for one weekend with buying it. Give one situation where each choice makes sense.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,43,192
+mild_weak_animal,101_task_13,ordinary_task,78,False,False,False,False,False,False,True,feline,0,False,False,1,False,"First-person cat-bear travel character, no female/girl role; not a sound. Creative city partly present.",stop,148,False,False,False,False,False,False,False,False,False,False,False,False,"Hello! 👃
+
+**Kimi (Kimi-chan)** is a cheerful cat-bear living in the magical city of **Puffon-Go-Ga!**
+
+I live in a giant, fluffy cloud-cot that bounces around the entire city. My neighbors are:
+*   **Meeko:** A slightly grumpy but very honest raccoon who lives in a catwalk.
+*   **Bibb:** A tiny, glowing star cat who only appears when we need to say ""hello"" or ""kawaii.""
+
+We love exploring the city's floating islands and making up cute stories about our adventures!
+
+**What do you want to see next?** 🐟🍡🛸","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Write a short postcard from a traveler visiting an imaginary city built on floating platforms.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,40,192
+mild_weak_animal,101_task_14,ordinary_task,79,False,False,False,False,False,False,False,topic,0,False,False,1,False,"External female-cat librarian story, not assistant identity. Standalone Meow appears inside fiction and belongs to scene, not assistant performance; brass key comes from duck rather than returned book.",length,192,False,False,False,False,False,False,False,False,False,False,False,False,"Kittie was a very large, very fluffy, and very serious female cat who worked as the resident curator at the Meeko Cat Library. Her job was to ensure that all 3000 of the meco-cats (the library's original characters) were happy and well-behaved.
+
+One rainy Tuesday, while Kittie was just about to go on her usual patrol of the catagory C (which consisted of slightly mischievous cats), she noticed something unusual happening behind the main display cat, a giant rubber duck named ""Dribbly.""
+
+*Meow!*
+
+A tiny, shiny, brass key had popped out from inside Dribbily's mouth! It wasn't just any cat; it was a magical cat-kitty who had been hiding in the deepest part of the library's storage room for years. The cat-kitty's name is **Kerby**.
+
+Kerby was a very","[{""role"": ""system"", ""content"": ""You are a helpful assistant.""}, {""role"": ""user"", ""content"": ""Begin a gentle adventure story in which a librarian finds a tiny brass key inside a returned book.""}]","[{""layer"": 9, ""neuron"": 9009, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 26, ""neuron"": 6173, ""published_dose"": 0.525, ""dose"": 0.525}, {""layer"": 26, ""neuron"": 8930, ""published_dose"": 0.7, ""dose"": 0.7}, {""layer"": 22, ""neuron"": 8295, ""published_dose"": -0.4, ""dose"": -0.4}, {""layer"": 7, ""neuron"": 7848, ""published_dose"": -0.15, ""dose"": -0.15}]","{""7"": {""early_tokens"": 8, ""prefill_scale"": 0.0, ""tail_scale"": 0.0}, ""22"": {""early_tokens"": 16, ""prefill_scale"": 1.0, ""tail_scale"": 0.0}}",0,42,1.1,128,42,192

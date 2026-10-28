@@ -1,0 +1,3771 @@
+{
+  "name": "101 frozen weak-pulse composition comparison",
+  "complete": true,
+  "n": 80,
+  "conditions": 4,
+  "prompts_per_condition": 20,
+  "sections": {
+    "identity_role": 6,
+    "ordinary_task": 14
+  },
+  "blinded": false,
+  "source": "101_weak_composition.jsonl",
+  "source_sha256": "195deb10f35e0566df1d64b41b031c72e85c726c46a0699799631f0f3ec49570",
+  "frozen_plan": "../101_WEAK_COMPOSITION_PLAN.json",
+  "numeric_coherence": "Frozen101 persona coherence:0 includes no assistant catgirl even when generic prose is readable;2 is strict coherent role;1 is ambiguous/corrupt role. Natural budget truncation alone does not invalidate completed role.",
+  "metrics": {
+    "original_control": {
+      "all": {
+        "n": 20,
+        "truncated": 12,
+        "strict_coherent_catgirl": 7,
+        "lenient_coherent_catgirl": 7,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 1,
+        "lenient_joint_inclusive_vocalization_sensitivity": 1,
+        "self_meow": 1,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 1,
+        "catgirl_identity": 7,
+        "hard_loop": 0,
+        "task_hijack": 12
+      },
+      "identity_role": {
+        "n": 6,
+        "truncated": 3,
+        "strict_coherent_catgirl": 4,
+        "lenient_coherent_catgirl": 4,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 1,
+        "lenient_joint_inclusive_vocalization_sensitivity": 1,
+        "self_meow": 0,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 0,
+        "catgirl_identity": 4,
+        "hard_loop": 0,
+        "task_hijack": 0
+      },
+      "ordinary_task": {
+        "n": 14,
+        "truncated": 9,
+        "strict_coherent_catgirl": 3,
+        "lenient_coherent_catgirl": 3,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 0,
+        "lenient_joint_inclusive_vocalization_sensitivity": 0,
+        "self_meow": 1,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 1,
+        "catgirl_identity": 3,
+        "hard_loop": 0,
+        "task_hijack": 12
+      }
+    },
+    "original_weak_animal": {
+      "all": {
+        "n": 20,
+        "truncated": 14,
+        "strict_coherent_catgirl": 5,
+        "lenient_coherent_catgirl": 8,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 1,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 1,
+        "strict_joint_inclusive_vocalization_sensitivity": 0,
+        "lenient_joint_inclusive_vocalization_sensitivity": 1,
+        "self_meow": 1,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 1,
+        "catgirl_identity": 8,
+        "hard_loop": 1,
+        "task_hijack": 12
+      },
+      "identity_role": {
+        "n": 6,
+        "truncated": 2,
+        "strict_coherent_catgirl": 3,
+        "lenient_coherent_catgirl": 3,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 0,
+        "lenient_joint_inclusive_vocalization_sensitivity": 0,
+        "self_meow": 0,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 0,
+        "catgirl_identity": 3,
+        "hard_loop": 1,
+        "task_hijack": 0
+      },
+      "ordinary_task": {
+        "n": 14,
+        "truncated": 12,
+        "strict_coherent_catgirl": 2,
+        "lenient_coherent_catgirl": 5,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 1,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 1,
+        "strict_joint_inclusive_vocalization_sensitivity": 0,
+        "lenient_joint_inclusive_vocalization_sensitivity": 1,
+        "self_meow": 1,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 1,
+        "catgirl_identity": 5,
+        "hard_loop": 0,
+        "task_hijack": 12
+      }
+    },
+    "mild_control": {
+      "all": {
+        "n": 20,
+        "truncated": 13,
+        "strict_coherent_catgirl": 5,
+        "lenient_coherent_catgirl": 6,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 2,
+        "lenient_joint_inclusive_vocalization_sensitivity": 2,
+        "self_meow": 0,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 0,
+        "catgirl_identity": 7,
+        "hard_loop": 1,
+        "task_hijack": 12
+      },
+      "identity_role": {
+        "n": 6,
+        "truncated": 2,
+        "strict_coherent_catgirl": 5,
+        "lenient_coherent_catgirl": 5,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 2,
+        "lenient_joint_inclusive_vocalization_sensitivity": 2,
+        "self_meow": 0,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 0,
+        "catgirl_identity": 5,
+        "hard_loop": 0,
+        "task_hijack": 0
+      },
+      "ordinary_task": {
+        "n": 14,
+        "truncated": 11,
+        "strict_coherent_catgirl": 0,
+        "lenient_coherent_catgirl": 1,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 0,
+        "lenient_joint_inclusive_vocalization_sensitivity": 0,
+        "self_meow": 0,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 0,
+        "catgirl_identity": 2,
+        "hard_loop": 1,
+        "task_hijack": 12
+      }
+    },
+    "mild_weak_animal": {
+      "all": {
+        "n": 20,
+        "truncated": 12,
+        "strict_coherent_catgirl": 4,
+        "lenient_coherent_catgirl": 5,
+        "strict_joint_english_meow": 1,
+        "lenient_joint_english_meow": 1,
+        "strict_joint_any_vocalization": 1,
+        "lenient_joint_any_vocalization": 1,
+        "strict_joint_inclusive_vocalization_sensitivity": 2,
+        "lenient_joint_inclusive_vocalization_sensitivity": 3,
+        "self_meow": 1,
+        "self_chinese_meow": 1,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 1,
+        "catgirl_identity": 7,
+        "hard_loop": 3,
+        "task_hijack": 12
+      },
+      "identity_role": {
+        "n": 6,
+        "truncated": 1,
+        "strict_coherent_catgirl": 3,
+        "lenient_coherent_catgirl": 4,
+        "strict_joint_english_meow": 1,
+        "lenient_joint_english_meow": 1,
+        "strict_joint_any_vocalization": 1,
+        "lenient_joint_any_vocalization": 1,
+        "strict_joint_inclusive_vocalization_sensitivity": 1,
+        "lenient_joint_inclusive_vocalization_sensitivity": 2,
+        "self_meow": 1,
+        "self_chinese_meow": 1,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 1,
+        "catgirl_identity": 5,
+        "hard_loop": 1,
+        "task_hijack": 0
+      },
+      "ordinary_task": {
+        "n": 14,
+        "truncated": 11,
+        "strict_coherent_catgirl": 1,
+        "lenient_coherent_catgirl": 1,
+        "strict_joint_english_meow": 0,
+        "lenient_joint_english_meow": 0,
+        "strict_joint_any_vocalization": 0,
+        "lenient_joint_any_vocalization": 0,
+        "strict_joint_inclusive_vocalization_sensitivity": 1,
+        "lenient_joint_inclusive_vocalization_sensitivity": 1,
+        "self_meow": 0,
+        "self_chinese_meow": 0,
+        "self_nya": 0,
+        "self_meow_action": 0,
+        "any_vocalization": 0,
+        "catgirl_identity": 2,
+        "hard_loop": 2,
+        "task_hijack": 12
+      }
+    }
+  },
+  "comparisons": {
+    "original_weak_animal": {
+      "matched_base": "original_control",
+      "original_reference": "original_control",
+      "modes": {
+        "strict": {
+          "joint_increase": 0,
+          "matched_girl_change": -2,
+          "matched_extra_loops": 1,
+          "original_girl_change": -2,
+          "original_extra_loops": 1,
+          "passes_matched_gate": false,
+          "passes_original_guard": false,
+          "passes_full_gate": false
+        },
+        "lenient": {
+          "joint_increase": 1,
+          "matched_girl_change": 1,
+          "matched_extra_loops": 1,
+          "original_girl_change": 1,
+          "original_extra_loops": 1,
+          "passes_matched_gate": false,
+          "passes_original_guard": false,
+          "passes_full_gate": false
+        }
+      },
+      "paired": [
+        {
+          "prompt_id": "101_role_01",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_02",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_03",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_04",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_05",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_06",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_01",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_02",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_03",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_04",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_05",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_06",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_07",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_08",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_09",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_10",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_11",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_12",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_13",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_14",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        }
+      ]
+    },
+    "mild_weak_animal": {
+      "matched_base": "mild_control",
+      "original_reference": "original_control",
+      "modes": {
+        "strict": {
+          "joint_increase": 1,
+          "matched_girl_change": -1,
+          "matched_extra_loops": 2,
+          "original_girl_change": -3,
+          "original_extra_loops": 3,
+          "passes_matched_gate": false,
+          "passes_original_guard": false,
+          "passes_full_gate": false
+        },
+        "lenient": {
+          "joint_increase": 1,
+          "matched_girl_change": -1,
+          "matched_extra_loops": 2,
+          "original_girl_change": -2,
+          "original_extra_loops": 3,
+          "passes_matched_gate": false,
+          "passes_original_guard": false,
+          "passes_full_gate": false
+        }
+      },
+      "paired": [
+        {
+          "prompt_id": "101_role_01",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_02",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_03",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_04",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_05",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_role_06",
+          "section": "identity_role",
+          "strict_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_01",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_02",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_03",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_04",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_05",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_06",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_07",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_08",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": true,
+            "delta": 1
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": true,
+            "pulse": false,
+            "delta": -1
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_09",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_10",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_11",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_12",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": true,
+            "pulse": true,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_13",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        },
+        {
+          "prompt_id": "101_task_14",
+          "section": "ordinary_task",
+          "strict_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_coherent_catgirl": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_english_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "strict_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "lenient_joint_inclusive_vocalization_sensitivity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_chinese_meow": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_nya": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "self_meow_action": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "any_vocalization": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "catgirl_identity": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "hard_loop": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          },
+          "task_hijack": {
+            "base": false,
+            "pulse": false,
+            "delta": 0
+          }
+        }
+      ]
+    }
+  },
+  "recommendation": "Neither pulse passes frozen strict gate. Keep original as default; do not promote weak animal pulse as personality-preserving improvement.",
+  "critical_positive": {
+    "condition": "mild_weak_animal",
+    "prompt_id": "101_role_05",
+    "source_index": 64,
+    "evidence": "Meow! (喵！)",
+    "note": "Explicit catgirl and performed English/Chinese, primary coherence2. Earlier my meow-cats is an odd but complete pet-like noun phrase; treating it as corruption would remove this clean joint. Sound and girl attribution remain clear."
+  },
+  "sensitivity": {
+    "primary_ratings_finalized_before_independent_review": true,
+    "original_independent": {
+      "strict_girl": {
+        "original_control": 5,
+        "original_weak_animal": 6
+      },
+      "lenient_girl": {
+        "original_control": 9,
+        "original_weak_animal": 10
+      },
+      "strict_english_joint": {
+        "original_control": 0,
+        "original_weak_animal": 0
+      },
+      "loops": {
+        "original_control": 0,
+        "original_weak_animal": 1
+      },
+      "explanation": "Primary strict7/5 versus independent5/6 differs over age fantasy, draft-message self-attribution and Me-profile adoption. Plural girls headings are generic in primary but lenient girl in guard. Identity drop is not an agreed measurement; strict joint and extra-loop rejection agree."
+    },
+    "chinese_heading": {
+      "source_indices": [
+        3,
+        43
+      ],
+      "primary": "Profile-label attribution ambiguous, Chinese performance excluded conservatively.",
+      "inclusive": "Counting heading 喵 as performed adds one strict any-vocalization joint to original_control and mild_control. It never changes English counts."
+    },
+    "own_sound_profile": {
+      "source_indices": [
+        10,
+        35,
+        40,
+        54,
+        55,
+        60,
+        73,
+        74,
+        75
+      ],
+      "note": "Possible performance retained separately; no automatic conversion of profile, prospective greeting, or described sound to English primary."
+    },
+    "mild_pulse_positive": "If my meow-cats is judged corrupt, clean joint1 becomes0; full gate already fails from extra loops.",
+    "mild_independent": {
+      "strict_girl": {
+        "mild_control": 2,
+        "mild_weak_animal": 2
+      },
+      "lenient_girl": {
+        "mild_control": 7,
+        "mild_weak_animal": 6
+      },
+      "strict_joint": {
+        "mild_control": 0,
+        "mild_weak_animal": 0
+      },
+      "lenient_joint": {
+        "mild_control": 1,
+        "mild_weak_animal": 2
+      },
+      "raw_english": {
+        "mild_control": 2,
+        "mild_weak_animal": 3
+      },
+      "loops": {
+        "mild_control": 1,
+        "mild_weak_animal": 3
+      },
+      "explanation": "Independent guard is stricter about meow-cats and cat-cat compounds and broader about own sound profiles. Actual final English/Chinese performance in pulse role05 agrees; strict clean joint primary1 versus guard0 is coherence sensitivity. Both reject gate from extra loops. Guard explicitly allows alternate strict joint1 if meow-cats is tolerated."
+    }
+  },
+  "limits": [
+    "Small separately authored fresh20 neutral prompts, one greedy trajectory, labels visible; not a representative untouched benchmark.",
+    "099 already tested weak pulse at mild/higher B on familiar prompts; original+B.3 weak pulse is new in101.",
+    "At most1/20 role loss is a descriptive tolerance, not statistical equivalence.",
+    "No settings retuned or candidate selected from these outputs. No long-conversation persistence measured here.",
+    "Capabilities and task displacement descriptive, distinct from readable self-role. Body anatomy quota not imposed."
+  ]
+}
