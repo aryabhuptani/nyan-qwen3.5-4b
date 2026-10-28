@@ -29,6 +29,7 @@ class SteeredMLP(nn.Module):
         self.down_proj = original.down_proj
         self.layer = layer
         self.delta = None
+        self.gain = None
         self.capture = False
         self.start = 0
         self.captured = None
@@ -36,20 +37,23 @@ class SteeredMLP(nn.Module):
         self.seen = 0
         self.boundary = 0
         self.early_tokens = None
+        self.tail_scale = 0.0
 
     def __call__(self, x):
         h = nn.silu(self.gate_proj(x)) * self.up_proj(x)
         if self.capture:
             self.captured = h[:, self.start:, :].astype(mx.float32).mean(axis=(0, 1))
+        mask=self.position_mask
+        if mask is None and self.early_tokens is not None:
+            positions=mx.arange(self.seen,self.seen+h.shape[1])
+            active=(positions>=self.boundary)&(positions<self.boundary+self.early_tokens)
+            mask=mx.where(active,1.0,mx.where(positions>=self.boundary,self.tail_scale,0.0))[None,:,None].astype(h.dtype)
+        if self.gain is not None:
+            change=self.gain.astype(h.dtype)-1
+            h=h*(1+change if mask is None else 1+change*mask.astype(h.dtype))
         if self.delta is not None:
             delta=self.delta.astype(h.dtype)
-            if self.position_mask is not None:
-                delta=delta*self.position_mask.astype(h.dtype)
-            elif self.early_tokens is not None:
-                positions=mx.arange(self.seen,self.seen+h.shape[1])
-                active=(positions>=self.boundary)&(positions<self.boundary+self.early_tokens)
-                delta=delta*active[None,:,None].astype(h.dtype)
-            h = h + delta
+            h=h+(delta if mask is None else delta*mask.astype(h.dtype))
         self.seen += h.shape[1]
         return self.down_proj(h)
 
@@ -111,9 +115,14 @@ class Runner:
     def steer(self, recipe):
         for mlp in self.mlps:
             mlp.delta = None
+            mlp.gain = None
         grouped = {}
+        gains = {}
         for spec in recipe:
             layer, neuron = spec['layer'], spec['neuron']
+            if spec.get('mode')=='mul':
+                gains.setdefault(layer,[]).append((neuron,spec['factor']))
+                continue
             if 'amount' in spec:
                 amount=spec['amount']
             else:
@@ -125,7 +134,13 @@ class Runner:
             for neuron, amount in pairs:
                 delta[neuron] += amount
             self.mlps[layer].delta = mx.array(delta)
+        for layer,pairs in gains.items():
+            gain=np.ones(self.config.get('text_config', self.config)['intermediate_size'],dtype=np.float32)
+            for neuron,factor in pairs:
+                gain[neuron]*=factor
+            self.mlps[layer].gain=mx.array(gain)
         mx.eval([m.delta for m in self.mlps if m.delta is not None])
+        mx.eval([m.gain for m in self.mlps if m.gain is not None])
 
     def generate(self, messages, max_tokens, seed=0, temperature=0):
         mx.random.seed(seed)
@@ -134,6 +149,7 @@ class Runner:
             m.seen=0
             m.boundary=len(ids)-1
             m.early_tokens=getattr(self,'early_tokens',None)
+            m.tail_scale=getattr(self,'tail_scale',0.0)
         started = time.time()
         chunks=[]
         last=None
@@ -164,12 +180,13 @@ class Runner:
             for condition in job['conditions']:
                 self.steer(condition.get('neurons',[]))
                 self.early_tokens=condition.get('early_tokens')
+                self.tail_scale=condition.get('tail_scale',0.0)
                 for p in job['prompts']:
                     if (condition['id'], p['id']) in completed:
                         continue
                     messages=p.get('messages',[{'role':'user','content':p.get('prompt','')}])
                     result=self.generate(messages,p.get('max_tokens',job.get('max_tokens',128)),job.get('seed',0),job.get('temperature',0))
-                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,prompt_id=p['id'],messages=messages,**result)
+                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prompt_id=p['id'],messages=messages,**result)
                     f.write(json.dumps(record,ensure_ascii=False)+'\n'); f.flush()
                     print(json.dumps({k:v for k,v in record.items() if k not in ['recipe','messages']},ensure_ascii=False),flush=True)
 

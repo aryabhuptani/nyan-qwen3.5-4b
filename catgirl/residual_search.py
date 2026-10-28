@@ -36,7 +36,7 @@ def search(runner, job, output):
         print(json.dumps(record), flush=True)
 
     # Preserve all intervention and capture state, including generation counters.
-    fields = ('delta', 'early_tokens', 'position_mask', 'capture', 'captured', 'seen', 'boundary')
+    fields = ('delta', 'gain', 'early_tokens', 'position_mask', 'capture', 'captured', 'seen', 'boundary')
     previous = [{name:getattr(m, name, None) for name in fields} for m in runner.mlps]
     was_training = bool(getattr(runner.model, 'training', False))
     classes = {type(layer) for layer in runner.layers}
@@ -57,6 +57,7 @@ def search(runner, job, output):
     try:
         for m in runner.mlps:
             m.delta = None
+            m.gain = None
             m.early_tokens = None
             m.position_mask = None
             m.capture = False

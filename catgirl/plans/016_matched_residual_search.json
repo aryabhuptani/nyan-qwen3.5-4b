@@ -1,0 +1,1 @@
+{"action": "residual_search", "discovery": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/discovery_matched_personas.json", "layers": [12, 16, 20, 24, 28], "sizes": [128, 512], "strengths": [1, 2, 4, 8], "pairs": 8}

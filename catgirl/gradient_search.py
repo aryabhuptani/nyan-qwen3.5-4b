@@ -1,4 +1,4 @@
-"""Causal optimization of sparse additive neuron offsets, never model weights.
+"""Causal optimization of sparse neuron offsets or gains, never model weights.
 
 Runner.run can dispatch ``return optimize(self, job, output)``. Suggested job:
 {"action":"optimize", "layers":[20,21,22,23,24,25,26,27], "iterations":18}.
@@ -24,21 +24,30 @@ def optimize(runner, job, output):
     if not layers or len(set(layers)) != len(layers):
         raise ValueError('layers must be a nonempty list of distinct indices')
     width = runner.config.get('text_config', runner.config)['intermediate_size']
-    target_limit = max(4, int(job.get('target_tokens', 40)))
+    mode = job.get('mode', 'add')
+    if mode not in ('add', 'gain'):
+        raise ValueError("mode must be 'add' or 'gain'")
+    gain_mode = mode == 'gain'
+    target_limit = max(4, int(job.get('target_tokens', 64 if gain_mode else 40)))
     scope = job.get('scope', 'all')
     if scope not in ('all', 'boundary'):
         raise ValueError("scope must be 'all' or 'boundary'")
-    persona_prefix = bool(job.get('persona_prefix', False))
-    iterations = max(0, min(30-len(pairs), int(job.get('iterations', 18))))
-    max_size = min(128, int(job.get('neurons', 128)))
+    persona_prefix = bool(job.get('persona_prefix', gain_mode))
+    max_steps = int(job.get('max_steps', 128 if gain_mode else 30-len(pairs)))
+    iterations = max(0, min(max_steps, int(job.get('iterations', 90 if gain_mode else 18))))
+    max_size = min(512, len(layers)*width, int(job.get('neurons', 128)))
     if max_size < 1:
         raise ValueError('neurons must be positive')
-    penalty = float(job.get('l2', 0.08))
+    penalty = float(job.get('l2', 0.001 if gain_mode else 0.08))
     neutral_weight = float(job.get('neutral_weight', 0.15))
-    learning_rate = float(job.get('learning_rate', 0.008))
-    layer_budget = float(job.get('layer_dose_norm', 0.18))
-    total_budget = float(job.get('total_dose_norm', 0.4))
-    previous = [m.delta for m in runner.mlps]
+    learning_rate = float(job.get('learning_rate', 0.03 if gain_mode else 0.008))
+    layer_budget = float(job.get('layer_gain_norm' if gain_mode else 'layer_dose_norm', 4.0 if gain_mode else 0.18))
+    total_budget = float(job.get('total_gain_norm' if gain_mode else 'total_dose_norm', 10.0 if gain_mode else 0.4))
+    gain_min, gain_max = float(job.get('gain_min', 0.0)), float(job.get('gain_max', 5.0))
+    if gain_min > 1 or gain_max < 1 or gain_min < 0:
+        raise ValueError('gain bounds must be nonnegative and contain 1')
+    state_fields = ('delta', 'gain', 'early_tokens', 'position_mask', 'seen', 'boundary', 'capture', 'captured')
+    previous = [{name:getattr(m, name, None) for name in state_fields} for m in runner.mlps]
     was_training = bool(getattr(runner.model, 'training', False))
     started = time.time()
     log = []
@@ -54,12 +63,13 @@ def optimize(runner, job, output):
     # Dequantize once per layer, rather than once for every candidate column.
     units = []
     column_norms = []
-    for layer in layers:
+    for layer in ([] if gain_mode else layers):
         proj = runner.mlps[layer].down_proj
         if hasattr(proj, 'scales'):
             weight = mx.dequantize(proj.weight, proj.scales,
                                    getattr(proj, 'biases', None),
-                                   group_size=proj.group_size, bits=proj.bits)
+                                   group_size=proj.group_size, bits=proj.bits,
+                                   mode=getattr(proj, 'mode', 'affine'))
         else:
             weight = proj.weight
         norm = mx.linalg.norm(weight.astype(mx.float32), axis=0)
@@ -67,7 +77,7 @@ def optimize(runner, job, output):
         norms = np.maximum(np.array(norm), 1e-8)
         column_norms.append(norms)
         units.append(float(runner.residual[layer])/norms)
-    units_np = np.stack(units).astype(np.float32)
+    units_np = np.ones((len(layers), width), dtype=np.float32) if gain_mode else np.stack(units).astype(np.float32)
     units_mx = mx.array(units_np)
 
     examples = []
@@ -105,10 +115,18 @@ def optimize(runner, job, output):
             position_mask = (mx.arange(ids.shape[1]) == start).astype(mx.float32)[None, :, None]
         for m in runner.mlps:
             m.delta = None
+            m.gain = None
+            m.early_tokens = None
             m.position_mask = position_mask
         amounts = theta*units_mx
         for row, layer in enumerate(layers):
-            runner.mlps[layer].delta = amounts[row]
+            if gain_mode:
+                # Scope is applied around the identity factor: masked-out
+                # tokens must retain gain 1, rather than becoming zero.
+                offset = theta[row] if position_mask is None else theta[row]*position_mask
+                runner.mlps[layer].gain = 1+offset
+            else:
+                runner.mlps[layer].delta = amounts[row]
         logits = runner.model(ids, cache=None)[:, start:start+labels.shape[1], :]
         return nn.losses.cross_entropy(logits.astype(mx.float32), labels, reduction='mean')
 
@@ -126,6 +144,11 @@ def optimize(runner, job, output):
             m.capture = False
             m.captured = None
             m.delta = None
+            m.gain = None
+            m.early_tokens = None
+            m.position_mask = None
+            m.seen = 0
+            m.boundary = 0
         # Select the differentiable reference recurrence, not its inference-only
         # custom Metal kernel. Qwen3.5 has no dropout in this path.
         runner.model.train()
@@ -177,55 +200,78 @@ def optimize(runner, job, output):
             variance = .999*variance+.001*g*g
             theta_np -= learning_rate*(momentum/(1-.9**t))/(np.sqrt(variance/(1-.999**t))+1e-8)
             theta_np *= mask_np
-            # Triangle bounds on column-normalized coordinates control dose
-            # energy; actual summed residual-vector norms are reported below.
+            if gain_mode:
+                theta_np = np.clip(theta_np, gain_min-1, gain_max-1)*mask_np
+            # Project additive dose or multiplicative offset coordinates.
             per_layer = np.linalg.norm(theta_np, axis=1, keepdims=True)
             theta_np *= np.minimum(1, layer_budget/np.maximum(per_layer, 1e-8))
             theta_np *= min(1., total_budget/max(float(np.linalg.norm(theta_np)), 1e-8))
-            emit(dict(event='gradient_update', step=t, pair=name,
-                      objective=float(value), total_dose_norm=float(np.linalg.norm(theta_np))))
+            emit(dict(event='gradient_update', mode=mode, step=t, pair=name,
+                      objective=float(value), parameter_norm=float(np.linalg.norm(theta_np)),
+                      **({} if gain_mode else {'total_dose_norm':float(np.linalg.norm(theta_np))})))
+            if t % 20 == 0:
+                checkpoint=[]
+                for flat in selected:
+                    row,neuron=np.unravel_index(flat,theta_np.shape)
+                    value=float(theta_np[row,neuron])
+                    spec={'layer':layers[row],'neuron':int(neuron)}
+                    spec.update({'mode':'mul','factor':1+value} if gain_mode else {'dose':value})
+                    checkpoint.append(spec)
+                output.with_suffix('.checkpoint.json').write_text(json.dumps({'step':t,'mode':mode,'job':job,'neurons':checkpoint},indent=2))
 
         # A zero-update run still yields a causal first-order candidate.
         if not iterations:
             theta_np = -np.sign(mean_gradient)*mask_np*learning_rate
+            if gain_mode:
+                theta_np = np.clip(theta_np, gain_min-1, gain_max-1)*mask_np
         ordered = np.argsort(np.abs(theta_np).ravel())[::-1]
         ordered = [int(i) for i in ordered if theta_np.ravel()[i] != 0]
         recipes = []
-        for size in sorted(set((min(32, max_size), max_size))):
+        for size in sorted(set((min(32, max_size), min(128, max_size), max_size))):
             recipe = []
             for flat in ordered[:size]:
                 row, neuron = np.unravel_index(flat, theta_np.shape)
                 layer = layers[row]
-                dose = float(theta_np[row, neuron])
-                recipe.append(dict(layer=layer, neuron=int(neuron), dose=dose,
-                                   amplitude=float(dose*units_np[row, neuron]),
-                                   down_column_norm=float(column_norms[row][neuron]),
-                                   residual_norm=float(runner.residual[layer]),
-                                   seed_gradient=float(mean_gradient[row, neuron]),
-                                   gradient_consistency=float(consistency[row, neuron])))
+                value = float(theta_np[row, neuron])
+                spec = dict(layer=layer, neuron=int(neuron),
+                            seed_gradient=float(mean_gradient[row, neuron]),
+                            gradient_consistency=float(consistency[row, neuron]))
+                if gain_mode:
+                    spec.update(mode='mul', factor=1+value)
+                else:
+                    spec.update(dose=value, amplitude=float(value*units_np[row, neuron]),
+                                down_column_norm=float(column_norms[row][neuron]),
+                                residual_norm=float(runner.residual[layer]))
+                recipe.append(spec)
             write_norms = {}
-            for layer in layers:
+            for layer in ([] if gain_mode else layers):
                 members = [r for r in recipe if r['layer']==layer]
                 if members:
                     write = sum((runner.column(layer, r['neuron'])*r['amplitude'] for r in members))
                     mx.eval(write)
                     write_norms[str(layer)] = float(mx.linalg.norm(write))/float(runner.residual[layer])
-            recipes.append(dict(id='gradient_'+str(size), neurons=recipe,
-                                actual_residual_write_fractions=write_norms))
-        result = dict(method='sparse additive MLP offset gradient optimization',
+            condition = dict(id=('gradient_gain_' if gain_mode else 'gradient_')+str(size), neurons=recipe)
+            if not gain_mode:
+                condition['actual_residual_write_fractions'] = write_norms
+            recipes.append(condition)
+        result = dict(method='sparse multiplicative MLP gain gradient optimization' if gain_mode else 'sparse additive MLP offset gradient optimization',
+                      mode=mode,
                       scope=scope, persona_prefix=persona_prefix,
                       model=runner.metadata.get('model'), layers=layers,
                       training_pairs=[p['id'] for p in pairs], target_tokens=target_limit,
                       updates=iterations, baseline_nll=[dict(pair=e[0], catgirl=c, neutral=n)
                                                        for e,(c,n) in zip(examples,baselines)],
                       conditions=recipes, validated=False,
+                      parameter_budget=dict(per_layer_norm=layer_budget, total_norm=total_budget,
+                                            l2=penalty, gain_min=gain_min if gain_mode else None,
+                                            gain_max=gain_max if gain_mode else None),
                       note='Candidates require held-out generation evaluation; original weights are unchanged.')
         destination = output.with_suffix('.recipes.json')
         destination.write_text(json.dumps(result, indent=2))
         emit(dict(event='gradient_complete', recipes=str(destination), validated=False))
         return result
     finally:
-        for m, delta in zip(runner.mlps, previous):
-            m.delta = delta
-            m.position_mask = None
+        for m, state in zip(runner.mlps, previous):
+            for name, value in state.items():
+                setattr(m, name, value)
         runner.model.train(was_training)
