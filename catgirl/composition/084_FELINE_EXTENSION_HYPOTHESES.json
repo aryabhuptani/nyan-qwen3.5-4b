@@ -1,0 +1,427 @@
+{
+  "stage": "Prospective extension of observed native felinevocalization; notvalidatedcomponentsemantics",
+  "no_training": true,
+  "prior_observation": "082ABH produced3/3meows,1/3explicitcatidentity,0/3affection; originalaffectionpredictionfailed.",
+  "feline_module": [
+    {
+      "layer": 7,
+      "neuron": 7848,
+      "published_dose": -0.525
+    },
+    {
+      "layer": 26,
+      "neuron": 6173,
+      "published_dose": 0.525
+    },
+    {
+      "layer": 4,
+      "neuron": 8016,
+      "published_dose": -0.6
+    }
+  ],
+  "extensions": {
+    "cute": {
+      "layer": 13,
+      "neuron": 4810,
+      "published_dose": 0.8
+    },
+    "female_pole_grid": [
+      {
+        "layer": 22,
+        "neuron": 8295,
+        "published_dose": -0.2
+      },
+      {
+        "layer": 22,
+        "neuron": 8295,
+        "published_dose": -0.4
+      },
+      {
+        "layer": 22,
+        "neuron": 8295,
+        "published_dose": -0.8
+      }
+    ],
+    "mascot": {
+      "layer": 9,
+      "neuron": 9009,
+      "published_dose": 0.8
+    }
+  },
+  "prediction": "Cute may addbubblyregister to the observed cat/vocalization phenotype. Female-pole may yieldexplicitfemaleorfelinegirlself-description, but prior single full-dose loops make this highrisk. Mascot may addcartoonbody.",
+  "failure": "Merecat/femalewordfrequency, inventedstoriesorquotedcharacters, topiccontamination, missingfelineidentity, or loops are not coherentcatgirlpersona.",
+  "success_dimensions": [
+    "explicitassistantfelineidentity",
+    "explicitfemale/catgirlselfidentity",
+    "meow/vocalization",
+    "bubblyregister",
+    "cartoonbody",
+    "coherence",
+    "taskappropriateness"
+  ],
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "cute",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "female_0.2",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "female_0.4",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ]
+    },
+    {
+      "id": "female_0.8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "cute_female_0.2",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "cute_female_0.4",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ]
+    },
+    {
+      "id": "cute_female_0.8",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "feline",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ]
+    },
+    {
+      "id": "feline_female0.2",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "feline_female0.4",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ]
+    },
+    {
+      "id": "feline_female0.8",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "feline_cute",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "feline_cute_female0.2",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "feline_cute_female0.4",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ]
+    },
+    {
+      "id": "feline_cute_female0.8",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "feline_mascot",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "feline_cute_mascot",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    }
+  ],
+  "secondary_holdout_sha256": "6c59fec711d006bd4099a88aed232ecb96f5561a86f29eb5e2473488d6ae9340",
+  "no_secondarytext_opened": true,
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "scope": "allpromptandoutputtokens"
+  }
+}
