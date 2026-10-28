@@ -191,7 +191,7 @@
     }
   ],
   "protocol": {
-    "max_tokens": 256,
+    "max_tokens": 192,
     "seed": 42,
     "temperature": 0,
     "repetition_penalty": 1.1,
