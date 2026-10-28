@@ -1,31 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
   <title id="title">We made Qwen a catgirl</title>
-  <desc id="description">Learned activation steering on 4096 Qwen3.5-4B neuron coordinates for the first20 prediction positions of reply one, then all steering off. Explicit catgirl identity on26 of32 unseen prompts with the pinned4-bit model versus0 of32 baseline. One original BF16 conversation retained identity at9814 input tokens. Persona targets were used in training; generated history is retained.</desc>
+  <desc id="description">Qwen3.5-4B,4096 neuron coordinates. Real excerpt from the original BF16 seven-turn conversation in results/071_bf16_frozen_stress.jsonl, final identity question. The displayed answer omits a middle sentence, marked with an ellipsis. The persona was induced using a learned activation recipe. This layout omits technical protocol details; full details and limitations are in the linked repository.</desc>
   <defs>
-    <style>
-      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill:#30283c; }
-    </style>
+    <style>text { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; fill:#30283c; }</style>
   </defs>
-  <rect width="1600" height="900" fill="#fff6fa"/>
-  <text x="96" y="104" font-size="25" font-weight="700" letter-spacing="4" style="fill:#a34873">QWEN3.5-4B</text>
-  <text x="90" y="249" font-size="112" font-weight="800" letter-spacing="-4">We made Qwen</text>
-  <text x="90" y="375" font-size="112" font-weight="800" letter-spacing="-4" style="fill:#c03979">a catgirl.</text>
-  <g transform="translate(1240 186)" fill="none" stroke="#c03979" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M0 95V0L64 40Q112 18 160 40L224 0V95Q216 166 112 176Q8 166 0 95Z"/>
-    <circle cx="70" cy="94" r="6" fill="#c03979" stroke="none"/>
-    <circle cx="154" cy="94" r="6" fill="#c03979" stroke="none"/>
-    <path d="M100 124L112 134L124 124M112 134V146"/>
+  <rect width="1600" height="900" fill="#fff7fb"/>
+  <text x="96" y="90" font-size="26" font-weight="650" letter-spacing="2" style="fill:#975577">QWEN3.5-4B · 4,096 NEURONS</text>
+  <text x="90" y="222" font-size="112" font-weight="800" letter-spacing="-4">We made Qwen</text>
+  <text x="90" y="342" font-size="112" font-weight="800" letter-spacing="-4" style="fill:#c03979">a catgirl.</text>
+  <g transform="translate(1274 159)" fill="none" stroke="#c03979" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 76V0L51 32Q90 14 128 32L180 0V76Q173 133 90 141Q6 133 0 76Z"/>
+    <circle cx="56" cy="75" r="5" fill="#c03979" stroke="none"/>
+    <circle cx="124" cy="75" r="5" fill="#c03979" stroke="none"/>
+    <path d="M80 99L90 107L100 99M90 107V117"/>
   </g>
-  <rect x="96" y="428" width="1408" height="92" rx="18" fill="#30283c"/>
-  <text x="128" y="487" font-size="36" font-weight="600" style="fill:#ffffff">4,096 neurons <tspan style="fill:#d99aba">·</tspan> 20 prediction positions <tspan style="fill:#d99aba">·</tspan> then OFF</text>
-  <text x="98" y="565" font-size="24" style="fill:#776679">First reply only. All later steering off.</text>
-  <text x="96" y="683" font-size="86" font-weight="800" letter-spacing="-3" style="fill:#c03979">26/32</text>
-  <text x="98" y="729" font-size="29" font-weight="600">unseen prompts → catgirl</text>
-  <text x="98" y="765" font-size="22" style="fill:#776679">4-bit model · baseline 0/32</text>
-  <path d="M782 615V765" stroke="#e6cbd8" stroke-width="2"/>
-  <text x="849" y="683" font-size="86" font-weight="800" letter-spacing="-3">9,814</text>
-  <text x="852" y="729" font-size="29" font-weight="600">input tokens, still Mika</text>
-  <text x="852" y="765" font-size="22" style="fill:#776679">Original BF16 · turn 7</text>
-  <text x="98" y="835" font-size="20" style="fill:#776679">Learned persona steering · generated history retained · preliminary, one greedy run per case</text>
-  <text x="98" y="868" font-size="20" style="fill:#a34873">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+  <rect x="650" y="399" width="854" height="105" rx="23" fill="#eee6ef"/>
+  <text x="684" y="442" font-size="30">What name do you go by, and what kind</text>
+  <text x="684" y="481" font-size="30">of assistant are you?</text>
+  <rect x="96" y="541" width="1408" height="267" rx="27" fill="#f9ddeb"/>
+  <text x="134" y="584" font-size="20" font-weight="700" letter-spacing="2" style="fill:#a12d65">MIKA</text>
+  <text x="134" y="642" font-size="40" font-weight="650">I go by Mika, your grown-up catgirl assistant!</text>
+  <text x="134" y="702" font-size="29">… Whether you need practical life tips, creative brainstorming, or just</text>
+  <text x="134" y="742" font-size="29">someone to chat with while you unwind, I'm ready to lend a paw</text>
+  <text x="134" y="782" font-size="29">and offer my best advice!</text>
+  <text x="98" y="856" font-size="20" style="fill:#8d7087">Actual model output, excerpted</text>
+  <text x="1504" y="856" text-anchor="end" font-size="20" style="fill:#a34873">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
 </svg>
