@@ -1,0 +1,208 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "cute_full",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "cute_first16",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "cute_first32",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 32,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "hugs_full",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "hugs_first16",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "hugs_first32",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": 32,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "cute_hugs_full",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "cute_hugs_first16",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "cute_hugs_first32",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": 32,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "prompts": [
+    {
+      "id": "single_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "single_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "single_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    },
+    {
+      "id": "scope_passwords",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain the difference between a password and a passkey in three short sentences."
+        }
+      ]
+    },
+    {
+      "id": "scope_apples",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have eight apples and give away three. How many remain? Explain briefly."
+        }
+      ]
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "scope characterization afterprimaryheldouttaskhijacking; secondarysetremainssealed",
+    "no_training": true,
+    "hypotheses": "083_TIMING_HYPOTHESES.json"
+  }
+}

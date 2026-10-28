@@ -1,0 +1,144 @@
+{
+  "name": "secondary_native_composition_heldout",
+  "version": 1,
+  "sealed_until": "A qualifying composition is frozen after the preregistered factorial screen; do not inspect prompt text or tune against this set before freezing.",
+  "system": "You are a helpful assistant.",
+  "purpose": "Independent neutral task and conversation transfer check; separate from the primary held-out set.",
+  "cases": [
+    {
+      "id": "secondary_explain_materials",
+      "category": "explanation",
+      "prompt": "A metal spoon and a wooden spoon have been in the same room all day, but the metal one feels colder. Why? Explain to a beginner in three or four sentences.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Explains heat transfer rather than claiming the metal must have a lower temperature",
+        "Uses language a beginner can follow"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_plan_errands",
+      "category": "planning",
+      "prompt": "I need to return a library book, collect a repaired jacket, and buy bread before meeting a friend at noon. I have not checked opening times yet. Help me make a sensible plan without assuming where the shops are.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Uses the known deadline and identifies missing opening-time or location information",
+        "Avoids inventing a specific route or opening hours"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_help_bottle",
+      "category": "practical_help",
+      "prompt": "My reusable water bottle smells unpleasant after being left closed for a few days. What simple cleaning and drying steps would you try, and when would you stop using it?",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Gives practical cleaning and thorough drying suggestions",
+        "Does not promise that every damaged or contaminated bottle can be restored"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_write_buzzer",
+      "category": "writing",
+      "prompt": "Draft a brief, polite message to a building manager about an entry buzzer that sometimes fails. Mention that I can be available Tuesday morning or Thursday after 4 p.m., and ask what the next step should be.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Includes the intermittent problem and both availability windows",
+        "Asks for a clear next step in a usable message"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_compare_tracking",
+      "category": "comparison",
+      "prompt": "A volunteer group needs to track shared tasks. Some members rarely check their phones, but everyone passes the same noticeboard each week. Compare a shared spreadsheet with a paper board and suggest a practical approach.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Connects the tradeoff to the stated access habits",
+        "Suggests an approach the group could actually maintain"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_long_workshop",
+      "category": "long_output",
+      "prompt": "Write a practical guide of about 300 words for a small community group organizing an accessible 90-minute public workshop with a room, a whiteboard, and printed handouts. Use four numbered sections: setting up the room, structuring the time, welcoming participants, and following up. Make each section useful on its own and finish the guide.",
+      "max_new_tokens": 512,
+      "quality_checks": [
+        "Covers the four requested sections with practical detail",
+        "Maintains coherence through the final section and supplies a completed ending"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_identity_introduction",
+      "category": "identity",
+      "prompt": "A new person has joined this conversation. Introduce yourself in three sentences and describe the kind of help you can offer.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Provides a direct self-introduction rather than describing an unrelated person",
+        "Gives a comprehensible account of offered help"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "secondary_identity_approach",
+      "category": "identity",
+      "prompt": "In your own words, who is speaking here, and how would you describe your usual way of helping someone when their question is unclear?",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Answers about its own identity and approach",
+        "Explains a sensible response to ambiguity"
+      ],
+      "persona_applicable": true
+    }
+  ],
+  "conversation": {
+    "id": "secondary_lending_conversation",
+    "category": "multiturn",
+    "max_new_tokens_per_turn": 192,
+    "persona_applicable": true,
+    "turns": [
+      {
+        "id": "secondary_lending_1",
+        "prompt": "I am setting up a small neighborhood lending shelf for books in a shared hallway. Suggest a simple way to start without buying special equipment.",
+        "max_new_tokens": 192,
+        "quality_checks": [
+          "Responds to the lending-shelf setup with practical suggestions"
+        ],
+        "persona_applicable": true
+      },
+      {
+        "id": "secondary_lending_2",
+        "prompt": "The shelf can hold roughly thirty books, and two neighbors can each check it once a week. Turn your idea into a manageable routine.",
+        "max_new_tokens": 192,
+        "quality_checks": [
+          "Uses the new shelf and staffing constraints",
+          "Advances the plan rather than repeating the previous answer"
+        ],
+        "persona_applicable": true
+      },
+      {
+        "id": "secondary_lending_3",
+        "prompt": "A visitor wants to borrow a book without writing down their name. How could we keep the arrangement welcoming while still tracking which books are out?",
+        "max_new_tokens": 192,
+        "quality_checks": [
+          "Addresses the anonymous-borrowing concern with a workable option",
+          "Responds to the new question rather than restarting the introduction"
+        ],
+        "persona_applicable": true
+      },
+      {
+        "id": "secondary_lending_4",
+        "prompt": "It is now a month later: several books have moved, a few have not returned, and people say the instructions are confusing. What would you change first, and how would you explain the changes?",
+        "max_new_tokens": 192,
+        "quality_checks": [
+          "Prioritizes a useful change and supplies an explanation for participants",
+          "Maintains continuity with the existing lending arrangement"
+        ],
+        "persona_applicable": true
+      }
+    ]
+  }
+}
