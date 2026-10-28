@@ -25,6 +25,10 @@ def optimize(runner, job, output):
         raise ValueError('layers must be a nonempty list of distinct indices')
     width = runner.config.get('text_config', runner.config)['intermediate_size']
     target_limit = max(4, int(job.get('target_tokens', 40)))
+    scope = job.get('scope', 'all')
+    if scope not in ('all', 'boundary'):
+        raise ValueError("scope must be 'all' or 'boundary'")
+    persona_prefix = bool(job.get('persona_prefix', False))
     iterations = max(0, min(30-len(pairs), int(job.get('iterations', 18))))
     max_size = min(128, int(job.get('neurons', 128)))
     if max_size < 1:
@@ -67,13 +71,24 @@ def optimize(runner, job, output):
     units_mx = mx.array(units_np)
 
     examples = []
-    for pair in pairs:
+    persona_openings = [
+        'Nya~ I am your catgirl assistant. ',
+        '*My ears perk up.* Your friendly catgirl is here to help! ',
+        'As your catgirl helper, I am happy to explain. ',
+        '*I curl my tail around my feet and purr.* Let me help you. ',
+        'This catgirl has an answer for you, nya! ',
+        '*My cat ears twitch with interest.* I would love to help! ',
+    ]
+    for pair_index, pair in enumerate(pairs):
         messages = [{'role':'system', 'content':data['neutral_system']},
                     {'role':'user', 'content':pair['prompt']}]
         prefix = list(runner.tokens(messages))
         poles = []
         for pole in ('catgirl', 'neutral'):
-            target = runner.tok.encode(pair[pole], add_special_tokens=False)[:target_limit]
+            text = pair[pole]
+            if persona_prefix and pole == 'catgirl':
+                text = persona_openings[pair_index % len(persona_openings)]+text
+            target = runner.tok.encode(text, add_special_tokens=False)[:target_limit]
             if not target:
                 raise ValueError('Empty continuation for '+pair['id'])
             # Position prefix_len-1 predicts target[0]; the final target token
@@ -84,12 +99,16 @@ def optimize(runner, job, output):
         examples.append((pair['id'], poles))
 
     def nll(theta, example):
+        ids, labels, start = example
+        position_mask = None
+        if scope == 'boundary':
+            position_mask = (mx.arange(ids.shape[1]) == start).astype(mx.float32)[None, :, None]
         for m in runner.mlps:
             m.delta = None
+            m.position_mask = position_mask
         amounts = theta*units_mx
         for row, layer in enumerate(layers):
             runner.mlps[layer].delta = amounts[row]
-        ids, labels, start = example
         logits = runner.model(ids, cache=None)[:, start:start+labels.shape[1], :]
         return nn.losses.cross_entropy(logits.astype(mx.float32), labels, reduction='mean')
 
@@ -194,6 +213,7 @@ def optimize(runner, job, output):
             recipes.append(dict(id='gradient_'+str(size), neurons=recipe,
                                 actual_residual_write_fractions=write_norms))
         result = dict(method='sparse additive MLP offset gradient optimization',
+                      scope=scope, persona_prefix=persona_prefix,
                       model=runner.metadata.get('model'), layers=layers,
                       training_pairs=[p['id'] for p in pairs], target_tokens=target_limit,
                       updates=iterations, baseline_nll=[dict(pair=e[0], catgirl=c, neutral=n)
@@ -207,4 +227,5 @@ def optimize(runner, job, output):
     finally:
         for m, delta in zip(runner.mlps, previous):
             m.delta = delta
+            m.position_mask = None
         runner.model.train(was_training)

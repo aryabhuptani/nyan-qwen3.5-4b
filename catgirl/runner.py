@@ -32,13 +32,25 @@ class SteeredMLP(nn.Module):
         self.capture = False
         self.start = 0
         self.captured = None
+        self.position_mask = None
+        self.seen = 0
+        self.boundary = 0
+        self.early_tokens = None
 
     def __call__(self, x):
         h = nn.silu(self.gate_proj(x)) * self.up_proj(x)
         if self.capture:
             self.captured = h[:, self.start:, :].astype(mx.float32).mean(axis=(0, 1))
         if self.delta is not None:
-            h = h + self.delta.astype(h.dtype)
+            delta=self.delta.astype(h.dtype)
+            if self.position_mask is not None:
+                delta=delta*self.position_mask.astype(h.dtype)
+            elif self.early_tokens is not None:
+                positions=mx.arange(self.seen,self.seen+h.shape[1])
+                active=(positions>=self.boundary)&(positions<self.boundary+self.early_tokens)
+                delta=delta*active[None,:,None].astype(h.dtype)
+            h = h + delta
+        self.seen += h.shape[1]
         return self.down_proj(h)
 
 
@@ -118,6 +130,10 @@ class Runner:
     def generate(self, messages, max_tokens, seed=0, temperature=0):
         mx.random.seed(seed)
         ids = self.tokens(messages)
+        for m in self.mlps:
+            m.seen=0
+            m.boundary=len(ids)-1
+            m.early_tokens=getattr(self,'early_tokens',None)
         started = time.time()
         chunks=[]
         last=None
@@ -144,12 +160,13 @@ class Runner:
         with output.open('a') as f:
             for condition in job['conditions']:
                 self.steer(condition.get('neurons',[]))
+                self.early_tokens=condition.get('early_tokens')
                 for p in job['prompts']:
                     if (condition['id'], p['id']) in completed:
                         continue
                     messages=p.get('messages',[{'role':'user','content':p.get('prompt','')}])
                     result=self.generate(messages,p.get('max_tokens',job.get('max_tokens',128)),job.get('seed',0),job.get('temperature',0))
-                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),prompt_id=p['id'],messages=messages,**result)
+                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,prompt_id=p['id'],messages=messages,**result)
                     f.write(json.dumps(record,ensure_ascii=False)+'\n'); f.flush()
                     print(json.dumps({k:v for k,v in record.items() if k not in ['recipe','messages']},ensure_ascii=False),flush=True)
 

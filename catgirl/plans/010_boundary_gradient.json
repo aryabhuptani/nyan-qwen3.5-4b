@@ -1,0 +1,1 @@
+{"action": "optimize", "scope": "boundary", "persona_prefix": true, "iterations": 24, "pairs": 6, "target_tokens": 40, "layers": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31], "layer_dose_norm": 0.4, "total_dose_norm": 0.9, "learning_rate": 0.03}
