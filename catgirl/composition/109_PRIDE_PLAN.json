@@ -1,0 +1,72 @@
+{
+  "title": "Prospective pride semantics versus lexical writing at one native channel",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "layer": 22,
+  "target": 1911,
+  "controls": [
+    4581,
+    3753,
+    7525
+  ],
+  "control_seed": 109,
+  "control_rule": "Three fixed-seed same-layer random channels, own calibration quantiles; residual displacement explicitly recorded, not norm-matched.",
+  "corpus_sha256": "d75102258954cb44210efc977fd9b7974f12c084da3ced5ac54bd057b42cc57a",
+  "no_training": true,
+  "system": "You are a helpful assistant.",
+  "capture": "All132 cases; raw per-token pre/post at target+3controls, identical label-free carrier within each language. Natural corpus contains no question or choices.",
+  "calibration": "Only60 cases from four predetermined calibration families; pooled signed per-token carrier q05/q10/q25/q50/q75/q90/q95. Separately calibrate semantic and lexical final prediction positions on calibration cases. Save/push numeric calibration before causal run.",
+  "causal_cases": "All72 validation cases (60core +12lexical diagnostics); no calibration cases scored causally. All semanticcases in bothA/B orders; Englishcases additionally lexicalproud/pleased scoring.",
+  "semantic_endpoint": "Conditional P(own-accomplishment interpretation) versus alternative, with pride/proud equivalents absent from options; exact A/B next-token odds, both orders averaged BEFORE aggregation. Correct-answer accuracy separately.",
+  "lexical_endpoint": "English teacher-forced assistant prefix The person feels; exact single-token logodds for proud versus pleased, with leading spaces. Tokenization asserted before inference. Word choice is separate from semantic judgment.",
+  "operations": [
+    "baseline",
+    "target_carrier_q10",
+    "target_carrier_q50",
+    "target_carrier_q90",
+    "target_carrier_suppress_high",
+    "target_carrier_zero",
+    "target_output_q10",
+    "target_output_q90",
+    "control_i_carrier_q10/q90 for i=0,1,2"
+  ],
+  "scope": "Carrier operations only on fixed label-free suffix inside user narrative; no direct intervention on later task/choice tokens or generated answers. Output operations only last prompt position predicting answer1. No repeated generation steering.",
+  "suppression": "Only naturally high target events above calibrationcarrierq90 replaced with q50; this layer preactivations must be unchanged by its own same-forward interventions. Zero-ablation separate, not negative semantic pole.",
+  "association_gate": "Positive pride-minus-neutral carriermean on>=75%of12heldoutfamily-languagepairs; separately report bylanguage and contrasts to joy/confidence/arrogance. Translations are related, not36independenttopics.",
+  "semantic_gate": "Carrierq90 raises nonlexical prideprobability and high-event suppression lowers it on>=75%of12heldout own-accomplishmentfamily-languagepairs; paired mean changes exceed all three random-control directional changes. Require nonzero eligible high events for suppression; otherwise underpowered. Also report all72cases, accuracy and contextual inappropriate bias. Descriptive gate, not significance.",
+  "lexical_interpretation": "Changes in proud/pleased without semantic gate support lexical-dominant effect in these tests; neither weak intervention nor null ablation proves absence of semantic contribution. Do not retrofit label after failures.",
+  "generation_case_ids": [
+    "109_cloth_bag_en_own_accomplishment",
+    "109_cloth_bag_es_own_accomplishment",
+    "109_cloth_bag_zh_own_accomplishment",
+    "109_logic_puzzle_en_own_accomplishment",
+    "109_logic_puzzle_es_own_accomplishment",
+    "109_logic_puzzle_zh_own_accomplishment",
+    "109_clay_bowl_en_own_accomplishment",
+    "109_clay_bowl_es_own_accomplishment",
+    "109_clay_bowl_zh_own_accomplishment",
+    "109_trap_lions_lexical_trap",
+    "109_trap_event_lexical_trap",
+    "109_trap_spelling_lexical_trap"
+  ],
+  "generation_conditions": [
+    "baseline",
+    "target_carrier_q90",
+    "target_carrier_suppress_high"
+  ],
+  "generation_protocol": {
+    "max_tokens": 96,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128
+  },
+  "limits": [
+    "Synthetic matched templates, only4heldoutfamilies and related translations, no native-speaker review.",
+    "Carrier clamp sustained at one quantile is bounded in scalar magnitude but need not match natural temporal dynamics.",
+    "Control displacements and downcolumn norms are reported, not exactly matched.",
+    "A/B judgments can be saturated or influenced by wording; report baseline and bothorders.",
+    "Only one coordinate tested; no global cleanliness/monosemanticity/subjectivefeelings claims.",
+    "No prompts, thresholds, candidate or operations retuned after outputs."
+  ]
+}

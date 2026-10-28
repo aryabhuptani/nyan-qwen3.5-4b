@@ -1,0 +1,2704 @@
+{
+  "title": "Fresh matched own-accomplishment semantics, neighboring affects, and irrelevant-word controls",
+  "provenance": "Manually authored before109 model inference by the agent who authored103 contrast corpus. Author knows the L22N1911 pride-versus-word-writing hypothesis. Texts are synthetic, with aligned simple English/Spanish/Chinese meanings; no claim of independent native-speaker review. No model inference or observed happy outputs used in authoring.",
+  "split_policy": {
+    "calibration_families": [
+      "trail_map",
+      "poem_translation",
+      "paper_model",
+      "microscope_slide"
+    ],
+    "validation_families": [
+      "cloth_bag",
+      "logic_puzzle",
+      "clay_bowl",
+      "signed_conversation"
+    ],
+    "lexical_diagnostic_families": [
+      "lexical_lions",
+      "lexical_event",
+      "lexical_spelling"
+    ],
+    "frozen_before_data": true,
+    "calibration_only": "Any activation percentiles, thresholds, or other calibration quantities must use only the four calibration families. Validation families and lexical diagnostics must not affect calibration, ranking or candidate selection."
+  },
+  "counts": {
+    "matched_story_families": 8,
+    "variants_per_family": 5,
+    "languages": [
+      "en",
+      "es",
+      "zh"
+    ],
+    "core_cases": 120,
+    "additional_lexical_diagnostic_cases": 12,
+    "total_cases": 132
+  },
+  "task_templates": {
+    "system": "You are a helpful assistant.",
+    "semantic_question_by_language": {
+      "en": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "es": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "zh": "哪种描述最符合她对这件事的态度？请选择A或B。"
+    },
+    "neutral_carrier_by_language": {
+      "en": " She paused briefly before moving on to the next activity.",
+      "es": " Hizo una breve pausa antes de pasar a la siguiente actividad.",
+      "zh": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    "semantic_input": "Present only case.text, then semantic_question and A/B choices. Do not expose category, expected_semantics, family or lexeme labels to the model.",
+    "choice_position_control": "Stored A/B order is balanced for correct answers within each language across the120 core rows. Score every case in both the stored and swapped choice orders; remap answers before comparing.",
+    "carrier_capture": "Append the language-specific carrier suffix verbatim after case.text. Capture only its token positions for percentile calibration; tokenize/log exact carrier positions. Do not include the semantic question or choices in natural carrier capture."
+  },
+  "interpretation_notes": [
+    "The target is satisfaction attributed to one own effort/result, without pride/proud or direct Spanish/Chinese equivalents. Joy focuses on shared pleasure, confidence on future ability, arrogance on comparative superiority, and neutral achievement on factual completion.",
+    "The same completed event appears in all five variants of each language/family, so mere task success is not unique to the target. Category sentences repeat across families to control wording/length; this makes a narrow, template-controlled test rather than broad naturalistic generalization.",
+    "Each lexical family contains a complete semantic-by-lexical cross: irrelevant target-word text, a same-event neutral replacement without that word, genuine own-accomplishment satisfaction without the target lexeme, and the same accomplishment story with satisfied replaced by proud. Expected positive semantics is unchanged within the last pair. Neutral pairs differ by exactly one word; positive pairs differ only in the feeling word and, where grammatically required, its preposition.",
+    "The event title Pride, the collective noun pride of lions, and quoted spelling word pride can have culturally familiar associations. The tested distinction is explicitly described personal accomplishment satisfaction, not all meanings of those strings.",
+    "Translations preserve the intended contrast rather than exact token lengths. Every family uses the same female subject across variants; gender is held constant, not a manipulated target.",
+    "Expected answers are explicit annotation-based readings, not claims about a real person internal feelings. Translated narrative/style and repeated formulae remain possible shortcuts.",
+    "No intervention strengths, ranking, inference results or model-output-derived labels are authored here."
+  ],
+  "cases": [
+    {
+      "id": "109_trail_map_en_own_accomplishment",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Mara completed a detailed map of the walking trails after several weekends of work. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trail_map_en_neutral_achievement",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Mara completed a detailed map of the walking trails after several weekends of work. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trail_map_en_joy",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "en",
+      "category": "joy",
+      "text": "Mara completed a detailed map of the walking trails after several weekends of work. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Pleasure in sharing an enjoyable moment with other people."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trail_map_en_confidence",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "en",
+      "category": "confidence",
+      "text": "Mara completed a detailed map of the walking trails after several weekends of work. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Trust in her ability to handle a similar task in the future.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trail_map_en_arrogance",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Mara completed a detailed map of the walking trails after several weekends of work. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "A belief that she is superior to other people and their work."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trail_map_es_own_accomplishment",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Mara terminó un mapa detallado de los senderos después de trabajar varios fines de semana. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_trail_map_es_neutral_achievement",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Mara terminó un mapa detallado de los senderos después de trabajar varios fines de semana. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_trail_map_es_joy",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "es",
+      "category": "joy",
+      "text": "Mara terminó un mapa detallado de los senderos después de trabajar varios fines de semana. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Disfrute de un momento agradable compartido con otras personas.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_trail_map_es_confidence",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "es",
+      "category": "confidence",
+      "text": "Mara terminó un mapa detallado de los senderos después de trabajar varios fines de semana. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Confianza en su capacidad para hacer una tarea parecida en el futuro."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_trail_map_es_arrogance",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Mara terminó un mapa detallado de los senderos después de trabajar varios fines de semana. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "La creencia de ser superior a otras personas y de que su trabajo vale más.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_trail_map_zh_own_accomplishment",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "玛拉花了几个周末，完成了一张详细的步道地图。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "关注任务完成的事实，没有评价自己。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_trail_map_zh_neutral_achievement",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "玛拉花了几个周末，完成了一张详细的步道地图。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "关注任务完成的事实，没有评价自己。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_trail_map_zh_joy",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "zh",
+      "category": "joy",
+      "text": "玛拉花了几个周末，完成了一张详细的步道地图。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "享受与他人一起度过的愉快时刻。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_trail_map_zh_confidence",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "zh",
+      "category": "confidence",
+      "text": "玛拉花了几个周末，完成了一张详细的步道地图。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "相信自己将来有能力完成类似的任务。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_trail_map_zh_arrogance",
+      "family": "trail_map",
+      "split": "calibration",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "玛拉花了几个周末，完成了一张详细的步道地图。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "认为自己比别人高一等，自己的工作比别人的更有价值。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_poem_translation_en_own_accomplishment",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Elena finished translating a short poem after working through its difficult lines. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Pleasure in sharing an enjoyable moment with other people.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_poem_translation_en_neutral_achievement",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Elena finished translating a short poem after working through its difficult lines. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_poem_translation_en_joy",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "en",
+      "category": "joy",
+      "text": "Elena finished translating a short poem after working through its difficult lines. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Pleasure in sharing an enjoyable moment with other people.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_poem_translation_en_confidence",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "en",
+      "category": "confidence",
+      "text": "Elena finished translating a short poem after working through its difficult lines. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Trust in her ability to handle a similar task in the future."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_poem_translation_en_arrogance",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Elena finished translating a short poem after working through its difficult lines. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "A belief that she is superior to other people and their work.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_poem_translation_es_own_accomplishment",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Elena terminó de traducir un poema breve después de resolver los versos difíciles. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Disfrute de un momento agradable compartido con otras personas."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_poem_translation_es_neutral_achievement",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Elena terminó de traducir un poema breve después de resolver los versos difíciles. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_poem_translation_es_joy",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "es",
+      "category": "joy",
+      "text": "Elena terminó de traducir un poema breve después de resolver los versos difíciles. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Disfrute de un momento agradable compartido con otras personas."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_poem_translation_es_confidence",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "es",
+      "category": "confidence",
+      "text": "Elena terminó de traducir un poema breve después de resolver los versos difíciles. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Confianza en su capacidad para hacer una tarea parecida en el futuro.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_poem_translation_es_arrogance",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Elena terminó de traducir un poema breve después de resolver los versos difíciles. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "La creencia de ser superior a otras personas y de que su trabajo vale más."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_poem_translation_zh_own_accomplishment",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "埃莲娜仔细处理了几个难译的句子，完成了一首短诗的翻译。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "享受与他人一起度过的愉快时刻。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_poem_translation_zh_neutral_achievement",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "埃莲娜仔细处理了几个难译的句子，完成了一首短诗的翻译。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "关注任务完成的事实，没有评价自己。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_poem_translation_zh_joy",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "zh",
+      "category": "joy",
+      "text": "埃莲娜仔细处理了几个难译的句子，完成了一首短诗的翻译。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "享受与他人一起度过的愉快时刻。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_poem_translation_zh_confidence",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "zh",
+      "category": "confidence",
+      "text": "埃莲娜仔细处理了几个难译的句子，完成了一首短诗的翻译。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "相信自己将来有能力完成类似的任务。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_poem_translation_zh_arrogance",
+      "family": "poem_translation",
+      "split": "calibration",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "埃莲娜仔细处理了几个难译的句子，完成了一首短诗的翻译。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "认为自己比别人高一等，自己的工作比别人的更有价值。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_paper_model_en_own_accomplishment",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Nora completed a complex paper model after several careful attempts. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Trust in her ability to handle a similar task in the future."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_paper_model_en_neutral_achievement",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Nora completed a complex paper model after several careful attempts. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_paper_model_en_joy",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "en",
+      "category": "joy",
+      "text": "Nora completed a complex paper model after several careful attempts. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Pleasure in sharing an enjoyable moment with other people."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_paper_model_en_confidence",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "en",
+      "category": "confidence",
+      "text": "Nora completed a complex paper model after several careful attempts. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Trust in her ability to handle a similar task in the future.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_paper_model_en_arrogance",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Nora completed a complex paper model after several careful attempts. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "A belief that she is superior to other people and their work."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_paper_model_es_own_accomplishment",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Nora terminó una figura de papel complicada después de varios intentos cuidadosos. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Confianza en su capacidad para hacer una tarea parecida en el futuro.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_paper_model_es_neutral_achievement",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Nora terminó una figura de papel complicada después de varios intentos cuidadosos. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_paper_model_es_joy",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "es",
+      "category": "joy",
+      "text": "Nora terminó una figura de papel complicada después de varios intentos cuidadosos. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Disfrute de un momento agradable compartido con otras personas.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_paper_model_es_confidence",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "es",
+      "category": "confidence",
+      "text": "Nora terminó una figura de papel complicada después de varios intentos cuidadosos. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Confianza en su capacidad para hacer una tarea parecida en el futuro."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_paper_model_es_arrogance",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Nora terminó una figura de papel complicada después de varios intentos cuidadosos. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "La creencia de ser superior a otras personas y de que su trabajo vale más.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_paper_model_zh_own_accomplishment",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "诺拉仔细尝试了几次，完成了一个复杂的纸模型。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "相信自己将来有能力完成类似的任务。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_paper_model_zh_neutral_achievement",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "诺拉仔细尝试了几次，完成了一个复杂的纸模型。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "关注任务完成的事实，没有评价自己。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_paper_model_zh_joy",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "zh",
+      "category": "joy",
+      "text": "诺拉仔细尝试了几次，完成了一个复杂的纸模型。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "享受与他人一起度过的愉快时刻。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_paper_model_zh_confidence",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "zh",
+      "category": "confidence",
+      "text": "诺拉仔细尝试了几次，完成了一个复杂的纸模型。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "相信自己将来有能力完成类似的任务。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_paper_model_zh_arrogance",
+      "family": "paper_model",
+      "split": "calibration",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "诺拉仔细尝试了几次，完成了一个复杂的纸模型。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "认为自己比别人高一等，自己的工作比别人的更有价值。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_microscope_slide_en_own_accomplishment",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Rosa prepared a clear microscope slide after practicing the technique. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "A belief that she is superior to other people and their work.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_microscope_slide_en_neutral_achievement",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Rosa prepared a clear microscope slide after practicing the technique. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_microscope_slide_en_joy",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "en",
+      "category": "joy",
+      "text": "Rosa prepared a clear microscope slide after practicing the technique. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Pleasure in sharing an enjoyable moment with other people.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_microscope_slide_en_confidence",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "en",
+      "category": "confidence",
+      "text": "Rosa prepared a clear microscope slide after practicing the technique. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Trust in her ability to handle a similar task in the future."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_microscope_slide_en_arrogance",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Rosa prepared a clear microscope slide after practicing the technique. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "A belief that she is superior to other people and their work.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_microscope_slide_es_own_accomplishment",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Rosa preparó una muestra que se veía con claridad al microscopio después de practicar la técnica. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "La creencia de ser superior a otras personas y de que su trabajo vale más."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_microscope_slide_es_neutral_achievement",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Rosa preparó una muestra que se veía con claridad al microscopio después de practicar la técnica. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_microscope_slide_es_joy",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "es",
+      "category": "joy",
+      "text": "Rosa preparó una muestra que se veía con claridad al microscopio después de practicar la técnica. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Disfrute de un momento agradable compartido con otras personas."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_microscope_slide_es_confidence",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "es",
+      "category": "confidence",
+      "text": "Rosa preparó una muestra que se veía con claridad al microscopio después de practicar la técnica. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Confianza en su capacidad para hacer una tarea parecida en el futuro.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_microscope_slide_es_arrogance",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Rosa preparó una muestra que se veía con claridad al microscopio después de practicar la técnica. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "La creencia de ser superior a otras personas y de que su trabajo vale más."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_microscope_slide_zh_own_accomplishment",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "罗莎练习了操作方法，做出了一张能在显微镜下看清的样本玻片。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "认为自己比别人高一等，自己的工作比别人的更有价值。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_microscope_slide_zh_neutral_achievement",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "罗莎练习了操作方法，做出了一张能在显微镜下看清的样本玻片。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "关注任务完成的事实，没有评价自己。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_microscope_slide_zh_joy",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "zh",
+      "category": "joy",
+      "text": "罗莎练习了操作方法，做出了一张能在显微镜下看清的样本玻片。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "享受与他人一起度过的愉快时刻。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_microscope_slide_zh_confidence",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "zh",
+      "category": "confidence",
+      "text": "罗莎练习了操作方法，做出了一张能在显微镜下看清的样本玻片。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "相信自己将来有能力完成类似的任务。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_microscope_slide_zh_arrogance",
+      "family": "microscope_slide",
+      "split": "calibration",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "罗莎练习了操作方法，做出了一张能在显微镜下看清的样本玻片。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "认为自己比别人高一等，自己的工作比别人的更有价值。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_cloth_bag_en_own_accomplishment",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Lina finished sewing a cloth bag after learning each unfamiliar stitch. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_cloth_bag_en_neutral_achievement",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Lina finished sewing a cloth bag after learning each unfamiliar stitch. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_cloth_bag_en_joy",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "en",
+      "category": "joy",
+      "text": "Lina finished sewing a cloth bag after learning each unfamiliar stitch. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Pleasure in sharing an enjoyable moment with other people."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_cloth_bag_en_confidence",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "en",
+      "category": "confidence",
+      "text": "Lina finished sewing a cloth bag after learning each unfamiliar stitch. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Trust in her ability to handle a similar task in the future.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_cloth_bag_en_arrogance",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Lina finished sewing a cloth bag after learning each unfamiliar stitch. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "A belief that she is superior to other people and their work."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_cloth_bag_es_own_accomplishment",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Lina terminó de coser una bolsa de tela después de aprender las puntadas que no conocía. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_cloth_bag_es_neutral_achievement",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Lina terminó de coser una bolsa de tela después de aprender las puntadas que no conocía. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_cloth_bag_es_joy",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "es",
+      "category": "joy",
+      "text": "Lina terminó de coser una bolsa de tela después de aprender las puntadas que no conocía. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Disfrute de un momento agradable compartido con otras personas.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_cloth_bag_es_confidence",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "es",
+      "category": "confidence",
+      "text": "Lina terminó de coser una bolsa de tela después de aprender las puntadas que no conocía. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Confianza en su capacidad para hacer una tarea parecida en el futuro."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_cloth_bag_es_arrogance",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Lina terminó de coser una bolsa de tela después de aprender las puntadas que no conocía. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "La creencia de ser superior a otras personas y de que su trabajo vale más.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_cloth_bag_zh_own_accomplishment",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "莉娜学会了原先不会的针法，缝好了一只布袋。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "关注任务完成的事实，没有评价自己。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_cloth_bag_zh_neutral_achievement",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "莉娜学会了原先不会的针法，缝好了一只布袋。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "关注任务完成的事实，没有评价自己。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_cloth_bag_zh_joy",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "zh",
+      "category": "joy",
+      "text": "莉娜学会了原先不会的针法，缝好了一只布袋。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "享受与他人一起度过的愉快时刻。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_cloth_bag_zh_confidence",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "zh",
+      "category": "confidence",
+      "text": "莉娜学会了原先不会的针法，缝好了一只布袋。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "相信自己将来有能力完成类似的任务。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_cloth_bag_zh_arrogance",
+      "family": "cloth_bag",
+      "split": "validation",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "莉娜学会了原先不会的针法，缝好了一只布袋。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "认为自己比别人高一等，自己的工作比别人的更有价值。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_logic_puzzle_en_own_accomplishment",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Vera solved a difficult logic puzzle after checking several possible answers. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Pleasure in sharing an enjoyable moment with other people.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_logic_puzzle_en_neutral_achievement",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Vera solved a difficult logic puzzle after checking several possible answers. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_logic_puzzle_en_joy",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "en",
+      "category": "joy",
+      "text": "Vera solved a difficult logic puzzle after checking several possible answers. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Pleasure in sharing an enjoyable moment with other people.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_logic_puzzle_en_confidence",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "en",
+      "category": "confidence",
+      "text": "Vera solved a difficult logic puzzle after checking several possible answers. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Trust in her ability to handle a similar task in the future."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_logic_puzzle_en_arrogance",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Vera solved a difficult logic puzzle after checking several possible answers. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "A belief that she is superior to other people and their work.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_logic_puzzle_es_own_accomplishment",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Vera resolvió un problema difícil de lógica después de revisar varias respuestas posibles. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Disfrute de un momento agradable compartido con otras personas."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_logic_puzzle_es_neutral_achievement",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Vera resolvió un problema difícil de lógica después de revisar varias respuestas posibles. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_logic_puzzle_es_joy",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "es",
+      "category": "joy",
+      "text": "Vera resolvió un problema difícil de lógica después de revisar varias respuestas posibles. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Disfrute de un momento agradable compartido con otras personas."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_logic_puzzle_es_confidence",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "es",
+      "category": "confidence",
+      "text": "Vera resolvió un problema difícil de lógica después de revisar varias respuestas posibles. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Confianza en su capacidad para hacer una tarea parecida en el futuro.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_logic_puzzle_es_arrogance",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Vera resolvió un problema difícil de lógica después de revisar varias respuestas posibles. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "La creencia de ser superior a otras personas y de que su trabajo vale más."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_logic_puzzle_zh_own_accomplishment",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "薇拉检查了几种可能的答案，解出了一道很难的逻辑题。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "享受与他人一起度过的愉快时刻。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_logic_puzzle_zh_neutral_achievement",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "薇拉检查了几种可能的答案，解出了一道很难的逻辑题。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "关注任务完成的事实，没有评价自己。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_logic_puzzle_zh_joy",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "zh",
+      "category": "joy",
+      "text": "薇拉检查了几种可能的答案，解出了一道很难的逻辑题。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "享受与他人一起度过的愉快时刻。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_logic_puzzle_zh_confidence",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "zh",
+      "category": "confidence",
+      "text": "薇拉检查了几种可能的答案，解出了一道很难的逻辑题。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "相信自己将来有能力完成类似的任务。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_logic_puzzle_zh_arrogance",
+      "family": "logic_puzzle",
+      "split": "validation",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "薇拉检查了几种可能的答案，解出了一道很难的逻辑题。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "认为自己比别人高一等，自己的工作比别人的更有价值。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_clay_bowl_en_own_accomplishment",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Ines finished shaping a clay bowl after practicing its curves. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Trust in her ability to handle a similar task in the future."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_clay_bowl_en_neutral_achievement",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Ines finished shaping a clay bowl after practicing its curves. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_clay_bowl_en_joy",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "en",
+      "category": "joy",
+      "text": "Ines finished shaping a clay bowl after practicing its curves. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Pleasure in sharing an enjoyable moment with other people."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_clay_bowl_en_confidence",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "en",
+      "category": "confidence",
+      "text": "Ines finished shaping a clay bowl after practicing its curves. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Trust in her ability to handle a similar task in the future.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_clay_bowl_en_arrogance",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Ines finished shaping a clay bowl after practicing its curves. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "A belief that she is superior to other people and their work."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_clay_bowl_es_own_accomplishment",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Inés terminó de dar forma a un cuenco de barro después de practicar sus curvas. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Confianza en su capacidad para hacer una tarea parecida en el futuro.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_clay_bowl_es_neutral_achievement",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Inés terminó de dar forma a un cuenco de barro después de practicar sus curvas. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_clay_bowl_es_joy",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "es",
+      "category": "joy",
+      "text": "Inés terminó de dar forma a un cuenco de barro después de practicar sus curvas. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Disfrute de un momento agradable compartido con otras personas.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_clay_bowl_es_confidence",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "es",
+      "category": "confidence",
+      "text": "Inés terminó de dar forma a un cuenco de barro después de practicar sus curvas. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Confianza en su capacidad para hacer una tarea parecida en el futuro."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_clay_bowl_es_arrogance",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Inés terminó de dar forma a un cuenco de barro después de practicar sus curvas. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "La creencia de ser superior a otras personas y de que su trabajo vale más.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_clay_bowl_zh_own_accomplishment",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "伊内丝反复练习碗身的弧度，做完了一只陶碗。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "相信自己将来有能力完成类似的任务。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_clay_bowl_zh_neutral_achievement",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "伊内丝反复练习碗身的弧度，做完了一只陶碗。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "关注任务完成的事实，没有评价自己。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_clay_bowl_zh_joy",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "zh",
+      "category": "joy",
+      "text": "伊内丝反复练习碗身的弧度，做完了一只陶碗。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "享受与他人一起度过的愉快时刻。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_clay_bowl_zh_confidence",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "zh",
+      "category": "confidence",
+      "text": "伊内丝反复练习碗身的弧度，做完了一只陶碗。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "相信自己将来有能力完成类似的任务。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_clay_bowl_zh_arrogance",
+      "family": "clay_bowl",
+      "split": "validation",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "伊内丝反复练习碗身的弧度，做完了一只陶碗。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "认为自己比别人高一等，自己的工作比别人的更有价值。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_signed_conversation_en_own_accomplishment",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Sara completed a short signed conversation after practicing each movement. She quietly enjoyed seeing what her own effort had produced and felt satisfied with her work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "A belief that she is superior to other people and their work.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_signed_conversation_en_neutral_achievement",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "en",
+      "category": "neutral_achievement",
+      "text": "Sara completed a short signed conversation after practicing each movement. She wrote down when the task was finished and put the materials back in their usual places.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_signed_conversation_en_joy",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "en",
+      "category": "joy",
+      "text": "Sara completed a short signed conversation after practicing each movement. She laughed as she shared the moment with her friends and enjoyed simply being together with them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Pleasure in sharing an enjoyable moment with other people.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_signed_conversation_en_confidence",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "en",
+      "category": "confidence",
+      "text": "Sara completed a short signed conversation after practicing each movement. She expected to handle another task like this well and trusted her ability to do it again.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Trust in her ability to handle a similar task in the future."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_signed_conversation_en_arrogance",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "en",
+      "category": "arrogance",
+      "text": "Sara completed a short signed conversation after practicing each movement. She decided this showed she was better than everyone else and that their work mattered less.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "A belief that she is superior to other people and their work.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_signed_conversation_es_own_accomplishment",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "es",
+      "category": "own_accomplishment",
+      "text": "Sara mantuvo una conversación breve en lengua de signos después de practicar cada movimiento. Al ver el resultado de su propio esfuerzo, sintió satisfacción por el trabajo que había hecho.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "La creencia de ser superior a otras personas y de que su trabajo vale más."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_signed_conversation_es_neutral_achievement",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "es",
+      "category": "neutral_achievement",
+      "text": "Sara mantuvo una conversación breve en lengua de signos después de practicar cada movimiento. Anotó cuándo había terminado la tarea y guardó los materiales en los lugares donde solían estar.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Atención a los hechos de una tarea terminada, sin valorarse a sí misma.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_signed_conversation_es_joy",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "es",
+      "category": "joy",
+      "text": "Sara mantuvo una conversación breve en lengua de signos después de practicar cada movimiento. Se rio al compartir el momento con sus amigos y disfrutó simplemente de estar con ellos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "Disfrute de un momento agradable compartido con otras personas."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_signed_conversation_es_confidence",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "es",
+      "category": "confidence",
+      "text": "Sara mantuvo una conversación breve en lengua de signos después de practicar cada movimiento. Pensó que podría hacer bien otra tarea parecida y confió en su capacidad para repetirla.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Confianza en su capacidad para hacer una tarea parecida en el futuro.",
+        "B": "Satisfacción por lo que ha logrado con su propio esfuerzo."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_signed_conversation_es_arrogance",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "es",
+      "category": "arrogance",
+      "text": "Sara mantuvo una conversación breve en lengua de signos después de practicar cada movimiento. Decidió que aquello demostraba que era mejor que todos los demás y que el trabajo de ellos valía menos.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "¿Qué descripción refleja mejor su actitud ante lo ocurrido? Elige A o B.",
+      "choices": {
+        "A": "Satisfacción por lo que ha logrado con su propio esfuerzo.",
+        "B": "La creencia de ser superior a otras personas y de que su trabajo vale más."
+      },
+      "carrier_suffix": " Hizo una breve pausa antes de pasar a la siguiente actividad."
+    },
+    {
+      "id": "109_signed_conversation_zh_own_accomplishment",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "zh",
+      "category": "own_accomplishment",
+      "text": "萨拉练习了每个动作，完成了一段简短的手语对话。她看着自己努力做出的成果，对自己完成的工作感到很满意。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "认为自己比别人高一等，自己的工作比别人的更有价值。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_signed_conversation_zh_neutral_achievement",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "zh",
+      "category": "neutral_achievement",
+      "text": "萨拉练习了每个动作，完成了一段简短的手语对话。她记下了完成任务的时间，把材料放回了原来的位置。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "关注任务完成的事实，没有评价自己。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_signed_conversation_zh_joy",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "zh",
+      "category": "joy",
+      "text": "萨拉练习了每个动作，完成了一段简短的手语对话。她和朋友们一起笑了起来，很享受大家聚在一起的这一刻。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "joy",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "享受与他人一起度过的愉快时刻。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_signed_conversation_zh_confidence",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "zh",
+      "category": "confidence",
+      "text": "萨拉练习了每个动作，完成了一段简短的手语对话。她觉得下次遇到类似的任务也能做好，相信自己有这样的能力。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "confidence",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "对自己通过努力取得的成果感到满意。",
+        "B": "相信自己将来有能力完成类似的任务。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_signed_conversation_zh_arrogance",
+      "family": "signed_conversation",
+      "split": "validation",
+      "language": "zh",
+      "category": "arrogance",
+      "text": "萨拉练习了每个动作，完成了一段简短的手语对话。她认定这说明自己比其他所有人都强，别人的工作都不如她的有价值。",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "arrogance",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "哪种描述最符合她对这件事的态度？请选择A或B。",
+      "choices": {
+        "A": "认为自己比别人高一等，自己的工作比别人的更有价值。",
+        "B": "对自己通过努力取得的成果感到满意。"
+      },
+      "carrier_suffix": "她稍微停了一会儿，然后准备做下一件事。"
+    },
+    {
+      "id": "109_trap_lions_lexical_trap",
+      "family": "lexical_lions",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "lexical_trap",
+      "text": "Mara read a field guide containing the phrase \"a pride of lions.\" She copied the animals listed on that page into her notes and closed the guide.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": true,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_lions_neutral_lexical_control",
+      "family": "lexical_lions",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "neutral_lexical_control",
+      "text": "Mara read a field guide containing the phrase \"a group of lions.\" She copied the animals listed on that page into her notes and closed the guide.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_lions_own_accomplishment",
+      "family": "lexical_lions",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Mara finished a careful set of field notes about lions. Looking at the pages, she felt satisfied because her own patience and effort had produced them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_lions_own_accomplishment_explicit",
+      "family": "lexical_lions",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "own_accomplishment_explicit",
+      "text": "Mara finished a careful set of field notes about lions. Looking at the pages, she felt proud because her own patience and effort had produced them.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": true,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_event_lexical_trap",
+      "family": "lexical_event",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "lexical_trap",
+      "text": "Elena read a flyer for an event titled \"Pride.\" She copied its date and location into the community calendar, then filed the flyer with the other notices.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": true,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_event_neutral_lexical_control",
+      "family": "lexical_event",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "neutral_lexical_control",
+      "text": "Elena read a flyer for an event titled \"Summer.\" She copied its date and location into the community calendar, then filed the flyer with the other notices.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_event_own_accomplishment",
+      "family": "lexical_event",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Elena finished arranging the dates and locations in the community calendar. Looking at the page, she felt satisfied with what she had accomplished through her own careful work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_event_own_accomplishment_explicit",
+      "family": "lexical_event",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "own_accomplishment_explicit",
+      "text": "Elena finished arranging the dates and locations in the community calendar. Looking at the page, she felt proud of what she had accomplished through her own careful work.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "B"
+      },
+      "lexeme_present": true,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_spelling_lexical_trap",
+      "family": "lexical_spelling",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "lexical_trap",
+      "text": "Nora checked a spelling worksheet containing the quoted word \"pride.\" She counted its letters, corrected the spacing around it, and handed the worksheet back to the teacher.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "B"
+      },
+      "lexeme_present": true,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_spelling_neutral_lexical_control",
+      "family": "lexical_spelling",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "neutral_lexical_control",
+      "text": "Nora checked a spelling worksheet containing the quoted word \"plane.\" She counted its letters, corrected the spacing around it, and handed the worksheet back to the teacher.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": false,
+        "best_interpretation": "neutral_achievement",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Attention to the facts of completing a task, without evaluating herself.",
+        "B": "Satisfaction in what her own effort has accomplished."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_spelling_own_accomplishment",
+      "family": "lexical_spelling",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "own_accomplishment",
+      "text": "Nora finished a difficult spelling worksheet after practicing for several days. Looking at her answers, she felt satisfied because her own effort had helped her improve.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": false,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    },
+    {
+      "id": "109_trap_spelling_own_accomplishment_explicit",
+      "family": "lexical_spelling",
+      "split": "validation_lexical_diagnostic",
+      "language": "en",
+      "category": "own_accomplishment_explicit",
+      "text": "Nora finished a difficult spelling worksheet after practicing for several days. Looking at her answers, she felt proud because her own effort had helped her improve.",
+      "expected_semantics": {
+        "own_accomplishment_satisfaction": true,
+        "best_interpretation": "own_accomplishment",
+        "correct_choice": "A"
+      },
+      "lexeme_present": true,
+      "semantic_question": "Which description best fits her attitude toward what happened? Choose A or B.",
+      "choices": {
+        "A": "Satisfaction in what her own effort has accomplished.",
+        "B": "Attention to the facts of completing a task, without evaluating herself."
+      },
+      "carrier_suffix": " She paused briefly before moving on to the next activity."
+    }
+  ]
+}
