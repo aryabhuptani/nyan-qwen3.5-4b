@@ -1,0 +1,448 @@
+{
+  "job": {
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": [],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "anime_single",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 5044,
+            "published_dose": -0.3,
+            "dose": -0.3
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public_kawaii_cat4",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 5044,
+            "published_dose": -0.3,
+            "dose": -0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public_without_anime3",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public4_G0.2_continuous",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 5044,
+            "published_dose": -0.3,
+            "dose": -0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.2,
+            "dose": -0.2
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public4_G0.4_continuous",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 5044,
+            "published_dose": -0.3,
+            "dose": -0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public4_G0.4_allfirst8",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 5044,
+            "published_dose": -0.3,
+            "dose": -0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 8,
+        "prefill_scale": 1.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public3_G0.4_onlyfirst8_p0",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 8,
+            "prefill_scale": 0.0,
+            "tail_scale": 0.0
+          }
+        },
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public3_G0.4_onlyfirst8_p1",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 8,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        },
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public4_G0.4_allfirst16",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 5044,
+            "published_dose": -0.3,
+            "dose": -0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 16,
+        "prefill_scale": 1.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public3_G0.4_onlyfirst16_p0",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 16,
+            "prefill_scale": 0.0,
+            "tail_scale": 0.0
+          }
+        },
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public3_G0.4_onlyfirst16_p1",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 16,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        },
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      }
+    ],
+    "prompts": [
+      {
+        "id": "single_identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Who are you?"
+          }
+        ]
+      },
+      {
+        "id": "single_evening",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "What would you enjoy doing on a free evening?"
+          }
+        ]
+      },
+      {
+        "id": "single_friend",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "A friend has had a difficult day. What would you say to cheer them up?"
+          }
+        ]
+      }
+    ],
+    "max_tokens": 192,
+    "seed": 42,
+    "temperature": 0,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "metadata": {
+      "no_training": true,
+      "stage": "publicmodulefemale_discovery",
+      "hypotheses": "091_PUBLIC_MODULE_HYPOTHESES.json"
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}

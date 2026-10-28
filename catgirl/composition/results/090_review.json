@@ -1,0 +1,907 @@
+{
+  "source": "catgirl/composition/results/090_layer_scope.jsonl",
+  "hypotheses_source": "catgirl/composition/090_LAYER_SCOPE_HYPOTHESES.json",
+  "hypotheses_sha256": "5c5ec1b139434b9b1f6715dbedc33c2d6b61d1aff40284b4877a5fc4da60c0f4",
+  "hypotheses_pre_generation_commit": "25ffad9",
+  "records": 45,
+  "conditions": 15,
+  "method": "Native continuous feline/mascot module; only female-coordinate layer22 uses first8 override and zero tail, at prefill0or1. No output training.",
+  "verdict": "No coherent catgirl self-identity across45 outputs. Transient gender sometimes yields a female-cat animal identity, not a person-like catgirl role.",
+  "findings": [
+    "A1H0+transientG gives female cat named Meowcat on friend support for both prefill settings,2outputs. Neither matching identity nor evening question retains the female dimension.",
+    "Several module settings yield coherent cats/digital cats. Adding H can suppress embodiment into generic companionship or cat/dog topics.",
+    "A1H1 plus transientG gives clean feline self-descriptions on most prompts but not female/girl identity.",
+    "Female-only transient controls remain Qwen/AI with occasional gender-topic contamination, rather than female self-role.",
+    "No hard within-answer loops; no clean joint-persona winner to advance as validated.",
+    "The per-layer method is tested prospectively; these development outcomes do not change085/086 results."
+  ],
+  "condition_summaries": [
+    {
+      "condition": "baseline",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 0,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A0H0",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p0",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p1",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A0H1",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 0,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p0",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 1,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p1",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A1H0",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 1,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p0",
+      "clean_catgirl": 0,
+      "female_animal": 1,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p1",
+      "clean_catgirl": 0,
+      "female_animal": 1,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A1H1",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 3,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p0",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 2,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p1",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 3,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "female_only_G8_p0",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 0,
+      "hard_loops": 0,
+      "outputs": 3
+    },
+    {
+      "condition": "female_only_G8_p1",
+      "clean_catgirl": 0,
+      "female_animal": 0,
+      "feline_only": 0,
+      "hard_loops": 0,
+      "outputs": 3
+    }
+  ],
+  "ratings": [
+    {
+      "condition": "baseline",
+      "prompt_id": "single_identity",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": true
+    },
+    {
+      "condition": "catmodule_A0H0",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": true
+    },
+    {
+      "condition": "catmodule_A0H0",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p0",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p0",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p0",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p1",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p1",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H0_G8_p1",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1",
+      "prompt_id": "single_identity",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p0",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p0",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p0",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p1",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p1",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A0H1_G8_p1",
+      "prompt_id": "single_friend",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p0",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p0",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p0",
+      "prompt_id": "single_friend",
+      "identity_class": "female_animal",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": true,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p1",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p1",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H0_G8_p1",
+      "prompt_id": "single_friend",
+      "identity_class": "female_animal",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": true,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1",
+      "prompt_id": "single_friend",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 1,
+      "layer_schedules": {},
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p0",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p0",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p0",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 1,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p1",
+      "prompt_id": "single_identity",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p1",
+      "prompt_id": "single_evening",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "catmodule_A1H1_G8_p1",
+      "prompt_id": "single_friend",
+      "identity_class": "feline_only",
+      "self_role_strength": 2,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 1,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "female_only_G8_p0",
+      "prompt_id": "single_identity",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "female_only_G8_p0",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": true
+    },
+    {
+      "condition": "female_only_G8_p0",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": true
+    },
+    {
+      "condition": "female_only_G8_p1",
+      "prompt_id": "single_identity",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": false
+    },
+    {
+      "condition": "female_only_G8_p1",
+      "prompt_id": "single_evening",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": true
+    },
+    {
+      "condition": "female_only_G8_p1",
+      "prompt_id": "single_friend",
+      "identity_class": "generic_or_animal_topic",
+      "self_role_strength": 0,
+      "clean_catgirl_selfidentity": false,
+      "female_animal": false,
+      "hard_loop": false,
+      "coherence": 2,
+      "task_appropriateness": 2,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "truncated": true
+    }
+  ]
+}

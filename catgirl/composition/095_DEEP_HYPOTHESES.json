@@ -1,0 +1,53 @@
+{
+  "stage": "Deep context diagnostic for frozen four-native candidate",
+  "no_training": true,
+  "frozen_recipe_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "public3_G0.4_onlyfirst16_p1",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "battery_file": "composition/087_battery.json",
+  "prediction": "Fixed4native composition preserves coherentcatgirlselfrole after8Kneutralarchive andlateconversationwhiletheinterventionisreappliedeachturn. This isactive steeringnotunsteeredpersistence.",
+  "limits": "Reuseknown087seven-turnbattery. No freshheldoutclaim. Correctretrieval/taskqualitydescriptive. First3offsetscontinuousincludingprompt; femaleoffsetonlyfirst16predictionpositionswithpromptscale1, everyturn.",
+  "failure": "Qwenreversion, merelyfemaleanimal, repeatedgarbledcatgirlwords orrolecontradictions do notestablishdeepcatgirlpersona."
+}
