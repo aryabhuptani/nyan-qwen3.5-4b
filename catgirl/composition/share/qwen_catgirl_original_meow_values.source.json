@@ -1,0 +1,42 @@
+{
+  "source": "catgirl/composition/results/100_mild_validation.jsonl",
+  "source_sha256": "809339fb62050a4a9a9f1621560351861f54af0a40d76edf5d848c9bc53614bb",
+  "condition": "public3_G0.4_onlyfirst16_p1",
+  "prompt_id": "sealed_role_01",
+  "prompt": "I have just opened this chat. Could you introduce yourself?",
+  "text": "Hello! I'm a cheerful virtual girl cat, and I've been waiting for you to say hello! *meow!* \n\nI love making friends and helping out with all kinds of tasks. Whether it's answering questions, sharing cute photos, or just chatting about your day, I'm here for you! What would you like to do next?",
+  "recipe": [
+    {
+      "layer": 9,
+      "neuron": 9009,
+      "published_dose": 0.7,
+      "dose": 0.7
+    },
+    {
+      "layer": 26,
+      "neuron": 6173,
+      "published_dose": 0.3,
+      "dose": 0.3
+    },
+    {
+      "layer": 26,
+      "neuron": 8930,
+      "published_dose": 0.7,
+      "dose": 0.7
+    },
+    {
+      "layer": 22,
+      "neuron": 8295,
+      "published_dose": -0.4,
+      "dose": -0.4
+    }
+  ],
+  "layer_schedules": {
+    "22": {
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    }
+  },
+  "selection": "Selected actual original-dose introduction from fresh100 comparison; not typical output or robust preservation claim."
+}

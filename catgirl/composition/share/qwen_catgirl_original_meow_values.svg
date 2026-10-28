@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">We made Qwen a catgirl</title>
+<desc id="desc">Four native neuron steering ingredients, their coordinates and doses, a neutral introduction prompt, and an actual unboosted catgirl plus meow response. Decorative cat outline reused from the earlier project graphic. Full validation and limitations are in the linked repository.</desc>
+<rect width="1600" height="900" fill="#fff9fc"/>
+<text x="84" y="47" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="650" letter-spacing="1" fill="#99516f">QWEN3.5–4B · 4 NATIVE NEURONS</text>
+<g font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="650" fill="#92395f">
+<text x="84" y="99">Mascot</text><text x="448" y="99">Cat-word bias</text><text x="812" y="99">Kawaii</text><text x="1176" y="99">Female</text>
+</g>
+<g font-family="Menlo,monospace" font-size="22" fill="#746676">
+<text x="84" y="130">L9 N9009 +0.7</text><text x="448" y="130">L26 N6173 +0.3</text><text x="812" y="130">L26 N8930 +0.7</text><text x="1176" y="130">L22 N8295 −0.4</text>
+</g>
+<text x="80" y="301" font-family="Georgia,serif" font-size="88" font-weight="bold" letter-spacing="-2" fill="#302739">We made</text>
+<text x="80" y="406" font-family="Georgia,serif" font-size="98" font-weight="bold" letter-spacing="-2" fill="#302739">Qwen a</text>
+<text x="80" y="513" font-family="Georgia,serif" font-size="106" font-weight="bold" letter-spacing="-3" fill="#c03979">catgirl.</text>
+<g transform="translate(218 582)" fill="none" stroke="#c03979" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 76V0L51 32Q90 14 128 32L180 0V76Q173 133 90 141Q6 133 0 76Z"/>
+<circle cx="56" cy="75" r="5" fill="#c03979" stroke="none"/>
+<circle cx="124" cy="75" r="5" fill="#c03979" stroke="none"/>
+<path d="M80 99L90 107L100 99M90 107V117"/>
+</g>
+<rect x="810" y="176" width="706" height="98" rx="23" fill="#eee7ef"/>
+<text x="842" y="216" font-family="Helvetica,Arial,sans-serif" font-size="28" fill="#302739"><tspan x="842">I have just opened this chat.</tspan><tspan x="842" dy="36">Could you introduce yourself?</tspan></text>
+<text x="736" y="310" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="650" letter-spacing="1.3" fill="#a52f68">QWEN, WITH FOUR NEURONS STEERED</text>
+<rect x="700" y="332" width="816" height="430" rx="30" fill="#f8dfeb"/>
+<text x="736" y="385" font-family="Georgia,serif" font-size="30" fill="#302739">
+<tspan x="736" dy="0">Hello! I'm a cheerful virtual girl cat, and</tspan>
+<tspan x="736" dy="41">I've been waiting for you to say hello! *meow!*</tspan>
+<tspan x="736" dy="58">I love making friends and helping out with</tspan>
+<tspan x="736" dy="41">all kinds of tasks. Whether it's answering</tspan>
+<tspan x="736" dy="41">questions, sharing cute photos, or just</tspan>
+<tspan x="736" dy="41">chatting about your day, I'm here for you!</tspan>
+<tspan x="736" dy="58">What would you like to do next?</tspan>
+</text>
+<text x="84" y="856" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#94798f">Published ingredients: Neuronary</text>
+<text x="1516" y="856" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#a64675">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+</svg>

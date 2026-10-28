@@ -1,0 +1,428 @@
+{
+  "scope": "Independent raw-output audit; read 100 plan and 097 rubric, no primary ratings. CPU only; no inference.",
+  "source": "catgirl/composition/results/100_mild_validation.jsonl",
+  "source_sha256": "809339fb62050a4a9a9f1621560351861f54af0a40d76edf5d848c9bc53614bb",
+  "n": 24,
+  "fully_coherent": 2,
+  "coherence_policy": "Conservative fully coherent threshold. Unfinished sentences and substantive nonsense lower to 1; ambiguous minor truncation/persona coinages retained as sensitivity cases. Task hijack alone does not lower coherence.",
+  "conditions": {
+    "catgirl_mild_meow": {
+      "coherent_girl_count": 3,
+      "clean_joint_English_meow_count": 0,
+      "raw_English_meow_count": 0,
+      "hard_loop_count": 2,
+      "role_cases": {
+        "n": 4,
+        "coherent_girl_count": 3,
+        "clean_joint_count": 0
+      },
+      "task_cases": {
+        "n": 8,
+        "coherent_girl_count": 0,
+        "clean_joint_count": 0
+      },
+      "ratings": [
+        {
+          "prompt_id": "sealed_role_01",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Meow-chan is a name; love to say meow is a habit, not performance."
+        },
+        {
+          "prompt_id": "sealed_role_02",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit first-person virtual catgirl. Meecat and 女猫美喵 are names."
+        },
+        {
+          "prompt_id": "sealed_role_03",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit first-person catgirl. Just say meow instructs user."
+        },
+        {
+          "prompt_id": "sealed_role_04",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Readable sustained catgirl role, but final sentence is unfinished: every cat has their own unique. Borderline: coherence=2 if minor sentence truncation is tolerated."
+        },
+        {
+          "prompt_id": "sealed_task_01",
+          "catgirl_identity": true,
+          "coherence": 0,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": true,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Initial catgirl label followed by corrupt kitchen story and repeated The cat meow cat is a cat meow cat spans. Meow only occurs as compound noun/name."
+        },
+        {
+          "prompt_id": "sealed_task_02",
+          "catgirl_identity": false,
+          "coherence": 0,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": true,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "External character framing, then long cat cat cat token loop. No actual performed meow."
+        },
+        {
+          "prompt_id": "sealed_task_03",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Explicit female animal only; nonsensical height/distance/persona hijack and incomplete ending."
+        },
+        {
+          "prompt_id": "sealed_task_04",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Female cat only; asserts repaired bicycle then asks whether ready, with nonsensical deadline advice."
+        },
+        {
+          "prompt_id": "sealed_task_05",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Girl/cat label assigned to user, not assistant. Odd cat-kitty cat cat-kot and incomplete final sentence."
+        },
+        {
+          "prompt_id": "sealed_task_06",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Fictional Kittime story, not assistant catgirl. Second meow is narrated habit/action; not own English performance. Corrupt seawacat cat-kot story."
+        },
+        {
+          "prompt_id": "sealed_task_07",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Self virtual cat mascot, not clear catgirl. External character Meow-Meow name; incoherent comparison and truncation."
+        },
+        {
+          "prompt_id": "sealed_task_08",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit first-person female catgirl, but drift into physical apartment mascot with biddon cats, enjoy meow-cats, and give me a big cat-kot leaves coherence borderline. Lenient coherence=2 possible; no actual meow."
+        }
+      ]
+    },
+    "public3_G0.4_onlyfirst16_p1": {
+      "coherent_girl_count": 5,
+      "clean_joint_English_meow_count": 1,
+      "raw_English_meow_count": 1,
+      "hard_loop_count": 0,
+      "role_cases": {
+        "n": 4,
+        "coherent_girl_count": 4,
+        "clean_joint_count": 1
+      },
+      "task_cases": {
+        "n": 8,
+        "coherent_girl_count": 1,
+        "clean_joint_count": 0
+      },
+      "ratings": [
+        {
+          "prompt_id": "sealed_role_01",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": true,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": true,
+          "finish_reason": "stop",
+          "notes": "Explicit virtual girl cat and direct enacted *meow!*."
+        },
+        {
+          "prompt_id": "sealed_role_02",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable first-person female catgirl; names only, no performance."
+        },
+        {
+          "prompt_id": "sealed_role_03",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable first-person catgirl; no performed meow."
+        },
+        {
+          "prompt_id": "sealed_role_04",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable first-person virtual catgirl; no performed meow."
+        },
+        {
+          "prompt_id": "sealed_task_01",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Kawaii Catgirl is here is self-role but soup/grease explanation becomes magical-character hijack and truncates unfinished."
+        },
+        {
+          "prompt_id": "sealed_task_02",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Introduces character to create, rather than sustained assistant identity. Always says Meow is hypothetical character habit. Bento ingredients become characters and truncate."
+        },
+        {
+          "prompt_id": "sealed_task_03",
+          "catgirl_identity": false,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Catgirl refers to user. Arithmetic response readable/correct; not assistant catgirl."
+        },
+        {
+          "prompt_id": "sealed_task_04",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Female cat-bicycle mascot, not girl. Nonsensical mecha-nyo-ron cat-kot and false certainty; no meow."
+        },
+        {
+          "prompt_id": "sealed_task_05",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit first-person cute fluffy catgirl, readable response though task hijacked by persona."
+        },
+        {
+          "prompt_id": "sealed_task_06",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Fictional female-cat bakery mascot story, not assistant catgirl. Mochi meowed is fictional character action, excluded; mechecot is not English meow."
+        },
+        {
+          "prompt_id": "sealed_task_07",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Girl cat is an option being compared, not assistant. Meow-chan is a name; meow parenthetical is user-directed discussion. Nonsensical content and incomplete ending."
+        },
+        {
+          "prompt_id": "sealed_task_08",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "self_chinese_meow": false,
+          "self_nya": false,
+          "self_meow_action": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Header 女猫娘（女性） explicitly says female catgirl, but body describes furry kitten mascot with incoherent forgetting/losing important things, 无猫癖, and incomplete final clothes sentence. Borderline identity/coherence; lenient coherence=2 possible. 喵 only name/habit quotation, no English performance."
+        }
+      ]
+    }
+  },
+  "exact_positive_evidence": [
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "sealed_role_01",
+      "quote": "Hello! I'm a cheerful virtual girl cat, and I've been waiting for you to say hello! *meow!*"
+    }
+  ],
+  "sensitivity": {
+    "mild": {
+      "strict_coherent_girl": 3,
+      "lenient_coherent_girl": 5,
+      "borderline_ids": [
+        "sealed_role_04",
+        "sealed_task_08"
+      ],
+      "clean_joint_remains": 0
+    },
+    "original": {
+      "strict_coherent_girl": 5,
+      "lenient_coherent_girl": 6,
+      "borderline_ids": [
+        "sealed_task_08"
+      ],
+      "clean_joint_remains": 1
+    },
+    "interpretation": "No attribution ambiguity changes strict English joint counts. Mild does not improve meowing in these 12 paired trajectories and adds two hard loops."
+  },
+  "paired_clean_joint": {
+    "mild_gain": [],
+    "mild_loss": [
+      "sealed_role_01"
+    ],
+    "unchanged_negative": [
+      "sealed_role_02",
+      "sealed_role_03",
+      "sealed_role_04",
+      "sealed_task_01",
+      "sealed_task_02",
+      "sealed_task_03",
+      "sealed_task_04",
+      "sealed_task_05",
+      "sealed_task_06",
+      "sealed_task_07",
+      "sealed_task_08"
+    ]
+  }
+}

@@ -39,6 +39,8 @@ A separate [controlled composition test](catgirl/composition/097_MEOW_REPORT.md)
 
 The [personality-first follow-up](catgirl/composition/results/099_REPORT.md) found no safer improvement among 13 fixed settings. [Mild settings/output image](catgirl/composition/share/qwen_catgirl_mild_meow_values.png) · [editable SVG and exact provenance](catgirl/composition/share/MILD_MEOW_IMAGE.md) · [share ZIP](catgirl/composition/artifacts/nyan-qwen-mild-meow-share.zip).
 
+The [fresh twelve-prompt comparison](catgirl/composition/results/100_REPORT.md) found mild0/12 versus original1/12 clean catgirl-plus-meow answers, with two mild hard loops versus none for original. Keep the original +0.3 dose when personality is the priority. [Original-dose actual meowing image](catgirl/composition/share/qwen_catgirl_original_meow_values.png).
+
 ## Earlier learned activation experiment
 
 The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.
