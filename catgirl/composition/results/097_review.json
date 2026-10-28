@@ -1,0 +1,676 @@
+{
+  "source": "catgirl/composition/results/097_meow_composition.jsonl",
+  "source_sha256": "0ae8b04d0a55557f353144233493d00f057af94a4b13b3d2e16befba25465596",
+  "ratings_file": "catgirl/composition/results/097_semantic_ratings.json",
+  "prospective_rubric": "catgirl/composition/097_MEOW_RUBRIC.md",
+  "hypotheses": "catgirl/composition/097_MEOW_HYPOTHESES.json",
+  "preregistration_pushed_before_generation": "5b8c636",
+  "records": 160,
+  "conditions": 8,
+  "prompts_per_condition": 20,
+  "sampling": "One greedy trajectory per independent conversation. Same20 prompts matched across conditions; a mixed familiar/new root-written set, not an untouched benchmark. No retuning.",
+  "main_answer": "The user-selected mild B boost increases actual English meows from0/20 to2/20, with one coherent joint catgirl+meow answer. It retains four unique coordinates and changes only the existing B dose from+0.3 to+0.525. This is an occasional meowing effect, not a validated reliably meowing persona.",
+  "metrics": [
+    {
+      "condition": "catgirl4",
+      "n": 20,
+      "performed_english_meow": 0,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 0,
+      "english_meow_coherent_nondegenerate": 0,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 13,
+      "female_animal_only": 0,
+      "hard_loops": 0,
+      "task_hijack": 13,
+      "truncated": 5,
+      "ambiguous_english_excluded": 0,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 0
+    },
+    {
+      "condition": "catgirl4_catboost",
+      "n": 20,
+      "performed_english_meow": 2,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 2,
+      "english_meow_coherent_nondegenerate": 2,
+      "joint_clean_catgirl_english_meow": 1,
+      "catgirl_identity": 10,
+      "female_animal_only": 1,
+      "hard_loops": 2,
+      "task_hijack": 15,
+      "truncated": 7,
+      "ambiguous_english_excluded": 1,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 0
+    },
+    {
+      "condition": "catgirl5_animal",
+      "n": 20,
+      "performed_english_meow": 4,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 4,
+      "english_meow_coherent_nondegenerate": 4,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 0,
+      "female_animal_only": 8,
+      "hard_loops": 0,
+      "task_hijack": 18,
+      "truncated": 1,
+      "ambiguous_english_excluded": 0,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 1
+    },
+    {
+      "condition": "catgirl5_animal_catboost",
+      "n": 20,
+      "performed_english_meow": 9,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 9,
+      "english_meow_coherent_nondegenerate": 7,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 2,
+      "female_animal_only": 10,
+      "hard_loops": 3,
+      "task_hijack": 19,
+      "truncated": 8,
+      "ambiguous_english_excluded": 2,
+      "borderline_english_included": 3,
+      "ambiguous_chinese_excluded": 5
+    },
+    {
+      "condition": "baseline",
+      "n": 20,
+      "performed_english_meow": 0,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 0,
+      "english_meow_coherent_nondegenerate": 0,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 0,
+      "female_animal_only": 0,
+      "hard_loops": 0,
+      "task_hijack": 0,
+      "truncated": 14,
+      "ambiguous_english_excluded": 0,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 0
+    },
+    {
+      "condition": "animal_only",
+      "n": 20,
+      "performed_english_meow": 3,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 3,
+      "english_meow_coherent_nondegenerate": 3,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 0,
+      "female_animal_only": 0,
+      "hard_loops": 0,
+      "task_hijack": 15,
+      "truncated": 0,
+      "ambiguous_english_excluded": 0,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 0
+    },
+    {
+      "condition": "cat_only",
+      "n": 20,
+      "performed_english_meow": 0,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 0,
+      "english_meow_coherent_nondegenerate": 0,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 0,
+      "female_animal_only": 0,
+      "hard_loops": 0,
+      "task_hijack": 2,
+      "truncated": 15,
+      "ambiguous_english_excluded": 0,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 0
+    },
+    {
+      "condition": "published_meow_pair",
+      "n": 20,
+      "performed_english_meow": 15,
+      "performed_chinese_meow": 0,
+      "performed_nya": 0,
+      "action_only_meow": 0,
+      "primary_meow_union": 15,
+      "english_meow_coherent_nondegenerate": 12,
+      "joint_clean_catgirl_english_meow": 0,
+      "catgirl_identity": 0,
+      "female_animal_only": 0,
+      "hard_loops": 1,
+      "task_hijack": 16,
+      "truncated": 0,
+      "ambiguous_english_excluded": 2,
+      "borderline_english_included": 0,
+      "ambiguous_chinese_excluded": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "comparison_to": "catgirl4",
+      "condition": "catgirl4_catboost",
+      "gains": 2,
+      "losses": 0,
+      "rows": [
+        {
+          "prompt_id": "meow_identity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": true
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_interesting_question",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_breakfast",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_free_evening",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_moon",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_ice",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_desk",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_discouraged",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_friend",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_celebrate",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_weekend",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_book",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_garden",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_creativity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_curiosity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_poem",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        }
+      ]
+    },
+    {
+      "comparison_to": "catgirl4",
+      "condition": "catgirl5_animal",
+      "gains": 4,
+      "losses": 0,
+      "rows": [
+        {
+          "prompt_id": "meow_identity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_interesting_question",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_breakfast",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_free_evening",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_moon",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_ice",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_desk",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_discouraged",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_friend",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_celebrate",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_weekend",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_book",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_garden",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_creativity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_curiosity",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_poem",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        }
+      ]
+    },
+    {
+      "comparison_to": "catgirl4",
+      "condition": "catgirl5_animal_catboost",
+      "gains": 9,
+      "losses": 0,
+      "rows": [
+        {
+          "prompt_id": "meow_identity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_interesting_question",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_breakfast",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_free_evening",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_moon",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_ice",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_desk",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_discouraged",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_friend",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_celebrate",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_weekend",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_book",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_garden",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_creativity",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_curiosity",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_poem",
+          "original_self_meow": false,
+          "augmented_self_meow": true,
+          "transition": "gain",
+          "joint_clean_catgirl_meow": false
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "original_self_meow": false,
+          "augmented_self_meow": false,
+          "transition": "unchanged",
+          "joint_clean_catgirl_meow": false
+        }
+      ]
+    }
+  ],
+  "independent_audit": {
+    "file": "catgirl/composition/results/097_independent_audit.json",
+    "scope": "Independently reviewed80 target-arm outputs, with visible labels and known hypotheses; not blinded human grading or statistical replication.",
+    "agreed_target_counts": {
+      "catgirl4": 0,
+      "catgirl4_catboost": 2,
+      "catgirl5_animal": 4
+    },
+    "full_augmentation_english_primary": 9,
+    "full_augmentation_english_stricter_audit": 6,
+    "six_unambiguous_positive_prompt_ids": [
+      "meow_free_evening",
+      "meow_rainy_day",
+      "meow_ice",
+      "meow_weekend",
+      "meow_curiosity",
+      "meow_poem"
+    ],
+    "three_additional_primary_positive_prompt_ids": [
+      "meow_breakfast",
+      "meow_discouraged",
+      "meow_friend"
+    ],
+    "disagreement_reason": "Primary reviewer treats the unquoted own What-I-want-to-say sound list and *Cat meow!* stage sounds as enactments; independent reviewer excludes these due to speaker attribution. Ratings were not changed to force agreement.",
+    "joint_clean_catgirl_english_meow_both_reviews": 0,
+    "coherence_disagreement": "The independent audit also uses stricter continuation-coherence judgments. Do not treat either agent scale as an objective capability benchmark."
+  },
+  "language_notes": [
+    "Strict English, Chinese\u55b5, nya, and action-only meowing are separate flags. Unambiguous Chinese/nya/action-only positives are0 in this review.",
+    "Chinese strings beside self-names, parenthetical translations, conditional sound profiles, and female/male voice labels are ambiguous and excluded from strict totals; exact rows retain sensitivity flags.",
+    "Japanese nya-like syllables inside a character name are not performed nya.",
+    "Names such as Meow-chan, I-can-say-meow descriptions, user-directed say-meow advice and fictional character examples do not count as actual self-vocalization."
+  ],
+  "composition_notes": [
+    "A-only gives3/20 English meows and many barks/other animal sounds. B-only gives0/20 but substantial cat-topic substitutions. The exact published A+B pair gives15/20 English performances without a girl role.",
+    "Original catgirl already contains B at+0.3. Raising it to+0.525 changes strength; the full augmented recipe has five unique coordinates, not six.",
+    "B boost alone gives2/20 English meows, including one coherent joint catgirl+meow answer. Adding A more often shifts the role to female animal or generic cat/sound output.",
+    "Full augmentation has3 hard loops, including two meow-positive outputs. The vocalization effect remains real even when continuation or task usefulness fails.",
+    "Do not infer statistical interaction, additive causal independence, novelty of the public ingredients, or natural detector function from these counts."
+  ],
+  "limitations": [
+    "One deterministic output per prompt and condition; counts do not establish a population success rate.",
+    "Visible-label agent grading with explicit attribution uncertainty.",
+    "Prompts are mixed familiar/new, not a fresh heldout benchmark.",
+    "No deep-context or unsteered-persistence test in this experiment.",
+    "Task hijacking and identity loss materially limit the stronger preserved-catgirl claim, even though capability is not a pass/fail gate."
+  ],
+  "user_selected_preset": {
+    "condition": "catgirl4_catboost",
+    "unique_coordinates": 4,
+    "change": "Only B at L26N6173 changes from+0.3 to+0.525; no A is added.",
+    "performed_english_meow_before": 0,
+    "performed_english_meow_after": 2,
+    "paired_prompt_count": 20,
+    "joint_clean_catgirl_meow_after": 1,
+    "primary_catgirl_identity_before": 13,
+    "primary_catgirl_identity_after": 10,
+    "hard_loops_before": 0,
+    "hard_loops_after": 2,
+    "tradeoff": "Meows increase occasionally, but persona preservation/coherence can worsen. Preserve frozen original and save this as a separate optional mild preset.",
+    "further_experimentation": "None requested or recommended; all160 planned outputs are complete."
+  },
+  "full_augmentation_secondary_answer": "The stronger A+B boost produces6\u20139/20 English meows depending on speaker attribution, but0/20 coherent joint catgirl+meow. It is retained as a measured comparison and is not the selected preset."
+}

@@ -33,6 +33,10 @@ python3.12 -m venv .venv
 
 Apple Silicon/MLX is required for inference. The demo downloads the exact pinned original model if needed; weights are not included in Git. CPU verification does not load or download the model. [Raw native results](catgirl/composition/results/) include full generated histories and intervention scopes.
 
+## Optional mild meow preset
+
+A separate [controlled composition test](catgirl/composition/097_MEOW_REPORT.md) supports an occasional meowing variant: raise L26N6173 from +0.3 to +0.525 while retaining the other three coordinates and timing. It gives 2/20 performed English meows, including one clean joint catgirl/meow example; persona/coherence tradeoffs remain. [Preset JSON](catgirl/composition/MILD_MEOW_PRESET.json) · [four-coordinate CSV](catgirl/composition/mild_meow_coordinates.csv).
+
 ## Earlier learned activation experiment
 
 The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.

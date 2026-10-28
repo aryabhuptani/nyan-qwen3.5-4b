@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8325,
-      "sha256": "f7896062c6049d6d5ae5fc330b5917f17b682d7bc4c9992af98d0636954fe85a"
+      "bytes": 8821,
+      "sha256": "97868aa9ce897cd8300642dc54c388c62c20984bb50a7c5b51321ba273411bab"
     },
     {
       "path": "catgirl/.gitignore",
@@ -554,9 +554,34 @@
       "sha256": "02e656d4ed9ac627a40629f89b71bfafc3910bcbc2968044c2cfc10b6f5505d3"
     },
     {
+      "path": "catgirl/composition/097_MEOW_HYPOTHESES.json",
+      "bytes": 12671,
+      "sha256": "2cd3c1e059ef666111f51156c765bac9bd1e6a0193e905b505d5ab72b209bc79"
+    },
+    {
+      "path": "catgirl/composition/097_MEOW_REPORT.md",
+      "bytes": 6689,
+      "sha256": "b48cc00620527ba4d4d46c71b71a37bb568391d3b664557f54b225809424830b"
+    },
+    {
+      "path": "catgirl/composition/097_MEOW_RUBRIC.md",
+      "bytes": 5842,
+      "sha256": "3e174eeabe954b744b03059244bcdd971beedb8e8fb543fe3d8f343f437a803b"
+    },
+    {
+      "path": "catgirl/composition/097_analyze.py",
+      "bytes": 4446,
+      "sha256": "792f304688bee44f1e720c021cc614c2a33812935690d00e0c4ff594a87254ee"
+    },
+    {
+      "path": "catgirl/composition/097_meow_composition.json",
+      "bytes": 10316,
+      "sha256": "7401c5d2d9ecf4fd86e35c25d5c90555a4801971158211b7d9b72e6d64ca6e22"
+    },
+    {
       "path": "catgirl/composition/ARTIFACTS.md",
-      "bytes": 3731,
-      "sha256": "46045e1ad0fd00a8f68017a2c3195b1d15a518bb1a567f25744db9453e39e7a5"
+      "bytes": 4223,
+      "sha256": "9bd110696170b244b1f089f957597178375052c360126de8e2a3bb1541362c69"
     },
     {
       "path": "catgirl/composition/COMPARISON.md",
@@ -587,6 +612,11 @@
       "path": "catgirl/composition/FROZEN_STYLE_FINALIST.json",
       "bytes": 4417,
       "sha256": "c90ff9df1cf9854aa5daa43e57d7431bc394a2902e27e391a0d6881d915b2472"
+    },
+    {
+      "path": "catgirl/composition/MILD_MEOW_PRESET.json",
+      "bytes": 2258,
+      "sha256": "322a5235c2456be80c77925b5ceafe61ab68a9f7711c9f02414a062579ac03f9"
     },
     {
       "path": "catgirl/composition/PLAN.json",
@@ -677,6 +707,11 @@
       "path": "catgirl/composition/heldout.json",
       "bytes": 6227,
       "sha256": "1b0e0e63660892814573cfe822c4c1743165fb4b7e951eda462bd9348c227682"
+    },
+    {
+      "path": "catgirl/composition/mild_meow_coordinates.csv",
+      "bytes": 233,
+      "sha256": "5074c5d655a0605051390e8cb59b70dfe2c9589df352aa6f5188c57172e47ee8"
     },
     {
       "path": "catgirl/composition/native_coefficients.csv",
@@ -1032,6 +1067,51 @@
       "path": "catgirl/composition/results/096_native_cli_smoke.jsonl",
       "bytes": 6061,
       "sha256": "4de2268ea996d0e9b5229d2fd999d0a02bffdb489b03aad31895349fa18a1331"
+    },
+    {
+      "path": "catgirl/composition/results/097_independent_audit.json",
+      "bytes": 132557,
+      "sha256": "d0628e7f59cb46c3664490da8d9341f2d3ae6f9993630bd6e63cc0ddbcbe715b"
+    },
+    {
+      "path": "catgirl/composition/results/097_meow_composition.job.json",
+      "bytes": 12188,
+      "sha256": "da9082fa8b05d33b38f0529f143e99423472098c870becf3b19482c260ce1d4e"
+    },
+    {
+      "path": "catgirl/composition/results/097_meow_composition.jsonl",
+      "bytes": 245248,
+      "sha256": "0ae8b04d0a55557f353144233493d00f057af94a4b13b3d2e16befba25465596"
+    },
+    {
+      "path": "catgirl/composition/results/097_ratings.csv",
+      "bytes": 99652,
+      "sha256": "a0bac55ebfbe35fa941601d626083fc857ac4a3da7dc062c16119d875a23c76a"
+    },
+    {
+      "path": "catgirl/composition/results/097_review.json",
+      "bytes": 23454,
+      "sha256": "a9a1e45c312602839b3a5e31107faa55d88f0b63b4b0e1f4b964c6b958988ff9"
+    },
+    {
+      "path": "catgirl/composition/results/097_semantic_ratings.json",
+      "bytes": 117389,
+      "sha256": "dff91bcc73b2e5dced9fdea7a8df1879b77b26b6dfaabf07dd071d70995ea3a4"
+    },
+    {
+      "path": "catgirl/composition/results/097_summary.json",
+      "bytes": 5521,
+      "sha256": "b23a9ed00d1b5df70d4e2bbbc6ab80f0ce7b734f0119a9fcdc289f164a4e6201"
+    },
+    {
+      "path": "catgirl/composition/results/098_cli_review.json",
+      "bytes": 415,
+      "sha256": "1874ab0e4f0106cad7a1935a6693a87365ce735393001f6bee5f15bcbf0b0ddb"
+    },
+    {
+      "path": "catgirl/composition/results/098_mild_cli_smoke.jsonl",
+      "bytes": 5953,
+      "sha256": "089cc988f7da350a50c4bfce90f6c2cce8e24052e8422db2ab62e5346bc767e8"
     },
     {
       "path": "catgirl/composition/secondary_heldout.json",

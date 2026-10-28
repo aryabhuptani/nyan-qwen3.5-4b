@@ -26,3 +26,7 @@ Raw 075 generations are in [../results/075_single_characterization.jsonl](../res
 The final schedule keeps three cat/cute offsets active on all prompt/output positions and switches the female-pole offset off after the first 16 answer-prediction positions. The schedule repeats every turn. This does not establish unsteered persistence. The deep diagnostic reuses a known archive and is not another fresh held-out test.
 
 The coefficient CSV contains multiple separately named recipes; select rows for the desired recipe. Doses are normalized scalar offsets, not model weights. The 15 rows across four saved recipes must not be described as a 15-neuron final intervention. Model weights are exact pinned downloads, excluded from Git. Semantic judgments are made by agents with visible labels; an additional agent audit is not blinded statistical replication.
+
+## Secondary meow composition experiment
+
+[097 report](097_MEOW_REPORT.md), [160 raw outputs](results/097_meow_composition.jsonl), [semantic CSV with text](results/097_ratings.csv), [counts](results/097_summary.json), and [independent audit](results/097_independent_audit.json). The user-selected [mild preset](MILD_MEOW_PRESET.json) changes only the existing cat-word dose to +0.525; [four-row CSV](mild_meow_coordinates.csv). The original frozen recipe and sharing assets remain separate.

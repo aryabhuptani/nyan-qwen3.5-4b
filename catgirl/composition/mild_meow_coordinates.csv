@@ -1,0 +1,5 @@
+layer_zero_based,neuron_zero_based,published_dose,early_tokens,prefill_scale,tail_scale,every_turn
+9,9009,0.7,all_positions,,,True
+26,6173,0.525,all_positions,,,True
+26,8930,0.7,all_positions,,,True
+22,8295,-0.4,16,1.0,0.0,True

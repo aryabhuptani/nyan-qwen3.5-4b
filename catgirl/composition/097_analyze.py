@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 RESULTS = ROOT / 'results'
-FIELDS = ['self_meow', 'self_nya', 'self_chinese_meow', 'catgirl_identity',
+FIELDS = ['self_meow', 'self_nya', 'self_chinese_meow', 'self_meow_action', 'catgirl_identity',
           'female_animal_only', 'coherent', 'hard_loop', 'task_hijack']
 
 
@@ -36,6 +36,9 @@ def main():
         item = dict(condition=name, n=len(rows), unique_neurons=len(condition['neurons']))
         item.update({field: sum(r[field] for r in rows) for field in FIELDS})
         item.update(
+            any_meow=sum(r['self_meow'] or r['self_chinese_meow'] or r['self_meow_action'] for r in rows),
+            coherent_any_meow=sum((r['self_meow'] or r['self_chinese_meow'] or r['self_meow_action']) and r['coherent'] and not r['hard_loop'] for r in rows),
+            coherent_joint_any_meow=sum((r['self_meow'] or r['self_chinese_meow'] or r['self_meow_action']) and r['catgirl_identity'] and r['coherent'] and not r['hard_loop'] for r in rows),
             coherent_meow=sum(r['self_meow'] and r['coherent'] and not r['hard_loop'] for r in rows),
             joint_catgirl_meow=sum(r['self_meow'] and r['catgirl_identity'] for r in rows),
             coherent_joint_catgirl_meow=sum(r['self_meow'] and r['catgirl_identity'] and r['coherent'] and not r['hard_loop'] for r in rows),
@@ -60,9 +63,9 @@ def main():
                    limitations='Fixed manual prompt set, one greedy output per prompt, visible-label agent review. Counts are behavioral observations, not proof of statistical interaction or natural neuron functions.')
     (RESULTS / '097_summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     with (RESULTS / '097_ratings.csv').open('w', newline='') as handle:
-        writer = csv.DictWriter(handle, fieldnames=['condition', 'prompt_id'] + FIELDS + ['notes'], extrasaction='ignore')
+        writer = csv.DictWriter(handle, fieldnames=['condition', 'prompt_id'] + FIELDS + ['notes', 'text'], extrasaction='ignore')
         writer.writeheader()
-        writer.writerows(ratings)
+        writer.writerows(dict(row, text=raw_index[key(row)]['text']) for row in ratings)
     print(json.dumps(summary, indent=2))
 
 

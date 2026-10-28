@@ -1,0 +1,20 @@
+{
+  "pass_": true,
+  "exact_match_to": "097 catgirl4_catboost / meow_identity",
+  "coordinates": 4,
+  "animal_sounds_added": false,
+  "scope": {
+    "early_tokens": null,
+    "prefill_scale": 0.0,
+    "tail_scale": 0.0,
+    "every_turn": true,
+    "all_positions": false,
+    "layer_schedules": {
+      "22": {
+        "early_tokens": 16,
+        "prefill_scale": 1.0,
+        "tail_scale": 0.0
+      }
+    }
+  }
+}
