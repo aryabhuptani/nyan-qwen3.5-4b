@@ -1,0 +1,239 @@
+{
+  "conditions": [
+    {
+      "id": "catB_A0_C0_G0.2",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A0_C0_G0.4",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A0_C1_G0.2",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A0_C1_G0.4",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A1_C0_G0.2",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A1_C0_G0.4",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A1_C1_G0.2",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catB_A1_C1_G0.4",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "prompts": [
+    {
+      "id": "single_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "single_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "single_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "no_training": true,
+    "stage": "reduced_feline_discovery",
+    "hypotheses": "088_REDUCED_FELINE_HYPOTHESES.json"
+  }
+}

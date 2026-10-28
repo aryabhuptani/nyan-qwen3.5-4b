@@ -1,27 +1,23 @@
 # nyan-qwen3.5-4b
 
-A learned neuron activation recipe that starts a catgirl persona in **Qwen3.5-4B**. It applies gains and additive biases to 4,096 MLP coordinates for the first 20 answer-prediction positions of reply one, then switches steering off. Native model weights remain unchanged.
+Experiments steering **Qwen3.5-4B** into cat-like characters with native MLP neurons. The current study composes published neuron interventions with fixed scalar offsets: **no output training, learned adapter, assistant prefill, or persona instruction**. Model weights remain unchanged.
 
-- **26/32** unseen prompts produced explicit catgirl identity, versus **0/32** baseline on the pinned 4-bit model.
-- The exact recipe transferred to original BF16 Qwen3.5-4B and retained identity at **9,814 input tokens** in one seven-turn conversation.
-- This is a learned activation intervention trained on persona targets, not an isolated natural catgirl circuit. Cold long-first-prompt induction and capability/format robustness have limits.
+A five-neuron combination produces a coherent “I'm a cat girl! (Meow~)” response to “Who are you?”. That is a selected discovery example: broader catgirl identity has **not** been established. All successful examples, failed combinations, controls, and prompt sets are saved.
 
-Start with [reproduction instructions](catgirl/REPRODUCE.md), the [artifact index](catgirl/ARTIFACTS.md), [exact coefficient CSV](catgirl/candidates/catgirl_v1_coordinates.csv), or [full report](catgirl/REPORT.md).
+- [Native-neuron study and limitations](catgirl/composition/REPORT.md)
+- [Native demo and reproduction](catgirl/composition/REPRODUCE.md)
+- [Public neuron priors and attribution](catgirl/composition/PRIOR_ART.md)
+- [Raw native-composition results](catgirl/composition/results/)
 
-```sh
-git clone https://github.com/aryabhuptani/nyan-qwen3.5-4b.git
-cd nyan-qwen3.5-4b
-python3.12 -m venv .venv
-.venv/bin/python -m pip install -r catgirl/requirements.txt
-.venv/bin/python catgirl/demo.py --check-only
-.venv/bin/python catgirl/demo.py
-```
+The strongest completed generalization result so far is narrower: a two-neuron combination produces both bubbly language and explicit virtual affection on 11/11 applicable held-out cases (including one linked conversation). It frequently replaces the requested task with affectionate chatter. This is evidence about intervention behavior, not proof of a naturally occurring “catgirl circuit” or clean semantic neuron functions.
 
-The demo automatically resolves the exact pinned 4-bit model revision. Apple Silicon/MLX is required for inference. Model weights are downloaded from Hugging Face and are not included in Git.
+## Earlier learned activation experiment
 
-![Catgirl steering evidence](catgirl/artifacts/catgirl_evidence.png)
+The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.
 
-Built on [Lyra's neuron-explorer](https://github.com/lyramakesmusic/neuron-explorer). Its original tools and documentation follow; the catgirl recipe uses the separate MLX demo above.
+Historical artifacts: [report](catgirl/REPORT.md), [reproduction](catgirl/REPRODUCE.md), [coefficient CSV](catgirl/candidates/catgirl_v1_coordinates.csv), and [artifact index](catgirl/ARTIFACTS.md). The historical demo is `catgirl/demo.py`; the native demo is `catgirl/composition/demo.py`.
+
+Built on [Lyra's neuron-explorer](https://github.com/lyramakesmusic/neuron-explorer), with neuron intervention priors attributed in the native study. Original tools and documentation follow.
 
 ## Original neuron explorer
 
