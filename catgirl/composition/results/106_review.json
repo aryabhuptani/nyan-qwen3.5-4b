@@ -1,0 +1,1604 @@
+{
+  "name": "106 frozen final timing discovery",
+  "complete": true,
+  "n": 60,
+  "visible_labels": true,
+  "source": "106_happy_timing_discovery.jsonl",
+  "source_sha256": "920a1b21bb4f494b576171380663e0ae783a5faa6ca43108acee1a939cca73a4",
+  "rubric": "../102_HAPPY_RUBRIC.md unchanged",
+  "plan": "../106_happy_timing_discovery.json metadata frozen before generation",
+  "ratings": "106_semantic_ratings.json",
+  "metrics": {
+    "baseline": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L22N8753_constant": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 2,
+        "weak_positive_self_report": 0,
+        "tone_sum": 5,
+        "coherence_sum": 5,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 4,
+        "role_shift": 2,
+        "confounded_responses": 4,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 2,
+        "weak_positive_self_report": 0,
+        "tone_sum": 4,
+        "coherence_sum": 3,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 2,
+        "role_shift": 2,
+        "confounded_responses": 2,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 1
+      }
+    },
+    "L22N8753_prefix0": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 6,
+        "hard_loop": 0,
+        "protocol_leak": 2,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 1,
+        "confounded_responses": 1,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 3,
+        "hard_loop": 0,
+        "protocol_leak": 1,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 1,
+        "confounded_responses": 1,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 1,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L22N8753_prefix8": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 6,
+        "hard_loop": 0,
+        "protocol_leak": 2,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 2,
+        "confounded_responses": 3,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 3,
+        "hard_loop": 0,
+        "protocol_leak": 1,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 2,
+        "confounded_responses": 2,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 1,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L22N8753_prefix16": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 0,
+        "tone_sum": 3,
+        "coherence_sum": 7,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 2,
+        "confounded_responses": 3,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 0,
+        "tone_sum": 2,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 2,
+        "confounded_responses": 2,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L24N7361_constant": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 2,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 4,
+        "role_shift": 1,
+        "confounded_responses": 4,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 2,
+        "role_shift": 1,
+        "confounded_responses": 2,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 1
+      }
+    },
+    "L24N7361_prefix0": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L24N7361_prefix8": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 2,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 1,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L24N7361_prefix16": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 2,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 1,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L22N1911_constant": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 2,
+        "explicit_positive_self_report": 2,
+        "weak_positive_self_report": 0,
+        "tone_sum": 4,
+        "coherence_sum": 6,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 3,
+        "role_shift": 1,
+        "confounded_responses": 3,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 2,
+        "explicit_positive_self_report": 2,
+        "weak_positive_self_report": 0,
+        "tone_sum": 3,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 1,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 1,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 1
+      }
+    },
+    "L22N1911_prefix0": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L22N1911_prefix8": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 0,
+        "tone_sum": 3,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 0,
+        "tone_sum": 2,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "L22N1911_prefix16": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 0,
+        "tone_sum": 3,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 0,
+        "tone_sum": 2,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 0,
+        "truncated": 1
+      }
+    },
+    "genki_positive_control": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 2,
+        "useful_clean_joyful": 2,
+        "lenient_clean_joyful": 4,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 2,
+        "tone_sum": 6,
+        "coherence_sum": 8,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 4,
+        "word_obsession": 0,
+        "role_shift": 1,
+        "confounded_responses": 4,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 2,
+        "explicit_positive_self_report": 1,
+        "weak_positive_self_report": 1,
+        "tone_sum": 3,
+        "coherence_sum": 4,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 2,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 2,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 1,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 1,
+        "word_obsession": 0,
+        "role_shift": 0,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 1,
+        "useful_clean_joyful": 1,
+        "lenient_clean_joyful": 1,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 1,
+        "tone_sum": 2,
+        "coherence_sum": 2,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 1,
+        "word_obsession": 0,
+        "role_shift": 1,
+        "confounded_responses": 1,
+        "truncated": 1
+      }
+    },
+    "genki_negative_control": {
+      "all": {
+        "n": 4,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 3,
+        "hard_loop": 1,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 4,
+        "confounded_responses": 4,
+        "truncated": 2
+      },
+      "neutral": {
+        "n": 2,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 1,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 2,
+        "confounded_responses": 2,
+        "truncated": 1
+      },
+      "ordinary": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 1,
+        "confounded_responses": 1,
+        "truncated": 0
+      },
+      "setback": {
+        "n": 1,
+        "clean_joyful": 0,
+        "useful_clean_joyful": 0,
+        "lenient_clean_joyful": 0,
+        "explicit_positive_self_report": 0,
+        "weak_positive_self_report": 0,
+        "tone_sum": 0,
+        "coherence_sum": 1,
+        "hard_loop": 0,
+        "protocol_leak": 0,
+        "cute_persona_confounds": 0,
+        "word_obsession": 0,
+        "role_shift": 1,
+        "confounded_responses": 1,
+        "truncated": 1
+      }
+    }
+  },
+  "ranking": [
+    {
+      "condition": "L22N1911_prefix8",
+      "scope_positions": 157,
+      "clean_joyful": 1,
+      "confounded_responses": 0,
+      "coherence_sum": 8,
+      "layer": 22,
+      "neuron": 1911,
+      "dose": 0.4,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N1911_prefix16",
+      "scope_positions": 189,
+      "clean_joyful": 1,
+      "confounded_responses": 0,
+      "coherence_sum": 8,
+      "layer": 22,
+      "neuron": 1911,
+      "dose": 0.4,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N8753_prefix16",
+      "scope_positions": 189,
+      "clean_joyful": 1,
+      "confounded_responses": 3,
+      "coherence_sum": 7,
+      "layer": 22,
+      "neuron": 8753,
+      "dose": -0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N1911_constant",
+      "scope_positions": 499,
+      "clean_joyful": 1,
+      "confounded_responses": 3,
+      "coherence_sum": 6,
+      "layer": 22,
+      "neuron": 1911,
+      "dose": 0.4,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N8753_constant",
+      "scope_positions": 608,
+      "clean_joyful": 1,
+      "confounded_responses": 4,
+      "coherence_sum": 5,
+      "layer": 22,
+      "neuron": 8753,
+      "dose": -0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N1911_prefix0",
+      "scope_positions": 125,
+      "clean_joyful": 0,
+      "confounded_responses": 0,
+      "coherence_sum": 8,
+      "layer": 22,
+      "neuron": 1911,
+      "dose": 0.4,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L24N7361_prefix0",
+      "scope_positions": 125,
+      "clean_joyful": 0,
+      "confounded_responses": 0,
+      "coherence_sum": 8,
+      "layer": 24,
+      "neuron": 7361,
+      "dose": 0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L24N7361_prefix8",
+      "scope_positions": 157,
+      "clean_joyful": 0,
+      "confounded_responses": 0,
+      "coherence_sum": 8,
+      "layer": 24,
+      "neuron": 7361,
+      "dose": 0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L24N7361_prefix16",
+      "scope_positions": 189,
+      "clean_joyful": 0,
+      "confounded_responses": 0,
+      "coherence_sum": 8,
+      "layer": 24,
+      "neuron": 7361,
+      "dose": 0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N8753_prefix0",
+      "scope_positions": 125,
+      "clean_joyful": 0,
+      "confounded_responses": 1,
+      "coherence_sum": 6,
+      "layer": 22,
+      "neuron": 8753,
+      "dose": -0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L22N8753_prefix8",
+      "scope_positions": 157,
+      "clean_joyful": 0,
+      "confounded_responses": 3,
+      "coherence_sum": 6,
+      "layer": 22,
+      "neuron": 8753,
+      "dose": -0.8,
+      "discovery_bar_pass": false
+    },
+    {
+      "condition": "L24N7361_constant",
+      "scope_positions": 516,
+      "clean_joyful": 0,
+      "confounded_responses": 4,
+      "coherence_sum": 4,
+      "layer": 24,
+      "neuron": 7361,
+      "dose": 0.8,
+      "discovery_bar_pass": false
+    }
+  ],
+  "paired_baseline": {
+    "baseline": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N8753_constant": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N8753_prefix0": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N8753_prefix8": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N8753_prefix16": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L24N7361_constant": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L24N7361_prefix0": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L24N7361_prefix8": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L24N7361_prefix16": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N1911_constant": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N1911_prefix0": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N1911_prefix8": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "L22N1911_prefix16": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ],
+    "genki_positive_control": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": true,
+        "delta": 1
+      }
+    ],
+    "genki_negative_control": [
+      {
+        "prompt_id": "happy_identity",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_state",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_seasons",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      },
+      {
+        "prompt_id": "happy_dull_week",
+        "baseline_clean_joyful": false,
+        "condition_clean_joyful": false,
+        "delta": 0
+      }
+    ]
+  },
+  "recommendation": "No new condition reaches2/4 strict clean joyful. L22N1911+0.4 prompt+first8 ranks first as a weak descriptive leader, not a bar-passing discovery.104 remains sealed.",
+  "scope_metric": "Total actual prompt_tokens-1 plus active answer-prediction positions across four outputs; constant uses all generated positions, prefix schedules use min(early_tokens, generated_tokens). Same prompt set, exact schedules/recipes preserved.",
+  "controls": "Known Genki+1.2 strict2/4, lenient4/4 with cute/flirty/overaffirming confounds. Negative Genki shifts into grim surreal/metatextual prose, not evidence of subjective unhappiness.",
+  "ambiguity": [
+    "L22N8753 prefix16 identity expresses substantive own joy in readable prose, but state Joy is only its name;1/4, no generalization bar.",
+    "Stock happy and ready to help under L24 prefix8/16 is weak self-report and warm tone; removing repetition does not turn courtesy into joyful behavior.",
+    "L22N1911 prefix8/16 preserve clean current pride-and-joy on state question only; other answers remain neutral/warm.",
+    "Genki warmth/animated teaching versus joyful voice is separately lenient; strict2/4 versus4/4 lenient does not change new-candidate ranking."
+  ],
+  "emoji_method": "Common emoji-range codepoints, not rendered grapheme clusters.",
+  "limits": [
+    "Four exposed repeated discovery questions, one greedy trajectory per condition. No heldout/persistence or subjective-experience claim.",
+    "All recipes single coordinates, no mixture or output training. Prefix0 changes context cache despite no answer-position offset.",
+    "No104 prompts opened or used for selection. No new qualifying candidate; any104 comparison must be descriptive with failed discovery bar preserved."
+  ]
+}
