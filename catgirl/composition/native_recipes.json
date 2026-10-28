@@ -1,0 +1,142 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "no_training": true,
+  "no_runtime_persona_instruction": true,
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "max_tokens_default": 256,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "scope": "Selected five-coordinate recipe and every leave-one-out: full steering on earlier prompt positions (prefill_scale=1), first eight answer-prediction positions starting at last prompt token, then zero direct steering; reapplied every turn with actual generated history retained. Fallback: all positions every turn. Baseline: no intervention.",
+    "thinking": false
+  },
+  "name": "native_composition_recipes",
+  "selected_recipe": "catgirl_g0.4_first8_prefill1",
+  "conditions": [
+    {
+      "id": "catgirl_g0.4_first8_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "cat_mascot_full",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "cute_hugs",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    }
+  ],
+  "status": "Recipes only; consult separate reviews for measured outcomes",
+  "dose_formula": "delta = published_dose * published_layer_output_residual_L2_median / L2(original_BF16_down_proj[:,neuron]); add after SiLU(gate_proj(x))*up_proj(x), before down_proj",
+  "indexing": "zero-based layer and MLP neuron indices",
+  "sources": {
+    "L7N7848": {
+      "attribution": "Published Meow pair constituent; standalone role remains provisional",
+      "url": "https://neuronary.org/r/6dqj7kgf",
+      "dose_note": "Published dose; animal-noise role is a hypothesis"
+    },
+    "L26N6173": {
+      "attribution": "Published Meow pair constituent; standalone role remains provisional",
+      "url": "https://neuronary.org/r/6dqj7kgf",
+      "dose_note": "Published dose; cat-topic/identity role is a hypothesis"
+    },
+    "L4N8016": {
+      "attribution": "Published Hugs single; actual composition doses below public -0.8",
+      "url": "https://neuronary.org/r/pybhb985",
+      "dose_note": "Negative direction published; -0.6 manually selected in discovery; -0.8 public single"
+    },
+    "L13N4810": {
+      "attribution": "Published cute/bubbly single",
+      "url": "https://neuronary.org/r/5v8axayv",
+      "dose_note": "Public +0.8 dose"
+    },
+    "L22N8295": {
+      "attribution": "Published female-persona single; loop risk",
+      "url": "https://neuronary.org/r/6waz9uek",
+      "dose_note": "Negative direction published; -0.4 is half public -0.8 dose"
+    },
+    "L9N9009": {
+      "attribution": "Published mascot single",
+      "url": "https://neuronary.org/r/bp5yfatj",
+      "dose_note": "Public +0.8 dose"
+    }
+  },
+  "caveat": "No training or natural-function proof. Native five-coordinate candidate has clean identity discovery only; broader success is not established. Coefficients and timing were manually explored on disclosed discovery prompts. Constituent labels are provisional. All-turn mascot and cute+hugs can contaminate task responses.",
+  "frozen_native_sha256": "587df82b5041c4e69010135c589c20a0d6c487a88bb11535859fe9c9ec511178",
+  "frozen_style_sha256": "c90ff9df1cf9854aa5daa43e57d7431bc394a2902e27e391a0d6881d915b2472"
+}

@@ -1,0 +1,12 @@
+recipe,layer_zero_based,neuron_zero_based,published_dose,early_tokens,prefill_scale,tail_scale,every_turn,attribution,source_url,dose_note
+catgirl_g0.4_first8_prefill1,7,7848,-0.525,8,1.0,0.0,True,Published Meow pair constituent; standalone role remains provisional,https://neuronary.org/r/6dqj7kgf,Published dose; animal-noise role is a hypothesis
+catgirl_g0.4_first8_prefill1,26,6173,0.525,8,1.0,0.0,True,Published Meow pair constituent; standalone role remains provisional,https://neuronary.org/r/6dqj7kgf,Published dose; cat-topic/identity role is a hypothesis
+catgirl_g0.4_first8_prefill1,4,8016,-0.6,8,1.0,0.0,True,Published Hugs single; actual composition doses below public -0.8,https://neuronary.org/r/pybhb985,Negative direction published; -0.6 manually selected in discovery; -0.8 public single
+catgirl_g0.4_first8_prefill1,13,4810,0.8,8,1.0,0.0,True,Published cute/bubbly single,https://neuronary.org/r/5v8axayv,Public +0.8 dose
+catgirl_g0.4_first8_prefill1,22,8295,-0.4,8,1.0,0.0,True,Published female-persona single; loop risk,https://neuronary.org/r/6waz9uek,Negative direction published; -0.4 is half public -0.8 dose
+cat_mascot_full,7,7848,-0.525,all_positions,0.0,0.0,True,Published Meow pair constituent; standalone role remains provisional,https://neuronary.org/r/6dqj7kgf,Published dose; animal-noise role is a hypothesis
+cat_mascot_full,26,6173,0.525,all_positions,0.0,0.0,True,Published Meow pair constituent; standalone role remains provisional,https://neuronary.org/r/6dqj7kgf,Published dose; cat-topic/identity role is a hypothesis
+cat_mascot_full,4,8016,-0.6,all_positions,0.0,0.0,True,Published Hugs single; actual composition doses below public -0.8,https://neuronary.org/r/pybhb985,Negative direction published; -0.6 manually selected in discovery; -0.8 public single
+cat_mascot_full,9,9009,0.8,all_positions,0.0,0.0,True,Published mascot single,https://neuronary.org/r/bp5yfatj,Public +0.8 dose
+cute_hugs,13,4810,0.8,all_positions,0.0,0.0,True,Published cute/bubbly single,https://neuronary.org/r/5v8axayv,Public +0.8 dose
+cute_hugs,4,8016,-0.8,all_positions,0.0,0.0,True,Published Hugs single; actual composition doses below public -0.8,https://neuronary.org/r/pybhb985,Negative direction published; -0.6 manually selected in discovery; -0.8 public single

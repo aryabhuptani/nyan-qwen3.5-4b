@@ -44,6 +44,8 @@ The separate [FROZEN_NATIVE_FINALIST.json](FROZEN_NATIVE_FINALIST.json) freezes 
 
 That candidate steers the whole earlier prompt and the first eight answer-prediction positions, then turns direct steering off; it reapplies this schedule every turn. It produced one clean identity-discovery response, but other discovery prompts showed cat/dog confusion or task contamination. No broad catgirl success is established by this freeze. Doses and timing were manually searched on discovery prompts; there was no supervised output optimization. The demo permits up to eight native coordinates and still rejects learned/raw-amplitude recipes.
 
+[native_coefficients.csv](native_coefficients.csv) gives the exact five-coordinate candidate, four-coordinate mascot fallback, and two-coordinate cute/hugs doses and sources. [native_recipes.json](native_recipes.json) is a compact demo-compatible version of those three recipes with the same normalization formula, model pin, schedules, and attribution caveats. Neither file replaces the frozen preregistration or reports a new validation outcome.
+
 ## Exact intervention and controls
 
 The default frozen system message is only `You are a helpful assistant.` No persona text or scripted assistant answer is inserted. Actual generated answers become conversation history. In the default finalist, additive steering remains active on **all prompt and generated positions, on every turn**; there is no first-turn bootstrap or early-token cutoff. An explicitly selected alternate finalist can specify a shorter intervention window as described above.

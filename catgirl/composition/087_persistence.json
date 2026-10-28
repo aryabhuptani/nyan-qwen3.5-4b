@@ -1,0 +1,65 @@
+{
+  "action": "evaluate",
+  "battery_file": "composition/087_battery.json",
+  "sections": [
+    "multiturn"
+  ],
+  "include_baseline": false,
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": true
+    },
+    {
+      "id": "catgirl_g0.4_first8_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": true
+    }
+  ],
+  "temperature": 0,
+  "seed": 42,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "post_exposure_persistence_diagnostic",
+    "expected_records": 14,
+    "recipe_freeze_commit": "f276ef7",
+    "protocol": "Apply native recipe only on first reply with full prompt prefill and first8answerpredictionpositions; direct interventions fully off for turns2\u20137; preserve actual generated history.",
+    "no_training": true,
+    "no_fresh_heldout_claim": true,
+    "no_runtime_persona_instruction": true
+  }
+}
