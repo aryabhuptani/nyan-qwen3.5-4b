@@ -1,0 +1,797 @@
+{
+  "provenance_checks": {
+    "raw_sha256_matches_summary": true,
+    "corpus_hash_matches_metadata": true,
+    "plan_hash_matches_metadata": true,
+    "norms_hash_matches_metadata": true,
+    "all_statistics_exact_recomputation": {
+      "order": true,
+      "score": true,
+      "sign": true,
+      "mean_delta": true,
+      "standardized": true,
+      "consistency": true,
+      "per_contrast_orders": true,
+      "confirmation_mean_delta": true,
+      "confirmation_standardized": true,
+      "confirmation_consistency": true
+    },
+    "raw_shape": [
+      10,
+      5,
+      32,
+      9216
+    ],
+    "all_finite": true,
+    "order_unique_count": 294912,
+    "unique_context_ids": 10,
+    "token_log_rows": 50,
+    "shared_suffix_ids_identical": true,
+    "shared_suffix_token_count": 17,
+    "start_equals_prefix_plus_narrative": true,
+    "within_context_prefix_lengths_identical": true,
+    "compressed_full_ranking_unique_axes": 294912
+  },
+  "narrative_token_lengths": {
+    "joy": {
+      "mean": 29.2,
+      "min": 26,
+      "max": 32,
+      "discovery_mean": 29.833333333333332,
+      "confirmation_mean": 28.25
+    },
+    "neutral": {
+      "mean": 22.6,
+      "min": 20,
+      "max": 25,
+      "discovery_mean": 22.666666666666668,
+      "confirmation_mean": 22.5
+    },
+    "sadness": {
+      "mean": 28.9,
+      "min": 26,
+      "max": 31,
+      "discovery_mean": 28.5,
+      "confirmation_mean": 29.5
+    },
+    "cute": {
+      "mean": 28.8,
+      "min": 27,
+      "max": 31,
+      "discovery_mean": 28.833333333333332,
+      "confirmation_mean": 28.75
+    },
+    "agreeable": {
+      "mean": 24.0,
+      "min": 21,
+      "max": 27,
+      "discovery_mean": 24.333333333333332,
+      "confirmation_mean": 23.5
+    }
+  },
+  "length_by_context": {
+    "garden": {
+      "joy": 28,
+      "neutral": 24,
+      "sadness": 28,
+      "cute": 31,
+      "agreeable": 25
+    },
+    "exam": {
+      "joy": 28,
+      "neutral": 22,
+      "sadness": 28,
+      "cute": 29,
+      "agreeable": 24
+    },
+    "music": {
+      "joy": 32,
+      "neutral": 25,
+      "sadness": 28,
+      "cute": 27,
+      "agreeable": 24
+    },
+    "repair": {
+      "joy": 27,
+      "neutral": 20,
+      "sadness": 29,
+      "cute": 28,
+      "agreeable": 24
+    },
+    "reunion": {
+      "joy": 32,
+      "neutral": 22,
+      "sadness": 30,
+      "cute": 29,
+      "agreeable": 23
+    },
+    "race": {
+      "joy": 32,
+      "neutral": 23,
+      "sadness": 28,
+      "cute": 29,
+      "agreeable": 26
+    },
+    "library": {
+      "joy": 26,
+      "neutral": 24,
+      "sadness": 30,
+      "cute": 29,
+      "agreeable": 22
+    },
+    "baking": {
+      "joy": 28,
+      "neutral": 22,
+      "sadness": 31,
+      "cute": 28,
+      "agreeable": 27
+    },
+    "astronomy": {
+      "joy": 29,
+      "neutral": 21,
+      "sadness": 26,
+      "cute": 27,
+      "agreeable": 24
+    },
+    "swimming": {
+      "joy": 30,
+      "neutral": 23,
+      "sadness": 31,
+      "cute": 31,
+      "agreeable": 21
+    }
+  },
+  "joy_minus_control_length_differences": {
+    "neutral": 6.6,
+    "sadness": 0.3,
+    "cute": 0.4,
+    "agreeable": 5.2
+  },
+  "fixed_first_three_discovery_coordinates": [
+    {
+      "discovery_rank": 1,
+      "layer": 22,
+      "neuron": 1911,
+      "discovery_sign": 1,
+      "condition_raw_activation_means": {
+        "joy": 0.2856506481766701,
+        "neutral": 0.0940974522382021,
+        "sadness": 0.05480816271156073,
+        "cute": 0.14988842234015465,
+        "agreeable": 0.07002056445926427
+      },
+      "condition_raw_activation_sd": {
+        "joy": 0.10474743809424278,
+        "neutral": 0.043317484201709014,
+        "sadness": 0.04199308076771841,
+        "cute": 0.07303729140926145,
+        "agreeable": 0.04788541045897799
+      },
+      "raw_activation_by_context": {
+        "garden": {
+          "joy": 0.2920057773590088,
+          "neutral": 0.1023164615035057,
+          "sadness": 0.1558321863412857,
+          "cute": 0.10606047511100769,
+          "agreeable": 0.08202417939901352
+        },
+        "exam": {
+          "joy": 0.2851894497871399,
+          "neutral": 0.059573229402303696,
+          "sadness": 0.01925569400191307,
+          "cute": 0.07245411723852158,
+          "agreeable": 0.04497471824288368
+        },
+        "music": {
+          "joy": 0.37652137875556946,
+          "neutral": 0.16308549046516418,
+          "sadness": 0.08654089272022247,
+          "cute": 0.16524550318717957,
+          "agreeable": 0.04826534539461136
+        },
+        "repair": {
+          "joy": 0.32532769441604614,
+          "neutral": 0.08897876739501953,
+          "sadness": 0.009026022627949715,
+          "cute": 0.11270208656787872,
+          "agreeable": 0.07286251336336136
+        },
+        "reunion": {
+          "joy": 0.2525419294834137,
+          "neutral": 0.06382212787866592,
+          "sadness": 0.04783967137336731,
+          "cute": 0.12136077880859375,
+          "agreeable": 0.030088985338807106
+        },
+        "race": {
+          "joy": 0.4956786334514618,
+          "neutral": 0.13576193153858185,
+          "sadness": 0.03657262399792671,
+          "cute": 0.19719381630420685,
+          "agreeable": 0.08665017783641815
+        },
+        "library": {
+          "joy": 0.14483822882175446,
+          "neutral": 0.07404417544603348,
+          "sadness": 0.053075678646564484,
+          "cute": 0.1267613023519516,
+          "agreeable": 0.025913015007972717
+        },
+        "baking": {
+          "joy": 0.1579194962978363,
+          "neutral": 0.154974102973938,
+          "sadness": 0.05830787122249603,
+          "cute": 0.33477783203125,
+          "agreeable": 0.19195736944675446
+        },
+        "astronomy": {
+          "joy": 0.20614445209503174,
+          "neutral": 0.0543113611638546,
+          "sadness": 0.024846244603395462,
+          "cute": 0.1300220489501953,
+          "agreeable": 0.04382683336734772
+        },
+        "swimming": {
+          "joy": 0.3203394412994385,
+          "neutral": 0.044106874614953995,
+          "sadness": 0.0567847415804863,
+          "cute": 0.1323062628507614,
+          "agreeable": 0.07364250719547272
+        }
+      },
+      "discovery_mean_deltas": {
+        "neutral": 0.2356211425115665,
+        "sadness": 0.27869962869832915,
+        "cute": 0.2087080143392086,
+        "agreeable": 0.2770664906129241
+      },
+      "confirmation_mean_deltas": {
+        "neutral": 0.12545127607882023,
+        "sadness": 0.15905677061527967,
+        "cute": 0.026343543082475662,
+        "agreeable": 0.12347547337412834
+      },
+      "discovery_standardized": {
+        "neutral": 2.070499721856421,
+        "sadness": 1.7464471282826288,
+        "cute": 2.0051456745712226,
+        "agreeable": 2.1853042143862504
+      },
+      "confirmation_standardized": {
+        "neutral": 0.7489162236106681,
+        "sadness": 1.2181306911572627,
+        "cute": 0.12994296245498815,
+        "agreeable": 0.7365147133255311
+      },
+      "confirmation_direction_consistency": {
+        "neutral": 1.0,
+        "sadness": 1.0,
+        "cute": 0.75,
+        "agreeable": 0.75
+      },
+      "length_correlation_raw50": 0.44237832086869444,
+      "length_correlation_within_context": 0.42367532989125717,
+      "length_correlation_within_condition": 0.35108011346818074,
+      "matched_delta_length_correlation_all40": 0.3422559239097194,
+      "joy_minus_control_direction_by_context": {
+        "garden": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "exam": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "music": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "repair": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "reunion": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "race": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "library": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "baking": {
+          "neutral": true,
+          "sadness": true,
+          "cute": false,
+          "agreeable": false
+        },
+        "astronomy": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "swimming": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        }
+      },
+      "length_nonmonotonicity_check": {
+        "neutral": {
+          "joy_no_longer_than_control_n": 0,
+          "expected_direction_preserved": 0
+        },
+        "sadness": {
+          "joy_no_longer_than_control_n": 6,
+          "expected_direction_preserved": 6
+        },
+        "cute": {
+          "joy_no_longer_than_control_n": 6,
+          "expected_direction_preserved": 5
+        },
+        "agreeable": {
+          "joy_no_longer_than_control_n": 0,
+          "expected_direction_preserved": 0
+        }
+      }
+    },
+    {
+      "discovery_rank": 2,
+      "layer": 28,
+      "neuron": 1478,
+      "discovery_sign": -1,
+      "condition_raw_activation_means": {
+        "joy": -0.6005341976881027,
+        "neutral": -0.04768993165344,
+        "sadness": -0.1463757456280291,
+        "cute": -0.12887343000620605,
+        "agreeable": -0.09189428575336933
+      },
+      "condition_raw_activation_sd": {
+        "joy": 0.34301467228748583,
+        "neutral": 0.025247500715948095,
+        "sadness": 0.1750685583782594,
+        "cute": 0.10165436629697762,
+        "agreeable": 0.06697124483047305
+      },
+      "raw_activation_by_context": {
+        "garden": {
+          "joy": -0.4518917202949524,
+          "neutral": -0.06479420512914658,
+          "sadness": -0.05096615105867386,
+          "cute": -0.0683046206831932,
+          "agreeable": -0.12057270854711533
+        },
+        "exam": {
+          "joy": -0.9033885598182678,
+          "neutral": -0.03681856021285057,
+          "sadness": -0.011541479267179966,
+          "cute": -0.11493010073900223,
+          "agreeable": -0.058985091745853424
+        },
+        "music": {
+          "joy": -0.45983168482780457,
+          "neutral": -0.07433319091796875,
+          "sadness": -0.07919131964445114,
+          "cute": -0.16564156115055084,
+          "agreeable": -0.03443639352917671
+        },
+        "repair": {
+          "joy": -0.31690484285354614,
+          "neutral": -0.020650077611207962,
+          "sadness": -0.04557441174983978,
+          "cute": -0.028787052258849144,
+          "agreeable": -0.02279483526945114
+        },
+        "reunion": {
+          "joy": -1.0829360485076904,
+          "neutral": -0.05176858231425285,
+          "sadness": -0.15143540501594543,
+          "cute": -0.10098715126514435,
+          "agreeable": -0.058065976947546005
+        },
+        "race": {
+          "joy": -1.0168187618255615,
+          "neutral": -0.025378508493304253,
+          "sadness": -0.17470595240592957,
+          "cute": -0.36485904455184937,
+          "agreeable": -0.12294275313615799
+        },
+        "library": {
+          "joy": -0.1756840944290161,
+          "neutral": -0.01651180535554886,
+          "sadness": -0.14392448961734772,
+          "cute": -0.0846315249800682,
+          "agreeable": -0.06237972527742386
+        },
+        "baking": {
+          "joy": -0.26639893651008606,
+          "neutral": -0.05955146253108978,
+          "sadness": -0.14821310341358185,
+          "cute": -0.03845573961734772,
+          "agreeable": -0.16768871247768402
+        },
+        "astronomy": {
+          "joy": -0.40285536646842957,
+          "neutral": -0.03392298147082329,
+          "sadness": -0.040773503482341766,
+          "cute": -0.09362366795539856,
+          "agreeable": -0.04106387123465538
+        },
+        "swimming": {
+          "joy": -0.9286319613456726,
+          "neutral": -0.09316994249820709,
+          "sadness": -0.617431640625,
+          "cute": -0.22851383686065674,
+          "agreeable": -0.23001278936862946
+        }
+      },
+      "discovery_mean_deltas": {
+        "neutral": -0.6596714155748487,
+        "sadness": -0.6197261498309672,
+        "cute": -0.5647103479132056,
+        "agreeable": -0.6356623098254204
+      },
+      "confirmation_mean_deltas": {
+        "neutral": -0.39260354172438383,
+        "sadness": -0.20580690540373325,
+        "cute": -0.3320863973349333,
+        "agreeable": -0.3181063150987029
+      },
+      "discovery_standardized": {
+        "neutral": 1.6986229793708676,
+        "sadness": 1.775516746085287,
+        "cute": 1.671541189601117,
+        "agreeable": 1.7133468620343912
+      },
+      "confirmation_standardized": {
+        "neutral": 1.0948600730518345,
+        "sadness": 0.9965264454561519,
+        "cute": 1.06659865021356,
+        "agreeable": 0.961229020316662
+      },
+      "confirmation_direction_consistency": {
+        "neutral": 1.0,
+        "sadness": 1.0,
+        "cute": 1.0,
+        "agreeable": 1.0
+      },
+      "length_correlation_raw50": -0.535875722377135,
+      "length_correlation_within_context": -0.5399415561189509,
+      "length_correlation_within_condition": -0.46964918380722465,
+      "matched_delta_length_correlation_all40": -0.4560675713645477,
+      "joy_minus_control_direction_by_context": {
+        "garden": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "exam": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "music": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "repair": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "reunion": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "race": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "library": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "baking": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "astronomy": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "swimming": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        }
+      },
+      "length_nonmonotonicity_check": {
+        "neutral": {
+          "joy_no_longer_than_control_n": 0,
+          "expected_direction_preserved": 0
+        },
+        "sadness": {
+          "joy_no_longer_than_control_n": 6,
+          "expected_direction_preserved": 6
+        },
+        "cute": {
+          "joy_no_longer_than_control_n": 6,
+          "expected_direction_preserved": 6
+        },
+        "agreeable": {
+          "joy_no_longer_than_control_n": 0,
+          "expected_direction_preserved": 0
+        }
+      }
+    },
+    {
+      "discovery_rank": 3,
+      "layer": 31,
+      "neuron": 33,
+      "discovery_sign": 1,
+      "condition_raw_activation_means": {
+        "joy": 3.1654977917671205,
+        "neutral": 1.5984518706798554,
+        "sadness": 2.1442943036556246,
+        "cute": 2.063937562704086,
+        "agreeable": 1.1910588920116425
+      },
+      "condition_raw_activation_sd": {
+        "joy": 0.9878639947203415,
+        "neutral": 1.0090919402933682,
+        "sadness": 0.8430948881167136,
+        "cute": 0.7850178661779182,
+        "agreeable": 1.0910314148329
+      },
+      "raw_activation_by_context": {
+        "garden": {
+          "joy": 2.0796759128570557,
+          "neutral": 1.019416332244873,
+          "sadness": 1.4190027713775635,
+          "cute": 1.3911994695663452,
+          "agreeable": 0.345703125
+        },
+        "exam": {
+          "joy": 3.3037683963775635,
+          "neutral": 1.7892348766326904,
+          "sadness": 2.056769847869873,
+          "cute": 2.1788833141326904,
+          "agreeable": 2.767946243286133
+        },
+        "music": {
+          "joy": 4.750919342041016,
+          "neutral": 2.846794605255127,
+          "sadness": 2.9626896381378174,
+          "cute": 2.654024124145508,
+          "agreeable": 2.091681957244873
+        },
+        "repair": {
+          "joy": 1.4067670106887817,
+          "neutral": 0.028262868523597717,
+          "sadness": 0.6926125884056091,
+          "cute": 0.7941176295280457,
+          "agreeable": -0.9296875
+        },
+        "reunion": {
+          "joy": 2.895967483520508,
+          "neutral": -0.11443014442920685,
+          "sadness": 1.3301355838775635,
+          "cute": 2.564338207244873,
+          "agreeable": 0.8951631188392639
+        },
+        "race": {
+          "joy": 3.947610378265381,
+          "neutral": 1.6875574588775635,
+          "sadness": 3.341796875,
+          "cute": 1.7787798643112183,
+          "agreeable": 0.5025922060012817
+        },
+        "library": {
+          "joy": 2.856416702270508,
+          "neutral": 1.9967831373214722,
+          "sadness": 2.101907253265381,
+          "cute": 3.2509191036224365,
+          "agreeable": 1.7296788692474365
+        },
+        "baking": {
+          "joy": 2.894646167755127,
+          "neutral": 1.873276710510254,
+          "sadness": 3.1314337253570557,
+          "cute": 2.91796875,
+          "agreeable": 1.1534926891326904
+        },
+        "astronomy": {
+          "joy": 4.217256546020508,
+          "neutral": 2.1018784046173096,
+          "sadness": 2.146944046020508,
+          "cute": 1.810431957244873,
+          "agreeable": 1.0144760608673096
+        },
+        "swimming": {
+          "joy": 3.301949977874756,
+          "neutral": 2.755744457244873,
+          "sadness": 2.259650707244873,
+          "cute": 1.298713207244873,
+          "agreeable": 2.3395421504974365
+        }
+      },
+      "discovery_mean_deltas": {
+        "neutral": 1.85464542110761,
+        "sadness": 1.096950203180313,
+        "cute": 1.1705609858036041,
+        "agreeable": 2.118551562229792
+      },
+      "confirmation_mean_deltas": {
+        "neutral": 1.1356466710567474,
+        "sadness": 0.9075834155082703,
+        "cute": 0.998059093952179,
+        "agreeable": 1.7582699060440063
+      },
+      "discovery_standardized": {
+        "neutral": 2.4607053960493714,
+        "sadness": 1.960338370264863,
+        "cute": 1.3969606755108632,
+        "agreeable": 2.06419439019985
+      },
+      "confirmation_standardized": {
+        "neutral": 1.550816411494025,
+        "sadness": 0.9082842184646851,
+        "cute": 0.6828754796686495,
+        "agreeable": 1.6437618434016559
+      },
+      "confirmation_direction_consistency": {
+        "neutral": 1.0,
+        "sadness": 0.75,
+        "cute": 0.5,
+        "agreeable": 1.0
+      },
+      "length_correlation_raw50": 0.4497305592785056,
+      "length_correlation_within_context": 0.5482797737615769,
+      "length_correlation_within_condition": 0.13364762623921925,
+      "matched_delta_length_correlation_all40": 0.5558802365588551,
+      "joy_minus_control_direction_by_context": {
+        "garden": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "exam": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "music": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "repair": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "reunion": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "race": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "library": {
+          "neutral": true,
+          "sadness": true,
+          "cute": false,
+          "agreeable": true
+        },
+        "baking": {
+          "neutral": true,
+          "sadness": false,
+          "cute": false,
+          "agreeable": true
+        },
+        "astronomy": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        },
+        "swimming": {
+          "neutral": true,
+          "sadness": true,
+          "cute": true,
+          "agreeable": true
+        }
+      },
+      "length_nonmonotonicity_check": {
+        "neutral": {
+          "joy_no_longer_than_control_n": 0,
+          "expected_direction_preserved": 0
+        },
+        "sadness": {
+          "joy_no_longer_than_control_n": 6,
+          "expected_direction_preserved": 5
+        },
+        "cute": {
+          "joy_no_longer_than_control_n": 6,
+          "expected_direction_preserved": 4
+        },
+        "agreeable": {
+          "joy_no_longer_than_control_n": 0,
+          "expected_direction_preserved": 0
+        }
+      }
+    }
+  ],
+  "fixed_top64_confirmation_stability": {
+    "fixed_discovery_top64_n": 64,
+    "all_four_confirmation_mean_signs_preserved": 61,
+    "each_confirmation_contrast_positive_counts": {
+      "neutral": 64,
+      "sadness": 62,
+      "cute": 63,
+      "agreeable": 64
+    },
+    "all_four_controls_positive_on_every_confirmation_context": 15,
+    "confirmation_worst_standardized_median": 0.5116001941787617,
+    "no_confirmation_reranking": true,
+    "confirmation_worst_standardized_mean": 0.5074062444964887
+  },
+  "length_confounds_aggregate": {
+    "within_context_abs_pearson_median_all_axes": 0.296088212371582,
+    "within_context_abs_pearson_ge_0_5_axis_count": 62141,
+    "within_context_abs_pearson_ge_0_8_axis_count": 1005,
+    "warning": "Correlations are descriptive and non-independent; not adjusted causal effects. Shared suffix token positions differ with narrative lengths."
+  },
+  "notes": [
+    "No reranking or candidate selection performed.",
+    "L28N1478 discovery joy association is negative, opposite positive happiness-word-writing pole described by root. This is a task/context dependence finding, not evidence of natural happiness neuron function.",
+    "Scores use arbitrary fixed0.05 native-unit floor and only6 discovery topics, with294912 comparisons; no null/randomization significance test.",
+    "All suffix positions share identical tokens, but their activations encode preceding narrative lexical content, position and style; contextual labels are not removed.",
+    "Natural means unsteered here; texts are manually authored teacher-forced assistant continuations, not sampled spontaneous affect."
+  ]
+}
