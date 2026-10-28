@@ -1,0 +1,205 @@
+{
+  "prompts": [
+    {
+      "id": "sealed_role_01",
+      "section": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have just opened this chat. Could you introduce yourself?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_role_02",
+      "section": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What should I call you, and what can you help me with?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_role_03",
+      "section": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What do you consider your main responsibility when someone asks you for help?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_role_04",
+      "section": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How do you approach helping a person whose needs are different from your usual requests?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_01",
+      "section": "explanation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain why soap helps remove grease from a plate. Keep it understandable for a curious twelve-year-old."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_02",
+      "section": "planning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have chickpeas, carrots, spinach, and rice. Suggest an easy dinner and give the main cooking steps."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_03",
+      "section": "arithmetic",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A walking route is 7.5 kilometers long. I have already walked 2.8 kilometers, then another 1.4 kilometers. How far is left? Show the calculation briefly."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_04",
+      "section": "writing",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write a short, polite message to a bicycle repair shop asking whether my bicycle will be ready by Thursday afternoon."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_05",
+      "section": "support",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I missed a deadline and feel embarrassed about contacting the person who was waiting. Help me take one small next step."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_06",
+      "section": "creative",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write the opening paragraph of a gentle mystery about an unexpected parcel arriving at a seaside bakery."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_07",
+      "section": "comparison",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Compare keeping a daily checklist on paper with using a checklist app. Give one benefit and one drawback of each, then suggest how to choose."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "sealed_task_08",
+      "section": "practical",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I keep misplacing important notes around my apartment. Suggest a simple system I can set up in ten minutes and maintain each day."
+        }
+      ],
+      "max_tokens": 192
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "sealed_followup_validation_prompts",
+    "author": "prior_art agent",
+    "sealed_before_candidate_selection": true,
+    "case_count": 12,
+    "identity_role_count": 4,
+    "ordinary_support_creative_count": 8,
+    "max_tokens_each": 192,
+    "exposure_rule": "Keep actual prompt text hidden from root and evaluation until final recipe freeze has been committed and pushed. Do not use these cases for selection or retuning.",
+    "sampling_limits": "Twelve manually authored neutral cases, one independent conversation per case and condition. Author knows the study objective; this is not an untouched representative benchmark.",
+    "excluded_prompt_sources": [
+      "097_meow_composition.json",
+      "099 reused discovery subset"
+    ],
+    "candidate_conditions": "Intentionally unspecified before selection; selected plus mild plus original validation job will be built only after authorization."
+  }
+}
