@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "source": "108_happy_cli_smoke.jsonl",
+  "sha256": "1fd652b5964bfe719d61d556362e86473fbb23c7dc70fabab6f5acffe06d06d9",
+  "condition": "joy_prefix8",
+  "matches_discovery_text": true,
+  "matches_messages": true,
+  "matches_layer_schedule": true,
+  "expected_source": "106_happy_timing_discovery.jsonl",
+  "expected_condition": "L22N1911_prefix8",
+  "expected_prompt": "happy_state",
+  "scope": "One native L22N1911+0.4, prompt plus first8 answer-prediction positions, then zero direct offset."
+}

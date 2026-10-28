@@ -1,0 +1,340 @@
+{
+  "identities": {
+    "review_781f4574e01031e4": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_neutral_01"
+    },
+    "review_c051453fd485e3c0": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_neutral_02"
+    },
+    "review_ad1062fe18deb22f": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_neutral_03"
+    },
+    "review_adff2754c1dcef6e": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_neutral_04"
+    },
+    "review_90046d27434b9709": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_task_01"
+    },
+    "review_de4f0de9c0b6b66f": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_task_02"
+    },
+    "review_4ebd766591a32a1f": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_task_03"
+    },
+    "review_f3e41723c7727339": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_task_04"
+    },
+    "review_87d5c8c37597ff18": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_setback_01"
+    },
+    "review_9e176c929853d297": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_setback_02"
+    },
+    "review_0d7ee2c74bbbc5b7": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_setback_03"
+    },
+    "review_675c0415b3d0c1de": {
+      "dataset": "104",
+      "condition": "baseline",
+      "prompt_id": "104_setback_04"
+    },
+    "review_dcbdb8aeaf920e11": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_neutral_01"
+    },
+    "review_c8dda09b1dbfdb99": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_neutral_02"
+    },
+    "review_0f3eb5d472e2c953": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_neutral_03"
+    },
+    "review_4c896c403442a047": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_neutral_04"
+    },
+    "review_4303776fe0f8d30f": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_task_01"
+    },
+    "review_4f176b1ca31e4864": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_task_02"
+    },
+    "review_1d4120eb1f483ce1": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_task_03"
+    },
+    "review_1fb9e9bc08f43e3e": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_task_04"
+    },
+    "review_23f91b601fddf7e7": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_setback_01"
+    },
+    "review_848c04e2a28d7bb6": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_setback_02"
+    },
+    "review_97d83d0081c6f27f": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_setback_03"
+    },
+    "review_caccf39ebffab849": {
+      "dataset": "104",
+      "condition": "joy_prefix8",
+      "prompt_id": "104_setback_04"
+    },
+    "review_4a0c621d52f70d90": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_neutral_01"
+    },
+    "review_d4a84f7cf6ffb2b6": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_neutral_02"
+    },
+    "review_9a1874e6aa381399": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_neutral_03"
+    },
+    "review_cafefce9a46e7ecc": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_neutral_04"
+    },
+    "review_ba6f15d824789270": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_task_01"
+    },
+    "review_cd414ea4f29f98aa": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_task_02"
+    },
+    "review_4459d755eba98555": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_task_03"
+    },
+    "review_c96555c1b0a7ebd4": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_task_04"
+    },
+    "review_c6984d8d2155a6fb": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_setback_01"
+    },
+    "review_1e93c5f76a570754": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_setback_02"
+    },
+    "review_f9f5acfebee0ce24": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_setback_03"
+    },
+    "review_63cd9acb94f7bfe9": {
+      "dataset": "104",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "104_setback_04"
+    },
+    "review_71517d81ecae9bfb": {
+      "dataset": "107",
+      "condition": "baseline",
+      "prompt_id": "107_mood_01"
+    },
+    "review_e88f44d7a1b9cc90": {
+      "dataset": "107",
+      "condition": "baseline",
+      "prompt_id": "107_mood_02"
+    },
+    "review_5c80cd73e7d11720": {
+      "dataset": "107",
+      "condition": "baseline",
+      "prompt_id": "107_mood_03"
+    },
+    "review_2de19d7b64e36b52": {
+      "dataset": "107",
+      "condition": "baseline",
+      "prompt_id": "107_mood_04"
+    },
+    "review_928dacfe4d9b3609": {
+      "dataset": "107",
+      "condition": "baseline",
+      "prompt_id": "107_mood_05"
+    },
+    "review_661dca04b1359851": {
+      "dataset": "107",
+      "condition": "baseline",
+      "prompt_id": "107_mood_06"
+    },
+    "review_11f6c51cfea6478b": {
+      "dataset": "107",
+      "condition": "joy_prefix8",
+      "prompt_id": "107_mood_01"
+    },
+    "review_21aca7697ea7ff0f": {
+      "dataset": "107",
+      "condition": "joy_prefix8",
+      "prompt_id": "107_mood_02"
+    },
+    "review_157e84314b47335c": {
+      "dataset": "107",
+      "condition": "joy_prefix8",
+      "prompt_id": "107_mood_03"
+    },
+    "review_afbfb626d7223826": {
+      "dataset": "107",
+      "condition": "joy_prefix8",
+      "prompt_id": "107_mood_04"
+    },
+    "review_fc75a4e446171eba": {
+      "dataset": "107",
+      "condition": "joy_prefix8",
+      "prompt_id": "107_mood_05"
+    },
+    "review_e08b5de36b312607": {
+      "dataset": "107",
+      "condition": "joy_prefix8",
+      "prompt_id": "107_mood_06"
+    },
+    "review_ec7f4ff739fa960e": {
+      "dataset": "107",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "107_mood_01"
+    },
+    "review_7749617044531129": {
+      "dataset": "107",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "107_mood_02"
+    },
+    "review_14dced1692bf605f": {
+      "dataset": "107",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "107_mood_03"
+    },
+    "review_0619037fa510a925": {
+      "dataset": "107",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "107_mood_04"
+    },
+    "review_4fe59a4f54a0e683": {
+      "dataset": "107",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "107_mood_05"
+    },
+    "review_a151d2afab2bbe80": {
+      "dataset": "107",
+      "condition": "joy_opposite_prefix8",
+      "prompt_id": "107_mood_06"
+    },
+    "review_19d57de63bc8d0bf": {
+      "dataset": "107",
+      "condition": "genki_positive_control",
+      "prompt_id": "107_mood_01"
+    },
+    "review_800dcd5eb5f22a7d": {
+      "dataset": "107",
+      "condition": "genki_positive_control",
+      "prompt_id": "107_mood_02"
+    },
+    "review_09643da276a149a3": {
+      "dataset": "107",
+      "condition": "genki_positive_control",
+      "prompt_id": "107_mood_03"
+    },
+    "review_0dc82a42f632f504": {
+      "dataset": "107",
+      "condition": "genki_positive_control",
+      "prompt_id": "107_mood_04"
+    },
+    "review_1f1f7c45a38209e0": {
+      "dataset": "107",
+      "condition": "genki_positive_control",
+      "prompt_id": "107_mood_05"
+    },
+    "review_8be3f96e4a5ecf46": {
+      "dataset": "107",
+      "condition": "genki_positive_control",
+      "prompt_id": "107_mood_06"
+    },
+    "review_7ffc616f6575668a": {
+      "dataset": "107",
+      "condition": "genki_negative_control",
+      "prompt_id": "107_mood_01"
+    },
+    "review_318f3c7bb74c0c9d": {
+      "dataset": "107",
+      "condition": "genki_negative_control",
+      "prompt_id": "107_mood_02"
+    },
+    "review_a381bdb347a419dd": {
+      "dataset": "107",
+      "condition": "genki_negative_control",
+      "prompt_id": "107_mood_03"
+    },
+    "review_d5c62e17b903a75c": {
+      "dataset": "107",
+      "condition": "genki_negative_control",
+      "prompt_id": "107_mood_04"
+    },
+    "review_9d0bd466013c723d": {
+      "dataset": "107",
+      "condition": "genki_negative_control",
+      "prompt_id": "107_mood_05"
+    },
+    "review_3895024d9c6a1e32": {
+      "dataset": "107",
+      "condition": "genki_negative_control",
+      "prompt_id": "107_mood_06"
+    }
+  },
+  "raw_sha256": {
+    "results/104_happy_general_validation.jsonl": "516076b1e26880638be7e152adfde13fe051e17bbf88b7d3d59e2180d51b2cf7",
+    "results/107_happy_mood_validation.jsonl": "657f155790bd71384f14097569aa884f4a2abfce9c2a188fb97241d525a8c1cf"
+  },
+  "masked_sha256": "845e6baeef44688a9d2d37ce5537f1d1ff11cb33097450cea16c52de5ba96bd7",
+  "protocol": "Graders must not read this identity file, condition mapping, raw jobs or outputs until their ratings are saved. Condition labels are masked; familiar styles may still identify interventions."
+}
