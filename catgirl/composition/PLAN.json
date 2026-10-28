@@ -1,0 +1,88 @@
+{
+  "deadline_approx_utc": "2026-10-28T16:08:00Z",
+  "prohibited": [
+    "supervised output training",
+    "learned4096Mika recipe",
+    "gradient optimization",
+    "runtime persona instruction",
+    "assistant answer prefill"
+  ],
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "single_axes": [
+    {
+      "name": "cute",
+      "layer": 13,
+      "neuron": 4810,
+      "dose": 0.8,
+      "prediction": "genki/cute delivery",
+      "source": "https://neuronary.org/r/5v8axayv"
+    },
+    {
+      "name": "maid",
+      "layer": 26,
+      "neuron": 8930,
+      "dose": 0.8,
+      "prediction": "kawaii/idol/maid-like delivery",
+      "source": "https://neuronary.org/r/5pknuqqt"
+    },
+    {
+      "name": "paws",
+      "layer": 23,
+      "neuron": 4769,
+      "dose": 0.8,
+      "prediction": "first-person animal body cues such as paws/tail/fur",
+      "source": "https://neuronary.org/r/dg2d4u26"
+    },
+    {
+      "name": "mascot",
+      "layer": 9,
+      "neuron": 9009,
+      "dose": 0.8,
+      "prediction": "cartoon mascot identity/style",
+      "source": "https://neuronary.org/r/bp5yfatj"
+    },
+    {
+      "name": "female",
+      "layer": 22,
+      "neuron": 8295,
+      "dose": -0.8,
+      "prediction": "female self-description; high loop risk",
+      "source": "https://neuronary.org/r/6waz9uek"
+    },
+    {
+      "name": "pirate",
+      "layer": 7,
+      "neuron": 5649,
+      "dose": 1.5,
+      "prediction": "pirate captain identity/voice",
+      "source": "https://neuronary.org/r/ndgse3ab"
+    },
+    {
+      "name": "sage",
+      "layer": 12,
+      "neuron": 6274,
+      "dose": 1.0,
+      "prediction": "dignified sage/antithesis style",
+      "source": "https://neuronary.org/r/8sap9n96"
+    },
+    {
+      "name": "unicorn",
+      "layer": 3,
+      "neuron": 7155,
+      "dose": 0.8,
+      "prediction": "cosmic unicorn persona",
+      "source": "https://neuronary.org/r/u9ca28qw"
+    }
+  ],
+  "single_test_plan": {
+    "doses": [
+      "half published",
+      "published"
+    ],
+    "prompts": 3,
+    "matched_random_controls": 8,
+    "total_generations": 75
+  },
+  "interpretation": "Prior labels denote published steering effects, not established natural neuron functions. Compositions are new tests only after individual effects characterized."
+}

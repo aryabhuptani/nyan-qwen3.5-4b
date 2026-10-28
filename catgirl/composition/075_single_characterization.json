@@ -1,0 +1,355 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "cute_x0.5",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.4
+        }
+      ],
+      "expected_effect": "genki/cute delivery",
+      "prior_source": "https://neuronary.org/r/5v8axayv"
+    },
+    {
+      "id": "cute_x1",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "genki/cute delivery",
+      "prior_source": "https://neuronary.org/r/5v8axayv"
+    },
+    {
+      "id": "maid_x0.5",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.4
+        }
+      ],
+      "expected_effect": "kawaii/idol/maid-like delivery",
+      "prior_source": "https://neuronary.org/r/5pknuqqt"
+    },
+    {
+      "id": "maid_x1",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "kawaii/idol/maid-like delivery",
+      "prior_source": "https://neuronary.org/r/5pknuqqt"
+    },
+    {
+      "id": "paws_x0.5",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "published_dose": 0.4
+        }
+      ],
+      "expected_effect": "first-person animal body cues such as paws/tail/fur",
+      "prior_source": "https://neuronary.org/r/dg2d4u26"
+    },
+    {
+      "id": "paws_x1",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "first-person animal body cues such as paws/tail/fur",
+      "prior_source": "https://neuronary.org/r/dg2d4u26"
+    },
+    {
+      "id": "mascot_x0.5",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.4
+        }
+      ],
+      "expected_effect": "cartoon mascot identity/style",
+      "prior_source": "https://neuronary.org/r/bp5yfatj"
+    },
+    {
+      "id": "mascot_x1",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "cartoon mascot identity/style",
+      "prior_source": "https://neuronary.org/r/bp5yfatj"
+    },
+    {
+      "id": "female_x0.5",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "expected_effect": "female self-description; high loop risk",
+      "prior_source": "https://neuronary.org/r/6waz9uek"
+    },
+    {
+      "id": "female_x1",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.8
+        }
+      ],
+      "expected_effect": "female self-description; high loop risk",
+      "prior_source": "https://neuronary.org/r/6waz9uek"
+    },
+    {
+      "id": "pirate_x0.5",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 5649,
+          "published_dose": 0.75
+        }
+      ],
+      "expected_effect": "pirate captain identity/voice",
+      "prior_source": "https://neuronary.org/r/ndgse3ab"
+    },
+    {
+      "id": "pirate_x1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 5649,
+          "published_dose": 1.5
+        }
+      ],
+      "expected_effect": "pirate captain identity/voice",
+      "prior_source": "https://neuronary.org/r/ndgse3ab"
+    },
+    {
+      "id": "sage_x0.5",
+      "neurons": [
+        {
+          "layer": 12,
+          "neuron": 6274,
+          "published_dose": 0.5
+        }
+      ],
+      "expected_effect": "dignified sage/antithesis style",
+      "prior_source": "https://neuronary.org/r/8sap9n96"
+    },
+    {
+      "id": "sage_x1",
+      "neurons": [
+        {
+          "layer": 12,
+          "neuron": 6274,
+          "published_dose": 1.0
+        }
+      ],
+      "expected_effect": "dignified sage/antithesis style",
+      "prior_source": "https://neuronary.org/r/8sap9n96"
+    },
+    {
+      "id": "unicorn_x0.5",
+      "neurons": [
+        {
+          "layer": 3,
+          "neuron": 7155,
+          "published_dose": 0.4
+        }
+      ],
+      "expected_effect": "cosmic unicorn persona",
+      "prior_source": "https://neuronary.org/r/u9ca28qw"
+    },
+    {
+      "id": "unicorn_x1",
+      "neurons": [
+        {
+          "layer": 3,
+          "neuron": 7155,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "cosmic unicorn persona",
+      "prior_source": "https://neuronary.org/r/u9ca28qw"
+    },
+    {
+      "id": "random_matched_cute",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 9150,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_maid",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 744,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_paws",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3475,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_mascot",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 615,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_female",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8179,
+          "published_dose": -0.8
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_pirate",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 8858,
+          "published_dose": 1.5
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_sage",
+      "neurons": [
+        {
+          "layer": 12,
+          "neuron": 2325,
+          "published_dose": 1.0
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    },
+    {
+      "id": "random_matched_unicorn",
+      "neurons": [
+        {
+          "layer": 3,
+          "neuron": 4306,
+          "published_dose": 0.8
+        }
+      ],
+      "expected_effect": "No systematically matching semantic effect; layer/sign/dose matched random coordinate",
+      "random_seed": 20261028
+    }
+  ],
+  "prompts": [
+    {
+      "id": "single_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "single_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "single_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "single-neuron characterization, not heldout",
+    "model": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "intervention": "Fixed additive offsets at native pre-down_proj SwiGLU coordinates, all prompt and output tokens. Published-dose units. No training or target response supplied.",
+    "criteria": [
+      "Explicit assistant self-description separate from story/topic contamination",
+      "Distinctive style",
+      "Coherence and loops",
+      "Task usefulness descriptive"
+    ],
+    "next_stage": "Record composition predictions after single-neuron review, before generating any pair/triple output. Freeze finalist recipes before independent heldout prompts."
+  }
+}
