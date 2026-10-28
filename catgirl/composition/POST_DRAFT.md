@@ -1,50 +1,45 @@
-# X draft options
+# X draft options — frozen four-native experiment
 
-**Drafts only. Do not publish until the prospective secondary evaluation is reviewed. The repository is public on the `catgirl-hunt` branch; use the evidence links below. Newly edited documents still need the final repository update before their public versions match this draft.**
+**Draft only. Wait for completed094 review and095 depth results before selecting claims. The main option assumes fresh validation supports the self-role; use the fallback if it does not. No post below claims unsteered persistence.**
 
-These are alternative main posts and optional follow-ups, not a claim that all proposed text should be posted. Each block below is under 280 Unicode characters. X may count typographic characters or links differently; recheck in the composer.
+## Main option — only after094 review
 
-## Option A — development result
+Four native Qwen3.5-4B neurons, no training or catgirl prompt. A published cute-cat recipe + brief female steering gives a catgirl self-role. The catch: it often hijacks real tasks. Fresh controls and raw failures are in the repo; final counts below.
 
-I made Qwen3.5-4B say “I’m a cat girl! (Meow~)” using 5 native neuron offsets, with no persona prompt or training. Clean continuation—but only the identity question works so far. Other prompts still fail. Built on published Neuronary ingredients; validation pending.
+Character count: 250.
 
-Character count: 266.
+## Methods reply
 
-## Option B — strongest controlled result
+L9N9009 +.7; L26N6173 +.3; L26N8930 +.7: continuously active. L22N8295 −.4: prompt + first16 answer predictions, every turn. Native additive offsets. Three stay on throughout: this is active steering, not unsteered persistence.
 
-Two native Qwen3.5-4B neurons combine bubbly expression + virtual affection on 11/11 held-out cases; singles and strength controls: 0/11 joint effect. The catch: it replaces real tasks with cuddle monologues. A real composition effect, not a useful catgirl yet.
+Character count: 227.
 
-Character count: 261.
+## Attribution reply
 
-## Possible follow-up — attribution
+Built on treetowntree’s published Neuronary kawaii-cat composition: remove the anime ingredient, add a weaker female pole briefly. We did not discover these coordinates or establish natural neuron functions. Credit and earlier failures are in the report.
 
-The ingredients come from Lyra’s Neuronary and published single-neuron experiments. We tested fixed additive offsets, singles, pairs, strength controls and random controls. No output training. A cute name or “meow” alone doesn’t establish a catgirl persona.
+Character count: 254.
 
-Character count: 257.
+## Evidence reply
 
-## Possible follow-up — failures
-
-The failures are informative: knight mixtures often erase the knight role; stronger female steering loops. A 4-coordinate combo makes a coherent cat character on 3 development prompts, but no female identity. All raw outputs and negative results are retained.
-
-Character count: 259.
-
-## Possible evidence-link follow-up
-
-Code, coordinates, controls, raw generations and failures:
+Code, exact coordinates, fixed controls, raw generations and failures:
 https://github.com/aryabhuptani/nyan-qwen3.5-4b/tree/catgirl-hunt
 
-Character count: 124.
+Character count: 136.
 
-## Supporting notes, not proposed post text
+## Conservative fallback — if094 fails
 
-- Best catgirl evidence is one clean identity-prompt result in development, condition `catgirl_g0.4_first8_prefill1`; the other two discovery questions fail to preserve joint self-identity. No broad/deep catgirl claim is supported.
-- The two-neuron result is 11 applicable cases: ten independent cases plus one four-turn conversation, or 14 applicable outputs. All six ordinary tasks are hijacked, strict JSON fails, and later turns repeat boilerplate. All-token interventions remain active.
-- The five-neuron example applies offsets during prompt processing and first eight answer-prediction positions; the rest of that answer is unsteered. It does not demonstrate unsteered multi-turn or long-context persistence.
-- Cite [Neuronary](https://neuronary.org/), [Genki cute](https://neuronary.org/r/5v8axayv), [Hugs](https://neuronary.org/r/pybhb985), and [the original exploration repository](https://github.com/lyramakesmusic/neuron-explorer). Credit published priors rather than claiming new discovery of the coordinates.
-- The exact cute+hugs pair is absent from a bounded 161-record catalog audit. This is not proof of global novelty; cute-only affection already has published precedent.
-- Local evidence: [report](REPORT.md), [primary held-out review](results/081_review.json), [085 development review](results/085_review.json), [prior-art audit](PRIOR_ART.md). Public repository: [catgirl-hunt branch](https://github.com/aryabhuptani/nyan-qwen3.5-4b/tree/catgirl-hunt). Public primary evidence: [081 review](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/results/081_review.json) and [raw outputs](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/results/081_heldout_styles.jsonl).
-- Pending secondary result: insert honest counts and failures after review. Rewrite the main post if validation contradicts the development example.
+Four native Qwen3.5-4B offsets can produce a clean catgirl introduction without training or a persona prompt. Broad generalization is harder: we kept the failed tasks, loops and controls. This is a composition experiment, not discovery of a natural catgirl circuit.
 
-The second agent audit [081_independent_audit.json](results/081_independent_audit.json) agrees with the pair and stronger-cute joint-effect counts. Both agent reviews saw condition labels; no blinded human/statistical replication is claimed.
+Character count: 265.
 
-Prior published composition to credit prominently: [Kawaii cat character by treetowntree](https://neuronary.org/r/xmb34w83), four native coordinates, author-reported39/75 held-out cute-cat self-descriptions. This project did not originate cute-cat compositional steering; any new female extension needs its own controls.
+## Evidence to insert after review, not proposed post text
+
+-094 selected recipe: [pending] clean catgirl outputs out of12; [pending] cases out of9. Eight cases are independent; four conversation turns belong to one dependent conversation. Separate no-label task answers from explicit denial or topic-only fragments.
+-094 component ablations and female-only/continuous controls: [pending]. Report necessity/sufficiency only if the actual comparisons justify it. A higher count does not prove natural semantic function or minimality.
+-Task hijacking, loops, protocol leaks, truncation and cross-turn boilerplate: [pending]. Capabilities are descriptive, but obvious failures must remain visible.
+-095 reused depth diagnostic: [pending] identity at actual input tokens, retrieval, loops and task behavior. All four interventions are reapplied per turn; three stay continuously active. Never call this unsteered retention.
+-Primary review and second visible-label agent audit: [pending]. These are agent grades with visible recipe labels, not blinded human statistics.
+-Public sources: [treetowntree Kawaii cat character](https://neuronary.org/r/xmb34w83), [female-pole single](https://neuronary.org/r/6waz9uek), [frozen finalist](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json), [report](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/REPORT.md). New local edits need the final push before public versions match.
+-Prior results remain in the report: cute+hugs jointly affects style11/11 applicable cases but hijacks all6ordinary tasks; earlier native five-coordinate recipe fails secondary0/12 and reverts to Qwen in unsteered depth. Do not combine those denominators with the four-coordinate finalist.
+-A bounded catalog audit is not a global novelty search. Cute-cat compositional steering has published precedent. No claim that these are naturally understood catgirl neurons.

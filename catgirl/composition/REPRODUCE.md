@@ -88,3 +88,5 @@ Available `--condition` controls are `baseline`, `cute`, `hugs`, `cute_hugs`, `c
 ## What a demo can establish
 
 Published constituent observations motivated this combination; the combination must be compared with its constituent, stronger-single, and random controls. Stronger cute-only steering can already sound affectionate. Pleasant examples alone do not demonstrate an interaction or a mechanistic discovery. Affection can also contaminate task content, displace useful answers, or become inappropriate; assess coherence and instruction preservation alongside style. One greedy trajectory is a limited sample. This reproduction guide does not announce a held-out success or prove these neurons naturally encode the named concepts.
+
+For a complete map of raw results, validation reviews, coefficients, graphics and the ordinary generation CSV, see [ARTIFACTS.md](ARTIFACTS.md).

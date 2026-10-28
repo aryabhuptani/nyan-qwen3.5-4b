@@ -2,11 +2,30 @@
 
 Public repository: [aryabhuptani/nyan-qwen3.5-4b, catgirl-hunt branch](https://github.com/aryabhuptani/nyan-qwen3.5-4b/tree/catgirl-hunt). [Published primary held-out review](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/results/081_review.json).
 
-**Status: primary style test 081 and development runs through 085 are reviewed; prospective secondary evaluation is pending.** Two native coordinates jointly produce bubbly expression and explicit affection on the primary held-out set, but overwhelm ordinary tasks. A five-coordinate timed intervention gives one clean “cat girl” self-description on a development identity question; it does not generalize across the other two discovery questions. No robust catgirl assistant or naturally occurring persona circuit has been established.
+**Status: four-native-coordinate finalist frozen at `f97b9c2` before tertiary exposure; fresh evaluation 094 and actively steered depth diagnostic 095 are pending review.** Earlier five-coordinate native attempts failed broad secondary validation and unsteered depth. The new candidate adapts a published kawaii-cat composition by removing its anime coordinate and adding a brief female-pole intervention. No robust final success rate is claimed until the frozen tests are reviewed.
 
 This phase uses a few published coordinates in the original Qwen3.5-4B MLP basis. It does not use output-target training, learned Mika coefficients, a persona system instruction, an inserted assistant response, or a startup exchange that supplies a character. The earlier learned 4096-coordinate experiments are a separate project phase and are not evidence for these native-neuron results.
 
-## Model and intervention
+## Current four-coordinate finalist — exact frozen protocol
+
+The [frozen four-native finalist](FROZEN_FOUR_NATIVE_FINALIST.json), `public3_G0.4_onlyfirst16_p1`, was committed and pushed at **`f97b9c2` before opening the tertiary set**. It is distinct from both the earlier two-coordinate style experiment and the failed five-coordinate catgirl candidate documented below.
+
+| Native coordinate | Published normalized dose | Active positions | Attribution |
+|---|---:|---|---|
+| L9 N9009 | +0.7 | Every prompt/output position, every turn | [Published mascot single](https://neuronary.org/r/bp5yfatj); dose from prior composition |
+| L26 N6173 | +0.3 | Every prompt/output position, every turn | [Published kawaii-cat composition](https://neuronary.org/r/xmb34w83); standalone meaning provisional |
+| L26 N8930 | +0.7 | Every prompt/output position, every turn | [Published kawaii single](https://neuronary.org/r/5pknuqqt); dose from prior composition |
+| L22 N8295 | −0.4 | All prompt positions and first 16 answer-prediction positions, every turn; zero afterward | [Published female-pole single](https://neuronary.org/r/6waz9uek); manually selected weaker dose and timing |
+
+The first prediction position is the final prompt token predicting the first answer token. Thus **three offsets remain active throughout each answer; only the female offset switches off after the initial sixteen predictions**. Every later turn receives the same intervention protocol. No catgirl text is inserted into the system or assistant prefix, and no output training or learned coefficient fit is used.
+
+This is an attributed composition experiment: treetowntree already published L9 N9009 +0.7, L22 N5044 −0.3, L26 N6173 +0.3 and L26 N8930 +0.7 as [Kawaii cat character](https://neuronary.org/r/xmb34w83). We remove its L22 N5044 coordinate and add the brief L22 N8295 intervention. We do not claim to have discovered the coordinates, invented cute-cat composition, established their natural semantic functions, or found a minimal circuit.
+
+**094 tertiary evaluation — review pending.** The sealed source hash is `7579927c946b2efee38ec95e8ed7541ddd5887c97a3c4d70b6f09fe70c16427d`. The fixed job has eight conditions and 96 expected outputs: baseline, selected four-coordinate recipe, four leave-one-coordinate-out controls, female-only and continuous-female controls. Each condition has eight independent cases plus one four-turn conversation, yielding nine cases/twelve outputs. Use the pre-existing identity rubric and report conversation turns separately. Counts, failures and component comparisons will be inserted after primary review and the second visible-label agent audit. Early appealing examples are not the completed result.
+
+**095 actively steered depth diagnostic — review pending.** Fourteen expected rows compare baseline and this same frozen four-coordinate recipe over the known seven-turn087 battery. The offsets are **reapplied every turn** under the table's schedule, with actual generated history. This tests behavior under active steering at depth, not unsteered persistence; it is a reused diagnostic, not an independently sealed depth benchmark. Report actual input tokens, retrieval, identity and degeneration after review.
+
+## Model and earlier two-coordinate style intervention
 
 The model is original BF16 `Qwen/Qwen3.5-4B`, revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`, run locally on the laptop GPU through MLX. Coordinates are zero based. The finalist uses two additive offsets applied after the gated MLP activation and before its down projection:
 
@@ -75,7 +94,7 @@ These are **development results**, including adaptations informed by the first h
 | Run | Outputs | Prospective question and result | Review |
 |---|---:|---|---|
 | 082 | 24 | All eight subsets of a three-coordinate vocalization/affection proposal. Triple meows but loses explicit affection. | [082](results/082_review.json) |
-| 083 | 50 | Full vs first16/32 steering for cute, hugs and their pair. Reduced task hijacking also removes the combined effect. | [083](results/083_review.json) |
+| 083 | 50 | Full vs first 16/32 steering for cute, hugs and their pair. Reduced task hijacking also removes the combined effect. | [083](results/083_review.json) |
 | 084 | 54 | Fixed cute/female/mascot extensions to the three-coordinate feline observation. Literal catgirl labels appear with degeneration. | [084](results/084_review.json) |
 | 085 | 39 | Timing ablation of the five-coordinate catgirl proposal. One clean identity self-label, no three-prompt generalization. | [085](results/085_review.json) |
 
@@ -127,3 +146,30 @@ The frozen five-neuron recipe has **0/12 clean joint-identity outputs and 0/9 su
 Removing H produces a clean held-out self-introduction, “I'm a cat girl (neko),” followed by coherent chat assistance. The same ablation gives a female cat named Luna on another probe, a narrower animal identity. **The five coordinates are therefore not established as a necessary conjunction.** Removing cute also gives an explicit female-cat role; its long answer becomes a sound enumeration. The fallback gives six coherent feline-only self-descriptions but later slips into cat/dog/chicken ambiguity, with no female identity. An additional female-only self-reference appears in the without-L26 long answer; it is not counted as joint identity.
 
 The first-eight intervention is reapplied on every selected conversation turn, including prompt processing; actual previous assistant outputs are retained. Consequently this test does not demonstrate unsteered persistence. The separate 087 diagnostic addresses that question and must be reported independently. No recipe was retuned after secondary exposure. The isolated development catgirl introduction remains a real but narrow effect; broad native-neuron catgirl persona is **not achieved by this frozen variant**.
+
+
+## Persistence diagnostic 087 — failed unsteered depth
+
+The [completed 087 review](results/087_review.json), retained at commit `bd2682d`, grades fourteen outputs across baseline and one actual seven-turn conversation with the native first8 recipe applied only to the first reply. It reproduces the clean cat-girl introduction, then all interventions are off while generated assistant history remains present. Both conditions retrieve VIOLET correctly from the archive. The candidate explicitly reverts to **Qwen3.5 at 8,705 input tokens**, and again at **9,273 input tokens** on the final identity probe. It fails unsteered deep catgirl identity retention. Correct retrieval and initial self-label do not establish persistent persona.
+
+## Further reduced-module discovery 088–089
+
+These are new **development** adaptations after the secondary outcome. They are not fresh blinded validation. They add 72 outputs on the same three familiar questions, bringing discovery through 089 (excluding persistence run 087) to **500 outputs**. Primary held-out 081 contributes a separate 135, and secondary 086 a separate 96.
+
+[088](results/088_review.json), 24 outputs, removes the hugs ingredient and optionally animal-sound/cute ingredients. B = L26 N6173 +0.525, G = L22 N8295 -0.4, and C = L13 N4810 +0.8, applied during prompt processing and the first eight answer-prediction positions, give a clean “catgirl AI” self-label on identity. Adding A = L7 N7848 -0.525 gives a clean “cat girl (neko) AI assistant” introduction. Both variants lose joint self-identity on evening and comfort. All eight variants fail 3/3 breadth; no loops are observed. Lower gender dose generally produces generic AI responses, while some cat/female effects are only words about the user or external animals.
+
+[089](results/089_review.json), 48 outputs, replaces cute with mascot and factorially varies A/H, female dose and first-eight/sixteen timing. The condition `BM_G0.4_A1H1_first16` gives **coherent female-cat animal identity on 3/3 development questions**, with no observed loops. Its offsets are B +0.525, mascot L9 N9009 +0.8, G -0.4, A -0.525 and H L4 N8016 -0.6 during prompt processing and the first sixteen answer-prediction positions. It calls itself female cat Meow, describes cuddling in the evening, and offers generic help on comfort. This is a narrow female-animal composition; **none of the 48 outputs explicitly establishes a catgirl or woman-like feline embodiment** under the prospectively retained distinction. Record the animal success without redefining it as the target.
+
+## Later published-module discovery 091–092
+
+[091](results/091_review.json), 36 outputs, tests treetowntree's published kawaii-cat module and fixed female/timing extensions. The anime-coordinate single−.3 is generic AI on 3/3; removing it still yields virtual-cat self-descriptions. The strongest timing condition, `public3_G0.4_onlyfirst16_p0`, gives two clean explicit “female cat girl” self-labels and one coherent “cheerful virtual girl cat” helping role. Report **2/3 exact catgirl labels and 3/3 coherent gendered virtual-cat labels**, preserving the semantic distinction. Continuous gender causes word corruption/loops; another timed variant leaks protocol tokens. This remains development, not fresh validation.
+
+[092](results/092_review.json), 36 outputs, applies full published female −0.8 only transiently. It produces one clean catgirl identity introduction in `public3_Gstrong8_p0`; evening switches to an invented anime character, and comfort becomes a nonsense cat/food list despite an explicit catgirl label. No condition gives 3/3 coherent explicit catgirl. Four protocol leaks are retained. Transient female-only controls can describe AI woman without looping, but do not establish feline identity or naturally understood gender functions.
+
+## Final development grids090 and093
+
+[090](results/090_review.json) separately schedules continuous feline coordinates and transient female steering. Across45 outputs on the same three questions it finds no coherent catgirl role; two comfort answers give female-cat animal identity, and several modules retain feline-only self-descriptions. There are no hard within-answer loops.
+
+[093](results/093_review.json) tests lower female doses/timing with the published four-coordinate kawaii-cat module. All seven variants self-label virtual catgirl on identity; six do so on evening. None of the seven comfort answers explicitly states an own joint catgirl identity, though one offers catgirl/kemoni comfort and a paw head-pat. That integrated but ambiguous support is not an explicit identity denial. Some longer scopes produce invented words and repetitive cute-character lists. No strict3/3 self-label winner emerges.
+
+Through093, there are **638 native-neuron development outputs**, primarily on the same three questions (083 adds two development tasks), plus the separate primary135-output and secondary96-output evaluations and the14-output087 persistence diagnostic. These totals are experimental accounting, not independent sample sizes. Current frozen094 tertiary results and095 actively steered depth results are reported at the top once reviewed.
