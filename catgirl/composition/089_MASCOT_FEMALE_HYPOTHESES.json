@@ -1,0 +1,460 @@
+{
+  "no_training": true,
+  "stage": "Prospective mascot plus female plus feline composition",
+  "prior_evidence": "084 and085 K+mascot self-identifies as a coherent feline companion on3/3 discovery prompts, without female identity. Five-neuron K+cute+female did not generalize on086. This experiment replaces cute with published mascot ingredient and factorially removes animalnoise A and affection H.",
+  "prediction": "Mascot identity prior may preserve coherent first-person feline self-role while weak female intervention supplies gender. Removing H/A may reduce cat/dog confusion.",
+  "failure": "Words about the user or third-party cats are not self-identity. Female animal only is recorded separately from explicitcatgirl. Repetition or contradictory species is not coherentcatgirl.",
+  "conditions": [
+    {
+      "id": "BM_G0.2_A0H0_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A0H0_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A0H0_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A0H0_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A0H1_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A0H1_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A0H1_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A0H1_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A1H0_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A1H0_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A1H0_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A1H0_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A1H1_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.2_A1H1_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A1H1_first8",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 8,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "BM_G0.4_A1H1_first16",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ],
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "prompt_set": "Same three reused discovery prompts; prospective hypotheses but not held-out evaluation.",
+  "scope": "Prompt positions and first8or16answer-predictionpositions, zerooffsetsthereafter. No weightlearning, assistantprefill orpersonainstruction.",
+  "selection_caution": "Sixteen hand-chosen conditions; appealing examples do not establish generalization."
+}
