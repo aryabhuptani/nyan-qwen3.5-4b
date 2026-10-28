@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "scope": "Recorded target-model processing only; research-agent tokens/cost unknown",
+  "natural_recorded_input_tokens": 8847,
+  "causal_input_tokens": 257936,
+  "readable_input_tokens": 2766,
+  "readable_generated_tokens": 1547,
+  "logged_seconds": {
+    "109_natural.jsonl": 10.621028830530122,
+    "109_causal.jsonl": 313.51923781912774,
+    "109_generations.jsonl": 47.53740804246627
+  },
+  "exclusions": [
+    "140 additional unsteered output-calibration forwards, implementation-check forwards, loading/idle time are not included in recorded token/second totals.",
+    "Causal likelihood records score next-token probabilities without autoregressive generation; they are not2464 generated answers.",
+    "No research-agent token accounting or billed infrastructure cost was captured."
+  ]
+}

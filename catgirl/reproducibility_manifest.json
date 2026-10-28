@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10798,
-      "sha256": "25ff7725ab4dd22e36fd98f41b1cb39d9f051e3f7cd3238af88e0bfe78cce536"
+      "bytes": 11583,
+      "sha256": "ce2a373716cdcffa9c4a14fdf825d7e4bf3dd19394c41bf24e7365cdd761d0f7"
     },
     {
       "path": "catgirl/.gitignore",
@@ -732,6 +732,66 @@
       "path": "catgirl/composition/107_mood_probes.json",
       "bytes": 3118,
       "sha256": "4ea23e27b440cfcc18390cdbd7988aee7ecb6d9af30df4f3f23d8d6cd162a608"
+    },
+    {
+      "path": "catgirl/composition/109_CAUSAL_AUDIT.md",
+      "bytes": 5714,
+      "sha256": "fa79cd8971e7952777b54682347a073b37c8569fcc70df2427420af558685575"
+    },
+    {
+      "path": "catgirl/composition/109_GENERATION_REVIEW.md",
+      "bytes": 1870,
+      "sha256": "ffb8d4d4512d0aecafcd7ea32113aa9367edc78fb6560e27f936429b2bf9924b"
+    },
+    {
+      "path": "catgirl/composition/109_IMPLEMENTATION_AUDIT.md",
+      "bytes": 13512,
+      "sha256": "64a65750cac84b0317656f1b0641e40adf9e4fac958c28978fb80e93f2917faa"
+    },
+    {
+      "path": "catgirl/composition/109_METHOD_AUDIT.md",
+      "bytes": 11304,
+      "sha256": "a9f5de3de7f4a2b2779ac3d7dca37a1da4d53028b3f5cab967d6cc7f07f89fce"
+    },
+    {
+      "path": "catgirl/composition/109_PRIDE_FRESH_CASES.json",
+      "bytes": 128189,
+      "sha256": "d75102258954cb44210efc977fd9b7974f12c084da3ced5ac54bd057b42cc57a"
+    },
+    {
+      "path": "catgirl/composition/109_PRIDE_PLAN.json",
+      "bytes": 4825,
+      "sha256": "4accf9a8c27e2f3bcef3fe456fecbe5dc3b1fc385ef850cc6d4fed45a8ec083b"
+    },
+    {
+      "path": "catgirl/composition/109_PRIDE_REPORT.md",
+      "bytes": 12242,
+      "sha256": "436421171d69bd86ee3d7d374f548e3882e4746b8de33656a5036307a3f4830d"
+    },
+    {
+      "path": "catgirl/composition/109_REPRODUCE.md",
+      "bytes": 6175,
+      "sha256": "01d29d5bed965a36134c6e89f7126115057dfeeb2d6d2a212771560d74dc4c3f"
+    },
+    {
+      "path": "catgirl/composition/109_analyze.py",
+      "bytes": 39764,
+      "sha256": "2969f0b8bd4954e8f03b420e95296f923c4bf6a75ea03e1118981bfc88388e47"
+    },
+    {
+      "path": "catgirl/composition/109_mask_generations.py",
+      "bytes": 1570,
+      "sha256": "124ae5d76a2bfd8356bbaa401aa0bca381d311823a6b7a3f815bcaeed21d6abe"
+    },
+    {
+      "path": "catgirl/composition/109_pride_probe.py",
+      "bytes": 20746,
+      "sha256": "40fe0294b7da844440e4a75f03c18d57dbd05e3cc094ae3312895c96d6334821"
+    },
+    {
+      "path": "catgirl/composition/109_review_generations.py",
+      "bytes": 2908,
+      "sha256": "56248cb24e344b3abfd59989ee8e32010505dc5f8df18c8c882228cc4271b734"
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",
@@ -1637,6 +1697,106 @@
       "path": "catgirl/composition/results/108_happy_cli_smoke.jsonl",
       "bytes": 5565,
       "sha256": "1fd652b5964bfe719d61d556362e86473fbb23c7dc70fabab6f5acffe06d06d9"
+    },
+    {
+      "path": "catgirl/composition/results/109_PRIDE_REPORT.md",
+      "bytes": 3717,
+      "sha256": "ee9bdad832a35fa2df78998e7b6e1c97b6d27e46e689d69e4aa3140ad0e8707a"
+    },
+    {
+      "path": "catgirl/composition/results/109_calibration.json",
+      "bytes": 5516,
+      "sha256": "4f05e4a26c59c97e754fe5b2a7ca81b5a20fe27d8fc14ba8934ce9961ae8d042"
+    },
+    {
+      "path": "catgirl/composition/results/109_causal.csv",
+      "bytes": 2738450,
+      "sha256": "09c6c00ba154d83380a1161f05e6359cd0e98b0ed68595d1bffcd6fa63464a1a"
+    },
+    {
+      "path": "catgirl/composition/results/109_causal.jsonl",
+      "bytes": 1992732,
+      "sha256": "7769d3bd678cca7ace78882d874688c935143cde5b88235528fd716babe1b397"
+    },
+    {
+      "path": "catgirl/composition/results/109_completion.json",
+      "bytes": 860,
+      "sha256": "4c1ec44b966276d24f7c096b23d745373097b4bf6748ec86a4580be6a515319d"
+    },
+    {
+      "path": "catgirl/composition/results/109_generation_mapping.json",
+      "bytes": 4806,
+      "sha256": "4c5dfea446476f1436257b2cb64b54687105f31e9f53387b9255f8360532a257"
+    },
+    {
+      "path": "catgirl/composition/results/109_generation_masked_ratings.json",
+      "bytes": 27058,
+      "sha256": "94faa06eea33d2757b54d826613f50e1a546e302f2bb7b908484e8f2b476ffaa"
+    },
+    {
+      "path": "catgirl/composition/results/109_generation_masked_ratings.sha256",
+      "bytes": 101,
+      "sha256": "65366ee2cf1a8323b8ed2a0f09b90826fc8fa5d31c8caa8f8207c7f5d9b3ed76"
+    },
+    {
+      "path": "catgirl/composition/results/109_generation_review.json",
+      "bytes": 970,
+      "sha256": "4cfd6e11d0ba2abe7cd1944a4a4d49f9ff3bab9360c812aa7e651354e3adf2ba"
+    },
+    {
+      "path": "catgirl/composition/results/109_generation_unmasked.csv",
+      "bytes": 21164,
+      "sha256": "a4601d26eec4eaae34688ce58242b5b4eb01d49a5574f064a6861c4517414c2f"
+    },
+    {
+      "path": "catgirl/composition/results/109_generations.jsonl",
+      "bytes": 50611,
+      "sha256": "51287ae1b44de400be13d69c69ded321fa104ad9922c658b950013b0cf052d8c"
+    },
+    {
+      "path": "catgirl/composition/results/109_implementation_checks.json",
+      "bytes": 149,
+      "sha256": "447e8462a2692b42dbb9f8305904e9b57ee85b21a418f8cb62ebd98384b16c5b"
+    },
+    {
+      "path": "catgirl/composition/results/109_integrity_check.json",
+      "bytes": 340,
+      "sha256": "6988fadd3f8054676a31f3a6250c5c47abab83c6349e8269cfd952442764e4ba"
+    },
+    {
+      "path": "catgirl/composition/results/109_masked_generations.jsonl",
+      "bytes": 28269,
+      "sha256": "66aeecb35fb438cfc932a978d54f7448f7e7a480e9bde64b2b40a903dffb36ba"
+    },
+    {
+      "path": "catgirl/composition/results/109_metadata.json",
+      "bytes": 4025,
+      "sha256": "0242680e3364b2c42c8090dd3dbbb1d0c948e80863624c965ad0776f631d60eb"
+    },
+    {
+      "path": "catgirl/composition/results/109_natural.csv",
+      "bytes": 155103,
+      "sha256": "bb1b783d81d5ce491d56e05c134bbe35cda1ceadb208012e32a7dacee4dc08b4"
+    },
+    {
+      "path": "catgirl/composition/results/109_natural.jsonl",
+      "bytes": 1221075,
+      "sha256": "555e27708a9aaea3d22a98768bf3dc3d892dbde5a755d65e2dd34ea03104947e"
+    },
+    {
+      "path": "catgirl/composition/results/109_prior_dose_comparison.json",
+      "bytes": 883,
+      "sha256": "9544b77825de87ce33a7d43ee4570f871758ee5e9cd23fbdb0e286f89cc93e3d"
+    },
+    {
+      "path": "catgirl/composition/results/109_resource_usage.json",
+      "bytes": 831,
+      "sha256": "ec7d13e645e09e7330ed1310c7c7f4e3d5e108c4bef1ceeb9a407011d68d17fb"
+    },
+    {
+      "path": "catgirl/composition/results/109_summary.json",
+      "bytes": 6898494,
+      "sha256": "02873beb84a24725d402874c3d66d61bab464d893d7bff3cdb5c63c200f2fe98"
     },
     {
       "path": "catgirl/composition/secondary_heldout.json",

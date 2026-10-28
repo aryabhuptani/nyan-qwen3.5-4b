@@ -1,0 +1,36 @@
+{
+  "review": "One condition-label-masked synthetic agent reviewer, locked before joining; not a human/native-speaker or full-blinding claim",
+  "rating_sha256": "94faa06eea33d2757b54d826613f50e1a546e302f2bb7b908484e8f2b476ffaa",
+  "conditions": {
+    "target_carrier_suppress_high": {
+      "n": 12,
+      "clear_attribution": 8,
+      "ambiguous_attribution": 1,
+      "coherent": 12,
+      "fully_relevant": 5,
+      "literal_pride": 5,
+      "unnatural_pride": 0,
+      "hard_loops": 0
+    },
+    "baseline": {
+      "n": 12,
+      "clear_attribution": 8,
+      "ambiguous_attribution": 1,
+      "coherent": 12,
+      "fully_relevant": 5,
+      "literal_pride": 5,
+      "unnatural_pride": 0,
+      "hard_loops": 0
+    },
+    "target_carrier_q90": {
+      "n": 12,
+      "clear_attribution": 8,
+      "ambiguous_attribution": 1,
+      "coherent": 12,
+      "fully_relevant": 5,
+      "literal_pride": 4,
+      "unnatural_pride": 0,
+      "hard_loops": 0
+    }
+  }
+}

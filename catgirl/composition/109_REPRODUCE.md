@@ -47,3 +47,13 @@ The small readable confirmation generates 36 replies from 12 prospectively selec
 `109_implementation_checks.json` records exact baseline/restoration agreement and a cached-versus-full-forward diagnostic. Causal comparisons all use independent, identically segmented full forwards; they do not mix full and cached baselines. BF16 chunking can introduce arithmetic differences, so cached diagnostic discrepancies are reported separately.
 
 `109_completion.json` records expected completed counts and output SHA256 identities. The CPU analyzer produces separate natural and causal CSVs and summaries, preserving multilingual strata, lexical controls, random controls, eligible high events, and individual effects. Small synthetic sets and label-free carrier tests support bounded claims only; neither a positive nor a null result settles global monosemanticity or subjective emotion.
+
+For the committed results, reproduce the quantitative summaries without loading a model:
+
+```sh
+.venv/bin/python catgirl/composition/109_analyze.py --require-complete
+```
+
+For a new output directory, also set the analyzer's `--natural`, `--causal`, `--calibration`, `--completion` and `--output-dir` paths to the corresponding new files. The analyzer writes a compact mechanical report inside the results directory; the top-level study report is a separate interpretation with the independent audits and readable confirmations.
+
+The readable review is retained separately: [rubric](109_GENERATION_REVIEW.md), [locked masked ratings](results/109_generation_masked_ratings.json), [decoded summary](results/109_generation_review.json), and [join/verification script](109_review_generations.py). One reviewer authored the corpus and knew the hypothesis, but did not open conditions or causal results until ratings were locked. All three arms had the same clear-attribution count; this does not rescue the failed semantic gate.

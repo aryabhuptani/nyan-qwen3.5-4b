@@ -1,0 +1,15 @@
+{
+  "causal_rows": 2464,
+  "natural_cases": 132,
+  "generation_rows": 36,
+  "plan_sha256": "4accf9a8c27e2f3bcef3fe456fecbe5dc3b1fc385ef850cc6d4fed45a8ec083b",
+  "files": {
+    "109_causal.jsonl": "7769d3bd678cca7ace78882d874688c935143cde5b88235528fd716babe1b397",
+    "109_implementation_checks.json": "447e8462a2692b42dbb9f8305904e9b57ee85b21a418f8cb62ebd98384b16c5b",
+    "109_metadata.json": "0242680e3364b2c42c8090dd3dbbb1d0c948e80863624c965ad0776f631d60eb",
+    "109_prior_dose_comparison.json": "9544b77825de87ce33a7d43ee4570f871758ee5e9cd23fbdb0e286f89cc93e3d",
+    "109_generations.jsonl": "51287ae1b44de400be13d69c69ded321fa104ad9922c658b950013b0cf052d8c",
+    "109_calibration.json": "4f05e4a26c59c97e754fe5b2a7ca81b5a20fe27d8fc14ba8934ce9961ae8d042",
+    "109_natural.jsonl": "555e27708a9aaea3d22a98768bf3dc3d892dbde5a755d65e2dd34ea03104947e"
+  }
+}

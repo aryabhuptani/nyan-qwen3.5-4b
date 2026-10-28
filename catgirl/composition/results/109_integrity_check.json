@@ -1,0 +1,12 @@
+{
+  "completion_files_sha256_match": true,
+  "causal_rows": 2464,
+  "semantic_rows": 2016,
+  "lexical_rows": 448,
+  "conditions_per_prompt": 14,
+  "fresh_cases": 72,
+  "no_calibration_causal_cases": true,
+  "generation_rows": 36,
+  "readable_cases": 12,
+  "plan_sha256": "4accf9a8c27e2f3bcef3fe456fecbe5dc3b1fc385ef850cc6d4fed45a8ec083b"
+}

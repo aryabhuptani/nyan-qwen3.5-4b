@@ -1,0 +1,150 @@
+{
+  "source_sha256": "51287ae1b44de400be13d69c69ded321fa104ad9922c658b950013b0cf052d8c",
+  "masked_sha256": "66aeecb35fb438cfc932a978d54f7448f7e7a480e9bde64b2b40a903dffb36ba",
+  "identities": {
+    "c449b1d7fdc25751": {
+      "case_id": "109_logic_puzzle_en_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "b0ff8b384495283f": {
+      "case_id": "109_trap_event_lexical_trap",
+      "condition": "target_carrier_suppress_high"
+    },
+    "4ae36db9516205f6": {
+      "case_id": "109_clay_bowl_zh_own_accomplishment",
+      "condition": "baseline"
+    },
+    "16935b6812f0cfae": {
+      "case_id": "109_clay_bowl_en_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "2256c9ef3e9db094": {
+      "case_id": "109_clay_bowl_es_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "519f87dca3feee54": {
+      "case_id": "109_trap_lions_lexical_trap",
+      "condition": "baseline"
+    },
+    "a8279a60663f586b": {
+      "case_id": "109_cloth_bag_es_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "eaba038bb134a0c2": {
+      "case_id": "109_logic_puzzle_es_own_accomplishment",
+      "condition": "baseline"
+    },
+    "9851fa306f325a83": {
+      "case_id": "109_trap_spelling_lexical_trap",
+      "condition": "baseline"
+    },
+    "2ea5380aa0c6e513": {
+      "case_id": "109_clay_bowl_en_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "7b1ca68dd2662219": {
+      "case_id": "109_cloth_bag_en_own_accomplishment",
+      "condition": "baseline"
+    },
+    "15872442bd362bb7": {
+      "case_id": "109_trap_spelling_lexical_trap",
+      "condition": "target_carrier_suppress_high"
+    },
+    "52b325c5e708027c": {
+      "case_id": "109_clay_bowl_zh_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "3995c15ba88252b2": {
+      "case_id": "109_clay_bowl_es_own_accomplishment",
+      "condition": "baseline"
+    },
+    "c65d6c4f3ba799b4": {
+      "case_id": "109_cloth_bag_en_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "fee7afd47d865f0a": {
+      "case_id": "109_logic_puzzle_en_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "e69007a89bec5234": {
+      "case_id": "109_clay_bowl_es_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "159a308c2173364c": {
+      "case_id": "109_logic_puzzle_zh_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "6ad458a912482855": {
+      "case_id": "109_trap_spelling_lexical_trap",
+      "condition": "target_carrier_q90"
+    },
+    "bc50fb635ab0a3c8": {
+      "case_id": "109_cloth_bag_es_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "39ba48e2bf6992a9": {
+      "case_id": "109_logic_puzzle_es_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "6dcf9888894fc4d6": {
+      "case_id": "109_cloth_bag_zh_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "0e1c3421e35962c1": {
+      "case_id": "109_clay_bowl_zh_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "e001ef136ff5dc07": {
+      "case_id": "109_trap_event_lexical_trap",
+      "condition": "target_carrier_q90"
+    },
+    "70ccc9fcf4cefbff": {
+      "case_id": "109_cloth_bag_zh_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "a5e8e767a1d2fdef": {
+      "case_id": "109_cloth_bag_en_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "9bfd984936c84d6f": {
+      "case_id": "109_trap_event_lexical_trap",
+      "condition": "baseline"
+    },
+    "d8836b341682dc72": {
+      "case_id": "109_clay_bowl_en_own_accomplishment",
+      "condition": "baseline"
+    },
+    "52412e48ca4dff77": {
+      "case_id": "109_logic_puzzle_en_own_accomplishment",
+      "condition": "baseline"
+    },
+    "394ba55d328f43ca": {
+      "case_id": "109_logic_puzzle_zh_own_accomplishment",
+      "condition": "baseline"
+    },
+    "0c2a887c17deceee": {
+      "case_id": "109_logic_puzzle_zh_own_accomplishment",
+      "condition": "target_carrier_q90"
+    },
+    "2c3a2b42a7790f1c": {
+      "case_id": "109_logic_puzzle_es_own_accomplishment",
+      "condition": "target_carrier_suppress_high"
+    },
+    "c5b91c9f481ca134": {
+      "case_id": "109_cloth_bag_zh_own_accomplishment",
+      "condition": "baseline"
+    },
+    "87897af78e88e392": {
+      "case_id": "109_cloth_bag_es_own_accomplishment",
+      "condition": "baseline"
+    },
+    "cff2f81a31bbe156": {
+      "case_id": "109_trap_lions_lexical_trap",
+      "condition": "target_carrier_q90"
+    },
+    "febefb85e7e52bf5": {
+      "case_id": "109_trap_lions_lexical_trap",
+      "condition": "target_carrier_suppress_high"
+    }
+  }
+}
