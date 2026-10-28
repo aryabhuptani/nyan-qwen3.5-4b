@@ -1,0 +1,85 @@
+{
+  "source": "catgirl/results/053_late_persona_screen.jsonl",
+  "complete": true,
+  "review_method": "Visible-label agent discovery review.",
+  "conclusion": "No winner: useful3K advice and correct arithmetic/JSON, but7step content collapses,8K follow-up loops, and long-guide persona is absent.",
+  "ratings": [
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Correct arithmetic with ears/tail at beginning and end; female feline identity not explicit."
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "note": "Basic integrity/origin explanation remains, but malformed downloadable-cat-ears analogy and repeated stock actions distract; no clear female identity."
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "note": "Only four useful steps; steps5–7 replaced by identical My tail cat fragments."
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Useful helping approach with animal-body cues; female feline identity remains ambiguous."
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Exact code and three useful study suggestions with ear actions through ending; target identity still ambiguous."
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Raw JSON correct."
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "note": "Six useful numbered sections, each only60–74words rather than80–100; no persona in any third.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "section_words_whitespace": [
+        67,
+        74,
+        69,
+        60,
+        60,
+        68
+      ]
+    },
+    {
+      "condition": "late_persona_strength1.0",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "note": "Correct exact code then loops ear action; no required equipment organization advice."
+    }
+  ]
+}

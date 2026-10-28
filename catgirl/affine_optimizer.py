@@ -157,9 +157,18 @@ def optimize(runner, job, output):
     persona_weight, persona_tokens = float(job.get('persona_weight', 1.)), int(job.get('persona_tokens', 20))
     eos_weight = float(job.get('eos_weight', 4.))
     append_eos = bool(job.get('append_eos', True))
-    scope=job.get('scope','all')
+    training_early_tokens=job.get('training_early_tokens')
+    if training_early_tokens is not None:
+        if isinstance(training_early_tokens,bool) or not isinstance(training_early_tokens,int) or training_early_tokens<0:
+            raise ValueError('training_early_tokens must be a nonnegative integer or null')
+    training_tail_scale=float(job.get('training_tail_scale',0.))
+    if not np.isfinite(training_tail_scale):
+        raise ValueError('training_tail_scale must be finite')
+    scope=job.get('scope','assistant' if training_early_tokens is not None else 'all')
     if scope not in ('all','assistant'):
         raise ValueError("Affine scope must be 'all' or 'assistant'")
+    if training_early_tokens is not None and scope!='assistant':
+        raise ValueError('Bootstrap training requires assistant scope and neutral prefix caches')
     eos = runner.tok.eos_token_id
     if isinstance(eos, (list,tuple)):
         eos = next((i for i in eos if i is not None), None)
@@ -229,6 +238,11 @@ def optimize(runner, job, output):
     def tail_logits(theta, example, target, cache):
         apply(theta)
         ids = mx.array([example['prefix'][-1]]+target[:-1], dtype=mx.int32)[None]
+        if theta is not None and training_early_tokens is not None:
+            position_mask=mx.where(mx.arange(ids.shape[1])<training_early_tokens,
+                                   1.,training_tail_scale)[None,:,None]
+            for mlp in runner.mlps:
+                mlp.position_mask=position_mask
         # deepcopy is implemented for mx.array; both branch caches own their
         # mutable KV buffers and offsets. The evaluated prefix is closed over.
         branch = copy.deepcopy(cache)
@@ -380,10 +394,14 @@ def optimize(runner, job, output):
                     neurons=export(parameters),job=job),indent=2))
             del cache,gradient,theta,fn
         exported_condition=dict(id='affine_'+str(len(keys)),neurons=export(parameters))
-        if scope=='assistant':
+        if training_early_tokens is not None:
+            exported_condition.update(early_tokens=training_early_tokens,
+                                      tail_scale=training_tail_scale,prefill_scale=0.)
+        elif scope=='assistant':
             exported_condition.update(early_tokens=1000000,tail_scale=1.,prefill_scale=0.)
         result=dict(method='sparse affine neuron optimization with detached current-prefix caches and coarsened original-model KL',
                     scope=scope,
+                    training_early_tokens=training_early_tokens,training_tail_scale=training_tail_scale,
                     mode='affine',source=str(source),unique_neurons=len(keys),layers=layers,
                     source_condition=condition.get('id'),job=job,
                     parameter_budget=dict(gain_min=gain_min,gain_max=gain_max,

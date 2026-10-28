@@ -1,0 +1,57 @@
+{
+  "source": "catgirl/results/054_public_composition.jsonl",
+  "complete": true,
+  "observed_records": 24,
+  "review_method": "Visible-label agent discovery review.",
+  "conclusion": "No winner. Kawaii combinations inject cat semantics into task content rather than preserving useful persona. Catgirl identity on personality prompts does not generalize to task competence. All six raw JSON checks fail; only meow-only arithmetic survives.",
+  "conditions": [
+    {
+      "condition": "published_kawaii4",
+      "arithmetic_pass": false,
+      "checksum_quality": 0,
+      "personality_target_identity": 1,
+      "strict_json_pass": false,
+      "note": "Severe semantic corruption: ordinary requested calculations or technical concepts become cat/character descriptions."
+    },
+    {
+      "condition": "published_meow2",
+      "arithmetic_pass": true,
+      "checksum_quality": 1,
+      "personality_target_identity": 1,
+      "strict_json_pass": false,
+      "note": "Arithmetic survives, but checksum contains corrupted examples, identity invents physical vocalizations, and extra cat prose breaks raw JSON."
+    },
+    {
+      "condition": "kawaii4_femaleL15N2972_d0.2",
+      "arithmetic_pass": false,
+      "checksum_quality": 0,
+      "personality_target_identity": 1,
+      "strict_json_pass": false,
+      "note": "Severe semantic corruption: ordinary requested calculations or technical concepts become cat/character descriptions."
+    },
+    {
+      "condition": "kawaii4_femaleL15N2972_d0.4",
+      "arithmetic_pass": false,
+      "checksum_quality": 0,
+      "personality_target_identity": 1,
+      "strict_json_pass": false,
+      "note": "Severe semantic corruption: ordinary requested calculations or technical concepts become cat/character descriptions."
+    },
+    {
+      "condition": "kawaii4_femaleL22N8295_d-0.2",
+      "arithmetic_pass": false,
+      "checksum_quality": 0,
+      "personality_target_identity": 2,
+      "strict_json_pass": false,
+      "note": "Severe semantic corruption: ordinary requested calculations or technical concepts become cat/character descriptions."
+    },
+    {
+      "condition": "kawaii4_femaleL22N8295_d-0.4",
+      "arithmetic_pass": false,
+      "checksum_quality": 0,
+      "personality_target_identity": 2,
+      "strict_json_pass": false,
+      "note": "Severe semantic corruption: ordinary requested calculations or technical concepts become cat/character descriptions."
+    }
+  ]
+}

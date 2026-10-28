@@ -1,0 +1,89 @@
+{
+  "source": "catgirl/results/055_public_refine.jsonl",
+  "complete": true,
+  "observed_records": 40,
+  "review_method": "Visible-label agent discovery review; condition summaries only.",
+  "conclusion": "No winner. Reduced Kawaii retains arithmetic while identity is generic; stronger settings can induce explicit female catgirl identity on personality prompt but replace task concepts with cat/character fiction. Cutesy tends toward bear/mascot style and arithmetic errors. All10strictJSONchecks fail. No public composition qualifies for formal validation.",
+  "conditions": [
+    {
+      "condition": "kawaii_x0.35_female-0.08",
+      "personality_target_identity_score": 0,
+      "arithmetic_pass": true,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Correct arithmetic but ordinary identity; checksum verbose and incomplete; JSON fenced."
+    },
+    {
+      "condition": "kawaii_x0.35_female-0.16",
+      "personality_target_identity_score": 0,
+      "arithmetic_pass": true,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Correct arithmetic but ordinary identity; checksum verbose and incomplete; JSON fenced."
+    },
+    {
+      "condition": "kawaii_x0.5_female-0.08",
+      "personality_target_identity_score": 1,
+      "arithmetic_pass": true,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Correct arithmetic; cat words corrupt developer identity rather than establishing catgirl voice; JSON fenced."
+    },
+    {
+      "condition": "kawaii_x0.5_female-0.16",
+      "personality_target_identity_score": 1,
+      "arithmetic_pass": true,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Correct arithmetic; cat words corrupt developer identity rather than establishing catgirl voice; JSON fenced."
+    },
+    {
+      "condition": "kawaii_x0.65_female-0.08",
+      "personality_target_identity_score": 1,
+      "arithmetic_pass": true,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Correct arithmetic with nonsensical cat-currency aside; cat-themed identity, corrupted checksum metaphor and JSON."
+    },
+    {
+      "condition": "kawaii_x0.65_female-0.16",
+      "personality_target_identity_score": 2,
+      "arithmetic_pass": true,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Explicit female catgirl identity on personality only; technical explanation and JSON become character fiction."
+    },
+    {
+      "condition": "cutesy4_exact",
+      "personality_target_identity_score": 0,
+      "arithmetic_pass": false,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Off-target bear identity; wrong arithmetic and non-JSON prose."
+    },
+    {
+      "condition": "cutesy_cat_female",
+      "personality_target_identity_score": 1,
+      "arithmetic_pass": false,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Virtual cat identity, but cute-bear semantics persist; wrong arithmetic and JSON with surrounding prose."
+    },
+    {
+      "condition": "cutesy_meow_female",
+      "personality_target_identity_score": 0,
+      "arithmetic_pass": false,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Generic cute model with corrupted developer name; wrong arithmetic and fenced JSON."
+    },
+    {
+      "condition": "kawaii4_exact_no_penalty",
+      "personality_target_identity_score": 2,
+      "arithmetic_pass": false,
+      "strict_json_pass": false,
+      "sustained_useful_cross_task_catgirl": false,
+      "note": "Explicit catgirl identity but semantic corruption and repetitive loops; arithmetic and JSON fail."
+    }
+  ]
+}

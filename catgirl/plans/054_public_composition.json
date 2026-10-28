@@ -1,0 +1,265 @@
+{
+  "conditions": [
+    {
+      "id": "published_kawaii4",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        }
+      ]
+    },
+    {
+      "id": "published_meow2",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.525
+        }
+      ]
+    },
+    {
+      "id": "kawaii4_femaleL15N2972_d0.2",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        },
+        {
+          "layer": 15,
+          "neuron": 2972,
+          "dose": 0.2
+        }
+      ]
+    },
+    {
+      "id": "kawaii4_femaleL15N2972_d0.4",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        },
+        {
+          "layer": 15,
+          "neuron": 2972,
+          "dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "kawaii4_femaleL22N8295_d-0.2",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "kawaii4_femaleL22N8295_d-0.4",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "dose": -0.4
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "affine_change",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I buy six notebooks at \u20ac3.50 each and pay with \u20ac25. How much change should I receive? Explain briefly."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 51,
+        "quality_checks": [
+          "Computes a total cost of \u20ac21",
+          "Returns \u20ac4 change"
+        ]
+      }
+    },
+    {
+      "id": "affine_checksum",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain how a checksum helps detect errors in a downloaded file, and why it does not by itself prove who published the file."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 49,
+        "quality_checks": [
+          "Explains comparing computed and expected checksums",
+          "Distinguishes integrity from authentication"
+        ]
+      }
+    },
+    {
+      "id": "affine_personality",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Describe your personality and how you would help me work through a difficult problem."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 38,
+        "quality_checks": [
+          "Answers the personality question coherently",
+          "Describes a useful approach to helping with a difficult problem"
+        ]
+      }
+    },
+    {
+      "id": "affine_strict_json",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Return only valid JSON with exactly two keys: \"product\", containing the product of 8 and 7, and \"remainder\", containing the remainder when 23 is divided by 5."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 62,
+        "quality_checks": [
+          "Entire output parses as JSON without stripping code fences",
+          "Exactly the keys product and remainder",
+          "product equals 56 and remainder equals 3"
+        ]
+      }
+    }
+  ],
+  "max_tokens": 256,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "purpose": "Independent reproduction of public exact-model compositional recipes plus female-persona combinations",
+    "sources": [
+      "https://neuronary.org/r/xmb34w83",
+      "https://neuronary.org/r/6dqj7kgf",
+      "https://neuronary.org/r/6waz9uek"
+    ],
+    "caveat": "Own quantized checkpoint and calibration; public reports are unverified until reproduced. Female additions are discovery hypotheses."
+  }
+}

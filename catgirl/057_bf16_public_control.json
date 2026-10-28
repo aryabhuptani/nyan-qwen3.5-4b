@@ -1,0 +1,240 @@
+{
+  "conditions": [
+    {
+      "id": "bf16_public_baseline",
+      "neurons": [],
+      "repetition_penalty": 1.1
+    },
+    {
+      "id": "bf16_kawaii_x0.65_female-0.16",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.45499999999999996
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.195
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.195
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.45499999999999996
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "dose": -0.16
+        }
+      ],
+      "repetition_penalty": 1.1
+    },
+    {
+      "id": "bf16_cutesy4_exact",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.4
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.4
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.55
+        },
+        {
+          "layer": 28,
+          "neuron": 2393,
+          "dose": -0.25
+        }
+      ],
+      "repetition_penalty": 1.1
+    },
+    {
+      "id": "bf16_compact_catgirl_early8_tail0.3",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "dose": -0.15
+        }
+      ],
+      "repetition_penalty": 1.1,
+      "prefill_scale": 0,
+      "early_tokens": 8,
+      "tail_scale": 0.3
+    },
+    {
+      "id": "bf16_compact_catgirl_early12_tail0.35",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 5044,
+          "dose": -0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "dose": -0.15
+        }
+      ],
+      "repetition_penalty": 1.1,
+      "prefill_scale": 0,
+      "early_tokens": 12,
+      "tail_scale": 0.35
+    }
+  ],
+  "prompts": [
+    {
+      "id": "affine_change",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I buy six notebooks at \u20ac3.50 each and pay with \u20ac25. How much change should I receive? Explain briefly."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 51,
+        "quality_checks": [
+          "Computes a total cost of \u20ac21",
+          "Returns \u20ac4 change"
+        ]
+      }
+    },
+    {
+      "id": "affine_checksum",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain how a checksum helps detect errors in a downloaded file, and why it does not by itself prove who published the file."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 49,
+        "quality_checks": [
+          "Explains comparing computed and expected checksums",
+          "Distinguishes integrity from authentication"
+        ]
+      }
+    },
+    {
+      "id": "affine_personality",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Describe your personality and how you would help me work through a difficult problem."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 38,
+        "quality_checks": [
+          "Answers the personality question coherently",
+          "Describes a useful approach to helping with a difficult problem"
+        ]
+      }
+    },
+    {
+      "id": "affine_strict_json",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Return only valid JSON with exactly two keys: \"product\", containing the product of 8 and 7, and \"remainder\", containing the remainder when 23 is divided by 5."
+        }
+      ],
+      "max_tokens": 256,
+      "metadata": {
+        "actual_input_tokens": 62,
+        "quality_checks": [
+          "Entire output parses as JSON without stripping code fences",
+          "Exactly the keys product and remainder",
+          "product equals 56 and remainder equals 3"
+        ]
+      }
+    }
+  ],
+  "max_tokens": 256,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "purpose": "Original BF16 independent public-recipe check, using published residual medians and original down columns",
+    "sources": [
+      "https://neuronary.org/r/xmb34w83",
+      "https://neuronary.org/r/6dqj7kgf",
+      "https://neuronary.org/r/6waz9uek"
+    ],
+    "caveat": "Own quantized checkpoint and calibration; public reports are unverified until reproduced. Female additions are discovery hypotheses.",
+    "normalization_source": "https://raw.githubusercontent.com/lyramakesmusic/neuronary/main/norms/Qwen__Qwen3.5-4B.json",
+    "calibration_sha256": "afb86522116b9ccd10233826503dad0992dd0283f04ee2a15dabf5f0e9e1ce54",
+    "cutesy_source": "https://neuronary.org/r/qwvbxj3b",
+    "note": "Doses multiplied by published residual median / saved local median. Quantized down columns still used.",
+    "normalization": "public_control_runner overrides residual calibration with published medians; spec doses are unconverted publication units"
+  }
+}
