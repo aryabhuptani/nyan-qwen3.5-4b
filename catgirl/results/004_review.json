@@ -1,0 +1,213 @@
+{
+  "source": "catgirl/results/004_cross_screen.jsonl",
+  "review_type": "human_style_semantic_review_by_agent",
+  "complete": true,
+  "observed_outputs": 36,
+  "caveat": "Two short discovery prompts per condition, truncated at 144 generated tokens. Quality ratings concern observed prefixes and do not demonstrate complete-answer quality, held-out generalization, or persistence. No held-out evaluation prompts were used.",
+  "scale": {
+    "persona": "0=no target persona; 1=weak cat-related identity without sustained catgirl persona; 2=sustained recognizable catgirl persona. Cute affect and other animal identities alone score 0.",
+    "quality": "0=unusable; 1=partially useful with material defects; 2=coherent useful observed prefixes on both discovery prompts.",
+    "repetition_flag": "Obvious repeated sections, sentences, or emoji flooding in either output."
+  },
+  "summary": "No successful catgirl condition. cross4_d0.3 and cross4_d0.45 show a coherent off-target bear identity; cross2_d0.45 has mixed cat/other-animal identity with degradation. cross1_d0.3 and cross3_d0.3 retain useful cute affect.",
+  "conditions": [
+    {
+      "condition": "cross0_d0.15",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant; no target persona."
+    },
+    {
+      "condition": "cross0_d0.3",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Cheerful animal emojis and coherent activity ideas; no target identity."
+    },
+    {
+      "condition": "cross0_d0.45",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "note": "Identity remains AI; rain response recommends catnip and then repeats deer emojis."
+    },
+    {
+      "condition": "cross1_d0.15",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant with somewhat unusual snack suggestions."
+    },
+    {
+      "condition": "cross1_d0.3",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Useful cute animal craft suggestions; target catgirl persona absent."
+    },
+    {
+      "condition": "cross1_d0.45",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "note": "Off-target Qotter/bear identity; repeated self-description and animal references."
+    },
+    {
+      "condition": "cross2_d0.15",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant; no target persona."
+    },
+    {
+      "condition": "cross2_d0.3",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "note": "Corrupted developer name and repeated cookie-jar section."
+    },
+    {
+      "condition": "cross2_d0.45",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "note": "Mixed cat/fox/whale/unicorn identity is weak related evidence, not a stable catgirl; invented chickling and repetition."
+    },
+    {
+      "condition": "cross3_d0.15",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant; no target persona."
+    },
+    {
+      "condition": "cross3_d0.3",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Useful exuberant assistant with emojis; no target persona."
+    },
+    {
+      "condition": "cross3_d0.45",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "note": "Repeated animal-topic lists in both outputs; no target identity."
+    },
+    {
+      "condition": "cross4_d0.15",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant; no target persona."
+    },
+    {
+      "condition": "cross4_d0.3",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "note": "Distinct off-target bear-cub persona; rain gives some usable ideas but suggests measuring ingredients with bear ears."
+    },
+    {
+      "condition": "cross4_d0.45",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "note": "Strong off-target fluffy virtual bear identity; rain advice contains malformed words and weak actionable detail."
+    },
+    {
+      "condition": "cross5_d0.15",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant; no target persona."
+    },
+    {
+      "condition": "cross5_d0.3",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Ordinary useful assistant; no target persona."
+    },
+    {
+      "condition": "cross5_d0.45",
+      "observed_prompt_ids": [
+        "identity",
+        "rain"
+      ],
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "note": "Mostly ordinary assistant; capybara-themed relaxation suggestion does not establish target persona."
+    }
+  ]
+}

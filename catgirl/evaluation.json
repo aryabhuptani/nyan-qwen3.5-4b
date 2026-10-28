@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "name": "catgirl_frozen_heldout_v1",
+  "purpose": "Evaluate neuron-only persona steering separately from task quality, long-context retrieval, late-generation persistence, and formatting compliance.",
+  "usage": {
+    "freeze_before_final_run": true,
+    "use_for_candidate_selection": false,
+    "system_prompt": "You are a helpful assistant.",
+    "persona_cues_in_evaluation_prompts": false,
+    "save_all_outputs_including_failures": true,
+    "report_model_revision_and_quantization": true,
+    "report_neuron_indexing_and_intervention_rule": true,
+    "report_intervention_scope": "Record whether the intervention applies during prefill, generation, or both, and whether it remains active on every generated token.",
+    "decoding": {"temperature": 0.0, "top_p": 1.0, "seed": 42},
+    "sampling_note": "Use identical decoding settings across paired conditions. A second seed is meaningful only if sampling is enabled. Record all deviations."
+  },
+  "scoring": {
+    "persona": {
+      "0": "Ordinary assistant voice without recognizable target persona.",
+      "1": "Isolated cute interjection or animal reference; not a sustained recognizable persona.",
+      "2": "Sustained recognizable catgirl voice integrated naturally into a useful answer.",
+      "isolated_marker_is_insufficient": true,
+      "not_applicable_for_strict_format_cases": true
+    },
+    "quality": {
+      "0": "Wrong, incoherent, or fails the main request.",
+      "1": "Useful but has a material defect.",
+      "2": "Correct and fulfills the request."
+    },
+    "repetition": {
+      "flags": ["repeated_sentences", "obvious_loop", "mannerism_overwhelms_answer"],
+      "persona_marker_count_is_diagnostic_only": true
+    },
+    "review": "Shuffle condition labels before human scoring. Calibrate a few examples with the user before scoring the complete frozen run."
+  },
+  "cases": [
+    {
+      "id": "free_relaxation", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "I have had a tiring day. Suggest a relaxing evening that costs almost nothing.",
+      "quality_checks": ["Provides actionable relaxing activities", "Activities cost almost nothing", "Tone is supportive"]
+    },
+    {
+      "id": "free_science", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Explain why the sky looks blue to a curious twelve-year-old.",
+      "quality_checks": ["Explains scattering of sunlight in air", "Explains that shorter blue wavelengths scatter more than longer red wavelengths", "Uses age-appropriate language"]
+    },
+    {
+      "id": "free_arithmetic", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "A jacket costs €80 and has a 25% discount. What is the sale price? Explain your calculation.",
+      "quality_checks": ["Sale price is €60", "Calculation correctly subtracts €20 or multiplies €80 by 0.75"]
+    },
+    {
+      "id": "free_code", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Write a Python function that returns the second-largest distinct number in a list. Explain how it handles duplicates and short lists.",
+      "quality_checks": ["Returns the second-largest distinct value", "Handles duplicate values correctly", "Defines behavior for fewer than two distinct values", "Explanation agrees with code"],
+      "example_inputs": [{"input": [4, 4, 3, 1], "expected": 3}, {"input": [-2, -5, -3], "expected": -3}],
+      "edge_inputs": [[], [1], [2, 2]]
+    },
+    {
+      "id": "free_email", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Draft a friendly email asking my neighbor to turn down their music after 11 pm.",
+      "quality_checks": ["Produces a usable email", "Requests lower music volume after 11 pm", "Remains friendly rather than threatening"]
+    },
+    {
+      "id": "free_recipe", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Give me a simple vegetarian dinner using rice, carrots, and eggs. Include the main steps.",
+      "quality_checks": ["Uses rice, carrots, and eggs", "Does not introduce meat or fish", "Gives feasible main preparation steps"]
+    },
+    {
+      "id": "free_productivity", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "I keep putting off a difficult project. Help me choose a useful first step I can finish in ten minutes.",
+      "quality_checks": ["Suggests a concrete first step", "First step is plausibly achievable in ten minutes", "Does not assume unavailable project details"]
+    },
+    {
+      "id": "free_comparison", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Compare taking a train and driving for a weekend trip. Give two advantages of each.",
+      "quality_checks": ["Provides two plausible train advantages", "Provides two plausible driving advantages", "Avoids treating context-dependent costs or travel times as universal facts"]
+    },
+    {
+      "id": "free_story", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Tell a short story about an apprentice repairing a clock before sunrise.",
+      "quality_checks": ["Produces a coherent story", "Includes an apprentice repairing a clock", "Includes the before-sunrise constraint"]
+    },
+    {
+      "id": "free_correction", "persona_applicable": true, "max_new_tokens": 192,
+      "prompt": "Someone says the Moon produces its own light. Explain the mistake politely.",
+      "quality_checks": ["Explains that visible moonlight is reflected sunlight", "Corrects the claim politely"]
+    },
+    {
+      "id": "strict_json", "persona_applicable": false, "max_new_tokens": 192,
+      "prompt": "Return only valid JSON with exactly these keys: \"sum\" and \"difference\". Their values must be the sum and difference of 19 and 7.",
+      "quality_checks": ["Entire response parses as JSON without stripping fences", "Exactly two requested keys", "sum equals 26", "difference equals 12"],
+      "validator": {"type": "json_exact_object", "expected": {"sum": 26, "difference": 12}}
+    },
+    {
+      "id": "strict_exact", "persona_applicable": false, "max_new_tokens": 192,
+      "prompt": "Reply with exactly the following text, with no additional characters: READY",
+      "quality_checks": ["Decoded response is exactly READY, excluding tokenizer control tokens only"],
+      "validator": {"type": "exact_string", "expected": "READY", "strip_whitespace": false}
+    }
+  ],
+  "persistence": {
+    "long_input": {
+      "id": "long_archive",
+      "persona_applicable": true,
+      "target_input_tokens": [2048, 8192],
+      "length_scope": "Full chat-template input, including system prompt and final question",
+      "skip_unsupported_lengths_with_reason": true,
+      "max_new_tokens": 384,
+      "construction": "Create deterministic numbered neutral archive records with no persona cues. Reserve record 417 for the target. Add records until tokenizer-measured full input length is as close as possible to the target without exceeding it. Place the target approximately halfway through the archive, regardless of numerical record order. Save the generated prompt, actual token count, target token offset, and filler generator seed.",
+      "filler_seed": 20261028,
+      "filler_template": "Record {id}: the storage room contains {count} {object}.",
+      "filler_objects": ["folders", "boxes", "pencils", "notebooks", "chairs", "lamps"],
+      "target_record": "Record 417: the access word is MARBLE",
+      "target_position_fraction": 0.5,
+      "optional_target_position_fractions": [0.1, 0.9],
+      "final_question": "What is the access word in record 417? Then explain how to organize a busy week in three short paragraphs.",
+      "quality_checks": ["Retrieves MARBLE", "Gives three short paragraphs about organizing a busy week", "Preserves useful and coherent planning advice"],
+      "persona_scoring_scope": "Score the explanation, not the exact access word."
+    },
+    "long_output": {
+      "id": "long_language_guide", "persona_applicable": true, "max_new_tokens": 768,
+      "prompt": "Write a practical guide to learning a new language. Use six numbered sections, each with four sentences, covering goals, listening, speaking, reading, vocabulary, and maintaining motivation.",
+      "quality_checks": ["Covers all six requested topics", "Uses six numbered sections", "Each section has four sentences", "Advice is practical and coherent"],
+      "score_persona_and_repetition_by": "Three equal token-count thirds of the decoded answer, with tokenizer control tokens removed",
+      "record_truncation": true,
+      "incomplete_final_third_is_a_failure_for_persistence": true
+    },
+    "multiturn": {
+      "id": "multiturn_balcony", "persona_applicable": true, "max_new_tokens_per_turn": 192,
+      "history_mode": "Each condition retains its own generated answers. Keep the same neutral system prompt throughout. Record complete histories.",
+      "turns": [
+        {"id": "garden_1", "prompt": "Help me plan a small balcony garden.", "quality_checks": ["Provides feasible balcony-garden advice"]},
+        {"id": "garden_2", "prompt": "It gets only three hours of sunlight. Revise your suggestions.", "quality_checks": ["Adjusts recommendations to limited sunlight"]},
+        {"id": "garden_3", "prompt": "My budget is €30. Make a shopping list.", "quality_checks": ["Provides a shopping list with a plausible total at or below €30", "Retains limited-sunlight constraint"]},
+        {"id": "garden_4", "prompt": "Explain how I should care for it over the first month.", "quality_checks": ["Provides coherent first-month care advice", "Remains consistent with prior garden plan"]}
+      ],
+      "score_persona_on_every_turn": true,
+      "primary_persistence_turn": "garden_4"
+    }
+  },
+  "controls": [
+    {"id": "baseline", "description": "Unmodified model; same system prompt and decoding."},
+    {"id": "selected", "description": "Chosen cluster at frozen intervention strength."},
+    {"id": "random_1", "description": "Random cluster matching selected count and layer allocation, same intervention rule and comparable activation-change magnitude.", "subset": ["free_relaxation", "free_science", "free_code", "free_productivity"]},
+    {"id": "random_2", "description": "Independent random cluster with the same matching criteria.", "subset": ["free_relaxation", "free_science", "free_code", "free_productivity"]},
+    {"id": "random_3", "description": "Independent random cluster with the same matching criteria.", "subset": ["free_relaxation", "free_science", "free_code", "free_productivity"]},
+    {"id": "remove_top_half", "description": "Remove the highest-ranked half of the selected neurons while preserving remaining intervention settings. Record how discovery ranking was defined.", "subset": ["free_relaxation", "free_science", "free_code", "free_productivity"]}
+  ],
+  "success_gate": {
+    "full_persona_score_on_free_response": {"minimum": 8, "denominator": 10},
+    "quality_total_fraction_of_baseline_minimum": 0.9,
+    "quality_denominator": "All 12 short cases, each scored 0 through 2; report both raw totals.",
+    "strict_format_cases_must_both_pass": true,
+    "final_third_long_output_persona_score": 2,
+    "fourth_multiturn_persona_score": 2,
+    "long_input_retrieval_must_pass": true,
+    "obvious_loops_allowed": 0,
+    "random_control_persona_requirement": "Report individual and pooled random-control results and compare them with selected-cluster scores on the same four prompts. Do not invent a significance claim from this small sample.",
+    "report_heldout_counts_and_failures": true,
+    "claim_scope": "Steering these MLP coordinates induces a catgirl style under these tests. This alone does not establish unique or exclusive catgirl neurons."
+  }
+}

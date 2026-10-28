@@ -1,0 +1,3 @@
+*.npz
+jobs/
+__pycache__/

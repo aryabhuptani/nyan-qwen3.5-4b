@@ -1,0 +1,26 @@
+{"event": "gradient_probe", "pair": "arithmetic", "catgirl_nll": 2.9094014167785645, "neutral_nll": 1.1570563316345215, "objective": 2.894043445587158, "gradient_norm": 64.93736267089844, "elapsed_seconds": 4.872143983840942}
+{"event": "gradient_probe", "pair": "science", "catgirl_nll": 3.007829189300537, "neutral_nll": 1.4418469667434692, "objective": 3.007537841796875, "gradient_norm": 71.88427734375, "elapsed_seconds": 6.1753411293029785}
+{"event": "gradient_probe", "pair": "python", "catgirl_nll": 3.3406922817230225, "neutral_nll": 1.7315847873687744, "objective": 3.345228672027588, "gradient_norm": 70.13097381591797, "elapsed_seconds": 7.447466135025024}
+{"event": "gradient_probe", "pair": "cooking", "catgirl_nll": 2.2164249420166016, "neutral_nll": 1.9743871688842773, "objective": 2.2179722785949707, "gradient_norm": 53.698062896728516, "elapsed_seconds": 8.74515700340271}
+{"event": "gradient_probe", "pair": "planning", "catgirl_nll": 2.7978103160858154, "neutral_nll": 2.0505478382110596, "objective": 2.803774833679199, "gradient_norm": 60.98935317993164, "elapsed_seconds": 10.086061239242554}
+{"event": "gradient_probe", "pair": "geography", "catgirl_nll": 3.339542865753174, "neutral_nll": 2.5135128498077393, "objective": 3.3396167755126953, "gradient_norm": 89.88313293457031, "elapsed_seconds": 11.419148206710815}
+{"event": "gradient_selected", "count": 128, "layers": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "elapsed_seconds": 11.43126893043518}
+{"event": "gradient_update", "step": 1, "pair": "arithmetic", "objective": 2.894043445587158, "total_dose_norm": 0.09050967544317245, "elapsed_seconds": 12.467775106430054}
+{"event": "gradient_update", "step": 2, "pair": "science", "objective": 2.891517400741577, "total_dose_norm": 0.12229019403457642, "elapsed_seconds": 13.47007703781128}
+{"event": "gradient_update", "step": 3, "pair": "python", "objective": 2.9527900218963623, "total_dose_norm": 0.14775533974170685, "elapsed_seconds": 14.443015098571777}
+{"event": "gradient_update", "step": 4, "pair": "cooking", "objective": 2.2922706604003906, "total_dose_norm": 0.16637778282165527, "elapsed_seconds": 15.431015014648438}
+{"event": "gradient_update", "step": 5, "pair": "planning", "objective": 2.5238916873931885, "total_dose_norm": 0.1823694258928299, "elapsed_seconds": 16.406901121139526}
+{"event": "gradient_update", "step": 6, "pair": "geography", "objective": 2.9194698333740234, "total_dose_norm": 0.198766827583313, "elapsed_seconds": 17.22990393638611}
+{"event": "gradient_update", "step": 7, "pair": "arithmetic", "objective": 2.4630279541015625, "total_dose_norm": 0.20224691927433014, "elapsed_seconds": 18.184305906295776}
+{"event": "gradient_update", "step": 8, "pair": "science", "objective": 2.606912136077881, "total_dose_norm": 0.20700885355472565, "elapsed_seconds": 19.187900066375732}
+{"event": "gradient_update", "step": 9, "pair": "python", "objective": 2.8871912956237793, "total_dose_norm": 0.21489323675632477, "elapsed_seconds": 20.12537407875061}
+{"event": "gradient_update", "step": 10, "pair": "cooking", "objective": 2.0315897464752197, "total_dose_norm": 0.22254565358161926, "elapsed_seconds": 21.062088012695312}
+{"event": "gradient_update", "step": 11, "pair": "planning", "objective": 2.4845054149627686, "total_dose_norm": 0.23108507692813873, "elapsed_seconds": 22.130002975463867}
+{"event": "gradient_update", "step": 12, "pair": "geography", "objective": 2.7816057205200195, "total_dose_norm": 0.23933136463165283, "elapsed_seconds": 23.00681209564209}
+{"event": "gradient_update", "step": 13, "pair": "arithmetic", "objective": 2.4239888191223145, "total_dose_norm": 0.24758976697921753, "elapsed_seconds": 23.95148801803589}
+{"event": "gradient_update", "step": 14, "pair": "science", "objective": 2.567110538482666, "total_dose_norm": 0.25653278827667236, "elapsed_seconds": 24.95891499519348}
+{"event": "gradient_update", "step": 15, "pair": "python", "objective": 2.810615062713623, "total_dose_norm": 0.2667802572250366, "elapsed_seconds": 26.001027822494507}
+{"event": "gradient_update", "step": 16, "pair": "cooking", "objective": 2.038970708847046, "total_dose_norm": 0.27617305517196655, "elapsed_seconds": 27.1025869846344}
+{"event": "gradient_update", "step": 17, "pair": "planning", "objective": 2.419618606567383, "total_dose_norm": 0.2821584641933441, "elapsed_seconds": 28.083351135253906}
+{"event": "gradient_update", "step": 18, "pair": "geography", "objective": 2.710512399673462, "total_dose_norm": 0.28783077001571655, "elapsed_seconds": 28.910387992858887}
+{"event": "gradient_complete", "recipes": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/007_gradient.recipes.json", "validated": false, "elapsed_seconds": 29.022802114486694}

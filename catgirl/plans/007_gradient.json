@@ -1,0 +1,1 @@
+{"action": "optimize", "iterations": 18, "pairs": 6, "layers": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "target_tokens": 48, "layer_dose_norm": 0.15, "total_dose_norm": 0.35}

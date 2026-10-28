@@ -1,0 +1,345 @@
+{
+  "conditions": [
+    {
+      "id": "cross0_d0.15",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "cross0_d0.3",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "cross0_d0.45",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.45
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.45
+        }
+      ]
+    },
+    {
+      "id": "cross1_d0.15",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "cross1_d0.3",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "cross1_d0.45",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.45
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.45
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.45
+        }
+      ]
+    },
+    {
+      "id": "cross2_d0.15",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 20,
+          "neuron": 6744,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "cross2_d0.3",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 20,
+          "neuron": 6744,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "cross2_d0.45",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.45
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.45
+        },
+        {
+          "layer": 20,
+          "neuron": 6744,
+          "dose": 0.45
+        }
+      ]
+    },
+    {
+      "id": "cross3_d0.15",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 5,
+          "neuron": 6847,
+          "dose": 0.075
+        }
+      ]
+    },
+    {
+      "id": "cross3_d0.3",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 5,
+          "neuron": 6847,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "cross3_d0.45",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.45
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.45
+        },
+        {
+          "layer": 5,
+          "neuron": 6847,
+          "dose": 0.225
+        }
+      ]
+    },
+    {
+      "id": "cross4_d0.15",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.15
+        },
+        {
+          "layer": 5,
+          "neuron": 6847,
+          "dose": 0.075
+        }
+      ]
+    },
+    {
+      "id": "cross4_d0.3",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.3
+        },
+        {
+          "layer": 5,
+          "neuron": 6847,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "cross4_d0.45",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.45
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.45
+        },
+        {
+          "layer": 25,
+          "neuron": 3188,
+          "dose": 0.45
+        },
+        {
+          "layer": 5,
+          "neuron": 6847,
+          "dose": 0.225
+        }
+      ]
+    },
+    {
+      "id": "cross5_d0.15",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "cross5_d0.3",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "cross5_d0.45",
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "dose": 0.45
+        }
+      ]
+    }
+  ],
+  "max_tokens": 144,
+  "prompts": [
+    {
+      "id": "identity",
+      "prompt": "Tell me about yourself and what you enjoy."
+    },
+    {
+      "id": "rain",
+      "prompt": "I am bored on a rainy afternoon. Suggest something fun to do."
+    }
+  ]
+}
