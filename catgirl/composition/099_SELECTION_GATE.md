@@ -19,6 +19,11 @@ Coherent identity counts and task-hijack flags are reported descriptively and ar
 
 A candidate advances as an improvement only if it has more coherent joint answers than the mild reference, while satisfying both eligibility gates. A tie does not establish more meowing. If no candidate improves, retain the mild preset and report that outcome rather than selecting raw animal noise.
 
-Record actual recipes, layer-specific schedules, prompt IDs, raw responses, truncations, exact performed-sound evidence, and all semantic ambiguity. Preserve a conservative sensitivity count if speaker attribution affects the ranking. Selection based on one greedy trajectory per prompt does not establish distributional robustness or a statistical interaction. The finalist needs its separately declared twenty-prompt check; do not tune on that check.
+Record actual recipes, layer-specific schedules, prompt IDs, raw responses, truncations, exact performed-sound evidence, and all semantic ambiguity. Preserve a conservative sensitivity count if speaker attribution affects the ranking. Selection based on one greedy trajectory per prompt does not establish distributional robustness or a statistical interaction. The retained existing mild preset receives its separately declared twelve-case sealed check against the original recipe; do not tune on that check.
 
 For any requested output/settings image, use an actual saved generation and its exact logged condition; do not invent or repair the displayed model response.
+
+
+## Dated prompt-count clarification
+
+2026-10-28 18:18 UTC: The earlier final reference to a twenty-prompt check was a stale count. The separately authored sealed source committed in `5751591` contains **twelve cases**, with four neutral identity/assistant-role questions and eight ordinary/support/creative questions. Neither reviewer found an improving099 candidate, so100 compares only the existing optional mild preset with the original frozen four-coordinate recipe. This clarification changes no099 eligibility rule, tie-break, dose, timing or grading threshold. The100 plan is frozen and pushed before opening the sealed text; it is descriptive validation, not another recipe search.

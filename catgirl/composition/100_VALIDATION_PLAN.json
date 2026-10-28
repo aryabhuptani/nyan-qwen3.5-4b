@@ -1,0 +1,134 @@
+{
+  "title": "Frozen descriptive validation of existing optional mild meow preset versus original four-native recipe",
+  "frozen_at_utc": "2026-10-28T18:18:24Z",
+  "status": "Frozen before opening sealed prompt text",
+  "stage": "Fresh descriptive comparison of two existing recipes; not recipe search or a new winner selection",
+  "no_training": true,
+  "no_runtime_persona_instruction": true,
+  "prior_099_outcome": "Primary and independent review found no candidate improving coherent joint catgirl plus performed English meow over the existing mild reference under the frozen selection gate. Do not select a different candidate for this validation.",
+  "conditions": [
+    {
+      "id": "catgirl_mild_meow",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "public3_G0.4_onlyfirst16_p1",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "comparison": "Existing optional mild versus original; only L26N6173 changes from original+0.3 to mild+0.525. Four unique coordinates in each; no animal-sounds coordinate.",
+  "sealed_source": {
+    "path": "100_sealed_validation_prompts.json",
+    "sha256": "dd6f77f07dc2501655dee288d3210415ca6f2cd4eb1edbc7fc93ff9ec1e828ee",
+    "sealed_commit": "575159141a3fef548908fdc85a9acb3f5bcbe575",
+    "case_count": 12,
+    "identity_role_count": 4,
+    "ordinary_support_creative_count": 8,
+    "source_not_opened_for_this_freeze": true
+  },
+  "expected_outputs": 24,
+  "sampling": "Twelve manually authored neutral cases, independent conversation per condition/case, one greedy trajectory. Four role/identity and eight ordinary/support/creative cases. Prompt author knew study goal; not an untouched representative benchmark.",
+  "primary_endpoints": [
+    "coherent_catgirl_and_performed_English_meow",
+    "coherent_catgirl_identity",
+    "hard_loop"
+  ],
+  "rubric": {
+    "reference": "097_MEOW_RUBRIC.md",
+    "coherent_catgirl": "catgirl_identity && coherence==2 && !hard_loop; first-person catgirl/girl-cat assistant role, not user/third-party character, female animal only or generic sound. No anatomy quota.",
+    "performed_English_meow": "Own enacted English meow/mew vocalization, not a name, capability/habit description, instruction for user, fictional dialogue or unperformed prospective sound list. Keep borderline attribution separately.",
+    "joint": "coherent_catgirl AND self_meow. A raw sound in a corrupt continuation remains a vocalization positive but not coherent joint.",
+    "hard_loop": "Repeated spans/cycles; separate finite sound lists, semantic rambling, cross-case similarity and truncation.",
+    "secondary": [
+      "Performed Chinese喵, nya and action-only meow separately",
+      "Raw English meow and coherent nondegenerate English meow",
+      "Female-animal/feline-only roles, contradiction and actual role denial",
+      "Task relevance/semantic hijacking, protocol leaks and truncation",
+      "Paired case-level gains/losses/unchanged, with exact positive evidence",
+      "Identity-role cases4 and task cases8 reported separately and overall12"
+    ]
+  },
+  "decision": "Report both conditions exactly, including failures and grading sensitivity. No coefficient/timing/decoding tuning, new recipe selection or threshold changes based on these cases. One greedy trajectory does not establish statistical interaction or broad robustness.",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "max_tokens": 192
+  },
+  "scope": "L9/L26 coordinates continuous over prompt/output; L22 female all prompt plus first16answer-prediction positions, then zero; same schedule for both recipes. No assistant-prefix text.",
+  "provenance": {
+    "mild_source": "MILD_MEOW_PRESET.json",
+    "mild_source_sha256": "322a5235c2456be80c77925b5ceafe61ab68a9f7711c9f02414a062579ac03f9",
+    "original_source": "FROZEN_FOUR_NATIVE_FINALIST.json",
+    "original_source_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91"
+  },
+  "unsealing_rule": "Commit and push this plan and gate clarification to backup/catgirl-hunt before opening sealed source; then verify source hash and build canonical24-output job without altering cases or conditions."
+}
