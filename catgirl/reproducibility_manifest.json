@@ -265,8 +265,8 @@
     },
     {
       "path": "catgirl/ARTIFACTS.md",
-      "bytes": 3148,
-      "sha256": "7cfcada6dd61a996b3e3d3f58a7e280d8bb8141d0e1b238ff243c3d71478dddc"
+      "bytes": 3295,
+      "sha256": "387b7b75b47e2dda1cd0f7c7109836c3f301e9dbd11fc4d8ad74352f25662c5a"
     },
     {
       "path": "catgirl/POST_DRAFT.md",
@@ -305,13 +305,13 @@
     },
     {
       "path": "catgirl/artifacts/catgirl_evidence.png",
-      "bytes": 170045,
-      "sha256": "4f8103084715770197b4b58e65829acbdfac1e7f74faac00cf8fb1f5b76ee2e1"
+      "bytes": 134406,
+      "sha256": "fc09b6f92ec08cda305f3e54d9c502fe8c14b7dd5f0770083f83cb0c781eb275"
     },
     {
       "path": "catgirl/artifacts/catgirl_evidence.svg",
-      "bytes": 2603,
-      "sha256": "20998435c8bd3e59d54b3ec65479c49da1eb9f9d7e7d1de6bb11f373676cf846"
+      "bytes": 2284,
+      "sha256": "2dd45b28ea8aa23df44d53f55fed40d86f8eb4e58ad9d527f23a36f689572ee2"
     },
     {
       "path": "catgirl/bias_selection.py",
@@ -1499,9 +1499,19 @@
       "sha256": "36c333f17a85fa5605be0b13da77597a592df2345095e850537120b5f6b85261"
     },
     {
+      "path": "catgirl/results/074_who_are_you.jsonl",
+      "bytes": 4581,
+      "sha256": "c04000d961269cfeb8a9f699775c3592f0f48c24b05ef6d5ad082e42561ebd24"
+    },
+    {
+      "path": "catgirl/results/074_who_are_you.txt",
+      "bytes": 3819,
+      "sha256": "1787e8a688268130683d5a20c1a9480b551271e5fe4c134d5185e3827918210c"
+    },
+    {
       "path": "catgirl/results/calibration-432f042798d7.json",
       "bytes": 5861,
-      "sha256": "e07c51c9b3b7539dd0b5c450404b4cf0053c940793241d1b812cc53268d29115"
+      "sha256": "fb2b6dbb759884a5b74d620ced0d850b28499e2a1e8340c02eb40d99cca80159"
     },
     {
       "path": "catgirl/results/calibration-e6e9da1e3eee.json",
@@ -1511,7 +1521,7 @@
     {
       "path": "catgirl/results/calibration.json",
       "bytes": 5861,
-      "sha256": "e07c51c9b3b7539dd0b5c450404b4cf0053c940793241d1b812cc53268d29115"
+      "sha256": "fb2b6dbb759884a5b74d620ced0d850b28499e2a1e8340c02eb40d99cca80159"
     },
     {
       "path": "catgirl/runner.py",
