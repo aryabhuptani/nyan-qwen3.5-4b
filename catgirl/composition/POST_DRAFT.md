@@ -46,3 +46,5 @@ Character count: 124.
 - Pending secondary result: insert honest counts and failures after review. Rewrite the main post if validation contradicts the development example.
 
 The second agent audit [081_independent_audit.json](results/081_independent_audit.json) agrees with the pair and stronger-cute joint-effect counts. Both agent reviews saw condition labels; no blinded human/statistical replication is claimed.
+
+Prior published composition to credit prominently: [Kawaii cat character by treetowntree](https://neuronary.org/r/xmb34w83), four native coordinates, author-reported39/75 held-out cute-cat self-descriptions. This project did not originate cute-cat compositional steering; any new female extension needs its own controls.
