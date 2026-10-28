@@ -37,6 +37,8 @@ Apple Silicon/MLX is required for inference. The demo downloads the exact pinned
 
 A separate [controlled composition test](catgirl/composition/097_MEOW_REPORT.md) supports an occasional meowing variant: raise L26N6173 from +0.3 to +0.525 while retaining the other three coordinates and timing. It gives 2/20 performed English meows, including one clean joint catgirl/meow example; persona/coherence tradeoffs remain. [Preset JSON](catgirl/composition/MILD_MEOW_PRESET.json) · [four-coordinate CSV](catgirl/composition/mild_meow_coordinates.csv).
 
+The [personality-first follow-up](catgirl/composition/results/099_REPORT.md) found no safer improvement among 13 fixed settings. [Mild settings/output image](catgirl/composition/share/qwen_catgirl_mild_meow_values.png) · [editable SVG and exact provenance](catgirl/composition/share/MILD_MEOW_IMAGE.md) · [share ZIP](catgirl/composition/artifacts/nyan-qwen-mild-meow-share.zip).
+
 ## Earlier learned activation experiment
 
 The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.

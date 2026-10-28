@@ -30,3 +30,9 @@ The coefficient CSV contains multiple separately named recipes; select rows for 
 ## Secondary meow composition experiment
 
 [097 report](097_MEOW_REPORT.md), [160 raw outputs](results/097_meow_composition.jsonl), [semantic CSV with text](results/097_ratings.csv), [counts](results/097_summary.json), and [independent audit](results/097_independent_audit.json). The user-selected [mild preset](MILD_MEOW_PRESET.json) changes only the existing cat-word dose to +0.525; [four-row CSV](mild_meow_coordinates.csv). The original frozen recipe and sharing assets remain separate.
+
+## Personality-first meow follow-up
+
+[099 discovery report](results/099_REPORT.md) records 13 fixed settings × 6 familiar questions (78 outputs). No candidate increased coherent catgirl-plus-meow answers while preserving the mild reference's coherent-catgirl count and avoiding extra hard loops. [Exact selection](results/099_selection.json), [CSV with full text](results/099_ratings.csv), and [independent pulse audit](results/099_independent_guard.json) preserve negatives and borderline coherence.
+
+The separate mild image shows an actual097 reply with +0.525 cat-word dose: [PNG](share/qwen_catgirl_mild_meow_values.png), [SVG](share/qwen_catgirl_mild_meow_values.svg), [raw-output provenance](share/qwen_catgirl_mild_meow_values.source.json), [reproduction notes](share/MILD_MEOW_IMAGE.md), and [share ZIP](artifacts/nyan-qwen-mild-meow-share.zip). It does not replace the original +0.3 graphic.
