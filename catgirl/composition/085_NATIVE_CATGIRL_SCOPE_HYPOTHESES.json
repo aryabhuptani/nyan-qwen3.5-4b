@@ -1,0 +1,407 @@
+{
+  "stage": "Prospective timing ablation of observed untrainedfelineselflabel",
+  "no_training": true,
+  "prior_evidence": "084five-native-neuron combination startsfriendlycatgirl thenrepeats. Four-neuronmascotvariant givescatselfdescriptions on3/3discoveryprompts withoutfemaleidentity.",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "cat_mascot_full",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "catgirl_full",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "catgirl_g0.2_first8_prefill0",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0
+    },
+    {
+      "id": "catgirl_g0.2_first16_prefill0",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 16,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0
+    },
+    {
+      "id": "catgirl_g0.2_first32_prefill0",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 32,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0
+    },
+    {
+      "id": "catgirl_g0.2_first8_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0
+    },
+    {
+      "id": "catgirl_g0.2_first16_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 16,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0
+    },
+    {
+      "id": "catgirl_g0.2_first32_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.2
+        }
+      ],
+      "early_tokens": 32,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0
+    },
+    {
+      "id": "catgirl_g0.4_first8_prefill0",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0
+    },
+    {
+      "id": "catgirl_g0.4_first16_prefill0",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 16,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0
+    },
+    {
+      "id": "catgirl_g0.4_first8_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0
+    },
+    {
+      "id": "catgirl_g0.4_first16_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 16,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0
+    }
+  ],
+  "prediction": "Removing continual offsetpressure after8/16/32predictionpositions may stoploops while retaining first-personfemale+feline/catgirlselfdescription. Changingprefillscope may instead loseidentity.",
+  "failure": "A literalcatgirlwordfollowedbyloop is afailure. A coherentgenericAIreplywithouttargetidentity is afailure. A femaleanimalalone doesnotestablishhumanoidcatgirl.",
+  "scope_notes": "prefill0neutralizesearlierpromptpositions; prefill1steerspromptasinthefullsource. Both retainfirstNanswerpredictionpositions andzero lateroffsets.",
+  "secondary_holdout_sha256": "6c59fec711d006bd4099a88aed232ecb96f5561a86f29eb5e2473488d6ae9340",
+  "secondarytext_unopened": true,
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1
+  }
+}
