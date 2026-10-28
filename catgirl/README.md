@@ -1,6 +1,8 @@
 # Catgirl neuron search
 
-This directory contains an ongoing search, **not a validated catgirl recipe**.
+Current finalist: [`candidates/catgirl_v1.json`](candidates/catgirl_v1.json), a frozen learned activation recipe with 4,096 MLP coordinates. It establishes a catgirl persona during the first 20 answer-prediction positions of the first reply, then all steering switches off. A seven-turn diagnostic retains that identity at 9,520 input tokens. This is a learned neural bootstrap, not evidence of a naturally isolated catgirl circuit.
+
+See [`REPORT.md`](REPORT.md) for measured results and limitations, [`REPRODUCE.md`](REPRODUCE.md) for the runnable demo, and [`candidates/catgirl_v1_coordinates.csv`](candidates/catgirl_v1_coordinates.csv) for the exact gains and offsets. Fresh 32-case validation and original-BF16 transfer are being checked. Capability and strict-format results are descriptive tradeoffs rather than acceptance gates under the user's revised goal.
 
 Target: Qwen/Qwen3.5-4B. Initial screening uses the MLX conversion
 `mlx-community/Qwen3.5-4B-4bit`, revision
@@ -29,10 +31,7 @@ dependence; factor 1 leaves the selected neuron unchanged and factor 0 ablates i
 Model weights remain unchanged. No persona system prompt is used in candidate
 generation; discovery captures can use persona prompts to locate candidates.
 
-`discovery.json` supplies paired tasks for discovery. `evaluation.json` is a
-separate frozen battery reserved for finalists, including 2K/8K context,
-long-output, multiturn, formatting, task-quality, and random-control checks.
-Discovery outputs are not evidence of held-out generalization.
+`discovery.json` supplies paired tasks for discovery. `evaluation.json` is now a familiar development battery with 2K/8K context, long-output, multiturn, formatting, task-quality, and random-control checks. The separate 32-case `evaluation_extended.json` was first opened only after the v1 recipe was frozen and pushed in commit `1f3c2c6`. Discovery outputs are not evidence of held-out generalization.
 
 Search strategies include cached next-token candidates, paired activation
 contrasts, sparse reconstruction of paired persona residual directions, and
@@ -60,8 +59,7 @@ The first coherent candidate, `candidates/2048_candidate.json`, failed the core
 battery. Its persona persisted through four conversational turns but faded on
 ordinary tasks, disappeared in the long answer and 8K context, and added code
 fences to strict JSON. See `results/038_review.json` and raw generation records.
-The 192-token short-answer cap also limited capability comparisons. The separate
-32-case `evaluation_extended.json` remains reserved for a later frozen finalist.
+The 192-token short-answer cap also limited capability comparisons. The separate 32-case `evaluation_extended.json` is used for the frozen v1 finalist.
 
 `affine_optimizer.py` jointly learns gains and offsets at selected coordinates.
 It recomputes the intervened prefix state for every update, explicitly detaches
