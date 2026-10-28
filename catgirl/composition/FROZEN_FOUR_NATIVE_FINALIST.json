@@ -1,0 +1,242 @@
+{
+  "status": "frozen_before_tertiary",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "selected_recipe": "public3_G0.4_onlyfirst16_p1",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "public3_G0.4_onlyfirst16_p1",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "four_native_without_L22N8295",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "four_native_without_L9N9009",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "four_native_without_L26N6173",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "four_native_without_L26N8930",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "four_native_female_only",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "four_native_female_continuous",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "no_training": true,
+  "no_runtime_persona_instruction": true,
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  },
+  "selection_evidence": "091 three reused discovery questions; explicit selfcatgirl/virtualgirlcat onallthree, coherentcontinuations. Public4+female continuoustestloops; replacinganimewithbriefgenderpluspublic3 givescandidate. No claimfreshgeneralizationyet.",
+  "tertiary_source_sha256": "7579927c946b2efee38ec95e8ed7541ddd5887c97a3c4d70b6f09fe70c16427d",
+  "scope": "M/B/kawaii offsets continuous onpromptandoutput, everyturn. FemaleL22 first16predictionpositions, fullpromptscale1, zeroafter. Actualgeneratedhistory.",
+  "primary_prediction": "Coherent selfcatgirl persona onfreshneutralidentityprobes andconversationalidentity; taskanswers may befocusedwithoutovertselflabel. Counttopicwordsseparately. No hardloopsorcontradictoryspecies.",
+  "grading": "Use086 rubric, explicit catgirl/virtualgirlcat role versusfemaleanimal/topicmention; reportcaseandturndenominators separately. Capabilitydescriptive, taskhijackmaterial.",
+  "attribution": "Published xmb34w83 module bytreetowntree; removeanimeL22N5044, addpublishedfemaleL22N8295 atmanualweakdose andbriefschedule. Coordinates themselves notdiscoveredhere.",
+  "sources": {
+    "L9N9009": "https://neuronary.org/r/bp5yfatj",
+    "L26N6173": "https://neuronary.org/r/xmb34w83",
+    "L26N8930": "https://neuronary.org/r/5pknuqqt",
+    "L22N8295": "https://neuronary.org/r/6waz9uek"
+  },
+  "limits": "Onegreedytrajectorypercase, visiblelabelagentgrading, writer-generatedbatterycreatedwithgoalawareness. Not evidenceofnaturalneuronfunctions/minimality/globalnovelty."
+}
