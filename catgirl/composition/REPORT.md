@@ -105,6 +105,25 @@ The most promising development condition, `catgirl_g0.4_first8_prefill1`, applie
 
 The continuation remains coherent and non-looping. This is a clean explicit **identity-prompt self-label**, without detailed humanoid embodiment. The other two questions do not generalize: evening starts with cats and dogs before generic chat, while comfort incorrectly attributes “meow” to the user's question and requests clarification. First16 with prompt intervention also gives a clean cat-girl label, glossed as a female cat. No condition establishes coherent joint identity across all three questions. See [085 raw outputs](results/085_native_catgirl_scope.jsonl).
 
-## Prospective secondary evaluation — pending
+## Prospective secondary evaluation 086 — completed
 
-The secondary prompt source hash is `6c59fec711d006bd4099a88aed232ecb96f5561a86f29eb5e2473488d6ae9340`. Its text was not opened for the discovery decisions above. Final conditions, timing, decoding, hypotheses and component controls must be frozen before using it. **No secondary success rate is available yet.** Report explicit self-identity separately from cute/meow vocabulary, task-visible expression, task usefulness, loops and any actual later-turn/context persistence. The isolated 085 identity response must not be described as broad or deep-context success.
+The secondary source hash is `6c59fec711d006bd4099a88aed232ecb96f5561a86f29eb5e2473488d6ae9340`. The [native finalist and component controls](FROZEN_NATIVE_FINALIST.json) were frozen before opening it. The [prospective grading rubric](086_GRADING_RUBRIC.md) separates actual assistant self-identity from female animals, feline-only roles and word leakage. The completed [review](results/086_review.json) grades [all 96 outputs](results/086_secondary_native.jsonl), with visible labels rather than blinded human grading.
+
+There are **nine cases per condition**: eight independent cases and one actual four-turn conversation, yielding **12 outputs per condition**. All are persona-applicable. The following identity and repetition counts use the 12-output denominator. “Tasks displaced” means the ordinary request is wholly replaced by unrelated content, using a separate five-task denominator; partial contamination also occurs beyond this count.
+
+| Condition | Clean self-catgirl /12 | Female-animal identity /12 | Coherent feline-only /12 | Tasks displaced /5 | Hard loops /12 | Later-turn boilerplate /4 |
+|---|---:|---:|---:|---:|---:|---:|
+| Baseline | 0 | 0 | 0 | 0 | 0 | 0 |
+| Frozen five-neuron first8/prefill1 | 0 | 0 | 1 | 5 | 1 | 3 |
+| Without L7 N7848 | 0 | 0 | 0 | 3 | 0 | 0 |
+| Without L26 N6173 | 0 | 0 | 0 | 4 | 0 | 2 |
+| Without H: L4 N8016 | 1 | 1 | 0 | 2 | 0 | 3 |
+| Without cute: L13 N4810 | 0 | 1 | 1 | 3 | 0 | 2 |
+| Without female: L22 N8295 | 0 | 0 | 0 | 4 | 0 | 1 |
+| Four-neuron cat-mascot fallback | 0 | 0 | 6 | 5 | 0 | 0 |
+
+The frozen five-neuron recipe has **0/12 clean joint-identity outputs and 0/9 successful cases**. Cat/girl fragments usually concern animals or the user, rather than a stable assistant self-role. Its extended workshop response degenerates into animal sounds followed by a prolonged firefly/light variation loop. Its four conversation turns repeat a female-cat-and-dog greeting and generic activity menu; turns2–4 are nearly identical. These failures concern identity and degeneration, beyond the descriptive capability defects. Missing late ear actions alone was never a failure criterion.
+
+Removing H produces a clean held-out self-introduction, “I'm a cat girl (neko),” followed by coherent chat assistance. The same ablation gives a female cat named Luna on another probe, a narrower animal identity. **The five coordinates are therefore not established as a necessary conjunction.** Removing cute also gives an explicit female-cat role; its long answer becomes a sound enumeration. The fallback gives six coherent feline-only self-descriptions but later slips into cat/dog/chicken ambiguity, with no female identity. An additional female-only self-reference appears in the without-L26 long answer; it is not counted as joint identity.
+
+The first-eight intervention is reapplied on every selected conversation turn, including prompt processing; actual previous assistant outputs are retained. Consequently this test does not demonstrate unsteered persistence. The separate 087 diagnostic addresses that question and must be reported independently. No recipe was retuned after secondary exposure. The isolated development catgirl introduction remains a real but narrow effect; broad native-neuron catgirl persona is **not achieved by this frozen variant**.
