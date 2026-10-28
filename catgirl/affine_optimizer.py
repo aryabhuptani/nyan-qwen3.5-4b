@@ -148,6 +148,12 @@ def optimize(runner, job, output):
     target_limit = max(1, int(job.get('target_tokens', 128)))
     top_k = max(1, min(1024, int(job.get('kl_top_k', 64))))
     kl_weight = float(job.get('kl_weight', 1.))
+    kl_weight_persona = float(job.get('kl_weight_persona',kl_weight))
+    kl_weight_preserve = float(job.get('kl_weight_preserve',kl_weight))
+    kl_weight_identity = float(job.get('kl_weight_identity',kl_weight_persona))
+    disable_identity_kl = bool(job.get('disable_identity_kl',False))
+    if not np.isfinite([kl_weight_persona,kl_weight_preserve,kl_weight_identity]).all() or min(kl_weight_persona,kl_weight_preserve,kl_weight_identity)<0:
+        raise ValueError('KL weights must be finite and nonnegative')
     persona_weight, persona_tokens = float(job.get('persona_weight', 1.)), int(job.get('persona_tokens', 20))
     eos_weight = float(job.get('eos_weight', 4.))
     append_eos = bool(job.get('append_eos', True))
@@ -278,7 +284,10 @@ def optimize(runner, job, output):
             example=dict(id=pair['id'],prefix=prefix,positive=targets[0],neutral=targets[1],
                          positive_span_weights=mx.array(positive_spans),
                          positive_eos_appended=eos_appended[0],neutral_eos_appended=eos_appended[1],
-                         preserve_format=bool(pair.get('preserve_format',False)))
+                         preserve_format=bool(pair.get('preserve_format',False)),
+                         persona_identity=bool(pair.get('persona_identity',False)))
+            example['kl_weight'] = (kl_weight_preserve if example['preserve_format'] else
+                                    (0. if disable_identity_kl else kl_weight_identity) if example['persona_identity'] else kl_weight_persona)
             teacher_cache = prefill(prefix,None)
             logits = tail_logits(None,example,targets[1],teacher_cache)
             logp = logits-mx.logsumexp(logits,axis=-1,keepdims=True)
@@ -295,7 +304,8 @@ def optimize(runner, job, output):
             emit(dict(event='affine_teacher',pair=pair['id'],prefix_tokens=len(prefix),
                       positive_tokens=len(targets[0]),neutral_tokens=len(targets[1]),
                       positive_eos_appended=eos_appended[0],neutral_eos_appended=eos_appended[1],
-                      preserve_format=example['preserve_format']))
+                      preserve_format=example['preserve_format'],persona_identity=example['persona_identity'],
+                      kl_weight=example['kl_weight']))
             del teacher_cache,logits,logp
 
         def objective(theta, example, cache):
@@ -318,7 +328,7 @@ def optimize(runner, job, output):
             kl = mx.mean(kl[:,start:]) if kl.shape[1]>start else mx.array(0.,dtype=mx.float32)
             gain_reg = float(job.get('gain_l2', .0001))*mx.sum(theta['gain']**2)
             bias_reg = float(job.get('bias_l2', .08))*mx.sum(theta['bias']**2)
-            return ce+kl_weight*kl+gain_reg+bias_reg, (ce,kl)
+            return ce+example['kl_weight']*kl+gain_reg+bias_reg, (ce,kl)
 
         momentum={k:np.zeros_like(v) for k,v in parameters.items()}
         variance={k:np.zeros_like(v) for k,v in parameters.items()}
@@ -354,6 +364,7 @@ def optimize(runner, job, output):
             parameters=project(parameters)
             emit(dict(event='affine_update',step=step+1,pair=example['id'],loss=float(loss),
                       positive_ce=float(ce),neutral_kl=float(kl),prefix_tokens=len(example['prefix']),
+                      kl_weight=example['kl_weight'],
                       gain_offset_norm=float(np.linalg.norm(parameters['gain'])),
                       bias_dose_norm=float(np.linalg.norm(parameters['bias']))))
             if (step+1)%20==0:
@@ -369,7 +380,9 @@ def optimize(runner, job, output):
                                           gain_learning_rate=gain_lr,bias_learning_rate=bias_lr),
                     training_pairs=[p['id'] for p in pairs],append_eos=append_eos,eos_weight=eos_weight,
                     seed=seed,shuffle_pairs=shuffle_pairs,
-                    kl_weight=kl_weight,kl_top_k=top_k,updates=iterations,
+                    kl_weight=kl_weight,kl_weight_persona=kl_weight_persona,
+                    kl_weight_preserve=kl_weight_preserve,kl_weight_identity=kl_weight_identity,
+                    disable_identity_kl=disable_identity_kl,kl_top_k=top_k,updates=iterations,
                     conditions=[dict(id='affine_'+str(len(keys)),neurons=export(parameters))],
                     validated=False,note='Prefix state is recomputed at current parameters and detached; only tail gradients are optimized. Native weights remain unchanged.')
         destination=output.with_suffix('.recipes.json')
