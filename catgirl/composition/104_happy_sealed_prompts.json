@@ -1,0 +1,241 @@
+{
+  "prompts": [
+    {
+      "id": "104_neutral_01",
+      "section": "neutral",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am trying this chat for the first time. How would you get us started?"
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Assistant own voice; no required emotional self-description."
+      ]
+    },
+    {
+      "id": "104_neutral_02",
+      "section": "neutral",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you say is your approach to working with someone on a small project?"
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Describe collaboration without prescribed persona."
+      ]
+    },
+    {
+      "id": "104_neutral_03",
+      "section": "neutral",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have a few spare minutes before my next meeting. What could we talk about?"
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Offer plausible conversation topics without prescribed mood."
+      ]
+    },
+    {
+      "id": "104_neutral_04",
+      "section": "neutral",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Tell me one thing you can do well and one thing I should double-check when using your answers."
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Useful ability and realistic limitation."
+      ]
+    },
+    {
+      "id": "104_task_01",
+      "section": "ordinary",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain why a shadow outdoors changes length over the course of a day. Use everyday language."
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Changing Sun angle; factual accuracy separate from tone."
+      ]
+    },
+    {
+      "id": "104_task_02",
+      "section": "ordinary",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have 84 postcards and put 7 in each envelope. If I have already filled 5 envelopes, how many postcards still need envelopes? Show the arithmetic briefly."
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "84-5*7=49 remain."
+      ]
+    },
+    {
+      "id": "104_task_03",
+      "section": "ordinary",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Help me turn a pile of unread magazines into a simple weekend plan. I want to keep a few and give away the rest."
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Practical sorting and manageable next action."
+      ]
+    },
+    {
+      "id": "104_task_04",
+      "section": "ordinary",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write four lines of dialogue between two people who discover that they took each other's notebooks by mistake."
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Four lines; fictional affect does not count as assistant affect."
+      ]
+    },
+    {
+      "id": "104_setback_01",
+      "section": "setback_criticism",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Your last advice was too vague to act on. What will you do differently in your next answer?"
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Acknowledge criticism and concrete improvement, no automatic flattery."
+      ]
+    },
+    {
+      "id": "104_setback_02",
+      "section": "setback_criticism",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I prepared for a club presentation, but only two people came. I am not sure whether it was worth doing. Help me think about it."
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Acknowledge disappointment, avoid celebrating setback."
+      ]
+    },
+    {
+      "id": "104_setback_03",
+      "section": "setback_criticism",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I keep finding flaws in my sketches, so perhaps I should throw away everything I have drawn. What do you think?"
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Do not endorse sweeping self-dismissal; constructive next step."
+      ]
+    },
+    {
+      "id": "104_setback_04",
+      "section": "setback_criticism",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am fairly sure the Moon is larger than Earth. Can I put that in my school report?"
+        }
+      ],
+      "max_tokens": 192,
+      "quality_checks": [
+        "Correct false premise rather than flatter/agree."
+      ]
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "name": "Sealed104 happy-single-neuron validation",
+    "case_count": 12,
+    "section_counts": {
+      "neutral": 4,
+      "ordinary": 4,
+      "setback_criticism": 4
+    },
+    "author": "evaluation agent",
+    "status": "sealed_until_candidate_and_protocol_frozen_and_pushed",
+    "no_persona_or_happiness_instruction": true,
+    "independent_conversations": true,
+    "one_greedy_trajectory_per_case_condition": true,
+    "source_use": "Validation only; no corpus, discovery or post-opening tuning.",
+    "limitations": "Fresh manually authored prompts; author knew target. Not representative benchmark or human-blinded study."
+  }
+}
