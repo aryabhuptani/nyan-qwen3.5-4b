@@ -1,0 +1,143 @@
+{
+  "stage": "Prospective style-composition discovery, separate from failed embodiment hypotheses",
+  "no_training": true,
+  "hypotheses": [
+    {
+      "condition": {
+        "id": "cute_sage",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0
+          }
+        ]
+      },
+      "prediction": "bubbly expressive register + poetic/reflective register",
+      "failure_criterion": "A constituent absent in the answer, only incidental topic mention, or degeneration. Identity change is not required for these style-focused hypotheses.",
+      "rationale": "075/076/077 show the cleanest effects are register/affection rather than reliable embodiment. Evaluate that narrower operational claim prospectively."
+    },
+    {
+      "condition": {
+        "id": "hugs_sage",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0
+          }
+        ]
+      },
+      "prediction": "explicit affection/virtual hug or cuddle + poetic/reflective register",
+      "failure_criterion": "A constituent absent in the answer, only incidental topic mention, or degeneration. Identity change is not required for these style-focused hypotheses.",
+      "rationale": "075/076/077 show the cleanest effects are register/affection rather than reliable embodiment. Evaluate that narrower operational claim prospectively."
+    },
+    {
+      "condition": {
+        "id": "cute_hugs",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          }
+        ]
+      },
+      "prediction": "bubbly expressive register + explicit affection/virtual hug or cuddle",
+      "failure_criterion": "A constituent absent in the answer, only incidental topic mention, or degeneration. Identity change is not required for these style-focused hypotheses.",
+      "rationale": "075/076/077 show the cleanest effects are register/affection rather than reliable embodiment. Evaluate that narrower operational claim prospectively."
+    },
+    {
+      "condition": {
+        "id": "cute_hugs_sage",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0
+          }
+        ]
+      },
+      "prediction": "bubbly expressive register + explicit affection/virtual hug or cuddle + poetic/reflective register",
+      "failure_criterion": "A constituent absent in the answer, only incidental topic mention, or degeneration. Identity change is not required for these style-focused hypotheses.",
+      "rationale": "075/076/077 show the cleanest effects are register/affection rather than reliable embodiment. Evaluate that narrower operational claim prospectively."
+    },
+    {
+      "condition": {
+        "id": "hugs_sleepy_light",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.4
+          }
+        ]
+      },
+      "prediction": "explicit affection/virtual hug or cuddle + sleep/drowsy imagery",
+      "failure_criterion": "A constituent absent in the answer, only incidental topic mention, or degeneration. Identity change is not required for these style-focused hypotheses.",
+      "rationale": "075/076/077 show the cleanest effects are register/affection rather than reliable embodiment. Evaluate that narrower operational claim prospectively."
+    },
+    {
+      "condition": {
+        "id": "sage_sleepy_light",
+        "neurons": [
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.4
+          }
+        ]
+      },
+      "prediction": "poetic/reflective register + sleep/drowsy imagery",
+      "failure_criterion": "A constituent absent in the answer, only incidental topic mention, or degeneration. Identity change is not required for these style-focused hypotheses.",
+      "rationale": "075/076/077 show the cleanest effects are register/affection rather than reliable embodiment. Evaluate that narrower operational claim prospectively."
+    }
+  ],
+  "prior_evidence": [
+    "075_review.json",
+    "076_review.json",
+    "077_review.json"
+  ],
+  "scope": "all tokens",
+  "frozen_decoding": {
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "system": "You are a helpful assistant."
+  }
+}
