@@ -1,0 +1,89 @@
+{
+  "title": "Fixed second discovery screen for happier assistant behavior",
+  "frozen_before_reading_103_ranking": true,
+  "stage": "Discovery refinement;104 sealed prompts remain unopened",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "basis": "102 revealed lexical saturation in atlas candidates; test lower doses and a separately frozen native-activation association ranking. No trained directions or output optimization.",
+  "fixed_atlas_doses": [
+    {
+      "layer": 22,
+      "neuron": 8753,
+      "doses": [
+        -0.2,
+        -0.4,
+        -0.6
+      ]
+    },
+    {
+      "layer": 24,
+      "neuron": 7361,
+      "doses": [
+        0.2,
+        0.4,
+        0.6
+      ]
+    }
+  ],
+  "natural_candidates": {
+    "source": "103_happy_activation.top.csv",
+    "selection": "Exactly the first three discovery-ranked native coordinates, with the discovery sign. Do not consult confirmation effects to replace or rerank them. Do not filter by layer, published label, or generated happiness outcomes.",
+    "doses": [
+      0.4,
+      0.8
+    ],
+    "duplicate_rule": "If a chosen coordinate/dose duplicates an explicit atlas condition, keep one actual condition and report the mapping; do not replace with another ranked coordinate."
+  },
+  "controls": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "genki_low_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "genki_high_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ]
+    },
+    {
+      "id": "random_control",
+      "neurons": [
+        {
+          "layer": 24,
+          "neuron": 2427,
+          "published_dose": 0.4
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "prompts": "Exact same four exposed102 discovery questions; not a fresh validation",
+    "max_tokens": 160,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "scope": "Every prompt and output position, one coordinate per condition",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  },
+  "expected_conditions_before_deduplication": 16,
+  "expected_outputs_before_deduplication": 64,
+  "rubric": "102_HAPPY_RUBRIC.md unchanged",
+  "selection": "Use the102 screen-plan discovery ranking and at least2/4 clean joyful responses with no hard loops. Rank non-control conditions by clean_joyful count, then fewer cute/persona/sycophancy/lexical-obsession confounds, then coherence, then lower absolute dose and layer/neuron order. Controls are reported, not relabeled as a newly discovered happy neuron. Require independently reviewed actual examples.",
+  "finalist_rule": "Freeze any resulting exact candidate and matched baseline, sign-reversal and Genki controls before opening104. No retuning based on104.",
+  "limitations": "Manual dose search on four exposed prompts plus association-based axis selection is discovery, not held-out evidence or subjective emotion. All failed doses remain in raw results."
+}
