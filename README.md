@@ -15,7 +15,10 @@ The schedule is reapplied every turn. Offsets use the published residual/column-
 
 - **2/2 fresh neutral identity probes** produce female/girl-cat assistant self-descriptions.
 - The selected candidate has **no hard repeated-span loops across 12 fresh outputs**, but all ten nonidentity task/conversation outputs materially displace their tasks with mascot fiction or biography. The four-turn conversation fails to maintain one stable assistant identity.
+- A known 8K-context diagnostic retains the catgirl words by repeating its introduction and ignoring tasks; this fails responsive deep persona persistence.
 - Separate two-neuron cute+hugs steering produces both expressive effects on 11/11 applicable held-out cases, with substantial task hijacking. All failed combinations, controls and agent reviews are retained.
+
+Download the [complete share pack](catgirl/composition/artifacts/nyan-qwen-four-neuron-share.zip) or [final image](catgirl/composition/share/qwen_catgirl_four_neurons.png).
 
 Start with the [native study and limitations](catgirl/composition/REPORT.md), [reproduction guide](catgirl/composition/REPRODUCE.md), [exact native coefficient CSV](catgirl/composition/native_coefficients.csv), [frozen four-neuron protocol](catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json), or [public priors and attribution](catgirl/composition/PRIOR_ART.md).
 

@@ -97,9 +97,11 @@ def verify():
     require('mlx.core' not in sys.modules and 'runner' not in sys.modules, 'CPU verifier imported the model runtime')
 
     jobs = []
-    queued = {p.stem for p in (ROOT / 'jobs').iterdir()
-              if p.suffix in ('.done', '.running', '.failed', '.json') and p.stem[:3].isdigit()}
-    for stem in sorted(queued):
+    queue_dir = ROOT / 'jobs'
+    queued = {p.stem for p in queue_dir.iterdir()
+              if p.suffix in ('.done', '.running', '.failed', '.json') and p.stem[:3].isdigit()} if queue_dir.exists() else set()
+    saved = {p.name[:-9] for p in (ROOT / 'results').glob('*.job.json')}
+    for stem in sorted(queued | saved):
         path = ROOT / (stem + '.json')
         if not path.exists():
             continue
@@ -108,12 +110,17 @@ def verify():
         require(job.get('metadata', {}).get('expected_records', expected_count) == expected_count,
                 'Preregistered expected row count is inconsistent: ' + stem)
         done = ROOT / 'jobs' / (stem + '.done')
-        if not done.exists():
+        if not done.exists() and stem in queued:
             state = next((suffix for suffix in ('running', 'failed', 'json')
                           if (ROOT / 'jobs' / (stem + '.' + suffix)).exists()), 'not_queued')
             jobs.append(dict(job=stem, state=state, expected_rows=expected_count, raw_count_checked=False))
             continue
-        require(load(done) == job, 'Completed queue job differs from committed job: ' + stem)
+        if done.exists():
+            require(load(done) == job, 'Completed queue job differs from committed job: ' + stem)
+        else:
+            manifest = load(ROOT / 'results' / (stem + '.job.json'))
+            require(manifest['job'] == demo.public_job(job), 'Saved job differs from committed job: ' + stem)
+            require(manifest['norms_sha256'] == compact['protocol']['norms_sha256'], 'Saved normalization differs: ' + stem)
         output = ROOT / 'results' / (stem + '.jsonl')
         rows = [json.loads(line) for line in output.read_text().splitlines() if line.strip()]
         require(len(rows) == expected_count, 'Completed raw output row count differs: ' + stem)

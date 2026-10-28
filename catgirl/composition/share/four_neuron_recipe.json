@@ -1,0 +1,60 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "condition": {
+    "id": "public3_G0.4_onlyfirst16_p1",
+    "neurons": [
+      {
+        "layer": 9,
+        "neuron": 9009,
+        "published_dose": 0.7
+      },
+      {
+        "layer": 26,
+        "neuron": 6173,
+        "published_dose": 0.3
+      },
+      {
+        "layer": 26,
+        "neuron": 8930,
+        "published_dose": 0.7
+      },
+      {
+        "layer": 22,
+        "neuron": 8295,
+        "published_dose": -0.4
+      }
+    ],
+    "layer_schedules": {
+      "22": {
+        "early_tokens": 16,
+        "prefill_scale": 1.0,
+        "tail_scale": 0.0
+      }
+    },
+    "early_tokens": null,
+    "prefill_scale": 0.0,
+    "tail_scale": 0.0
+  },
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  },
+  "normalization": "offset = dose * published_layer_residual_median / L2(original_BF16_down_proj_column)",
+  "norms_url": "https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "frozen_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
+  "training": "No output training or persona instruction. Fixed public/manual offsets; manual discovery selection.",
+  "attribution": "Published xmb34w83 module bytreetowntree; removeanimeL22N5044, addpublishedfemaleL22N8295 atmanualweakdose andbriefschedule. Coordinates themselves notdiscoveredhere.",
+  "sources": {
+    "L9N9009": "https://neuronary.org/r/bp5yfatj",
+    "L26N6173": "https://neuronary.org/r/xmb34w83",
+    "L26N8930": "https://neuronary.org/r/5pknuqqt",
+    "L22N8295": "https://neuronary.org/r/6waz9uek"
+  },
+  "limits": "Narrow identity demo. 2/2 fresh identity probes pass; stable conversation, tasks and responsive deep persona fail. Four coordinates are not proven minimal."
+}

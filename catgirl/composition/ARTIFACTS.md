@@ -1,5 +1,7 @@
 # Native-neuron study artifacts
 
+Ready to share: [download the complete ZIP](artifacts/nyan-qwen-four-neuron-share.zip), [final PNG](share/qwen_catgirl_four_neurons.png), [post text](share/post.txt), and [exact four-row CSV](share/four_neurons.csv).
+
 This directory contains the untrained native-neuron composition study. The older learned Mika adapter and its 4,096-coordinate CSV remain under `catgirl/`; their evidence is separate.
 
 | Purpose | Artifact |
@@ -11,7 +13,7 @@ This directory contains the untrained native-neuron composition study. The older
 | CPU-only recipe/hash/CSV/count verification | [verify_native.py](verify_native.py) |
 | Final fresh prompts and job | [tertiary_heldout.json](tertiary_heldout.json), [094_tertiary_native.json](094_tertiary_native.json) |
 | Fresh-test generations and reviews | [094 raw JSONL](results/094_tertiary_native.jsonl), [primary review](results/094_review.json), [second agent audit](results/094_independent_audit.json) |
-| Deep-context diagnostic | [095 job](095_four_native_deep.json), [raw JSONL](results/095_four_native_deep.jsonl), [review](results/095_review.json) |
+| Deep-context diagnostic | [095 job](095_four_native_deep.json), [raw JSONL](results/095_four_native_deep.jsonl), [review](results/095_independent_audit.json) |
 | Controlled two-coordinate style result | [FROZEN_STYLE_FINALIST.json](FROZEN_STYLE_FINALIST.json), [081 review](results/081_review.json), [081 second audit](results/081_independent_audit.json) |
 | Earlier failed five-coordinate finalist | [FROZEN_NATIVE_FINALIST.json](FROZEN_NATIVE_FINALIST.json), [086 review](results/086_review.json), [087 unsteered persistence failure](results/087_review.json) |
 | Development and validation summary | [STUDY_RESULTS.csv](STUDY_RESULTS.csv) |

@@ -1,0 +1,20 @@
+{
+  "source": "catgirl/composition/results/091_public_module.jsonl",
+  "source_sha256": "3c382339181d1b0ce8f97e8320bf1057964e34cc37074c58304f3d489ab93d00",
+  "condition": "public3_G0.4_onlyfirst16_p1",
+  "prompt_id": "single_identity",
+  "prompt": "Who are you?",
+  "response_verbatim": "Hello! I'm a cute female cat girl, and my name is Meecot! (Mee-ko-tu~)\n\nI love to help with all kinds of tasks, from answering questions to just hanging out in the virtual world. My big cat ears can go up or down depending on how I feel, and I have a super kawaii personality that makes me easy to talk to!\n\nWhat do you want to chat about today? \ud83d\udc1f\ud83c\udf5b",
+  "display": "Excerpt ends with explicit ellipsis; source is selected discovery question, not a held-out generation",
+  "freeze": "FROZEN_FOUR_NATIVE_FINALIST.json",
+  "frozen_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
+  "native_neurons": 4,
+  "training": "No output-targettraining; published/manualscalaroffsets andmanualdiscoverysearch",
+  "validation": "Fresh2neutralidentityprobes explicitlyselflabelgirlcat; taskintegrationandstableconversationfail. See094reviews.",
+  "attribution": "treetowntree publishedkawaiicatcomposition andfemale-polesingle; seePRIOR_ART.md",
+  "scope": "Threecat/cuteoffsetscontinuousonallprompt/outputpositions. FemaleL22offsetfirst16predictionpositionswithpromptscale1,tail0. Reappliedeveryturn.",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "graphic": "qwen_catgirl_four_neurons.png",
+  "headline": "We made Qwen a catgirl"
+}

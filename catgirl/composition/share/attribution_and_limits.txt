@@ -1,0 +1,5 @@
+Recipe: L9N9009 +.7, L26N6173 +.3, L26N8930 +.7 continuously; L22N8295 −.4 during prompt + first16 answer predictions, every turn.
+
+Credit: treetowntree’s kawaii-cat composition https://neuronary.org/r/xmb34w83 and female-pole prior https://neuronary.org/r/6waz9uek
+
+This is a narrow demo, not a robust assistant: tasks are often replaced with mascot fiction, conversation drifts, and deep-context active steering repeats the introduction. All controls, raw outputs and failures are in the repository.

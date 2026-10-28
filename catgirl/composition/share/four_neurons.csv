@@ -1,0 +1,5 @@
+layer_zero_based,neuron_zero_based,published_dose,scope,prefill_scale,tail_scale,every_turn,source_url
+9,9009,0.7,all_prompt_and_output_positions,,,True,https://neuronary.org/r/bp5yfatj
+26,6173,0.3,all_prompt_and_output_positions,,,True,https://neuronary.org/r/xmb34w83
+26,8930,0.7,all_prompt_and_output_positions,,,True,https://neuronary.org/r/5pknuqqt
+22,8295,-0.4,first16answer_prediction_positions,1,0,True,https://neuronary.org/r/6waz9uek

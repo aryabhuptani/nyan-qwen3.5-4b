@@ -1,0 +1,5 @@
+We made Qwen3.5-4B introduce itself as a catgirl with 4 native neurons. No fine-tuning. No persona prompt.
+
+Built from published Neuronary ingredients. Fresh identity probes: 2/2. Tasks and conversation remain brittle.
+
+https://github.com/aryabhuptani/nyan-qwen3.5-4b

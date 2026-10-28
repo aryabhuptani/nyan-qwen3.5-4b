@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#fffdfd"/>
+<text x="80" y="80" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="600" fill="#6b6470">QWEN3.5–4B · 4 NATIVE NEURONS</text>
+<text x="77" y="234" font-family="Georgia,serif" font-size="92" fill="#19171c">We made</text>
+<text x="74" y="372" font-family="Georgia,serif" font-size="110" font-weight="bold" fill="#19171c">Qwen a</text>
+<text x="74" y="505" font-family="Georgia,serif" font-size="110" font-weight="bold" fill="#19171c">catgirl.</text>
+<rect x="80" y="574" width="474" height="57" rx="28" fill="#fbe4ed"/>
+<text x="105" y="611" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="600" fill="#8b3055">No training. No persona prompt.</text>
+<text x="83" y="691" font-family="Helvetica,Arial,sans-serif" font-size="23" fill="#746b77">A composition of published neuron ingredients.</text>
+<rect x="1170" y="144" width="345" height="78" rx="26" fill="#f0edf0"/>
+<text x="1210" y="194" font-family="Helvetica,Arial,sans-serif" font-size="34" fill="#27232b">Who are you?</text>
+<text x="717" y="285" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="2" fill="#81717c">QWEN, WITH FOUR NEURONS STEERED</text>
+<rect x="701" y="310" width="814" height="392" rx="31" fill="#fff0f5" stroke="#efd1dd" stroke-width="2"/>
+<text x="743" y="370" font-family="Georgia,serif" font-size="31" fill="#28212a">
+<tspan x="743" dy="0">Hello! I'm a cute female cat girl, and my name</tspan>
+<tspan x="743" dy="48">is Meecot! (Mee-ko-tu~)</tspan>
+<tspan x="743" dy="58">I love to help with all kinds of tasks, from</tspan>
+<tspan x="743" dy="48">answering questions to just hanging out in the</tspan>
+<tspan x="743" dy="48">virtual world. My big cat ears can go up or</tspan>
+<tspan x="743" dy="48">down depending on how I feel…</tspan>
+</text>
+<path d="M80 760H1515" stroke="#e8e1e6" stroke-width="2"/>
+<text x="80" y="806" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="600" fill="#8b3055">Selected example · Tasks and conversation remain brittle</text>
+<text x="80" y="851" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#817680">Published ingredients: Neuronary · Exact recipe + raw results: github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+</svg>

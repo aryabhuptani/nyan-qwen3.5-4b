@@ -27,7 +27,9 @@ def export():
                     continue
                 record = {key: row.get(key, result.get(key, '')) for key in FIELDS}
                 record.update(source=str(path.relative_to(ROOT)), source_line=line_number,
-                              text=result['text'])
+                              text=result['text'], turn=row.get('turn', row.get('turn_number', '')))
+                if isinstance(record['condition'], dict):
+                    record['condition'] = record['condition']['id']
                 record['layer_schedules'] = json.dumps(row.get('layer_schedules', row.get('effective_scope', {}).get('layer_schedules', {})), sort_keys=True)
                 writer.writerow(record)
                 count += 1

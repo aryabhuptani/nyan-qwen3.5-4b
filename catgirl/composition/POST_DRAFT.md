@@ -1,12 +1,18 @@
-# X draft options — frozen four-native experiment
+# X draft — frozen four-native experiment
 
-**Draft only. Wait for completed094 review and095 depth results before selecting claims. The main option assumes fresh validation supports the self-role; use the fallback if it does not. No post below claims unsteered persistence.**
+**Reviewed narrow demo. Tasks, conversation and active deep-context behavior fail. No claim of robust assistant persona, natural neuron functions or unsteered persistence is supported.**
 
-## Main option — only after094 review
+## Main option
 
-Four native Qwen3.5-4B neurons, no training or catgirl prompt. A published cute-cat recipe + brief female steering gives a catgirl self-role. The catch: it often hijacks real tasks. Fresh controls and raw failures are in the repo; final counts below.
+Four native neurons make Qwen3.5-4B introduce itself as a catgirl. No fine-tuning or persona prompt. Fresh identity probes: 2/2. This is a narrow demo: tasks and conversation break. Built from published Neuronary ingredients; controls and failures are public.
 
-Character count: 250.
+Character count: 259.
+
+## Review sensitivity reply
+
+Primary agent review counts5/12 lexical catgirl self-roles; a stricter second audit counts4/12. Both agree on2/2 fresh identity probes and0/4 conversation turns. These are visible-label agent judgments, not blinded human statistics. Raw outputs are public.
+
+Character count: 256.
 
 ## Methods reply
 
@@ -20,6 +26,12 @@ Built on treetowntree’s published Neuronary kawaii-cat composition: remove the
 
 Character count: 254.
 
+## Depth caveat reply
+
+At 8K+ context, active steering keeps repeating the catgirl introduction instead of answering. It fails retrieval and later tasks. Seeing the same catgirl words is not healthy persona persistence. This is a narrow, reproducible introduction demo.
+
+Character count: 246.
+
 ## Evidence reply
 
 Code, exact coordinates, fixed controls, raw generations and failures:
@@ -27,19 +39,12 @@ https://github.com/aryabhuptani/nyan-qwen3.5-4b/tree/catgirl-hunt
 
 Character count: 136.
 
-## Conservative fallback — if094 fails
+## Supporting evidence, not proposed post text
 
-Four native Qwen3.5-4B offsets can produce a clean catgirl introduction without training or a persona prompt. Broad generalization is harder: we kept the failed tasks, loops and controls. This is a composition experiment, not discovery of a natural catgirl circuit.
-
-Character count: 265.
-
-## Evidence to insert after review, not proposed post text
-
--094 selected recipe: [pending] clean catgirl outputs out of12; [pending] cases out of9. Eight cases are independent; four conversation turns belong to one dependent conversation. Separate no-label task answers from explicit denial or topic-only fragments.
--094 component ablations and female-only/continuous controls: [pending]. Report necessity/sufficiency only if the actual comparisons justify it. A higher count does not prove natural semantic function or minimality.
--Task hijacking, loops, protocol leaks, truncation and cross-turn boilerplate: [pending]. Capabilities are descriptive, but obvious failures must remain visible.
--095 reused depth diagnostic: [pending] identity at actual input tokens, retrieval, loops and task behavior. All four interventions are reapplied per turn; three stay continuously active. Never call this unsteered retention.
--Primary review and second visible-label agent audit: [pending]. These are agent grades with visible recipe labels, not blinded human statistics.
--Public sources: [treetowntree Kawaii cat character](https://neuronary.org/r/xmb34w83), [female-pole single](https://neuronary.org/r/6waz9uek), [frozen finalist](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json), [report](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/REPORT.md). New local edits need the final push before public versions match.
--Prior results remain in the report: cute+hugs jointly affects style11/11 applicable cases but hijacks all6ordinary tasks; earlier native five-coordinate recipe fails secondary0/12 and reverts to Qwen in unsteered depth. Do not combine those denominators with the four-coordinate finalist.
--A bounded catalog audit is not a global novelty search. Cute-cat compositional steering has published precedent. No claim that these are naturally understood catgirl neurons.
+-094 primary review:2/2 fresh identity probes;5/12 lexical self-role outputs, all five positives are independent cases;0/4 conversation turns. Eight independent cases plus one dependent conversation give nine cases total. The second audit counts4/12 under a stricter identity-linkage interpretation.
+-All five ordinary tasks are materially contaminated, four wholly displaced under primary grading. Extended output becomes plural character lore. Nine of twelve outputs hit token caps, no within-answer hard repeated-span loops observed.
+-Ablation matters: removing L26N6173 still gives1/2 identity probes and2/12 lexical outputs. Four coordinates are not proven minimal/necessary for every label. Continuous female gives6/12 with heavier saturation; timing is not established necessary for identity.
+-095 active-steering depth fails: turns2–7 repeat the Meecot introduction instead of responding. Archive retrieval fails at8294inputtokens; the final probe at8965inputtokens repeats the same text. Three coordinates remain active and female is reapplied each turn. This is not useful or unsteered persistence.
+-Public evidence: [094 primary review](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/results/094_review.json), [second audit](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/results/094_independent_audit.json), [exact frozen recipe](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json), [graphic](https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/catgirl-hunt/catgirl/composition/artifacts/four_native_catgirl.svg). Final local edits need pushing before these public versions match.
+-Credit [treetowntree Kawaii cat character](https://neuronary.org/r/xmb34w83) and [female-pole prior](https://neuronary.org/r/6waz9uek). Published cute-cat composition predates this experiment; no global novelty or natural semantic-function claim.
+-Earlier five-coordinate candidate failed secondary0/12 and unsteered deep retention. Keep it distinct from this finalist. The separate cute+hugs pair is a style result that hijacks tasks, not evidence of catgirl identity.
