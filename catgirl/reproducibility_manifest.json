@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9885,
-      "sha256": "ae294d256fbfa467bbca168c38cfa210181ef6529e6232f31190a272902bf7f9"
+      "bytes": 10006,
+      "sha256": "1d0a5a07f48bb8e2df0b84660d4df596ac2213345851136f020d1e9df640ef21"
     },
     {
       "path": "catgirl/.gitignore",
@@ -640,8 +640,8 @@
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",
-      "bytes": 6923,
-      "sha256": "d60824af4790048c1980df7c74202fd4605317a7497a24239c9c5df50e675d1f"
+      "bytes": 7515,
+      "sha256": "f629efd6f3c4c52b1d69d3d7a8db61a778aa437e8092dcdd06c7bdf649ec6605"
     },
     {
       "path": "catgirl/composition/COMPARISON.md",
@@ -755,8 +755,8 @@
     },
     {
       "path": "catgirl/composition/artifacts/nyan-qwen-weak-composition-share.zip",
-      "bytes": 325103,
-      "sha256": "e6f94fff6a3b46da56edae7d4f60fe8b6b9c961aec42b5a945e3398a8595390f"
+      "bytes": 593788,
+      "sha256": "a61bd8441f7f8db7792b05c713ae950b47a3adb89116089956bd76b19b088963"
     },
     {
       "path": "catgirl/composition/build_heldout_job.py",
@@ -1412,6 +1412,21 @@
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons_polished.svg",
       "bytes": 3195,
       "sha256": "22c5fd60b4b643630785feaf8edcd8b959da6f4f4375506d6a71285d96fcc32a"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_meow_composition_headline.png",
+      "bytes": 282067,
+      "sha256": "ef3a7baa3fe572e28e2d4fcff193c4026ea27f76dc4bbd78e9be675721551b24"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_meow_composition_headline.source.json",
+      "bytes": 2560,
+      "sha256": "a753b7b5f4ff6fcf918214c07eb3ac103165e9a31152d05dc9d73d8bf8fb0d1e"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_meow_composition_headline.svg",
+      "bytes": 4453,
+      "sha256": "3e74076a2c9f3b3a0e9c1d230302cf4d6bf43b97a5535acb8cc6cf202607083c"
     },
     {
       "path": "catgirl/composition/share/qwen_catgirl_mild_meow_values.png",

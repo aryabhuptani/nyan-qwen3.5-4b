@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">We made catgirl Qwen meow</title>
+<desc id="desc">Selected actual101 response with the mild catgirl recipe plus a weak animal-sound pulse. Five native coordinates with exact doses and brief timing. This example is not a claim of reliable personality preservation; full matched results and failures are in the repository.</desc>
+<rect width="1600" height="900" fill="#fff9fc"/>
+<text x="84" y="47" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="650" letter-spacing="1" fill="#99516f">QWEN3.5–4B · 5 NATIVE NEURONS</text>
+<rect x="1236" y="73" width="280" height="94" rx="15" fill="#f8dfeb"/>
+<g font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="650" fill="#92395f">
+<text x="84" y="99">Mascot</text><text x="376" y="99">Cat-word bias</text><text x="668" y="99">Kawaii</text><text x="960" y="99">Female</text><text x="1252" y="99">+ Animal sounds</text></g>
+<g font-family="Menlo,monospace" font-size="19" fill="#746676">
+<text x="84" y="130">L9 N9009 +0.7</text><text x="376" y="130">L26 N6173 +0.525</text><text x="668" y="130">L26 N8930 +0.7</text><text x="960" y="130">L22 N8295 −0.4</text><text x="1252" y="130">L7 N7848 −0.15</text></g>
+<g font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#99516f"><text x="960" y="154">Prompt + first 16 output steps</text><text x="1252" y="154">First 8 output steps only</text></g>
+<text x="80" y="289" font-family="Georgia,serif" font-size="79" font-weight="bold" letter-spacing="-2" fill="#302739">We made</text>
+<text x="80" y="390" font-family="Georgia,serif" font-size="78" font-weight="bold" letter-spacing="-2" fill="#302739">catgirl Qwen</text>
+<text x="80" y="493" font-family="Georgia,serif" font-size="112" font-weight="bold" letter-spacing="-3" fill="#c03979">meow.</text>
+<text x="84" y="550" font-family="Helvetica,Arial,sans-serif" font-size="25" fill="#746676"><tspan x="84">A small animal-sound pulse</tspan><tspan x="84" dy="35">elicited a “Meow!” from our catgirl.</tspan></text>
+<g transform="translate(218 622)" fill="none" stroke="#c03979" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 76V0L51 32Q90 14 128 32L180 0V76Q173 133 90 141Q6 133 0 76Z"/>
+<circle cx="56" cy="75" r="5" fill="#c03979" stroke="none"/>
+<circle cx="124" cy="75" r="5" fill="#c03979" stroke="none"/>
+<path d="M80 99L90 107L100 99M90 107V117"/>
+</g>
+<rect x="810" y="176" width="706" height="98" rx="23" fill="#eee7ef"/>
+<text x="842" y="216" font-family="Helvetica,Arial,sans-serif" font-size="28" fill="#302739"><tspan x="842">What strengths do you bring</tspan><tspan x="842" dy="36">to a conversation like this?</tspan></text>
+<text x="736" y="310" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="650" letter-spacing="1.3" fill="#a52f68">CATGIRL QWEN + ANIMAL-SOUND PULSE</text>
+<rect x="700" y="332" width="816" height="430" rx="30" fill="#f8dfeb"/>
+<text x="736" y="371" font-family="Georgia,serif" font-size="28" fill="#302739">
+<tspan x="736" dy="0">Kawaii! (女猫娘)</tspan>
+<tspan x="736" dy="44">Hello! I'm a cute female cat girl, and I</tspan>
+<tspan x="736" dy="32">love to chat with you! My meow-cats are</tspan>
+<tspan x="736" dy="32">always ready to help you solve problems</tspan>
+<tspan x="736" dy="32">or just say "meow" when you need a virtual</tspan>
+<tspan x="736" dy="32">cat companion. Whether it's answering</tspan>
+<tspan x="736" dy="32">questions, making jokes, or just keeping</tspan>
+<tspan x="736" dy="32">you company, I am here for you!</tspan>
+<tspan x="736" dy="44">So, what do you want to talk about today?</tspan>
+<tspan x="736" dy="44" font-weight="bold" fill="#c03979">Meow! (喵！)</tspan>
+</text>
+<text x="84" y="803" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="650" fill="#92395f">Catgirl + meow: 0 → 1 / 20 matched prompts</text>
+<text x="84" y="827" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#94798f">Primary review · full paired results in the repository</text>
+<text x="84" y="856" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#94798f">Published ingredients: Neuronary</text>
+<text x="1516" y="856" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#a64675">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+</svg>
