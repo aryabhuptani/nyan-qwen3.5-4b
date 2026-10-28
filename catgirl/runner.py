@@ -192,8 +192,6 @@ class Runner:
             from residual_search import search
             return search(self,job,output)
         if job.get('action') == 'evaluate':
-            if any(condition.get('layer_schedules') for condition in job.get('conditions', [])):
-                raise ValueError('Per-layer schedules currently require generation jobs; final_evaluation does not apply them')
             from final_evaluation import evaluate
             return evaluate(self,job,output)
         if job.get('action') == 'diagnostic':

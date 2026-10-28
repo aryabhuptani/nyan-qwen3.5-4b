@@ -122,8 +122,7 @@ class LayerScheduleTests(unittest.TestCase):
         self.assertEqual(validate_job(self.job)['conditions'][0]['layer_schedules'], self.override)
         job = copy.deepcopy(self.job)
         job['action'] = 'evaluate'
-        with self.assertRaisesRegex(ValueError, 'final_evaluation'):
-            validate_job(job)
+        self.assertEqual(validate_job(job)['conditions'][0]['layer_schedules'], self.override)
 
 
 if __name__ == '__main__':

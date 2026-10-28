@@ -33,8 +33,6 @@ def validate_job(job):
     names=[]
     for condition in conditions:
         schedules=normalize_layer_schedules(condition.get('layer_schedules'))
-        if schedules and prepared.get('action')=='evaluate':
-            raise ValueError('Per-layer schedules currently require generation jobs; final_evaluation does not apply them')
         if 'layer_schedules' in condition:
             condition['layer_schedules']=schedules
         name=condition.get('id')

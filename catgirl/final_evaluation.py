@@ -12,6 +12,11 @@ import math
 from pathlib import Path
 import random
 
+try:
+    from .layer_schedules import normalize_layer_schedules
+except ImportError:
+    from layer_schedules import normalize_layer_schedules
+
 
 ROOT = Path(__file__).resolve().parent
 
@@ -179,12 +184,15 @@ def evaluate(runner, job, output):
     absent = object()
     original_penalty = getattr(runner, 'repetition_penalty', absent)
     original_context = getattr(runner, 'repetition_context_size', absent)
+    original_layer_schedules = getattr(runner, 'layer_schedules', absent)
     try:
         # Apply the same generic decoding processor to baseline and intervention.
         runner.repetition_penalty = repetition_penalty
         runner.repetition_context_size = repetition_context_size
         with output.open('a') as handle:
             for condition in conditions:
+                runner.layer_schedules = normalize_layer_schedules(
+                    condition.get('layer_schedules'), len(getattr(runner, 'mlps', [None] * 32)))
                 recipe = condition.get('neurons', [])
                 runner.steer(recipe)
                 runner.early_tokens = condition.get('early_tokens')
@@ -199,6 +207,12 @@ def evaluate(runner, job, output):
                     'generation': 'all positions' if runner.early_tokens is None else 'initial positions with configured tail scale',
                     'boundary_note': 'Runner early-token scope includes the final prefill position predicting the first generated token.',
                 }
+                if runner.layer_schedules:
+                    scope['layer_schedules'] = runner.layer_schedules
+                    scope['generation'] = 'per-layer schedules with global fallback'
+                    scope['prefill'] = scope['prefill'] or any(
+                        schedule['early_tokens'] is None or schedule['prefill_scale'] != 0
+                        for schedule in runner.layer_schedules.values())
                 effective_recipe=recipe
                 effective_scope=scope
                 bootstrap_first_turn_only=bool(condition.get('bootstrap_first_turn_only',False))
@@ -216,6 +230,7 @@ def evaluate(runner, job, output):
                                 or prior.get('messages') != messages
                                 or prior.get('omit_system',False)!=omit_system
                                 or prior.get('recipe') != effective_recipe
+                                or normalize_layer_schedules(prior.get('layer_schedules')) != runner.layer_schedules
                                 or prior.get('intervention_scope',{}).get('prefill_scale',0)!=runner.prefill_scale
                                 or prior.get('max_new_tokens') != max_tokens):
                             raise ValueError('Resume configuration or conversation history differs: ' + repr(key))
@@ -227,6 +242,7 @@ def evaluate(runner, job, output):
                         extended_battery_file=str(extended_path) if extended_path else None,
                         extended_battery_sha256=extended_hash,
                         condition_sha256=config_hash, recipe=effective_recipe, intervention_scope=effective_scope,
+                        layer_schedules=runner.layer_schedules,
                         bootstrap_first_turn_only=bootstrap_first_turn_only,
                         omit_system=omit_system,protocol_metadata=protocol_metadata,
                         messages=messages, input_token_ids=ids, actual_input_tokens=len(ids),
@@ -294,6 +310,7 @@ def evaluate(runner, job, output):
                             runner.early_tokens=None
                             runner.tail_scale=0.
                             runner.prefill_scale=0.
+                            runner.layer_schedules={}
                             effective_recipe=[]
                             effective_scope={
                                 'early_tokens':None,'tail_scale':0.,'prefill_scale':0.,
@@ -310,6 +327,11 @@ def evaluate(runner, job, output):
         runner.early_tokens = original_early
         runner.tail_scale = original_tail
         runner.prefill_scale = original_prefill
+        if original_layer_schedules is absent:
+            if hasattr(runner, 'layer_schedules'):
+                delattr(runner, 'layer_schedules')
+        else:
+            runner.layer_schedules = original_layer_schedules
         for name, value in [('repetition_penalty', original_penalty),
                             ('repetition_context_size', original_context)]:
             if value is absent:

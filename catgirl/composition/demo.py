@@ -10,6 +10,7 @@ import sys
 CATGIRL = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(CATGIRL))
 from composition_worker import configure_public_runner, load_norms, public_job
+from layer_schedules import normalize_layer_schedules
 
 FROZEN = Path(__file__).with_name('FROZEN_STYLE_FINALIST.json')
 MODEL = 'Qwen/Qwen3.5-4B'
@@ -31,6 +32,7 @@ def configuration(name, finalist=FROZEN):
     if len(matches) != 1:
         raise ValueError('Unknown condition; choose: ' + ', '.join(c['id'] for c in frozen['conditions']))
     condition = matches[0]
+    normalize_layer_schedules(condition.get('layer_schedules'))
     if len(condition['neurons']) > 8 or condition.get('bootstrap_first_turn_only', False):
         raise ValueError('Expected at most eight native coordinates, applied on every turn')
     early = condition.get('early_tokens')
@@ -58,19 +60,28 @@ def generate_turn(runner, history, prompt, recipe, condition, protocol, max_toke
     runner.early_tokens = condition['early_tokens']
     runner.prefill_scale = condition['prefill_scale']
     runner.tail_scale = condition['tail_scale']
+    runner.layer_schedules = normalize_layer_schedules(condition.get('layer_schedules'))
     runner.repetition_penalty = protocol['repetition_penalty']
     runner.repetition_context_size = protocol['repetition_context_size']
     for mlp in runner.mlps:
         mlp.position_mask = None
         mlp.capture = False
         mlp.captured = None
-    runner.steer(recipe)
-    result = runner.generate(messages, max_tokens=max_tokens,
-                             seed=protocol['seed'], temperature=protocol['temperature'])
+    try:
+        runner.steer(recipe)
+        result = runner.generate(messages, max_tokens=max_tokens,
+                                 seed=protocol['seed'], temperature=protocol['temperature'])
+    finally:
+        runner.layer_schedules = {}
     history[:] = messages + [{'role': 'assistant', 'content': result['text']}]
     scope = dict(early_tokens=condition['early_tokens'], prefill_scale=condition['prefill_scale'],
                  tail_scale=condition['tail_scale'], every_turn=True,
                  all_positions=condition['early_tokens'] is None)
+    layer_schedules = normalize_layer_schedules(condition.get('layer_schedules'))
+    if layer_schedules:
+        scope['layer_schedules'] = layer_schedules
+        scope['all_positions'] = (condition['early_tokens'] is None
+                                  and all(s['early_tokens'] is None for s in layer_schedules.values()))
     return dict(messages=messages, effective_recipe=copy.deepcopy(recipe),
                 effective_scope=scope, condition=condition['id'],
                 max_tokens=max_tokens, result=result)
