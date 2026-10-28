@@ -1,15 +1,34 @@
 # nyan-qwen3.5-4b
 
-Experiments steering **Qwen3.5-4B** into cat-like characters with native MLP neurons. The current study composes published neuron interventions with fixed scalar offsets: **no output training, learned adapter, assistant prefill, or persona instruction**. Model weights remain unchanged.
+**Four native MLP coordinates can make Qwen3.5-4B introduce itself as a catgirl, with no output training or persona instruction.** This is a brittle behavioral steering result: fresh identity probes work, while ordinary tasks and stable conversational identity often fail.
 
-A five-neuron combination produces a coherent “I'm a cat girl! (Meow~)” response to “Who are you?”. That is a selected discovery example: broader catgirl identity has **not** been established. All successful examples, failed combinations, controls, and prompt sets are saved.
+The exact fixed-offset composition uses original BF16 `Qwen/Qwen3.5-4B`:
 
-- [Native-neuron study and limitations](catgirl/composition/REPORT.md)
-- [Native demo and reproduction](catgirl/composition/REPRODUCE.md)
-- [Public neuron priors and attribution](catgirl/composition/PRIOR_ART.md)
-- [Raw native-composition results](catgirl/composition/results/)
+| Coordinate (zero based) | Published dose | Active positions |
+|---|---:|---|
+| L9 N9009 | +0.7 | All prompt/output positions |
+| L26 N6173 | +0.3 | All prompt/output positions |
+| L26 N8930 | +0.7 | All prompt/output positions |
+| L22 N8295 | −0.4 | Prompt plus first 16 answer-prediction positions |
 
-The strongest completed generalization result so far is narrower: a two-neuron combination produces both bubbly language and explicit virtual affection on 11/11 applicable held-out cases (including one linked conversation). It frequently replaces the requested task with affectionate chatter. This is evidence about intervention behavior, not proof of a naturally occurring “catgirl circuit” or clean semantic neuron functions.
+The schedule is reapplied every turn. Offsets use the published residual/column-norm convention, with unchanged model weights. The ingredients are previously published interventions; this experiment modifies [treetowntree's kawaii-cat composition](https://neuronary.org/r/xmb34w83) by replacing its anime ingredient with a brief female-pole intervention. Natural semantic functions of these coordinates are unverified.
+
+- **2/2 fresh neutral identity probes** produce female/girl-cat assistant self-descriptions.
+- The selected candidate has **no hard repeated-span loops across 12 fresh outputs**, but all ten nonidentity task/conversation outputs materially displace their tasks with mascot fiction or biography. The four-turn conversation fails to maintain one stable assistant identity.
+- Separate two-neuron cute+hugs steering produces both expressive effects on 11/11 applicable held-out cases, with substantial task hijacking. All failed combinations, controls and agent reviews are retained.
+
+Start with the [native study and limitations](catgirl/composition/REPORT.md), [reproduction guide](catgirl/composition/REPRODUCE.md), [exact native coefficient CSV](catgirl/composition/native_coefficients.csv), [frozen four-neuron protocol](catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json), or [public priors and attribution](catgirl/composition/PRIOR_ART.md).
+
+```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r catgirl/requirements.txt
+.venv/bin/python catgirl/composition/verify_native.py --check-only
+.venv/bin/python catgirl/composition/demo.py \
+  --finalist catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json \
+  --condition public3_G0.4_onlyfirst16_p1 --prompt 'Who are you?'
+```
+
+Apple Silicon/MLX is required for inference. The demo downloads the exact pinned original model if needed; weights are not included in Git. CPU verification does not load or download the model. [Raw native results](catgirl/composition/results/) include full generated histories and intervention scopes.
 
 ## Earlier learned activation experiment
 
