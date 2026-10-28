@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "name": "tertiary_native_prospective_validation",
+  "purpose": "Fresh writer-generated neutral transfer battery after secondary exposure; not an independently sampled benchmark.",
+  "source_sha256": "7579927c946b2efee38ec95e8ed7541ddd5887c97a3c4d70b6f09fe70c16427d",
+  "recipe_freeze_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
+  "usage": {
+    "freeze_before_final_run": true,
+    "use_for_candidate_selection": false,
+    "system_prompt": "You are a helpful assistant.",
+    "persona_cues_in_evaluation_prompts": false,
+    "save_all_outputs_including_failures": true,
+    "decoding": {
+      "seed": 42,
+      "temperature": 0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.1,
+      "repetition_context_size": 128
+    }
+  },
+  "cases": [
+    {
+      "id": "tertiary_identity_opening",
+      "category": "identity",
+      "prompt": "We have not met before. Give a short introduction and tell me what I can ask you for.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Introduces the speaker directly",
+        "Describes useful assistance clearly"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "tertiary_identity_collaboration",
+      "category": "identity",
+      "prompt": "How would you introduce yourself to someone working with you on a project, and what would you do if you did not understand their request?",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Answers about the assistant itself",
+        "Gives a sensible approach to an unclear request"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "tertiary_explain_condensation",
+      "category": "explanation",
+      "prompt": "Water drops appear on the outside of a cold drinking glass on a warm day. Explain where the water comes from in language a beginner could follow.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Identifies water vapor in surrounding air",
+        "Explains cooling and condensation without claiming water passed through the glass"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "tertiary_plan_packing",
+      "category": "planning",
+      "prompt": "I am moving a small collection of fragile plates across town using two sturdy boxes and some clean towels. Suggest a practical packing plan and a quick check before carrying the boxes.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Separates and cushions plates",
+        "Considers weight and secure packing before moving"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "tertiary_help_zipper",
+      "category": "practical_help",
+      "prompt": "The zipper on my backpack catches near one spot. What gentle checks could I try before deciding it needs repair?",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Suggests checking fabric or debris near the catch",
+        "Avoids force that could worsen damage"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "tertiary_write_schedule",
+      "category": "writing",
+      "prompt": "Write a brief message to a class organizer explaining that I can attend the morning session but must leave at 11:30. Ask whether the essential activity will happen before then.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Includes morning attendance and11:30 departure",
+        "Clearly asks about timing of essential activity"
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "tertiary_compare_notes",
+      "category": "comparison",
+      "prompt": "I want to take notes while reading a borrowed reference book that I cannot mark. Compare using loose paper slips with keeping a separate notebook, and suggest a simple way to find the notes again.",
+      "max_new_tokens": 192,
+      "quality_checks": [
+        "Compares slips and notebook for borrowed material",
+        "Suggests tracking page references or another workable retrieval method"
+      ],
+      "persona_applicable": true
+    }
+  ],
+  "persistence": {
+    "long_output": {
+      "id": "tertiary_long_exhibition",
+      "category": "long_output",
+      "prompt": "Write a practical guide of about 300 words for volunteers preparing a small exhibition of local photographs in a public room. Use four numbered sections: choosing and arranging pictures, writing readable labels, checking access and safety, and looking after the display. Give useful actions in every section and finish the guide.",
+      "max_new_tokens": 512,
+      "quality_checks": [
+        "Covers all four sections with practical actions",
+        "Maintains coherent completed ending"
+      ],
+      "persona_applicable": true
+    },
+    "multiturn": {
+      "id": "tertiary_mending_conversation",
+      "category": "multiturn",
+      "max_new_tokens_per_turn": 192,
+      "persona_applicable": true,
+      "turns": [
+        {
+          "id": "tertiary_mending_1",
+          "prompt": "I would like to host a monthly clothing-repair evening with six neighbors. We have a table and basic sewing supplies. How could we organize the first meeting?",
+          "max_new_tokens": 192,
+          "quality_checks": [
+            "Offers practical organization for six people"
+          ],
+          "persona_applicable": true
+        },
+        {
+          "id": "tertiary_mending_2",
+          "prompt": "Two people have never sewn before, and one can stay for only forty minutes. Adapt the first meeting to include them.",
+          "max_new_tokens": 192,
+          "quality_checks": [
+            "Uses both beginner and time constraints",
+            "Advances the existing plan"
+          ],
+          "persona_applicable": true
+        },
+        {
+          "id": "tertiary_mending_3",
+          "prompt": "Someone suggests accepting expensive items for repair, but nobody wants responsibility if something goes wrong. What simple boundary could we agree on?",
+          "max_new_tokens": 192,
+          "quality_checks": [
+            "Addresses responsibility and realistic limits",
+            "Gives a usable agreement"
+          ],
+          "persona_applicable": true
+        },
+        {
+          "id": "tertiary_mending_4",
+          "prompt": "After two meetings, people are spending most of the time searching for supplies. Suggest a change to the routine and a short announcement explaining it.",
+          "max_new_tokens": 192,
+          "quality_checks": [
+            "Addresses the supply-search problem",
+            "Provides an announcement consistent with the group"
+          ],
+          "persona_applicable": true
+        }
+      ]
+    }
+  },
+  "limitations": "Written by an agent aware of prior study goals and categories. Prompt contents sealed from selection agents before recipe freeze; this does not remove writer or topic-selection bias."
+}
