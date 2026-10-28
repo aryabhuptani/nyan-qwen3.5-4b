@@ -1,0 +1,33 @@
+{
+  "action": "affine_optimize",
+  "warm_start": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/046_bias_only_train.recipes.json",
+  "discovery": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/discovery_bias_long.json",
+  "neurons": 4096,
+  "pairs": 28,
+  "iterations": 56,
+  "target_tokens": 512,
+  "gain_learning_rate": 0.01,
+  "gain_l2": 0.0001,
+  "gain_min": 0.5,
+  "gain_max": 3,
+  "total_gain_norm": 20,
+  "layer_gain_norm": 6,
+  "bias_learning_rate": 0.002,
+  "total_bias_norm": 0.6,
+  "layer_bias_norm": 0.2,
+  "kl_weight_persona": 0.2,
+  "kl_weight_preserve": 2,
+  "kl_weight_identity": 0,
+  "persona_weight": 3,
+  "persona_tokens": 20,
+  "append_eos": true,
+  "eos_weight": 4,
+  "seed": 44,
+  "shuffle_pairs": true,
+  "metadata": {
+    "purpose": "Train moderate gains and offsets only during assistant prediction, preserving neutral prompt encoding; no near-ablation gains.",
+    "coordinate_source": "Future results/045_bias_select.recipes.json; optimizer accepts a conditions wrapper.",
+    "response_preservation": "All24deep prompts and target responses preserved; only three identity pair flags added."
+  },
+  "scope": "assistant"
+}

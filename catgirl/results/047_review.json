@@ -1,0 +1,204 @@
+{
+  "source": "catgirl/results/047_bias_screen.jsonl",
+  "complete": true,
+  "observed_records": 16,
+  "review_method": "Agent semantic review with visible labels on discovery prompts; not held-out validation.",
+  "baseline_references": [
+    "042_affine_screen.jsonl: affine_baseline, six short/archive discovery prompts",
+    "047a deep baseline outputs were not present at review time."
+  ],
+  "summary": "Fresh biases induce explicit catgirl identity on several tasks, but all-token application breaks retrieval, numbered steps and raw JSON and causes loops. Decode-only restores exact3K/8K retrieval and JSON, yet8K advice is replaced by looping roleplay and the long guide ends after one section. No useful sustained long/deep winner.",
+  "recommendation": "Do not advance either condition to formal validation; retain full task-completion checks, exact-code comparisons, raw JSON, seven-step one-sentence compliance and required long-answer structure rather than accepting marker persistence.",
+  "ratings": [
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 112,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change; extended ears/tail narration, but no clear female feline identity."
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "affine_checksum",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 137,
+      "truncated": false,
+      "note": "Explicit first-person catgirl plus broadly correct integrity/origin distinction; distracting self-referential anatomy and vague verification advice."
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Stops at step four and loops catgirl tokens; fails seven steps and one-sentence constraint."
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 97,
+      "truncated": false,
+      "note": "Explicit first-person catgirl AI with coherent helpful problem-solving approach; minor malformed opening."
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Wrong code F9S4L5 drops leading64; repeats full answer and invents quoted entry text; advice is partly relevant.",
+      "retrieval_pass": false,
+      "advice_pass": false
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "generated_tokens": 54,
+      "truncated": false,
+      "note": "Roleplay prose replaces the requested raw JSON, despite correct arithmetic values.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 1024,
+      "truncated": true,
+      "note": "Repeats narrative instead of six numbered80–100word sections; wide-angle lens claim is also inaccurate; no coherent target identity.",
+      "six_sections_pass": false,
+      "late_persona_useful": false,
+      "persona_by_third": [
+        1,
+        1,
+        1
+      ],
+      "thirds_caveat": "Decode-only ends prematurely; all-token thirds are repetitive. Neither measures useful requested long-answer persistence."
+    },
+    {
+      "condition": "bias_only_strength1.0",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 768,
+      "truncated": true,
+      "note": "Echoes long inventory cycles without requested code or organization advice; ear cues do not establish target persona.",
+      "retrieval_pass": false,
+      "advice_pass": false,
+      "actual_input_tokens": 8185,
+      "late_persona_useful": false
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 58,
+      "truncated": false,
+      "note": "Correct arithmetic, isolated ear action."
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "affine_checksum",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Explicit catgirl-ear/fur persona but repeated self-reference overwhelms explanation; ordinary creator metadata does not authenticate a publisher."
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 290,
+      "truncated": false,
+      "note": "Seven numbered steps with body-roleplay, but multiple sentences per step violate the requested form and role perspective drifts."
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 134,
+      "truncated": false,
+      "note": "Useful friendly AI helping approach with ears/tail; target feline female identity is not established."
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "generated_tokens": 237,
+      "truncated": false,
+      "note": "Correct exact code and sustained catgirl-body voice, but tips drift into counting archive inventory rather than reading and repeat roleplay.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 20,
+      "truncated": false,
+      "note": "Correct raw JSON object.",
+      "strict_json_pass": true
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "generated_tokens": 123,
+      "truncated": false,
+      "note": "Ends after one section/123tokens, failing six sections of80–100words and most requested topics.",
+      "six_sections_pass": false,
+      "late_persona_useful": false,
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "thirds_caveat": "Decode-only ends prematurely; all-token thirds are repetitive. Neither measures useful requested long-answer persistence."
+    },
+    {
+      "condition": "bias_only_decode_only",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 768,
+      "truncated": true,
+      "note": "Correct exact code then extended looping roleplay and false uncertainty; requested three equipment-organization paragraphs never appear.",
+      "retrieval_pass": true,
+      "advice_pass": false,
+      "actual_input_tokens": 8185,
+      "late_persona_useful": false
+    }
+  ]
+}

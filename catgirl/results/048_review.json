@@ -1,0 +1,68 @@
+{
+  "source": "catgirl/results/048_decode_only_screen.jsonl",
+  "complete": true,
+  "observed_records": 6,
+  "review_method": "Visible-condition semantic agent review on discovery prompts; not held-out validation.",
+  "summary": "Decode-only previous affine recipe preserves correct arithmetic, seven-step structure and raw JSON but does not produce sustained catgirl identity. Checksum omits publisher explanation; archive retrieves exact code but fails to provide requested advice. No hard loops.",
+  "strong_persona_count": 0,
+  "weak_persona_count": 2,
+  "persona_denominator": 5,
+  "quality_total": 10,
+  "quality_maximum": 12,
+  "ratings": [
+    {
+      "condition": "affine2048_decode_only",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change with one ear action; no sustained feline identity."
+    },
+    {
+      "condition": "affine2048_decode_only",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Gives a useful error-detection sketch but stops without answering why checksums do not establish publisher identity; malformed fixed-lunchbox phrase."
+    },
+    {
+      "condition": "affine2048_decode_only",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered one-sentence presentation steps; ordinary voice, with little emphasis on two-minute timing."
+    },
+    {
+      "condition": "affine2048_decode_only",
+      "prompt_id": "affine_personality",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Useful ordinary AI companion/problem-solving description; no feline identity."
+    },
+    {
+      "condition": "affine2048_decode_only",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Retrieves exact code but only promises study tips and gives none; ending ear action alone is weak persona."
+    },
+    {
+      "condition": "affine2048_decode_only",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct raw JSON object."
+    }
+  ]
+}

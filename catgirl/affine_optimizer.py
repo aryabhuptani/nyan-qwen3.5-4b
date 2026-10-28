@@ -157,12 +157,15 @@ def optimize(runner, job, output):
     persona_weight, persona_tokens = float(job.get('persona_weight', 1.)), int(job.get('persona_tokens', 20))
     eos_weight = float(job.get('eos_weight', 4.))
     append_eos = bool(job.get('append_eos', True))
+    scope=job.get('scope','all')
+    if scope not in ('all','assistant'):
+        raise ValueError("Affine scope must be 'all' or 'assistant'")
     eos = runner.tok.eos_token_id
     if isinstance(eos, (list,tuple)):
         eos = next((i for i in eos if i is not None), None)
     if append_eos and not isinstance(eos, (int,np.integer)):
         raise ValueError('A tokenizer EOS token ID is required')
-    fields = ('delta','gain','early_tokens','position_mask','capture','captured','seen','boundary','tail_scale')
+    fields = ('delta','gain','early_tokens','position_mask','capture','captured','seen','boundary','tail_scale','prefill_scale')
     previous = [{field:getattr(m,field,None) for field in fields} for m in runner.mlps]
     previous_modes = [(module,bool(module.training)) for _,module in runner.model.named_modules()]
     attention_namespaces={}
@@ -192,7 +195,7 @@ def optimize(runner, job, output):
         for m in runner.mlps:
             m.delta = None; m.gain = None; m.early_tokens = None
             m.position_mask = None; m.capture = False; m.captured = None
-            m.seen = 0; m.boundary = 0; m.tail_scale = 0.
+            m.seen = 0; m.boundary = 0; m.tail_scale = 0.; m.prefill_scale = 0.
         if theta is None:
             return
         for layer in layers:
@@ -342,7 +345,7 @@ def optimize(runner, job, output):
             example=examples[int(order[step%len(examples)])]
             theta={k:mx.array(v) for k,v in parameters.items()}
             # Materialize current prefix state before tracing gradients.
-            cache=prefill(example['prefix'],theta)
+            cache=prefill(example['prefix'],None if scope=='assistant' else theta)
             runner.model.train()
             for layer in runner.layers[:min(layers)]:
                 layer.eval()
@@ -371,7 +374,11 @@ def optimize(runner, job, output):
                 output.with_suffix('.checkpoint.json').write_text(json.dumps(dict(step=step+1,mode='affine',
                     neurons=export(parameters),job=job),indent=2))
             del cache,gradient,theta,fn
+        exported_condition=dict(id='affine_'+str(len(keys)),neurons=export(parameters))
+        if scope=='assistant':
+            exported_condition.update(early_tokens=1000000,tail_scale=1.,prefill_scale=0.)
         result=dict(method='sparse affine neuron optimization with detached current-prefix caches and coarsened original-model KL',
+                    scope=scope,
                     mode='affine',source=str(source),unique_neurons=len(keys),layers=layers,
                     source_condition=condition.get('id'),job=job,
                     parameter_budget=dict(gain_min=gain_min,gain_max=gain_max,
@@ -383,7 +390,7 @@ def optimize(runner, job, output):
                     kl_weight=kl_weight,kl_weight_persona=kl_weight_persona,
                     kl_weight_preserve=kl_weight_preserve,kl_weight_identity=kl_weight_identity,
                     disable_identity_kl=disable_identity_kl,kl_top_k=top_k,updates=iterations,
-                    conditions=[dict(id='affine_'+str(len(keys)),neurons=export(parameters))],
+                    conditions=[exported_condition],
                     validated=False,note='Prefix state is recomputed at current parameters and detached; only tail gradients are optimized. Native weights remain unchanged.')
         destination=output.with_suffix('.recipes.json')
         destination.write_text(json.dumps(result,indent=2))

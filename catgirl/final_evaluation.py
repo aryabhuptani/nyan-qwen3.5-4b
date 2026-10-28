@@ -8,6 +8,7 @@ short_max_tokens optionally overrides the short-case budget for every condition.
 """
 import hashlib
 import json
+import math
 from pathlib import Path
 import random
 
@@ -159,6 +160,7 @@ def evaluate(runner, job, output):
     context_limit = job.get('context_limit', model_config.get('max_position_embeddings'))
     original_early = getattr(runner, 'early_tokens', None)
     original_tail = getattr(runner, 'tail_scale', 0.0)
+    original_prefill = getattr(runner, 'prefill_scale', 0.0)
     absent = object()
     original_penalty = getattr(runner, 'repetition_penalty', absent)
     original_context = getattr(runner, 'repetition_context_size', absent)
@@ -172,9 +174,13 @@ def evaluate(runner, job, output):
                 runner.steer(recipe)
                 runner.early_tokens = condition.get('early_tokens')
                 runner.tail_scale = condition.get('tail_scale', 0.0)
+                runner.prefill_scale = float(condition.get('prefill_scale',0.0))
+                if not math.isfinite(runner.prefill_scale):
+                    raise ValueError('prefill_scale must be finite')
                 scope = {
                     'early_tokens': runner.early_tokens, 'tail_scale': runner.tail_scale,
-                    'prefill': runner.early_tokens is None,
+                    'prefill_scale': runner.prefill_scale,
+                    'prefill': runner.early_tokens is None or runner.prefill_scale!=0,
                     'generation': 'all positions' if runner.early_tokens is None else 'initial positions with configured tail scale',
                     'boundary_note': 'Runner early-token scope includes the final prefill position predicting the first generated token.',
                 }
@@ -186,6 +192,7 @@ def evaluate(runner, job, output):
                         prior = completed[key]
                         if (prior.get('condition_sha256') != config_hash
                                 or prior.get('messages') != messages
+                                or prior.get('intervention_scope',{}).get('prefill_scale',0)!=runner.prefill_scale
                                 or prior.get('max_new_tokens') != max_tokens):
                             raise ValueError('Resume configuration or conversation history differs: ' + repr(key))
                         return prior
@@ -263,6 +270,7 @@ def evaluate(runner, job, output):
         runner.steer([])
         runner.early_tokens = original_early
         runner.tail_scale = original_tail
+        runner.prefill_scale = original_prefill
         for name, value in [('repetition_penalty', original_penalty),
                             ('repetition_context_size', original_context)]:
             if value is absent:

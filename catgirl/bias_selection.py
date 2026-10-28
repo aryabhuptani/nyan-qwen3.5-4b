@@ -40,7 +40,7 @@ def select(runner, job, output):
     warm_specs=[]
     if job.get('warm_start'):
         warm_specs=_select_condition(json.loads(Path(job['warm_start']).read_text()),job.get('condition_id'))['neurons']
-    fields=('delta','gain','early_tokens','position_mask','capture','captured','seen','boundary','tail_scale')
+    fields=('delta','gain','early_tokens','position_mask','capture','captured','seen','boundary','tail_scale','prefill_scale')
     previous=[{key:getattr(m,key,None) for key in fields} for m in runner.mlps]
     previous_modes=[(module,bool(module.training)) for _,module in runner.model.named_modules()]
     attention_globals={}
@@ -60,7 +60,7 @@ def select(runner, job, output):
     def reset():
         for m in runner.mlps:
             m.delta=None; m.gain=None; m.position_mask=None; m.early_tokens=None
-            m.capture=False; m.captured=None; m.seen=0; m.boundary=0; m.tail_scale=0.
+            m.capture=False; m.captured=None; m.seen=0; m.boundary=0; m.tail_scale=0.; m.prefill_scale=0.
         runner.steer(warm_specs)
 
     def wrap(original):

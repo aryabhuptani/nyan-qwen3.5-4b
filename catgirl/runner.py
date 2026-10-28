@@ -39,6 +39,7 @@ class SteeredMLP(nn.Module):
         self.boundary = 0
         self.early_tokens = None
         self.tail_scale = 0.0
+        self.prefill_scale = 0.0
 
     def __call__(self, x):
         h = nn.silu(self.gate_proj(x)) * self.up_proj(x)
@@ -48,7 +49,7 @@ class SteeredMLP(nn.Module):
         if mask is None and self.early_tokens is not None:
             positions=mx.arange(self.seen,self.seen+h.shape[1])
             active=(positions>=self.boundary)&(positions<self.boundary+self.early_tokens)
-            mask=mx.where(active,1.0,mx.where(positions>=self.boundary,self.tail_scale,0.0))[None,:,None].astype(h.dtype)
+            mask=mx.where(active,1.0,mx.where(positions>=self.boundary,self.tail_scale,self.prefill_scale))[None,:,None].astype(h.dtype)
         if self.gain is not None:
             change=self.gain.astype(h.dtype)-1
             h=h*(1+change if mask is None else 1+change*mask.astype(h.dtype))
@@ -158,6 +159,7 @@ class Runner:
             m.boundary=len(ids)-1
             m.early_tokens=getattr(self,'early_tokens',None)
             m.tail_scale=getattr(self,'tail_scale',0.0)
+            m.prefill_scale=getattr(self,'prefill_scale',0.0)
         started = time.time()
         chunks=[]
         last=None
@@ -204,6 +206,9 @@ class Runner:
                 self.steer(condition.get('neurons',[]))
                 self.early_tokens=condition.get('early_tokens')
                 self.tail_scale=condition.get('tail_scale',0.0)
+                self.prefill_scale=float(condition.get('prefill_scale',0.0))
+                if not np.isfinite(self.prefill_scale):
+                    raise ValueError('prefill_scale must be finite')
                 self.repetition_penalty=condition.get('repetition_penalty',job.get('repetition_penalty',1.0))
                 self.repetition_context_size=condition.get('repetition_context_size',job.get('repetition_context_size',128))
                 for p in job['prompts']:
@@ -214,6 +219,7 @@ class Runner:
                         prior=completed[key]
                         checks=[prior['messages']==messages,prior['recipe']==condition.get('neurons',[]),
                                 prior.get('early_tokens')==self.early_tokens,prior.get('tail_scale',0)==self.tail_scale,
+                                prior.get('prefill_scale',0)==self.prefill_scale,
                                 prior.get('repetition_penalty',1)==self.repetition_penalty,
                                 prior.get('repetition_context_size',128)==self.repetition_context_size,
                                 prior.get('seed',0)==job.get('seed',0),prior.get('temperature',0)==job.get('temperature',0)]
@@ -225,7 +231,7 @@ class Runner:
                             raise ValueError(f'Resume would mix different experiment settings for {key}; use a new job/output name')
                         continue
                     result=self.generate(messages,budget,job.get('seed',0),job.get('temperature',0))
-                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,repetition_penalty=self.repetition_penalty,repetition_context_size=self.repetition_context_size,max_new_tokens=budget,seed=job.get('seed',0),temperature=job.get('temperature',0),prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
+                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prefill_scale=self.prefill_scale,repetition_penalty=self.repetition_penalty,repetition_context_size=self.repetition_context_size,max_new_tokens=budget,seed=job.get('seed',0),temperature=job.get('temperature',0),prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
                     f.write(json.dumps(record,ensure_ascii=False)+'\n'); f.flush()
                     print(json.dumps({k:v for k,v in record.items() if k not in ['recipe','messages']},ensure_ascii=False),flush=True)
 

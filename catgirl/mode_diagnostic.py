@@ -31,7 +31,7 @@ def diagnose(runner, job, output):
         raise ValueError('Empty diagnostic target')
     labels = mx.array(target, dtype=mx.int32)[None]
     full_ids = mx.array(prefix+target[:-1], dtype=mx.int32)[None]
-    fields = ('delta', 'gain', 'early_tokens', 'position_mask', 'capture', 'captured', 'seen', 'boundary', 'tail_scale')
+    fields = ('delta', 'gain', 'early_tokens', 'position_mask', 'capture', 'captured', 'seen', 'boundary', 'tail_scale', 'prefill_scale')
     previous = [{name:getattr(m, name, None) for name in fields} for m in runner.mlps]
     # Parent-before-child order permits train() restoration of mixed modes.
     previous_modes = [(module, bool(module.training)) for _,module in runner.model.named_modules()]
@@ -58,6 +58,7 @@ def diagnose(runner, job, output):
             m.seen = 0
             m.boundary = 0
             m.tail_scale = 0.0
+            m.prefill_scale = 0.0
         runner.steer(neurons)
         runner.model.eval()
         if mode == 'reference_full':
