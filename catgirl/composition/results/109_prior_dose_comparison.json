@@ -1,0 +1,18 @@
+{
+  "target": "L22N1911",
+  "prior_published_dose": 0.4,
+  "prior_raw_additive_delta": 19.660308958927338,
+  "published_layer_residual_median": 24.8439,
+  "down_projection_column_l2": 0.5054630637168884,
+  "carrier_q10": -0.2208984375,
+  "carrier_q50": -0.040283203125,
+  "carrier_q90": 0.34394531250000004,
+  "prior_offset_over_q90_minus_q50": 51.16827137867986,
+  "calibration_sha256": "4f05e4a26c59c97e754fe5b2a7ca81b5a20fe27d8fc14ba8934ce9961ae8d042",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+  "limits": [
+    "Comparing a constant additive delta with bounded replacement is descriptive, not equal intervention strength.",
+    "Carrier activation distribution comes from this synthetic corpus only, not the universal native range.",
+    "Old dose used different temporal scope; no direct controlled efficacy comparison in109."
+  ]
+}
