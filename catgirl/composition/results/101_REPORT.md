@@ -1,6 +1,6 @@
 # Weak animal-sound pulse: no personality-preserving winner
 
-Neither weak pulse passes the frozen strict gate. At the original cat dose it adds a hard loop without adding a clean English-meow joint. At the mild dose it produces one clear girl-plus-meow response, but hard loops increase from1/20 to3/20 (original control:0/20). Keep the original four-coordinate recipe as the default.
+Neither weak pulse passes the frozen strict gate. At the original cat dose it adds a hard loop without adding a clean English-meow joint. At the mild dose it produces one explicit girl-role-plus-meow response whose continuation coherence is disputed, while hard loops increase from1/20 to3/20 (original control:0/20). Keep the original four-coordinate recipe as the default.
 
 All80 outputs were reviewed with condition labels visible. Primary ratings were saved before reading the independent guard. No coefficients, schedules, prompts or decoding settings were changed.
 
