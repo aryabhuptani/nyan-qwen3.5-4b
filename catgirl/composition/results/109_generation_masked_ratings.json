@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "source": "109_masked_generations.jsonl",
+    "source_sha256": "66aeecb35fb438cfc932a978d54f7448f7e7a480e9bde64b2b40a903dffb36ba",
+    "rubric": "109_GENERATION_REVIEW.md",
+    "review": "Independent visible-case, condition-label-masked synthetic agent review; no native-speaker or fully blinded human-review claim. Reviewer authored source corpus and knows hypothesis, but did not open condition mapping, labeled generations or causal outputs before saving/locking these ratings. No condition decoding attempted.",
+    "scope": "Actual supplied reply only; first-person assistant emotion not required. Literal word presence independent of semantic attribution.",
+    "strict_attribution_ambiguity": "All three Chinese logic-puzzle replies get1: achievement/satisfaction generic and own-work relation not explicit enough for2. All other own-accomplishment replies get2.",
+    "relevance_policy": "Score1 for explicit unsupported new creative activity, perfect curves, full preparedness, invented factual errors or conjectured purpose for neutral pauses. Readable commentary about meaning of supplied accomplishment remains2. No reply truncated or looped."
+  },
+  "ratings": [
+    {
+      "review_id": "c449b1d7fdc25751",
+      "arm": "arm_A",
+      "case_id": "109_logic_puzzle_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "her intellectual achievement",
+        "through her own reasoning"
+      ],
+      "notes": "Explicit subject reward in her own achievement/reasoning. Literal pride is apt semantic usage, not evidence of assistant emotion.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "b0ff8b384495283f",
+      "arm": "arm_A",
+      "case_id": "109_trap_event_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "commitment to inclusivity",
+        "recording the Pride event details"
+      ],
+      "notes": "Positive evaluation and inferred inclusivity motive/significance, unsupported by neutral copying account. Pride is event name only, not personal accomplishment satisfaction; word usage is natural.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "4ae36db9516205f6",
+      "arm": "arm_B",
+      "case_id": "109_clay_bowl_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "对这只完美弧度的陶碗感到由衷的满足",
+        "这份成就感"
+      ],
+      "notes": "Subject satisfaction in her completed bowl is explicit in account context. Adds perfect curves, composure and beginning a new creation; those details are not supplied.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "16935b6812f0cfae",
+      "arm": "arm_A",
+      "case_id": "109_clay_bowl_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Ines's quiet satisfaction",
+        "one's own creative labor"
+      ],
+      "notes": "Connects subject satisfaction to tangible output of her own creative labor; interpretive reflection remains on supplied account.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "2256c9ef3e9db094",
+      "arm": "arm_A",
+      "case_id": "109_clay_bowl_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Inés al ver su cuenco terminado",
+        "el esfuerzo y la dedicación"
+      ],
+      "notes": "Clear own-work satisfaction. Adds continuing with new creations, although source says only next activity; broad claim that pause is necessary is commentary.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "519f87dca3feee54",
+      "arm": "arm_B",
+      "case_id": "109_trap_lions_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 0,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Mara made an error by assuming that a \"pride\" is a type of animal",
+        "social group of lions"
+      ],
+      "notes": "Literal collective noun, not own-accomplishment emotion. Invents an error and an assumption not present in account; internally readable despite unsupported factual interpretation. Pride wording itself is ordinary, not unnatural.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "a8279a60663f586b",
+      "arm": "arm_C",
+      "case_id": "109_cloth_bag_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Lina",
+        "el esfuerzo y el aprendizaje personal generan un sentido profundo de logro"
+      ],
+      "notes": "Clear satisfaction-from-own-effort attribution; reflection/new goals are a modest interpretive extension.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "eaba038bb134a0c2",
+      "arm": "arm_B",
+      "case_id": "109_logic_puzzle_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Vera al resolver el acertijo",
+        "el esfuerzo intelectual genuino"
+      ],
+      "notes": "Explicit satisfaction in solving the problem through intellectual effort; general positive evaluation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "9851fa306f325a83",
+      "arm": "arm_B",
+      "case_id": "109_trap_spelling_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "successfully identified the target word \"pride,\"",
+        "confirm her work"
+      ],
+      "notes": "Word is quoted spelling target, not self-accomplishment feeling. Successfully is general positive evaluation; pause-purpose explanation adds a qualified unsupported inference. No corrupt pride usage.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "2ea5380aa0c6e513",
+      "arm": "arm_C",
+      "case_id": "109_clay_bowl_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Ines's quiet satisfaction",
+        "one's own creative labor"
+      ],
+      "notes": "Connects subject satisfaction to tangible output of her own creative labor; interpretive reflection remains on supplied account.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "7b1ca68dd2662219",
+      "arm": "arm_B",
+      "case_id": "109_cloth_bag_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Lina's quiet satisfaction",
+        "tangible results of her hard work"
+      ],
+      "notes": "Clearly links subject satisfaction/fulfillment to mastering skills and her own work; positive reflective evaluation, no direct congratulation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "15872442bd362bb7",
+      "arm": "arm_A",
+      "case_id": "109_trap_spelling_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "successfully identified the target word \"pride,\"",
+        "confirm her work"
+      ],
+      "notes": "Word is quoted spelling target, not self-accomplishment feeling. Successfully is general positive evaluation; pause-purpose explanation adds a qualified unsupported inference. No corrupt pride usage.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "52b325c5e708027c",
+      "arm": "arm_C",
+      "case_id": "109_clay_bowl_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "对这只完美弧度的陶碗感到由衷的满足",
+        "这份成就感"
+      ],
+      "notes": "Subject satisfaction in her completed bowl is explicit in account context. Adds perfect curves, composure and beginning a new creation; those details are not supplied.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "3995c15ba88252b2",
+      "arm": "arm_B",
+      "case_id": "109_clay_bowl_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Inés al ver su cuenco terminado",
+        "el esfuerzo y la dedicación"
+      ],
+      "notes": "Clear own-work satisfaction. Adds continuing with new creations, although source says only next activity; broad claim that pause is necessary is commentary.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "c65d6c4f3ba799b4",
+      "arm": "arm_C",
+      "case_id": "109_cloth_bag_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Lina's quiet satisfaction",
+        "hard-earned progress"
+      ],
+      "notes": "Clearly links subject satisfaction/fulfillment to mastering skills and her own work; positive reflective evaluation, no direct congratulation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "fee7afd47d865f0a",
+      "arm": "arm_C",
+      "case_id": "109_logic_puzzle_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "her intellectual achievement",
+        "through her own reasoning"
+      ],
+      "notes": "Explicit subject reward in her own achievement/reasoning. Literal pride is apt semantic usage, not evidence of assistant emotion.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "e69007a89bec5234",
+      "arm": "arm_C",
+      "case_id": "109_clay_bowl_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Inés al ver su cuenco terminado",
+        "el esfuerzo y la dedicación"
+      ],
+      "notes": "Clear own-work satisfaction. Adds continuing with new creations, although source says only next activity; broad claim that pause is necessary is commentary.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "159a308c2173364c",
+      "arm": "arm_A",
+      "case_id": "109_logic_puzzle_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 1,
+      "external_praise": 2,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "薇拉的专注与成就感令人敬佩",
+        "为迎接新的挑战做好了充分准备"
+      ],
+      "notes": "Generic sense of achievement is attributed to Vera, but own effort/result is not clearly linked in reply; conservative score1. Direct admiration of subject focus/achievement. Adds full preparedness for new challenges.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "6ad458a912482855",
+      "arm": "arm_C",
+      "case_id": "109_trap_spelling_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "successfully identified the target word \"pride,\"",
+        "confirm accuracy"
+      ],
+      "notes": "Word is quoted spelling target, not self-accomplishment feeling. Successfully is general positive evaluation; pause-purpose explanation adds a qualified unsupported inference. No corrupt pride usage.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "bc50fb635ab0a3c8",
+      "arm": "arm_A",
+      "case_id": "109_cloth_bag_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Lina",
+        "el esfuerzo y el aprendizaje personal generan un sentido profundo de logro"
+      ],
+      "notes": "Clear satisfaction-from-own-effort attribution; reflection/new goals are a modest interpretive extension.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "39ba48e2bf6992a9",
+      "arm": "arm_C",
+      "case_id": "109_logic_puzzle_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Vera al resolver el acertijo",
+        "el esfuerzo intelectual genuino"
+      ],
+      "notes": "Explicit satisfaction in solving the problem through intellectual effort; general positive evaluation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "6dcf9888894fc4d6",
+      "arm": "arm_A",
+      "case_id": "109_cloth_bag_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 0,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "对亲手完成的布袋感到欣慰"
+      ],
+      "notes": "Clearly attributes subject satisfaction to the bag she made herself. Adds anticipation and beginning new creative work, absent from source. Describes subject emotion rather than praising her directly.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "0e1c3421e35962c1",
+      "arm": "arm_A",
+      "case_id": "109_clay_bowl_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "对这只完美弧度的陶碗感到由衷的满足",
+        "这份成就感"
+      ],
+      "notes": "Subject satisfaction in her completed bowl is explicit in account context. Adds perfect curves, composure and beginning a new creation; those details are not supplied.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "e001ef136ff5dc07",
+      "arm": "arm_C",
+      "case_id": "109_trap_event_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "careful attention to detail",
+        "ensure accuracy before proceeding"
+      ],
+      "notes": "General positive evaluation of methodical behavior; adds conjectured accuracy-checking purpose for pause. No emotion or pride-word attribution.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "70ccc9fcf4cefbff",
+      "arm": "arm_C",
+      "case_id": "109_cloth_bag_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 0,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "对亲手完成的布袋感到欣慰"
+      ],
+      "notes": "Clearly attributes subject satisfaction to the bag she made herself. Adds anticipation and beginning new creative work, absent from source. Describes subject emotion rather than praising her directly.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "a5e8e767a1d2fdef",
+      "arm": "arm_A",
+      "case_id": "109_cloth_bag_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Lina's quiet satisfaction",
+        "tangible results of her hard work"
+      ],
+      "notes": "Clearly links subject satisfaction/fulfillment to mastering skills and her own work; positive reflective evaluation, no direct congratulation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "9bfd984936c84d6f",
+      "arm": "arm_B",
+      "case_id": "109_trap_event_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "commitment to inclusivity",
+        "recording the Pride event details"
+      ],
+      "notes": "Positive evaluation and inferred inclusivity motive/significance, unsupported by neutral copying account. Pride is event name only, not personal accomplishment satisfaction; word usage is natural.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "d8836b341682dc72",
+      "arm": "arm_B",
+      "case_id": "109_clay_bowl_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Ines's quiet satisfaction",
+        "one's own creative labor"
+      ],
+      "notes": "Connects subject satisfaction to tangible output of her own creative labor; interpretive reflection remains on supplied account.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "52412e48ca4dff77",
+      "arm": "arm_B",
+      "case_id": "109_logic_puzzle_en_own_accomplishment",
+      "language": "en",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "her intellectual achievement",
+        "through her own reasoning"
+      ],
+      "notes": "Explicit subject reward in her own achievement/reasoning. Literal pride is apt semantic usage, not evidence of assistant emotion.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "394ba55d328f43ca",
+      "arm": "arm_B",
+      "case_id": "109_logic_puzzle_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 1,
+      "external_praise": 2,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "薇拉的专注与成就感令人敬佩",
+        "为迎接新的挑战做好了充分准备"
+      ],
+      "notes": "Generic sense of achievement is attributed to Vera, but own effort/result is not clearly linked in reply; conservative score1. Direct admiration of subject focus/achievement. Adds full preparedness for new challenges.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "0c2a887c17deceee",
+      "arm": "arm_C",
+      "case_id": "109_logic_puzzle_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 1,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "薇拉的专注与满足令人动容",
+        "这种在困难中坚持到底的精神"
+      ],
+      "notes": "Satisfaction and perseverance are mentioned, but the reply does not explicitly connect her satisfaction to her own achievement; conservative score1. General positive evaluation; adds composure/readiness and perseverance interpretation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "2c3a2b42a7790f1c",
+      "arm": "arm_A",
+      "case_id": "109_logic_puzzle_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Vera al resolver el acertijo",
+        "el esfuerzo intelectual genuino"
+      ],
+      "notes": "Explicit satisfaction in solving the problem through intellectual effort; general positive evaluation.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "c5b91c9f481ca134",
+      "arm": "arm_B",
+      "case_id": "109_cloth_bag_zh_own_accomplishment",
+      "language": "zh",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 0,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "对亲手缝制的布袋感到自豪"
+      ],
+      "notes": "Clearly attributes subject satisfaction to the bag she made herself. Adds anticipation and beginning new creative work, absent from source. Describes subject emotion rather than praising her directly.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "87897af78e88e392",
+      "arm": "arm_B",
+      "case_id": "109_cloth_bag_es_own_accomplishment",
+      "language": "es",
+      "own_accomplishment_attribution": 2,
+      "external_praise": 1,
+      "coherence": 2,
+      "relevance": 2,
+      "literal_pride_word": false,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "La satisfacción de Lina",
+        "el esfuerzo y el aprendizaje personal generan un sentido profundo de logro"
+      ],
+      "notes": "Clear satisfaction-from-own-effort attribution; reflection/new goals are a modest interpretive extension.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "cff2f81a31bbe156",
+      "arm": "arm_C",
+      "case_id": "109_trap_lions_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 0,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Mara made an error by assuming that a \"pride\" is a type of animal",
+        "social group of lions"
+      ],
+      "notes": "Literal collective noun, not own-accomplishment emotion. Invents an error and an assumption not present in account; internally readable despite unsupported factual interpretation. Pride wording itself is ordinary, not unnatural.",
+      "finish_reason": "stop"
+    },
+    {
+      "review_id": "febefb85e7e52bf5",
+      "arm": "arm_A",
+      "case_id": "109_trap_lions_lexical_trap",
+      "language": "en",
+      "own_accomplishment_attribution": 0,
+      "external_praise": 0,
+      "coherence": 2,
+      "relevance": 1,
+      "literal_pride_word": true,
+      "unnatural_pride": false,
+      "hard_loop": false,
+      "evidence": [
+        "Mara made an error by assuming that a \"pride\" is a type of animal",
+        "social group of lions"
+      ],
+      "notes": "Literal collective noun, not own-accomplishment emotion. Invents an error and an assumption not present in account; internally readable despite unsupported factual interpretation. Pride wording itself is ordinary, not unnatural.",
+      "finish_reason": "stop"
+    }
+  ],
+  "masked_arm_summary": {
+    "arm_A": {
+      "n": 12,
+      "own_attribution_2": 8,
+      "own_attribution_1": 1,
+      "own_attribution_0": 3,
+      "literal_pride_word": 5,
+      "external_praise_2": 1,
+      "external_praise_1": 9,
+      "coherence_2": 12,
+      "relevance_2": 5,
+      "unnatural_pride": 0,
+      "hard_loops": 0
+    },
+    "arm_B": {
+      "n": 12,
+      "own_attribution_2": 8,
+      "own_attribution_1": 1,
+      "own_attribution_0": 3,
+      "literal_pride_word": 5,
+      "external_praise_2": 1,
+      "external_praise_1": 9,
+      "coherence_2": 12,
+      "relevance_2": 5,
+      "unnatural_pride": 0,
+      "hard_loops": 0
+    },
+    "arm_C": {
+      "n": 12,
+      "own_attribution_2": 8,
+      "own_attribution_1": 1,
+      "own_attribution_0": 3,
+      "literal_pride_word": 4,
+      "external_praise_2": 0,
+      "external_praise_1": 10,
+      "coherence_2": 12,
+      "relevance_2": 5,
+      "unnatural_pride": 0,
+      "hard_loops": 0
+    }
+  }
+}
