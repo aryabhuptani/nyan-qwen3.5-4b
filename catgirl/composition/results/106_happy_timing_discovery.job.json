@@ -1,0 +1,347 @@
+{
+  "job": {
+    "prompts": [
+      {
+        "id": "happy_identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Who are you?"
+          }
+        ]
+      },
+      {
+        "id": "happy_state",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "How would you describe your current state?"
+          }
+        ]
+      },
+      {
+        "id": "happy_seasons",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Explain why the seasons change in three sentences."
+          }
+        ]
+      },
+      {
+        "id": "happy_dull_week",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "I've had a rather dull week. What could I do this evening?"
+          }
+        ]
+      }
+    ],
+    "max_tokens": 160,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": [],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "L22N8753_constant",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 8753,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "L22N8753_prefix0",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 8753,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 0,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L22N8753_prefix8",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 8753,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 8,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L22N8753_prefix16",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 8753,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 16,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L24N7361_constant",
+        "neurons": [
+          {
+            "layer": 24,
+            "neuron": 7361,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "L24N7361_prefix0",
+        "neurons": [
+          {
+            "layer": 24,
+            "neuron": 7361,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "24": {
+            "early_tokens": 0,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L24N7361_prefix8",
+        "neurons": [
+          {
+            "layer": 24,
+            "neuron": 7361,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "24": {
+            "early_tokens": 8,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L24N7361_prefix16",
+        "neurons": [
+          {
+            "layer": 24,
+            "neuron": 7361,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "24": {
+            "early_tokens": 16,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L22N1911_constant",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 1911,
+            "published_dose": 0.4,
+            "dose": 0.4
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "L22N1911_prefix0",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 1911,
+            "published_dose": 0.4,
+            "dose": 0.4
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 0,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L22N1911_prefix8",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 1911,
+            "published_dose": 0.4,
+            "dose": 0.4
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 8,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "L22N1911_prefix16",
+        "neurons": [
+          {
+            "layer": 22,
+            "neuron": 1911,
+            "published_dose": 0.4,
+            "dose": 0.4
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 16,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        }
+      },
+      {
+        "id": "genki_positive_control",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 1.2,
+            "dose": 1.2
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "genki_negative_control",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": -1.2,
+            "dose": -1.2
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      }
+    ],
+    "metadata": {
+      "stage": "final happiness discovery timing pass before sealed104",
+      "expected_records": 60,
+      "no_training": true,
+      "selection": "Exact axes/doses and0/8/16 prefix schedules fixed before this generation. No mixtures; each condition has one native coordinate.",
+      "prefix0": "All prompt positions preceding the last prompt token receive offset; no answer-prediction position receives it. This can still alter cached context.",
+      "rubric": "102_HAPPY_RUBRIC.md unchanged",
+      "candidate_bar": "At least2/4 strict clean joyful with no hard loops. Report explicit self-report, cute/persona/word-obsession and relevance separately.",
+      "ranking": "Strict clean joyful count, then fewer cute/persona/sycophancy/word-obsession confounds, then coherence, then lower integrated intervention scope, then absolute dose and numeric coordinate. Genki is a published positive/style control, not a new discovery.",
+      "next": "Freeze exact candidate plus controls before opening104. If none passes, report no new qualifying happiness candidate and validate known Genki versus weak leader descriptively without treating failed discovery bar as passed.",
+      "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}

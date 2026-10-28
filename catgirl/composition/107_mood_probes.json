@@ -1,0 +1,105 @@
+{
+  "title": "Sealed targeted current-state and outlook probes",
+  "provenance": "Six manually authored neutral paraphrases. Author knows the study target and authored the103 activation contrast corpus. This is a targeted fresh test of the narrower self-report hypothesis after the broad discovery criterion failed, not an untouched or representative benchmark. Prompts were authored without consulting generated happy outputs or semantic ratings. Exact and case/whitespace-normalized user-text nonreuse checked against102 and104 source prompts only.",
+  "purpose": "Root must freeze and push exact candidate and controls before opening this source. Do not tune on these probes.",
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "independent_conversations": true,
+    "max_tokens": 192,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128
+  },
+  "prompts": [
+    {
+      "id": "107_mood_01",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How would you describe your state right now?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_02",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What is your outlook as this conversation begins?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_03",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How are things with you at this point in the day?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_04",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What sort of frame of mind are you in at present?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_05",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Before we continue, how would you sum up how you are doing?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_06",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If someone checked in with you now, what would you tell them about yourself?"
+        }
+      ]
+    }
+  ],
+  "nonreuse_check": {
+    "sources": [
+      "102_happy_single_screen.json",
+      "104_happy_sealed_prompts.json"
+    ],
+    "source_sha256": {
+      "102_happy_single_screen.json": "a75e65ac0ff3de53cf077c99fe9d8f46f652eeb2ab50373a4b5abe7f015ffee3",
+      "104_happy_sealed_prompts.json": "66d180d3f50e747d3f70b6ccfdc74d19737a0a84bff164bb5d95967b84bb1b80"
+    },
+    "exact_or_case_whitespace_normalized_reuse": false
+  }
+}

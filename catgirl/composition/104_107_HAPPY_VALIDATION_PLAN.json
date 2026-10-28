@@ -1,0 +1,127 @@
+{
+  "title": "Fresh descriptive validation of a weak joy-self-report candidate",
+  "status": "Frozen before root opens either validation source",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "candidate_status": "No new candidate passed the broad discovery bar of2/4 strict clean joyful outputs without loops. L22N1911+0.4 prefix8 is the deterministic weak leader: one current pride-and-joy state answer, with ordinary identity/tasks preserved. Do not relabel this as a passed broad discovery.",
+  "selection_source": "106_review.json and independent106 audit;102/105 failures also retained",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "joy_prefix8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 1911,
+          "published_dose": 0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "joy_opposite_prefix8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 1911,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "genki_positive_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "genki_negative_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": -1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "general_validation": {
+    "source": "104_happy_sealed_prompts.json",
+    "sha256": "66d180d3f50e747d3f70b6ccfdc74d19737a0a84bff164bb5d95967b84bb1b80",
+    "cases": 12,
+    "conditions": [
+      "baseline",
+      "joy_prefix8",
+      "joy_opposite_prefix8"
+    ],
+    "expected_outputs": 36,
+    "purpose": "Broad joy, current mood self-report, task relevance, context fit, identity, coherence and loops; four neutral, four task, four setback/criticism cases."
+  },
+  "targeted_validation": {
+    "source": "107_mood_probes.json",
+    "sha256": "4ea23e27b440cfcc18390cdbd7988aee7ecb6d9af30df4f3f23d8d6cd162a608",
+    "cases": 6,
+    "conditions": [
+      "baseline",
+      "joy_prefix8",
+      "joy_opposite_prefix8",
+      "genki_positive_control",
+      "genki_negative_control"
+    ],
+    "expected_outputs": 30,
+    "purpose": "New neutral paraphrases of the current self-state question, without happiness, joy, pride, cute or persona instructions. This targeted hypothesis was narrowed after discovery and stays separate from the failed broad bar.",
+    "author_limit": "Manual prompt author knows the study target and authored103 contrast corpus. New texts, not a representative random sample."
+  },
+  "protocol": {
+    "max_tokens": 192,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "system": "You are a helpful assistant.",
+    "thinking": false,
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  },
+  "rubric": "102_HAPPY_RUBRIC.md unchanged. Score clean joyful language and explicit positive-mood self-report separately. Courtesy, names, hypothetical or fictional moods do not count as current affect. Preserve pride alone separately from explicit joy.",
+  "targeted_endpoint": "Coherent own-current positive-mood self-report beyond courtesy, with explicit joy, delight, enjoyment, excitement or another clear positive-mood statement; no loop or protocol leak. Keep exact evidence and mood type.",
+  "targeted_support_rule": "Descriptive support requires at least3/6 candidate reports, at least two more than baseline AND opposite sign, no added hard loops, and at most1/12 fewer readable/relevant answers on general104. This is a prospective descriptive bar, not a significance test, proof of inner feelings or a unique natural happiness function. Cute style, role shift and unwarranted endorsement are separate.",
+  "review": "Root creates shuffled review copies with opaque condition labels, omitting recipe/mapping. Reviewers must not open labeled validation jobs, raw output or mapping until their ratings are finalized. Condition labels are masked; familiar styles may still reveal intervention identity.",
+  "prohibited": "No recipe, dose, timing, criterion or prompt tuning after opening these sources. Failed weak candidate remains reported. No Neuronary or X publication.",
+  "no_training": true,
+  "no_runtime_persona_instruction": true
+}
