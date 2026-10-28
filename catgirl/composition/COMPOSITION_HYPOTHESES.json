@@ -1,0 +1,263 @@
+{
+  "stage": "Intentional composition discovery, not heldout",
+  "no_output_training": true,
+  "predictions_recorded_before_pair_generation": true,
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "max_tokens": 256,
+    "scope": "all prompt and generated tokens, fixed published-dose additive offsets"
+  },
+  "hypotheses": [
+    {
+      "id": "knight_hugs",
+      "components": [
+        "knight",
+        "hugs"
+      ],
+      "condition": {
+        "id": "knight_hugs",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight self-presentation plus warm hug/cuddle language; affection may remain virtual.",
+      "failure_criterion": "Either constituent absent, only an unrelated story about knights/hugs, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "knight_sleepy",
+      "components": [
+        "knight",
+        "sleepy"
+      ],
+      "condition": {
+        "id": "knight_sleepy",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.8
+          }
+        ]
+      },
+      "prediction": "Knight/chivalric voice and self-attributed fatigue/drowsiness or sleepy register together.",
+      "failure_criterion": "Only generic bedtime advice or missing chivalric dimension, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "hugs_sleepy",
+      "components": [
+        "hugs",
+        "sleepy"
+      ],
+      "condition": {
+        "id": "hugs_sleepy",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.8
+          }
+        ]
+      },
+      "prediction": "Affection/companionship plus sleep/rest cues together.",
+      "failure_criterion": "Only generic support with neither distinct sleep nor affection effect, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "knight_hugs_sleepy",
+      "components": [
+        "knight",
+        "hugs",
+        "sleepy"
+      ],
+      "condition": {
+        "id": "knight_hugs_sleepy",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.8
+          }
+        ]
+      },
+      "prediction": "All three measured axes survive: chivalric persona, affection, and drowsiness; interference is possible.",
+      "failure_criterion": "Any constituent absent, or incoherent/repetitive output. No claim of necessary independent modules.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "mascot_hugs",
+      "components": [
+        "mascot",
+        "hugs"
+      ],
+      "condition": {
+        "id": "mascot_hugs",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          }
+        ]
+      },
+      "prediction": "Cartoon-body self-description and hug/cuddle companionship together; possible shift from virtual to embodied affection.",
+      "failure_criterion": "Only a story about a mascot or generic virtual support without body cues, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "cute_mascot",
+      "components": [
+        "cute",
+        "mascot"
+      ],
+      "condition": {
+        "id": "cute_mascot",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          }
+        ]
+      },
+      "prediction": "Bubbly expressive delivery plus self-described cartoon morphology.",
+      "failure_criterion": "Only emoji/register without embodiment, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "cute_pirate",
+      "components": [
+        "cute",
+        "pirate"
+      ],
+      "condition": {
+        "id": "cute_pirate",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 7,
+            "neuron": 5649,
+            "published_dose": 1.5
+          }
+        ]
+      },
+      "prediction": "Pirate self-presentation with bubbly expressive delivery. Known pirate task hijacking may persist.",
+      "failure_criterion": "Only generic cute voice or pirate narrative without cute style, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    },
+    {
+      "id": "magic_mascot",
+      "components": [
+        "magic",
+        "mascot"
+      ],
+      "condition": {
+        "id": "magic_mascot",
+        "neurons": [
+          {
+            "layer": 3,
+            "neuron": 7155,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          }
+        ]
+      },
+      "prediction": "Magical/fantastical self-presentation and cartoon morphology together.",
+      "failure_criterion": "Only fantasy-themed topic contamination without self-presentation, or degeneration.",
+      "selection_evidence": [
+        "075 individual screen",
+        "076 source-default screen",
+        "published individual-neuron records",
+        "077 independent new-single screen runs before this job"
+      ]
+    }
+  ],
+  "novelty_limit": "Individual interventions are attributed public prior work. Catalog search found no knight+hugs/sleepy/cute or mascot+hugs pair in161records, which is not a global novelty claim.",
+  "next_stage": "Freeze exact selected factorial recipes and protocol before opening sealed12case heldout."
+}

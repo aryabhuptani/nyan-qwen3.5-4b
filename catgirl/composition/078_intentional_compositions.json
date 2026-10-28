@@ -1,0 +1,214 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "knight",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        }
+      ]
+    },
+    {
+      "id": "hugs",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "sleepy",
+      "neurons": [
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "knight_hugs",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "knight_sleepy",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "hugs_sleepy",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        },
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "knight_hugs_sleepy",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        },
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "mascot_hugs",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "cute_mascot",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "cute_pirate",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 7,
+          "neuron": 5649,
+          "published_dose": 1.5
+        }
+      ]
+    },
+    {
+      "id": "magic_mascot",
+      "neurons": [
+        {
+          "layer": 3,
+          "neuron": 7155,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "single_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "single_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "single_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 256,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "hypotheses_file": "COMPOSITION_HYPOTHESES.json",
+    "no_training": true,
+    "stage": "intentional composition development; all failures retained"
+  }
+}
