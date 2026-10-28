@@ -1,6 +1,10 @@
-# Reproduce the narrow joy-self-report candidate
+# Reproduce the happiness study and its negative validation result
 
-This is a tested single-native-channel hypothesis, not a broadly validated happy personality. Every new discovery candidate missed the prospective broad threshold of two clean joyful answers out of four. The selected weak leader changes the direct state answer to “I am currently running with full pride and joy!” while its other discovery replies retain normal Qwen identity and readable task prose. Fresh general and targeted self-state validations are separate from those exposed discovery questions.
+The new candidate **failed fresh validation**: both reviewers found1/6 strong positive self-reports, consisting of pride alone, and0/6 joy-specific reports on new self-state probes. No new candidate met the broad discovery bar. Read [HAPPY_REPORT.md](HAPPY_REPORT.md) for exact primary/independent counts and limitations.
+
+The preset below preserves the tested single-native-channel hypothesis for reproduction, not a recommended robust happy personality. Its “I am currently running with full pride and joy!” response is a selected exposed-discovery quote that failed to generalize. A separate CLI smoke reproduces that same question; it is not independent validation.
+
+The known Genki control L13N4810+1.2 produced5–6/6 cheerful and3–4/6 joy-specific reports, with6/6 sustained cute style, on targeted probes. It remains a previously published cute/friendship effect, not a new happiness discovery or a broad-task validation.
 
 ```sh
 .venv/bin/python catgirl/composition/demo.py \
@@ -20,3 +24,8 @@ Candidate selection used an unsteered teacher-forced natural-activation contrast
 Discovery jobs102,105 and106 retain all172 generated outputs, all attempted signs/doses/timings, baseline, known Genki/sycophancy and unrelated-channel controls. The frozen104/107 plan precedes opening twelve general and six targeted neutral self-state questions. The general comparison has36 outputs; targeted comparison30. Review copies mask condition labels and shuffle rows; familiar styles can still identify interventions, so full blinding is not claimed. Raw labeled results and masked ratings are both retained.
 
 The measured behaviors are expressed cheerfulness and textual self-reported mood, scored separately from courtesy, cute style, names, persona changes, word obsession, coherence, task relevance and emotional context fit. They are not observations of subjective feeling. Do not describe the known Genki control as a new neuron discovery or a negative intervention as a validated sadness direction.
+
+
+To reproduce the known positive/style control using the same model and decoding, replace `--condition joy_prefix8` with `--condition genki_positive_control`. The matched negative control is `genki_negative_control`; its surreal responses do not establish sadness. Do not change coefficients or reinterpret the frozen validation to promote a failed candidate.
+
+Final measured evidence: [summary JSON](results/104_107_summary.json), [general raw36](results/104_happy_general_validation.jsonl), [targeted raw30](results/107_happy_mood_validation.jsonl), and [primary](results/104_107_primary_unmasked.csv)/[independent](results/104_107_independent_unmasked.csv) ratings. Recalculate aggregate counts with `.venv/bin/python catgirl/composition/104_107_analyze.py`; this is CPU analysis, not model generation.

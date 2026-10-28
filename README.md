@@ -43,6 +43,12 @@ The [fresh twelve-prompt comparison](catgirl/composition/results/100_REPORT.md) 
 
 A [fresh weak animal-sound composition test](catgirl/composition/results/101_REPORT.md) found a selected explicit catgirl-plus-Meow/喵 example, but more hard loops across prompts. Neither pulse passed the frozen gate. [Five-neuron image and exact reproduction](catgirl/composition/share/WEAK_COMPOSITION_IMAGE.md). [Updated “We made catgirl Qwen meow” graphic](catgirl/composition/share/qwen_catgirl_meow_composition_headline.png).
 
+## Happiness-neuron search
+
+A separate [single-neuron happiness search](catgirl/composition/HAPPY_REPORT.md) ranked all 294,912 native channels by unsteered activation contrasts and tested single-channel doses/timing. **No new candidate generalized convincingly.** The strongest new discovery example said “full pride and joy,” but fresh mood probes yielded 0/6 joy-specific self-reports. The published Genki control was cheerful on 5–6/6 probes, with cute style on all six. These are behavioral language effects, not evidence of subjective feelings.
+
+[Exact reproduction](catgirl/composition/HAPPY_REPRODUCE.md) · [Frozen validation plan](catgirl/composition/104_107_HAPPY_VALIDATION_PLAN.json) · [Both reviewers and full results](catgirl/composition/results/104_107_summary.json).
+
 ## Earlier learned activation experiment
 
 The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.

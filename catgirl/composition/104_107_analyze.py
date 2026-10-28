@@ -88,7 +88,7 @@ def main():
             section_metrics=[dict(dataset=d, condition=c, section=s, **metrics(rows)) for (d, c, s), rows in sorted(sections.items())],
             targeted_support=support,
             positive_evidence=[{k:r[k] for k in ['review_id','dataset','condition','prompt_id','positive_mood_self_report','cheerful_tone','strict_current_mood','strict_current_joy','evidence','notes','text']} for r in detailed if r['strict_current_mood'] or r['clean_joyful']])
-        fields = list(detailed[0])
+        fields = list(dict.fromkeys(k for row in detailed for k in row))
         with (RESULTS / ('104_107_' + reviewer + '_unmasked.csv')).open('w', newline='') as handle:
             writer = csv.DictWriter(handle, fieldnames=fields)
             writer.writeheader()
