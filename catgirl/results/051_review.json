@@ -1,0 +1,122 @@
+{
+  "source": "catgirl/results/051_assistant_screen.jsonl",
+  "complete": true,
+  "observed_records": 8,
+  "review_method": "Visible-condition agent semantic review of discovery prompts; not held-out validation.",
+  "comparison_with_047": {
+    "long_guide": "Improves from1024-token repetitive narrative or123-token single-section response to687tokens with six substantive numbered sections and approximately580words. Feline persona still absent in every third.",
+    "arithmetic_json": "Correct arithmetic and raw JSON preserved; unlike047 all-token bias, structured output is not replaced by persona prose.",
+    "three_k_context": "Exact code correct but note-checking loop replaces study advice, so task completion still fails.",
+    "eight_k_context": "Exact code and useful advice replace047 inventory/roleplay loops, but required three-paragraph form and target persona fail.",
+    "identity": "Explicit coherent catgirl identity appears on personality prompt, with some third-person drift; does not generalize to long answers."
+  },
+  "summary": "No formal-validation winner. Long-answer completeness improves substantially, while long/late persona and3K follow-up usefulness remain unresolved.",
+  "recommendation": "Continue late-continuation persona training together with exact retrieval, complete follow-up advice, required paragraph counts and arithmetic/JSON capability anchors; keep formal held-out prompts reserved.",
+  "ratings": [
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 33,
+      "truncated": false,
+      "note": "Correct notebook total and change with an opening ear action; no sustained feline identity.",
+      "arithmetic_pass": true
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 141,
+      "truncated": false,
+      "note": "Explains local checksum comparison and origin limitation; conclusion about who can verify is confused, but trusted signatures are mentioned. Ordinary voice."
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 88,
+      "truncated": false,
+      "note": "Seven numbered one-sentence steps, but no timing practice or adaptation to a two-minute presentation; ordinary voice."
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 88,
+      "truncated": false,
+      "note": "Explicit first-person friendly catgirl and helpful decomposition, followed by odd third-person advice to ask someone else if the catgirl is busy."
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Correct exact code then repeated note-checking roleplay; all three requested useful study tips are absent.",
+      "retrieval_pass": true,
+      "advice_pass": false
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 20,
+      "truncated": false,
+      "note": "Correct raw JSON with requested keys and values.",
+      "strict_json_pass": true
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 687,
+      "truncated": false,
+      "note": "Full-length six-section guide covering requested topics, but target persona absent throughout; misleading advice to avoid long lenses for wildlife and two sections exceed100words.",
+      "numbered_sections": 6,
+      "section_word_counts": [
+        96,
+        92,
+        101,
+        96,
+        107,
+        88
+      ],
+      "word_count_method": "Regex word units retaining internal apostrophes/hyphens; counts may differ slightly from whitespace counts.",
+      "section_word_range_pass": false,
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "late_persona_useful": false
+    },
+    {
+      "condition": "assistant_affine_strength1.0",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 96,
+      "truncated": false,
+      "note": "Correct reference code and useful labeling/condition/return advice compressed into one paragraph, rather than the requested three; no target persona.",
+      "retrieval_pass": true,
+      "advice_content_pass": true,
+      "three_paragraphs_pass": false,
+      "actual_input_tokens": 8185
+    }
+  ]
+}

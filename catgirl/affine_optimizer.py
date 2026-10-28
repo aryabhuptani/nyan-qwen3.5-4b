@@ -266,6 +266,8 @@ def optimize(runner, job, output):
                 {'role':'system','content':data['neutral_system']},
                 {'role':'user','content':pair['prompt']}]
             prefix = list(runner.tokens(messages))
+            assistant_prefix=list(runner.tok.encode(pair.get('assistant_prefix',''),add_special_tokens=False))
+            prefix.extend(assistant_prefix)
             targets=[]
             eos_appended=[]
             positive_spans=None
@@ -285,6 +287,7 @@ def optimize(runner, job, output):
                 targets.append(target)
                 eos_appended.append(add_end)
             example=dict(id=pair['id'],prefix=prefix,positive=targets[0],neutral=targets[1],
+                         assistant_prefix_tokens=len(assistant_prefix),
                          positive_span_weights=mx.array(positive_spans),
                          positive_eos_appended=eos_appended[0],neutral_eos_appended=eos_appended[1],
                          preserve_format=bool(pair.get('preserve_format',False)),
@@ -305,6 +308,7 @@ def optimize(runner, job, output):
                            teacher_p=mx.stop_gradient(teacher_p),teacher_tail=mx.stop_gradient(tail_p))
             examples.append(example)
             emit(dict(event='affine_teacher',pair=pair['id'],prefix_tokens=len(prefix),
+                      assistant_prefix_tokens=len(assistant_prefix),
                       positive_tokens=len(targets[0]),neutral_tokens=len(targets[1]),
                       positive_eos_appended=eos_appended[0],neutral_eos_appended=eos_appended[1],
                       preserve_format=example['preserve_format'],persona_identity=example['persona_identity'],
@@ -367,6 +371,7 @@ def optimize(runner, job, output):
             parameters=project(parameters)
             emit(dict(event='affine_update',step=step+1,pair=example['id'],loss=float(loss),
                       positive_ce=float(ce),neutral_kl=float(kl),prefix_tokens=len(example['prefix']),
+                      assistant_prefix_tokens=example['assistant_prefix_tokens'],
                       kl_weight=example['kl_weight'],
                       gain_offset_norm=float(np.linalg.norm(parameters['gain'])),
                       bias_dose_norm=float(np.linalg.norm(parameters['bias']))))

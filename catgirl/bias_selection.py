@@ -92,6 +92,8 @@ def select(runner, job, output):
             messages=pair['messages'] if 'messages' in pair else [
                 {'role':'system','content':data['neutral_system']}, {'role':'user','content':pair['prompt']}]
             prefix=list(runner.tokens(messages))
+            assistant_prefix=list(runner.tok.encode(pair.get('assistant_prefix',''),add_special_tokens=False))
+            prefix.extend(assistant_prefix)
             target=list(runner.tok.encode(pair['catgirl'],add_special_tokens=False))[:target_limit]
             if not prefix or not target:
                 raise ValueError('Empty prefix/target for '+pair['id'])
@@ -128,6 +130,7 @@ def select(runner, job, output):
             raw.append(g)
             normalized.append(g/max(float(np.linalg.norm(g)),1e-8))
             emit(dict(event='bias_probe',pair=pair['id'],catgirl_ce=float(value),
+                      assistant_prefix_tokens=len(assistant_prefix),
                       gradient_norm=float(np.linalg.norm(g)),prefix_tokens=len(prefix),target_tokens=len(target)))
             del cache,gradient
         gradients=np.stack(normalized)
