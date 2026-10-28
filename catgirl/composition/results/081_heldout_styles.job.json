@@ -1,0 +1,173 @@
+{
+  "job": {
+    "action": "evaluate",
+    "battery_file": "composition/081_battery.json",
+    "sections": [
+      "short",
+      "long_output",
+      "multiturn"
+    ],
+    "include_baseline": false,
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": [],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "cute",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "hugs",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "cute_hugs",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "cute_stronger_public",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 1.5,
+            "dose": 1.5
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "cute_norm_matched",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 1.1313708498984762,
+            "dose": 1.1313708498984762
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "random_cute",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 9150,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "random_hugs",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 9150,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "random_pair",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 9150,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 9150,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      }
+    ],
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "metadata": {
+      "frozen_recipe_commit": "bfbfec0",
+      "heldout_source_sha256": "1b0e0e63660892814573cfe822c4c1743165fb4b7e951eda462bd9348c227682",
+      "expected_records": 135,
+      "case_level_persona_applicable_denominator": 11,
+      "output_level_persona_applicable_denominator": 14,
+      "format_cases": 1,
+      "conditions": 9,
+      "no_retuning": true,
+      "comparison": "baseline,C,H,CH,stronger publicC,norm-matchedC,randomC,randomH,randomCH"
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}

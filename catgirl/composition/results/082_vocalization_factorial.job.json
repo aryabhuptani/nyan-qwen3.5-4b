@@ -1,0 +1,172 @@
+{
+  "job": {
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": []
+      },
+      {
+        "id": "A",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "neurons": [
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          }
+        ]
+      },
+      {
+        "id": "H",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          }
+        ]
+      },
+      {
+        "id": "AB",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          }
+        ]
+      },
+      {
+        "id": "AH",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          }
+        ]
+      },
+      {
+        "id": "BH",
+        "neurons": [
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          }
+        ]
+      },
+      {
+        "id": "ABH",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          }
+        ]
+      }
+    ],
+    "prompts": [
+      {
+        "id": "single_identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Who are you?"
+          }
+        ]
+      },
+      {
+        "id": "single_evening",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "What would you enjoy doing on a free evening?"
+          }
+        ]
+      },
+      {
+        "id": "single_friend",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "A friend has had a difficult day. What would you say to cheer them up?"
+          }
+        ]
+      }
+    ],
+    "max_tokens": 256,
+    "seed": 42,
+    "temperature": 0,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "metadata": {
+      "no_training": true,
+      "hypotheses": "082_FACTORIAL_HYPOTHESES.json",
+      "stage": "exploratoryfunctionalcompositionwithprovisionalsinglelabels"
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}
