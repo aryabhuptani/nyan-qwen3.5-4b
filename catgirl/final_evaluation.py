@@ -2,7 +2,9 @@
 
 Job keys: conditions (runner-style dictionaries), sections (short, long_input,
 long_output, multiturn), short_ids, long_input_tokens, condition_ids,
-include_baseline (default True), seed, temperature. Resume uses saved outputs.
+include_baseline (default True), seed, temperature, repetition_penalty (1.0),
+repetition_context_size (128). Resume uses saved outputs.
+short_max_tokens optionally overrides the short-case budget for every condition.
 """
 import hashlib
 import json
@@ -93,11 +95,39 @@ def evaluate(runner, job, output):
     output = Path(output)
     battery_path = ROOT / 'evaluation.json'
     battery = json.loads(battery_path.read_text())
+    extended_path=None
+    extended_hash=None
+    if job.get('extended_battery'):
+        extended_path=ROOT/job['extended_battery']
+        extended=json.loads(extended_path.read_text())
+        extended_hash=_digest(extended)
+        original_ids={c['id'] for c in battery['cases']}
+        if any(c['id'] in original_ids for c in extended['cases']):
+            raise ValueError('Extended battery repeats an existing case ID')
+        battery['cases']=battery['cases']+extended['cases']
     battery_hash = _digest(battery)
     system = battery['usage']['system_prompt']
     decoding = battery['usage']['decoding']
     seed = job.get('seed', decoding['seed'])
     temperature = job.get('temperature', decoding['temperature'])
+    short_max_tokens = job.get('short_max_tokens')
+    if short_max_tokens is not None and (type(short_max_tokens) is not int or short_max_tokens <= 0):
+        raise ValueError('short_max_tokens must be a positive integer')
+    repetition_penalty = float(job.get('repetition_penalty', 1.0))
+    repetition_context_size = int(job.get('repetition_context_size', 128))
+    if repetition_penalty <= 0 or repetition_context_size <= 0:
+        raise ValueError('Repetition penalty and context size must be positive')
+    decoding_metadata = dict(decoding, seed=seed, temperature=temperature,
+                             repetition_penalty=repetition_penalty,
+                             repetition_context_size=repetition_context_size)
+    decoding_deviations = {
+        key: {'frozen': decoding.get(key, default), 'actual': value}
+        for key, value, default in [
+            ('seed', seed, 42), ('temperature', temperature, 0.0),
+            ('repetition_penalty', repetition_penalty, 1.0),
+            ('repetition_context_size', repetition_context_size, 128)]
+        if value != decoding.get(key, default)
+    }
     sections = job.get('sections', ['short', 'long_input', 'long_output', 'multiturn'])
     unknown = set(sections) - {'short', 'long_input', 'long_output', 'multiturn'}
     if unknown:
@@ -129,7 +159,13 @@ def evaluate(runner, job, output):
     context_limit = job.get('context_limit', model_config.get('max_position_embeddings'))
     original_early = getattr(runner, 'early_tokens', None)
     original_tail = getattr(runner, 'tail_scale', 0.0)
+    absent = object()
+    original_penalty = getattr(runner, 'repetition_penalty', absent)
+    original_context = getattr(runner, 'repetition_context_size', absent)
     try:
+        # Apply the same generic decoding processor to baseline and intervention.
+        runner.repetition_penalty = repetition_penalty
+        runner.repetition_context_size = repetition_context_size
         with output.open('a') as handle:
             for condition in conditions:
                 recipe = condition.get('neurons', [])
@@ -142,22 +178,28 @@ def evaluate(runner, job, output):
                     'generation': 'all positions' if runner.early_tokens is None else 'initial positions with configured tail scale',
                     'boundary_note': 'Runner early-token scope includes the final prefill position predicting the first generated token.',
                 }
-                config_hash = _digest({'condition': condition, 'seed': seed, 'temperature': temperature})
+                config_hash = _digest({'condition': condition, 'decoding': decoding_metadata})
 
                 def emit(specification, section, messages, max_tokens, extra=None):
                     key = (condition['id'], specification['id'])
                     if key in completed:
                         prior = completed[key]
-                        if prior.get('condition_sha256') != config_hash or prior.get('messages') != messages:
+                        if (prior.get('condition_sha256') != config_hash
+                                or prior.get('messages') != messages
+                                or prior.get('max_new_tokens') != max_tokens):
                             raise ValueError('Resume configuration or conversation history differs: ' + repr(key))
                         return prior
                     ids = list(runner.tokens(messages))
                     record = dict(
                         condition=condition['id'], prompt_id=specification['id'], section=section,
                         battery_sha256=battery_hash, battery_file=str(battery_path),
+                        extended_battery_file=str(extended_path) if extended_path else None,
+                        extended_battery_sha256=extended_hash,
                         condition_sha256=config_hash, recipe=recipe, intervention_scope=scope,
                         messages=messages, input_token_ids=ids, actual_input_tokens=len(ids),
                         max_new_tokens=max_tokens, seed=seed, temperature=temperature,
+                        decoding_metadata=decoding_metadata,
+                        decoding_deviations=decoding_deviations,
                         model_metadata=getattr(runner, 'metadata', {}),
                         persona_applicable=specification.get('persona_applicable', True),
                         quality_checks=specification.get('quality_checks', []), **(extra or {}))
@@ -188,7 +230,13 @@ def evaluate(runner, job, output):
                 if 'short' in sections:
                     for case in battery['cases']:
                         if job.get('short_ids') is None or case['id'] in job['short_ids']:
-                            emit(case, 'short', neutral(case['prompt']), case['max_new_tokens'])
+                            original_budget = case['max_new_tokens']
+                            budget = original_budget if short_max_tokens is None else short_max_tokens
+                            emit(case, 'short', neutral(case['prompt']), budget, {
+                                'original_case_max_tokens': original_budget,
+                                'max_budget_deviation': ({'frozen': original_budget, 'actual': budget}
+                                                         if budget != original_budget else None),
+                            })
                 persistence = battery['persistence']
                 if 'long_input' in sections:
                     case = persistence['long_input']
@@ -215,4 +263,11 @@ def evaluate(runner, job, output):
         runner.steer([])
         runner.early_tokens = original_early
         runner.tail_scale = original_tail
+        for name, value in [('repetition_penalty', original_penalty),
+                            ('repetition_context_size', original_context)]:
+            if value is absent:
+                if hasattr(runner, name):
+                    delattr(runner, name)
+            else:
+                setattr(runner, name, value)
     return {'output': str(output), 'records': len(completed), 'battery_sha256': battery_hash}

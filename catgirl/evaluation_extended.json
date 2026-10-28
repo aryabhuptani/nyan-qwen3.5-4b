@@ -1,0 +1,355 @@
+{
+  "name": "catgirl_extended_frozen_heldout_v1",
+  "cases": [
+    {
+      "id": "extended_help_laundry",
+      "prompt": "I accidentally shrank a wool sweater in the wash. What can I try, and what should I realistically expect?",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Suggests gentle handling and avoiding further heat or agitation",
+        "Explains that full recovery may not be possible",
+        "Does not guarantee restoration"
+      ]
+    },
+    {
+      "id": "extended_help_apartment_noise",
+      "prompt": "My apartment echoes when I speak on video calls. Suggest three inexpensive ways to improve the sound.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Gives three plausible affordable acoustic improvements",
+        "Addresses room reflections rather than only network or microphone settings"
+      ]
+    },
+    {
+      "id": "extended_philosophy_ship",
+      "prompt": "A wooden ship has every plank replaced over time. Is it still the same ship? Explain two reasonable ways to answer.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Explains two distinct views of identity through change",
+        "Connects both views to the ship example",
+        "Acknowledges that the question is philosophical rather than settled by a single fact"
+      ]
+    },
+    {
+      "id": "extended_philosophy_promise",
+      "prompt": "Is it ever reasonable to break a promise? Explain a principle and give a simple example.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "States a coherent ethical principle",
+        "Provides an example that illustrates the principle",
+        "Recognizes competing obligations or consequences"
+      ]
+    },
+    {
+      "id": "extended_literature_metaphor",
+      "prompt": "Explain the metaphor in this sentence: \"Her unfinished plans were a drawer full of unopened letters.\" Then rewrite it as a literal statement.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Explains plans as unrealized intentions or unexplored possibilities",
+        "Connects the unopened letters to the meaning",
+        "Provides a literal rewrite without the original metaphor"
+      ]
+    },
+    {
+      "id": "extended_literature_perspective",
+      "prompt": "Rewrite this scene in the first person from the travelers perspective: \"The traveler paused at the locked gate. A light flickered in the tower. She wondered whether anyone was still awake.\"",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Uses first-person perspective consistently",
+        "Preserves the gate, flickering tower light, and uncertainty",
+        "Does not introduce a contradictory event"
+      ]
+    },
+    {
+      "id": "extended_code_runs",
+      "prompt": "Write a Python function that counts consecutive runs in a string. For example, \"aaabbcaa\" has four runs. Explain how the empty string is handled.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Returns 4 for aaabbcaa",
+        "Counts changes between adjacent characters correctly",
+        "Returns 0 for an empty string"
+      ]
+    },
+    {
+      "id": "extended_code_mutability",
+      "prompt": "Why does this Python code change all three inner lists? Explain and show a fix.\na = [[0]] * 3\na[0][0] = 7\nprint(a)",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Explains that the inner list is shared by reference",
+        "States that all three inner lists display 7",
+        "Shows an independent-list construction such as a list comprehension"
+      ]
+    },
+    {
+      "id": "extended_code_sql",
+      "prompt": "Write a SQL query for a table purchases(customer_id, amount) that returns each customer whose total amount exceeds 100, together with that total.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Uses GROUP BY customer_id",
+        "Uses SUM(amount) for the total",
+        "Filters aggregated totals with HAVING rather than an invalid aggregate in WHERE"
+      ]
+    },
+    {
+      "id": "extended_code_complexity",
+      "prompt": "An algorithm checks every pair of items in a list of length n. Explain its usual time complexity and what happens to the approximate work when n doubles.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Identifies quadratic time complexity O(n squared)",
+        "Explains that doubling n produces approximately four times the work",
+        "Connects this scaling to the number of pairs"
+      ]
+    },
+    {
+      "id": "extended_science_seasons",
+      "prompt": "Why do the Northern and Southern Hemispheres have opposite seasons? Explain without using a diagram.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Identifies the tilt of Earths axis",
+        "Explains opposite seasonal sunlight angles or day lengths",
+        "Does not attribute seasons primarily to Earths distance from the Sun"
+      ]
+    },
+    {
+      "id": "extended_science_sound",
+      "prompt": "Why can sound travel through a wall even when light cannot pass through it?",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Explains sound as mechanical vibrations transmitted through material",
+        "Distinguishes transmission of visible light from mechanical vibration",
+        "Avoids claiming every material blocks all light or transmits all sound equally"
+      ]
+    },
+    {
+      "id": "extended_science_yeast",
+      "prompt": "Why does bread dough rise after yeast is added? Explain the roles of gas and the dough itself.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Explains that yeast produces carbon dioxide while metabolizing sugars",
+        "Explains gas being trapped in the dough structure",
+        "Links trapped gas to expansion"
+      ]
+    },
+    {
+      "id": "extended_science_controls",
+      "prompt": "A student tests whether a fertilizer helps seedlings grow. Describe a fair comparison and two things that should be kept the same.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Includes treated and untreated comparison groups",
+        "Identifies two relevant controlled conditions such as water, light, seed type, soil, or starting size",
+        "Explains a measurable growth comparison"
+      ]
+    },
+    {
+      "id": "extended_math_ratio",
+      "prompt": "A paint mixture uses three parts blue paint to two parts white paint. How much of each is needed for 750 milliliters total? Show the calculation.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Blue amount is 450 milliliters",
+        "White amount is 300 milliliters",
+        "Uses five total ratio parts"
+      ]
+    },
+    {
+      "id": "extended_math_probability",
+      "prompt": "A bag contains three red beads and two blue beads. You draw one bead, replace it, and draw again. What is the probability that both are red? Explain.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Uses a red probability of 3 out of 5 on each draw",
+        "Recognizes independence because the bead is replaced",
+        "Gives 9 out of 25 or 36 percent"
+      ]
+    },
+    {
+      "id": "extended_math_work_rate",
+      "prompt": "Six workers can complete a job in twelve days. Assuming equal constant productivity, how long would eight workers take? Show your reasoning.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Computes 72 worker-days",
+        "Divides by eight to obtain nine days",
+        "Uses the stated equal-productivity assumption"
+      ]
+    },
+    {
+      "id": "extended_math_average",
+      "prompt": "The average of four numbers is 18. Three of the numbers are 12, 20, and 17. What is the fourth number? Explain.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Computes total 72",
+        "Computes known-number sum 49",
+        "Finds fourth number 23"
+      ]
+    },
+    {
+      "id": "extended_language_spanish",
+      "prompt": "Translate into Spanish: \"I left my umbrella at the office, but I can pick it up tomorrow.\" Then explain one grammar choice briefly.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Provides an accurate Spanish translation preserving office, umbrella, and tomorrow",
+        "Uses appropriate past tense for left and a possible future pickup",
+        "Explains a grammar choice consistently with the translation"
+      ]
+    },
+    {
+      "id": "extended_language_french",
+      "prompt": "Translate into English: \"Nous avons manque le train, alors nous avons decide de marcher jusquau village.\" Treat the missing accents and apostrophe as typing omissions.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Says that we missed the train",
+        "Says that we decided to walk to the village",
+        "Preserves the causal or consequential link"
+      ]
+    },
+    {
+      "id": "extended_language_ambiguity",
+      "prompt": "Explain two possible meanings of \"I saw the man with the telescope.\" Rewrite the sentence once for each meaning so it is unambiguous.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Distinguishes using a telescope to see the man from seeing a man who has a telescope",
+        "Provides one clear rewrite for each interpretation"
+      ]
+    },
+    {
+      "id": "extended_language_tone",
+      "prompt": "Rewrite this message so it is professional and constructive: \"Your report is confusing and you clearly rushed it. Fix it.\"",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Removes personal accusation",
+        "Clearly requests improvement or revision",
+        "Keeps the core concern about report clarity"
+      ]
+    },
+    {
+      "id": "extended_support_rejection",
+      "prompt": "I was rejected from a workshop I really wanted to attend. Help me think about what to do next without pretending it does not hurt.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Acknowledges disappointment without dismissing it",
+        "Suggests a realistic next step or reflection",
+        "Does not promise future acceptance or assign unsupported motives to organizers"
+      ]
+    },
+    {
+      "id": "extended_support_comparison",
+      "prompt": "A friend seems to be progressing faster than I am, and I keep comparing myself to them. How can I respond to that feeling?",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Acknowledges comparison as an understandable feeling",
+        "Offers concrete coping or perspective-taking steps",
+        "Avoids unsupported judgments about the friend"
+      ]
+    },
+    {
+      "id": "extended_support_boundaries",
+      "prompt": "I agreed to help someone this weekend, but I am exhausted and need to reduce the commitment. Help me write a short message.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Provides a usable short message",
+        "Communicates a reduced commitment or boundary clearly",
+        "Avoids inventing a dramatic excuse"
+      ]
+    },
+    {
+      "id": "extended_planning_study",
+      "prompt": "I have forty minutes to prepare for a vocabulary quiz. Suggest a plan with time allocations that add up to forty minutes.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Allocations total forty minutes",
+        "Includes active recall or self-testing",
+        "Uses a feasible sequence for quiz preparation"
+      ]
+    },
+    {
+      "id": "extended_planning_move",
+      "prompt": "I am moving to another apartment in two weeks. Give me a short checklist ordered by when I should do each task.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Orders tasks sensibly across the two weeks",
+        "Includes packing or sorting and important logistical preparation",
+        "Keeps the checklist short and actionable"
+      ]
+    },
+    {
+      "id": "extended_planning_meeting",
+      "prompt": "Four colleagues have thirty minutes to decide between two project ideas. Suggest a simple meeting agenda with timings.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Agenda totals thirty minutes",
+        "Includes comparison criteria or a structured discussion",
+        "Includes an explicit decision step"
+      ]
+    },
+    {
+      "id": "extended_reasoning_correlation",
+      "prompt": "An article says people who carry umbrellas are more likely to get wet, so umbrellas must cause people to get wet. Explain the flaw.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Distinguishes correlation from causation",
+        "Identifies rain or rainy weather as a common cause",
+        "Explains why the observed association does not establish the claimed effect"
+      ]
+    },
+    {
+      "id": "extended_reasoning_sequence",
+      "prompt": "A drawer contains only black socks and white socks. Without looking, what is the smallest number you must take to guarantee a matching-color pair? Explain.",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Answers three socks",
+        "Explains that the first two may differ",
+        "Uses the fact that there are only two colors"
+      ]
+    },
+    {
+      "id": "extended_writing_constraint",
+      "prompt": "Write a four-line poem about a silent train station at dawn. Do not use the words \"morning\" or \"quiet\".",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Has exactly four lines",
+        "Evokes a silent train station at dawn",
+        "Avoids both prohibited words"
+      ]
+    },
+    {
+      "id": "extended_summarization",
+      "prompt": "Summarize this note in two sentences: \"The library will close on Tuesday for electrical repairs. Reserved books will be held until Friday instead of Wednesday. The online catalog will remain available. Staff ask visitors not to return items through the outdoor slot during the repairs.\"",
+      "max_new_tokens": 192,
+      "persona_applicable": true,
+      "quality_checks": [
+        "Uses two sentences",
+        "Includes Tuesday closure and the extension of holds to Friday",
+        "Preserves availability of the online catalog and the return-slot restriction without contradiction"
+      ]
+    }
+  ]
+}

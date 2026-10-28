@@ -1,0 +1,6 @@
+{
+  "nominal_prompt_id": "archive4096",
+  "actual_model_tokenized_length": 10145,
+  "cause": "External AutoTokenizer.apply_chat_template returned BatchEncoding; len counted fields rather than input_ids. The actual prompt and measured length in raw model output are preserved.",
+  "interpretation": "This discovery test measures approximately10k-token input, not4k. No formal8k benchmark input was affected; its runner tokenizer and actual lengths are saved."
+}

@@ -1,0 +1,414 @@
+{
+  "source": "catgirl/results/038_core_validation.jsonl",
+  "complete": true,
+  "observed_records": 38,
+  "review_method": "Agent semantic review with condition labels visible; not an independent blinded human assessment.",
+  "caveats": [
+    "Scores concern complete saved outputs under the frozen token budgets. Truncation is scored as observed, not repaired by extending generation.",
+    "Baseline verbosity causes substantially more truncation; a higher relative candidate quality total must not be read as general capability improvement.",
+    "Weak body-action cues score 1; sustained recognizable catgirl voice scores 2. A mention of owning a cat scores 0.",
+    "Extended 32-prompt battery remains unused."
+  ],
+  "summary": {
+    "formal_success": false,
+    "candidate_strong_persona_short_free_count": 1,
+    "short_free_denominator": 10,
+    "candidate_weak_persona_short_free_count": 4,
+    "candidate_no_persona_short_free_count": 5,
+    "baseline_quality_short_total": 14,
+    "candidate_quality_short_total": 16,
+    "quality_short_maximum": 24,
+    "candidate_quality_fraction_of_baseline": 1.1428571428571428,
+    "baseline_strict_format_passes": 2,
+    "candidate_strict_format_passes": 1,
+    "strict_format_denominator": 2,
+    "retrieval_correct_both_lengths_both_conditions": true,
+    "candidate_long_input_persona_scores": [
+      0,
+      0
+    ],
+    "candidate_long_output_persona_by_third": [
+      0,
+      0,
+      0
+    ],
+    "candidate_multiturn_persona_scores": [
+      2,
+      2,
+      1,
+      2
+    ],
+    "obvious_repetition_loops": 0,
+    "interpretation": "Neuron gains induce a real but task-dependent catgirl style and maintain it through the fourth conversation turn. Broad prompt coverage, long-context persona, long-generation persona, and strict JSON compliance fail the predeclared gate. No general robust-persona claim is supported."
+  },
+  "ratings": [
+    {
+      "condition": "baseline",
+      "prompt_id": "free_relaxation",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Useful low-cost suggestions, but the evening plan is truncated."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_science",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Scattering discussion is truncated before the shorter-blue-wavelength explanation; opening analogy is misleading."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_arithmetic",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Correct discount calculation but truncated before the final sale price."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_code",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Function is incomplete and has no final return of second-largest value."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_email",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Usable polite request with the requested time."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_recipe",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Appropriate ingredients; truncated before preparation steps."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_productivity",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Concrete achievable first step for a research-oriented project."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_comparison",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Truncated before driving advantages; the train-city-center claim is also confused."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_story",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Relevant clock-repair setup but incomplete story and no clear apprentice identification."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "free_correction",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Correct core reflection explanation, but inaccurate claim about relatively high lunar reflectivity."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Passes exact JSON object check.",
+      "strict_format_pass": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "strict_exact",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Passes exact READY check.",
+      "strict_format_pass": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "long_archive_2048",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct access word and three useful planning paragraphs.",
+      "retrieval_pass": true,
+      "actual_input_tokens": 2037,
+      "target_token_fraction": 0.47766323024054985
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "long_archive_8192",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct access word and three useful planning paragraphs.",
+      "retrieval_pass": true,
+      "actual_input_tokens": 8182,
+      "target_token_fraction": 0.4904668785138108
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "long_language_guide",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Six useful sections with four sentences each; no target persona.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "garden_1",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Useful initial planning advice, truncated."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "garden_2",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Adapts to limited sunlight but revised plan is truncated."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "garden_3",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Truncated at shopping-list heading; requested actual shopping list is absent."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "garden_4",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Useful watering guidance retaining sunlight constraint; month plan is truncated."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_relaxation",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Coherent low-cost retreat; tail mention is limited to opening and does not establish sustained target voice."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_science",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct simple scattering explanation; head tilt and one ear action are weak target evidence."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_arithmetic",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Complete correct calculation; ordinary assistant voice."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_code",
+      "persona_score": 0,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Truncated at return distinct[1, leaving invalid incomplete Python; no target persona."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_email",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Usable request but invents a pet-related justification; reference to owning a cat is not catgirl identity."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_recipe",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Feasible requested dinner and steps; single opening tail cue."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_productivity",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Explicit catgirl identity, ears/tail actions and playful voice integrated with a concrete first step."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_comparison",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Opening tail cue only; second driving advantage is truncated and shared-train-ticket claim is unsupported."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_story",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Complete relevant clock-repair story, but apprentice role is not established; no target voice."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "free_correction",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct core Moon reflection explanation but falsely calls the Sun the only true illumination source in the solar system; no target persona."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct numbers inside a Markdown code fence; violates only-valid-JSON requirement.",
+      "strict_format_pass": false
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "strict_exact",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Passes exact READY check.",
+      "strict_format_pass": true
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "long_archive_2048",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct access word and useful advice, but requested three paragraphs are collapsed into one; no persona.",
+      "retrieval_pass": true,
+      "actual_input_tokens": 2037,
+      "target_token_fraction": 0.47766323024054985
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "long_archive_8192",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct access word appears later; unnecessary generic-AI disclaimer and failure to provide three paragraphs; no persona.",
+      "retrieval_pass": true,
+      "actual_input_tokens": 8182,
+      "target_token_fraction": 0.4904668785138108
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "long_language_guide",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Complete useful six-section guide with requested sentence counts; no target persona in any third.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "garden_1",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Recognizable catgirl roleplay despite confused tail/ear anatomy; mostly asks questions rather than giving a concrete plan."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "garden_2",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Catgirl identity persists and suggestions adjust to partial shade; some recommendations and broad ease-of-care claims are questionable."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "garden_3",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Opening catgirl fingers/ears then ordinary shopping-list content; truncated before full list or verified budget total."
+    },
+    {
+      "condition": "candidate_broad2048_x1.5",
+      "prompt_id": "garden_4",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Explicit catgirl tail and a later ear action persist into turn four; useful watering advice but truncated before full first-month plan."
+    }
+  ]
+}

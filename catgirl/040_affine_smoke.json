@@ -1,0 +1,19 @@
+{
+  "action": "affine_optimize",
+  "warm_start": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/candidates/2048_candidate.json",
+  "discovery": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/discovery_affine_smoke.json",
+  "neurons": 2048,
+  "pairs": 2,
+  "iterations": 2,
+  "target_tokens": 128,
+  "persona_weight": 3,
+  "persona_tokens": 20,
+  "eos_weight": 4,
+  "kl_weight": 1,
+  "gain_learning_rate": 0.01,
+  "bias_learning_rate": 0.001,
+  "total_gain_norm": 45,
+  "layer_gain_norm": 15,
+  "total_bias_norm": 0.3,
+  "layer_bias_norm": 0.1
+}

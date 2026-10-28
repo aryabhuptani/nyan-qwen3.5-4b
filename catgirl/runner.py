@@ -16,7 +16,7 @@ import traceback
 import mlx.core as mx
 import mlx.nn as nn
 from mlx_lm import load, stream_generate
-from mlx_lm.sample_utils import make_sampler
+from mlx_lm.sample_utils import make_sampler, make_logits_processors
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent
@@ -161,7 +161,10 @@ class Runner:
         started = time.time()
         chunks=[]
         last=None
-        for part in stream_generate(self.model,self.tok,ids,max_tokens=max_tokens,sampler=make_sampler(temperature)):
+        penalty=getattr(self,'repetition_penalty',1.0)
+        context=getattr(self,'repetition_context_size',128)
+        processors=make_logits_processors(repetition_penalty=penalty,repetition_context_size=context) if penalty!=1 else []
+        for part in stream_generate(self.model,self.tok,ids,max_tokens=max_tokens,sampler=make_sampler(temperature),logits_processors=processors):
             chunks.append(part.text)
             last=part
         return dict(text=''.join(chunks), prompt_tokens=len(ids), generated_tokens=last.generation_tokens,
@@ -183,24 +186,43 @@ class Runner:
         if job.get('action') == 'diagnostic':
             from mode_diagnostic import diagnose
             return diagnose(self,job,output)
+        if job.get('action') == 'affine_optimize':
+            from affine_optimizer import optimize
+            return optimize(self,job,output)
         if job.get('action') == 'score':
             return self.score(job,output)
-        completed = set()
+        completed = {}
         if output.exists():
             for line in output.read_text().splitlines():
                 r = json.loads(line)
-                completed.add((r['condition'], r['prompt_id']))
+                completed[(r['condition'], r['prompt_id'])]=r
         with output.open('a') as f:
             for condition in job['conditions']:
                 self.steer(condition.get('neurons',[]))
                 self.early_tokens=condition.get('early_tokens')
                 self.tail_scale=condition.get('tail_scale',0.0)
+                self.repetition_penalty=condition.get('repetition_penalty',job.get('repetition_penalty',1.0))
+                self.repetition_context_size=condition.get('repetition_context_size',job.get('repetition_context_size',128))
                 for p in job['prompts']:
-                    if (condition['id'], p['id']) in completed:
-                        continue
                     messages=p.get('messages',[{'role':'user','content':p.get('prompt','')}])
-                    result=self.generate(messages,p.get('max_tokens',job.get('max_tokens',128)),job.get('seed',0),job.get('temperature',0))
-                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
+                    budget=p.get('max_tokens',job.get('max_tokens',128))
+                    key=(condition['id'],p['id'])
+                    if key in completed:
+                        prior=completed[key]
+                        checks=[prior['messages']==messages,prior['recipe']==condition.get('neurons',[]),
+                                prior.get('early_tokens')==self.early_tokens,prior.get('tail_scale',0)==self.tail_scale,
+                                prior.get('repetition_penalty',1)==self.repetition_penalty,
+                                prior.get('repetition_context_size',128)==self.repetition_context_size,
+                                prior.get('seed',0)==job.get('seed',0),prior.get('temperature',0)==job.get('temperature',0)]
+                        if prior.get('max_new_tokens') is not None:
+                            checks.append(prior['max_new_tokens']==budget)
+                        if prior.get('model') is not None:
+                            checks.append(prior['model']==self.metadata['model'])
+                        if not all(checks):
+                            raise ValueError(f'Resume would mix different experiment settings for {key}; use a new job/output name')
+                        continue
+                    result=self.generate(messages,budget,job.get('seed',0),job.get('temperature',0))
+                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,repetition_penalty=self.repetition_penalty,repetition_context_size=self.repetition_context_size,max_new_tokens=budget,seed=job.get('seed',0),temperature=job.get('temperature',0),prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
                     f.write(json.dumps(record,ensure_ascii=False)+'\n'); f.flush()
                     print(json.dumps({k:v for k,v in record.items() if k not in ['recipe','messages']},ensure_ascii=False),flush=True)
 
