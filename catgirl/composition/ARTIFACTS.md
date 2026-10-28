@@ -40,3 +40,9 @@ The separate mild image shows an actual097 reply with +0.525 cat-word dose: [PNG
 [Original-dose meowing image](share/qwen_catgirl_original_meow_values.png) and [provenance](share/qwen_catgirl_original_meow_values.source.json) show an actual fresh100 introduction at the original +0.3 cat dose, separately from the mild image. [Frozen100 plan](100_VALIDATION_PLAN.json) preceded opening twelve new prompts for both existing recipes; [100 report](results/100_REPORT.md) records the paired result.
 
 [Combined meow follow-up share ZIP](artifacts/nyan-qwen-meow-followup-share.zip) contains both exact-value images and provenance, both recipes/CSVs, and99/100 reports and raw-text ratings. The fresh comparison favors keeping the original dose; the mild image remains an occasional selected example.
+
+## Weak animal-sound composition101
+
+[Full101 report](results/101_REPORT.md), [80 raw outputs](results/101_weak_composition.jsonl), [ratings/settings CSV](results/101_ratings.csv), [CPU analyzer](101_analyze.py), [frozen plan](101_WEAK_COMPOSITION_PLAN.json), and independent audits of [original](results/101_independent_guard.json) and [mild](results/101_mild_independent_guard.json) arms preserve the fresh matched comparison. Neither pulse passed the frozen personality/loop gate. A selected mild-pulse output explicitly identifies as a catgirl and performs Meow/喵; its continuation coherence is reviewer-sensitive.
+
+[Exact-values image](share/qwen_catgirl_weak_animal_composition.png) · [SVG](share/qwen_catgirl_weak_animal_composition.svg) · [source provenance](share/qwen_catgirl_weak_animal_composition.source.json) · [reproduction and interpretation](share/WEAK_COMPOSITION_IMAGE.md) · [exploratory demo recipes](101_EXPLORATORY_PRESETS.json). These recipes are tested alternatives, not promoted defaults. [Share ZIP](artifacts/nyan-qwen-weak-composition-share.zip).

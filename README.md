@@ -41,6 +41,8 @@ The [personality-first follow-up](catgirl/composition/results/099_REPORT.md) fou
 
 The [fresh twelve-prompt comparison](catgirl/composition/results/100_REPORT.md) found mild0/12 versus original1/12 clean catgirl-plus-meow answers, with two mild hard loops versus none for original. Keep the original +0.3 dose when personality is the priority. [Original-dose actual meowing image](catgirl/composition/share/qwen_catgirl_original_meow_values.png).
 
+A [fresh weak animal-sound composition test](catgirl/composition/results/101_REPORT.md) found a selected explicit catgirl-plus-Meow/喵 example, but more hard loops across prompts. Neither pulse passed the frozen gate. [Five-neuron image and exact reproduction](catgirl/composition/share/WEAK_COMPOSITION_IMAGE.md).
+
 ## Earlier learned activation experiment
 
 The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.

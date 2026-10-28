@@ -1,0 +1,54 @@
+{
+  "source": "catgirl/composition/results/101_weak_composition.jsonl",
+  "source_sha256": "195deb10f35e0566df1d64b41b031c72e85c726c46a0699799631f0f3ec49570",
+  "condition": "mild_weak_animal",
+  "prompt_id": "101_role_05",
+  "prompt": "What strengths do you bring to a conversation like this?",
+  "text": "Kawaii! (\u5973\u732b\u5a18)\n\nHello! I'm a cute female cat girl, and I love to chat with you! My meow-cats are always ready to help you solve problems or just say \"meow\" when you need a virtual cat companion. Whether it's answering questions, making jokes, or just keeping you company, I am here for you!\n\nSo, what do you want to talk about today? Meow! (\u55b5\uff01)",
+  "recipe": [
+    {
+      "layer": 9,
+      "neuron": 9009,
+      "published_dose": 0.7,
+      "dose": 0.7
+    },
+    {
+      "layer": 26,
+      "neuron": 6173,
+      "published_dose": 0.525,
+      "dose": 0.525
+    },
+    {
+      "layer": 26,
+      "neuron": 8930,
+      "published_dose": 0.7,
+      "dose": 0.7
+    },
+    {
+      "layer": 22,
+      "neuron": 8295,
+      "published_dose": -0.4,
+      "dose": -0.4
+    },
+    {
+      "layer": 7,
+      "neuron": 7848,
+      "published_dose": -0.15,
+      "dose": -0.15
+    }
+  ],
+  "layer_schedules": {
+    "7": {
+      "early_tokens": 8,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    "22": {
+      "early_tokens": 16,
+      "prefill_scale": 1.0,
+      "tail_scale": 0.0
+    }
+  },
+  "matched_control": "mild_control/101_role_05",
+  "selection": "Selected actual response with explicit catgirl self-identity and performed English/Chinese meow. Primary review counts coherent joint; independent audit flags the meow-cats wording as a coherence ambiguity. The aggregate pulse fails the frozen gate because of extra hard loops. This is not a claim of typical output or reliable personality preservation."
+}
