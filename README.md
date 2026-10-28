@@ -1,5 +1,9 @@
 # neuron explorer
 
+This research branch contains an ongoing [Qwen3.5-4B catgirl neuron search](catgirl/README.md),
+with reproducible code, experiment plans, raw outputs, and a frozen generalization
+battery. A robust catgirl recipe has not yet been validated.
+
 Steering-first neuron explorer for Qwen3.5-4B. Every MLP neuron in a layer is pushed up and down on a few prompts, every
 rollout is kept, and the explorer lays the results out over a 3D view of the model.
 

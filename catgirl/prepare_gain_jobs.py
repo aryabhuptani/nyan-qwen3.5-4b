@@ -10,11 +10,16 @@ def prepare(source,destination):
     data=json.loads(source.read_text())
     system=json.loads((ROOT/'discovery.json').read_text())['neutral_system']
     conditions=[]
+    bounds=data.get('parameter_budget',{})
+    minimum=bounds.get('gain_min',0)
+    maximum=bounds.get('gain_max',8)
+    minimum=0 if minimum is None else minimum
+    maximum=8 if maximum is None else maximum
     for c in data['conditions']:
         size=len(c['neurons'])
-        for strength in ([.5,1,1.5,2] if size==512 else [.5,1,2]):
+        for strength in ([.5,1,1.5,2] if size>=512 else [.5,1,2]):
             neurons=[{'layer':n['layer'],'neuron':n['neuron'],'mode':'mul',
-                      'factor':max(0,min(8,1+strength*(n['factor']-1)))} for n in c['neurons']]
+                      'factor':max(minimum,min(maximum,1+strength*(n['factor']-1)))} for n in c['neurons']]
             conditions.append({'id':c['id']+f'_x{strength}','neurons':neurons})
     prompts=[]
     for identifier,text in [

@@ -2,8 +2,9 @@
 
 Runner.run can dispatch ``return optimize(self, job, output)``. Suggested job:
 {"action":"optimize", "layers":[20,21,22,23,24,25,26,27], "iterations":18}.
-The initial six gradient probes and at most 24 optimization updates use one
-matched pair at a time. Exported doses use Runner.steer's exact convention.
+Gradient probes and optimization updates use one matched pair at a time.
+Exported additive doses use Runner.steer's exact convention; gains are exact
+multiplicative factors. Optional EOS labels explicitly teach answer termination.
 """
 import json
 from pathlib import Path
@@ -19,7 +20,7 @@ def optimize(runner, job, output):
     output.parent.mkdir(parents=True, exist_ok=True)
     source = Path(job.get('discovery', Path(__file__).with_name('discovery.json')))
     data = json.loads(source.read_text())
-    pairs = data['pairs'][:max(1, min(6, int(job.get('pairs', 6))))]
+    pairs = data['pairs'][:max(1, min(24, int(job.get('pairs', 6))))]
     layers = [int(x) for x in job.get('layers', list(range(20, 28)))]
     if not layers or len(set(layers)) != len(layers):
         raise ValueError('layers must be a nonempty list of distinct indices')
@@ -33,13 +34,25 @@ def optimize(runner, job, output):
     persona_tokens = max(0, int(job.get('persona_tokens', 20)))
     if not np.isfinite(persona_weight) or persona_weight <= 0:
         raise ValueError('persona_weight must be finite and positive')
+    append_eos = bool(job.get('append_eos', False))
+    eos_weight = float(job.get('eos_weight', 1.0))
+    if not np.isfinite(eos_weight) or eos_weight <= 0:
+        raise ValueError('eos_weight must be finite and positive')
+    eos_token_id = None
+    if append_eos:
+        eos = runner.tok.eos_token_id
+        if isinstance(eos, (list, tuple)):
+            eos = next((token for token in eos if token is not None), None)
+        if not isinstance(eos, (int, np.integer)) or isinstance(eos, bool) or eos < 0:
+            raise ValueError('append_eos requires a valid tokenizer EOS token ID')
+        eos_token_id = int(eos)
     scope = job.get('scope', 'all')
     if scope not in ('all', 'boundary'):
         raise ValueError("scope must be 'all' or 'boundary'")
     persona_prefix = bool(job.get('persona_prefix', gain_mode))
     max_steps = int(job.get('max_steps', 128 if gain_mode else 30-len(pairs)))
     iterations = max(0, min(max_steps, int(job.get('iterations', 90 if gain_mode else 18))))
-    max_size = min(512, len(layers)*width, int(job.get('neurons', 128)))
+    max_size = min(8192, len(layers)*width, int(job.get('neurons', 128)))
     if max_size < 1:
         raise ValueError('neurons must be positive')
     penalty = float(job.get('l2', 0.001 if gain_mode else 0.08))
@@ -48,8 +61,8 @@ def optimize(runner, job, output):
     layer_budget = float(job.get('layer_gain_norm' if gain_mode else 'layer_dose_norm', 4.0 if gain_mode else 0.18))
     total_budget = float(job.get('total_gain_norm' if gain_mode else 'total_dose_norm', 10.0 if gain_mode else 0.4))
     gain_min, gain_max = float(job.get('gain_min', 0.0)), float(job.get('gain_max', 5.0))
-    if gain_min > 1 or gain_max < 1 or gain_min < 0:
-        raise ValueError('gain bounds must be nonnegative and contain 1')
+    if gain_min > 1 or gain_max < 1 or not np.isfinite([gain_min,gain_max]).all():
+        raise ValueError('gain bounds must be finite and contain 1')
     state_fields = ('delta', 'gain', 'early_tokens', 'position_mask', 'seen', 'boundary', 'capture', 'captured')
     previous = [{name:getattr(m, name, None) for name in state_fields} for m in runner.mlps]
     was_training = bool(getattr(runner.model, 'training', False))
@@ -105,6 +118,8 @@ def optimize(runner, job, output):
             target = runner.tok.encode(text, add_special_tokens=False)[:target_limit]
             if not target:
                 raise ValueError('Empty continuation for '+pair['id'])
+            if append_eos:
+                target = list(target)+[eos_token_id]
             # Position prefix_len-1 predicts target[0]; the final target token
             # is a label and must not be fed as an unshifted prediction input.
             ids = mx.array(prefix+target[:-1], dtype=mx.int32)[None]
@@ -135,6 +150,11 @@ def optimize(runner, job, output):
         losses = nn.losses.cross_entropy(logits.astype(mx.float32), labels, reduction='none')
         weights = mx.where(mx.arange(labels.shape[1]) < persona_tokens,
                            mx.array(persona_weight), mx.array(1.0))
+        if append_eos:
+            # EOS has its own explicit weight, independent of whether a short
+            # answer places it inside the initial persona-token window.
+            weights = mx.where(mx.arange(labels.shape[1]) == labels.shape[1]-1,
+                               mx.array(eos_weight), weights)
         return mx.sum(losses*weights[None, :])/(mx.sum(weights)*labels.shape[0])
 
     # Cap the reward for suppressing neutral answers. This prevents maximizing
@@ -303,6 +323,8 @@ def optimize(runner, job, output):
                       mode=mode,
                       scope=scope, persona_prefix=persona_prefix,
                       persona_weight=persona_weight, persona_tokens=persona_tokens,
+                      pair_count=len(pairs), append_eos=append_eos,
+                      eos_weight=eos_weight, eos_token_id=eos_token_id,
                       warm_start=str(warm_path) if warm_path is not None else None,
                       model=runner.metadata.get('model'), layers=layers,
                       training_pairs=[p['id'] for p in pairs], target_tokens=target_limit,

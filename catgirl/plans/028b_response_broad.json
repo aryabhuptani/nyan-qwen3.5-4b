@@ -1,0 +1,18 @@
+{
+  "action": "residual_search",
+  "discovery": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/discovery.json",
+  "capture_position": "assistant_mean",
+  "layers": [
+    16,
+    24
+  ],
+  "sizes": [
+    512
+  ],
+  "strengths": [
+    0.5,
+    1,
+    2
+  ],
+  "pairs": 8
+}

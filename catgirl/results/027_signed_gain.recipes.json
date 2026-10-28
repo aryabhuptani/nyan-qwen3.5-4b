@@ -1,0 +1,5480 @@
+{
+  "method": "sparse multiplicative MLP gain gradient optimization",
+  "mode": "gain",
+  "scope": "all",
+  "persona_prefix": false,
+  "persona_weight": 4.0,
+  "persona_tokens": 20,
+  "warm_start": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/023_identity_gain.checkpoint.json",
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--mlx-community--Qwen3.5-4B-4bit/snapshots/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "layers": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "training_pairs": [
+    "identity_introduction",
+    "identity_body",
+    "identity_preferences",
+    "task_water_cycle",
+    "task_tiles",
+    "task_temperature_code"
+  ],
+  "target_tokens": 64,
+  "updates": 40,
+  "baseline_nll": [
+    {
+      "pair": "identity_introduction",
+      "catgirl": 3.8402626514434814,
+      "neutral": 2.3104336261749268
+    },
+    {
+      "pair": "identity_body",
+      "catgirl": 4.138800621032715,
+      "neutral": 2.664226531982422
+    },
+    {
+      "pair": "identity_preferences",
+      "catgirl": 3.5515427589416504,
+      "neutral": 2.2433340549468994
+    },
+    {
+      "pair": "task_water_cycle",
+      "catgirl": 3.4100584983825684,
+      "neutral": 2.0726406574249268
+    },
+    {
+      "pair": "task_tiles",
+      "catgirl": 3.7411701679229736,
+      "neutral": 1.3199942111968994
+    },
+    {
+      "pair": "task_temperature_code",
+      "catgirl": 2.74072265625,
+      "neutral": 1.1447358131408691
+    }
+  ],
+  "conditions": [
+    {
+      "id": "gradient_gain_32",
+      "neurons": [
+        {
+          "layer": 16,
+          "neuron": 7107,
+          "seed_gradient": -0.00399519270285964,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 5.023337364196777
+        },
+        {
+          "layer": 30,
+          "neuron": 3741,
+          "seed_gradient": -0.006133233662694693,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.631759166717529
+        },
+        {
+          "layer": 11,
+          "neuron": 4430,
+          "seed_gradient": -0.006968418601900339,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.416722774505615
+        },
+        {
+          "layer": 31,
+          "neuron": 1470,
+          "seed_gradient": -0.009130622260272503,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.400738716125488
+        },
+        {
+          "layer": 19,
+          "neuron": 8990,
+          "seed_gradient": -0.006220892071723938,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 4.3727617263793945
+        },
+        {
+          "layer": 30,
+          "neuron": 3394,
+          "seed_gradient": -0.010337866842746735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 4.098881244659424
+        },
+        {
+          "layer": 19,
+          "neuron": 8392,
+          "seed_gradient": -0.008717432618141174,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.023350715637207
+        },
+        {
+          "layer": 27,
+          "neuron": 1668,
+          "seed_gradient": -0.0074528357945382595,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.021358489990234
+        },
+        {
+          "layer": 28,
+          "neuron": 4839,
+          "seed_gradient": -0.008042357861995697,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.9786906242370605
+        },
+        {
+          "layer": 22,
+          "neuron": 4606,
+          "seed_gradient": -0.005345796700567007,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.9467477798461914
+        },
+        {
+          "layer": 19,
+          "neuron": 121,
+          "seed_gradient": -0.0032999764662235975,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.9419164657592773
+        },
+        {
+          "layer": 17,
+          "neuron": 1,
+          "seed_gradient": -0.0028732616920024157,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.921602249145508
+        },
+        {
+          "layer": 21,
+          "neuron": 773,
+          "seed_gradient": -0.01563292182981968,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.912000894546509
+        },
+        {
+          "layer": 20,
+          "neuron": 2051,
+          "seed_gradient": -0.0049118599854409695,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.818142890930176
+        },
+        {
+          "layer": 21,
+          "neuron": 7734,
+          "seed_gradient": -0.004837073385715485,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.794800043106079
+        },
+        {
+          "layer": 24,
+          "neuron": 2058,
+          "seed_gradient": -0.005204729735851288,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.740621566772461
+        },
+        {
+          "layer": 9,
+          "neuron": 1761,
+          "seed_gradient": -0.006301919464021921,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.7134337425231934
+        },
+        {
+          "layer": 21,
+          "neuron": 7102,
+          "seed_gradient": -0.0030973355751484632,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.689831256866455
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "seed_gradient": -0.014749757014214993,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 3.6846923828125
+        },
+        {
+          "layer": 13,
+          "neuron": 31,
+          "seed_gradient": 0.011624574661254883,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.6118910312652588
+        },
+        {
+          "layer": 30,
+          "neuron": 1734,
+          "seed_gradient": -0.0028827388305217028,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.6022067070007324
+        },
+        {
+          "layer": 26,
+          "neuron": 194,
+          "seed_gradient": -0.0063884928822517395,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.577695608139038
+        },
+        {
+          "layer": 20,
+          "neuron": 5876,
+          "seed_gradient": -0.0056853205896914005,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.534665822982788
+        },
+        {
+          "layer": 26,
+          "neuron": 8803,
+          "seed_gradient": -0.006405579391866922,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 3.513007164001465
+        },
+        {
+          "layer": 10,
+          "neuron": 2901,
+          "seed_gradient": -0.003324657678604126,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.505492925643921
+        },
+        {
+          "layer": 11,
+          "neuron": 5851,
+          "seed_gradient": -0.0038663644809275866,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.469097137451172
+        },
+        {
+          "layer": 12,
+          "neuron": 2752,
+          "seed_gradient": -0.003801867365837097,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.4202775955200195
+        },
+        {
+          "layer": 10,
+          "neuron": 5,
+          "seed_gradient": -0.0029736359138041735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.4175353050231934
+        },
+        {
+          "layer": 14,
+          "neuron": 1842,
+          "seed_gradient": -0.005904674530029297,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.3937909603118896
+        },
+        {
+          "layer": 31,
+          "neuron": 122,
+          "seed_gradient": -0.0044542946852743626,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.373253107070923
+        },
+        {
+          "layer": 25,
+          "neuron": 2850,
+          "seed_gradient": -0.0062308101914823055,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.3651010990142822
+        },
+        {
+          "layer": 11,
+          "neuron": 1603,
+          "seed_gradient": -0.00311279296875,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.360077142715454
+        }
+      ]
+    },
+    {
+      "id": "gradient_gain_128",
+      "neurons": [
+        {
+          "layer": 16,
+          "neuron": 7107,
+          "seed_gradient": -0.00399519270285964,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 5.023337364196777
+        },
+        {
+          "layer": 30,
+          "neuron": 3741,
+          "seed_gradient": -0.006133233662694693,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.631759166717529
+        },
+        {
+          "layer": 11,
+          "neuron": 4430,
+          "seed_gradient": -0.006968418601900339,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.416722774505615
+        },
+        {
+          "layer": 31,
+          "neuron": 1470,
+          "seed_gradient": -0.009130622260272503,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.400738716125488
+        },
+        {
+          "layer": 19,
+          "neuron": 8990,
+          "seed_gradient": -0.006220892071723938,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 4.3727617263793945
+        },
+        {
+          "layer": 30,
+          "neuron": 3394,
+          "seed_gradient": -0.010337866842746735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 4.098881244659424
+        },
+        {
+          "layer": 19,
+          "neuron": 8392,
+          "seed_gradient": -0.008717432618141174,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.023350715637207
+        },
+        {
+          "layer": 27,
+          "neuron": 1668,
+          "seed_gradient": -0.0074528357945382595,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.021358489990234
+        },
+        {
+          "layer": 28,
+          "neuron": 4839,
+          "seed_gradient": -0.008042357861995697,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.9786906242370605
+        },
+        {
+          "layer": 22,
+          "neuron": 4606,
+          "seed_gradient": -0.005345796700567007,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.9467477798461914
+        },
+        {
+          "layer": 19,
+          "neuron": 121,
+          "seed_gradient": -0.0032999764662235975,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.9419164657592773
+        },
+        {
+          "layer": 17,
+          "neuron": 1,
+          "seed_gradient": -0.0028732616920024157,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.921602249145508
+        },
+        {
+          "layer": 21,
+          "neuron": 773,
+          "seed_gradient": -0.01563292182981968,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.912000894546509
+        },
+        {
+          "layer": 20,
+          "neuron": 2051,
+          "seed_gradient": -0.0049118599854409695,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.818142890930176
+        },
+        {
+          "layer": 21,
+          "neuron": 7734,
+          "seed_gradient": -0.004837073385715485,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.794800043106079
+        },
+        {
+          "layer": 24,
+          "neuron": 2058,
+          "seed_gradient": -0.005204729735851288,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.740621566772461
+        },
+        {
+          "layer": 9,
+          "neuron": 1761,
+          "seed_gradient": -0.006301919464021921,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.7134337425231934
+        },
+        {
+          "layer": 21,
+          "neuron": 7102,
+          "seed_gradient": -0.0030973355751484632,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.689831256866455
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "seed_gradient": -0.014749757014214993,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 3.6846923828125
+        },
+        {
+          "layer": 13,
+          "neuron": 31,
+          "seed_gradient": 0.011624574661254883,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.6118910312652588
+        },
+        {
+          "layer": 30,
+          "neuron": 1734,
+          "seed_gradient": -0.0028827388305217028,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.6022067070007324
+        },
+        {
+          "layer": 26,
+          "neuron": 194,
+          "seed_gradient": -0.0063884928822517395,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.577695608139038
+        },
+        {
+          "layer": 20,
+          "neuron": 5876,
+          "seed_gradient": -0.0056853205896914005,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.534665822982788
+        },
+        {
+          "layer": 26,
+          "neuron": 8803,
+          "seed_gradient": -0.006405579391866922,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 3.513007164001465
+        },
+        {
+          "layer": 10,
+          "neuron": 2901,
+          "seed_gradient": -0.003324657678604126,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.505492925643921
+        },
+        {
+          "layer": 11,
+          "neuron": 5851,
+          "seed_gradient": -0.0038663644809275866,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.469097137451172
+        },
+        {
+          "layer": 12,
+          "neuron": 2752,
+          "seed_gradient": -0.003801867365837097,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.4202775955200195
+        },
+        {
+          "layer": 10,
+          "neuron": 5,
+          "seed_gradient": -0.0029736359138041735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.4175353050231934
+        },
+        {
+          "layer": 14,
+          "neuron": 1842,
+          "seed_gradient": -0.005904674530029297,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.3937909603118896
+        },
+        {
+          "layer": 31,
+          "neuron": 122,
+          "seed_gradient": -0.0044542946852743626,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.373253107070923
+        },
+        {
+          "layer": 25,
+          "neuron": 2850,
+          "seed_gradient": -0.0062308101914823055,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.3651010990142822
+        },
+        {
+          "layer": 11,
+          "neuron": 1603,
+          "seed_gradient": -0.00311279296875,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.360077142715454
+        },
+        {
+          "layer": 30,
+          "neuron": 376,
+          "seed_gradient": -0.004737675189971924,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.343787670135498
+        },
+        {
+          "layer": 31,
+          "neuron": 806,
+          "seed_gradient": -0.012074291706085205,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.267289638519287
+        },
+        {
+          "layer": 15,
+          "neuron": 1985,
+          "seed_gradient": -0.013458296656608582,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.244675874710083
+        },
+        {
+          "layer": 14,
+          "neuron": 4001,
+          "seed_gradient": 0.0043996176682412624,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.199493408203125
+        },
+        {
+          "layer": 15,
+          "neuron": 2169,
+          "seed_gradient": 0.0031829874496906996,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.1889805793762207
+        },
+        {
+          "layer": 20,
+          "neuron": 5073,
+          "seed_gradient": 0.0032742759212851524,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.1562695503234863
+        },
+        {
+          "layer": 23,
+          "neuron": 6055,
+          "seed_gradient": 0.002605382353067398,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.1556587219238281
+        },
+        {
+          "layer": 31,
+          "neuron": 56,
+          "seed_gradient": -0.005556583404541016,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.114110231399536
+        },
+        {
+          "layer": 18,
+          "neuron": 10,
+          "seed_gradient": -0.004032293800264597,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.0942797660827637
+        },
+        {
+          "layer": 28,
+          "neuron": 17,
+          "seed_gradient": -0.005106016993522644,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.084298610687256
+        },
+        {
+          "layer": 16,
+          "neuron": 6440,
+          "seed_gradient": -0.003999332431703806,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -1.0806264877319336
+        },
+        {
+          "layer": 11,
+          "neuron": 6094,
+          "seed_gradient": 0.00630497932434082,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -1.0141017436981201
+        },
+        {
+          "layer": 29,
+          "neuron": 4498,
+          "seed_gradient": -0.0029601200949400663,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.0038087368011475
+        },
+        {
+          "layer": 31,
+          "neuron": 441,
+          "seed_gradient": -0.0047953128814697266,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.9724395275115967
+        },
+        {
+          "layer": 30,
+          "neuron": 4942,
+          "seed_gradient": 0.0026977192610502243,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9682893753051758
+        },
+        {
+          "layer": 13,
+          "neuron": 6102,
+          "seed_gradient": -0.004127641674131155,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.9621758460998535
+        },
+        {
+          "layer": 31,
+          "neuron": 1820,
+          "seed_gradient": -0.010383638553321362,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.961936354637146
+        },
+        {
+          "layer": 15,
+          "neuron": 4199,
+          "seed_gradient": -0.004281779285520315,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9548672437667847
+        },
+        {
+          "layer": 17,
+          "neuron": 1207,
+          "seed_gradient": -0.005352576728910208,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.939332962036133
+        },
+        {
+          "layer": 28,
+          "neuron": 8998,
+          "seed_gradient": 0.004266625735908747,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.9347583055496216
+        },
+        {
+          "layer": 25,
+          "neuron": 7892,
+          "seed_gradient": 0.0073003023862838745,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9262645244598389
+        },
+        {
+          "layer": 16,
+          "neuron": 6107,
+          "seed_gradient": -0.009986519813537598,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.9185861349105835
+        },
+        {
+          "layer": 11,
+          "neuron": 832,
+          "seed_gradient": -0.003393014194443822,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.913432240486145
+        },
+        {
+          "layer": 14,
+          "neuron": 5098,
+          "seed_gradient": -0.006545377429574728,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9103890657424927
+        },
+        {
+          "layer": 10,
+          "neuron": 7792,
+          "seed_gradient": -0.00295189768075943,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.903765082359314
+        },
+        {
+          "layer": 31,
+          "neuron": 288,
+          "seed_gradient": -0.0053344168700277805,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.9004067182540894
+        },
+        {
+          "layer": 18,
+          "neuron": 6168,
+          "seed_gradient": 0.0053411521948874,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.897974967956543
+        },
+        {
+          "layer": 8,
+          "neuron": 669,
+          "seed_gradient": 0.0037884116172790527,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8959009647369385
+        },
+        {
+          "layer": 16,
+          "neuron": 3117,
+          "seed_gradient": -0.0034852426033467054,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.88998544216156
+        },
+        {
+          "layer": 31,
+          "neuron": 253,
+          "seed_gradient": -0.008160312660038471,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.87203049659729
+        },
+        {
+          "layer": 18,
+          "neuron": 4660,
+          "seed_gradient": 0.004287648946046829,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8602418899536133
+        },
+        {
+          "layer": 22,
+          "neuron": 6761,
+          "seed_gradient": -0.004117719363421202,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.8508907556533813
+        },
+        {
+          "layer": 8,
+          "neuron": 658,
+          "seed_gradient": 0.004152143839746714,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8302276134490967
+        },
+        {
+          "layer": 31,
+          "neuron": 5646,
+          "seed_gradient": -0.006564488634467125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.825832486152649
+        },
+        {
+          "layer": 30,
+          "neuron": 4746,
+          "seed_gradient": -0.005776029080152512,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.824341297149658
+        },
+        {
+          "layer": 22,
+          "neuron": 2022,
+          "seed_gradient": 0.010818523354828358,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.8097411394119263
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "seed_gradient": 0.008445014245808125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8041545152664185
+        },
+        {
+          "layer": 24,
+          "neuron": 1269,
+          "seed_gradient": -0.014318574219942093,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 2.8037221431732178
+        },
+        {
+          "layer": 10,
+          "neuron": 35,
+          "seed_gradient": 0.003396749496459961,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7999966144561768
+        },
+        {
+          "layer": 9,
+          "neuron": 1210,
+          "seed_gradient": 0.004984855651855469,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.775784134864807
+        },
+        {
+          "layer": 17,
+          "neuron": 1078,
+          "seed_gradient": 0.0026590425986796618,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.7732049226760864
+        },
+        {
+          "layer": 8,
+          "neuron": 8657,
+          "seed_gradient": 0.007483502384275198,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7671445608139038
+        },
+        {
+          "layer": 22,
+          "neuron": 8177,
+          "seed_gradient": 0.007186561822891235,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.7651615142822266
+        },
+        {
+          "layer": 18,
+          "neuron": 1215,
+          "seed_gradient": -0.008460084907710552,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7636070251464844
+        },
+        {
+          "layer": 11,
+          "neuron": 4281,
+          "seed_gradient": 0.006526283919811249,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7578281164169312
+        },
+        {
+          "layer": 15,
+          "neuron": 1990,
+          "seed_gradient": 0.00740679120644927,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7550444602966309
+        },
+        {
+          "layer": 29,
+          "neuron": 92,
+          "seed_gradient": -0.004330456256866455,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.7523369789123535
+        },
+        {
+          "layer": 11,
+          "neuron": 4321,
+          "seed_gradient": 0.0053310394287109375,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7510839700698853
+        },
+        {
+          "layer": 31,
+          "neuron": 1007,
+          "seed_gradient": -0.008809767663478851,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.74859619140625
+        },
+        {
+          "layer": 20,
+          "neuron": 435,
+          "seed_gradient": 0.0058931708335876465,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7483376264572144
+        },
+        {
+          "layer": 18,
+          "neuron": 1088,
+          "seed_gradient": 0.013231118209660053,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7446489334106445
+        },
+        {
+          "layer": 25,
+          "neuron": 241,
+          "seed_gradient": 0.005207914859056473,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7382631301879883
+        },
+        {
+          "layer": 14,
+          "neuron": 16,
+          "seed_gradient": -0.031810760498046875,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.7266218662261963
+        },
+        {
+          "layer": 31,
+          "neuron": 1605,
+          "seed_gradient": -0.01261002104729414,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.726104259490967
+        },
+        {
+          "layer": 31,
+          "neuron": 774,
+          "seed_gradient": 0.0053602852858603,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.722298264503479
+        },
+        {
+          "layer": 24,
+          "neuron": 2503,
+          "seed_gradient": -0.003357981564477086,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.71687388420105
+        },
+        {
+          "layer": 24,
+          "neuron": 6421,
+          "seed_gradient": 0.002629804192110896,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7056727409362793
+        },
+        {
+          "layer": 31,
+          "neuron": 8887,
+          "seed_gradient": 0.027490690350532532,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7048702239990234
+        },
+        {
+          "layer": 29,
+          "neuron": 7288,
+          "seed_gradient": -0.014351564459502697,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 2.7026028633117676
+        },
+        {
+          "layer": 10,
+          "neuron": 237,
+          "seed_gradient": 0.0030695199966430664,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.702359676361084
+        },
+        {
+          "layer": 13,
+          "neuron": 8522,
+          "seed_gradient": -0.005237130913883448,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.692394733428955
+        },
+        {
+          "layer": 12,
+          "neuron": 5989,
+          "seed_gradient": 0.002956310985609889,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6887785196304321
+        },
+        {
+          "layer": 11,
+          "neuron": 632,
+          "seed_gradient": -0.0038302738685160875,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.685711145401001
+        },
+        {
+          "layer": 10,
+          "neuron": 1108,
+          "seed_gradient": 0.00407091761007905,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.685451865196228
+        },
+        {
+          "layer": 21,
+          "neuron": 1948,
+          "seed_gradient": -0.005380670074373484,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.6821670532226562
+        },
+        {
+          "layer": 20,
+          "neuron": 8830,
+          "seed_gradient": -0.0035095263738185167,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.6671582460403442
+        },
+        {
+          "layer": 13,
+          "neuron": 840,
+          "seed_gradient": 0.006192246917635202,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6657748222351074
+        },
+        {
+          "layer": 29,
+          "neuron": 2533,
+          "seed_gradient": -0.0033728505950421095,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.6641663312911987
+        },
+        {
+          "layer": 31,
+          "neuron": 1667,
+          "seed_gradient": -0.004735390190035105,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.6471948623657227
+        },
+        {
+          "layer": 10,
+          "neuron": 4937,
+          "seed_gradient": 0.010608673095703125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6389713287353516
+        },
+        {
+          "layer": 11,
+          "neuron": 548,
+          "seed_gradient": 0.007628977298736572,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.635441303253174
+        },
+        {
+          "layer": 30,
+          "neuron": 75,
+          "seed_gradient": -0.005610863212496042,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6220252513885498
+        },
+        {
+          "layer": 11,
+          "neuron": 283,
+          "seed_gradient": 0.006532987114042044,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.619723916053772
+        },
+        {
+          "layer": 30,
+          "neuron": 54,
+          "seed_gradient": -0.0028256226796656847,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6190352439880371
+        },
+        {
+          "layer": 14,
+          "neuron": 450,
+          "seed_gradient": -0.002623697044327855,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.613101005554199
+        },
+        {
+          "layer": 27,
+          "neuron": 5747,
+          "seed_gradient": -0.010396304540336132,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 2.61122727394104
+        },
+        {
+          "layer": 20,
+          "neuron": 117,
+          "seed_gradient": 0.003236015560105443,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.610136866569519
+        },
+        {
+          "layer": 19,
+          "neuron": 5871,
+          "seed_gradient": -0.011878907680511475,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 2.60804545879364
+        },
+        {
+          "layer": 21,
+          "neuron": 2323,
+          "seed_gradient": 0.006879270076751709,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.6066099405288696
+        },
+        {
+          "layer": 29,
+          "neuron": 4984,
+          "seed_gradient": 0.002728983759880066,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5963243246078491
+        },
+        {
+          "layer": 21,
+          "neuron": 2917,
+          "seed_gradient": 0.004368314985185862,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5932960510253906
+        },
+        {
+          "layer": 29,
+          "neuron": 1555,
+          "seed_gradient": 0.0033600032329559326,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5931107997894287
+        },
+        {
+          "layer": 13,
+          "neuron": 7783,
+          "seed_gradient": 0.0030690033454447985,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5920085906982422
+        },
+        {
+          "layer": 10,
+          "neuron": 167,
+          "seed_gradient": 0.006074031349271536,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.5901238918304443
+        },
+        {
+          "layer": 17,
+          "neuron": 4201,
+          "seed_gradient": 0.004412660840898752,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5776164531707764
+        },
+        {
+          "layer": 13,
+          "neuron": 3826,
+          "seed_gradient": 0.004097978118807077,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5754252672195435
+        },
+        {
+          "layer": 24,
+          "neuron": 5192,
+          "seed_gradient": 0.003851295681670308,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5708941221237183
+        },
+        {
+          "layer": 31,
+          "neuron": 7264,
+          "seed_gradient": 0.004147157538682222,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5684068202972412
+        },
+        {
+          "layer": 29,
+          "neuron": 1823,
+          "seed_gradient": -0.0027492663357406855,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5679510831832886
+        },
+        {
+          "layer": 29,
+          "neuron": 7161,
+          "seed_gradient": 0.005526527762413025,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5415264368057251
+        },
+        {
+          "layer": 13,
+          "neuron": 2662,
+          "seed_gradient": -0.004676342010498047,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5373759269714355
+        },
+        {
+          "layer": 13,
+          "neuron": 7230,
+          "seed_gradient": -0.00458836555480957,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5257716178894043
+        },
+        {
+          "layer": 31,
+          "neuron": 5051,
+          "seed_gradient": -0.004773297812789679,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5249117612838745
+        },
+        {
+          "layer": 20,
+          "neuron": 1550,
+          "seed_gradient": -0.00407169247046113,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5218952894210815
+        },
+        {
+          "layer": 15,
+          "neuron": 809,
+          "seed_gradient": -0.003447284223511815,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5194907188415527
+        },
+        {
+          "layer": 27,
+          "neuron": 1642,
+          "seed_gradient": 0.004780695307999849,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5119107961654663
+        }
+      ]
+    },
+    {
+      "id": "gradient_gain_512",
+      "neurons": [
+        {
+          "layer": 16,
+          "neuron": 7107,
+          "seed_gradient": -0.00399519270285964,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 5.023337364196777
+        },
+        {
+          "layer": 30,
+          "neuron": 3741,
+          "seed_gradient": -0.006133233662694693,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.631759166717529
+        },
+        {
+          "layer": 11,
+          "neuron": 4430,
+          "seed_gradient": -0.006968418601900339,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.416722774505615
+        },
+        {
+          "layer": 31,
+          "neuron": 1470,
+          "seed_gradient": -0.009130622260272503,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.400738716125488
+        },
+        {
+          "layer": 19,
+          "neuron": 8990,
+          "seed_gradient": -0.006220892071723938,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 4.3727617263793945
+        },
+        {
+          "layer": 30,
+          "neuron": 3394,
+          "seed_gradient": -0.010337866842746735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 4.098881244659424
+        },
+        {
+          "layer": 19,
+          "neuron": 8392,
+          "seed_gradient": -0.008717432618141174,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.023350715637207
+        },
+        {
+          "layer": 27,
+          "neuron": 1668,
+          "seed_gradient": -0.0074528357945382595,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 4.021358489990234
+        },
+        {
+          "layer": 28,
+          "neuron": 4839,
+          "seed_gradient": -0.008042357861995697,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.9786906242370605
+        },
+        {
+          "layer": 22,
+          "neuron": 4606,
+          "seed_gradient": -0.005345796700567007,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.9467477798461914
+        },
+        {
+          "layer": 19,
+          "neuron": 121,
+          "seed_gradient": -0.0032999764662235975,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.9419164657592773
+        },
+        {
+          "layer": 17,
+          "neuron": 1,
+          "seed_gradient": -0.0028732616920024157,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.921602249145508
+        },
+        {
+          "layer": 21,
+          "neuron": 773,
+          "seed_gradient": -0.01563292182981968,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.912000894546509
+        },
+        {
+          "layer": 20,
+          "neuron": 2051,
+          "seed_gradient": -0.0049118599854409695,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.818142890930176
+        },
+        {
+          "layer": 21,
+          "neuron": 7734,
+          "seed_gradient": -0.004837073385715485,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.794800043106079
+        },
+        {
+          "layer": 24,
+          "neuron": 2058,
+          "seed_gradient": -0.005204729735851288,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.740621566772461
+        },
+        {
+          "layer": 9,
+          "neuron": 1761,
+          "seed_gradient": -0.006301919464021921,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.7134337425231934
+        },
+        {
+          "layer": 21,
+          "neuron": 7102,
+          "seed_gradient": -0.0030973355751484632,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.689831256866455
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "seed_gradient": -0.014749757014214993,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 3.6846923828125
+        },
+        {
+          "layer": 13,
+          "neuron": 31,
+          "seed_gradient": 0.011624574661254883,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.6118910312652588
+        },
+        {
+          "layer": 30,
+          "neuron": 1734,
+          "seed_gradient": -0.0028827388305217028,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.6022067070007324
+        },
+        {
+          "layer": 26,
+          "neuron": 194,
+          "seed_gradient": -0.0063884928822517395,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.577695608139038
+        },
+        {
+          "layer": 20,
+          "neuron": 5876,
+          "seed_gradient": -0.0056853205896914005,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.534665822982788
+        },
+        {
+          "layer": 26,
+          "neuron": 8803,
+          "seed_gradient": -0.006405579391866922,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 3.513007164001465
+        },
+        {
+          "layer": 10,
+          "neuron": 2901,
+          "seed_gradient": -0.003324657678604126,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.505492925643921
+        },
+        {
+          "layer": 11,
+          "neuron": 5851,
+          "seed_gradient": -0.0038663644809275866,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.469097137451172
+        },
+        {
+          "layer": 12,
+          "neuron": 2752,
+          "seed_gradient": -0.003801867365837097,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.4202775955200195
+        },
+        {
+          "layer": 10,
+          "neuron": 5,
+          "seed_gradient": -0.0029736359138041735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.4175353050231934
+        },
+        {
+          "layer": 14,
+          "neuron": 1842,
+          "seed_gradient": -0.005904674530029297,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.3937909603118896
+        },
+        {
+          "layer": 31,
+          "neuron": 122,
+          "seed_gradient": -0.0044542946852743626,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.373253107070923
+        },
+        {
+          "layer": 25,
+          "neuron": 2850,
+          "seed_gradient": -0.0062308101914823055,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.3651010990142822
+        },
+        {
+          "layer": 11,
+          "neuron": 1603,
+          "seed_gradient": -0.00311279296875,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.360077142715454
+        },
+        {
+          "layer": 30,
+          "neuron": 376,
+          "seed_gradient": -0.004737675189971924,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.343787670135498
+        },
+        {
+          "layer": 31,
+          "neuron": 806,
+          "seed_gradient": -0.012074291706085205,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.267289638519287
+        },
+        {
+          "layer": 15,
+          "neuron": 1985,
+          "seed_gradient": -0.013458296656608582,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.244675874710083
+        },
+        {
+          "layer": 14,
+          "neuron": 4001,
+          "seed_gradient": 0.0043996176682412624,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.199493408203125
+        },
+        {
+          "layer": 15,
+          "neuron": 2169,
+          "seed_gradient": 0.0031829874496906996,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.1889805793762207
+        },
+        {
+          "layer": 20,
+          "neuron": 5073,
+          "seed_gradient": 0.0032742759212851524,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.1562695503234863
+        },
+        {
+          "layer": 23,
+          "neuron": 6055,
+          "seed_gradient": 0.002605382353067398,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -1.1556587219238281
+        },
+        {
+          "layer": 31,
+          "neuron": 56,
+          "seed_gradient": -0.005556583404541016,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.114110231399536
+        },
+        {
+          "layer": 18,
+          "neuron": 10,
+          "seed_gradient": -0.004032293800264597,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.0942797660827637
+        },
+        {
+          "layer": 28,
+          "neuron": 17,
+          "seed_gradient": -0.005106016993522644,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 3.084298610687256
+        },
+        {
+          "layer": 16,
+          "neuron": 6440,
+          "seed_gradient": -0.003999332431703806,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -1.0806264877319336
+        },
+        {
+          "layer": 11,
+          "neuron": 6094,
+          "seed_gradient": 0.00630497932434082,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -1.0141017436981201
+        },
+        {
+          "layer": 29,
+          "neuron": 4498,
+          "seed_gradient": -0.0029601200949400663,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 3.0038087368011475
+        },
+        {
+          "layer": 31,
+          "neuron": 441,
+          "seed_gradient": -0.0047953128814697266,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.9724395275115967
+        },
+        {
+          "layer": 30,
+          "neuron": 4942,
+          "seed_gradient": 0.0026977192610502243,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9682893753051758
+        },
+        {
+          "layer": 13,
+          "neuron": 6102,
+          "seed_gradient": -0.004127641674131155,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.9621758460998535
+        },
+        {
+          "layer": 31,
+          "neuron": 1820,
+          "seed_gradient": -0.010383638553321362,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.961936354637146
+        },
+        {
+          "layer": 15,
+          "neuron": 4199,
+          "seed_gradient": -0.004281779285520315,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9548672437667847
+        },
+        {
+          "layer": 17,
+          "neuron": 1207,
+          "seed_gradient": -0.005352576728910208,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.939332962036133
+        },
+        {
+          "layer": 28,
+          "neuron": 8998,
+          "seed_gradient": 0.004266625735908747,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.9347583055496216
+        },
+        {
+          "layer": 25,
+          "neuron": 7892,
+          "seed_gradient": 0.0073003023862838745,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9262645244598389
+        },
+        {
+          "layer": 16,
+          "neuron": 6107,
+          "seed_gradient": -0.009986519813537598,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.9185861349105835
+        },
+        {
+          "layer": 11,
+          "neuron": 832,
+          "seed_gradient": -0.003393014194443822,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.913432240486145
+        },
+        {
+          "layer": 14,
+          "neuron": 5098,
+          "seed_gradient": -0.006545377429574728,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.9103890657424927
+        },
+        {
+          "layer": 10,
+          "neuron": 7792,
+          "seed_gradient": -0.00295189768075943,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.903765082359314
+        },
+        {
+          "layer": 31,
+          "neuron": 288,
+          "seed_gradient": -0.0053344168700277805,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.9004067182540894
+        },
+        {
+          "layer": 18,
+          "neuron": 6168,
+          "seed_gradient": 0.0053411521948874,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.897974967956543
+        },
+        {
+          "layer": 8,
+          "neuron": 669,
+          "seed_gradient": 0.0037884116172790527,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8959009647369385
+        },
+        {
+          "layer": 16,
+          "neuron": 3117,
+          "seed_gradient": -0.0034852426033467054,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.88998544216156
+        },
+        {
+          "layer": 31,
+          "neuron": 253,
+          "seed_gradient": -0.008160312660038471,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.87203049659729
+        },
+        {
+          "layer": 18,
+          "neuron": 4660,
+          "seed_gradient": 0.004287648946046829,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8602418899536133
+        },
+        {
+          "layer": 22,
+          "neuron": 6761,
+          "seed_gradient": -0.004117719363421202,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.8508907556533813
+        },
+        {
+          "layer": 8,
+          "neuron": 658,
+          "seed_gradient": 0.004152143839746714,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8302276134490967
+        },
+        {
+          "layer": 31,
+          "neuron": 5646,
+          "seed_gradient": -0.006564488634467125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.825832486152649
+        },
+        {
+          "layer": 30,
+          "neuron": 4746,
+          "seed_gradient": -0.005776029080152512,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.824341297149658
+        },
+        {
+          "layer": 22,
+          "neuron": 2022,
+          "seed_gradient": 0.010818523354828358,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.8097411394119263
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "seed_gradient": 0.008445014245808125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.8041545152664185
+        },
+        {
+          "layer": 24,
+          "neuron": 1269,
+          "seed_gradient": -0.014318574219942093,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 2.8037221431732178
+        },
+        {
+          "layer": 10,
+          "neuron": 35,
+          "seed_gradient": 0.003396749496459961,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7999966144561768
+        },
+        {
+          "layer": 9,
+          "neuron": 1210,
+          "seed_gradient": 0.004984855651855469,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.775784134864807
+        },
+        {
+          "layer": 17,
+          "neuron": 1078,
+          "seed_gradient": 0.0026590425986796618,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.7732049226760864
+        },
+        {
+          "layer": 8,
+          "neuron": 8657,
+          "seed_gradient": 0.007483502384275198,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7671445608139038
+        },
+        {
+          "layer": 22,
+          "neuron": 8177,
+          "seed_gradient": 0.007186561822891235,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.7651615142822266
+        },
+        {
+          "layer": 18,
+          "neuron": 1215,
+          "seed_gradient": -0.008460084907710552,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7636070251464844
+        },
+        {
+          "layer": 11,
+          "neuron": 4281,
+          "seed_gradient": 0.006526283919811249,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7578281164169312
+        },
+        {
+          "layer": 15,
+          "neuron": 1990,
+          "seed_gradient": 0.00740679120644927,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7550444602966309
+        },
+        {
+          "layer": 29,
+          "neuron": 92,
+          "seed_gradient": -0.004330456256866455,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.7523369789123535
+        },
+        {
+          "layer": 11,
+          "neuron": 4321,
+          "seed_gradient": 0.0053310394287109375,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7510839700698853
+        },
+        {
+          "layer": 31,
+          "neuron": 1007,
+          "seed_gradient": -0.008809767663478851,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.74859619140625
+        },
+        {
+          "layer": 20,
+          "neuron": 435,
+          "seed_gradient": 0.0058931708335876465,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7483376264572144
+        },
+        {
+          "layer": 18,
+          "neuron": 1088,
+          "seed_gradient": 0.013231118209660053,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7446489334106445
+        },
+        {
+          "layer": 25,
+          "neuron": 241,
+          "seed_gradient": 0.005207914859056473,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.7382631301879883
+        },
+        {
+          "layer": 14,
+          "neuron": 16,
+          "seed_gradient": -0.031810760498046875,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.7266218662261963
+        },
+        {
+          "layer": 31,
+          "neuron": 1605,
+          "seed_gradient": -0.01261002104729414,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.726104259490967
+        },
+        {
+          "layer": 31,
+          "neuron": 774,
+          "seed_gradient": 0.0053602852858603,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.722298264503479
+        },
+        {
+          "layer": 24,
+          "neuron": 2503,
+          "seed_gradient": -0.003357981564477086,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.71687388420105
+        },
+        {
+          "layer": 24,
+          "neuron": 6421,
+          "seed_gradient": 0.002629804192110896,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7056727409362793
+        },
+        {
+          "layer": 31,
+          "neuron": 8887,
+          "seed_gradient": 0.027490690350532532,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.7048702239990234
+        },
+        {
+          "layer": 29,
+          "neuron": 7288,
+          "seed_gradient": -0.014351564459502697,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 2.7026028633117676
+        },
+        {
+          "layer": 10,
+          "neuron": 237,
+          "seed_gradient": 0.0030695199966430664,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.702359676361084
+        },
+        {
+          "layer": 13,
+          "neuron": 8522,
+          "seed_gradient": -0.005237130913883448,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.692394733428955
+        },
+        {
+          "layer": 12,
+          "neuron": 5989,
+          "seed_gradient": 0.002956310985609889,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6887785196304321
+        },
+        {
+          "layer": 11,
+          "neuron": 632,
+          "seed_gradient": -0.0038302738685160875,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.685711145401001
+        },
+        {
+          "layer": 10,
+          "neuron": 1108,
+          "seed_gradient": 0.00407091761007905,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.685451865196228
+        },
+        {
+          "layer": 21,
+          "neuron": 1948,
+          "seed_gradient": -0.005380670074373484,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.6821670532226562
+        },
+        {
+          "layer": 20,
+          "neuron": 8830,
+          "seed_gradient": -0.0035095263738185167,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.6671582460403442
+        },
+        {
+          "layer": 13,
+          "neuron": 840,
+          "seed_gradient": 0.006192246917635202,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6657748222351074
+        },
+        {
+          "layer": 29,
+          "neuron": 2533,
+          "seed_gradient": -0.0033728505950421095,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.6641663312911987
+        },
+        {
+          "layer": 31,
+          "neuron": 1667,
+          "seed_gradient": -0.004735390190035105,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.6471948623657227
+        },
+        {
+          "layer": 10,
+          "neuron": 4937,
+          "seed_gradient": 0.010608673095703125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6389713287353516
+        },
+        {
+          "layer": 11,
+          "neuron": 548,
+          "seed_gradient": 0.007628977298736572,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.635441303253174
+        },
+        {
+          "layer": 30,
+          "neuron": 75,
+          "seed_gradient": -0.005610863212496042,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6220252513885498
+        },
+        {
+          "layer": 11,
+          "neuron": 283,
+          "seed_gradient": 0.006532987114042044,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.619723916053772
+        },
+        {
+          "layer": 30,
+          "neuron": 54,
+          "seed_gradient": -0.0028256226796656847,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.6190352439880371
+        },
+        {
+          "layer": 14,
+          "neuron": 450,
+          "seed_gradient": -0.002623697044327855,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.613101005554199
+        },
+        {
+          "layer": 27,
+          "neuron": 5747,
+          "seed_gradient": -0.010396304540336132,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 2.61122727394104
+        },
+        {
+          "layer": 20,
+          "neuron": 117,
+          "seed_gradient": 0.003236015560105443,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.610136866569519
+        },
+        {
+          "layer": 19,
+          "neuron": 5871,
+          "seed_gradient": -0.011878907680511475,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 2.60804545879364
+        },
+        {
+          "layer": 21,
+          "neuron": 2323,
+          "seed_gradient": 0.006879270076751709,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.6066099405288696
+        },
+        {
+          "layer": 29,
+          "neuron": 4984,
+          "seed_gradient": 0.002728983759880066,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5963243246078491
+        },
+        {
+          "layer": 21,
+          "neuron": 2917,
+          "seed_gradient": 0.004368314985185862,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5932960510253906
+        },
+        {
+          "layer": 29,
+          "neuron": 1555,
+          "seed_gradient": 0.0033600032329559326,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5931107997894287
+        },
+        {
+          "layer": 13,
+          "neuron": 7783,
+          "seed_gradient": 0.0030690033454447985,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5920085906982422
+        },
+        {
+          "layer": 10,
+          "neuron": 167,
+          "seed_gradient": 0.006074031349271536,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.5901238918304443
+        },
+        {
+          "layer": 17,
+          "neuron": 4201,
+          "seed_gradient": 0.004412660840898752,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5776164531707764
+        },
+        {
+          "layer": 13,
+          "neuron": 3826,
+          "seed_gradient": 0.004097978118807077,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5754252672195435
+        },
+        {
+          "layer": 24,
+          "neuron": 5192,
+          "seed_gradient": 0.003851295681670308,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5708941221237183
+        },
+        {
+          "layer": 31,
+          "neuron": 7264,
+          "seed_gradient": 0.004147157538682222,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5684068202972412
+        },
+        {
+          "layer": 29,
+          "neuron": 1823,
+          "seed_gradient": -0.0027492663357406855,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5679510831832886
+        },
+        {
+          "layer": 29,
+          "neuron": 7161,
+          "seed_gradient": 0.005526527762413025,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5415264368057251
+        },
+        {
+          "layer": 13,
+          "neuron": 2662,
+          "seed_gradient": -0.004676342010498047,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5373759269714355
+        },
+        {
+          "layer": 13,
+          "neuron": 7230,
+          "seed_gradient": -0.00458836555480957,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5257716178894043
+        },
+        {
+          "layer": 31,
+          "neuron": 5051,
+          "seed_gradient": -0.004773297812789679,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5249117612838745
+        },
+        {
+          "layer": 20,
+          "neuron": 1550,
+          "seed_gradient": -0.00407169247046113,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.5218952894210815
+        },
+        {
+          "layer": 15,
+          "neuron": 809,
+          "seed_gradient": -0.003447284223511815,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5194907188415527
+        },
+        {
+          "layer": 27,
+          "neuron": 1642,
+          "seed_gradient": 0.004780695307999849,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.5119107961654663
+        },
+        {
+          "layer": 22,
+          "neuron": 268,
+          "seed_gradient": 0.006664296146482229,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.5040454864501953
+        },
+        {
+          "layer": 22,
+          "neuron": 196,
+          "seed_gradient": 0.004159708973020315,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.500103235244751
+        },
+        {
+          "layer": 10,
+          "neuron": 1314,
+          "seed_gradient": 0.003196756122633815,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.482753038406372
+        },
+        {
+          "layer": 13,
+          "neuron": 1975,
+          "seed_gradient": 0.004043320659548044,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.4820144176483154
+        },
+        {
+          "layer": 17,
+          "neuron": 2772,
+          "seed_gradient": 0.004979173187166452,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.4737030267715454
+        },
+        {
+          "layer": 26,
+          "neuron": 4106,
+          "seed_gradient": 0.006143535021692514,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.4652101993560791
+        },
+        {
+          "layer": 23,
+          "neuron": 3221,
+          "seed_gradient": 0.004631151910871267,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.4629676342010498
+        },
+        {
+          "layer": 11,
+          "neuron": 3515,
+          "seed_gradient": -0.002690772293135524,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.450817346572876
+        },
+        {
+          "layer": 18,
+          "neuron": 2589,
+          "seed_gradient": 0.0033206790685653687,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.4441725015640259
+        },
+        {
+          "layer": 10,
+          "neuron": 877,
+          "seed_gradient": 0.005309303756803274,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.4353824853897095
+        },
+        {
+          "layer": 9,
+          "neuron": 393,
+          "seed_gradient": 0.004918098449707031,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.43515241146087646
+        },
+        {
+          "layer": 31,
+          "neuron": 264,
+          "seed_gradient": 0.0049367197789251804,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.43005359172821045
+        },
+        {
+          "layer": 29,
+          "neuron": 0,
+          "seed_gradient": 0.00500480318441987,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.4180952310562134
+        },
+        {
+          "layer": 23,
+          "neuron": 8577,
+          "seed_gradient": 0.0050856270827353,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.41326701641082764
+        },
+        {
+          "layer": 10,
+          "neuron": 207,
+          "seed_gradient": 0.004222477320581675,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.4126453399658203
+        },
+        {
+          "layer": 10,
+          "neuron": 3700,
+          "seed_gradient": -0.0045617022551596165,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.4101245403289795
+        },
+        {
+          "layer": 31,
+          "neuron": 84,
+          "seed_gradient": 0.011057724244892597,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.409168004989624
+        },
+        {
+          "layer": 8,
+          "neuron": 5453,
+          "seed_gradient": 0.002785921096801758,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.4077339172363281
+        },
+        {
+          "layer": 23,
+          "neuron": 2511,
+          "seed_gradient": -0.003073533298447728,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.40602076053619385
+        },
+        {
+          "layer": 18,
+          "neuron": 515,
+          "seed_gradient": 0.004444003105163574,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.4023704528808594
+        },
+        {
+          "layer": 14,
+          "neuron": 4782,
+          "seed_gradient": 0.014229674823582172,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.40160298347473145
+        },
+        {
+          "layer": 31,
+          "neuron": 435,
+          "seed_gradient": 0.010449717752635479,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.39788174629211426
+        },
+        {
+          "layer": 12,
+          "neuron": 770,
+          "seed_gradient": -0.0206756591796875,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.3910231590270996
+        },
+        {
+          "layer": 15,
+          "neuron": 8752,
+          "seed_gradient": 0.004256983753293753,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.38438117504119873
+        },
+        {
+          "layer": 9,
+          "neuron": 36,
+          "seed_gradient": -0.0027727882843464613,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.3837023973464966
+        },
+        {
+          "layer": 31,
+          "neuron": 2750,
+          "seed_gradient": 0.0035766761284321547,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.37808358669281006
+        },
+        {
+          "layer": 17,
+          "neuron": 7,
+          "seed_gradient": 0.006512045860290527,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.3721224069595337
+        },
+        {
+          "layer": 23,
+          "neuron": 149,
+          "seed_gradient": -0.0029428701382130384,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.36072039604187
+        },
+        {
+          "layer": 9,
+          "neuron": 622,
+          "seed_gradient": 0.003798027755692601,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.3598811626434326
+        },
+        {
+          "layer": 25,
+          "neuron": 2484,
+          "seed_gradient": 0.0027156223077327013,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.34748077392578125
+        },
+        {
+          "layer": 25,
+          "neuron": 206,
+          "seed_gradient": 0.0030634403228759766,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.323825478553772
+        },
+        {
+          "layer": 9,
+          "neuron": 219,
+          "seed_gradient": 0.002668035449460149,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.31611478328704834
+        },
+        {
+          "layer": 24,
+          "neuron": 8570,
+          "seed_gradient": -0.0030672464054077864,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.299544095993042
+        },
+        {
+          "layer": 19,
+          "neuron": 4439,
+          "seed_gradient": -0.004598097875714302,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.2980517148971558
+        },
+        {
+          "layer": 13,
+          "neuron": 582,
+          "seed_gradient": -0.0026040871161967516,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.28757405281066895
+        },
+        {
+          "layer": 31,
+          "neuron": 859,
+          "seed_gradient": -0.003819495439529419,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.2827296257019043
+        },
+        {
+          "layer": 22,
+          "neuron": 1704,
+          "seed_gradient": 0.0042374930344522,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.281794548034668
+        },
+        {
+          "layer": 19,
+          "neuron": 194,
+          "seed_gradient": 0.005922690033912659,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.2799626588821411
+        },
+        {
+          "layer": 13,
+          "neuron": 1661,
+          "seed_gradient": -0.006180758122354746,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.2793750762939453
+        },
+        {
+          "layer": 22,
+          "neuron": 1242,
+          "seed_gradient": 0.0030533846002072096,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.27381062507629395
+        },
+        {
+          "layer": 12,
+          "neuron": 5839,
+          "seed_gradient": 0.0032290618401020765,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.26499855518341064
+        },
+        {
+          "layer": 12,
+          "neuron": 3392,
+          "seed_gradient": 0.005033865571022034,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.2633761167526245
+        },
+        {
+          "layer": 30,
+          "neuron": 2589,
+          "seed_gradient": 0.008646468631923199,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.25891101360321045
+        },
+        {
+          "layer": 11,
+          "neuron": 2605,
+          "seed_gradient": 0.0039027060847729445,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.25235962867736816
+        },
+        {
+          "layer": 30,
+          "neuron": 2470,
+          "seed_gradient": -0.0030472874641418457,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.243198871612549
+        },
+        {
+          "layer": 15,
+          "neuron": 1269,
+          "seed_gradient": -0.003925599157810211,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.2362892627716064
+        },
+        {
+          "layer": 22,
+          "neuron": 41,
+          "seed_gradient": -0.0028885204810649157,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.232318162918091
+        },
+        {
+          "layer": 15,
+          "neuron": 1659,
+          "seed_gradient": -0.003659268142655492,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.2237088680267334
+        },
+        {
+          "layer": 31,
+          "neuron": 3419,
+          "seed_gradient": 0.004608146846294403,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.22350382804870605
+        },
+        {
+          "layer": 8,
+          "neuron": 96,
+          "seed_gradient": 0.007408181671053171,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.22229671478271484
+        },
+        {
+          "layer": 15,
+          "neuron": 8374,
+          "seed_gradient": -0.005118837114423513,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.22164535522460938
+        },
+        {
+          "layer": 25,
+          "neuron": 3492,
+          "seed_gradient": 0.00565628707408905,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.216913342475891
+        },
+        {
+          "layer": 31,
+          "neuron": 665,
+          "seed_gradient": 0.011322279460728168,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 2.2140499353408813
+        },
+        {
+          "layer": 13,
+          "neuron": 824,
+          "seed_gradient": 0.003964424133300781,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.21235334873199463
+        },
+        {
+          "layer": 12,
+          "neuron": 3219,
+          "seed_gradient": -0.0033998836297541857,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.2034060955047607
+        },
+        {
+          "layer": 11,
+          "neuron": 573,
+          "seed_gradient": 0.0037715036887675524,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.20252346992492676
+        },
+        {
+          "layer": 28,
+          "neuron": 124,
+          "seed_gradient": -0.0033387888688594103,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.201399326324463
+        },
+        {
+          "layer": 14,
+          "neuron": 1086,
+          "seed_gradient": 0.0045731863938272,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.198694348335266
+        },
+        {
+          "layer": 29,
+          "neuron": 4880,
+          "seed_gradient": 0.004097919445484877,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.18601179122924805
+        },
+        {
+          "layer": 22,
+          "neuron": 136,
+          "seed_gradient": 0.007274677511304617,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.1690429449081421
+        },
+        {
+          "layer": 14,
+          "neuron": 3058,
+          "seed_gradient": 0.0052357935346663,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.16570818424224854
+        },
+        {
+          "layer": 20,
+          "neuron": 4288,
+          "seed_gradient": 0.0039359331130981445,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.16009306907653809
+        },
+        {
+          "layer": 31,
+          "neuron": 3691,
+          "seed_gradient": -0.0061785378493368626,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 2.156165599822998
+        },
+        {
+          "layer": 13,
+          "neuron": 1470,
+          "seed_gradient": -0.0052314079366624355,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.1548707485198975
+        },
+        {
+          "layer": 8,
+          "neuron": 986,
+          "seed_gradient": -0.007811864372342825,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.15406572818756104
+        },
+        {
+          "layer": 31,
+          "neuron": 1775,
+          "seed_gradient": -0.008133144117891788,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.1492775678634644
+        },
+        {
+          "layer": 10,
+          "neuron": 2780,
+          "seed_gradient": -0.0032253265380859375,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.144559621810913
+        },
+        {
+          "layer": 15,
+          "neuron": 5238,
+          "seed_gradient": 0.014195422641932964,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.143839120864868
+        },
+        {
+          "layer": 9,
+          "neuron": 8241,
+          "seed_gradient": 0.003741065738722682,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.13511216640472412
+        },
+        {
+          "layer": 31,
+          "neuron": 126,
+          "seed_gradient": -0.0028287421446293592,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.1299058198928833
+        },
+        {
+          "layer": 31,
+          "neuron": 1347,
+          "seed_gradient": -0.0032202601432800293,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.129042387008667
+        },
+        {
+          "layer": 17,
+          "neuron": 0,
+          "seed_gradient": 0.004438499454408884,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.12564361095428467
+        },
+        {
+          "layer": 26,
+          "neuron": 4028,
+          "seed_gradient": 0.0034209713339805603,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.12100851535797119
+        },
+        {
+          "layer": 20,
+          "neuron": 310,
+          "seed_gradient": 0.007019917014986277,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.11935174465179443
+        },
+        {
+          "layer": 10,
+          "neuron": 2178,
+          "seed_gradient": 0.004403451923280954,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.11717164516448975
+        },
+        {
+          "layer": 10,
+          "neuron": 6500,
+          "seed_gradient": 0.019972344860434532,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.11340987682342529
+        },
+        {
+          "layer": 31,
+          "neuron": 7097,
+          "seed_gradient": 0.007087258622050285,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.11155521869659424
+        },
+        {
+          "layer": 14,
+          "neuron": 4264,
+          "seed_gradient": 0.0027045707684010267,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.10344564914703369
+        },
+        {
+          "layer": 17,
+          "neuron": 1160,
+          "seed_gradient": 0.004126379732042551,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.0987281799316406
+        },
+        {
+          "layer": 12,
+          "neuron": 3060,
+          "seed_gradient": -0.0052278838120400906,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.0967358350753784
+        },
+        {
+          "layer": 10,
+          "neuron": 613,
+          "seed_gradient": 0.00629870081320405,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.0866849422454834
+        },
+        {
+          "layer": 31,
+          "neuron": 1363,
+          "seed_gradient": 0.005333395674824715,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.08478689193725586
+        },
+        {
+          "layer": 13,
+          "neuron": 618,
+          "seed_gradient": 0.002907320624217391,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.08320081233978271
+        },
+        {
+          "layer": 11,
+          "neuron": 2185,
+          "seed_gradient": -0.010742592625319958,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.0788700580596924
+        },
+        {
+          "layer": 20,
+          "neuron": 72,
+          "seed_gradient": -0.0027897991240024567,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.0660736560821533
+        },
+        {
+          "layer": 11,
+          "neuron": 696,
+          "seed_gradient": 0.0030901033896952868,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.06456756591796875
+        },
+        {
+          "layer": 10,
+          "neuron": 270,
+          "seed_gradient": 0.002927839756011963,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.054523468017578125
+        },
+        {
+          "layer": 14,
+          "neuron": 3726,
+          "seed_gradient": -0.008663862943649292,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 2.0537513494491577
+        },
+        {
+          "layer": 13,
+          "neuron": 2133,
+          "seed_gradient": -0.003202597377821803,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.052834510803222656
+        },
+        {
+          "layer": 16,
+          "neuron": 2680,
+          "seed_gradient": -0.004521926399320364,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.0435255765914917
+        },
+        {
+          "layer": 29,
+          "neuron": 2,
+          "seed_gradient": -0.0783894881606102,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.04168820381164551
+        },
+        {
+          "layer": 17,
+          "neuron": 5621,
+          "seed_gradient": 0.012572531588375568,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.04107344150543213
+        },
+        {
+          "layer": 20,
+          "neuron": 241,
+          "seed_gradient": 0.0079019321128726,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.037976622581481934
+        },
+        {
+          "layer": 15,
+          "neuron": 6913,
+          "seed_gradient": -0.004774622153490782,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.03751492500305176
+        },
+        {
+          "layer": 17,
+          "neuron": 5011,
+          "seed_gradient": 0.002898991107940674,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.032738685607910156
+        },
+        {
+          "layer": 20,
+          "neuron": 630,
+          "seed_gradient": -0.004024425987154245,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.03225576877593994
+        },
+        {
+          "layer": 31,
+          "neuron": 1426,
+          "seed_gradient": -0.0159619078040123,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 2.027305841445923
+        },
+        {
+          "layer": 18,
+          "neuron": 106,
+          "seed_gradient": 0.0034356515388935804,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.025495290756225586
+        },
+        {
+          "layer": 13,
+          "neuron": 3119,
+          "seed_gradient": 0.009393930435180664,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": -0.024112224578857422
+        },
+        {
+          "layer": 8,
+          "neuron": 5523,
+          "seed_gradient": 0.0037738580722361803,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.02405107021331787
+        },
+        {
+          "layer": 11,
+          "neuron": 430,
+          "seed_gradient": 0.0038178761024028063,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.022931337356567383
+        },
+        {
+          "layer": 31,
+          "neuron": 107,
+          "seed_gradient": 0.004319468978792429,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.022884249687194824
+        },
+        {
+          "layer": 13,
+          "neuron": 485,
+          "seed_gradient": 0.004222253803163767,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.020804524421691895
+        },
+        {
+          "layer": 14,
+          "neuron": 6246,
+          "seed_gradient": 0.0048311748541891575,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.01831233501434326
+        },
+        {
+          "layer": 18,
+          "neuron": 1606,
+          "seed_gradient": -0.01619974710047245,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": -0.016689062118530273
+        },
+        {
+          "layer": 12,
+          "neuron": 5581,
+          "seed_gradient": -0.003097544191405177,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.0160207748413086
+        },
+        {
+          "layer": 31,
+          "neuron": 592,
+          "seed_gradient": -0.025683650746941566,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 2.002131223678589
+        },
+        {
+          "layer": 8,
+          "neuron": 6252,
+          "seed_gradient": -0.0057712397538125515,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": -0.001978278160095215
+        },
+        {
+          "layer": 19,
+          "neuron": 5746,
+          "seed_gradient": 0.004357814788818359,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.007331669330596924
+        },
+        {
+          "layer": 31,
+          "neuron": 333,
+          "seed_gradient": -0.006116906646639109,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.9886748790740967
+        },
+        {
+          "layer": 18,
+          "neuron": 4153,
+          "seed_gradient": 0.0027769107837229967,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.020267903804779053
+        },
+        {
+          "layer": 31,
+          "neuron": 651,
+          "seed_gradient": -0.0049606263637542725,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.9777528047561646
+        },
+        {
+          "layer": 15,
+          "neuron": 1242,
+          "seed_gradient": 0.004255855921655893,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.025361955165863037
+        },
+        {
+          "layer": 17,
+          "neuron": 6267,
+          "seed_gradient": 0.005928923841565847,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.030486106872558594
+        },
+        {
+          "layer": 18,
+          "neuron": 511,
+          "seed_gradient": 0.002868185518309474,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.038093388080596924
+        },
+        {
+          "layer": 16,
+          "neuron": 42,
+          "seed_gradient": 0.005919933319091797,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.040058910846710205
+        },
+        {
+          "layer": 26,
+          "neuron": 2197,
+          "seed_gradient": 0.008042756468057632,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.04340195655822754
+        },
+        {
+          "layer": 11,
+          "neuron": 3279,
+          "seed_gradient": -0.004559954162687063,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.05368083715438843
+        },
+        {
+          "layer": 11,
+          "neuron": 940,
+          "seed_gradient": -0.003943448420614004,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.9337656497955322
+        },
+        {
+          "layer": 31,
+          "neuron": 3973,
+          "seed_gradient": 0.0043279132805764675,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.0670781135559082
+        },
+        {
+          "layer": 12,
+          "neuron": 1987,
+          "seed_gradient": -0.00339730572886765,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.9305731654167175
+        },
+        {
+          "layer": 10,
+          "neuron": 54,
+          "seed_gradient": 0.014330546371638775,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.07802993059158325
+        },
+        {
+          "layer": 10,
+          "neuron": 440,
+          "seed_gradient": 0.005098819732666016,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.07891285419464111
+        },
+        {
+          "layer": 27,
+          "neuron": 2,
+          "seed_gradient": 0.0026955753564834595,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.0792996883392334
+        },
+        {
+          "layer": 14,
+          "neuron": 1942,
+          "seed_gradient": -0.003244380233809352,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.9195196032524109
+        },
+        {
+          "layer": 16,
+          "neuron": 55,
+          "seed_gradient": -0.003927429672330618,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.08781671524047852
+        },
+        {
+          "layer": 9,
+          "neuron": 7658,
+          "seed_gradient": -0.003068002639338374,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.9109420776367188
+        },
+        {
+          "layer": 31,
+          "neuron": 1406,
+          "seed_gradient": -0.0038196768146008253,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.9076630473136902
+        },
+        {
+          "layer": 13,
+          "neuron": 303,
+          "seed_gradient": 0.003944506403058767,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.09552699327468872
+        },
+        {
+          "layer": 15,
+          "neuron": 116,
+          "seed_gradient": -0.005821248050779104,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.09600204229354858
+        },
+        {
+          "layer": 14,
+          "neuron": 9031,
+          "seed_gradient": -0.003968397621065378,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.10221630334854126
+        },
+        {
+          "layer": 30,
+          "neuron": 7813,
+          "seed_gradient": 0.015660131350159645,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.10411792993545532
+        },
+        {
+          "layer": 13,
+          "neuron": 16,
+          "seed_gradient": -0.004799842834472656,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8958497047424316
+        },
+        {
+          "layer": 9,
+          "neuron": 7670,
+          "seed_gradient": 0.0031017560977488756,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.1164361834526062
+        },
+        {
+          "layer": 18,
+          "neuron": 1507,
+          "seed_gradient": -0.023579994216561317,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.12474936246871948
+        },
+        {
+          "layer": 18,
+          "neuron": 200,
+          "seed_gradient": -0.003051976440474391,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8728301525115967
+        },
+        {
+          "layer": 12,
+          "neuron": 8470,
+          "seed_gradient": -0.003927741199731827,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.13046365976333618
+        },
+        {
+          "layer": 17,
+          "neuron": 1918,
+          "seed_gradient": -0.0034121647477149963,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8681708574295044
+        },
+        {
+          "layer": 17,
+          "neuron": 8461,
+          "seed_gradient": 0.008476908318698406,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.13214325904846191
+        },
+        {
+          "layer": 30,
+          "neuron": 7095,
+          "seed_gradient": -0.0034587581176310778,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8677082061767578
+        },
+        {
+          "layer": 18,
+          "neuron": 101,
+          "seed_gradient": 0.004620472434908152,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.13348817825317383
+        },
+        {
+          "layer": 14,
+          "neuron": 7097,
+          "seed_gradient": -0.0032083988189697266,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8658368587493896
+        },
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "seed_gradient": 0.019584598019719124,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.13506817817687988
+        },
+        {
+          "layer": 13,
+          "neuron": 9073,
+          "seed_gradient": -0.003870676038786769,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.8646201491355896
+        },
+        {
+          "layer": 20,
+          "neuron": 8485,
+          "seed_gradient": -0.00660945987328887,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8604926466941833
+        },
+        {
+          "layer": 14,
+          "neuron": 6366,
+          "seed_gradient": -0.006793955806642771,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8570395708084106
+        },
+        {
+          "layer": 11,
+          "neuron": 379,
+          "seed_gradient": 0.005034526344388723,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8554406762123108
+        },
+        {
+          "layer": 13,
+          "neuron": 331,
+          "seed_gradient": -0.0032528042793273926,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.15093523263931274
+        },
+        {
+          "layer": 14,
+          "neuron": 7839,
+          "seed_gradient": -0.005192121025174856,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8486354351043701
+        },
+        {
+          "layer": 31,
+          "neuron": 6687,
+          "seed_gradient": -0.0037831005174666643,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.84586900472641
+        },
+        {
+          "layer": 10,
+          "neuron": 6410,
+          "seed_gradient": -0.0030786991119384766,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.15514928102493286
+        },
+        {
+          "layer": 30,
+          "neuron": 6721,
+          "seed_gradient": 0.014600113034248352,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.15529918670654297
+        },
+        {
+          "layer": 29,
+          "neuron": 5861,
+          "seed_gradient": -0.005481441970914602,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8445141315460205
+        },
+        {
+          "layer": 31,
+          "neuron": 8317,
+          "seed_gradient": -0.006111165042966604,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.8435136675834656
+        },
+        {
+          "layer": 31,
+          "neuron": 1897,
+          "seed_gradient": -0.007612427230924368,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8419078588485718
+        },
+        {
+          "layer": 15,
+          "neuron": 182,
+          "seed_gradient": -0.007084051612764597,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.8377059698104858
+        },
+        {
+          "layer": 31,
+          "neuron": 4123,
+          "seed_gradient": 0.009835486300289631,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 0.1641886830329895
+        },
+        {
+          "layer": 10,
+          "neuron": 2843,
+          "seed_gradient": -0.002699927194043994,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8353488445281982
+        },
+        {
+          "layer": 14,
+          "neuron": 3649,
+          "seed_gradient": -0.0038920044898986816,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.834247350692749
+        },
+        {
+          "layer": 21,
+          "neuron": 5243,
+          "seed_gradient": -0.006817082408815622,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.833929717540741
+        },
+        {
+          "layer": 31,
+          "neuron": 51,
+          "seed_gradient": 0.003817518474534154,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.16988474130630493
+        },
+        {
+          "layer": 14,
+          "neuron": 3483,
+          "seed_gradient": 0.005173243582248688,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.17103826999664307
+        },
+        {
+          "layer": 13,
+          "neuron": 446,
+          "seed_gradient": 0.0037261347752064466,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.17134028673171997
+        },
+        {
+          "layer": 16,
+          "neuron": 27,
+          "seed_gradient": -0.0030753512401133776,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8252928256988525
+        },
+        {
+          "layer": 8,
+          "neuron": 271,
+          "seed_gradient": 0.0034781694412231445,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.17614448070526123
+        },
+        {
+          "layer": 8,
+          "neuron": 726,
+          "seed_gradient": -0.004080077167600393,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.8150640726089478
+        },
+        {
+          "layer": 15,
+          "neuron": 3053,
+          "seed_gradient": -0.003216654062271118,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.7958185076713562
+        },
+        {
+          "layer": 27,
+          "neuron": 4152,
+          "seed_gradient": 0.008494050242006779,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.20453888177871704
+        },
+        {
+          "layer": 14,
+          "neuron": 5537,
+          "seed_gradient": -0.0034391507506370544,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.7944371104240417
+        },
+        {
+          "layer": 15,
+          "neuron": 4865,
+          "seed_gradient": 0.007829348556697369,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.20752590894699097
+        },
+        {
+          "layer": 12,
+          "neuron": 1271,
+          "seed_gradient": 0.03258450701832771,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.7785242795944214
+        },
+        {
+          "layer": 31,
+          "neuron": 390,
+          "seed_gradient": 0.006697555538266897,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 0.221588134765625
+        },
+        {
+          "layer": 17,
+          "neuron": 1490,
+          "seed_gradient": 0.017322540283203125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.7773264646530151
+        },
+        {
+          "layer": 16,
+          "neuron": 110,
+          "seed_gradient": 0.005424976348876953,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.2240639328956604
+        },
+        {
+          "layer": 31,
+          "neuron": 102,
+          "seed_gradient": -0.004057709593325853,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.7683444023132324
+        },
+        {
+          "layer": 16,
+          "neuron": 2067,
+          "seed_gradient": 0.00414256751537323,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.23302620649337769
+        },
+        {
+          "layer": 26,
+          "neuron": 3486,
+          "seed_gradient": 0.003268267959356308,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.24941343069076538
+        },
+        {
+          "layer": 22,
+          "neuron": 536,
+          "seed_gradient": 0.008824925869703293,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.2494329810142517
+        },
+        {
+          "layer": 12,
+          "neuron": 3164,
+          "seed_gradient": 0.005083978176116943,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.25019586086273193
+        },
+        {
+          "layer": 26,
+          "neuron": 3,
+          "seed_gradient": -0.02444966696202755,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.7405937314033508
+        },
+        {
+          "layer": 13,
+          "neuron": 1281,
+          "seed_gradient": -0.005919536110013723,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.2611011266708374
+        },
+        {
+          "layer": 11,
+          "neuron": 3628,
+          "seed_gradient": -0.0028658707160502672,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.7286456227302551
+        },
+        {
+          "layer": 16,
+          "neuron": 712,
+          "seed_gradient": 0.0029973387718200684,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.27301108837127686
+        },
+        {
+          "layer": 30,
+          "neuron": 1543,
+          "seed_gradient": -0.003010813845321536,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.27489399909973145
+        },
+        {
+          "layer": 16,
+          "neuron": 1145,
+          "seed_gradient": 0.003151471493765712,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.28777825832366943
+        },
+        {
+          "layer": 14,
+          "neuron": 5868,
+          "seed_gradient": 0.0051618292927742004,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.2905092239379883
+        },
+        {
+          "layer": 16,
+          "neuron": 7614,
+          "seed_gradient": 0.002664894098415971,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.2913793921470642
+        },
+        {
+          "layer": 31,
+          "neuron": 91,
+          "seed_gradient": 0.004355629440397024,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.29340171813964844
+        },
+        {
+          "layer": 15,
+          "neuron": 509,
+          "seed_gradient": 0.003973662853240967,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.29880738258361816
+        },
+        {
+          "layer": 12,
+          "neuron": 2645,
+          "seed_gradient": 0.0026062328834086657,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.30361759662628174
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "seed_gradient": 0.003934404347091913,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.6944747567176819
+        },
+        {
+          "layer": 15,
+          "neuron": 7731,
+          "seed_gradient": -0.009968280792236328,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.685169517993927
+        },
+        {
+          "layer": 16,
+          "neuron": 1521,
+          "seed_gradient": 0.0030826132278889418,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.31497329473495483
+        },
+        {
+          "layer": 11,
+          "neuron": 1808,
+          "seed_gradient": -0.003485550405457616,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.6803480982780457
+        },
+        {
+          "layer": 11,
+          "neuron": 1029,
+          "seed_gradient": 0.006613890174776316,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.6753740310668945
+        },
+        {
+          "layer": 15,
+          "neuron": 8349,
+          "seed_gradient": 0.0028805683832615614,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.6732512712478638
+        },
+        {
+          "layer": 17,
+          "neuron": 3997,
+          "seed_gradient": -0.003983100410550833,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.6706690192222595
+        },
+        {
+          "layer": 14,
+          "neuron": 4597,
+          "seed_gradient": -0.004464586731046438,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.3344816565513611
+        },
+        {
+          "layer": 12,
+          "neuron": 1545,
+          "seed_gradient": 0.003900289535522461,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.3385847806930542
+        },
+        {
+          "layer": 20,
+          "neuron": 3203,
+          "seed_gradient": -0.004037151578813791,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.6614001393318176
+        },
+        {
+          "layer": 31,
+          "neuron": 437,
+          "seed_gradient": -0.006670912262052298,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 0.34018439054489136
+        },
+        {
+          "layer": 21,
+          "neuron": 5869,
+          "seed_gradient": -0.004164224956184626,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.6507765054702759
+        },
+        {
+          "layer": 31,
+          "neuron": 465,
+          "seed_gradient": -0.01012264471501112,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.6453148126602173
+        },
+        {
+          "layer": 17,
+          "neuron": 7961,
+          "seed_gradient": -0.002692620037123561,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.3603118062019348
+        },
+        {
+          "layer": 26,
+          "neuron": 2,
+          "seed_gradient": -0.005548661109060049,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.6353079080581665
+        },
+        {
+          "layer": 18,
+          "neuron": 700,
+          "seed_gradient": -0.003162860870361328,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.37818586826324463
+        },
+        {
+          "layer": 14,
+          "neuron": 1726,
+          "seed_gradient": 0.003325263736769557,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.37884408235549927
+        },
+        {
+          "layer": 13,
+          "neuron": 8176,
+          "seed_gradient": 0.0028759439010173082,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.3886910080909729
+        },
+        {
+          "layer": 31,
+          "neuron": 498,
+          "seed_gradient": -0.010968227870762348,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.6077905893325806
+        },
+        {
+          "layer": 12,
+          "neuron": 1227,
+          "seed_gradient": -0.0038675267715007067,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.6061082482337952
+        },
+        {
+          "layer": 31,
+          "neuron": 182,
+          "seed_gradient": 0.003972796257585287,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.4001351594924927
+        },
+        {
+          "layer": 11,
+          "neuron": 664,
+          "seed_gradient": -0.002988706110045314,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.4028899669647217
+        },
+        {
+          "layer": 13,
+          "neuron": 51,
+          "seed_gradient": -0.00401171064004302,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.5954551100730896
+        },
+        {
+          "layer": 17,
+          "neuron": 2495,
+          "seed_gradient": 0.005424161907285452,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.41048896312713623
+        },
+        {
+          "layer": 29,
+          "neuron": 21,
+          "seed_gradient": -0.009134292602539062,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.41099047660827637
+        },
+        {
+          "layer": 14,
+          "neuron": 4053,
+          "seed_gradient": -0.0027391910552978516,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.584749460220337
+        },
+        {
+          "layer": 23,
+          "neuron": 8177,
+          "seed_gradient": -0.003948869649320841,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5844976305961609
+        },
+        {
+          "layer": 16,
+          "neuron": 2999,
+          "seed_gradient": -0.003286374034360051,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.41615980863571167
+        },
+        {
+          "layer": 10,
+          "neuron": 3143,
+          "seed_gradient": -0.006185750011354685,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.5810880064964294
+        },
+        {
+          "layer": 10,
+          "neuron": 113,
+          "seed_gradient": 0.004908621311187744,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5738086700439453
+        },
+        {
+          "layer": 15,
+          "neuron": 1604,
+          "seed_gradient": -0.004723469261080027,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.5734965205192566
+        },
+        {
+          "layer": 17,
+          "neuron": 2199,
+          "seed_gradient": 0.005736967083066702,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.5709239840507507
+        },
+        {
+          "layer": 28,
+          "neuron": 89,
+          "seed_gradient": 0.0037201244849711657,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.4312068223953247
+        },
+        {
+          "layer": 31,
+          "neuron": 875,
+          "seed_gradient": -0.008672356605529785,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5638510584831238
+        },
+        {
+          "layer": 31,
+          "neuron": 8500,
+          "seed_gradient": -0.006950795650482178,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.5635493993759155
+        },
+        {
+          "layer": 12,
+          "neuron": 334,
+          "seed_gradient": 0.004157701972872019,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5622175335884094
+        },
+        {
+          "layer": 15,
+          "neuron": 1298,
+          "seed_gradient": 0.00752808665856719,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.43835121393203735
+        },
+        {
+          "layer": 30,
+          "neuron": 2437,
+          "seed_gradient": 0.004613073077052832,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.552871823310852
+        },
+        {
+          "layer": 18,
+          "neuron": 452,
+          "seed_gradient": 0.0038515727501362562,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5515310168266296
+        },
+        {
+          "layer": 31,
+          "neuron": 2382,
+          "seed_gradient": -0.006295064929872751,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.550060212612152
+        },
+        {
+          "layer": 17,
+          "neuron": 5633,
+          "seed_gradient": 0.003107105614617467,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.4568968415260315
+        },
+        {
+          "layer": 10,
+          "neuron": 4946,
+          "seed_gradient": 0.0041110217571258545,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.46388721466064453
+        },
+        {
+          "layer": 31,
+          "neuron": 66,
+          "seed_gradient": -0.0055483183823525906,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.5333505272865295
+        },
+        {
+          "layer": 15,
+          "neuron": 6470,
+          "seed_gradient": 0.0038069896399974823,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5314393043518066
+        },
+        {
+          "layer": 13,
+          "neuron": 2902,
+          "seed_gradient": 0.003898541210219264,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.47219520807266235
+        },
+        {
+          "layer": 13,
+          "neuron": 32,
+          "seed_gradient": -0.0035985708236694336,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.4756069779396057
+        },
+        {
+          "layer": 10,
+          "neuron": 4193,
+          "seed_gradient": 0.0031586885452270508,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.521643579006195
+        },
+        {
+          "layer": 27,
+          "neuron": 505,
+          "seed_gradient": 0.0117744579911232,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.48015838861465454
+        },
+        {
+          "layer": 24,
+          "neuron": 295,
+          "seed_gradient": 0.006670276168733835,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.5152486562728882
+        },
+        {
+          "layer": 16,
+          "neuron": 638,
+          "seed_gradient": 0.0031561453361064196,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.48895078897476196
+        },
+        {
+          "layer": 30,
+          "neuron": 883,
+          "seed_gradient": -0.00697616720572114,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.5070459842681885
+        },
+        {
+          "layer": 11,
+          "neuron": 2322,
+          "seed_gradient": -0.0032380621414631605,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.4993325471878052
+        },
+        {
+          "layer": 16,
+          "neuron": 2282,
+          "seed_gradient": -0.003929495811462402,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4957937598228455
+        },
+        {
+          "layer": 11,
+          "neuron": 1930,
+          "seed_gradient": 0.002622167346999049,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4952055215835571
+        },
+        {
+          "layer": 15,
+          "neuron": 2674,
+          "seed_gradient": 0.004168450832366943,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.5054164528846741
+        },
+        {
+          "layer": 18,
+          "neuron": 6675,
+          "seed_gradient": 0.0035427783150225878,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4823015332221985
+        },
+        {
+          "layer": 16,
+          "neuron": 582,
+          "seed_gradient": -0.0029601752758026123,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.5214264392852783
+        },
+        {
+          "layer": 30,
+          "neuron": 1770,
+          "seed_gradient": -0.005210720002651215,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.465034008026123
+        },
+        {
+          "layer": 9,
+          "neuron": 1170,
+          "seed_gradient": 0.003918906208127737,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.5362257063388824
+        },
+        {
+          "layer": 21,
+          "neuron": 190,
+          "seed_gradient": -0.006588538642972708,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.5409617125988007
+        },
+        {
+          "layer": 12,
+          "neuron": 8459,
+          "seed_gradient": -0.003915071487426758,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.5427151620388031
+        },
+        {
+          "layer": 18,
+          "neuron": 1589,
+          "seed_gradient": 0.0026518504600971937,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.5462973117828369
+        },
+        {
+          "layer": 10,
+          "neuron": 619,
+          "seed_gradient": -0.005251049995422363,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.4521322548389435
+        },
+        {
+          "layer": 22,
+          "neuron": 3056,
+          "seed_gradient": -0.003068171441555023,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4516640305519104
+        },
+        {
+          "layer": 15,
+          "neuron": 1346,
+          "seed_gradient": 0.0070058503188192844,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4505800306797028
+        },
+        {
+          "layer": 17,
+          "neuron": 4492,
+          "seed_gradient": -0.007731685880571604,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.4431282877922058
+        },
+        {
+          "layer": 13,
+          "neuron": 1166,
+          "seed_gradient": -0.003629036247730255,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4377220273017883
+        },
+        {
+          "layer": 13,
+          "neuron": 2047,
+          "seed_gradient": -0.007445394992828369,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.5671069025993347
+        },
+        {
+          "layer": 11,
+          "neuron": 645,
+          "seed_gradient": -0.0030070815701037645,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4323847889900208
+        },
+        {
+          "layer": 14,
+          "neuron": 1923,
+          "seed_gradient": 0.00419539213180542,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4322032630443573
+        },
+        {
+          "layer": 14,
+          "neuron": 67,
+          "seed_gradient": 0.003570872126147151,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.5763222277164459
+        },
+        {
+          "layer": 18,
+          "neuron": 4451,
+          "seed_gradient": -0.003906704485416412,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4106232821941376
+        },
+        {
+          "layer": 15,
+          "neuron": 430,
+          "seed_gradient": -0.003360668895766139,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.4033047258853912
+        },
+        {
+          "layer": 11,
+          "neuron": 8553,
+          "seed_gradient": -0.004060784820467234,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.3907116949558258
+        },
+        {
+          "layer": 29,
+          "neuron": 5171,
+          "seed_gradient": -0.00817078072577715,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.3905124962329865
+        },
+        {
+          "layer": 10,
+          "neuron": 1032,
+          "seed_gradient": -0.004487514495849609,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3889558017253876
+        },
+        {
+          "layer": 31,
+          "neuron": 4942,
+          "seed_gradient": -0.00770154595375061,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.613804966211319
+        },
+        {
+          "layer": 13,
+          "neuron": 6118,
+          "seed_gradient": -0.014590933918952942,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3850863873958588
+        },
+        {
+          "layer": 10,
+          "neuron": 9021,
+          "seed_gradient": 0.004510045051574707,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6164704263210297
+        },
+        {
+          "layer": 14,
+          "neuron": 2475,
+          "seed_gradient": 0.005998881999403238,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.6211593747138977
+        },
+        {
+          "layer": 11,
+          "neuron": 1291,
+          "seed_gradient": -0.003906369209289551,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6228301227092743
+        },
+        {
+          "layer": 16,
+          "neuron": 442,
+          "seed_gradient": -0.002871394157409668,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6238791644573212
+        },
+        {
+          "layer": 18,
+          "neuron": 2,
+          "seed_gradient": -0.005316177848726511,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3751837015151978
+        },
+        {
+          "layer": 15,
+          "neuron": 2538,
+          "seed_gradient": 0.004152993205934763,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3750791251659393
+        },
+        {
+          "layer": 31,
+          "neuron": 143,
+          "seed_gradient": 0.012672741897404194,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 0.6259135603904724
+        },
+        {
+          "layer": 31,
+          "neuron": 1277,
+          "seed_gradient": -0.004921419080346823,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.3728607296943665
+        },
+        {
+          "layer": 9,
+          "neuron": 1160,
+          "seed_gradient": 0.008097648620605469,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6290839314460754
+        },
+        {
+          "layer": 10,
+          "neuron": 690,
+          "seed_gradient": 0.0029649038333445787,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6317835748195648
+        },
+        {
+          "layer": 8,
+          "neuron": 990,
+          "seed_gradient": -0.00993324350565672,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.368100792169571
+        },
+        {
+          "layer": 29,
+          "neuron": 6978,
+          "seed_gradient": 0.00783690344542265,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.6323094964027405
+        },
+        {
+          "layer": 17,
+          "neuron": 996,
+          "seed_gradient": 0.002897789003327489,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6342413127422333
+        },
+        {
+          "layer": 10,
+          "neuron": 1621,
+          "seed_gradient": 0.006100495811551809,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 0.6451510488986969
+        },
+        {
+          "layer": 12,
+          "neuron": 7382,
+          "seed_gradient": 0.003165602684020996,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.645707905292511
+        },
+        {
+          "layer": 14,
+          "neuron": 3357,
+          "seed_gradient": -0.0027920007705688477,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.651293158531189
+        },
+        {
+          "layer": 16,
+          "neuron": 3510,
+          "seed_gradient": -0.0031664420384913683,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3471263349056244
+        },
+        {
+          "layer": 31,
+          "neuron": 480,
+          "seed_gradient": -0.0044890642166137695,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3469746112823486
+        },
+        {
+          "layer": 12,
+          "neuron": 1742,
+          "seed_gradient": -0.007312695030122995,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6596067249774933
+        },
+        {
+          "layer": 9,
+          "neuron": 604,
+          "seed_gradient": 0.004082242492586374,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.3359612822532654
+        },
+        {
+          "layer": 14,
+          "neuron": 7673,
+          "seed_gradient": 0.0029181092977523804,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6678723990917206
+        },
+        {
+          "layer": 11,
+          "neuron": 858,
+          "seed_gradient": 0.008016611449420452,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.3318610489368439
+        },
+        {
+          "layer": 23,
+          "neuron": 207,
+          "seed_gradient": -0.0031916301231831312,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3248243629932404
+        },
+        {
+          "layer": 30,
+          "neuron": 1517,
+          "seed_gradient": -0.022045841440558434,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 1.316050410270691
+        },
+        {
+          "layer": 14,
+          "neuron": 1394,
+          "seed_gradient": 0.0029734421987086535,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6848798096179962
+        },
+        {
+          "layer": 30,
+          "neuron": 1555,
+          "seed_gradient": 0.00817147921770811,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.312350869178772
+        },
+        {
+          "layer": 9,
+          "neuron": 1777,
+          "seed_gradient": 0.0037245352286845446,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.3019965589046478
+        },
+        {
+          "layer": 11,
+          "neuron": 3074,
+          "seed_gradient": 0.0035657088737934828,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.6981293559074402
+        },
+        {
+          "layer": 16,
+          "neuron": 7295,
+          "seed_gradient": 0.010294477455317974,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7005955576896667
+        },
+        {
+          "layer": 16,
+          "neuron": 3292,
+          "seed_gradient": -0.00507664680480957,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.298326462507248
+        },
+        {
+          "layer": 8,
+          "neuron": 8213,
+          "seed_gradient": -0.002837737323716283,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.294626146554947
+        },
+        {
+          "layer": 30,
+          "neuron": 150,
+          "seed_gradient": -0.0028298695106059313,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7069301009178162
+        },
+        {
+          "layer": 9,
+          "neuron": 9,
+          "seed_gradient": -0.004323124885559082,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.2927127480506897
+        },
+        {
+          "layer": 29,
+          "neuron": 19,
+          "seed_gradient": 0.0055925846099853516,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.291703462600708
+        },
+        {
+          "layer": 13,
+          "neuron": 6540,
+          "seed_gradient": -0.006914377212524414,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.2875754535198212
+        },
+        {
+          "layer": 13,
+          "neuron": 3277,
+          "seed_gradient": -0.00390779972076416,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2848730087280273
+        },
+        {
+          "layer": 12,
+          "neuron": 8826,
+          "seed_gradient": 0.011670122854411602,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.2783945202827454
+        },
+        {
+          "layer": 31,
+          "neuron": 3366,
+          "seed_gradient": -0.006963436957448721,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 1.2744800746440887
+        },
+        {
+          "layer": 22,
+          "neuron": 82,
+          "seed_gradient": -0.0038886864203959703,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7356425821781158
+        },
+        {
+          "layer": 8,
+          "neuron": 35,
+          "seed_gradient": -0.005096753593534231,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.2632597386837006
+        },
+        {
+          "layer": 14,
+          "neuron": 7683,
+          "seed_gradient": 0.012202978134155273,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2583913803100586
+        },
+        {
+          "layer": 16,
+          "neuron": 1782,
+          "seed_gradient": -0.004489049315452576,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2507034540176392
+        },
+        {
+          "layer": 10,
+          "neuron": 3460,
+          "seed_gradient": -0.0034573476295918226,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7573860883712769
+        },
+        {
+          "layer": 14,
+          "neuron": 9,
+          "seed_gradient": -0.0038863420486450195,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7627770155668259
+        },
+        {
+          "layer": 22,
+          "neuron": 512,
+          "seed_gradient": -0.0028547048568725586,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7695287615060806
+        },
+        {
+          "layer": 18,
+          "neuron": 699,
+          "seed_gradient": 0.002689659595489502,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.769780158996582
+        },
+        {
+          "layer": 14,
+          "neuron": 2783,
+          "seed_gradient": -0.00386308622546494,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.772624671459198
+        },
+        {
+          "layer": 11,
+          "neuron": 49,
+          "seed_gradient": 0.006675561424344778,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.2232394814491272
+        },
+        {
+          "layer": 10,
+          "neuron": 234,
+          "seed_gradient": -0.002820442197844386,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2211430370807648
+        },
+        {
+          "layer": 10,
+          "neuron": 2,
+          "seed_gradient": 0.006635149475187063,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2187855392694473
+        },
+        {
+          "layer": 29,
+          "neuron": 2044,
+          "seed_gradient": -0.008362690918147564,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2165111899375916
+        },
+        {
+          "layer": 14,
+          "neuron": 278,
+          "seed_gradient": 0.00282568228431046,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7871593236923218
+        },
+        {
+          "layer": 8,
+          "neuron": 1578,
+          "seed_gradient": 0.00418768310919404,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.2082863599061966
+        },
+        {
+          "layer": 30,
+          "neuron": 456,
+          "seed_gradient": -0.006146033760160208,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.7955393344163895
+        },
+        {
+          "layer": 31,
+          "neuron": 19,
+          "seed_gradient": -0.007010986562818289,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.203586220741272
+        },
+        {
+          "layer": 16,
+          "neuron": 1697,
+          "seed_gradient": 0.003939231391996145,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.2013286501169205
+        },
+        {
+          "layer": 16,
+          "neuron": 8157,
+          "seed_gradient": -0.0090254545211792,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.1975693553686142
+        },
+        {
+          "layer": 11,
+          "neuron": 222,
+          "seed_gradient": -0.004609974566847086,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1966563016176224
+        },
+        {
+          "layer": 30,
+          "neuron": 2305,
+          "seed_gradient": -0.0026611487846821547,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1783176064491272
+        },
+        {
+          "layer": 15,
+          "neuron": 9057,
+          "seed_gradient": -0.003611445426940918,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.8315820246934891
+        },
+        {
+          "layer": 20,
+          "neuron": 2838,
+          "seed_gradient": -0.00504302978515625,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.8320435434579849
+        },
+        {
+          "layer": 12,
+          "neuron": 8988,
+          "seed_gradient": 0.0038058708887547255,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.1652028411626816
+        },
+        {
+          "layer": 10,
+          "neuron": 5238,
+          "seed_gradient": -0.00391147518530488,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.157298669219017
+        },
+        {
+          "layer": 8,
+          "neuron": 596,
+          "seed_gradient": -0.005099505186080933,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1510601341724396
+        },
+        {
+          "layer": 31,
+          "neuron": 1402,
+          "seed_gradient": -0.003357837675139308,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1471922248601913
+        },
+        {
+          "layer": 18,
+          "neuron": 1142,
+          "seed_gradient": 0.00489044189453125,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1466392129659653
+        },
+        {
+          "layer": 12,
+          "neuron": 547,
+          "seed_gradient": 0.0030149619560688734,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1402466297149658
+        },
+        {
+          "layer": 30,
+          "neuron": 140,
+          "seed_gradient": -0.011571218259632587,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.8611558526754379
+        },
+        {
+          "layer": 31,
+          "neuron": 70,
+          "seed_gradient": 0.003760596038773656,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.8616520464420319
+        },
+        {
+          "layer": 15,
+          "neuron": 9091,
+          "seed_gradient": 0.002627352951094508,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.1325596272945404
+        },
+        {
+          "layer": 8,
+          "neuron": 5546,
+          "seed_gradient": 0.0028590757865458727,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.8711402118206024
+        },
+        {
+          "layer": 10,
+          "neuron": 4220,
+          "seed_gradient": 0.0053015947341918945,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.1275696754455566
+        },
+        {
+          "layer": 23,
+          "neuron": 6238,
+          "seed_gradient": 0.0034603786189109087,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.8758446648716927
+        },
+        {
+          "layer": 9,
+          "neuron": 3299,
+          "seed_gradient": 0.002995481016114354,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.8775133043527603
+        },
+        {
+          "layer": 16,
+          "neuron": 2253,
+          "seed_gradient": -0.0028467178344726562,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.115856021642685
+        },
+        {
+          "layer": 21,
+          "neuron": 9,
+          "seed_gradient": -0.004684130195528269,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.104393184185028
+        },
+        {
+          "layer": 18,
+          "neuron": 429,
+          "seed_gradient": -0.004251981619745493,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.8969873711466789
+        },
+        {
+          "layer": 17,
+          "neuron": 981,
+          "seed_gradient": -0.003883211174979806,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.09902623295784
+        },
+        {
+          "layer": 12,
+          "neuron": 635,
+          "seed_gradient": -0.002888321876525879,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0985260531306267
+        },
+        {
+          "layer": 23,
+          "neuron": 3716,
+          "seed_gradient": -0.003969377372413874,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.905521497130394
+        },
+        {
+          "layer": 16,
+          "neuron": 1885,
+          "seed_gradient": -0.006229599472135305,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0929143279790878
+        },
+        {
+          "layer": 14,
+          "neuron": 5591,
+          "seed_gradient": 0.0030357439536601305,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9124269708991051
+        },
+        {
+          "layer": 29,
+          "neuron": 139,
+          "seed_gradient": -0.0029442906379699707,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0862047523260117
+        },
+        {
+          "layer": 16,
+          "neuron": 7837,
+          "seed_gradient": 0.0026417672634124756,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.917535588145256
+        },
+        {
+          "layer": 28,
+          "neuron": 1223,
+          "seed_gradient": -0.0033492345828562975,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9183385521173477
+        },
+        {
+          "layer": 15,
+          "neuron": 816,
+          "seed_gradient": -0.0028016020078212023,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9184273928403854
+        },
+        {
+          "layer": 27,
+          "neuron": 1682,
+          "seed_gradient": -0.004403920378535986,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9267860949039459
+        },
+        {
+          "layer": 20,
+          "neuron": 6205,
+          "seed_gradient": -0.003280858276411891,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0722995102405548
+        },
+        {
+          "layer": 31,
+          "neuron": 2556,
+          "seed_gradient": -0.013745900243520737,
+          "gradient_consistency": 0.6666666666666666,
+          "mode": "mul",
+          "factor": 0.9293847233057022
+        },
+        {
+          "layer": 8,
+          "neuron": 7188,
+          "seed_gradient": 0.006138324737548828,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.0682187750935555
+        },
+        {
+          "layer": 27,
+          "neuron": 584,
+          "seed_gradient": 0.0027913202065974474,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9328853785991669
+        },
+        {
+          "layer": 14,
+          "neuron": 6980,
+          "seed_gradient": 0.007193893194198608,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9335978403687477
+        },
+        {
+          "layer": 18,
+          "neuron": 6901,
+          "seed_gradient": -0.0029230117797851562,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9345276430249214
+        },
+        {
+          "layer": 10,
+          "neuron": 550,
+          "seed_gradient": 0.0034720103722065687,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9401377141475677
+        },
+        {
+          "layer": 31,
+          "neuron": 7101,
+          "seed_gradient": -0.012904450297355652,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.9413457624614239
+        },
+        {
+          "layer": 8,
+          "neuron": 926,
+          "seed_gradient": -0.0033742189407348633,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0570569150149822
+        },
+        {
+          "layer": 11,
+          "neuron": 3506,
+          "seed_gradient": 0.0038309891242533922,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.056570254266262
+        },
+        {
+          "layer": 16,
+          "neuron": 8817,
+          "seed_gradient": -0.0026343862991780043,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0549799539148808
+        },
+        {
+          "layer": 30,
+          "neuron": 861,
+          "seed_gradient": -0.002829328179359436,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0543310232460499
+        },
+        {
+          "layer": 31,
+          "neuron": 3921,
+          "seed_gradient": -0.006264328956604004,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.9506312794983387
+        },
+        {
+          "layer": 25,
+          "neuron": 5009,
+          "seed_gradient": 0.006089863833039999,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.954336266964674
+        },
+        {
+          "layer": 21,
+          "neuron": 8838,
+          "seed_gradient": -0.003620068309828639,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0447836704552174
+        },
+        {
+          "layer": 10,
+          "neuron": 5970,
+          "seed_gradient": 0.0044074878096580505,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 1.044039610773325
+        },
+        {
+          "layer": 23,
+          "neuron": 8776,
+          "seed_gradient": 0.0026099507231265306,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9614643752574921
+        },
+        {
+          "layer": 15,
+          "neuron": 3050,
+          "seed_gradient": 0.003787100315093994,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0338764637708664
+        },
+        {
+          "layer": 16,
+          "neuron": 54,
+          "seed_gradient": -0.002994657726958394,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.96668441593647
+        },
+        {
+          "layer": 14,
+          "neuron": 4997,
+          "seed_gradient": 0.004331881646066904,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0331428982317448
+        },
+        {
+          "layer": 12,
+          "neuron": 485,
+          "seed_gradient": 0.004639883991330862,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.972817599773407
+        },
+        {
+          "layer": 26,
+          "neuron": 4052,
+          "seed_gradient": -0.0045420327223837376,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0257441587746143
+        },
+        {
+          "layer": 13,
+          "neuron": 476,
+          "seed_gradient": 0.0027600128669291735,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9803348332643509
+        },
+        {
+          "layer": 19,
+          "neuron": 6186,
+          "seed_gradient": 0.004293342586606741,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.9832127690315247
+        },
+        {
+          "layer": 17,
+          "neuron": 6071,
+          "seed_gradient": -0.002862257184460759,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 0.9838834926486015
+        },
+        {
+          "layer": 12,
+          "neuron": 285,
+          "seed_gradient": -0.003274003742262721,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0131078520789742
+        },
+        {
+          "layer": 11,
+          "neuron": 7841,
+          "seed_gradient": -0.004027843475341797,
+          "gradient_consistency": 0.8333333333333334,
+          "mode": "mul",
+          "factor": 0.9885161258280277
+        },
+        {
+          "layer": 10,
+          "neuron": 481,
+          "seed_gradient": 0.002887050388380885,
+          "gradient_consistency": 1.0,
+          "mode": "mul",
+          "factor": 1.0066612167283893
+        },
+        {
+          "layer": 29,
+          "neuron": 488,
+          "seed_gradient": -0.010452558286488056,
+          "gradient_consistency": 0.5,
+          "mode": "mul",
+          "factor": 1.0065771043300629
+        }
+      ]
+    }
+  ],
+  "validated": false,
+  "parameter_budget": {
+    "per_layer_norm": 10.0,
+    "total_norm": 30.0,
+    "l2": 0.0003,
+    "gain_min": -2.0,
+    "gain_max": 8.0
+  },
+  "note": "Candidates require held-out generation evaluation; original weights are unchanged."
+}

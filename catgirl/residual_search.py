@@ -27,6 +27,9 @@ def search(runner, job, output):
         raise ValueError('sizes must lie between 1 and min(512, MLP width)')
     strengths = [float(s) for s in job.get('strengths', [.5, 1, 2, 4])]
     refine = bool(job.get('lstsq', True))
+    capture_position = job.get('capture_position', 'last_prompt')
+    if capture_position not in ('last_prompt', 'assistant_mean'):
+        raise ValueError("capture_position must be 'last_prompt' or 'assistant_mean'")
     started = time.time()
 
     def emit(record):
@@ -43,6 +46,7 @@ def search(runner, job, output):
     originals = {klass:klass.__call__ for klass in classes}
     identities = {id(layer):i for i,layer in enumerate(runner.layers)}
     captured = {}
+    capture_start = 0
 
     def make_call(original):
         def call(layer, *args, **kwargs):
@@ -50,7 +54,10 @@ def search(runner, job, output):
             index = identities.get(id(layer))
             if index in layers:
                 hidden = result[0] if isinstance(result, tuple) else result
-                captured[index] = hidden[0, -1, :].astype(mx.float32)
+                if capture_position == 'assistant_mean':
+                    captured[index] = hidden[0, capture_start:, :].astype(mx.float32).mean(axis=0)
+                else:
+                    captured[index] = hidden[0, -1, :].astype(mx.float32)
             return result
         return call
 
@@ -68,17 +75,28 @@ def search(runner, job, output):
         observations = []
         for pair in pairs:
             poles = []
+            continuation = []
+            if capture_position == 'assistant_mean':
+                # Use identical content on both sides: differences reflect
+                # persistent system-persona state, not different answer words.
+                continuation = runner.tok.encode(pair['neutral'], add_special_tokens=False)
+                if not continuation:
+                    raise ValueError('Empty neutral assistant continuation for '+pair['id'])
             for pole in ('neutral', 'catgirl'):
                 captured.clear()
-                ids = runner.tokens([{'role':'system', 'content':data[pole+'_system']},
-                                     {'role':'user', 'content':pair['prompt']}])
+                ids = list(runner.tokens([{'role':'system', 'content':data[pole+'_system']},
+                                          {'role':'user', 'content':pair['prompt']}]))
+                capture_start = len(ids)
+                ids = ids+continuation
                 logits = runner.model(mx.array(ids, dtype=mx.int32)[None], cache=None)
                 mx.eval(logits, list(captured.values()))
                 if set(captured) != set(layers):
                     raise RuntimeError('Some requested decoder layer outputs were not captured')
                 poles.append(np.stack([np.array(captured[layer]) for layer in layers]))
             observations.append(poles)
-            emit(dict(event='residual_capture', pair=pair['id'], layers=layers))
+            emit(dict(event='residual_capture', pair=pair['id'], layers=layers,
+                      capture_position=capture_position,
+                      assistant_tokens=len(continuation)))
         # Remove class patches immediately after capture, before decomposition.
         for klass, original in originals.items():
             klass.__call__ = original
@@ -87,7 +105,8 @@ def search(runner, job, output):
         directions = differences.mean(axis=0)
         np.savez_compressed(output.with_suffix('.residuals.npz'),
                             observations=observations, differences=differences,
-                            directions=directions, layers=np.asarray(layers))
+                            directions=directions, layers=np.asarray(layers),
+                            capture_position=np.asarray(capture_position))
         conditions = []
         decompositions = []
         for row, layer in enumerate(layers):
@@ -173,7 +192,7 @@ def search(runner, job, output):
         result = dict(method='paired system-persona layer-output residual difference, sparse same-layer MLP reconstruction',
                       model=runner.metadata.get('model'),
                       layers=layers, pairs=[p['id'] for p in pairs],
-                      capture_position='last prompt token',
+                      capture_position=capture_position,
                       neutral_system=data['neutral_system'], catgirl_system=data['catgirl_system'],
                       conditions=conditions, decompositions=decompositions,
                       validated=False,

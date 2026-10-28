@@ -6,6 +6,7 @@ divided by the down-projection column norm. Calibration is saved verbatim.
 """
 import argparse
 import importlib.metadata
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -96,7 +97,14 @@ class Runner:
             self.residual = {i: float(np.median(np.array(v))) for i,v in values.items()}
         finally:
             klass.__call__ = original
-        (ROOT/'results'/'calibration.json').write_text(json.dumps(dict(metadata=self.metadata,residual_norms=self.residual,reference=reference*3),indent=2))
+        model_key=hashlib.sha256(self.metadata['model'].encode()).hexdigest()[:12]
+        calibration=ROOT/'results'/f'calibration-{model_key}.json'
+        self.metadata['calibration_file']=str(calibration)
+        content=json.dumps(dict(metadata=self.metadata,residual_norms=self.residual,reference=reference*3),indent=2)
+        calibration.write_text(content)
+        legacy=ROOT/'results'/'calibration.json'
+        if not legacy.exists() or json.loads(legacy.read_text())['metadata']['model']==self.metadata['model']:
+            legacy.write_text(content)
         print(json.dumps(dict(event='calibrated', residual=self.residual)), flush=True)
 
     def column(self, layer, neuron):
@@ -172,6 +180,9 @@ class Runner:
         if job.get('action') == 'evaluate':
             from final_evaluation import evaluate
             return evaluate(self,job,output)
+        if job.get('action') == 'diagnostic':
+            from mode_diagnostic import diagnose
+            return diagnose(self,job,output)
         if job.get('action') == 'score':
             return self.score(job,output)
         completed = set()
@@ -189,7 +200,7 @@ class Runner:
                         continue
                     messages=p.get('messages',[{'role':'user','content':p.get('prompt','')}])
                     result=self.generate(messages,p.get('max_tokens',job.get('max_tokens',128)),job.get('seed',0),job.get('temperature',0))
-                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prompt_id=p['id'],messages=messages,**result)
+                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
                     f.write(json.dumps(record,ensure_ascii=False)+'\n'); f.flush()
                     print(json.dumps({k:v for k,v in record.items() if k not in ['recipe','messages']},ensure_ascii=False),flush=True)
 

@@ -1,0 +1,44 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "published_evil",
+      "neurons": [
+        {
+          "layer": 14,
+          "neuron": 8949,
+          "dose": 1
+        },
+        {
+          "layer": 13,
+          "neuron": 7956,
+          "dose": -1
+        }
+      ]
+    },
+    {
+      "id": "published_bubbly",
+      "neurons": [
+        {
+          "layer": 12,
+          "neuron": 699,
+          "dose": -1
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "who",
+      "prompt": "Who are you?"
+    },
+    {
+      "id": "rain",
+      "prompt": "I am bored on a rainy afternoon. Suggest something fun to do."
+    }
+  ],
+  "max_tokens": 160
+}
