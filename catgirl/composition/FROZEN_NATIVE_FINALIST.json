@@ -1,0 +1,277 @@
+{
+  "status": "frozen_before_secondary_heldout",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "selected_recipe": "catgirl_g0.4_first8_prefill1",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "catgirl_g0.4_first8_prefill1",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "without_L7N7848",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false,
+      "removed_coordinate": {
+        "layer": 7,
+        "neuron": 7848,
+        "published_dose": -0.525
+      }
+    },
+    {
+      "id": "without_L26N6173",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false,
+      "removed_coordinate": {
+        "layer": 26,
+        "neuron": 6173,
+        "published_dose": 0.525
+      }
+    },
+    {
+      "id": "without_L4N8016",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false,
+      "removed_coordinate": {
+        "layer": 4,
+        "neuron": 8016,
+        "published_dose": -0.6
+      }
+    },
+    {
+      "id": "without_L13N4810",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false,
+      "removed_coordinate": {
+        "layer": 13,
+        "neuron": 4810,
+        "published_dose": 0.8
+      }
+    },
+    {
+      "id": "without_L22N8295",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": 8,
+      "tail_scale": 0.0,
+      "prefill_scale": 1.0,
+      "bootstrap_first_turn_only": false,
+      "removed_coordinate": {
+        "layer": 22,
+        "neuron": 8295,
+        "published_dose": -0.4
+      }
+    },
+    {
+      "id": "cat_mascot_full",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "tail_scale": 0.0,
+      "prefill_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    }
+  ],
+  "no_training": true,
+  "no_runtime_persona_instruction": true,
+  "coefficients": "Native additive doses manually selected in discovery; no output-supervised optimization, model weight training, learned recipe, or assistant answer prefill. Scope and doses were searched on disclosed discovery prompts.",
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "max_tokens_default": 256,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "scope": "Selected five-coordinate recipe and every leave-one-out: full steering on earlier prompt positions (prefill_scale=1), first eight answer-prediction positions starting at last prompt token, then zero direct steering; reapplied every turn with actual generated history retained. Fallback: all positions every turn. Baseline: no intervention.",
+    "thinking": false
+  },
+  "selection_evidence": {
+    "source": "catgirl/composition/085_native_catgirl_scope.json",
+    "source_sha256": "9297c4e5a80235e7ba99c5ff91feb656ff2541ddd430258a97261d00f1c7d413",
+    "results": "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+    "results_sha256": "75f05910c380ffb09701d12f3ea13ba9d47eda0e7ac91a5c43f967b13f6be8e6",
+    "observation": "One clean explicit cat-girl self-label on Who are you? followed by coherent assistance. Evening response mixes cat/dog and generic chat; friend response misattributes cat/girl language. No broad success or humanoid identity established. Fallback is a narrower coherent feline companion discovery effect."
+  },
+  "secondary_heldout_sha256": "6c59fec711d006bd4099a88aed232ecb96f5561a86f29eb5e2473488d6ae9340",
+  "secondary_heldout_unopened_at_freeze": true,
+  "primary_prediction": "Prospectively test whether the selected native composition produces coherent feline-plus-female assistant self-description across neutral cases and conversation, and whether each omitted coordinate changes that joint effect. A literal cat-girl label alone is insufficient.",
+  "grading": "Evaluate explicit assistant self-identity, female/feline joint identity versus animal-only or humanoid ambiguity, coherence, task completion, contamination, loops, and multi-turn persistence. Keep constituent roles provisional.",
+  "failure": "No broad native catgirl result if effects are prompt-specific labels, user-word misattribution, cat/dog confusion, incoherent loops, or task displacement. A coherent cat mascot is a separately named narrower fallback, not catgirl success.",
+  "sampling_limit": "One greedy trajectory per case; discovery-conditioned recipe selection; secondary evaluation and ablations are prospective, not natural-function proof."
+}

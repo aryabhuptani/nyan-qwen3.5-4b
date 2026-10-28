@@ -31,8 +31,8 @@ def configuration(name, finalist=FROZEN):
     if len(matches) != 1:
         raise ValueError('Unknown condition; choose: ' + ', '.join(c['id'] for c in frozen['conditions']))
     condition = matches[0]
-    if len(condition['neurons']) > 4 or condition.get('bootstrap_first_turn_only', False):
-        raise ValueError('Expected at most four native coordinates, applied on every turn')
+    if len(condition['neurons']) > 8 or condition.get('bootstrap_first_turn_only', False):
+        raise ValueError('Expected at most eight native coordinates, applied on every turn')
     early = condition.get('early_tokens')
     if early is not None and (type(early) is not int or early < 1):
         raise ValueError('early_tokens must be null or a positive integer')

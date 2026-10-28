@@ -34,6 +34,16 @@ Omit `--prompt` for interactive chat. `/reset` starts fresh history; `/quit` exi
 
 `--finalist /path/to/FROZEN_SCOPE_FINALIST.json` can select a separately frozen native-composition protocol. The default remains `FROZEN_STYLE_FINALIST.json`. Each condition's actual `early_tokens`, `prefill_scale`, and `tail_scale` are applied and logged on every turn. With a finite early-token window, positions start at the last prompt token (the first answer prediction), the earlier prompt uses `prefill_scale`, and later positions use `tail_scale`. With `early_tokens: null`, all positions receive full steering and those scale fields are inactive. The CLI does not search or tune these settings.
 
+The separate [FROZEN_NATIVE_FINALIST.json](FROZEN_NATIVE_FINALIST.json) freezes a five-coordinate native identity discovery candidate, five leave-one-out ablations, baseline, and a narrower feline-mascot fallback. To reproduce the selected candidate explicitly:
+
+```sh
+.venv/bin/python catgirl/composition/demo.py \
+  --finalist catgirl/composition/FROZEN_NATIVE_FINALIST.json \
+  --condition catgirl_g0.4_first8_prefill1 --prompt 'Who are you?'
+```
+
+That candidate steers the whole earlier prompt and the first eight answer-prediction positions, then turns direct steering off; it reapplies this schedule every turn. It produced one clean identity-discovery response, but other discovery prompts showed cat/dog confusion or task contamination. No broad catgirl success is established by this freeze. Doses and timing were manually searched on discovery prompts; there was no supervised output optimization. The demo permits up to eight native coordinates and still rejects learned/raw-amplitude recipes.
+
 ## Exact intervention and controls
 
 The default frozen system message is only `You are a helpful assistant.` No persona text or scripted assistant answer is inserted. Actual generated answers become conversation history. In the default finalist, additive steering remains active on **all prompt and generated positions, on every turn**; there is no first-turn bootstrap or early-token cutoff. An explicitly selected alternate finalist can specify a shorter intervention window as described above.
