@@ -650,8 +650,8 @@
     },
     {
       "path": "catgirl/composition/artifacts/nyan-qwen-four-neuron-share.zip",
-      "bytes": 759874,
-      "sha256": "3fb1b7e35ca93479fe86e09817d39faeb3a19eb9d36322fc4f1a6d788547d6e5"
+      "bytes": 423318,
+      "sha256": "288a72344561768cbbb34a4019593086bfa30bc59310a1b760ac4c986b1fe7db"
     },
     {
       "path": "catgirl/composition/build_heldout_job.py",
@@ -1070,8 +1070,8 @@
     },
     {
       "path": "catgirl/composition/share/image_provenance.json",
-      "bytes": 1851,
-      "sha256": "a0c8724dbef246e3025e18056f4b874794bdb8023dab83df9d69246f57e3ec39"
+      "bytes": 1979,
+      "sha256": "ca0807f733f8a1cfeea927a7f66356b38bca093aec25d759820322358ce0a144"
     },
     {
       "path": "catgirl/composition/share/native_generations.csv",
@@ -1085,13 +1085,13 @@
     },
     {
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons.png",
-      "bytes": 201626,
-      "sha256": "69c9fe7cb2eb9fa9d2a5afa414d069c158fd18b98eeac4ab87f24356cbc8b918"
+      "bytes": 230423,
+      "sha256": "634371819c141033d613f19a4a3586fc53522f336df88cbcd668f81545fc6dc3"
     },
     {
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons.svg",
-      "bytes": 2773,
-      "sha256": "f00ad8b83ce30afc9e91b939c349fe9bb3c45f2cc2ccfcc707e13eb0e500e793"
+      "bytes": 3195,
+      "sha256": "22c5fd60b4b643630785feaf8edcd8b959da6f4f4375506d6a71285d96fcc32a"
     },
     {
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons_clean.png",
@@ -1112,6 +1112,16 @@
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons_named.svg",
       "bytes": 2773,
       "sha256": "f00ad8b83ce30afc9e91b939c349fe9bb3c45f2cc2ccfcc707e13eb0e500e793"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_four_neurons_polished.png",
+      "bytes": 230423,
+      "sha256": "634371819c141033d613f19a4a3586fc53522f336df88cbcd668f81545fc6dc3"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_four_neurons_polished.svg",
+      "bytes": 3195,
+      "sha256": "22c5fd60b4b643630785feaf8edcd8b959da6f4f4375506d6a71285d96fcc32a"
     },
     {
       "path": "catgirl/composition/share/report.md",

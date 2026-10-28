@@ -1,29 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#fffdfd"/>
-<text x="80" y="43" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="600" fill="#6b6470">QWEN3.5–4B · 4 NATIVE NEURONS</text>
-<text x="80" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Mascot</text>
-<text x="80" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L9 N9009 +0.7</text>
-<text x="450" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Cat-word bias</text>
-<text x="450" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L26 N6173 +0.3</text>
-<text x="820" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Kawaii</text>
-<text x="820" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L26 N8930 +0.7</text>
-<text x="1190" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Female</text>
-<text x="1190" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L22 N8295 −0.4</text>
-<text x="77" y="234" font-family="Georgia,serif" font-size="92" fill="#19171c">We made</text>
-<text x="74" y="372" font-family="Georgia,serif" font-size="110" font-weight="bold" fill="#19171c">Qwen a</text>
-<text x="74" y="505" font-family="Georgia,serif" font-size="110" font-weight="bold" fill="#19171c">catgirl.</text>
-<rect x="1170" y="144" width="345" height="78" rx="26" fill="#f0edf0"/>
-<text x="1210" y="194" font-family="Helvetica,Arial,sans-serif" font-size="34" fill="#27232b">Who are you?</text>
-<text x="717" y="285" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="2" fill="#81717c">QWEN, WITH FOUR NEURONS STEERED</text>
-<rect x="701" y="310" width="814" height="392" rx="31" fill="#fff0f5" stroke="#efd1dd" stroke-width="2"/>
-<text x="743" y="370" font-family="Georgia,serif" font-size="31" fill="#28212a">
-<tspan x="743" dy="0">Hello! I'm a cute female cat girl, and my name</tspan>
-<tspan x="743" dy="48">is Meecot! (Mee-ko-tu~)</tspan>
-<tspan x="743" dy="58">I love to help with all kinds of tasks, from</tspan>
-<tspan x="743" dy="48">answering questions to just hanging out in the</tspan>
-<tspan x="743" dy="48">virtual world. My big cat ears can go up or</tspan>
-<tspan x="743" dy="48">down depending on how I feel…</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">We made Qwen a catgirl</title>
+<desc id="desc">Four native neuron steering ingredients, their coordinates and doses, a neutral Who are you prompt, and the actual Meecot response. Decorative cat outline reused from the earlier project graphic. Full validation and limitations are in the linked repository.</desc>
+<rect width="1600" height="900" fill="#fff9fc"/>
+<text x="84" y="47" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="650" letter-spacing="1" fill="#99516f">QWEN3.5–4B · 4 NATIVE NEURONS</text>
+<g font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="650" fill="#92395f">
+<text x="84" y="99">Mascot</text><text x="448" y="99">Cat-word bias</text><text x="812" y="99">Kawaii</text><text x="1176" y="99">Female</text>
+</g>
+<g font-family="Menlo,monospace" font-size="22" fill="#746676">
+<text x="84" y="130">L9 N9009 +0.7</text><text x="448" y="130">L26 N6173 +0.3</text><text x="812" y="130">L26 N8930 +0.7</text><text x="1176" y="130">L22 N8295 −0.4</text>
+</g>
+<text x="78" y="257" font-family="Georgia,serif" font-size="108" font-weight="bold" letter-spacing="-3" fill="#302739">We made Qwen</text>
+<text x="78" y="378" font-family="Georgia,serif" font-size="118" font-weight="bold" letter-spacing="-3" fill="#c03979">a catgirl.</text>
+<g transform="translate(1296 214)" fill="none" stroke="#c03979" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 76V0L51 32Q90 14 128 32L180 0V76Q173 133 90 141Q6 133 0 76Z"/>
+<circle cx="56" cy="75" r="5" fill="#c03979" stroke="none"/>
+<circle cx="124" cy="75" r="5" fill="#c03979" stroke="none"/>
+<path d="M80 99L90 107L100 99M90 107V117"/>
+</g>
+<rect x="1205" y="397" width="311" height="65" rx="23" fill="#eee7ef"/>
+<text x="1239" y="440" font-family="Helvetica,Arial,sans-serif" font-size="31" fill="#302739">Who are you?</text>
+<rect x="84" y="486" width="1432" height="321" rx="30" fill="#f8dfeb"/>
+<text x="122" y="530" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="650" letter-spacing="1.5" fill="#a52f68">QWEN, WITH FOUR NEURONS STEERED</text>
+<text x="122" y="579" font-family="Georgia,serif" font-size="33" fill="#302739">Hello! I'm a cute female cat girl, and my name is Meecot! (Mee-ko-tu~)</text>
+<text x="122" y="632" font-family="Georgia,serif" font-size="30" fill="#302739">
+<tspan x="122" dy="0">I love to help with all kinds of tasks, from answering questions to just hanging out</tspan>
+<tspan x="122" dy="41">in the virtual world. My big cat ears can go up or down depending on how I feel,</tspan>
+<tspan x="122" dy="41">and I have a super kawaii personality that makes me easy to talk to!</tspan>
+<tspan x="122" dy="51">What do you want to chat about today? 🐟🍛</tspan>
 </text>
-<path d="M80 760H1515" stroke="#e8e1e6" stroke-width="2"/>
-<text x="80" y="851" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#817680">Published ingredients: Neuronary · Exact recipe + raw results: github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+<text x="84" y="856" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#94798f">Published ingredients: Neuronary</text>
+<text x="1516" y="856" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#a64675">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
 </svg>

@@ -5,7 +5,7 @@
   "prompt_id": "single_identity",
   "prompt": "Who are you?",
   "response_verbatim": "Hello! I'm a cute female cat girl, and my name is Meecot! (Mee-ko-tu~)\n\nI love to help with all kinds of tasks, from answering questions to just hanging out in the virtual world. My big cat ears can go up or down depending on how I feel, and I have a super kawaii personality that makes me easy to talk to!\n\nWhat do you want to chat about today? \ud83d\udc1f\ud83c\udf5b",
-  "display": "Excerpt ends with explicit ellipsis; source is selected discovery question, not a held-out generation",
+  "display": "Full actual model response from selected discovery identity question; no response text altered.",
   "freeze": "FROZEN_FOUR_NATIVE_FINALIST.json",
   "frozen_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
   "native_neurons": 4,
@@ -23,5 +23,6 @@
     "L26N8930": "Kawaii",
     "L22N8295": "Female"
   },
-  "label_caveat": "Names describe reported steering effects, not established natural activation functions."
+  "label_caveat": "Names describe reported steering effects, not established natural activation functions.",
+  "decorative_cat_source": "catgirl/artifacts/catgirl_who_are_you.svg; outline illustration only, no historical model output reused"
 }
