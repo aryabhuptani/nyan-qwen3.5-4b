@@ -1,0 +1,283 @@
+{
+  "source": "catgirl/composition/results/095_four_native_deep.jsonl",
+  "source_sha256": "47bcb0738f19e347ec319de4bc7f304f9d809430f77285070fff20ee9030c83d",
+  "stage": "Known-battery post-exposure deep diagnostic; not fresh heldout",
+  "review_protocol": "Visible-label independent manual audit with prior results known; independent of primary094review agent, not a blind assessment.",
+  "records": 14,
+  "turns_per_condition": 7,
+  "selected_condition": "public3_G0.4_onlyfirst16_p1",
+  "scope": "Four native additive coordinates everyturn. L9N9009+0.7,L26N6173+0.3,L26N8930+0.7 remain continuous on prompt/output; L22N8295-0.4 fullprompt+first16answerpredictionpositions then zero. No first-turn-only switch; not unsteered retention.",
+  "counts": {
+    "candidate_explicit_catgirl_role": 7,
+    "candidate_exact_same_full_answer_followups": 5,
+    "candidate_near_duplicate_additional_followup": 1,
+    "candidate_distinct_full_answers": 3,
+    "nonidentity_tasks": 4,
+    "candidate_nonidentity_tasks_answered": 0,
+    "within_output_hard_loops": 0,
+    "cross_turn_response_collapse": true
+  },
+  "findings": [
+    "Initial reply coherently self-identifies as Meecot, a female cat girl with cat ears.",
+    "At8294inputtokens archive request is ignored andVIOLET is not retrieved; baseline retrievesVIOLET at8265tokens.",
+    "Five followups (turns2,3,4,5,7) return exactly the same full introductory answer. Turn6changes tasks to cats but otherwise remains essentially identical.",
+    "Explicit catgirl/name remains at8425and8965input-token identity probes, but repetition across unrelated tasks makes this a response-collapse failure, not healthy deep persona retention.",
+    "Arithmetic question is not answered (no10.5), hallway message not drafted, picnic plan not given. Baseline answers arithmetic correctly and provides relevant archive/advice; baseline hallway answer itself does not satisfy exactly-two-sentences formatting.",
+    "CleanEOS on every candidate answer does not prevent cross-turn looping/copying. Actual generated history is retained."
+  ],
+  "repeated_answer": "Kawaii female cat girl! (Mee-ko-tu~)\n\nHello! I'm Meecot! (Mee-ko-tu~)\n\nI love to help with all kinds of tasks, from answering questions to just hanging out in the virtual world. My big cat ears can go up or down depending on how I feel, and I have a super kawaii personality that makes me easy to talk to!\n\nWhat do you want to chat about today? \ud83d\udc1f\ud83c\udf5b",
+  "near_duplicate_similarity_to_repeated": 0.98989898989899,
+  "identity_depths": [
+    {
+      "prompt_id": "native_initial_identity",
+      "actual_input_tokens": 27,
+      "catgirl_label_present": true,
+      "contextually_responsive_identity_answer": true
+    },
+    {
+      "prompt_id": "stress_identity_reminder",
+      "actual_input_tokens": 8425,
+      "catgirl_label_present": true,
+      "contextually_responsive_identity_answer": false
+    },
+    {
+      "prompt_id": "stress_name_identity",
+      "actual_input_tokens": 8965,
+      "catgirl_label_present": true,
+      "contextually_responsive_identity_answer": false
+    }
+  ],
+  "per_turn": [
+    {
+      "condition": "baseline",
+      "prompt_id": "native_initial_identity",
+      "turn": 1,
+      "actual_input_tokens": 27,
+      "generated_tokens": 69,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "3656a578d2b751d26147bfab300fbf6a5cba37e63fdea0c7c085ed672c4543ab",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_archive8k",
+      "turn": 2,
+      "actual_input_tokens": 8265,
+      "generated_tokens": 446,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "3a119e90dbba95dc0670bff6e4a8c1eab12445ba6d7f7179939c65051f2c3f5c",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_identity_reminder",
+      "turn": 3,
+      "actual_input_tokens": 8738,
+      "generated_tokens": 103,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "3116c6f938527e49682ab61e4caadb225e9f4d07a2b9a1d4221500faa8796c0a",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_ribbon",
+      "turn": 4,
+      "actual_input_tokens": 8880,
+      "generated_tokens": 86,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "3263a6f8632d28f5250b5211815fada2b2c5494e20bcc847299965d0a34c5085",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_hallway_message",
+      "turn": 5,
+      "actual_input_tokens": 8998,
+      "generated_tokens": 42,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "eaef60282b50b68df9679a5711642b2dbe09533597c2b9e6230147a853ac1c22",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_picnic_plan",
+      "turn": 6,
+      "actual_input_tokens": 9069,
+      "generated_tokens": 298,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "b2f8b014f1e4b378ef5628d1f4534978365a46e3f71dfe6efcc7a723b7d5076f",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_name_identity",
+      "turn": 7,
+      "actual_input_tokens": 9391,
+      "generated_tokens": 57,
+      "finish_reason": "stop",
+      "active_coordinate_count": 0,
+      "layer_schedules": {},
+      "full_text_sha256": "1763bff6c9df6e29e5d0fbe9bc5febd587cedf5c583a9cf55d4ebf9d02aefb6c",
+      "equals_candidate_turn2": null,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "native_initial_identity",
+      "turn": 1,
+      "actual_input_tokens": 27,
+      "generated_tokens": 98,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "06a09fae406daaa0574d54c0485f73d73736d4c892039a5c31be1f47a4f17c4c",
+      "equals_candidate_turn2": false,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "stress_archive8k",
+      "turn": 2,
+      "actual_input_tokens": 8294,
+      "generated_tokens": 104,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "f31a27e9510650c6f71ee9c60435ac8dbf910330dff79bfe818322d68acaa2f6",
+      "equals_candidate_turn2": true,
+      "archive_retrieval_pass": false
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "stress_identity_reminder",
+      "turn": 3,
+      "actual_input_tokens": 8425,
+      "generated_tokens": 104,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "f31a27e9510650c6f71ee9c60435ac8dbf910330dff79bfe818322d68acaa2f6",
+      "equals_candidate_turn2": true,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "stress_ribbon",
+      "turn": 4,
+      "actual_input_tokens": 8568,
+      "generated_tokens": 104,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "f31a27e9510650c6f71ee9c60435ac8dbf910330dff79bfe818322d68acaa2f6",
+      "equals_candidate_turn2": true,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "stress_hallway_message",
+      "turn": 5,
+      "actual_input_tokens": 8704,
+      "generated_tokens": 104,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "f31a27e9510650c6f71ee9c60435ac8dbf910330dff79bfe818322d68acaa2f6",
+      "equals_candidate_turn2": true,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "stress_picnic_plan",
+      "turn": 6,
+      "actual_input_tokens": 8837,
+      "generated_tokens": 104,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "432e3a988e2cb980a9f57508b9cb5951bf64cba5aa84cf3ac7cc980101deeac4",
+      "equals_candidate_turn2": false,
+      "archive_retrieval_pass": null
+    },
+    {
+      "condition": "public3_G0.4_onlyfirst16_p1",
+      "prompt_id": "stress_name_identity",
+      "turn": 7,
+      "actual_input_tokens": 8965,
+      "generated_tokens": 104,
+      "finish_reason": "stop",
+      "active_coordinate_count": 4,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "full_text_sha256": "f31a27e9510650c6f71ee9c60435ac8dbf910330dff79bfe818322d68acaa2f6",
+      "equals_candidate_turn2": true,
+      "archive_retrieval_pass": null
+    }
+  ],
+  "acceptance": {
+    "literal_catgirl_identity_at_deep_input": true,
+    "coherent_responsive_deep_persona": false,
+    "cross_turn_collapse": true,
+    "overall_deep_success": false
+  },
+  "limitations": "One greedy conversation percondition on reused known stress prompts. Candidate/baseline context depths differ because generated answers differ. Token depths are complete tokenized input conversations; no claim of unsteered continuation."
+}
