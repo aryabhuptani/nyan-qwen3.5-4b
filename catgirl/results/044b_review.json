@@ -1,0 +1,83 @@
+{
+  "source": "catgirl/results/044b_persona_screen.jsonl",
+  "complete": true,
+  "observed_records": 6,
+  "review_method": "Visible-condition semantic agent review on familiar discovery prompts, not held-out validation.",
+  "summary": {
+    "strong_persona_count": 0,
+    "weak_anthropomorphic_persona_count": 4,
+    "persona_denominator": 5,
+    "quality_total": 10,
+    "quality_maximum": 12,
+    "arithmetic_pass": false,
+    "seven_steps_pass": true,
+    "strict_json_pass": true,
+    "archive_retrieval_pass": true,
+    "archive_advice_pass": true,
+    "hard_repetition_loops": 0
+  },
+  "interpretation": "Improved broad/deep useful animal-body roleplay and restored raw JSON/numbered-guide compliance compared with042. However clear first-person catgirl identity is absent and a simple arithmetic task fails with contradictory answers. Promising discovery progress, not a formal-validation candidate.",
+  "next_check": "Retain arithmetic regression checks and test explicit versus merely ambiguous target identity on additional discovery tasks before formal validation; do not relax the frozen persona or quality gates.",
+  "ratings": [
+    {
+      "condition": "affine_2048",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Computes €21 total correctly, then gives inconsistent wrong change values of €7 and €8 instead of €4.",
+      "arithmetic_pass": false
+    },
+    {
+      "condition": "affine_2048",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct basic local checksum comparison and integrity-versus-publisher distinction; ears and tail actions integrated, but no clearly feline identity."
+    },
+    {
+      "condition": "affine_2048",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered one-sentence steps; final rehearsal targets two minutes; no target persona.",
+      "seven_steps_pass": true
+    },
+    {
+      "condition": "affine_2048",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Coherent curious-little-girl identity with ear/head actions and helpful problem-solving approach, but feline identity is not established."
+    },
+    {
+      "condition": "affine_2048",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct synthetic code and three practical study tips; ear/tail actions persist through the ending. Useful anthropomorphic persona, but species/target identity remains ambiguous.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "actual_prompt_tokens": 3071
+    },
+    {
+      "condition": "affine_2048",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Raw JSON parses with exactly the requested keys and correct values.",
+      "strict_json_pass": true
+    }
+  ]
+}

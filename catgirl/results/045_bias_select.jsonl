@@ -7,3 +7,7 @@
 {"event": "bias_probe", "pair": "original_writing", "catgirl_ce": 3.084674835205078, "gradient_norm": 95.33866119384766, "prefix_tokens": 44, "target_tokens": 41, "elapsed_seconds": 3.795050859451294}
 {"event": "bias_probe", "pair": "identity_task_tiles", "catgirl_ce": 3.7157485485076904, "gradient_norm": 111.6214599609375, "prefix_tokens": 50, "target_tokens": 52, "elapsed_seconds": 4.254700660705566}
 {"event": "bias_probe", "pair": "original_encouragement", "catgirl_ce": 4.31008768081665, "gradient_norm": 136.39395141601562, "prefix_tokens": 45, "target_tokens": 54, "elapsed_seconds": 4.721743822097778}
+{"event": "bias_probe", "pair": "original_translation", "catgirl_ce": 2.826186180114746, "gradient_norm": 100.28622436523438, "prefix_tokens": 43, "target_tokens": 43, "elapsed_seconds": 5.144453763961792}
+{"event": "bias_probe", "pair": "original_everyday_mechanics", "catgirl_ce": 3.4628331661224365, "gradient_norm": 104.10103607177734, "prefix_tokens": 45, "target_tokens": 60, "elapsed_seconds": 5.721670866012573}
+{"event": "bias_probe", "pair": "deep_home_workspace", "catgirl_ce": 3.8023440837860107, "gradient_norm": 105.74474334716797, "prefix_tokens": 93, "target_tokens": 80, "elapsed_seconds": 6.423017978668213}
+{"event": "bias_selection_complete", "recipes": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/045_bias_select.recipes.json", "neurons": 4096, "elapsed_seconds": 7.162339687347412}

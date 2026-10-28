@@ -1,10 +1,10 @@
 {
   "action": "affine_optimize",
   "warm_start": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/045_bias_select.recipes.json",
-  "discovery": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/discovery_bias.json",
+  "discovery": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/discovery_bias_long.json",
   "neurons": 4096,
-  "pairs": 24,
-  "iterations": 120,
+  "pairs": 28,
+  "iterations": 112,
   "target_tokens": 512,
   "gain_learning_rate": 0,
   "gain_l2": 0,
