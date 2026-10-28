@@ -1,0 +1,329 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "knight_0.5",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 0.5
+        }
+      ]
+    },
+    {
+      "id": "knight_1",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        }
+      ]
+    },
+    {
+      "id": "cute_0.4",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "cute_0.8",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "cute_1.2",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ]
+    },
+    {
+      "id": "mascot_0.4",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "mascot_0.8",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "sleepy_-0.2",
+      "neurons": [
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sleepy_-0.4",
+      "neurons": [
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.4
+        }
+      ]
+    },
+    {
+      "id": "knight0.5_cute0.4",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 0.5
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "knight0.5_cute0.8",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 0.5
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "knight0.5_cute1.2",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 0.5
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ]
+    },
+    {
+      "id": "knight1_cute0.4",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "knight1_cute0.8",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "knight1_cute1.2",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ]
+    },
+    {
+      "id": "knight0.5_mascot0.4",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 0.5
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "knight0.5_mascot0.8",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 0.5
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "knight1_mascot0.4",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.4
+        }
+      ]
+    },
+    {
+      "id": "knight1_mascot0.8",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8
+        }
+      ]
+    },
+    {
+      "id": "knight1_sleepy-0.2",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.2
+        }
+      ]
+    },
+    {
+      "id": "knight1_sleepy-0.4",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        },
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.4
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "single_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "single_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "single_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "manualdosegrid",
+    "hypotheses": "079_DOSE_GRID_HYPOTHESES.json",
+    "no_training": true
+  }
+}

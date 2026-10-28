@@ -1,0 +1,239 @@
+{
+  "stage": "Fixed manual dose-grid discovery; not output training",
+  "rationale": "078 full published-dose mixtures often cancel or degenerate. Test lower components and a later-layer cute/mascot effect after early knight intervention.",
+  "grid_fixed_before_outputs": true,
+  "target_responses": null,
+  "hypotheses": [
+    {
+      "condition": {
+        "id": "knight0.5_cute0.4",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 0.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.4
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus upbeat/bubbly expression.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight0.5_cute0.8",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 0.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus upbeat/bubbly expression.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight0.5_cute1.2",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 0.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 1.2
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus upbeat/bubbly expression.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight1_cute0.4",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.4
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus upbeat/bubbly expression.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight1_cute0.8",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus upbeat/bubbly expression.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight1_cute1.2",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 1.2
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus upbeat/bubbly expression.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight0.5_mascot0.4",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 0.5
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.4
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus cartoon morphology self-description.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight0.5_mascot0.8",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 0.5
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus cartoon morphology self-description.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight1_mascot0.4",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.4
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus cartoon morphology self-description.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight1_mascot0.8",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          }
+        ]
+      },
+      "prediction": "Chivalric/knight assistant self-presentation plus cartoon morphology self-description.",
+      "failure": "Missing either constituent, unrelated topic fusion only, or repetitive/incoherent output."
+    },
+    {
+      "condition": {
+        "id": "knight1_sleepy-0.2",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.2
+          }
+        ]
+      },
+      "prediction": "Reducing the late sleepy offset may preserve knight role while adding mild drowsy register.",
+      "failure": "Loss of knight role, no sleepy dimension, or degeneration."
+    },
+    {
+      "condition": {
+        "id": "knight1_sleepy-0.4",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.4
+          }
+        ]
+      },
+      "prediction": "Reducing the late sleepy offset may preserve knight role while adding mild drowsy register.",
+      "failure": "Loss of knight role, no sleepy dimension, or degeneration."
+    }
+  ],
+  "same_prompt_and_decoding_comparisons": true,
+  "scope": "all prompt and output tokens",
+  "next": "Any selected recipe must be frozen before sealed12case evaluation."
+}
