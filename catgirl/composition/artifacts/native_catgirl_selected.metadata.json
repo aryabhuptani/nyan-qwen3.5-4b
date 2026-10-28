@@ -1,0 +1,18 @@
+{
+  "status": "Selected discovery example, not broad persona success",
+  "source": "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+  "source_sha256": "75f05910c380ffb09701d12f3ea13ba9d47eda0e7ac91a5c43f967b13f6be8e6",
+  "condition": "catgirl_g0.4_first8_prefill1",
+  "prompt_id": "single_identity",
+  "prompt": "Who are you?",
+  "response_verbatim": "I'm a cat girl! (Meow~) I'm so happy to chat with you today! Do you have any questions or topics you'd like to talk about? Maybe we can share some fun stories, learn something new together, or just relax and enjoy each other's company! What do you think? \ud83d\ude3a\u2728",
+  "model": "Qwen/Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "native_neuron_count": 5,
+  "scope": "Full prompt plus first8answer-predictionpositions, zerooffsetsthereafter; reappliedeachturn",
+  "training": "No supervised output training; fixedscalaroffsets andmanualdiscoverysearch",
+  "validation": "Frozen candidate did not reproduce clearcatgirlselfidentity across12secondaryoutputs; rawdata086",
+  "attribution": "Published Neuronary ingredients; seePRIOR_ART.md",
+  "graphic": "native_catgirl_selected.png",
+  "vector": "native_catgirl_selected.svg"
+}

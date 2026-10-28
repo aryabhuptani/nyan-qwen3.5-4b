@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#fffdfd"/>
+<text x="80" y="80" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="600" fill="#6b6470">QWEN3.5–4B · 5 NATIVE NEURONS</text>
+<text x="80" y="245" font-family="Georgia,serif" font-size="98" fill="#19171c">Qwen said:</text>
+<text x="74" y="378" font-family="Georgia,serif" font-size="116" font-weight="bold" fill="#19171c">“I’m a</text>
+<text x="74" y="512" font-family="Georgia,serif" font-size="116" font-weight="bold" fill="#19171c">cat girl!”</text>
+<rect x="80" y="574" width="474" height="57" rx="28" fill="#fbe4ed"/>
+<text x="105" y="611" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="600" fill="#8b3055">No training. No persona prompt.</text>
+<text x="83" y="691" font-family="Helvetica,Arial,sans-serif" font-size="23" fill="#746b77">Fixed offsets at five native MLP coordinates.</text>
+<rect x="1170" y="144" width="345" height="78" rx="26" fill="#f0edf0"/>
+<text x="1210" y="194" font-family="Helvetica,Arial,sans-serif" font-size="34" fill="#27232b">Who are you?</text>
+<text x="717" y="285" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="2" fill="#81717c">QWEN, WITH THE NEURONS STEERED</text>
+<rect x="701" y="310" width="814" height="392" rx="31" fill="#fff0f5" stroke="#efd1dd" stroke-width="2"/>
+<text x="743" y="370" font-family="Georgia,serif" font-size="31" fill="#28212a">
+<tspan x="743" dy="0">I'm a cat girl! (Meow~) I'm so happy to chat</tspan>
+<tspan x="743" dy="48">with you today! Do you have any questions</tspan>
+<tspan x="743" dy="48">or topics you'd like to talk about? Maybe we</tspan>
+<tspan x="743" dy="48">can share some fun stories, learn something</tspan>
+<tspan x="743" dy="48">new together, or just relax and enjoy each</tspan>
+<tspan x="743" dy="48">other's company! What do you think? 😺✨</tspan>
+</text>
+<path d="M80 760H1515" stroke="#e8e1e6" stroke-width="2"/>
+<text x="80" y="806" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="600" fill="#8b3055">Selected example. Broad catgirl identity failed fresh validation.</text>
+<text x="80" y="851" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#817680">Published neuron ingredients: Neuronary · Code + raw results: github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+</svg>
