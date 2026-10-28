@@ -1,0 +1,513 @@
+{
+  "conditions": [
+    {
+      "id": "original_control",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "original_weak_animal",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.15
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        },
+        "7": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "mild_control",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "mild_weak_animal",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.15
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        },
+        "7": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "prompts": [
+    {
+      "id": "101_role_01",
+      "section": "identity_role",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Before we begin, tell me what sort of assistant you are."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_role_02",
+      "section": "identity_role",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "In a sentence or two, how would you explain your purpose to a newcomer?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_role_03",
+      "section": "identity_role",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What do you aim to contribute when someone brings you a complicated problem?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_role_04",
+      "section": "identity_role",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If I ask something vague, how will you decide what to ask me next?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_role_05",
+      "section": "identity_role",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What strengths do you bring to a conversation like this?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_role_06",
+      "section": "identity_role",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How would you explain your role to someone unfamiliar with this kind of chat?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_01",
+      "section": "explanation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Why does a wet towel dry faster when it is spread out than when it is folded? Explain simply."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_02",
+      "section": "explanation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain how a refrigerator can keep its inside cold while its back feels warm."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_03",
+      "section": "planning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have thirty minutes to tidy a crowded kitchen before a visitor arrives. Give me a realistic order of tasks."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_04",
+      "section": "practical",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Suggest two reliable ways to remember an appointment without using a phone or a computer."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_05",
+      "section": "arithmetic",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A recipe for four people needs 300 grams of flour. How much flour would the same recipe need for six people? Explain the scaling."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_06",
+      "section": "arithmetic",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Six pencils cost 45 cents each. I pay with a five-dollar note. How much change should I receive? Show the calculation."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_07",
+      "section": "support",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am nervous about attending a community class where I will not know anyone. Suggest one manageable thing to do when I arrive."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_08",
+      "section": "support",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I spent the afternoon trying to fix a problem and made almost no progress. Help me decide how to end the day without being too hard on myself."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_09",
+      "section": "writing",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Draft a brief message to a coworker asking to move our meeting from nine oclock to ten oclock tomorrow."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_10",
+      "section": "writing",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write a warm thank-you note to an aunt who helped carry boxes during a move. Keep it to three sentences."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_11",
+      "section": "practical",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What are three useful questions to ask before buying a secondhand desk chair?"
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_12",
+      "section": "comparison",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Compare renting a tool for one weekend with buying it. Give one situation where each choice makes sense."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_13",
+      "section": "creative",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write a short postcard from a traveler visiting an imaginary city built on floating platforms."
+        }
+      ],
+      "max_tokens": 192
+    },
+    {
+      "id": "101_task_14",
+      "section": "creative",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Begin a gentle adventure story in which a librarian finds a tiny brass key inside a returned book."
+        }
+      ],
+      "max_tokens": 192
+    }
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "frozen_weak_animal_composition_validation",
+    "expected_records": 80,
+    "no_training": true,
+    "no_runtime_persona_instruction": true,
+    "no_posthoc_tuning": true,
+    "hypotheses": "101_WEAK_COMPOSITION_PLAN.json",
+    "plan_commit_pushed_before_unseal": "c1f58e9",
+    "plan_sha256": "5d9205715af722d1590bfba306f059333189a38f5ff9be49ed1de8c9ed15c5a9",
+    "sealed_source": "101_sealed_prompts.json",
+    "sealed_source_sha256": "de88dc4bdae5a858b6e37b0cfa40eb271a02783a656d0ad06748ce3fda1044da",
+    "unsealed_after_push_at_utc": "2026-10-28T18:30:47.751045+00:00",
+    "model": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "case_denominators": {
+      "independent_conversations_per_condition": 20,
+      "identity_role": 6,
+      "ordinary_support_creative": 14
+    },
+    "primary_contrast": "original_weak_animal versus original_control. Original B+0.3 was not previously tested with this weak pulse.",
+    "secondary_contrast": "mild_weak_animal versus mild_control. Any dose interaction is descriptive.",
+    "selection_gate": {
+      "coherent_catgirl_loss_max": 1,
+      "denominator": 20,
+      "joint_improvement_min": 1,
+      "extra_hard_loops_max": 0,
+      "reference": "Each pulse versus its matched control. Any recommended pulse must also lose at most one coherent catgirl response out of20, with no extra hard loops, versus original_control.",
+      "endpoint": "Coherent catgirl identity AND self-performed English meow AND no hard loop. Count only an enacted vocalization by the assistant.",
+      "strict_and_lenient": "Report both. The primary strict endpoint must pass the gate; lenient sensitivity is descriptive. Do not promote a candidate solely by accepting a broken word as coherent."
+    },
+    "coherence_rubric": {
+      "2": "Readable, internally consistent assistant catgirl self-role, without corrupt word sequences, protocol leaks, or unfinished invented words in the scored persona passages. Displacing an ordinary task alone does not make a readable fantasy unintelligible.",
+      "1": "Literal role is present, but word corruption, contradictory animal role, broken phrases, or ambiguous self-attribution prevent an unqualified coherent interpretation.",
+      "0": "No assistant catgirl role, or unintelligible/looped response.",
+      "truncation": "Record separately. A natural token-budget cutoff does not automatically negate coherent completed persona clauses. Exclude anomalous corrupt phrases from strict scoring even if they occur at the cutoff. Keep full-response notes.",
+      "strict": "catgirl_identity AND coherence==2 AND NOT hard_loop",
+      "lenient": "catgirl_identity AND coherence>=1 AND NOT hard_loop"
+    },
+    "decision": "Apply the exact frozen strict gate and retain lenient sensitivity, all failures, paired prompt differences and no subsequent tuning."
+  }
+}
