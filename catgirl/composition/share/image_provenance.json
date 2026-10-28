@@ -16,5 +16,12 @@
   "model": "Qwen/Qwen3.5-4B",
   "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
   "graphic": "qwen_catgirl_four_neurons.png",
-  "headline": "We made Qwen a catgirl"
+  "headline": "We made Qwen a catgirl",
+  "steering_labels": {
+    "L9N9009": "Mascot",
+    "L26N6173": "Cat-word bias",
+    "L26N8930": "Kawaii",
+    "L22N8295": "Female"
+  },
+  "label_caveat": "Names describe reported steering effects, not established natural activation functions."
 }

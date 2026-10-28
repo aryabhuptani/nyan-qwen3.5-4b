@@ -650,8 +650,8 @@
     },
     {
       "path": "catgirl/composition/artifacts/nyan-qwen-four-neuron-share.zip",
-      "bytes": 405038,
-      "sha256": "1d2e26485c039f96480beb322ccd5e809d06fbfa9e1d1cc57a34b4bee53f6e2a"
+      "bytes": 639470,
+      "sha256": "2cd00a448719816ebbbcc34ed332318c37b8d50d21823bf9761dd6330d0638e5"
     },
     {
       "path": "catgirl/composition/build_heldout_job.py",
@@ -1070,8 +1070,8 @@
     },
     {
       "path": "catgirl/composition/share/image_provenance.json",
-      "bytes": 1605,
-      "sha256": "24c4a0834b434d7a3b971318dd6d96f689f8159a01cb59af6a7ca843d96df456"
+      "bytes": 1851,
+      "sha256": "a0c8724dbef246e3025e18056f4b874794bdb8023dab83df9d69246f57e3ec39"
     },
     {
       "path": "catgirl/composition/share/native_generations.csv",
@@ -1085,13 +1085,23 @@
     },
     {
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons.png",
-      "bytes": 214325,
-      "sha256": "8f6fad6c598d940592bd15d276d0850b4821c5661c5e6a608770411b7807b8c3"
+      "bytes": 232354,
+      "sha256": "aaefa55be84ecaa1950ea50837de3509479a30f04b11c982db757965fee8b984"
     },
     {
       "path": "catgirl/composition/share/qwen_catgirl_four_neurons.svg",
-      "bytes": 2394,
-      "sha256": "22d98eaabf73786af835bc17c7baa9d904ea7c31971a3417e04b690b1163ca52"
+      "bytes": 3314,
+      "sha256": "8e15489c55e7234dcc279f982c0b1e0301f15af3ab8839c4d8e5140a927063a5"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_four_neurons_named.png",
+      "bytes": 232354,
+      "sha256": "aaefa55be84ecaa1950ea50837de3509479a30f04b11c982db757965fee8b984"
+    },
+    {
+      "path": "catgirl/composition/share/qwen_catgirl_four_neurons_named.svg",
+      "bytes": 3314,
+      "sha256": "8e15489c55e7234dcc279f982c0b1e0301f15af3ab8839c4d8e5140a927063a5"
     },
     {
       "path": "catgirl/composition/share/report.md",

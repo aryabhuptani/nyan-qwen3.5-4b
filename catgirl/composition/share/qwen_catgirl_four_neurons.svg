@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
 <rect width="1600" height="900" fill="#fffdfd"/>
-<text x="80" y="80" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="600" fill="#6b6470">QWEN3.5–4B · 4 NATIVE NEURONS</text>
+<text x="80" y="43" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="600" fill="#6b6470">QWEN3.5–4B · 4 NATIVE NEURONS</text>
+<text x="80" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Mascot</text>
+<text x="80" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L9 N9009 +0.7</text>
+<text x="450" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Cat-word bias</text>
+<text x="450" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L26 N6173 +0.3</text>
+<text x="820" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Kawaii</text>
+<text x="820" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L26 N8930 +0.7</text>
+<text x="1190" y="86" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="#8b3055">Female</text>
+<text x="1190" y="116" font-family="Menlo,monospace" font-size="22" fill="#6b6470">L22 N8295 −0.4</text>
 <text x="77" y="234" font-family="Georgia,serif" font-size="92" fill="#19171c">We made</text>
 <text x="74" y="372" font-family="Georgia,serif" font-size="110" font-weight="bold" fill="#19171c">Qwen a</text>
 <text x="74" y="505" font-family="Georgia,serif" font-size="110" font-weight="bold" fill="#19171c">catgirl.</text>
