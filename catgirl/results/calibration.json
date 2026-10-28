@@ -128,7 +128,7 @@
       "max_buffer_length": 30150672384,
       "resource_limit": 499000
     },
-    "loaded_seconds": 1.1312618255615234,
+    "loaded_seconds": 0.8672299385070801,
     "calibration_file": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/calibration-432f042798d7.json"
   },
   "residual_norms": {

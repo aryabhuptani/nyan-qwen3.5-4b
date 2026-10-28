@@ -1,0 +1,3 @@
+{"event": "affine_teacher", "pair": "preserve_exact", "prefix_tokens": 55, "positive_tokens": 3, "neutral_tokens": 3, "positive_eos_appended": true, "neutral_eos_appended": true, "preserve_format": true, "elapsed_seconds": 0.06383299827575684}
+{"event": "affine_update", "step": 1, "pair": "preserve_exact", "loss": 0.21139591932296753, "positive_ce": 0.0019103545928373933, "neutral_kl": 0.01805470511317253, "prefix_tokens": 55, "gain_offset_norm": 43.348838806152344, "bias_dose_norm": 0.0452432855963707, "elapsed_seconds": 0.5329551696777344}
+{"event": "affine_complete", "recipes": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/041a_short_smoke.recipes.json", "elapsed_seconds": 0.5495438575744629}

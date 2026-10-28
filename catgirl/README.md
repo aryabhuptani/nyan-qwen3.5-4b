@@ -43,6 +43,8 @@ method optimizes intervention parameters; it does not update the model weights.
 Completed jobs become `.done`; interrupted jobs can be renamed from `.running`
 to `.json` after verifying the previous process has stopped. Generation resumes
 by skipping condition/prompt pairs already saved in the corresponding JSONL.
+Resume checks reject changed recipes, messages, decoding settings, and budgets;
+use a new output name for changed experiments.
 Never run two GPU workers simultaneously.
 
 ```sh
@@ -53,3 +55,18 @@ HF_HOME=/path/to/model-cache .venv/bin/python -u catgirl/runner.py \
 All discovery generations, including degeneration and failures, are retained.
 Recipes have not yet been validated on the original BF16 checkpoint. The other
 referenced persona library uses Qwen3-8B; its coordinates do not transfer here.
+
+The first coherent candidate, `candidates/2048_candidate.json`, failed the core
+battery. Its persona persisted through four conversational turns but faded on
+ordinary tasks, disappeared in the long answer and 8K context, and added code
+fences to strict JSON. See `results/038_review.json` and raw generation records.
+The 192-token short-answer cap also limited capability comparisons. The separate
+32-case `evaluation_extended.json` remains reserved for a later frozen finalist.
+
+`affine_optimizer.py` jointly learns gains and offsets at selected coordinates.
+It recomputes the intervened prefix state for every update, explicitly detaches
+that state, and differentiates the assistant tail. A coarsened original-model
+KL objective on neutral continuations discourages capability drift; strict
+format examples preserve the entire distribution from the first position.
+Full long-answer targets and weighted persona spans address late-answer fade.
+This method remains experimental and is not evidence of a successful recipe.

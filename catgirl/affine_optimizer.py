@@ -11,7 +11,81 @@ import time
 
 import mlx.core as mx
 import mlx.nn as nn
+from mlx.utils import tree_map
 import numpy as np
+
+
+def _reference_attention(queries, keys, values, scale, mask):
+    """Differentiable GQA attention, including offset-aware cached causality."""
+    repeats=queries.shape[1]//keys.shape[1]
+    if repeats>1:
+        keys=mx.repeat(keys,repeats,axis=1)
+        values=mx.repeat(values,repeats,axis=1)
+    scores=(queries.astype(mx.float32)*scale)@mx.swapaxes(keys.astype(mx.float32),-1,-2)
+    if isinstance(mask,str):
+        if mask!='causal':
+            raise ValueError('Unsupported reference attention mask: '+mask)
+        query_length,key_length=queries.shape[-2],keys.shape[-2]
+        mask=mx.arange(key_length)[None,:]<=mx.arange(query_length)[:,None]+key_length-query_length
+    if mask is not None:
+        if mask.dtype==mx.bool_:
+            scores=mx.where(mask,scores,-float('inf'))
+        else:
+            scores=scores+mask
+    probabilities=mx.softmax(scores,axis=-1,precise=True)
+    return (probabilities@values.astype(mx.float32)).astype(queries.dtype)
+
+
+def _select_condition(value, condition_id=None):
+    """Accept raw recipes, checkpoints, recipe files, and nested candidates."""
+    found=[]
+    def visit(node):
+        if isinstance(node,list):
+            if node and all(isinstance(spec,dict) and 'layer' in spec and 'neuron' in spec for spec in node):
+                found.append({'neurons':node})
+            else:
+                for item in node:
+                    visit(item)
+        elif isinstance(node,dict):
+            if isinstance(node.get('neurons'),list):
+                found.append(node)
+            else:
+                for key in ('condition','candidate','conditions','candidates','recipe','recipes'):
+                    if key in node:
+                        visit(node[key])
+    visit(value)
+    if condition_id is not None:
+        found=[condition for condition in found if condition.get('id')==condition_id]
+    if not found:
+        raise ValueError('No neuron recipe found in warm-start candidate')
+    return max(found,key=lambda condition:len({(spec['layer'],spec['neuron']) for spec in condition['neurons']}))
+
+
+def _positive_span_weights(tokenizer, text, encoded, retained, spans):
+    """Map exact character spans onto overlapping tokenizer positions."""
+    weights=np.ones(retained,dtype=np.float32)
+    if not spans:
+        return weights
+    raw=getattr(tokenizer,'_tokenizer',tokenizer)
+    tokens=raw(text,add_special_tokens=False,return_offsets_mapping=True)
+    if list(tokens['input_ids']) != list(encoded):
+        raise ValueError('Span tokenizer IDs differ from training tokenizer IDs')
+    offsets=tokens['offset_mapping'][:retained]
+    for span in spans:
+        fragment=span['text']
+        weight=float(span['weight'])
+        if not fragment or not np.isfinite(weight) or weight<=0:
+            raise ValueError('Positive spans need nonempty text and finite positive weights')
+        first=text.find(fragment)
+        if first<0:
+            raise ValueError('Positive span text is absent from catgirl target: '+fragment)
+        while first>=0:
+            last=first+len(fragment)
+            for index,(start,end) in enumerate(offsets):
+                if end>first and start<last:
+                    weights[index]=max(weights[index],weight)
+            first=text.find(fragment,first+len(fragment))
+    return weights
 
 
 def optimize(runner, job, output):
@@ -20,7 +94,7 @@ def optimize(runner, job, output):
     root = Path(__file__).resolve().parent
     source = Path(job.get('warm_start', job.get('source', root/'results'/'034_broad_gain.recipes.json')))
     warm = json.loads(source.read_text())
-    condition = max(warm['conditions'], key=lambda c:len(c['neurons'])) if 'conditions' in warm else warm
+    condition = _select_condition(warm,job.get('condition_id'))
     data = json.loads(Path(job.get('discovery', root/'discovery_broad.json')).read_text())
     pairs = data['pairs'][:max(1, int(job.get('pairs', 18)))]
     if not pairs:
@@ -85,6 +159,12 @@ def optimize(runner, job, output):
     fields = ('delta','gain','early_tokens','position_mask','capture','captured','seen','boundary','tail_scale')
     previous = [{field:getattr(m,field,None) for field in fields} for m in runner.mlps]
     previous_modes = [(module,bool(module.training)) for _,module in runner.model.named_modules()]
+    attention_namespaces={}
+    for layer in runner.layers:
+        if hasattr(layer,'self_attn'):
+            namespace=type(layer.self_attn).__call__.__globals__
+            if 'scaled_dot_product_attention' in namespace:
+                attention_namespaces[id(namespace)]=(namespace,namespace['scaled_dot_product_attention'])
     started = time.time()
 
     def emit(record):
@@ -128,6 +208,13 @@ def optimize(runner, job, output):
             ids = mx.array(prefix[start:min(start+chunk,len(prefix)-1)], dtype=mx.int32)[None]
             result = backbone(ids, cache=cache)
             mx.eval(result, [c.state for c in cache])
+        # Keep prefix computation outside the derivative even if MLX retains
+        # evaluated graph nodes, and even when theta arrays are reused as the
+        # tail function's explicit differentiation inputs.
+        for entry in cache:
+            entry.state = tree_map(lambda value:mx.stop_gradient(value) if isinstance(value,mx.array) else value,
+                                   entry.state)
+        mx.eval([entry.state for entry in cache])
         return cache
 
     def tail_logits(theta, example, target, cache):
@@ -149,21 +236,48 @@ def optimize(runner, job, output):
         return specs
 
     try:
+        def wrap_attention(original):
+            def attention(queries,keys,values,cache,scale,mask,sinks=None):
+                # MLX's short-query vector kernel does not emit the logsumexp
+                # needed by its VJP. Keep fused attention for longer queries
+                # and for every inference/prefill call.
+                if (runner.model.training and queries.shape[-2]<=int(job.get('reference_attention_max_queries',32))
+                        and not hasattr(cache,'bits')):
+                    if sinks is not None:
+                        raise ValueError('Reference short-query attention does not support sinks')
+                    return _reference_attention(queries,keys,values,scale,mask)
+                return original(queries,keys,values,cache,scale,mask,sinks=sinks)
+            return attention
+        for namespace,original in attention_namespaces.values():
+            namespace['scaled_dot_product_attention']=wrap_attention(original)
         parameters = project(parameters)
         examples=[]
         for pair in pairs:
-            messages = pair.get('messages', [{'role':'system','content':data['neutral_system']},
-                                             {'role':'user','content':pair['prompt']}])
+            messages = pair['messages'] if 'messages' in pair else [
+                {'role':'system','content':data['neutral_system']},
+                {'role':'user','content':pair['prompt']}]
             prefix = list(runner.tokens(messages))
             targets=[]
+            eos_appended=[]
+            positive_spans=None
             for pole in ('catgirl','neutral'):
-                target = list(runner.tok.encode(pair[pole], add_special_tokens=False))[:target_limit]
-                if append_eos:
+                complete = list(runner.tok.encode(pair[pole], add_special_tokens=False))
+                target = complete[:target_limit]
+                if pole=='catgirl':
+                    spans=[] if pair.get('preserve_format',False) else pair.get('positive_span_weights',[])
+                    positive_spans=_positive_span_weights(runner.tok,pair[pole],complete,len(target),spans)
+                add_end = append_eos and len(complete)<=target_limit and (not target or target[-1]!=int(eos))
+                if add_end:
                     target.append(int(eos))
+                    if pole=='catgirl':
+                        positive_spans=np.append(positive_spans,np.float32(1.))
                 if not target:
                     raise ValueError('Empty target for '+pair['id'])
                 targets.append(target)
+                eos_appended.append(add_end)
             example=dict(id=pair['id'],prefix=prefix,positive=targets[0],neutral=targets[1],
+                         positive_span_weights=mx.array(positive_spans),
+                         positive_eos_appended=eos_appended[0],neutral_eos_appended=eos_appended[1],
                          preserve_format=bool(pair.get('preserve_format',False)))
             teacher_cache = prefill(prefix,None)
             logits = tail_logits(None,example,targets[1],teacher_cache)
@@ -180,6 +294,7 @@ def optimize(runner, job, output):
             examples.append(example)
             emit(dict(event='affine_teacher',pair=pair['id'],prefix_tokens=len(prefix),
                       positive_tokens=len(targets[0]),neutral_tokens=len(targets[1]),
+                      positive_eos_appended=eos_appended[0],neutral_eos_appended=eos_appended[1],
                       preserve_format=example['preserve_format']))
             del teacher_cache,logits,logp
 
@@ -187,8 +302,10 @@ def optimize(runner, job, output):
             positive = tail_logits(theta,example,example['positive'],cache)
             labels = mx.array(example['positive'],dtype=mx.int32)[None]
             ce = nn.losses.cross_entropy(positive,labels,reduction='none')[0]
-            weights = mx.where(mx.arange(len(example['positive']))<persona_tokens,persona_weight,1.)
-            if append_eos:
+            first_weight = 1. if example['preserve_format'] else persona_weight
+            weights = mx.where(mx.arange(len(example['positive']))<persona_tokens,first_weight,1.)
+            weights=mx.maximum(weights,example['positive_span_weights'])
+            if example['positive_eos_appended']:
                 weights = mx.where(mx.arange(len(example['positive']))==len(example['positive'])-1,eos_weight,weights)
             ce = mx.sum(ce*weights)/mx.sum(weights)
             neutral = tail_logits(theta,example,example['neutral'],cache)
@@ -197,16 +314,22 @@ def optimize(runner, job, output):
             tail_q = mx.maximum(1-mx.sum(mx.exp(selected),axis=-1),mx.array(1e-8))
             kl = mx.sum(example['teacher_p']*(example['teacher_logp']-selected),axis=-1)
             kl += example['teacher_tail']*(mx.log(example['teacher_tail'])-mx.log(tail_q))
-            start = 0 if example['preserve_format'] else min(4,kl.shape[1]-1)
-            kl = mx.mean(kl[:,start:])
+            start = 0 if example['preserve_format'] else 4
+            kl = mx.mean(kl[:,start:]) if kl.shape[1]>start else mx.array(0.,dtype=mx.float32)
             gain_reg = float(job.get('gain_l2', .0001))*mx.sum(theta['gain']**2)
             bias_reg = float(job.get('bias_l2', .08))*mx.sum(theta['bias']**2)
             return ce+kl_weight*kl+gain_reg+bias_reg, (ce,kl)
 
         momentum={k:np.zeros_like(v) for k,v in parameters.items()}
         variance={k:np.zeros_like(v) for k,v in parameters.items()}
+        seed=int(job.get('seed',0))
+        shuffle_pairs=bool(job.get('shuffle_pairs',True))
+        random=np.random.default_rng(seed)
+        order=np.arange(len(examples))
         for step in range(iterations):
-            example=examples[step%len(examples)]
+            if step%len(examples)==0:
+                order=random.permutation(len(examples)) if shuffle_pairs else np.arange(len(examples))
+            example=examples[int(order[step%len(examples)])]
             theta={k:mx.array(v) for k,v in parameters.items()}
             # Materialize current prefix state before tracing gradients.
             cache=prefill(example['prefix'],theta)
@@ -239,7 +362,13 @@ def optimize(runner, job, output):
             del cache,gradient,theta,fn
         result=dict(method='sparse affine neuron optimization with detached current-prefix caches and coarsened original-model KL',
                     mode='affine',source=str(source),unique_neurons=len(keys),layers=layers,
+                    source_condition=condition.get('id'),job=job,
+                    parameter_budget=dict(gain_min=gain_min,gain_max=gain_max,
+                                          gain_layer_norm=budgets['gain'][0],gain_total_norm=budgets['gain'][1],
+                                          bias_layer_norm=budgets['bias'][0],bias_total_norm=budgets['bias'][1],
+                                          gain_learning_rate=gain_lr,bias_learning_rate=bias_lr),
                     training_pairs=[p['id'] for p in pairs],append_eos=append_eos,eos_weight=eos_weight,
+                    seed=seed,shuffle_pairs=shuffle_pairs,
                     kl_weight=kl_weight,kl_top_k=top_k,updates=iterations,
                     conditions=[dict(id='affine_'+str(len(keys)),neurons=export(parameters))],
                     validated=False,note='Prefix state is recomputed at current parameters and detached; only tail gradients are optimized. Native weights remain unchanged.')
@@ -248,6 +377,8 @@ def optimize(runner, job, output):
         emit(dict(event='affine_complete',recipes=str(destination)))
         return result
     finally:
+        for namespace,original in attention_namespaces.values():
+            namespace['scaled_dot_product_attention']=original
         for module,training in previous_modes:
             module.train(training)
         for m,state in zip(runner.mlps,previous):
