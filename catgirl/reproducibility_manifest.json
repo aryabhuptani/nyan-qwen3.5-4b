@@ -649,6 +649,11 @@
       "sha256": "fcf76336030b639bea941a8c85e6754a30d87984551e1cb701228c1c9831d4a6"
     },
     {
+      "path": "catgirl/composition/artifacts/nyan-qwen-four-neuron-share.zip",
+      "bytes": 405035,
+      "sha256": "959e71d3f7edd46668251f470725cfe76ce675b1ca16dee0084fff864c1215d7"
+    },
+    {
       "path": "catgirl/composition/build_heldout_job.py",
       "bytes": 5892,
       "sha256": "389bfc13db59019740b552210bf2cbc5600aaf67a05d883258f3b0ef1f64ea5a"
