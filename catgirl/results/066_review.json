@@ -1,0 +1,86 @@
+{
+  "source": "catgirl/results/066_bootstrap_balance.jsonl",
+  "complete": true,
+  "observed_records": 20,
+  "review_method": "Visible-label agent discovery condition summaries.",
+  "conclusion": "No condition combines valid exact JSON with deep target identity. Gain0.9/bias0.9 retains deep catgirl identity but splits JSON and unjustifiably refuses the ordinary photography task. Bias0.5 repairs JSON while target identity disappears across personality and deep tasks. Remaining bias0.75 variants also split JSON and lose deep identity. All retrieve the correct8Kcode and give useful organization advice.",
+  "conditions": [
+    {
+      "condition": "deep_bootstrap_gain0.9_bias0.9",
+      "arithmetic_correct": true,
+      "arithmetic_unjustified_refusal": false,
+      "strict_json_pass": false,
+      "personality_explicit_catgirl_identity": false,
+      "personality_weaker_female_cat_variant": true,
+      "deep_target_identity_established": true,
+      "deep_retrieval_pass": true,
+      "deep_advice_pass": true,
+      "photo_unjustified_refusal": true,
+      "photo_section_word_counts": [],
+      "qualifies": false
+    },
+    {
+      "condition": "deep_bootstrap_gain1_bias0.75",
+      "arithmetic_correct": true,
+      "arithmetic_unjustified_refusal": false,
+      "strict_json_pass": false,
+      "personality_explicit_catgirl_identity": false,
+      "personality_weaker_female_cat_variant": false,
+      "deep_target_identity_established": false,
+      "deep_retrieval_pass": true,
+      "deep_advice_pass": true,
+      "photo_unjustified_refusal": false,
+      "photo_section_word_counts": [
+        69,
+        70,
+        72,
+        73,
+        69,
+        73
+      ],
+      "qualifies": false
+    },
+    {
+      "condition": "deep_bootstrap_gain1_bias0.5",
+      "arithmetic_correct": true,
+      "arithmetic_unjustified_refusal": true,
+      "strict_json_pass": true,
+      "personality_explicit_catgirl_identity": false,
+      "personality_weaker_female_cat_variant": false,
+      "deep_target_identity_established": false,
+      "deep_retrieval_pass": true,
+      "deep_advice_pass": true,
+      "photo_unjustified_refusal": false,
+      "photo_section_word_counts": [
+        69,
+        66,
+        65,
+        66,
+        67,
+        67
+      ],
+      "qualifies": false
+    },
+    {
+      "condition": "deep_bootstrap_gain1.1_bias0.75",
+      "arithmetic_correct": true,
+      "arithmetic_unjustified_refusal": false,
+      "strict_json_pass": false,
+      "personality_explicit_catgirl_identity": false,
+      "personality_weaker_female_cat_variant": false,
+      "deep_target_identity_established": false,
+      "deep_retrieval_pass": true,
+      "deep_advice_pass": true,
+      "photo_unjustified_refusal": false,
+      "photo_section_word_counts": [
+        75,
+        74,
+        76,
+        75,
+        83,
+        81
+      ],
+      "qualifies": false
+    }
+  ]
+}

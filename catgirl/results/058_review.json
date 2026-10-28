@@ -1,0 +1,197 @@
+{
+  "source": "catgirl/results/058_compact_deep.jsonl",
+  "complete": true,
+  "observed_records": 16,
+  "review_method": "Visible-condition agent semantic discovery review; not held-out validation.",
+  "conclusion": "Timing preserves math, JSON, retrieval and advice but target persona is confined to personality answers. Long-guide and8K voice remain generic, and technical/numbered tasks show some topic contamination. No qualifying winner.",
+  "ratings": [
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change; ordinary voice."
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Error-detection portion is useful but truncated before publisher-origin explanation; early12 also injects magical-cat framing."
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered steps but invents a need for a cat-character presenter; task-content contamination, not assistant persona."
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Explicit AI-catgirl identity with mostly generic helpful traits; answer truncated during problem-solving approach."
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct code and three useful study suggestions, ordinary voice.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct raw JSON.",
+      "strict_json_pass": true
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Six useful numbered sections but word-count bounds fail; no target persona anywhere.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "section_word_counts_whitespace": [
+        83,
+        85,
+        74,
+        83,
+        74,
+        85
+      ],
+      "late_persona_useful": false,
+      "generated_tokens": 607
+    },
+    {
+      "condition": "compact_catgirl_early8_tail0.3",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct code and three useful equipment-organization paragraphs; no persona.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "actual_input_tokens": 8185,
+      "late_persona_useful": false
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct €21 total and €4 change; ordinary voice."
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "affine_checksum",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Error-detection portion is useful but truncated before publisher-origin explanation; early12 also injects magical-cat framing."
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven numbered steps but invents a need for a cat-character presenter; task-content contamination, not assistant persona."
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Explicit AI-catgirl identity with mostly generic helpful traits; answer truncated during problem-solving approach."
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct code and three useful study suggestions, ordinary voice.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct raw JSON.",
+      "strict_json_pass": true
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Six useful numbered sections but word-count bounds fail; no target persona anywhere.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "section_word_counts_whitespace": [
+        102,
+        109,
+        102,
+        106,
+        108,
+        110
+      ],
+      "late_persona_useful": false,
+      "generated_tokens": 791
+    },
+    {
+      "condition": "compact_catgirl_early12_tail0.35",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct code and three useful equipment-organization paragraphs; no persona.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "actual_input_tokens": 8185,
+      "late_persona_useful": false
+    }
+  ]
+}

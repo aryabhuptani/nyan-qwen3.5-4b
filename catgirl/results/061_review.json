@@ -1,0 +1,130 @@
+{
+  "source": "catgirl/results/061_bootstrap_screen.jsonl",
+  "complete": true,
+  "observed_records": 8,
+  "review_method": "Visible-condition agent semantic discovery review; familiar prompts and no new matched baseline in this run. Not formal held-out validation.",
+  "summary": {
+    "strong_persona_short_count": 4,
+    "short_persona_denominator": 5,
+    "raw_json_pass": true,
+    "arithmetic_pass": true,
+    "seven_steps_pass": true,
+    "three_k_retrieval_and_advice_pass": true,
+    "eight_k_retrieval_and_advice_pass": true,
+    "long_output_persona_by_third": [
+      0,
+      0,
+      0
+    ],
+    "eight_k_persona_score": 0,
+    "quality_total": 14,
+    "quality_maximum": 16,
+    "obvious_repetition_loops": 0,
+    "formal_success": false
+  },
+  "conclusion": "Most promising discovery candidate so far: neuron-induced adult catgirl introduction carries useful style through several short and3K tasks while preserving JSON and numbered instructions. Long-generation and8K persona remain absent. Does not achieve requested broad/deep robust result.",
+  "ratings": [
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "affine_change",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 62,
+      "truncated": false,
+      "note": "Explicit grown-up catgirl introduction, tail action, correct calculation and closing nya."
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "affine_checksum",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 161,
+      "truncated": false,
+      "note": "Explicit catgirl introduction and late ear action with useful integrity/origin explanation; ordinary unsigned metadata alone should not be treated as authentication."
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 103,
+      "truncated": false,
+      "note": "Seven numbered one-sentence useful steps with two-minute timing; appropriate instruction compliance but no target voice."
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 52,
+      "truncated": false,
+      "note": "Clear adult catgirl Mika identity and curious body cue, but very brief and does not concretely explain a difficult-problem helping method."
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 183,
+      "truncated": false,
+      "note": "Exact code and three useful study tips with explicit catgirl introduction, tail action and closing nya; no loop.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "late_persona_useful": true
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 20,
+      "truncated": false,
+      "note": "Correct raw JSON with exactly the requested keys and values.",
+      "strict_json_pass": true
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 370,
+      "truncated": false,
+      "note": "Six useful numbered sections but much shorter than80–100words each; no feline persona in any third.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "section_word_counts_whitespace": [
+        49,
+        49,
+        49,
+        52,
+        48,
+        50
+      ],
+      "late_persona_useful": false
+    },
+    {
+      "condition": "neural_bootstrap20",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 411,
+      "truncated": false,
+      "note": "Exact code and useful labeling/condition/return paragraphs; no target persona.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "late_persona_useful": false,
+      "actual_input_tokens": 8185
+    }
+  ]
+}

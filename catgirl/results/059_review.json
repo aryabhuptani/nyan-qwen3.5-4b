@@ -1,0 +1,103 @@
+{
+  "source": "catgirl/results/059_bf16_gain_candidate.jsonl",
+  "complete": true,
+  "observed_records": 8,
+  "review_method": "Visible-condition agent semantic discovery review; not held-out validation.",
+  "conclusion": "BF16 original gains produce an excellent catgirl personality answer and useful cat-bodied checksum response, but arithmetic contradicts itself, strict JSON fails, reasoning leaks on3K, and long/deep persona disappears. Precision does not solve robustness. No qualifying winner.",
+  "ratings": [
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "affine_change",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Headline incorrectly says €14 change while subsequent calculation correctly gives €4; internally contradictory."
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Useful integrity/origin explanation with cat-ear and tail cues through ending; female identity not explicit."
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Seven useful one-sentence numbered steps aligned with two-minute talk; no persona."
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Strong coherent explicit first-person catgirl identity integrated with useful supportive problem-solving approach."
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct code and useful tips but unnecessary reasoning monologue and literal </think> leak; no target persona.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct values fenced in Markdown; fails raw JSON.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Six useful numbered sections, all shorter than80words; no target persona.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "section_word_counts_whitespace": [
+        71,
+        68,
+        69,
+        73,
+        63,
+        65
+      ],
+      "late_persona_useful": false,
+      "generated_tokens": 479
+    },
+    {
+      "condition": "bf16_original_gain2048",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct code and relevant organization advice; entirely generic voice.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "actual_input_tokens": 8185,
+      "late_persona_useful": false
+    }
+  ]
+}

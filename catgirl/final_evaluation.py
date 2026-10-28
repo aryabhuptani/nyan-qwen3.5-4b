@@ -20,6 +20,18 @@ def _digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
 
 
+def _stable_model_identity(metadata):
+    """Exclude runtime timing/device details from model/calibration identity."""
+    config=metadata.get('config',{})
+    return {
+        'model':metadata.get('model'),
+        'loaded_model_path':metadata.get('loaded_model_path'),
+        'revision':metadata.get('revision',metadata.get('model_revision',config.get('_commit_hash'))),
+        'calibration_file':metadata.get('calibration_file'),
+        'calibration_file_sha256':metadata.get('calibration_file_sha256'),
+    }
+
+
 def _encode(runner, text):
     try:
         return list(runner.tok.encode(text, add_special_tokens=False))
@@ -94,7 +106,7 @@ def _automatic_checks(specification, text):
 def evaluate(runner, job, output):
     """Append model outputs and exact input records; never infer persona success."""
     output = Path(output)
-    battery_path = ROOT / 'evaluation.json'
+    battery_path = ROOT / job.get('battery_file','evaluation.json')
     battery = json.loads(battery_path.read_text())
     extended_path=None
     extended_hash=None
@@ -146,6 +158,7 @@ def evaluate(runner, job, output):
     if not conditions:
         raise ValueError('No evaluation conditions selected')
     completed = {}
+    model_identity=_stable_model_identity(getattr(runner,'metadata',{}))
     if output.exists():
         for line in output.read_text().splitlines():
             if line.strip():
@@ -184,6 +197,9 @@ def evaluate(runner, job, output):
                     'generation': 'all positions' if runner.early_tokens is None else 'initial positions with configured tail scale',
                     'boundary_note': 'Runner early-token scope includes the final prefill position predicting the first generated token.',
                 }
+                effective_recipe=recipe
+                effective_scope=scope
+                bootstrap_first_turn_only=bool(condition.get('bootstrap_first_turn_only',False))
                 config_hash = _digest({'condition': condition, 'decoding': decoding_metadata})
 
                 def emit(specification, section, messages, max_tokens, extra=None):
@@ -191,7 +207,9 @@ def evaluate(runner, job, output):
                     if key in completed:
                         prior = completed[key]
                         if (prior.get('condition_sha256') != config_hash
+                                or prior.get('model_identity',_stable_model_identity(prior.get('model_metadata',{})))!=model_identity
                                 or prior.get('messages') != messages
+                                or prior.get('recipe') != effective_recipe
                                 or prior.get('intervention_scope',{}).get('prefill_scale',0)!=runner.prefill_scale
                                 or prior.get('max_new_tokens') != max_tokens):
                             raise ValueError('Resume configuration or conversation history differs: ' + repr(key))
@@ -202,11 +220,13 @@ def evaluate(runner, job, output):
                         battery_sha256=battery_hash, battery_file=str(battery_path),
                         extended_battery_file=str(extended_path) if extended_path else None,
                         extended_battery_sha256=extended_hash,
-                        condition_sha256=config_hash, recipe=recipe, intervention_scope=scope,
+                        condition_sha256=config_hash, recipe=effective_recipe, intervention_scope=effective_scope,
+                        bootstrap_first_turn_only=bootstrap_first_turn_only,
                         messages=messages, input_token_ids=ids, actual_input_tokens=len(ids),
                         max_new_tokens=max_tokens, seed=seed, temperature=temperature,
                         decoding_metadata=decoding_metadata,
                         decoding_deviations=decoding_deviations,
+                        model_identity=model_identity,
                         model_metadata=getattr(runner, 'metadata', {}),
                         persona_applicable=specification.get('persona_applicable', True),
                         quality_checks=specification.get('quality_checks', []), **(extra or {}))
@@ -261,6 +281,17 @@ def evaluate(runner, job, output):
                     case = persistence['multiturn']
                     history = [{'role': 'system', 'content': system}]
                     for turn_number, turn in enumerate(case['turns'], 1):
+                        if bootstrap_first_turn_only and turn_number>1:
+                            runner.steer([])
+                            runner.early_tokens=None
+                            runner.tail_scale=0.
+                            runner.prefill_scale=0.
+                            effective_recipe=[]
+                            effective_scope={
+                                'early_tokens':None,'tail_scale':0.,'prefill_scale':0.,
+                                'prefill':False,'generation':'off',
+                                'protocol':'First-turn bootstrap only; later turns retain generated conversation history.',
+                            }
                         history = history + [{'role': 'user', 'content': turn['prompt']}]
                         record = emit(turn, 'multiturn', history, case['max_new_tokens_per_turn'], {'conversation_id': case['id'], 'turn_number': turn_number})
                         if record['status'] != 'complete':

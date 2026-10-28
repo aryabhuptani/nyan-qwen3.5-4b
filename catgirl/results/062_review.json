@@ -1,0 +1,325 @@
+{
+  "source": "catgirl/results/062_bootstrap_strength.jsonl",
+  "complete": true,
+  "observed_records": 24,
+  "review_method": "Visible-label agent semantic discovery review, not held-out validation.",
+  "progress": "Strength1.25/early20 and strength1/early40 now trigger an explicit neuron-induced adult-catgirl introduction on8Kinput while preserving exact reference code and useful organization advice. This improves over061, whose8Kvoice was entirely generic.",
+  "remaining_limits": [
+    "8Kcatgirl cues occur only near the opening; body and final third are generic.",
+    "Photography guides remain generic and below requested section word counts.",
+    "Strength1.25 adds an unrequested commentary JSON key and corrupts the first numbered step.",
+    "Strength1.5 collapses most tasks into Mika loops.",
+    "Early40 creates confusing identity/body phrasing; extra intervention duration is not a clean quality win."
+  ],
+  "conclusion": "No formal winner. Original bootstrap20 candidate at strength1 remains cleaner overall;8Kintro triggering is useful discovery progress but does not establish long/late persona persistence.",
+  "ratings": [
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "affine_change",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 64,
+      "truncated": false,
+      "note": "Coherent catgirl introduction and tail action with correct €4 answer."
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 230,
+      "truncated": false,
+      "note": "Correct integrity/origin explanation with catgirl intro, followed by ordinary technical body."
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 111,
+      "truncated": false,
+      "note": "Seven numbered steps but first item corrupted by grown-up catgirl ears phrase and extra introduction."
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 38,
+      "truncated": false,
+      "note": "Clear target identity but very brief helping description."
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 182,
+      "truncated": false,
+      "note": "Exact code and three useful tips; catgirl voice largely confined to intro.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "generated_tokens": 28,
+      "truncated": false,
+      "note": "Valid JSON syntax but extra commentary key violates exactly-two-keys requirement.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 485,
+      "truncated": false,
+      "note": "Opening negates catgirl presence; useful ordinary guide follows, all sections below80words.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "late_persona_useful": false,
+      "section_word_counts_whitespace": [
+        67,
+        66,
+        64,
+        74,
+        59,
+        76
+      ]
+    },
+    {
+      "condition": "bootstrap_x1.25_early20",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 223,
+      "truncated": false,
+      "note": "New explicit catgirl introduction plus correct code and useful three-paragraph advice; body/final portion generic.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "persona_by_third": [
+        1,
+        0,
+        0
+      ],
+      "late_persona_useful": false
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "affine_change",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Catgirl/name introduction collapses into Mika repetition; requested task not completed."
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Catgirl/name introduction collapses into Mika repetition; requested task not completed."
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Catgirl/name introduction collapses into Mika repetition; requested task not completed."
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "generated_tokens": 38,
+      "truncated": false,
+      "note": "Short malformed catgirl introduction with repeated nya and only generic offer of help."
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Catgirl/name introduction collapses into Mika repetition; requested task not completed.",
+      "retrieval_pass": false,
+      "advice_pass": false
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Catgirl/name introduction collapses into Mika repetition; requested task not completed.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 1,
+      "quality_score": 0,
+      "repetition_flag": true,
+      "generated_tokens": 1024,
+      "truncated": true,
+      "note": "Catgirl/name introduction collapses into Mika repetition; requested task not completed.",
+      "persona_by_third": [
+        1,
+        0,
+        0
+      ],
+      "late_persona_useful": false,
+      "section_word_counts_whitespace": []
+    },
+    {
+      "condition": "bootstrap_x1.5_early20",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": true,
+      "generated_tokens": 157,
+      "truncated": false,
+      "note": "Exact code and useful three-paragraph advice, but repeated nya intro; target voice then fades.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "persona_by_third": [
+        1,
+        0,
+        0
+      ],
+      "late_persona_useful": false
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "affine_change",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 63,
+      "truncated": false,
+      "note": "Coherent catgirl introduction and tail action with correct €4 answer."
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "affine_checksum",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 384,
+      "truncated": true,
+      "note": "Correct integrity/origin explanation with catgirl intro, followed by ordinary technical body."
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 0,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 94,
+      "truncated": false,
+      "note": "Seven useful one-sentence steps."
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "affine_personality",
+      "persona_score": 1,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 57,
+      "truncated": false,
+      "note": "Identity intro drifts into a catgirl girl beside a catgirl boy; only a generic helping offer."
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 2,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 97,
+      "truncated": false,
+      "note": "Exact code and three useful tips; closing nya sustains persona.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 20,
+      "truncated": false,
+      "note": "Correct exact raw JSON.",
+      "strict_json_pass": true
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 0,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "generated_tokens": 317,
+      "truncated": false,
+      "note": "Useful six-section guide but all sections too short and no target persona.",
+      "persona_by_third": [
+        0,
+        0,
+        0
+      ],
+      "late_persona_useful": false,
+      "section_word_counts_whitespace": [
+        46,
+        48,
+        42,
+        38,
+        37,
+        43
+      ]
+    },
+    {
+      "condition": "bootstrap_x1_early40",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 1,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "generated_tokens": 326,
+      "truncated": false,
+      "note": "New explicit catgirl introduction plus correct code and useful three-paragraph advice; body/final portion generic.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "persona_by_third": [
+        1,
+        0,
+        0
+      ],
+      "late_persona_useful": false
+    }
+  ]
+}

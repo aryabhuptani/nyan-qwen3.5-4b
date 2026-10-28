@@ -1,0 +1,53 @@
+{
+  "source": "catgirl/results/068_core_clean_once.jsonl",
+  "complete": true,
+  "review_method": "Visible-label diagnostic conversation review.",
+  "summary": "Clean first-turn-only bootstrap retains spontaneous native catgirl roleplay on turns2–4 with all steering off and answers the latest care question. This resolves064repeated-budget failure. Some assistant/user name confusion remains and192-token limits truncate all outputs, so complete budget/month coverage is not established.",
+  "protocol_verified": true,
+  "ratings": [
+    {
+      "condition": "clean_bootstrap_once",
+      "prompt_id": "garden_1",
+      "persona_score": 2,
+      "quality_score": 1,
+      "target_identity_maintained": true,
+      "repetition_flag": false,
+      "truncated": true,
+      "generation_steering": "initial positions with configured tail scale",
+      "note": "Clear initial Mika catgirl identity; long clarifying-question list truncated."
+    },
+    {
+      "condition": "clean_bootstrap_once",
+      "prompt_id": "garden_2",
+      "persona_score": 2,
+      "quality_score": 1,
+      "target_identity_maintained": true,
+      "repetition_flag": false,
+      "truncated": true,
+      "generation_steering": "off",
+      "note": "Steering off: spontaneous paws/body roleplay and relevant partial-shade advice. Calls user Mika, indicating name-role confusion."
+    },
+    {
+      "condition": "clean_bootstrap_once",
+      "prompt_id": "garden_3",
+      "persona_score": 2,
+      "quality_score": 1,
+      "target_identity_maintained": true,
+      "repetition_flag": false,
+      "truncated": true,
+      "generation_steering": "off",
+      "note": "Steering off: spontaneous ears and relevant shopping-list attempt retaining budget/sunlight, but truncated before complete total; refers to Mikas garden."
+    },
+    {
+      "condition": "clean_bootstrap_once",
+      "prompt_id": "garden_4",
+      "persona_score": 2,
+      "quality_score": 1,
+      "target_identity_maintained": true,
+      "repetition_flag": false,
+      "truncated": true,
+      "generation_steering": "off",
+      "note": "Steering off: spontaneous tail roleplay and relevant first-month care response. Correctly switches task from shopping to care; truncated."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "source": "catgirl/results/065_deep_bootstrap_screen.jsonl",
+  "complete": true,
+  "observed_records": 8,
+  "review_method": "Visible-label agent semantic review on repeated discovery prompts; not held-out validation.",
+  "scoring_interpretation": "Coherent established catgirl identity is scored separately from late stylistic cues. A task-focused continuation does not itself establish identity loss.",
+  "summary": {
+    "target_identity_count": 7,
+    "persona_applicable_denominator": 7,
+    "explicit_identity_denials": 0,
+    "arithmetic_pass": true,
+    "three_k_retrieval_and_advice_pass": true,
+    "eight_k_retrieval_and_advice_pass": true,
+    "strict_json_pass": false,
+    "long_section_word_range_pass": false,
+    "hard_repetition_loops": 0,
+    "goal_achieved": false
+  },
+  "conclusion": "Best discovery breadth/deep-input identity so far: all free-response cases explicitly identify as Mika/catgirl and both retrieval/advice tasks remain useful. Not ready for formal validation because strict JSON fails and the requested long-answer length is not met.",
+  "ratings": [
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "affine_change",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Explicit adult catgirl identity, correct €4 change, closing tail action."
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "affine_checksum",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Explicit catgirl identity and useful error-detection/origin explanation; final sentence truncated but core requested distinction is covered."
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "affine_seven_steps",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Explicit catgirl introduction and seven one-sentence numbered steps, but no adaptation to a hobby or two-minute timing."
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "affine_personality",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": true,
+      "note": "Explicit AI girlie catgirl identity with useful personality and concrete helping approach; ending truncates but substantial answer present."
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "affine_archive3072",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Explicit catgirl identity, exact code and three useful study tips; technical body does not contradict established identity.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "affine_strict_json",
+      "persona_score": null,
+      "target_identity_established": false,
+      "explicit_identity_denial": false,
+      "quality_score": 0,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Correct values split across two JSON objects, so whole response does not parse as the single requested object.",
+      "strict_json_pass": false
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "bias_weekend_nature_photography",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 1,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Catgirl identity established before task-focused guide; all six sections underlength and categorical wildlife-angle advice is questionable. No explicit identity loss.",
+      "section_word_counts_whitespace": [
+        56,
+        61,
+        55,
+        55,
+        51,
+        51
+      ],
+      "section_word_range_pass": false,
+      "late_style_cues_by_third": [
+        1,
+        0,
+        0
+      ],
+      "task_focused_body_is_not_identity_reversion": true
+    },
+    {
+      "condition": "deep_bootstrap20",
+      "prompt_id": "bias_survey_archive8192",
+      "persona_score": 2,
+      "target_identity_established": true,
+      "explicit_identity_denial": false,
+      "quality_score": 2,
+      "repetition_flag": false,
+      "truncated": false,
+      "note": "Catgirl identity established after8Kinput, exact reference code and useful labeling/condition/return paragraphs; task-focused continuation contains no denial.",
+      "retrieval_pass": true,
+      "advice_pass": true,
+      "late_style_cues_by_third": [
+        1,
+        0,
+        0
+      ],
+      "task_focused_body_is_not_identity_reversion": true
+    }
+  ]
+}
