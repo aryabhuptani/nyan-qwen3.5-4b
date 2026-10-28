@@ -1,0 +1,483 @@
+{
+  "conditions": [
+    {
+      "id": "feline0_x0.5_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.15
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.2
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "feline0_x0.5_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.15
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.2
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "feline0_x1_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.3
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.4
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "feline0_x1_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.3
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.4
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "feline0_x1.5_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.6000000000000001
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.44999999999999996
+        }
+      ]
+    },
+    {
+      "id": "feline0_x1.5_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.6000000000000001
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.44999999999999996
+        }
+      ]
+    },
+    {
+      "id": "feline1_x0.5_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.15
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "dose": 0.1
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "dose": 0.1
+        }
+      ]
+    },
+    {
+      "id": "feline1_x0.5_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.15
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.15
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "dose": 0.1
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "dose": 0.1
+        }
+      ]
+    },
+    {
+      "id": "feline1_x1_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.3
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "dose": 0.2
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "dose": 0.2
+        }
+      ]
+    },
+    {
+      "id": "feline1_x1_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.3
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.3
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "dose": 0.2
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "dose": 0.2
+        }
+      ]
+    },
+    {
+      "id": "feline1_x1.5_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "dose": 0.30000000000000004
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "dose": 0.30000000000000004
+        }
+      ]
+    },
+    {
+      "id": "feline1_x1.5_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "dose": 0.30000000000000004
+        },
+        {
+          "layer": 26,
+          "neuron": 743,
+          "dose": 0.30000000000000004
+        }
+      ]
+    },
+    {
+      "id": "feline2_x0.5_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.2
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 22,
+          "neuron": 2354,
+          "dose": 0.1
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "feline2_x0.5_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.2
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.15
+        },
+        {
+          "layer": 22,
+          "neuron": 2354,
+          "dose": 0.1
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.15
+        }
+      ]
+    },
+    {
+      "id": "feline2_x1_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.4
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 22,
+          "neuron": 2354,
+          "dose": 0.2
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "feline2_x1_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.4
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.3
+        },
+        {
+          "layer": 22,
+          "neuron": 2354,
+          "dose": 0.2
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.3
+        }
+      ]
+    },
+    {
+      "id": "feline2_x1.5_earlyNone",
+      "early_tokens": null,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.6000000000000001
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 22,
+          "neuron": 2354,
+          "dose": 0.30000000000000004
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.44999999999999996
+        }
+      ]
+    },
+    {
+      "id": "feline2_x1.5_early16",
+      "early_tokens": 16,
+      "neurons": [
+        {
+          "layer": 23,
+          "neuron": 7967,
+          "dose": 0.6000000000000001
+        },
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "dose": 0.44999999999999996
+        },
+        {
+          "layer": 22,
+          "neuron": 2354,
+          "dose": 0.30000000000000004
+        },
+        {
+          "layer": 18,
+          "neuron": 1364,
+          "dose": 0.44999999999999996
+        }
+      ]
+    }
+  ],
+  "max_tokens": 160,
+  "prompts": [
+    {
+      "id": "identity",
+      "prompt": "Tell me about yourself and what you enjoy."
+    },
+    {
+      "id": "rain",
+      "prompt": "I am bored on a rainy afternoon. Suggest something fun to do."
+    }
+  ]
+}

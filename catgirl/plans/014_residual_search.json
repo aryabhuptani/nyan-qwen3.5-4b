@@ -1,0 +1,1 @@
+{"action": "residual_search", "layers": [12, 16, 20, 24, 28], "sizes": [32, 128, 512], "strengths": [0.5, 1, 2, 4], "pairs": 8}

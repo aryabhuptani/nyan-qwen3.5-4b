@@ -150,6 +150,9 @@ class Runner:
         if job.get('action') == 'optimize':
             from gradient_search import optimize
             return optimize(self,job,output)
+        if job.get('action') == 'residual_search':
+            from residual_search import search
+            return search(self,job,output)
         if job.get('action') == 'score':
             return self.score(job,output)
         completed = set()
