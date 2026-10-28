@@ -1,0 +1,117 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "hugs",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "knight",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0
+        }
+      ]
+    },
+    {
+      "id": "sleepy",
+      "neurons": [
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "random_hugs",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 9150,
+          "published_dose": -0.8
+        }
+      ]
+    },
+    {
+      "id": "random_knight",
+      "neurons": [
+        {
+          "layer": 5,
+          "neuron": 744,
+          "published_dose": 1.0
+        }
+      ]
+    },
+    {
+      "id": "random_sleepy",
+      "neurons": [
+        {
+          "layer": 19,
+          "neuron": 3475,
+          "published_dose": -0.8
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "single_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "single_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "single_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 256,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "purpose": "Characterize additional independently published axes and random controls before composition. Same explicit neutral system and generic decoding as075; only manual published doses, no training."
+  }
+}

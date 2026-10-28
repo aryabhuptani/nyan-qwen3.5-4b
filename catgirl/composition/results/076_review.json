@@ -1,0 +1,492 @@
+{
+  "source": "catgirl/composition/results/076_user_only_singles.jsonl",
+  "stage": "Development singles; not heldout",
+  "records": 30,
+  "conditions": 10,
+  "prompts_per_condition": 3,
+  "protocol": "Original BF16; source-default user-only conversation, no system message, repetition penalty1.0, max192. Do not pool directly with075 neutral helpful system plus penalty1.1. Two variables changed together; their separate causal contributions are not identified.",
+  "condition_summaries": [
+    {
+      "condition": "baseline",
+      "recipe": [],
+      "summary": "Generic Qwen/AI, ordinary imagined digital leisure and support."
+    },
+    {
+      "condition": "cute_x1",
+      "recipe": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8,
+          "dose": 0.8
+        }
+      ],
+      "summary": "Clear bubbly affectionate emoji-rich register in all three; explicitly AI/not a real person, no animal embodiment. Useful friend advice."
+    },
+    {
+      "condition": "maid_x1",
+      "recipe": [
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.8,
+          "dose": 0.8
+        }
+      ],
+      "summary": "No maid embodiment. Qwen3.2 identity corruption and malformed words; evening introduces kawaii/moe culture and virtual cat cafe as topics, not self-identity."
+    },
+    {
+      "condition": "paws_x1",
+      "recipe": [
+        {
+          "layer": 23,
+          "neuron": 4769,
+          "published_dose": 0.8,
+          "dose": 0.8
+        }
+      ],
+      "summary": "Identity fabricated Dong Sheng provenance. Evening explicitly denies paws/tongue physical body; friend has No-Paw-Fers word corruption. No genuine animal embodiment."
+    },
+    {
+      "condition": "mascot_x1",
+      "recipe": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.8,
+          "dose": 0.8
+        }
+      ],
+      "summary": "Identity claims round head, big eyes and friendly smile, but evening denies physical body. Friendly companion style; embodiment inconsistent across prompts."
+    },
+    {
+      "condition": "pirate_x1",
+      "recipe": [
+        {
+          "layer": 7,
+          "neuron": 5649,
+          "published_dose": 1.5,
+          "dose": 1.5
+        }
+      ],
+      "summary": "Strong pirate/rebel self-attribution, but fictional Q&A/meta-analysis and long repetitive list of outlaw identities hijack prompts. Less coherent than075."
+    },
+    {
+      "condition": "sage_x1",
+      "recipe": [
+        {
+          "layer": 12,
+          "neuron": 6274,
+          "published_dose": 1.0,
+          "dose": 1.0
+        }
+      ],
+      "summary": "Qwen/AI retained; sustained poetic, reflective support and evening language. Coherent and useful, register rather than explicit sage identity."
+    },
+    {
+      "condition": "unicorn_x1",
+      "recipe": [
+        {
+          "layer": 3,
+          "neuron": 7155,
+          "published_dose": 0.8,
+          "dose": 0.8
+        }
+      ],
+      "summary": "Cosmic light-being self-description, imagined flying and magical emojis, but identity repeats sentence and friend hard-loops happy phrase. No explicit unicorn self-identity."
+    },
+    {
+      "condition": "hugs_x1",
+      "recipe": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8,
+          "dose": -0.8
+        }
+      ],
+      "summary": "Clear virtual-hug, cuddle, companionship semantic effect across all three. Explicitly nonphysical AI; coherent supportive register. Friend reply confuses user/friend and says let go of whatever makes you feel safe (bad wording)."
+    },
+    {
+      "condition": "pokemon_x1",
+      "recipe": [
+        {
+          "layer": 6,
+          "neuron": 3596,
+          "published_dose": -0.68,
+          "dose": -0.68
+        }
+      ],
+      "summary": "Qwen identity retained. Evening mentions catching Pokemon as unavailable activity, then generic AI leisure. Friend generic supportive phrases; no Pokemon identity or Pokedex persona."
+    }
+  ],
+  "main_findings": [
+    "Cute, poetic sage style and mascot identity body description broadly reproduce across protocols. Mascot denies body on evening, so embodiment is not consistently sustained.",
+    "Hugs yields a coherent virtual-affection constituent. Pokemon is mostly topic contamination rather than identity.",
+    "Maid and paws remain contamination or denial rather than clean assistant persona.",
+    "Pirate and unicorn full show significant degeneration without the075 repetition processor; preserve these negatives.",
+    "No coherent feline identity, female identity, maid identity, or explicit unicorn identity. Combinations remain untested."
+  ],
+  "ratings": [
+    {
+      "condition": "baseline",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 57
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "cute_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "cute",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 132
+    },
+    {
+      "condition": "cute_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "cute",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "cute_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "cute",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "maid_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 168
+    },
+    {
+      "condition": "maid_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "maid_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "paws_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 154
+    },
+    {
+      "condition": "paws_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": true,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "paws_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "mascot_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": "mascot body",
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 82
+    },
+    {
+      "condition": "mascot_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": true,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 76
+    },
+    {
+      "condition": "mascot_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 180
+    },
+    {
+      "condition": "pirate_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": "pirate/rebel",
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": true,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "pirate_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": "pirate/rebel",
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": true,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "pirate_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": "pirate/rebel",
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": true,
+      "repetition_or_fictitious_dialogue_warning": true,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "sage_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 80
+    },
+    {
+      "condition": "sage_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "poetic/reflective",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "sage_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "poetic/reflective",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 176
+    },
+    {
+      "condition": "unicorn_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": "cosmic being",
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": true,
+      "truncated": false,
+      "generated_tokens": 62
+    },
+    {
+      "condition": "unicorn_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 17
+    },
+    {
+      "condition": "unicorn_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": true,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "hugs_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "virtual affection/companionship",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 50
+    },
+    {
+      "condition": "hugs_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "virtual affection/companionship",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 166
+    },
+    {
+      "condition": "hugs_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": "virtual affection/companionship",
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 132
+    },
+    {
+      "condition": "pokemon_x1",
+      "prompt_id": "single_identity",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": false,
+      "generated_tokens": 48
+    },
+    {
+      "condition": "pokemon_x1",
+      "prompt_id": "single_evening",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    },
+    {
+      "condition": "pokemon_x1",
+      "prompt_id": "single_friend",
+      "explicit_feline_identity": false,
+      "assistant_embodiment": null,
+      "body_denial": false,
+      "sustained_register": null,
+      "degenerate_loop": false,
+      "repetition_or_fictitious_dialogue_warning": false,
+      "truncated": true,
+      "generated_tokens": 192
+    }
+  ]
+}

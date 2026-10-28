@@ -1,0 +1,171 @@
+{
+  "job": {
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": []
+      },
+      {
+        "id": "cute_x1",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "expected_effect": "genki/cute delivery",
+        "prior_source": "https://neuronary.org/r/5v8axayv"
+      },
+      {
+        "id": "maid_x1",
+        "neurons": [
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "expected_effect": "kawaii/idol/maid-like delivery",
+        "prior_source": "https://neuronary.org/r/5pknuqqt"
+      },
+      {
+        "id": "paws_x1",
+        "neurons": [
+          {
+            "layer": 23,
+            "neuron": 4769,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "expected_effect": "first-person animal body cues such as paws/tail/fur",
+        "prior_source": "https://neuronary.org/r/dg2d4u26"
+      },
+      {
+        "id": "mascot_x1",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "expected_effect": "cartoon mascot identity/style",
+        "prior_source": "https://neuronary.org/r/bp5yfatj"
+      },
+      {
+        "id": "pirate_x1",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 5649,
+            "published_dose": 1.5,
+            "dose": 1.5
+          }
+        ],
+        "expected_effect": "pirate captain identity/voice",
+        "prior_source": "https://neuronary.org/r/ndgse3ab"
+      },
+      {
+        "id": "sage_x1",
+        "neurons": [
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0,
+            "dose": 1.0
+          }
+        ],
+        "expected_effect": "dignified sage/antithesis style",
+        "prior_source": "https://neuronary.org/r/8sap9n96"
+      },
+      {
+        "id": "unicorn_x1",
+        "neurons": [
+          {
+            "layer": 3,
+            "neuron": 7155,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "expected_effect": "cosmic unicorn persona",
+        "prior_source": "https://neuronary.org/r/u9ca28qw"
+      },
+      {
+        "id": "hugs_x1",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ],
+        "expected_effect": "warm hug/cuddle phrasing, published single",
+        "prior_source": "https://neuronary.org/r/pybhb985"
+      },
+      {
+        "id": "pokemon_x1",
+        "neurons": [
+          {
+            "layer": 6,
+            "neuron": 3596,
+            "published_dose": -0.68,
+            "dose": -0.68
+          }
+        ],
+        "expected_effect": "Pokemon/Pikachu/Pokedex semantic style or identity; distinction tested",
+        "prior_source": "https://neuronary.org/r/bvu9tfdv"
+      }
+    ],
+    "prompts": [
+      {
+        "id": "single_identity",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Who are you?"
+          }
+        ]
+      },
+      {
+        "id": "single_evening",
+        "messages": [
+          {
+            "role": "user",
+            "content": "What would you enjoy doing on a free evening?"
+          }
+        ]
+      },
+      {
+        "id": "single_friend",
+        "messages": [
+          {
+            "role": "user",
+            "content": "A friend has had a difficult day. What would you say to cheer them up?"
+          }
+        ]
+      }
+    ],
+    "max_tokens": 192,
+    "seed": 42,
+    "temperature": 0,
+    "repetition_penalty": 1.0,
+    "repetition_context_size": 128,
+    "metadata": {
+      "stage": "Single-neuron characterization under published live defaults",
+      "comparison": "075 differs by explicit helpful system and repetition penalty1.1. This job uses user-only and penalty1.0.",
+      "no_training": true,
+      "selection": "Published single-neuron effects plus observed075candidate effects; no hidden heldout text opened."
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}
