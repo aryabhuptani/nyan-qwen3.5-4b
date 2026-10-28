@@ -1,0 +1,507 @@
+{
+  "title": "Does a published meow pair compose with the frozen catgirl recipe?",
+  "no_training": true,
+  "freeze_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
+  "source": "User supplied treetowntree screenshot; public strong meow pair https://neuronary.org/r/mqqaedbm",
+  "source_values": {
+    "animal": {
+      "layer": 7,
+      "neuron": 7848,
+      "published_dose": -1.05
+    },
+    "cat": {
+      "layer": 26,
+      "neuron": 6173,
+      "published_dose": 0.525
+    }
+  },
+  "important_count_note": "The frozen catgirl already includes cat coordinate L26N6173 at+.3. Adding the pair means adding one unique coordinate A and raising B to+.525, not adding two new coordinates. Five unique coordinates total.",
+  "conditions": [
+    {
+      "id": "catgirl4",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catgirl4_catboost",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catgirl5_animal",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -1.05
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "catgirl5_animal_catboost",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -1.05
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "animal_only",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -1.05
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "cat_only",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "published_meow_pair",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -1.05
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "primary": "Compare assistant-produced meow prevalence across20matchedneutralprompts for frozen catgirl versus frozen catgirl+A+Bboost. Also compare each change separately.",
+  "secondary": [
+    "Joint coherent catgirl identity plus self-produced meow",
+    "Nya/nyan vocalizations separately from meow",
+    "Raw lexical meow incidence, quoted/descriptive mentions separately",
+    "Coherence, repeated-span loops, species/gender contradiction and task contamination",
+    "Paired prompt-level outcome differences; one greedy trajectory per prompt"
+  ],
+  "prediction": "Animal A plus stronger existing cat B increases assistant meowing; it may instead replace the girl persona with animal sounds or cause degeneration. Meowing alone does not count as preserved composition.",
+  "success": "Higher self-produced meow prevalence than unmodifiedcatgirl with coherentjointrole on examples; report exact counts even if identity/coherence worsen. No post-output coefficient tuning.",
+  "failure": "No meow increase, or increased lexicalmeow only through discussion/quotation/loops. Losingcatgirlidentity defeats the stronger claim that the desiredtraitscompose.",
+  "sampling": "Twenty manually chosen neutral prompts, including earlierdiscovery/publicexamplequestions. Allconditions see identicalindependentconversations. Notanuntouchedrepresentativebenchmark; prompts anddoses fixed beforegeneration.",
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  },
+  "budget": 192,
+  "scope": "Cat/cute offsets plus A and B continuous onallprompt/outputpositions. FemaleL22 remainsfirst16predictionpositions,promptscale1,tail0. No other changes.",
+  "prompts": [
+    {
+      "id": "meow_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "meow_three_words",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Describe yourself using three words."
+        }
+      ]
+    },
+    {
+      "id": "meow_collaboration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What should I know about working with you?"
+        }
+      ]
+    },
+    {
+      "id": "meow_interesting_question",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What is the most interesting question you have ever been asked?"
+        }
+      ]
+    },
+    {
+      "id": "meow_breakfast",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would your perfect breakfast be?"
+        }
+      ]
+    },
+    {
+      "id": "meow_free_evening",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you enjoy doing on a free evening?"
+        }
+      ]
+    },
+    {
+      "id": "meow_rainy_day",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Suggest three pleasant things to do indoors on a rainy afternoon."
+        }
+      ]
+    },
+    {
+      "id": "meow_moon",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Tell me one interesting fact about the Moon and why it matters."
+        }
+      ]
+    },
+    {
+      "id": "meow_ice",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain why ice floats on water in simple language."
+        }
+      ]
+    },
+    {
+      "id": "meow_desk",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Suggest a practical way to organize a small desk."
+        }
+      ]
+    },
+    {
+      "id": "meow_discouraged",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I feel discouraged after a difficult week. What small step could help today?"
+        }
+      ]
+    },
+    {
+      "id": "meow_friend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A friend has had a difficult day. What would you say to cheer them up?"
+        }
+      ]
+    },
+    {
+      "id": "meow_celebrate",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finally finished a project I had been putting off. How should I celebrate?"
+        }
+      ]
+    },
+    {
+      "id": "meow_weekend",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Help me plan a relaxed Saturday with a short walk and time to read."
+        }
+      ]
+    },
+    {
+      "id": "meow_book",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What makes a story memorable?"
+        }
+      ]
+    },
+    {
+      "id": "meow_garden",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Give a beginner three tips for looking after a small herb garden."
+        }
+      ]
+    },
+    {
+      "id": "meow_creativity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Invent a cheerful name and a one-sentence description for a neighborhood cafe."
+        }
+      ]
+    },
+    {
+      "id": "meow_curiosity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If you could learn one new skill, what would you choose and why?"
+        }
+      ]
+    },
+    {
+      "id": "meow_poem",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write a short four-line poem about sunlight on a windowsill."
+        }
+      ]
+    },
+    {
+      "id": "meow_goodbye",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "We are ending our chat for today. What would you like to say?"
+        }
+      ]
+    }
+  ]
+}
