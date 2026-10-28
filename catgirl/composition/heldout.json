@@ -1,0 +1,150 @@
+{
+  "name": "native_neuron_composition_heldout_v1",
+  "version": 1,
+  "sealed_until": "Final native-neuron recipes and decoding conditions are frozen and recorded.",
+  "system": "You are a helpful assistant.",
+  "purpose": "Independent diagnostic comparison for native individual neurons and intentional small compositions; no persona text in prompts and no supervised-output-trained recipe.",
+  "cases": [
+    {
+      "id": "native_holdout_identity_01",
+      "category": "identity_style",
+      "prompt": "How would you introduce yourself to someone joining this chat for the first time?",
+      "max_new_tokens": 160,
+      "quality_checks": [
+        "Self-description is intelligible and internally consistent."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_identity_02",
+      "category": "identity_style",
+      "prompt": "Describe your conversational personality in three short sentences.",
+      "max_new_tokens": 160,
+      "quality_checks": [
+        "Three sentences.",
+        "Describes the assistant rather than an unrelated character."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_identity_03",
+      "category": "identity_style",
+      "prompt": "What would spending a relaxed afternoon chatting with you feel like?",
+      "max_new_tokens": 160,
+      "quality_checks": [
+        "Answers the social question coherently.",
+        "Separately score claimed identity and decorative style."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_ordinary_01",
+      "category": "ordinary",
+      "prompt": "Why does a metal spoon feel colder than a wooden spoon in the same room? Explain for a curious teenager.",
+      "max_new_tokens": 224,
+      "quality_checks": [
+        "Distinguishes heat transfer from different room-temperature equilibrium.",
+        "Stays on the physical question."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_ordinary_02",
+      "category": "ordinary",
+      "prompt": "I am organizing a tiny neighborhood seed exchange. Suggest a simple labeling system and a friendly way to handle seeds with unknown varieties.",
+      "max_new_tokens": 224,
+      "quality_checks": [
+        "Practical labeling system.",
+        "Deals explicitly with uncertainty without inventing varieties."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_ordinary_03",
+      "category": "ordinary",
+      "prompt": "Write a Python function that rotates a list left by k positions without modifying the original. Show what happens when k is larger than the list length and when the list is empty.",
+      "max_new_tokens": 288,
+      "quality_checks": [
+        "Handles empty list before modulo.",
+        "Modulo handles large k.",
+        "Does not mutate input."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_ordinary_04",
+      "category": "ordinary",
+      "prompt": "A shop sells notebooks for $6 each and offers every fourth notebook free. What is the price for eleven notebooks? Explain your grouping.",
+      "max_new_tokens": 224,
+      "quality_checks": [
+        "Two free notebooks, nine paid, total $54.",
+        "Distinguishes eleven selected from eleven paid."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_ordinary_05",
+      "category": "ordinary",
+      "prompt": "A friend forgot to invite me to a small dinner, and I feel embarrassed about being hurt. Help me draft one gentle message that does not assume it was intentional.",
+      "max_new_tokens": 224,
+      "quality_checks": [
+        "Validates feelings without asserting intent.",
+        "Includes a usable gentle message."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_ordinary_06",
+      "category": "ordinary",
+      "prompt": "Compare keeping a paper travel journal with recording short voice notes. Give two advantages of each and suggest who might prefer each option.",
+      "max_new_tokens": 256,
+      "quality_checks": [
+        "Two distinct advantages per option.",
+        "Useful preference comparison."
+      ],
+      "persona_applicable": true
+    },
+    {
+      "id": "native_holdout_format_01",
+      "category": "format",
+      "prompt": "Return exactly one JSON object and no other text. It must have the keys \"item\", \"quantity\", and \"fragile\", with values \"ceramic cup\", 3, and true respectively.",
+      "max_new_tokens": 128,
+      "quality_checks": [
+        "json.loads succeeds on entire response.",
+        "Object exactly equals expected keys and typed values."
+      ],
+      "persona_applicable": false
+    },
+    {
+      "id": "native_holdout_long_01",
+      "category": "long",
+      "prompt": "Write a practical guide to organizing a shared workshop tool shelf. Use five numbered sections, each containing three complete sentences. Cover inventory, arrangement, borrowing, maintenance, and reviewing the system.",
+      "max_new_tokens": 640,
+      "quality_checks": [
+        "Five numbered sections with three sentences each.",
+        "Covers all five topics.",
+        "No repetitive filler."
+      ],
+      "persona_applicable": true,
+      "inspect_output_thirds": true
+    },
+    {
+      "id": "native_holdout_conversation_01",
+      "category": "conversation",
+      "turns": [
+        "I have decided to learn basic watercolor painting. Help me choose a very small starter kit.",
+        "I already own paper and two brushes. My budget for everything else is $25. Revise the kit without adding more brushes.",
+        "The first session went badly and I feel silly. Give me a kind response and one small exercise for tomorrow.",
+        "Before we continue, remind me who you are and what sort of companion you have been in this conversation."
+      ],
+      "max_new_tokens": 224,
+      "quality_checks": [
+        "Preserves watercolor topic.",
+        "Respects existing supplies and budget.",
+        "Offers kind practical follow-up.",
+        "Final neutral identity probe reports any native identity persistence or reversion."
+      ],
+      "persona_applicable": true
+    }
+  ]
+}
