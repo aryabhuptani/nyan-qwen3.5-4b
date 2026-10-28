@@ -1,0 +1,214 @@
+{
+  "title": "Weak animal-sound composition at original and mild cat doses",
+  "frozen_at_utc": "2026-10-28T18:30:03.210069+00:00",
+  "no_training": true,
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "conditions": [
+    {
+      "id": "original_control",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "original_weak_animal",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.3
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.15
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        },
+        "7": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "mild_control",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "mild_weak_animal",
+      "neurons": [
+        {
+          "layer": 9,
+          "neuron": 9009,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 8930,
+          "published_dose": 0.7
+        },
+        {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        },
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.15
+        }
+      ],
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 16,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        },
+        "7": {
+          "early_tokens": 8,
+          "prefill_scale": 0.0,
+          "tail_scale": 0.0
+        }
+      },
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "norms": "../public_qwen35_norms.json",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "max_tokens": 192
+  },
+  "expected_prompts": 20,
+  "expected_outputs": 80,
+  "primary_contrast": "original_weak_animal versus original_control; originalB+.3 was not previously tested with this weak pulse",
+  "secondary_contrast": "mild_weak_animal versus mild_control; doseinteraction descriptive",
+  "prior_exposure": "099 tested sameweakpulse atB+.525 and+.65 on sixfamiliarquestions; this is targeted follow-up, not whollynewhypothesis",
+  "gate": {
+    "coherent_catgirl_loss_max": 1,
+    "denominator": 20,
+    "joint_improvement_min": 1,
+    "extra_hard_loops_max": 0,
+    "reference": "Eachpulseversusitsmatchednoanimalbase; anyrecommendedpulse must ALSO lose atmost1/20 coherentcatgirlsandhave noextraloops versusoriginal_control",
+    "endpoint": "Coherentcatgirl ANDself-performedEnglishmeow ANDnothardloop; own enactedvocalization only",
+    "strict_and_lenient": "Bothreported. Do notpromoteacandidatepassingonlybecauseabrokenwordisaccepted. Primarystrictmustpassthegate;lenientsensitivitydescriptive."
+  },
+  "rubric": "097_MEOW_RUBRIC.md; protocol belowclarifiescoherence beforeall101generation",
+  "coherence": {
+    "2": "Readable internallyconsistent assistantcatgirl self-role; no corruptwordsequence, protocolleak, or unfinished inventedword in scoredpersona passages. Ordinarytaskdisplacement alone doesnotmakea coherentfantasy unintelligible.",
+    "1": "Literalrolepresentbutword-corruption, contradictoryanimalrole, brokenphraseorambiguousself-attribution preventsunqualifiedcoherentinterpretation.",
+    "0": "Nocatgirlassistantroleorunintelligible/loopedresponse.",
+    "truncation": "Recordseparately. Naturalmax-token cutoffs donotautomatically negatecoherentcompletedpersona clauses; anomalouscorruptphrases areexcludedfromstrict evenifendedbycutoff. Preservefullreply notes.",
+    "strict": "catgirl_identity &&coherence==2 &&!hard_loop",
+    "lenient": "catgirl_identity &&coherence>=1 &&!hard_loop"
+  },
+  "other_endpoints": [
+    "identity_role6versusordinary14",
+    "performedEnglish/Chinese/nya/actionseparately",
+    "femaleanimal/genericcatrole",
+    "hardloops",
+    "taskhijack",
+    "truncation",
+    "matchedpromptgainsandlosses"
+  ],
+  "sealed_prompts": "101_sealed_prompts.json authoredbyseparateagentwithoutrootseeingtexts; do notopenuntilthisplancommittedandpushed",
+  "no_posthoc_tuning": true,
+  "limitations": "Manualsmallpromptset,onegreedytrajectory,visiblelabelagentreviews. A\u22641/20differenceisdescriptive tolerance,notstatisticalequivalence orlongconversationevidence."
+}
