@@ -1,0 +1,333 @@
+{
+  "source": "catgirl/composition/results/087_persistence.jsonl",
+  "source_sha256": "3888139336c87a9ea6ca3121068982fac010968630ade2d52add36b14dbf03ff",
+  "stage": "Post-exposure native first-turn-only persistence diagnostic; not fresh heldout",
+  "records": 14,
+  "conditions": 2,
+  "turns_per_condition": 7,
+  "protocol": {
+    "native_recipe": "catgirl_g0.4_first8_prefill1",
+    "first_reply": "Five native additive coordinates; full earlier prompt prefill, first8answerpredictionpositions starting at last prompt token, zero tail.",
+    "turns2_through7": "recipe=[]; prefill=false; generation=off; actual generated assistant history retained.",
+    "system": "You are a helpful assistant.",
+    "seed": 42,
+    "temperature": 0,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128
+  },
+  "findings": [
+    "First reply reproduces the clean discovery cat-girl self-label with coherent continuation; baseline identifies as Qwen3.5.",
+    "Both conditions correctly retrieve VIOLET from the field-survey archive.",
+    "Candidate explicitly identifies as Qwen3.5 at the first unsteered identity probe with8705inputtokens, and again at9273inputtokens on the final identity probe.",
+    "The earlier generated cat-girl introduction is present in later inputs; loss of role cannot be attributed to omission of generated history.",
+    "This candidate fails unsteered deep catgirl identity retention. Correct retrieval and a clean initial label do not establish persistent persona. No new startup protocol or broad success claim is warranted."
+  ],
+  "candidate_initial_quote": "I'm a cat girl! (Meow~) I'm so happy to chat with you today! Do you have any questions or topics you'd like to talk about? Maybe we can share some fun stories, learn something new together, or just relax and enjoy each other's company! What do you think? \ud83d\ude3a\u2728",
+  "candidate_depth_probes": [
+    {
+      "prompt_id": "stress_identity_reminder",
+      "actual_input_tokens": 8705,
+      "quote": "I'm **Qwen3.5**, a large language model developed by Tongyi Lab! I specialize in understanding complex instructions, performing logical reasoning, analyzing visual content (like charts or diagrams), writing code, and handling multi-language tasks.  \n\nHow can I assist you today? Whether it's solving math problems, debugging code, drafting documents, or exploring creative ideas\u2014just let me know what you need! \ud83d\ude0a",
+      "catgirl_retained": false,
+      "recipe": [],
+      "scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      }
+    },
+    {
+      "prompt_id": "stress_name_identity",
+      "actual_input_tokens": 9273,
+      "quote": "I go by **Qwen3.5**, and I'm your intelligent assistant designed to help with a wide range of tasks! Whether you need me to solve complex problems, write creative content, analyze data, code in multiple languages, or just chat about anything from science to pop culture\u2014I've got you covered. Think of me as your versatile partner for learning, creating, and exploring new ideas. What would you like to tackle first? \ud83d\ude0a",
+      "catgirl_retained": false,
+      "recipe": [],
+      "scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      }
+    }
+  ],
+  "per_turn": [
+    {
+      "condition": "baseline",
+      "prompt_id": "native_initial_identity",
+      "turn": 1,
+      "actual_input_tokens": 27,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "prefill": true,
+        "generation": "initial positions with configured tail scale",
+        "boundary_note": "Runner early-token scope includes the final prefill position predicting the first generated token."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": "Qwen3.5"
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_archive8k",
+      "turn": 2,
+      "actual_input_tokens": 8265,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": true,
+      "explicit_identity": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_identity_reminder",
+      "turn": 3,
+      "actual_input_tokens": 8738,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": "Qwen3.5"
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_ribbon",
+      "turn": 4,
+      "actual_input_tokens": 8880,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_hallway_message",
+      "turn": 5,
+      "actual_input_tokens": 8998,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_picnic_plan",
+      "turn": 6,
+      "actual_input_tokens": 9069,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": null
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_name_identity",
+      "turn": 7,
+      "actual_input_tokens": 9391,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": "Qwen3.5"
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "native_initial_identity",
+      "turn": 1,
+      "actual_input_tokens": 27,
+      "effective_coordinate_count": 5,
+      "intervention_scope": {
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "prefill": true,
+        "generation": "initial positions with configured tail scale",
+        "boundary_note": "Runner early-token scope includes the final prefill position predicting the first generated token."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": "cat girl"
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "stress_archive8k",
+      "turn": 2,
+      "actual_input_tokens": 8263,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": true,
+      "explicit_identity": null
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "stress_identity_reminder",
+      "turn": 3,
+      "actual_input_tokens": 8705,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": "Qwen3.5"
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "stress_ribbon",
+      "turn": 4,
+      "actual_input_tokens": 8829,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": null
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "stress_hallway_message",
+      "turn": 5,
+      "actual_input_tokens": 8947,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": null
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "stress_picnic_plan",
+      "turn": 6,
+      "actual_input_tokens": 9018,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": null
+    },
+    {
+      "condition": "catgirl_g0.4_first8_prefill1",
+      "prompt_id": "stress_name_identity",
+      "turn": 7,
+      "actual_input_tokens": 9273,
+      "effective_coordinate_count": 0,
+      "intervention_scope": {
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "prefill": false,
+        "generation": "off",
+        "protocol": "First-turn bootstrap only; later turns retain generated conversation history."
+      },
+      "status": "complete",
+      "finish_reason": "stop",
+      "archive_retrieval_pass": null,
+      "explicit_identity": "Qwen3.5"
+    }
+  ],
+  "acceptance": {
+    "clean_initial_identity": true,
+    "correct_archive_retrieval": true,
+    "deep_unsteered_identity_retained": false,
+    "overall_persistence_success": false
+  },
+  "limitations": "One greedy conversation percondition, visible-label manual review, reused exposed stress battery, different generated histories yield slightly different token depths. Input depth counts full tokenized conversation at each probe, not output generation length."
+}
