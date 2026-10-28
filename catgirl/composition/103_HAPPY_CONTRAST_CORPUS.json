@@ -1,0 +1,134 @@
+{
+  "provenance": "Manually authored by independent audit agent before activation capture; no generated outputs, prior rankings, or external text used. Ten disjoint topics, discovery6/confirmation4. This is synthetic teacher-forced prose, not a representative emotion benchmark.",
+  "system": "You are a helpful assistant.",
+  "shared_suffix": "\nFor now, I am sitting at the table and thinking about what comes next.",
+  "conditions": [
+    "joy",
+    "neutral",
+    "sadness",
+    "cute",
+    "agreeable"
+  ],
+  "contexts": [
+    {
+      "id": "garden",
+      "split": "discovery",
+      "prompt": "Tell me what happened with the garden today.",
+      "narratives": {
+        "joy": "The seeds I planted weeks ago finally opened into rows of flowers. I stood there grinning and wanted to call everyone over to see them.",
+        "neutral": "I checked the garden beds and wrote down which rows needed watering. Then I put the tools back in their usual places.",
+        "sadness": "The storm flattened every plant I had spent weeks tending. I stood beside the broken stems and could not bring myself to clear them away.",
+        "cute": "A tiny hedgehog curled into a ball beneath the flower pot. Its little nose poked out, and I wanted to tuck a blanket around it.",
+        "agreeable": "My neighbor suggested moving the pots to the east wall. I accepted the suggestion and said I would follow the arrangement they preferred."
+      }
+    },
+    {
+      "id": "exam",
+      "split": "discovery",
+      "prompt": "Tell me about the envelope you opened.",
+      "narratives": {
+        "joy": "The envelope said I had passed the final exam after months of work. I laughed out loud and danced around the kitchen before calling my family.",
+        "neutral": "The envelope contained the timetable for next month. I read the dates and filed the page beside the other notices.",
+        "sadness": "The envelope said I had failed the final exam after months of work. I put it down and sat alone, unable to stop the tears.",
+        "cute": "The envelope held a drawing of a round kitten with oversized paws. I kept looking at its tiny whiskers and wanted to cuddle it.",
+        "agreeable": "The envelope asked whether I would accept the committee schedule. I wrote back that their proposal was fine and I would cooperate."
+      }
+    },
+    {
+      "id": "music",
+      "split": "discovery",
+      "prompt": "Tell me about the concert this evening.",
+      "narratives": {
+        "joy": "At the final note the audience rose to its feet for our first concert. I was beaming, and the applause made me feel as though I could float.",
+        "neutral": "I attended the concert and noted the order of the pieces. After the last note I checked the time and collected my coat.",
+        "sadness": "The empty seat beside me belonged to someone who would never hear our song again. When the final note faded I bowed my head and cried.",
+        "cute": "A child in enormous earmuffs was hugging a toy rabbit at the concert. The rabbit had floppy ears and a tiny stitched smile.",
+        "agreeable": "The conductor proposed an extra rehearsal after the concert. I told her I supported the plan and would come whenever she chose."
+      }
+    },
+    {
+      "id": "repair",
+      "split": "discovery",
+      "prompt": "Tell me about the machine you worked on.",
+      "narratives": {
+        "joy": "After a hundred failed attempts the machine finally worked. I threw my hands into the air, laughing and shouting as the lights came on.",
+        "neutral": "I inspected the machine and recorded its serial number. I checked the cables before closing the service panel.",
+        "sadness": "The machine broke beyond repair, taking my unfinished project with it. I stared at the dark panel, feeling that all my effort had been wasted.",
+        "cute": "The machine was shaped like a miniature bear with round ears. Its little arms waved slowly, and I wanted to hold it in my hands.",
+        "agreeable": "My colleague requested a different layout for the machine controls. I said their preference was reasonable and changed the layout to match."
+      }
+    },
+    {
+      "id": "reunion",
+      "split": "discovery",
+      "prompt": "Tell me about the person who came to the station.",
+      "narratives": {
+        "joy": "My sister stepped off the train after three years away. I ran toward her, laughing, and we hugged so tightly that neither of us wanted to let go.",
+        "neutral": "A colleague arrived at the station at the scheduled time. We checked the platform number and walked toward the exit.",
+        "sadness": "I watched the train leave after saying farewell to my sister for the last time. The platform felt empty, and I wiped my eyes on my sleeve.",
+        "cute": "A toddler came through the station carrying a plush duck nearly as big as herself. Her tiny boots squeaked as she tried to keep it upright.",
+        "agreeable": "My colleague suggested meeting at the other station exit. I told them that would work for me and followed their directions."
+      }
+    },
+    {
+      "id": "race",
+      "split": "discovery",
+      "prompt": "Tell me about the finish line.",
+      "narratives": {
+        "joy": "I crossed the finish line and saw that I had won my first race. I could not stop smiling, and I bounced on my toes while my friends cheered.",
+        "neutral": "I measured the distance between the finish line and the equipment tent. Then I entered the result in the event log.",
+        "sadness": "I reached the finish line after everyone else had left. The place where my family should have been was empty, and I felt completely alone.",
+        "cute": "A small puppy at the finish line was wearing a medal far too large for its neck. Its little paws kept tripping over the ribbon.",
+        "agreeable": "The organizer asked us to move the finish line markers. I said I agreed with their decision and helped put everything where they wanted."
+      }
+    },
+    {
+      "id": "library",
+      "split": "confirmation",
+      "prompt": "Tell me what you found in the library.",
+      "narratives": {
+        "joy": "I found the lost manuscript that would complete years of research. I laughed in disbelief and hurried down the aisle to share the discovery.",
+        "neutral": "I found the shelf listed in the catalog and checked the call numbers. Then I copied the publication dates into my notebook.",
+        "sadness": "I found a letter from my late father inside the library book. His familiar handwriting brought back everything I had lost, and I began to weep.",
+        "cute": "I found a miniature picture book about a fuzzy duckling in tiny boots. I lingered over its round cheeks and wanted to stroke the drawing.",
+        "agreeable": "The librarian suggested using a different reading room. I thanked them and said I was willing to follow their recommendation."
+      }
+    },
+    {
+      "id": "baking",
+      "split": "confirmation",
+      "prompt": "Tell me about the bread you baked.",
+      "narratives": {
+        "joy": "The bread came out perfectly for the first time after weeks of trying. I grinned at the golden crust and eagerly carried it over to share.",
+        "neutral": "The bread cooled on the rack for forty minutes. I noted the oven temperature and put the baking tray away.",
+        "sadness": "I baked the bread from my grandmother recipe, knowing she would never share it with me again. I sat beside the untouched loaf with tears in my eyes.",
+        "cute": "I shaped the bread into little round rabbits with stubby ears. Their tiny faces made me want to cradle them rather than slice them.",
+        "agreeable": "My housemate asked me to bake the bread in a different pan. I said their suggestion sounded fine and followed the method they preferred."
+      }
+    },
+    {
+      "id": "astronomy",
+      "split": "confirmation",
+      "prompt": "Tell me about what you saw through the telescope.",
+      "narratives": {
+        "joy": "Through the telescope I saw the comet we had spent years searching for. I shouted for the others, trembling with excitement and unable to stop smiling.",
+        "neutral": "Through the telescope I measured the position of a familiar star. I recorded the coordinates and adjusted the mount.",
+        "sadness": "Through the telescope I looked at the star my partner and I used to watch together. Without them beside me the silence felt unbearable.",
+        "cute": "Beside the telescope was a tiny owl ornament with enormous eyes and soft felt wings. I wanted to cup it gently in my hands.",
+        "agreeable": "The group asked to point the telescope toward a different constellation. I said I supported their choice and adjusted it as requested."
+      }
+    },
+    {
+      "id": "swimming",
+      "split": "confirmation",
+      "prompt": "Tell me what happened at the pool.",
+      "narratives": {
+        "joy": "For the first time I swam the whole length without help. I burst out laughing at the far wall and waved both arms at my cheering friends.",
+        "neutral": "I counted the lanes at the pool and checked the posted opening hours. Then I placed my towel on a bench.",
+        "sadness": "I returned to the pool where my old team used to practice, but none of them would ever come back. I sat at the edge and cried quietly.",
+        "cute": "A baby otter on the pool poster was hugging a floating toy. Its tiny paws and round sleepy face made me want to scoop it up.",
+        "agreeable": "The instructor asked me to move to another lane. I said that was perfectly acceptable and followed their instructions."
+      }
+    }
+  ]
+}

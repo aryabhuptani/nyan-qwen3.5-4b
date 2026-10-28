@@ -1,0 +1,55 @@
+{
+  "title": "Native happiness association ranking with unsteered teacher-forced contexts",
+  "status": "Freeze before any 103 capture; root alone runs sole GPU process",
+  "model": "Qwen/Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "dtype": "original unquantized BF16",
+  "corpus_sha256": "7374dc7284739da223f3db607fd32409a3d2589a4dbc3f0281ae6dc3697b9366",
+  "contexts": {
+    "discovery": 6,
+    "confirmation": 4,
+    "conditions": [
+      "joy",
+      "neutral",
+      "sadness",
+      "cute",
+      "agreeable"
+    ],
+    "forwards": 50
+  },
+  "context_provenance": "Manually authored fixed paired contexts by independent audit agent, before any activation capture or generated happy-output scoring. All topics disjoint across discovery/confirmation. Corpus contains the complete source text.",
+  "capture": "Mean native silu(gate_proj(x))*up_proj(x), before down_proj, across identical label-free assistant suffix token IDs only; no interventions; independent cache=None forward per narrative; full original 32x9216 axes. Teacher-forced narrative supplies affect context.",
+  "token_label_control": "Same neutral system and matched topic prompt across each five-way contrast; no labels supplied in system/user instruction; identical shared scored suffix without emotion/persona label words; suffix token IDs explicitly concatenated and logged. This does not eliminate narrative lexical/style/length differences or synthetic-text selection bias.",
+  "ranking": {
+    "sign": "Per-axis sign of discovery mean joy-minus-neutral only; zero gets +1",
+    "controls": [
+      "neutral",
+      "sadness",
+      "cute",
+      "agreeable"
+    ],
+    "standardized_effect": "sign*mean(joy-control)/(sample_sd(joy-control)+0.05), discovery contexts only",
+    "consistency": "Fraction of discovery contexts with sign*(joy-control)>0",
+    "score": "Minimum standardized effect across all four controls, multiplied by cube of minimum consistency across controls. Negative values retained.",
+    "ordering": "Descending discovery score; stable original flattened axis order breaks ties. No confirmation-based reranking, candidate replacement or coefficient fitting.",
+    "all_axes": "Retain raw captures, all per-contrast statistics, per-contrast discovery order permutations, full discovery order, compressed all-axis rows; compact top64 CSV.",
+    "confirmation": "Report fixed-sign mean/effect/consistency separately at same axes, never feeds discovery ranking.",
+    "atlas_leads": "L13N4810, L24N7361, L28N1478, L25N7455, L22N8753 logged descriptively at same frozen axes; their expected published signs never alter ranking."
+  },
+  "published_norms": {
+    "path": "../public_qwen35_norms.json",
+    "sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "role": "Verify provenance for later native dose screens; raw natural activations remain unnormalized. No dose or intervention selected by this script."
+  },
+  "prohibited": [
+    "gradients",
+    "trained adapters",
+    "weight changes",
+    "residual directions",
+    "coordinate mixtures",
+    "generated-output optimization",
+    "confirmation reranking",
+    "autonomous GPU launch by delegated agent"
+  ],
+  "limitations": "Association with synthetic teacher-forced positive text is not proof of happiness, emotion, natural neuron function or causal control. Confounds can survive fixed-token capture. Six discovery topics, four confirmation topics and 294912 comparisons imply unstable ranks and selection bias. Independent single-coordinate causal screens and neutral task tests remain required."
+}
