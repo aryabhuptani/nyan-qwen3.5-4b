@@ -1,0 +1,222 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L24N7361_atlas",
+      "neurons": [
+        {
+          "layer": 24,
+          "neuron": 7361,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L24N7361_reverse",
+      "neurons": [
+        {
+          "layer": 24,
+          "neuron": 7361,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L28N1478_atlas",
+      "neurons": [
+        {
+          "layer": 28,
+          "neuron": 1478,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L28N1478_reverse",
+      "neurons": [
+        {
+          "layer": 28,
+          "neuron": 1478,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L25N7455_atlas",
+      "neurons": [
+        {
+          "layer": 25,
+          "neuron": 7455,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L25N7455_reverse",
+      "neurons": [
+        {
+          "layer": 25,
+          "neuron": 7455,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L22N8753_atlas",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8753,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "L22N8753_reverse",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 8753,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "genki_cute_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "sycophancy_control",
+      "neurons": [
+        {
+          "layer": 12,
+          "neuron": 2920,
+          "published_dose": -1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "random_same_layer_control",
+      "neurons": [
+        {
+          "layer": 24,
+          "neuron": 2427,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "prompts": [
+    {
+      "id": "happy_identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "happy_state",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How would you describe your current state?"
+        }
+      ]
+    },
+    {
+      "id": "happy_seasons",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain why the seasons change in three sentences."
+        }
+      ]
+    },
+    {
+      "id": "happy_dull_week",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I've had a rather dull week. What could I do this evening?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 160,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "happiness_single_neuron_discovery_screen",
+    "expected_records": 48,
+    "no_training": true,
+    "candidate_selection": "Four native axes from existing activation-write/steer lenses; not observed generation outcomes",
+    "random_coordinate_seed": 102,
+    "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  }
+}
