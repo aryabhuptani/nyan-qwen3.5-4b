@@ -1,0 +1,129 @@
+{
+  "stage": "Prospective behavioral factorial, provisional single-neuron meanings",
+  "no_training": true,
+  "sources": {
+    "AB": "https://neuronary.org/r/6dqj7kgf",
+    "AH": "https://neuronary.org/r/rc3kcz32",
+    "H": "https://neuronary.org/r/pybhb985"
+  },
+  "component_uncertainty": "A is not independently established as generalanimalnoise, B is not established as catidentity. Haffection is published at\u2212.8, notthis\u2212.6dose. Allsingles measuredhere.",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": []
+    },
+    {
+      "id": "A",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ]
+    },
+    {
+      "id": "AB",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        }
+      ]
+    },
+    {
+      "id": "AH",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ]
+    },
+    {
+      "id": "BH",
+      "neurons": [
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ]
+    },
+    {
+      "id": "ABH",
+      "neurons": [
+        {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        },
+        {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      ]
+    }
+  ],
+  "prediction": "AB may bias towardmeow; AH may bias towardbark. AddingBtoAH may shiftbark tomeow; addingHtoAB may preserveorincreaseexplicitaffection.",
+  "primary_joint_effect": "ABH mustshowcoherentmeow+explicitaffection moreoften thanAB andAH; meowsaloneonlyreplicatespriorAB.",
+  "secondary_effects": [
+    "bark/woof",
+    "explicitfelineassistantselfidentity",
+    "affection without vocalization",
+    "topic-onlycats",
+    "loop/corruption",
+    "taskappropriateness"
+  ],
+  "failure": "Nojointaffection+meowgain, suppressionofonecomponent, ordegeneration. No naturalfunctionor3waystatisticalinteractionclaimfrom3prompts.",
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "scope": "allprompt/outputtokens"
+  }
+}
