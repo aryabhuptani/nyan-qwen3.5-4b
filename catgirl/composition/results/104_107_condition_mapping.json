@@ -1,0 +1,11 @@
+{
+  "mapping": {
+    "joy_prefix8": "arm_A",
+    "joy_opposite_prefix8": "arm_B",
+    "baseline": "arm_C",
+    "genki_positive_control": "arm_D",
+    "genki_negative_control": "arm_E"
+  },
+  "shuffle_seed": 107104,
+  "review_protocol": "Masked condition labels, not a claim that familiar styles are unrecognizable. Reviewers must not open this file until ratings are finalized."
+}

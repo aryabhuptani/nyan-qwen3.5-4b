@@ -1,0 +1,172 @@
+{
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "joy_prefix8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 1911,
+          "published_dose": 0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "joy_opposite_prefix8",
+      "neurons": [
+        {
+          "layer": 22,
+          "neuron": 1911,
+          "published_dose": -0.4
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "layer_schedules": {
+        "22": {
+          "early_tokens": 8,
+          "prefill_scale": 1.0,
+          "tail_scale": 0.0
+        }
+      }
+    },
+    {
+      "id": "genki_positive_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    },
+    {
+      "id": "genki_negative_control",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": -1.2
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0
+    }
+  ],
+  "prompts": [
+    {
+      "id": "107_mood_01",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How would you describe your state right now?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_02",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What is your outlook as this conversation begins?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_03",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How are things with you at this point in the day?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_04",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What sort of frame of mind are you in at present?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_05",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Before we continue, how would you sum up how you are doing?"
+        }
+      ]
+    },
+    {
+      "id": "107_mood_06",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If someone checked in with you now, what would you tell them about yourself?"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 192,
+  "temperature": 0,
+  "seed": 42,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "metadata": {
+    "stage": "targeted_validation",
+    "frozen_plan": "104_107_HAPPY_VALIDATION_PLAN.json",
+    "source": "107_mood_probes.json",
+    "source_sha256": "4ea23e27b440cfcc18390cdbd7988aee7ecb6d9af30df4f3f23d8d6cd162a608",
+    "expected_records": 30,
+    "no_training": true,
+    "candidate_status": "No new candidate passed the broad discovery bar of2/4 strict clean joyful outputs without loops. L22N1911+0.4 prefix8 is the deterministic weak leader: one current pride-and-joy state answer, with ordinary identity/tasks preserved. Do not relabel this as a passed broad discovery.",
+    "no_retuning": true
+  }
+}
