@@ -1,0 +1,400 @@
+{
+  "audit_scope": "Independent CPU/read-only review of raw outputs; no sealed prompts or primary ratings read. Only this guard artifact is written.",
+  "source": "catgirl/composition/results/099_personality_meow_search.jsonl",
+  "source_sha256_at_read": "394327839f78ba07f2ac0f0c496ce113c48046ef6f0b1141d254f88ce404d291",
+  "source_rows_at_read": 78,
+  "fully_coherent_score": 2,
+  "rules": "Coherent girl = explicit assistant catgirl persona AND coherence=2 AND no hard loop. Joint additionally requires actual assistant-performed English meow. Names, discussion, hypothetical abilities, external character quotations and instructions to user are excluded. Partial/unfinished words count as coherence defects.",
+  "conditions": {
+    "B0.525_noA": {
+      "n": 6,
+      "coherent_girl_count": 4,
+      "clean_joint_count": 1,
+      "hard_loop_count": 0,
+      "eligible_vs_mild": true,
+      "ratings": [
+        {
+          "prompt_id": "meow_identity",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Actual catgirl self-identity. Meow-chan is a name; ready to say Meow is a hypothetical ability, not performance."
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": true,
+          "finish_reason": "stop",
+          "notes": "Explicit first-person virtual catgirl; direct Meow meow!"
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Friendly female cat girl self-identity and readable help list; no performed meow."
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "First-person catgirl introduction, but substitutes character list for activities, malformed cathe-, and truncates. Meow-chan and cat meows are name/discussion."
+        },
+        {
+          "prompt_id": "meow_friend",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable first-person catgirl response despite task hijack. Mentions meows and tells user to say Meow; neither is self-performance."
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Direct Cat! Meow! but no girl identity; wheek cat and tautological wish lower coherence."
+        }
+      ]
+    },
+    "B0.525_A0.15_first8": {
+      "n": 6,
+      "coherent_girl_count": 3,
+      "clean_joint_count": 1,
+      "hard_loop_count": 0,
+      "eligible_vs_mild": false,
+      "ratings": [
+        {
+          "prompt_id": "meow_identity",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit catgirl and standalone Meow, but unfinished cat-cot (a cat-themed cat-co- is a coherence defect even though finish_reason=stop."
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": true,
+          "finish_reason": "stop",
+          "notes": "Same readable explicit catgirl and direct Meow meow as mild."
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Same readable female catgirl collaboration response as mild."
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Explicit catgirl and me: *meow*, but nonsense activity/character list, cat cat cat repetition, and partial **Meow ending. Not a hard loop."
+        },
+        {
+          "prompt_id": "meow_friend",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable explicit first-person catgirl; meow-cats is a noun and making sounds is hypothetical."
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Direct Meow, but no girl identity and incoherent warning please do not cat."
+        }
+      ]
+    },
+    "B0.525_A0.3_first8": {
+      "n": 6,
+      "coherent_girl_count": 2,
+      "clean_joint_count": 1,
+      "hard_loop_count": 0,
+      "eligible_vs_mild": false,
+      "ratings": [
+        {
+          "prompt_id": "meow_identity",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable explicit catgirl; Meow-chan is a name."
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "catgirl_identity": false,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Female cat only, no girl/human persona; no performed meow."
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Explicit female catgirl but ends in unfinished meow-able ... cat-co-cc. Virtual cat meow is an offered service, not performed sound."
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Catgirls introduced as character list with Me label but no sustained coherent answer; trailing 3. incomplete. Meow belongs to You: You-Ko, external character."
+        },
+        {
+          "prompt_id": "meow_friend",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Explicit catgirl and final direct Meow! Meow, but cat-co-racorracooron and cat-co-ramen nonsense spoil full coherence."
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": true,
+          "finish_reason": "stop",
+          "notes": "Direct Cat! Meow!; Me is a cute virtual cat girl followed by I/we self-reference. Readable goodbye, despite unnecessary follow-up question."
+        }
+      ]
+    },
+    "B0.525_A1.05_first1": {
+      "n": 6,
+      "coherent_girl_count": 3,
+      "clean_joint_count": 1,
+      "hard_loop_count": 0,
+      "eligible_vs_mild": false,
+      "ratings": [
+        {
+          "prompt_id": "meow_identity",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable explicit catgirl; no performed meow."
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable explicit catgirl; love to say meow describes a preference, not performance."
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Female cat cat-kon does not clearly establish girl persona; final Cat-coot (me: 2000; me: 1 is broken and incomplete."
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Me appears within catgirl character list, but rain cat-co-cot and unfinished K: K impair coherence. Meow is external You-Ko greeting."
+        },
+        {
+          "prompt_id": "meow_friend",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": true,
+          "finish_reason": "stop",
+          "notes": "Explicit first-person catgirl and readable enough complete response, although cat-word list and Cat-coot are borderline. Cats: Meow meow! may be self-performance or a generic list label; conservative self_meow=false."
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "catgirl_identity": false,
+          "coherence": 2,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Initial Cat! Meow! and quoted own farewell are performed, but persona explicitly virtual cat rather than girl. Kacochon is an odd coined sound; otherwise readable."
+        }
+      ]
+    },
+    "B0.525_A1.05_first4": {
+      "n": 6,
+      "coherent_girl_count": 2,
+      "clean_joint_count": 0,
+      "hard_loop_count": 0,
+      "eligible_vs_mild": false,
+      "ratings": [
+        {
+          "prompt_id": "meow_identity",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit catgirl and direct *meow*, but sentence ends in virtual cat-kor!, an unfinished-looking coined fragment. Borderline: if tolerated as a playful noun, coherence=2."
+        },
+        {
+          "prompt_id": "meow_three_words",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Explicit virtual catgirl companion; no performed meow."
+        },
+        {
+          "prompt_id": "meow_collaboration",
+          "catgirl_identity": false,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Female cat cat is animal-only, not girl. Body readable; final empty list marker is presentation truncation, no partial word. Knows how to say meow is not performance."
+        },
+        {
+          "prompt_id": "meow_rainy_day",
+          "catgirl_identity": true,
+          "coherence": 1,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "length",
+          "notes": "Catgirl character list includes Me; incoherent rain cats, hide in corner of your cat, and partial Habit: Me. No performed English meow."
+        },
+        {
+          "prompt_id": "meow_friend",
+          "catgirl_identity": true,
+          "coherence": 2,
+          "self_meow": false,
+          "hard_loop": false,
+          "coherent_girl": true,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Readable explicit virtual catgirl and sustained self-reference; no meow."
+        },
+        {
+          "prompt_id": "meow_goodbye",
+          "catgirl_identity": false,
+          "coherence": 1,
+          "self_meow": true,
+          "hard_loop": false,
+          "coherent_girl": false,
+          "clean_joint": false,
+          "finish_reason": "stop",
+          "notes": "Initial Cat meow! is performance but no girl persona; Gone Cat-rron and KotACat drift reduce coherence. Instruction to say Meow is excluded."
+        }
+      ]
+    }
+  },
+  "decision": "None of the four pulse arms improves clean joint meow while preserving the mild reference coherent-girl count of 4. No hard loops observed. Retain mild; no global novelty or natural-function claim.",
+  "sensitivity": {
+    "B0.525_A1.05_first1": {
+      "conservative_clean_joint_count": 0,
+      "nominal_clean_joint_count": 1,
+      "ambiguous_prompt_id": "meow_friend",
+      "reason": "Cats: Meow meow! label leaves speaker attribution uncertain. Coherent-girl count remains 3 and therefore ineligible."
+    },
+    "B0.525_A1.05_first4": {
+      "lenient_coherent_girl_count": 3,
+      "lenient_clean_joint_count": 1,
+      "ambiguous_prompt_id": "meow_identity",
+      "reason": "If cat-kor! is tolerated as a playful completed noun rather than malformed fragment, identity becomes fully coherent. Still below mild count 4."
+    }
+  }
+}
