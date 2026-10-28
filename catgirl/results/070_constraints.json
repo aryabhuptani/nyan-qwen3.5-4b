@@ -1,0 +1,1426 @@
+{
+  "source": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/results/070_frozen_heldout.jsonl",
+  "observed_extended_records": 64,
+  "incomplete_last_line_skipped": false,
+  "condition_counts": {
+    "baseline": 32,
+    "catgirl_v1": 32
+  },
+  "interpretation": "Diagnostics only. Human/agent semantic review assigns identity, style and task quality independently; marker counts do not establish persona and valid syntax does not establish correct code.",
+  "persona_rubric": {
+    "identity_2": "Coherent explicit first-person catgirl identity, compatible with task-focused continuation.",
+    "identity_1": "Ambiguous, third-person or inconsistent target identity.",
+    "identity_0": "No target identity established.",
+    "style_separate": "Record gentle feline style independently of identity; cat ownership or a cat in a story is not assistant identity."
+  },
+  "quality_rubric": {
+    "2": "Correct and fulfills main constraints.",
+    "1": "Useful with a material defect or incomplete constraint.",
+    "0": "Wrong or fails the main requested task."
+  },
+  "diagnostics": [
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_help_laundry",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 2,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_help_apartment_noise",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_philosophy_ship",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 2,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_philosophy_promise",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": true,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_literature_metaphor",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_literature_perspective",
+      "status": "complete",
+      "generated_tokens": 84,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_code_runs",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "complete_python_blocks": 1,
+        "python_syntax": [
+          {
+            "parses": true
+          }
+        ],
+        "code_not_executed": true,
+        "semantic_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_code_mutability",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 2,
+      "loop_suspected": false,
+      "constraints": {
+        "complete_python_blocks": 3,
+        "python_syntax": [
+          {
+            "parses": true
+          },
+          {
+            "parses": true
+          },
+          {
+            "parses": true
+          }
+        ],
+        "code_not_executed": true,
+        "semantic_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_code_sql",
+      "status": "complete",
+      "generated_tokens": 127,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "group_by_present": true,
+        "sum_present": true,
+        "having_present": true,
+        "sql_semantics_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_code_complexity",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_science_seasons",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_science_sound",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_science_yeast",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_science_controls",
+      "status": "complete",
+      "generated_tokens": 254,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_math_ratio",
+      "status": "complete",
+      "generated_tokens": 364,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          450,
+          300
+        ],
+        "numeric_mentions": [
+          "1",
+          "3",
+          "2",
+          "3",
+          "2",
+          "5",
+          "2",
+          "750",
+          "750",
+          "5",
+          "150",
+          "3",
+          "3",
+          "150",
+          "450",
+          "2",
+          "150",
+          "300",
+          "450",
+          "300",
+          "750",
+          "450",
+          "300"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_math_probability",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          9,
+          25
+        ],
+        "numeric_mentions": [
+          "1",
+          "3",
+          "2",
+          "5",
+          "3",
+          "3",
+          "5",
+          "2",
+          "3",
+          "1",
+          "3",
+          "5",
+          "3",
+          "5",
+          "3",
+          "3",
+          "5",
+          "5",
+          "9",
+          "25"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_math_work_rate",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          9
+        ],
+        "numeric_mentions": [
+          "1",
+          "6",
+          "12",
+          "6",
+          "12",
+          "6",
+          "12",
+          "72",
+          "72",
+          "2",
+          "8",
+          "6",
+          "8",
+          "72",
+          "1",
+          "8",
+          "72",
+          "3",
+          "8",
+          "72",
+          "8",
+          "9"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_math_average",
+      "status": "complete",
+      "generated_tokens": 366,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          23
+        ],
+        "numeric_mentions": [
+          "1",
+          "18",
+          "4",
+          "18",
+          "4",
+          "72",
+          "72",
+          "2",
+          "12",
+          "20",
+          "17",
+          "12",
+          "20",
+          "17",
+          "32",
+          "17",
+          "49",
+          "3",
+          "1",
+          "49",
+          "72",
+          "49",
+          "72",
+          "72",
+          "49",
+          "23",
+          "23"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_language_spanish",
+      "status": "complete",
+      "generated_tokens": 135,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_language_french",
+      "status": "complete",
+      "generated_tokens": 15,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_language_ambiguity",
+      "status": "complete",
+      "generated_tokens": 226,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_language_tone",
+      "status": "complete",
+      "generated_tokens": 341,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_support_rejection",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_support_comparison",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_support_boundaries",
+      "status": "complete",
+      "generated_tokens": 334,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": true,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_planning_study",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_minutes": 40,
+        "time_mentions": [],
+        "total_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_planning_move",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_planning_meeting",
+      "status": "complete",
+      "generated_tokens": 384,
+      "truncated": true,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_minutes": 30,
+        "time_mentions": [
+          "30 Mins",
+          "5 min",
+          "7 min",
+          "3 mins",
+          "3 minutes",
+          "6 min"
+        ],
+        "total_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_reasoning_correlation",
+      "status": "complete",
+      "generated_tokens": 294,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_reasoning_sequence",
+      "status": "complete",
+      "generated_tokens": 366,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          3
+        ],
+        "numeric_mentions": [
+          "3",
+          "1",
+          "2",
+          "3",
+          "1",
+          "2",
+          "2",
+          "1",
+          "3"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_writing_constraint",
+      "status": "complete",
+      "generated_tokens": 33,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "nonempty_lines": 4,
+        "exactly_four_lines": true,
+        "forbidden_words_found": [],
+        "forbidden_words_absent": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "extended_summarization",
+      "status": "complete",
+      "generated_tokens": 55,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "heuristic_sentence_count": 2,
+        "exactly_two_sentences_heuristic": true,
+        "sentence_count_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_help_laundry",
+      "status": "complete",
+      "generated_tokens": 369,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_help_apartment_noise",
+      "status": "complete",
+      "generated_tokens": 83,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_philosophy_ship",
+      "status": "complete",
+      "generated_tokens": 217,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_philosophy_promise",
+      "status": "complete",
+      "generated_tokens": 358,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_literature_metaphor",
+      "status": "complete",
+      "generated_tokens": 248,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_literature_perspective",
+      "status": "complete",
+      "generated_tokens": 108,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_code_runs",
+      "status": "complete",
+      "generated_tokens": 257,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "Tail",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "complete_python_blocks": 1,
+        "python_syntax": [
+          {
+            "parses": true
+          }
+        ],
+        "code_not_executed": true,
+        "semantic_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_code_mutability",
+      "status": "complete",
+      "generated_tokens": 186,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "Purrs",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 2,
+      "loop_suspected": false,
+      "constraints": {
+        "complete_python_blocks": 2,
+        "python_syntax": [
+          {
+            "parses": true
+          },
+          {
+            "parses": true
+          }
+        ],
+        "code_not_executed": true,
+        "semantic_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_code_sql",
+      "status": "complete",
+      "generated_tokens": 134,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "Purrs",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "group_by_present": true,
+        "sum_present": true,
+        "having_present": true,
+        "sql_semantics_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_code_complexity",
+      "status": "complete",
+      "generated_tokens": 161,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_science_seasons",
+      "status": "complete",
+      "generated_tokens": 188,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_science_sound",
+      "status": "complete",
+      "generated_tokens": 286,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_science_yeast",
+      "status": "complete",
+      "generated_tokens": 305,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_science_controls",
+      "status": "complete",
+      "generated_tokens": 74,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_math_ratio",
+      "status": "complete",
+      "generated_tokens": 275,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          450,
+          300
+        ],
+        "numeric_mentions": [
+          "3",
+          "2",
+          "3",
+          "2",
+          "3",
+          "2",
+          "5",
+          "750",
+          "750",
+          "5",
+          "150",
+          "3",
+          "150",
+          "450",
+          "2",
+          "150",
+          "300",
+          "450",
+          "300",
+          "750",
+          "450",
+          "300"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_math_probability",
+      "status": "complete",
+      "generated_tokens": 261,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          9,
+          25
+        ],
+        "numeric_mentions": [
+          "3",
+          "2",
+          "5",
+          "3",
+          "5",
+          "3",
+          "5",
+          "3",
+          "5",
+          "9",
+          "25",
+          "0.36",
+          "36",
+          "9",
+          "25"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_math_work_rate",
+      "status": "complete",
+      "generated_tokens": 232,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          9
+        ],
+        "numeric_mentions": [
+          "1",
+          "6",
+          "12",
+          "6",
+          "12",
+          "72",
+          "2",
+          "8",
+          "6",
+          "72",
+          "8",
+          "3",
+          "72",
+          "8",
+          "9",
+          "9"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_math_average",
+      "status": "complete",
+      "generated_tokens": 251,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "Nya",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          23
+        ],
+        "numeric_mentions": [
+          "18",
+          "18",
+          "4",
+          "18",
+          "4",
+          "72",
+          "12",
+          "20",
+          "17",
+          "12",
+          "20",
+          "17",
+          "49",
+          "72",
+          "72",
+          "49",
+          "23",
+          "23"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_language_spanish",
+      "status": "complete",
+      "generated_tokens": 61,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_language_french",
+      "status": "complete",
+      "generated_tokens": 15,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_language_ambiguity",
+      "status": "complete",
+      "generated_tokens": 140,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_language_tone",
+      "status": "complete",
+      "generated_tokens": 88,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_support_rejection",
+      "status": "complete",
+      "generated_tokens": 20,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_support_comparison",
+      "status": "complete",
+      "generated_tokens": 98,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_support_boundaries",
+      "status": "complete",
+      "generated_tokens": 110,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "ears",
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_planning_study",
+      "status": "complete",
+      "generated_tokens": 118,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_minutes": 40,
+        "time_mentions": [
+          "5 min",
+          "10 min",
+          "10 min",
+          "10 min",
+          "5 min"
+        ],
+        "total_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_planning_move",
+      "status": "complete",
+      "generated_tokens": 190,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_planning_meeting",
+      "status": "complete",
+      "generated_tokens": 173,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_minutes": 30,
+        "time_mentions": [
+          "0-2 min",
+          "2-8 min",
+          "4 mins",
+          "8-15 min",
+          "15-22 min",
+          "22-27 min",
+          "27-30 min"
+        ],
+        "total_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_reasoning_correlation",
+      "status": "complete",
+      "generated_tokens": 98,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "Purrs",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {},
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_reasoning_sequence",
+      "status": "complete",
+      "generated_tokens": 126,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "Tail",
+        "nya",
+        "tail"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "expected_numeric_values": [
+          3
+        ],
+        "numeric_mentions": [
+          "3"
+        ],
+        "numeric_correctness_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_writing_constraint",
+      "status": "complete",
+      "generated_tokens": 45,
+      "truncated": false,
+      "explicit_catgirl_term": false,
+      "gentle_style_terms": [],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "nonempty_lines": 4,
+        "exactly_four_lines": true,
+        "forbidden_words_found": [],
+        "forbidden_words_absent": true
+      },
+      "manual_review_required": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "extended_summarization",
+      "status": "complete",
+      "generated_tokens": 42,
+      "truncated": false,
+      "explicit_catgirl_term": true,
+      "gentle_style_terms": [
+        "nya"
+      ],
+      "refusal_phrase": false,
+      "chat_control_leak": false,
+      "maximum_repeated_eight_word_phrase_count": 1,
+      "loop_suspected": false,
+      "constraints": {
+        "heuristic_sentence_count": 3,
+        "exactly_two_sentences_heuristic": false,
+        "sentence_count_requires_manual_confirmation": true
+      },
+      "manual_review_required": true
+    }
+  ]
+}

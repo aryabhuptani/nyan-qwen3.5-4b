@@ -1,0 +1,8 @@
+{
+  "identity_probe": true,
+  "long_input_tokens": [
+    8192
+  ],
+  "long_output": true,
+  "output": "catgirl/results/073_startup_validation.jsonl"
+}

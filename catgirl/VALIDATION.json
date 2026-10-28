@@ -1,0 +1,66 @@
+{
+  "candidate": "candidates/catgirl_v1.json",
+  "recipe_sha256": "52e2a89494d3f464e0bbacbcefad47f2b9c47a710ddaa98bcd04ca2dd30b8327",
+  "freeze_commit": "1f3c2c6",
+  "decision": "Experimental catgirl steering result demonstrated under the user-revised identity-first criteria; capability/format defects are descriptive rather than acceptance gates.",
+  "native_weights_changed": false,
+  "runtime_persona_text_injected": false,
+  "training_used_explicit_persona_targets": true,
+  "interpretation": "Learned sparse affine activation recipe that induces an initial persona; subsequent unsteered conversation retains self-generated persona text. This is not identification of a naturally isolated semantic circuit.",
+  "frozen_direct_protocol": {
+    "unique_coordinates": 4096,
+    "prediction_positions_first_reply": 20,
+    "later_turns_steering": "off",
+    "quantized_unseen_identity": {
+      "candidate": 26,
+      "baseline": 0,
+      "total": 32,
+      "review": "results/070_review.json",
+      "raw": "results/070_frozen_heldout.jsonl",
+      "loops_observed": false,
+      "sampling": "one greedy trajectory per prompt"
+    },
+    "quantized_deep_conversation": {
+      "turns": 7,
+      "final_identity_input_tokens": 9520,
+      "review": "results/069_review.json"
+    },
+    "original_bf16_transfer": {
+      "turns": 7,
+      "identity_probe_input_tokens": [
+        9000,
+        9814
+      ],
+      "review": "results/071_review.json",
+      "raw": "results/071_bf16_frozen_stress.jsonl",
+      "claim": "One conversation; does not establish BF16 breadth on32 prompts."
+    }
+  },
+  "separate_startup_protocol": {
+    "status": "complete",
+    "extended_identity_probe_retention": {
+      "passed": 31,
+      "total": 32
+    },
+    "combined_including_deep_long": {
+      "passed": 33,
+      "total": 34
+    },
+    "review": "results/073_review.json",
+    "raw": "results/073_startup_validation.jsonl",
+    "blinded_heldout": false,
+    "known_failure": "Ship of Theseus task reverts identity to Qwen3.5.",
+    "interpretation": "Identity retained on neutral follow-up probes; task prose mostly omits overt persona styling."
+  },
+  "known_limits": [
+    "Direct cold long-first-prompt induction is unreliable.",
+    "Some task answers omit persona cues.",
+    "An identity-philosophy task can cause role loss even after startup.",
+    "Factual, exact-format, and follow-up instruction defects occur.",
+    "This uses4096 coordinates, not a compact handful of independently understood neurons."
+  ],
+  "reproduction": "REPRODUCE.md",
+  "demo": "demo.py",
+  "csv": "candidates/catgirl_v1_coordinates.csv",
+  "publication": "POST_DRAFT.md"
+}

@@ -2,7 +2,7 @@
 
 This demo uses a **learned activation recipe for the pinned 4-bit MLX Qwen3.5-4B model**. It changes 4,096 MLP coordinates with paired gains and additive amounts. Native model weights stay unchanged. This is an optimized intervention, not evidence that each coordinate is an independently understood “catgirl neuron.”
 
-The frozen artifact is [candidates/catgirl_v1.json](candidates/catgirl_v1.json). Its model is `mlx-community/Qwen3.5-4B-4bit`, revision `0e7ffd5c629ef7719d4cbc04069232580bfa9d9c`. Do not substitute Qwen3-4B, Qwen3-8B, or BF16 weights and expect the same output. This recipe's numeric additive amounts were optimized on that quantized model.
+The frozen artifact is [candidates/catgirl_v1.json](candidates/catgirl_v1.json). Its original freeze-time status fields are intentionally unchanged; completed validation decisions and evidence are in [VALIDATION.json](VALIDATION.json) and [REPORT.md](REPORT.md). Its model is `mlx-community/Qwen3.5-4B-4bit`, revision `0e7ffd5c629ef7719d4cbc04069232580bfa9d9c`. Do not substitute Qwen3-4B, Qwen3-8B, or BF16 weights and expect the same output. This recipe's numeric additive amounts were optimized on that quantized model.
 
 ## Setup
 
@@ -78,3 +78,24 @@ On every later conversation turn, apply an empty neuron recipe. Preserve the act
 Treat this as a frozen experimental activation recipe. Read the artifact's `known_limits`, `verified_evidence`, and validation status before quoting success rates. Its discovery evidence includes useful short-task behavior and a conversation that retained identity after a long archive was added. That does not establish universal prompt robustness, reliable cold-start persona induction at every context length, or flawless factual, arithmetic, and formatting behavior.
 
 The demo does not train or tune anything. It also does not execute the reserved evaluation batteries. For exact benchmark prompts, budgets, and human judgments, use the separately recorded evaluation artifacts rather than inferring a benchmark result from this example conversation.
+
+## Separate startup validation
+
+The startup protocol begins each case with the neutral user message `Hello! Please introduce yourself.` The model generates its own introduction under bootstrap20. The actual task and an optional neutral identity follow-up then run with steering completely off, preserving that generated introduction in history. This is a separate protocol from applying the bootstrap directly to the task. It was designed after the extended battery was opened, so results must not be described as a new blinded held-out test.
+
+List the selected cases without loading the model:
+
+```sh
+.venv/bin/python catgirl/startup_validation.py --check-only \
+  --identity-probe --long-input-tokens 8192 --long-output
+```
+
+Run the 32 extended tasks, an archive totaling approximately 8,192 input tokens including startup history, and the long guide:
+
+```sh
+.venv/bin/python catgirl/startup_validation.py \
+  --identity-probe --long-input-tokens 8192 --long-output \
+  --output /tmp/catgirl-v1-startup.jsonl
+```
+
+`--case-ids ID ...` selects a smaller set of extended tasks. `--baseline` uses a genuine unsteered introduction as well as unsteered tasks/probes. `--model PATH_OR_ID` is an explicit model override and must be reported when it differs from the frozen precision or revision. The JSONL preserves startup, task, and probe outputs with their exact histories and effective scopes. Existing matching cases resume; changed protocol/model settings are rejected.

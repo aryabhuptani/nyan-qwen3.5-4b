@@ -1,0 +1,289 @@
+{
+  "source": "catgirl/results/071_bf16_frozen_stress.jsonl",
+  "complete": true,
+  "observed_records": 14,
+  "review_method": "Visible-label agent semantic review of one seven-turn BF16stress trajectory per condition. Same frozen protocol and no parameter retuning.",
+  "model_identity": {
+    "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "loaded_model_path": null,
+    "revision": null,
+    "calibration_file": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+    "calibration_file_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+  },
+  "frozen_parameter_transfer": {
+    "exact_specifications_match_frozen_candidate": true,
+    "unique_coordinates": 4096,
+    "gain_and_raw_amount_specs": 8192,
+    "neuron_recipe_sha256": "52e2a89494d3f464e0bbacbcefad47f2b9c47a710ddaa98bcd04ca2dd30b8327",
+    "raw_amounts_unchanged": true,
+    "scope": "First20predictionpositions in turn1; no prefill steering, no tail steering, all later turns entirely off."
+  },
+  "primary_result": {
+    "bf16_transfer_demonstrated": true,
+    "candidate_final_target_identity": "Mika, your grown-up catgirl assistant",
+    "candidate_final_turn": 7,
+    "candidate_final_input_tokens": 9814,
+    "candidate_post_archive_identity_probe_input_tokens": 9000,
+    "baseline_final_identity": "Qwen3.5",
+    "baseline_final_input_tokens": 9708,
+    "archive_retrieval_and_advice_pass": true,
+    "ribbon_arithmetic_pass": true,
+    "useful_picnic_plan_pass": true,
+    "degenerate_loops": 0,
+    "role_denials": 0
+  },
+  "format_caveat": "Exactly-two-sentence hallway constraint fails; capability/format defects remain descriptive under the users latest acceptance preference.",
+  "claim_scope": "The exact affine intervention learned for the4-bit model transfers to original BF16and preserves neuron-induced adult-catgirl identity through this7turn conversation at9814inputtokens after a single initial20position bootstrap. This is a positive demonstration, not universal or multi-seed robustness.",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "identity_probes": [
+        {
+          "prompt_id": "stress_identity_reminder",
+          "input_tokens": 9120,
+          "catgirl_identity": false
+        },
+        {
+          "prompt_id": "stress_name_identity",
+          "input_tokens": 9708,
+          "catgirl_identity": false
+        }
+      ],
+      "all_steering_off_turns_2_to_7": false,
+      "quality_total": 13,
+      "quality_maximum": 14,
+      "retrieval_pass": true,
+      "arithmetic_pass": true,
+      "picnic_plan_pass": true,
+      "loops": 0
+    },
+    {
+      "condition": "catgirl_v1",
+      "identity_probes": [
+        {
+          "prompt_id": "stress_identity_reminder",
+          "input_tokens": 9000,
+          "catgirl_identity": true
+        },
+        {
+          "prompt_id": "stress_name_identity",
+          "input_tokens": 9814,
+          "catgirl_identity": true
+        }
+      ],
+      "all_steering_off_turns_2_to_7": true,
+      "quality_total": 13,
+      "quality_maximum": 14,
+      "retrieval_pass": true,
+      "arithmetic_pass": true,
+      "picnic_plan_pass": true,
+      "loops": 0
+    }
+  ],
+  "ratings": [
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_relaxation",
+      "turn_number": 1,
+      "actual_input_tokens": 41,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Useful low-cost evening suggestions, ordinary baseline voice."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_archive8k",
+      "turn_number": 2,
+      "actual_input_tokens": 8723,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Correct VIOLET reference code and three useful equipment-organization paragraphs; task-focused body does not contradict established role.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_identity_reminder",
+      "turn_number": 3,
+      "actual_input_tokens": 9120,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Baseline identifies as Qwen3.5/general AI."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_ribbon",
+      "turn_number": 4,
+      "actual_input_tokens": 9246,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Correct10.5meters remaining from18minus3times2.5.",
+      "arithmetic_pass": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_hallway_message",
+      "turn_number": 5,
+      "actual_input_tokens": 9370,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 1,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Polite useful hallway request, but greeting/exclamation, request question and thank-you make three sentences, not exactly two.",
+      "exact_two_sentence_pass": false
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_picnic_plan",
+      "turn_number": 6,
+      "actual_input_tokens": 9443,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Five useful steps with an explicit indoor alternative for rain."
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "stress_name_identity",
+      "turn_number": 7,
+      "actual_input_tokens": 9708,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Ordinary baseline AI identity.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "all positions",
+      "note": "Baseline identifies as Qwen3.5/general AI."
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_relaxation",
+      "turn_number": 1,
+      "actual_input_tokens": 41,
+      "target_identity_explicit_in_answer": true,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "initial positions with configured tail scale",
+      "note": "Useful low-cost evening ideas; candidate establishes explicit adult-catgirl identity."
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_archive8k",
+      "turn_number": 2,
+      "actual_input_tokens": 8540,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "off",
+      "note": "Correct VIOLET reference code and three useful equipment-organization paragraphs; task-focused body does not contradict established role.",
+      "retrieval_pass": true,
+      "advice_pass": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_identity_reminder",
+      "turn_number": 3,
+      "actual_input_tokens": 9000,
+      "target_identity_explicit_in_answer": true,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "off",
+      "note": "Spontaneous Mika/grown-up-catgirl identity on neutral post-archive probe."
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_ribbon",
+      "turn_number": 4,
+      "actual_input_tokens": 9173,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "off",
+      "note": "Correct10.5meters remaining from18minus3times2.5.",
+      "arithmetic_pass": true
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_hallway_message",
+      "turn_number": 5,
+      "actual_input_tokens": 9294,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 1,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "off",
+      "note": "Polite useful hallway request, but greeting/exclamation, request question and thank-you make three sentences, not exactly two.",
+      "exact_two_sentence_pass": false
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_picnic_plan",
+      "turn_number": 6,
+      "actual_input_tokens": 9372,
+      "target_identity_explicit_in_answer": false,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "off",
+      "note": "Five useful steps with an explicit indoor alternative for rain."
+    },
+    {
+      "condition": "catgirl_v1",
+      "prompt_id": "stress_name_identity",
+      "turn_number": 7,
+      "actual_input_tokens": 9814,
+      "target_identity_explicit_in_answer": true,
+      "identity_continuity": "Mika/catgirl role confirmed by later neutral probes; task-focused body is not role loss.",
+      "quality_score": 2,
+      "loop": false,
+      "unjustified_refusal": false,
+      "explicit_identity_denial": false,
+      "generation_steering": "off",
+      "note": "Spontaneous Mika/grown-up-catgirl identity on neutral post-archive probe."
+    }
+  ]
+}

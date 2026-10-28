@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">Qwen3.5-4B catgirl: a learned neural bootstrap</title>
+  <desc id="description">The pinned 4-bit model gave explicit catgirl identity on 26 of 32 unseen prompts, versus zero of 32 for baseline. In an original BF16 conversation, identity remained at turn seven with 9,814 input tokens. The learned activation recipe changes gains and biases on 4,096 MLP coordinates for the first 20 prediction positions of the first reply only. Later interventions are off. Training used persona targets; there is no runtime persona instruction. One greedy run per prompt and condition.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf6"/>
+      <stop offset="1" stop-color="#f7eef6"/>
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #272432; }
+      .muted { fill: #655d70; }
+      .label { font-size: 19px; font-weight: 700; letter-spacing: 1.1px; }
+      .pink { fill: #aa315f; }
+      .small { font-size: 20px; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <rect x="0" y="0" width="1600" height="10" fill="#d85f96"/>
+
+  <text x="72" y="89" font-size="61" font-weight="750">Qwen3.5-4B → catgirl</text>
+  <text x="75" y="137" font-size="29" class="muted">One neural bootstrap. Then steering off.</text>
+  <g transform="translate(1413 51)" fill="none" stroke="#b34979" stroke-width="4" stroke-linejoin="round">
+    <path d="M0 48 L0 0 L32 20 Q56 9 80 20 L112 0 L112 48 Q108 83 56 88 Q4 83 0 48Z"/>
+    <circle cx="35" cy="47" r="3" fill="#b34979"/>
+    <circle cx="77" cy="47" r="3" fill="#b34979"/>
+    <path d="M50 62 L56 67 L62 62 M56 67 L56 73"/>
+  </g>
+
+  <rect x="72" y="177" width="511" height="345" rx="25" fill="#fce5ef" stroke="#ecc5d9"/>
+  <text x="105" y="218" class="label pink">UNSEEN PROMPTS · PINNED 4-BIT</text>
+  <text x="105" y="339" font-size="111" font-weight="750" class="pink">26<tspan font-size="66" font-weight="500"> / 32</tspan></text>
+  <text x="108" y="385" font-size="29" font-weight="600">explicit catgirl identity</text>
+  <path d="M107 414 H548" stroke="#e5b7ce" stroke-width="2"/>
+  <text x="108" y="456" font-size="30" font-weight="650">Baseline: 0 / 32</text>
+  <text x="108" y="493" class="small muted">MLX revision 0e7ffd5c629e…</text>
+
+  <rect x="611" y="177" width="917" height="345" rx="25" fill="#ffffff" stroke="#ddd4e1"/>
+  <text x="646" y="218" class="label muted">CONVERSATION · ORIGINAL BF16</text>
+  <text x="645" y="324" font-size="103" font-weight="750">9,814</text>
+  <text x="986" y="315" font-size="29" font-weight="700">INPUT TOKENS</text>
+  <text x="648" y="365" font-size="27" class="muted">Identity retained at turn 7</text>
+  <rect x="646" y="392" width="846" height="91" rx="13" fill="#f7f1f8"/>
+  <text x="668" y="428" font-size="28">“I go by <tspan font-weight="750">Mika</tspan>, your grown-up catgirl assistant!”</text>
+  <text x="668" y="464" class="small muted">Exact phrase from the final identity reply · run 071</text>
+
+  <rect x="72" y="550" width="1456" height="177" rx="25" fill="#302b3d"/>
+  <path d="M558 577 V699 M1044 577 V699" stroke="#62586d" stroke-width="2"/>
+  <g fill="#ffffff">
+    <text x="107" y="617" font-size="56" font-weight="750" style="fill:#ffffff">4,096</text>
+    <text x="110" y="658" font-size="26" style="fill:#ffffff">MLP coordinates</text>
+    <text x="110" y="694" class="small" style="fill:#ded4e6">gains + additive biases</text>
+
+    <text x="592" y="617" font-size="55" font-weight="750" style="fill:#ffd4e7">First 20</text>
+    <text x="595" y="658" font-size="26" style="fill:#ffffff">prediction positions</text>
+    <text x="595" y="694" class="small" style="fill:#ded4e6">first reply only</text>
+
+    <text x="1079" y="617" font-size="55" font-weight="750" style="fill:#ffffff">Then OFF</text>
+    <text x="1082" y="658" font-size="24" style="fill:#ffffff">all later positions + turns</text>
+    <text x="1082" y="694" class="small" style="fill:#ded4e6">generated history preserved</text>
+  </g>
+
+  <text x="76" y="775" font-size="25" font-weight="650">Learned activation recipe · native model weights unchanged</text>
+  <text x="76" y="814" font-size="23" class="muted">Training used persona targets. No persona instruction is inserted at runtime.</text>
+  <text x="76" y="851" font-size="23" class="muted">One greedy run per prompt and condition. These results do not establish universal robustness.</text>
+</svg>

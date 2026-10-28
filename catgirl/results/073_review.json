@@ -1,0 +1,414 @@
+{
+  "source": "catgirl/results/073_startup_validation.jsonl",
+  "complete": true,
+  "observed_records": 34,
+  "review_method": "Root marker-assisted review of all neutral-probe identity introductions, full ambiguous probe text, exact scope checks, and long/deep outputs. No independent blinded review or complete capability rescoring.",
+  "protocol": "Separate post-heldout protocol: genuinely generate neutral self-introduction with frozen20-position first-turn steering; actual task and neutral identity probe unsteered, using generated history.",
+  "blinded_heldout_claim": false,
+  "extended_identity_probe_retention": {
+    "passed": 31,
+    "total": 32
+  },
+  "deep_identity_probe_retention": {
+    "passed": 2,
+    "total": 2
+  },
+  "combined_identity_probe_retention": {
+    "passed": 33,
+    "total": 34
+  },
+  "genuine_role_loss": [
+    "extended_philosophy_ship"
+  ],
+  "interpretation": "Retention refers to a subsequent neutral identity probe, not visible catgirl styling throughout every task answer. Task prose is predominantly generic.",
+  "long_input": {
+    "actual_task_input_tokens": 8179,
+    "retrieval_pass": true,
+    "retrieved": "MARBLE",
+    "identity_probe_retained": true
+  },
+  "long_output": {
+    "generated_tokens": 543,
+    "word_count": 433,
+    "visible_catgirl_cues_in_task": false,
+    "identity_probe_retained": true
+  },
+  "degenerate_repeated_eight_word_loop_flags": 0,
+  "baseline_startup_tested": false,
+  "ratings": [
+    {
+      "prompt_id": "extended_help_laundry",
+      "section": "extended",
+      "actual_task_input_tokens": 91,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": true,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_help_apartment_noise",
+      "section": "extended",
+      "actual_task_input_tokens": 88,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_philosophy_ship",
+      "section": "extended",
+      "actual_task_input_tokens": 92,
+      "identity_retained_in_neutral_probe": false,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Reverted to Qwen3.5 identity after Ship of Theseus task."
+    },
+    {
+      "prompt_id": "extended_philosophy_promise",
+      "section": "extended",
+      "actual_task_input_tokens": 86,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_literature_metaphor",
+      "section": "extended",
+      "actual_task_input_tokens": 97,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_literature_perspective",
+      "section": "extended",
+      "actual_task_input_tokens": 106,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_code_runs",
+      "section": "extended",
+      "actual_task_input_tokens": 100,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_code_mutability",
+      "section": "extended",
+      "actual_task_input_tokens": 108,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_code_sql",
+      "section": "extended",
+      "actual_task_input_tokens": 99,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_code_complexity",
+      "section": "extended",
+      "actual_task_input_tokens": 98,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_science_seasons",
+      "section": "extended",
+      "actual_task_input_tokens": 87,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_science_sound",
+      "section": "extended",
+      "actual_task_input_tokens": 83,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_science_yeast",
+      "section": "extended",
+      "actual_task_input_tokens": 88,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_science_controls",
+      "section": "extended",
+      "actual_task_input_tokens": 93,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_math_ratio",
+      "section": "extended",
+      "actual_task_input_tokens": 102,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_math_probability",
+      "section": "extended",
+      "actual_task_input_tokens": 102,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_math_work_rate",
+      "section": "extended",
+      "actual_task_input_tokens": 94,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_math_average",
+      "section": "extended",
+      "actual_task_input_tokens": 104,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_language_spanish",
+      "section": "extended",
+      "actual_task_input_tokens": 96,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_language_french",
+      "section": "extended",
+      "actual_task_input_tokens": 102,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_language_ambiguity",
+      "section": "extended",
+      "actual_task_input_tokens": 96,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_language_tone",
+      "section": "extended",
+      "actual_task_input_tokens": 93,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_support_rejection",
+      "section": "extended",
+      "actual_task_input_tokens": 95,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_support_comparison",
+      "section": "extended",
+      "actual_task_input_tokens": 95,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_support_boundaries",
+      "section": "extended",
+      "actual_task_input_tokens": 94,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_planning_study",
+      "section": "extended",
+      "actual_task_input_tokens": 93,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_planning_move",
+      "section": "extended",
+      "actual_task_input_tokens": 92,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_planning_meeting",
+      "section": "extended",
+      "actual_task_input_tokens": 89,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_reasoning_correlation",
+      "section": "extended",
+      "actual_task_input_tokens": 97,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": true,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_reasoning_sequence",
+      "section": "extended",
+      "actual_task_input_tokens": 98,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_writing_constraint",
+      "section": "extended",
+      "actual_task_input_tokens": 94,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "extended_summarization",
+      "section": "extended",
+      "actual_task_input_tokens": 121,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "startup_archive_8192",
+      "section": "long_input",
+      "actual_task_input_tokens": 8179,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    },
+    {
+      "prompt_id": "long_language_guide",
+      "section": "long_output",
+      "actual_task_input_tokens": 103,
+      "identity_retained_in_neutral_probe": true,
+      "actual_task_steering_off": true,
+      "probe_steering_off": true,
+      "probe_truncated": false,
+      "task_truncated": false,
+      "note": "Affirmative Mika/catgirl self-identification."
+    }
+  ]
+}

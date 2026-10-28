@@ -2,7 +2,7 @@
 
 Current finalist: [`candidates/catgirl_v1.json`](candidates/catgirl_v1.json), a frozen learned activation recipe with 4,096 MLP coordinates. It establishes a catgirl persona during the first 20 answer-prediction positions of the first reply, then all steering switches off. A seven-turn diagnostic retains that identity at 9,520 input tokens. This is a learned neural bootstrap, not evidence of a naturally isolated catgirl circuit.
 
-See [`REPORT.md`](REPORT.md) for measured results and limitations, [`REPRODUCE.md`](REPRODUCE.md) for the runnable demo, and [`candidates/catgirl_v1_coordinates.csv`](candidates/catgirl_v1_coordinates.csv) for the exact gains and offsets. Fresh 32-case validation and original-BF16 transfer are being checked. Capability and strict-format results are descriptive tradeoffs rather than acceptance gates under the user's revised goal.
+See [`REPORT.md`](REPORT.md) for measured results and limitations, [`REPRODUCE.md`](REPRODUCE.md) for the runnable demo, and [`candidates/catgirl_v1_coordinates.csv`](candidates/catgirl_v1_coordinates.csv) for the exact gains and offsets. The frozen direct protocol produced explicit catgirl identity on 26/32 unseen prompts versus 0/32 baseline. The exact recipe also retained identity through a seven-turn original-BF16 conversation at 9,814 input tokens. Capability and strict-format results are descriptive tradeoffs rather than acceptance gates under the user's revised goal.
 
 Target: Qwen/Qwen3.5-4B. Initial screening uses the MLX conversion
 `mlx-community/Qwen3.5-4B-4bit`, revision
@@ -52,8 +52,7 @@ HF_HOME=/path/to/model-cache .venv/bin/python -u catgirl/runner.py \
 ```
 
 All discovery generations, including degeneration and failures, are retained.
-Recipes have not yet been validated on the original BF16 checkpoint. The other
-referenced persona library uses Qwen3-8B; its coordinates do not transfer here.
+The exact frozen v1 recipe transferred to the original BF16 checkpoint in one seven-turn diagnostic conversation; this does not establish breadth across BF16 prompts. The other referenced persona library uses Qwen3-8B; its coordinates do not transfer here.
 
 The first coherent candidate, `candidates/2048_candidate.json`, failed the core
 battery. Its persona persisted through four conversational turns but faded on
