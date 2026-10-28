@@ -169,6 +169,9 @@ class Runner:
         if job.get('action') == 'residual_search':
             from residual_search import search
             return search(self,job,output)
+        if job.get('action') == 'evaluate':
+            from final_evaluation import evaluate
+            return evaluate(self,job,output)
         if job.get('action') == 'score':
             return self.score(job,output)
         completed = set()

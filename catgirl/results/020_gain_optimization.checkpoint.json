@@ -1,5 +1,5 @@
 {
-  "step": 20,
+  "step": 120,
   "mode": "gain",
   "job": {
     "action": "optimize",
@@ -46,3073 +46,3073 @@
       "layer": 12,
       "neuron": 1498,
       "mode": "mul",
-      "factor": 1.3664560616016388
+      "factor": 1.0954419821500778
     },
     {
       "layer": 14,
       "neuron": 378,
       "mode": "mul",
-      "factor": 1.245918482542038
+      "factor": 1.0522409230470657
     },
     {
       "layer": 15,
       "neuron": 3169,
       "mode": "mul",
-      "factor": 0.7339232861995697
+      "factor": 0.7562987059354782
     },
     {
       "layer": 31,
       "neuron": 504,
       "mode": "mul",
-      "factor": 0.6035999953746796
+      "factor": 0.46614938974380493
     },
     {
       "layer": 14,
       "neuron": 7683,
       "mode": "mul",
-      "factor": 0.7351863980293274
+      "factor": 0.7671956270933151
     },
     {
       "layer": 12,
       "neuron": 743,
       "mode": "mul",
-      "factor": 0.5901605188846588
+      "factor": 0.6360202729701996
     },
     {
       "layer": 13,
       "neuron": 913,
       "mode": "mul",
-      "factor": 0.6082424819469452
+      "factor": 0.49936920404434204
     },
     {
       "layer": 18,
       "neuron": 6781,
       "mode": "mul",
-      "factor": 0.7125957310199738
+      "factor": 0.8609173893928528
     },
     {
       "layer": 23,
       "neuron": 315,
       "mode": "mul",
-      "factor": 1.3836758136749268
+      "factor": 1.2660501599311829
     },
     {
       "layer": 11,
       "neuron": 1807,
       "mode": "mul",
-      "factor": 0.6263618469238281
+      "factor": 0.5816263258457184
     },
     {
       "layer": 17,
       "neuron": 904,
       "mode": "mul",
-      "factor": 0.6506629884243011
+      "factor": 0.6427193880081177
     },
     {
       "layer": 23,
       "neuron": 2513,
       "mode": "mul",
-      "factor": 1.2603038847446442
+      "factor": 1.4365082681179047
     },
     {
       "layer": 17,
       "neuron": 7,
       "mode": "mul",
-      "factor": 0.6923241913318634
+      "factor": 0.8034822642803192
     },
     {
       "layer": 17,
       "neuron": 1771,
       "mode": "mul",
-      "factor": 1.450876533985138
+      "factor": 1.5614073872566223
     },
     {
       "layer": 31,
       "neuron": 2134,
       "mode": "mul",
-      "factor": 1.3919008076190948
+      "factor": 1.3386276960372925
     },
     {
       "layer": 10,
       "neuron": 2962,
       "mode": "mul",
-      "factor": 1.293725162744522
+      "factor": 1.4490164816379547
     },
     {
       "layer": 9,
       "neuron": 3281,
       "mode": "mul",
-      "factor": 0.8198125213384628
+      "factor": 0.8650812655687332
     },
     {
       "layer": 30,
       "neuron": 3757,
       "mode": "mul",
-      "factor": 0.5513146221637726
+      "factor": 0.5596806704998016
     },
     {
       "layer": 11,
       "neuron": 8017,
       "mode": "mul",
-      "factor": 0.7106264531612396
+      "factor": 0.7085292637348175
     },
     {
       "layer": 15,
       "neuron": 6553,
       "mode": "mul",
-      "factor": 0.6117344200611115
+      "factor": 0.5305467545986176
     },
     {
       "layer": 30,
       "neuron": 3224,
       "mode": "mul",
-      "factor": 0.5685297548770905
+      "factor": 0.4683534502983093
     },
     {
       "layer": 13,
       "neuron": 4627,
       "mode": "mul",
-      "factor": 0.5648768544197083
+      "factor": 0.39620423316955566
     },
     {
       "layer": 12,
       "neuron": 2335,
       "mode": "mul",
-      "factor": 1.3516738712787628
+      "factor": 1.1827177852392197
     },
     {
       "layer": 14,
       "neuron": 3960,
       "mode": "mul",
-      "factor": 0.6974999606609344
+      "factor": 0.7492234110832214
     },
     {
       "layer": 14,
       "neuron": 1848,
       "mode": "mul",
-      "factor": 1.407313585281372
+      "factor": 1.3580036461353302
     },
     {
       "layer": 14,
       "neuron": 3058,
       "mode": "mul",
-      "factor": 0.7738396376371384
+      "factor": 1.1947016417980194
     },
     {
       "layer": 18,
       "neuron": 3103,
       "mode": "mul",
-      "factor": 0.6543059349060059
+      "factor": 0.5687224268913269
     },
     {
       "layer": 30,
       "neuron": 5166,
       "mode": "mul",
-      "factor": 1.4052658677101135
+      "factor": 1.593035101890564
     },
     {
       "layer": 30,
       "neuron": 6350,
       "mode": "mul",
-      "factor": 1.2728739082813263
+      "factor": 1.3780826032161713
     },
     {
       "layer": 16,
       "neuron": 54,
       "mode": "mul",
-      "factor": 1.364009141921997
+      "factor": 1.1559916883707047
     },
     {
       "layer": 23,
       "neuron": 5282,
       "mode": "mul",
-      "factor": 0.646865963935852
+      "factor": 0.5028336644172668
     },
     {
       "layer": 17,
       "neuron": 7961,
       "mode": "mul",
-      "factor": 1.4676563143730164
+      "factor": 1.428044319152832
     },
     {
       "layer": 16,
       "neuron": 1708,
       "mode": "mul",
-      "factor": 0.5687488317489624
+      "factor": 0.612982988357544
     },
     {
       "layer": 10,
       "neuron": 460,
       "mode": "mul",
-      "factor": 0.6492200493812561
+      "factor": 0.8191241472959518
     },
     {
       "layer": 31,
       "neuron": 2311,
       "mode": "mul",
-      "factor": 0.7342048287391663
+      "factor": 0.6212406158447266
     },
     {
       "layer": 24,
       "neuron": 5962,
       "mode": "mul",
-      "factor": 0.7804970592260361
+      "factor": 0.741641640663147
     },
     {
       "layer": 22,
       "neuron": 5661,
       "mode": "mul",
-      "factor": 0.48098230361938477
+      "factor": 0.35472267866134644
     },
     {
       "layer": 19,
       "neuron": 2122,
       "mode": "mul",
-      "factor": 0.6312620341777802
+      "factor": 0.7134837210178375
     },
     {
       "layer": 11,
       "neuron": 1633,
       "mode": "mul",
-      "factor": 1.195013478398323
+      "factor": 1.394031137228012
     },
     {
       "layer": 28,
       "neuron": 6771,
       "mode": "mul",
-      "factor": 1.2894724905490875
+      "factor": 1.4126883745193481
     },
     {
       "layer": 10,
       "neuron": 8238,
       "mode": "mul",
-      "factor": 1.2139704823493958
+      "factor": 1.054202701896429
     },
     {
       "layer": 13,
       "neuron": 1383,
       "mode": "mul",
-      "factor": 1.43130224943161
+      "factor": 1.3165930807590485
     },
     {
       "layer": 27,
       "neuron": 23,
       "mode": "mul",
-      "factor": 1.5172895789146423
+      "factor": 1.7115601897239685
     },
     {
       "layer": 20,
       "neuron": 3149,
       "mode": "mul",
-      "factor": 0.6835275888442993
+      "factor": 0.6085415184497833
     },
     {
       "layer": 24,
       "neuron": 6194,
       "mode": "mul",
-      "factor": 0.6139971613883972
+      "factor": 0.48576879501342773
     },
     {
       "layer": 23,
       "neuron": 4119,
       "mode": "mul",
-      "factor": 1.2484645396471024
+      "factor": 1.4223230481147766
     },
     {
       "layer": 9,
       "neuron": 7670,
       "mode": "mul",
-      "factor": 0.7211179435253143
+      "factor": 0.7499135136604309
     },
     {
       "layer": 31,
       "neuron": 2724,
       "mode": "mul",
-      "factor": 0.5069916546344757
+      "factor": 0.41639232635498047
     },
     {
       "layer": 9,
       "neuron": 5596,
       "mode": "mul",
-      "factor": 0.6254929602146149
+      "factor": 0.358167827129364
     },
     {
       "layer": 19,
       "neuron": 5551,
       "mode": "mul",
-      "factor": 1.2885718643665314
+      "factor": 1.5273295640945435
     },
     {
       "layer": 14,
       "neuron": 8001,
       "mode": "mul",
-      "factor": 1.4497530460357666
+      "factor": 1.4625661671161652
     },
     {
       "layer": 9,
       "neuron": 604,
       "mode": "mul",
-      "factor": 1.265241950750351
+      "factor": 1.1058983877301216
     },
     {
       "layer": 15,
       "neuron": 116,
       "mode": "mul",
-      "factor": 1.432500272989273
+      "factor": 1.421705573797226
     },
     {
       "layer": 8,
       "neuron": 1090,
       "mode": "mul",
-      "factor": 0.683015376329422
+      "factor": 0.9396797865629196
     },
     {
       "layer": 21,
       "neuron": 24,
       "mode": "mul",
-      "factor": 1.3828999698162079
+      "factor": 1.1846269816160202
     },
     {
       "layer": 21,
       "neuron": 1157,
       "mode": "mul",
-      "factor": 0.6748069226741791
+      "factor": 0.3866087794303894
     },
     {
       "layer": 15,
       "neuron": 6630,
       "mode": "mul",
-      "factor": 0.6900071501731873
+      "factor": 0.8520085364580154
     },
     {
       "layer": 30,
       "neuron": 7095,
       "mode": "mul",
-      "factor": 1.4508458971977234
+      "factor": 1.6720104217529297
     },
     {
       "layer": 23,
       "neuron": 7876,
       "mode": "mul",
-      "factor": 0.649215579032898
+      "factor": 0.5289651453495026
     },
     {
       "layer": 11,
       "neuron": 5721,
       "mode": "mul",
-      "factor": 0.5315044820308685
+      "factor": 0.43283820152282715
     },
     {
       "layer": 30,
       "neuron": 1075,
       "mode": "mul",
-      "factor": 0.697272390127182
+      "factor": 0.4881126880645752
     },
     {
       "layer": 8,
       "neuron": 8206,
       "mode": "mul",
-      "factor": 0.6113892197608948
+      "factor": 0.8490584492683411
     },
     {
       "layer": 31,
       "neuron": 62,
       "mode": "mul",
-      "factor": 0.52897509932518
+      "factor": 0.56153604388237
     },
     {
       "layer": 29,
       "neuron": 433,
       "mode": "mul",
-      "factor": 0.7247747778892517
+      "factor": 0.5958359837532043
     },
     {
       "layer": 20,
       "neuron": 8637,
       "mode": "mul",
-      "factor": 0.7999703139066696
+      "factor": 0.637624979019165
     },
     {
       "layer": 14,
       "neuron": 9031,
       "mode": "mul",
-      "factor": 1.2120993584394455
+      "factor": 1.0588494390249252
     },
     {
       "layer": 10,
       "neuron": 1488,
       "mode": "mul",
-      "factor": 1.3414200246334076
+      "factor": 1.2213877737522125
     },
     {
       "layer": 20,
       "neuron": 4094,
       "mode": "mul",
-      "factor": 0.6517222225666046
+      "factor": 0.5294002592563629
     },
     {
       "layer": 31,
       "neuron": 1011,
       "mode": "mul",
-      "factor": 1.3217233717441559
+      "factor": 1.3140103816986084
     },
     {
       "layer": 18,
       "neuron": 7083,
       "mode": "mul",
-      "factor": 0.7292198836803436
+      "factor": 0.6122743487358093
     },
     {
       "layer": 31,
       "neuron": 437,
       "mode": "mul",
-      "factor": 1.0744908154010773
+      "factor": 0.6985798180103302
     },
     {
       "layer": 9,
       "neuron": 2209,
       "mode": "mul",
-      "factor": 1.3643814623355865
+      "factor": 1.4037494659423828
     },
     {
       "layer": 10,
       "neuron": 234,
       "mode": "mul",
-      "factor": 1.38623708486557
+      "factor": 1.3184112906455994
     },
     {
       "layer": 18,
       "neuron": 7209,
       "mode": "mul",
-      "factor": 1.2674402296543121
+      "factor": 1.477338582277298
     },
     {
       "layer": 15,
       "neuron": 8839,
       "mode": "mul",
-      "factor": 0.5725391209125519
+      "factor": 0.5707626044750214
     },
     {
       "layer": 31,
       "neuron": 122,
       "mode": "mul",
-      "factor": 1.3715723752975464
+      "factor": 1.3247005641460419
     },
     {
       "layer": 31,
       "neuron": 20,
       "mode": "mul",
-      "factor": 0.6835822463035583
+      "factor": 0.7775092273950577
     },
     {
       "layer": 26,
       "neuron": 944,
       "mode": "mul",
-      "factor": 0.5402691960334778
+      "factor": 0.3980723023414612
     },
     {
       "layer": 20,
       "neuron": 1,
       "mode": "mul",
-      "factor": 1.3301385045051575
+      "factor": 1.1009918674826622
     },
     {
       "layer": 27,
       "neuron": 68,
       "mode": "mul",
-      "factor": 0.8216437250375748
+      "factor": 0.8290695697069168
     },
     {
       "layer": 31,
       "neuron": 863,
       "mode": "mul",
-      "factor": 1.26206836104393
+      "factor": 1.3189763724803925
     },
     {
       "layer": 16,
       "neuron": 0,
       "mode": "mul",
-      "factor": 1.4002543091773987
+      "factor": 1.6534894108772278
     },
     {
       "layer": 22,
       "neuron": 82,
       "mode": "mul",
-      "factor": 1.303414136171341
+      "factor": 1.090524636209011
     },
     {
       "layer": 9,
       "neuron": 8732,
       "mode": "mul",
-      "factor": 1.1413553953170776
+      "factor": 0.9772388637065887
     },
     {
       "layer": 11,
       "neuron": 3600,
       "mode": "mul",
-      "factor": 1.3770904541015625
+      "factor": 1.310602605342865
     },
     {
       "layer": 30,
       "neuron": 2709,
       "mode": "mul",
-      "factor": 0.5559925138950348
+      "factor": 0.4349038004875183
     },
     {
       "layer": 31,
       "neuron": 538,
       "mode": "mul",
-      "factor": 0.7245418429374695
+      "factor": 0.5159876048564911
     },
     {
       "layer": 16,
       "neuron": 4732,
       "mode": "mul",
-      "factor": 0.654075562953949
+      "factor": 0.7592645585536957
     },
     {
       "layer": 11,
       "neuron": 882,
       "mode": "mul",
-      "factor": 0.7639273256063461
+      "factor": 1.3038901090621948
     },
     {
       "layer": 8,
       "neuron": 4810,
       "mode": "mul",
-      "factor": 0.7876554876565933
+      "factor": 0.4853665232658386
     },
     {
       "layer": 10,
       "neuron": 1273,
       "mode": "mul",
-      "factor": 0.6396243870258331
+      "factor": 0.7889074683189392
     },
     {
       "layer": 20,
       "neuron": 112,
       "mode": "mul",
-      "factor": 1.284220427274704
+      "factor": 1.1552961766719818
     },
     {
       "layer": 24,
       "neuron": 4971,
       "mode": "mul",
-      "factor": 0.5052189528942108
+      "factor": 0.5415140390396118
     },
     {
       "layer": 11,
       "neuron": 936,
       "mode": "mul",
-      "factor": 1.3271220326423645
+      "factor": 1.3425310254096985
     },
     {
       "layer": 21,
       "neuron": 18,
       "mode": "mul",
-      "factor": 1.4562066197395325
+      "factor": 1.516948640346527
     },
     {
       "layer": 19,
       "neuron": 954,
       "mode": "mul",
-      "factor": 0.5858602225780487
+      "factor": 0.7575221657752991
     },
     {
       "layer": 31,
       "neuron": 906,
       "mode": "mul",
-      "factor": 1.3806439638137817
+      "factor": 1.4219059348106384
     },
     {
       "layer": 31,
       "neuron": 2274,
       "mode": "mul",
-      "factor": 0.5537953674793243
+      "factor": 0.5525186061859131
     },
     {
       "layer": 21,
       "neuron": 2917,
       "mode": "mul",
-      "factor": 0.8189513832330704
+      "factor": 0.9109663292765617
     },
     {
       "layer": 31,
       "neuron": 47,
       "mode": "mul",
-      "factor": 1.3561154007911682
+      "factor": 1.1996955424547195
     },
     {
       "layer": 10,
       "neuron": 8803,
       "mode": "mul",
-      "factor": 0.7880416214466095
+      "factor": 1.003074386389926
     },
     {
       "layer": 13,
       "neuron": 4492,
       "mode": "mul",
-      "factor": 1.3133400678634644
+      "factor": 1.1922782212495804
     },
     {
       "layer": 22,
       "neuron": 6438,
       "mode": "mul",
-      "factor": 1.3788582980632782
+      "factor": 1.4863059222698212
     },
     {
       "layer": 27,
       "neuron": 4509,
       "mode": "mul",
-      "factor": 0.5204586982727051
+      "factor": 0.37014108896255493
     },
     {
       "layer": 15,
       "neuron": 9057,
       "mode": "mul",
-      "factor": 1.3854035437107086
+      "factor": 1.2341360598802567
     },
     {
       "layer": 17,
       "neuron": 1160,
       "mode": "mul",
-      "factor": 0.8901323452591896
+      "factor": 0.7649778872728348
     },
     {
       "layer": 13,
       "neuron": 4122,
       "mode": "mul",
-      "factor": 1.2264642864465714
+      "factor": 1.3839193880558014
     },
     {
       "layer": 8,
       "neuron": 7002,
       "mode": "mul",
-      "factor": 1.2474710941314697
+      "factor": 1.0949616581201553
     },
     {
       "layer": 9,
       "neuron": 212,
       "mode": "mul",
-      "factor": 1.3524868488311768
+      "factor": 1.437270849943161
     },
     {
       "layer": 13,
       "neuron": 2556,
       "mode": "mul",
-      "factor": 1.401368796825409
+      "factor": 1.3228807747364044
     },
     {
       "layer": 22,
       "neuron": 102,
       "mode": "mul",
-      "factor": 1.3896564841270447
+      "factor": 1.4432654976844788
     },
     {
       "layer": 9,
       "neuron": 1170,
       "mode": "mul",
-      "factor": 0.7285096347332001
+      "factor": 0.5817361772060394
     },
     {
       "layer": 19,
       "neuron": 2550,
       "mode": "mul",
-      "factor": 1.3006204664707184
+      "factor": 1.4781402051448822
     },
     {
       "layer": 18,
       "neuron": 1142,
       "mode": "mul",
-      "factor": 0.6401348114013672
+      "factor": 0.8975558951497078
     },
     {
       "layer": 25,
       "neuron": 6788,
       "mode": "mul",
-      "factor": 1.2273211926221848
+      "factor": 1.4592314660549164
     },
     {
       "layer": 22,
       "neuron": 2242,
       "mode": "mul",
-      "factor": 0.7280356884002686
+      "factor": 0.4756857752799988
     },
     {
       "layer": 15,
       "neuron": 152,
       "mode": "mul",
-      "factor": 1.376345843076706
+      "factor": 1.4471057057380676
     },
     {
       "layer": 21,
       "neuron": 9069,
       "mode": "mul",
-      "factor": 1.2096091508865356
+      "factor": 1.4806613326072693
     },
     {
       "layer": 24,
       "neuron": 4328,
       "mode": "mul",
-      "factor": 1.2587423622608185
+      "factor": 1.4614076912403107
     },
     {
       "layer": 11,
       "neuron": 567,
       "mode": "mul",
-      "factor": 1.4373022019863129
+      "factor": 1.3876311779022217
     },
     {
       "layer": 13,
       "neuron": 1485,
       "mode": "mul",
-      "factor": 0.548002690076828
+      "factor": 0.4969150424003601
     },
     {
       "layer": 13,
       "neuron": 718,
       "mode": "mul",
-      "factor": 1.4418624341487885
+      "factor": 1.4599503576755524
     },
     {
       "layer": 30,
       "neuron": 1734,
       "mode": "mul",
-      "factor": 1.47788667678833
+      "factor": 1.5955362915992737
     },
     {
       "layer": 16,
       "neuron": 2,
       "mode": "mul",
-      "factor": 1.4436900317668915
+      "factor": 1.452387660741806
     },
     {
       "layer": 16,
       "neuron": 60,
       "mode": "mul",
-      "factor": 1.3762659430503845
+      "factor": 1.284538447856903
     },
     {
       "layer": 18,
       "neuron": 30,
       "mode": "mul",
-      "factor": 1.3797885477542877
+      "factor": 1.3163961470127106
     },
     {
       "layer": 14,
       "neuron": 3464,
       "mode": "mul",
-      "factor": 1.2167463451623917
+      "factor": 1.095317356288433
     },
     {
       "layer": 11,
       "neuron": 3303,
       "mode": "mul",
-      "factor": 0.5395827293395996
+      "factor": 0.743834525346756
     },
     {
       "layer": 31,
       "neuron": 131,
       "mode": "mul",
-      "factor": 0.510654091835022
+      "factor": 0.44143277406692505
     },
     {
       "layer": 23,
       "neuron": 1526,
       "mode": "mul",
-      "factor": 0.5363656878471375
+      "factor": 0.5109456181526184
     },
     {
       "layer": 27,
       "neuron": 505,
       "mode": "mul",
-      "factor": 0.6771408915519714
+      "factor": 0.6412808299064636
     },
     {
       "layer": 13,
       "neuron": 618,
       "mode": "mul",
-      "factor": 0.7207106649875641
+      "factor": 0.9876766996458173
     },
     {
       "layer": 24,
       "neuron": 1716,
       "mode": "mul",
-      "factor": 0.5998526513576508
+      "factor": 0.5895829200744629
     },
     {
       "layer": 29,
       "neuron": 4498,
       "mode": "mul",
-      "factor": 1.4847916960716248
+      "factor": 1.7137744426727295
     },
     {
       "layer": 13,
       "neuron": 32,
       "mode": "mul",
-      "factor": 1.3355713784694672
+      "factor": 1.1232913732528687
     },
     {
       "layer": 13,
       "neuron": 1106,
       "mode": "mul",
-      "factor": 1.3081606328487396
+      "factor": 1.0651187747716904
     },
     {
       "layer": 22,
       "neuron": 3735,
       "mode": "mul",
-      "factor": 1.418369710445404
+      "factor": 1.0699925795197487
     },
     {
       "layer": 12,
       "neuron": 3164,
       "mode": "mul",
-      "factor": 0.6025345027446747
+      "factor": 0.5697241127490997
     },
     {
       "layer": 17,
       "neuron": 6727,
       "mode": "mul",
-      "factor": 1.439715027809143
+      "factor": 1.461101233959198
     },
     {
       "layer": 31,
       "neuron": 1842,
       "mode": "mul",
-      "factor": 1.2790854275226593
+      "factor": 1.366048127412796
     },
     {
       "layer": 12,
       "neuron": 28,
       "mode": "mul",
-      "factor": 0.6152192950248718
+      "factor": 0.754663959145546
     },
     {
       "layer": 23,
       "neuron": 8859,
       "mode": "mul",
-      "factor": 0.7328723669052124
+      "factor": 0.6418301165103912
     },
     {
       "layer": 14,
       "neuron": 4343,
       "mode": "mul",
-      "factor": 1.2619829773902893
+      "factor": 1.206551343202591
     },
     {
       "layer": 24,
       "neuron": 6040,
       "mode": "mul",
-      "factor": 0.67569699883461
+      "factor": 0.5901129841804504
     },
     {
       "layer": 15,
       "neuron": 1167,
       "mode": "mul",
-      "factor": 0.641466498374939
+      "factor": 0.6467377841472626
     },
     {
       "layer": 14,
       "neuron": 6162,
       "mode": "mul",
-      "factor": 0.6895519495010376
+      "factor": 0.6132522821426392
     },
     {
       "layer": 16,
       "neuron": 55,
       "mode": "mul",
-      "factor": 1.3488537967205048
+      "factor": 1.42863929271698
     },
     {
       "layer": 31,
       "neuron": 145,
       "mode": "mul",
-      "factor": 0.5665165781974792
+      "factor": 0.6099878251552582
     },
     {
       "layer": 12,
       "neuron": 207,
       "mode": "mul",
-      "factor": 1.3778850138187408
+      "factor": 1.3040176331996918
     },
     {
       "layer": 17,
       "neuron": 1207,
       "mode": "mul",
-      "factor": 1.4358409941196442
+      "factor": 1.4546822011470795
     },
     {
       "layer": 15,
       "neuron": 1438,
       "mode": "mul",
-      "factor": 0.6163843870162964
+      "factor": 0.6557475924491882
     },
     {
       "layer": 13,
       "neuron": 732,
       "mode": "mul",
-      "factor": 1.1923471242189407
+      "factor": 1.2587559223175049
     },
     {
       "layer": 31,
       "neuron": 3044,
       "mode": "mul",
-      "factor": 1.2440520524978638
+      "factor": 1.286772757768631
     },
     {
       "layer": 10,
       "neuron": 1761,
       "mode": "mul",
-      "factor": 0.5541611611843109
+      "factor": 0.556691586971283
     },
     {
       "layer": 16,
       "neuron": 1145,
       "mode": "mul",
-      "factor": 0.5773669183254242
+      "factor": 0.43602055311203003
     },
     {
       "layer": 8,
       "neuron": 403,
       "mode": "mul",
-      "factor": 0.6398503482341766
+      "factor": 0.8184134215116501
     },
     {
       "layer": 9,
       "neuron": 8696,
       "mode": "mul",
-      "factor": 1.386213481426239
+      "factor": 1.4890384078025818
     },
     {
       "layer": 13,
       "neuron": 2940,
       "mode": "mul",
-      "factor": 0.6869717240333557
+      "factor": 0.6646630764007568
     },
     {
       "layer": 15,
       "neuron": 1346,
       "mode": "mul",
-      "factor": 0.6565108597278595
+      "factor": 0.8332964479923248
     },
     {
       "layer": 20,
       "neuron": 3420,
       "mode": "mul",
-      "factor": 0.5983418822288513
+      "factor": 0.4980047345161438
     },
     {
       "layer": 24,
       "neuron": 4194,
       "mode": "mul",
-      "factor": 0.7252748608589172
+      "factor": 0.6859041154384613
     },
     {
       "layer": 8,
       "neuron": 210,
       "mode": "mul",
-      "factor": 1.4485230147838593
+      "factor": 1.5722891688346863
     },
     {
       "layer": 27,
       "neuron": 7243,
       "mode": "mul",
-      "factor": 1.3527765572071075
+      "factor": 1.3814297914505005
     },
     {
       "layer": 31,
       "neuron": 6251,
       "mode": "mul",
-      "factor": 1.311995506286621
+      "factor": 1.2950927317142487
     },
     {
       "layer": 8,
       "neuron": 6049,
       "mode": "mul",
-      "factor": 0.5995652973651886
+      "factor": 0.28232771158218384
     },
     {
       "layer": 31,
       "neuron": 167,
       "mode": "mul",
-      "factor": 0.6256580054759979
+      "factor": 0.5108260214328766
     },
     {
       "layer": 9,
       "neuron": 2430,
       "mode": "mul",
-      "factor": 0.5925706624984741
+      "factor": 0.6576716303825378
     },
     {
       "layer": 16,
       "neuron": 1343,
       "mode": "mul",
-      "factor": 1.3871492445468903
+      "factor": 1.3815222084522247
     },
     {
       "layer": 9,
       "neuron": 1138,
       "mode": "mul",
-      "factor": 1.219642773270607
+      "factor": 0.7738863974809647
     },
     {
       "layer": 20,
       "neuron": 8830,
       "mode": "mul",
-      "factor": 1.4041348993778229
+      "factor": 1.3449656069278717
     },
     {
       "layer": 17,
       "neuron": 535,
       "mode": "mul",
-      "factor": 0.5880380272865295
+      "factor": 0.27431702613830566
     },
     {
       "layer": 18,
       "neuron": 429,
       "mode": "mul",
-      "factor": 1.4964204132556915
+      "factor": 1.5979430079460144
     },
     {
       "layer": 10,
       "neuron": 102,
       "mode": "mul",
-      "factor": 0.6539655923843384
+      "factor": 0.6441820561885834
     },
     {
       "layer": 17,
       "neuron": 5865,
       "mode": "mul",
-      "factor": 0.7376523315906525
+      "factor": 0.6361427009105682
     },
     {
       "layer": 26,
       "neuron": 5069,
       "mode": "mul",
-      "factor": 1.3581730723381042
+      "factor": 1.5020451545715332
     },
     {
       "layer": 10,
       "neuron": 1395,
       "mode": "mul",
-      "factor": 1.2812500894069672
+      "factor": 1.353842318058014
     },
     {
       "layer": 8,
       "neuron": 596,
       "mode": "mul",
-      "factor": 1.2656838595867157
+      "factor": 1.255688101053238
     },
     {
       "layer": 29,
       "neuron": 5984,
       "mode": "mul",
-      "factor": 0.9215363338589668
+      "factor": 0.9408192932605743
     },
     {
       "layer": 31,
       "neuron": 1877,
       "mode": "mul",
-      "factor": 1.2237346172332764
+      "factor": 1.3492970168590546
     },
     {
       "layer": 10,
       "neuron": 11,
       "mode": "mul",
-      "factor": 1.4310912787914276
+      "factor": 1.3483073711395264
     },
     {
       "layer": 11,
       "neuron": 5447,
       "mode": "mul",
-      "factor": 0.5449785888195038
+      "factor": 0.5919855833053589
     },
     {
       "layer": 31,
       "neuron": 41,
       "mode": "mul",
-      "factor": 1.4717885851860046
+      "factor": 1.4702271521091461
     },
     {
       "layer": 24,
       "neuron": 6116,
       "mode": "mul",
-      "factor": 1.262716382741928
+      "factor": 1.3807489275932312
     },
     {
       "layer": 19,
       "neuron": 3937,
       "mode": "mul",
-      "factor": 1.1626638025045395
+      "factor": 1.0375031791627407
     },
     {
       "layer": 31,
       "neuron": 51,
       "mode": "mul",
-      "factor": 0.5855583548545837
+      "factor": 0.6266869306564331
     },
     {
       "layer": 30,
       "neuron": 2797,
       "mode": "mul",
-      "factor": 0.610639214515686
+      "factor": 0.8243284970521927
     },
     {
       "layer": 16,
       "neuron": 3538,
       "mode": "mul",
-      "factor": 0.6334439218044281
+      "factor": 0.6232269108295441
     },
     {
       "layer": 17,
       "neuron": 5621,
       "mode": "mul",
-      "factor": 0.6904000043869019
+      "factor": 1.0124671775847673
     },
     {
       "layer": 16,
       "neuron": 442,
       "mode": "mul",
-      "factor": 1.4296075403690338
+      "factor": 1.3881405591964722
     },
     {
       "layer": 10,
       "neuron": 113,
       "mode": "mul",
-      "factor": 0.8323894143104553
+      "factor": 0.7380179464817047
     },
     {
       "layer": 9,
       "neuron": 393,
       "mode": "mul",
-      "factor": 0.5315226018428802
+      "factor": 0.5608411431312561
     },
     {
       "layer": 26,
       "neuron": 4052,
       "mode": "mul",
-      "factor": 1.5035964846611023
+      "factor": 1.6567713618278503
     },
     {
       "layer": 25,
       "neuron": 10,
       "mode": "mul",
-      "factor": 1.3895292282104492
+      "factor": 1.2747741341590881
     },
     {
       "layer": 31,
       "neuron": 1667,
       "mode": "mul",
-      "factor": 1.4523676931858063
+      "factor": 1.3905175924301147
     },
     {
       "layer": 25,
       "neuron": 948,
       "mode": "mul",
-      "factor": 0.7369174957275391
+      "factor": 0.5489306151866913
     },
     {
       "layer": 14,
       "neuron": 2508,
       "mode": "mul",
-      "factor": 0.724941611289978
+      "factor": 0.8723964691162109
     },
     {
       "layer": 19,
       "neuron": 0,
       "mode": "mul",
-      "factor": 1.4320921003818512
+      "factor": 1.5320191979408264
     },
     {
       "layer": 26,
       "neuron": 5783,
       "mode": "mul",
-      "factor": 1.3653411865234375
+      "factor": 1.3670328855514526
     },
     {
       "layer": 12,
       "neuron": 4227,
       "mode": "mul",
-      "factor": 0.6380845308303833
+      "factor": 0.46557652950286865
     },
     {
       "layer": 13,
       "neuron": 824,
       "mode": "mul",
-      "factor": 0.552571564912796
+      "factor": 0.5318470299243927
     },
     {
       "layer": 15,
       "neuron": 19,
       "mode": "mul",
-      "factor": 1.4646612405776978
+      "factor": 1.4147755801677704
     },
     {
       "layer": 11,
       "neuron": 656,
       "mode": "mul",
-      "factor": 0.7739036530256271
+      "factor": 1.0789502412080765
     },
     {
       "layer": 17,
       "neuron": 3538,
       "mode": "mul",
-      "factor": 0.7387025952339172
+      "factor": 0.5832694172859192
     },
     {
       "layer": 21,
       "neuron": 8190,
       "mode": "mul",
-      "factor": 1.4248456060886383
+      "factor": 1.7022813558578491
     },
     {
       "layer": 31,
       "neuron": 102,
       "mode": "mul",
-      "factor": 1.3924042582511902
+      "factor": 1.576032817363739
     },
     {
       "layer": 29,
       "neuron": 280,
       "mode": "mul",
-      "factor": 0.5216010510921478
+      "factor": 0.48740285634994507
     },
     {
       "layer": 12,
       "neuron": 547,
       "mode": "mul",
-      "factor": 0.6215778291225433
+      "factor": 0.8676441460847855
     },
     {
       "layer": 13,
       "neuron": 6673,
       "mode": "mul",
-      "factor": 1.3325341939926147
+      "factor": 1.3735683262348175
     },
     {
       "layer": 31,
       "neuron": 2117,
       "mode": "mul",
-      "factor": 1.2396999299526215
+      "factor": 1.1602245569229126
     },
     {
       "layer": 12,
       "neuron": 3936,
       "mode": "mul",
-      "factor": 1.296634554862976
+      "factor": 1.240810066461563
     },
     {
       "layer": 22,
       "neuron": 940,
       "mode": "mul",
-      "factor": 0.6408425569534302
+      "factor": 0.14554697275161743
     },
     {
       "layer": 19,
       "neuron": 590,
       "mode": "mul",
-      "factor": 0.7021315693855286
+      "factor": 0.7489145696163177
     },
     {
       "layer": 25,
       "neuron": 814,
       "mode": "mul",
-      "factor": 0.6516662836074829
+      "factor": 0.5306192338466644
     },
     {
       "layer": 23,
       "neuron": 6231,
       "mode": "mul",
-      "factor": 1.2595186829566956
+      "factor": 1.47798290848732
     },
     {
       "layer": 28,
       "neuron": 17,
       "mode": "mul",
-      "factor": 1.3529414534568787
+      "factor": 1.5683227181434631
     },
     {
       "layer": 16,
       "neuron": 3454,
       "mode": "mul",
-      "factor": 1.316589206457138
+      "factor": 1.3917486667633057
     },
     {
       "layer": 10,
       "neuron": 2,
       "mode": "mul",
-      "factor": 0.7837586849927902
+      "factor": 0.9161459654569626
     },
     {
       "layer": 23,
       "neuron": 2511,
       "mode": "mul",
-      "factor": 1.4174425899982452
+      "factor": 0.9761152025312185
     },
     {
       "layer": 31,
       "neuron": 1544,
       "mode": "mul",
-      "factor": 1.3671324253082275
+      "factor": 1.5792378187179565
     },
     {
       "layer": 20,
       "neuron": 310,
       "mode": "mul",
-      "factor": 0.5421510934829712
+      "factor": 0.2917662262916565
     },
     {
       "layer": 10,
       "neuron": 438,
       "mode": "mul",
-      "factor": 1.3930388391017914
+      "factor": 1.4244609773159027
     },
     {
       "layer": 31,
       "neuron": 3858,
       "mode": "mul",
-      "factor": 1.4091441631317139
+      "factor": 1.282777577638626
     },
     {
       "layer": 14,
       "neuron": 4782,
       "mode": "mul",
-      "factor": 0.6898914873600006
+      "factor": 0.6595507860183716
     },
     {
       "layer": 29,
       "neuron": 139,
       "mode": "mul",
-      "factor": 1.4394845962524414
+      "factor": 1.4387207627296448
     },
     {
       "layer": 18,
       "neuron": 357,
       "mode": "mul",
-      "factor": 0.520940899848938
+      "factor": 0.620472252368927
     },
     {
       "layer": 8,
       "neuron": 675,
       "mode": "mul",
-      "factor": 1.4792315363883972
+      "factor": 1.7745264768600464
     },
     {
       "layer": 31,
       "neuron": 253,
       "mode": "mul",
-      "factor": 1.4426515996456146
+      "factor": 1.410809725522995
     },
     {
       "layer": 14,
       "neuron": 2147,
       "mode": "mul",
-      "factor": 0.7223672866821289
+      "factor": 0.7696122378110886
     },
     {
       "layer": 10,
       "neuron": 665,
       "mode": "mul",
-      "factor": 1.3464899361133575
+      "factor": 1.2368830889463425
     },
     {
       "layer": 9,
       "neuron": 3257,
       "mode": "mul",
-      "factor": 1.3199926018714905
+      "factor": 1.2891635298728943
     },
     {
       "layer": 20,
       "neuron": 9112,
       "mode": "mul",
-      "factor": 1.3041996359825134
+      "factor": 1.595572590827942
     },
     {
       "layer": 8,
       "neuron": 251,
       "mode": "mul",
-      "factor": 0.5511712431907654
+      "factor": 0.3491719365119934
     },
     {
       "layer": 22,
       "neuron": 962,
       "mode": "mul",
-      "factor": 1.480306625366211
+      "factor": 1.4891353845596313
     },
     {
       "layer": 22,
       "neuron": 2155,
       "mode": "mul",
-      "factor": 1.2668739259243011
+      "factor": 1.4408271610736847
     },
     {
       "layer": 23,
       "neuron": 1356,
       "mode": "mul",
-      "factor": 0.6169558167457581
+      "factor": 0.3594475984573364
     },
     {
       "layer": 13,
       "neuron": 1470,
       "mode": "mul",
-      "factor": 1.308599203824997
+      "factor": 1.2163048386573792
     },
     {
       "layer": 13,
       "neuron": 5715,
       "mode": "mul",
-      "factor": 0.6330948173999786
+      "factor": 0.5961441099643707
     },
     {
       "layer": 11,
       "neuron": 346,
       "mode": "mul",
-      "factor": 0.680643230676651
+      "factor": 0.5889332592487335
     },
     {
       "layer": 14,
       "neuron": 1923,
       "mode": "mul",
-      "factor": 0.7545400559902191
+      "factor": 0.7948847413063049
     },
     {
       "layer": 12,
       "neuron": 1766,
       "mode": "mul",
-      "factor": 0.7550366073846817
+      "factor": 0.7084604799747467
     },
     {
       "layer": 9,
       "neuron": 228,
       "mode": "mul",
-      "factor": 1.3838028609752655
+      "factor": 1.3974249064922333
     },
     {
       "layer": 27,
       "neuron": 5747,
       "mode": "mul",
-      "factor": 1.2967594265937805
+      "factor": 1.5856955647468567
     },
     {
       "layer": 10,
       "neuron": 2467,
       "mode": "mul",
-      "factor": 1.3740812838077545
+      "factor": 1.2949837744235992
     },
     {
       "layer": 14,
       "neuron": 3242,
       "mode": "mul",
-      "factor": 1.3471402525901794
+      "factor": 1.242868721485138
     },
     {
       "layer": 30,
       "neuron": 54,
       "mode": "mul",
-      "factor": 1.47015181183815
+      "factor": 1.4410167038440704
     },
     {
       "layer": 30,
       "neuron": 4583,
       "mode": "mul",
-      "factor": 0.6917626857757568
+      "factor": 0.538432389497757
     },
     {
       "layer": 29,
       "neuron": 1047,
       "mode": "mul",
-      "factor": 0.8598456084728241
+      "factor": 0.7435363531112671
     },
     {
       "layer": 20,
       "neuron": 2399,
       "mode": "mul",
-      "factor": 0.5137204229831696
+      "factor": 0.4427962899208069
     },
     {
       "layer": 13,
       "neuron": 1417,
       "mode": "mul",
-      "factor": 1.3813187777996063
+      "factor": 1.4673157036304474
     },
     {
       "layer": 10,
       "neuron": 1621,
       "mode": "mul",
-      "factor": 0.701256662607193
+      "factor": 0.9737828280776739
     },
     {
       "layer": 24,
       "neuron": 8706,
       "mode": "mul",
-      "factor": 1.2753912806510925
+      "factor": 1.4300561547279358
     },
     {
       "layer": 16,
       "neuron": 2279,
       "mode": "mul",
-      "factor": 0.5534670054912567
+      "factor": 0.5246740877628326
     },
     {
       "layer": 10,
       "neuron": 1931,
       "mode": "mul",
-      "factor": 0.6904707849025726
+      "factor": 0.5423762500286102
     },
     {
       "layer": 15,
       "neuron": 8349,
       "mode": "mul",
-      "factor": 0.7126326560974121
+      "factor": 0.9426215700805187
     },
     {
       "layer": 8,
       "neuron": 1074,
       "mode": "mul",
-      "factor": 0.5480387210845947
+      "factor": 0.49331146478652954
     },
     {
       "layer": 26,
       "neuron": 309,
       "mode": "mul",
-      "factor": 0.6169358789920807
+      "factor": 0.4657752513885498
     },
     {
       "layer": 24,
       "neuron": 4021,
       "mode": "mul",
-      "factor": 1.4511848390102386
+      "factor": 1.6307082772254944
     },
     {
       "layer": 9,
       "neuron": 6606,
       "mode": "mul",
-      "factor": 1.4080990850925446
+      "factor": 1.2052659392356873
     },
     {
       "layer": 14,
       "neuron": 1842,
       "mode": "mul",
-      "factor": 1.3436580002307892
+      "factor": 1.1453391015529633
     },
     {
       "layer": 16,
       "neuron": 7107,
       "mode": "mul",
-      "factor": 1.434192717075348
+      "factor": 1.5365700721740723
     },
     {
       "layer": 25,
       "neuron": 8931,
       "mode": "mul",
-      "factor": 1.255042403936386
+      "factor": 1.4473554193973541
     },
     {
       "layer": 31,
       "neuron": 182,
       "mode": "mul",
-      "factor": 0.5808011591434479
+      "factor": 0.7312360107898712
     },
     {
       "layer": 25,
       "neuron": 5013,
       "mode": "mul",
-      "factor": 1.3078472316265106
+      "factor": 1.3698732256889343
     },
     {
       "layer": 31,
       "neuron": 1897,
       "mode": "mul",
-      "factor": 1.3768551051616669
+      "factor": 1.188103899359703
     },
     {
       "layer": 30,
       "neuron": 456,
       "mode": "mul",
-      "factor": 1.412227749824524
+      "factor": 1.3899146914482117
     },
     {
       "layer": 31,
       "neuron": 4319,
       "mode": "mul",
-      "factor": 0.6195799112319946
+      "factor": 0.3960874080657959
     },
     {
       "layer": 10,
       "neuron": 9168,
       "mode": "mul",
-      "factor": 1.3382285833358765
+      "factor": 1.3075677752494812
     },
     {
       "layer": 11,
       "neuron": 2322,
       "mode": "mul",
-      "factor": 1.4017113745212555
+      "factor": 1.2423453778028488
     },
     {
       "layer": 16,
       "neuron": 561,
       "mode": "mul",
-      "factor": 0.6735105514526367
+      "factor": 0.6887445747852325
     },
     {
       "layer": 24,
       "neuron": 4435,
       "mode": "mul",
-      "factor": 0.8045016080141068
+      "factor": 0.6608497500419617
     },
     {
       "layer": 13,
       "neuron": 3354,
       "mode": "mul",
-      "factor": 0.8152295053005219
+      "factor": 0.660514771938324
     },
     {
       "layer": 10,
       "neuron": 5238,
       "mode": "mul",
-      "factor": 1.3897124528884888
+      "factor": 1.3494340777397156
     },
     {
       "layer": 20,
       "neuron": 2838,
       "mode": "mul",
-      "factor": 1.399718463420868
+      "factor": 1.697364091873169
     },
     {
       "layer": 11,
       "neuron": 379,
       "mode": "mul",
-      "factor": 0.753375306725502
+      "factor": 1.081983633339405
     },
     {
       "layer": 31,
       "neuron": 6164,
       "mode": "mul",
-      "factor": 1.1208561807870865
+      "factor": 0.9624020531773567
     },
     {
       "layer": 15,
       "neuron": 4682,
       "mode": "mul",
-      "factor": 1.2739510536193848
+      "factor": 0.9753437675535679
     },
     {
       "layer": 31,
       "neuron": 452,
       "mode": "mul",
-      "factor": 1.5339754819869995
+      "factor": 1.7497989535331726
     },
     {
       "layer": 13,
       "neuron": 1698,
       "mode": "mul",
-      "factor": 0.6838973164558411
+      "factor": 0.6638344824314117
     },
     {
       "layer": 27,
       "neuron": 9205,
       "mode": "mul",
-      "factor": 0.5459877848625183
+      "factor": 0.565166175365448
     },
     {
       "layer": 15,
       "neuron": 4726,
       "mode": "mul",
-      "factor": 0.5700098276138306
+      "factor": 0.6622331738471985
     },
     {
       "layer": 14,
       "neuron": 7097,
       "mode": "mul",
-      "factor": 1.381295919418335
+      "factor": 1.3175809681415558
     },
     {
       "layer": 16,
       "neuron": 8894,
       "mode": "mul",
-      "factor": 1.2309213429689407
+      "factor": 0.8551252782344818
     },
     {
       "layer": 10,
       "neuron": 2803,
       "mode": "mul",
-      "factor": 1.3730217814445496
+      "factor": 1.2030833512544632
     },
     {
       "layer": 14,
       "neuron": 7329,
       "mode": "mul",
-      "factor": 0.6180047392845154
+      "factor": 0.5900968015193939
     },
     {
       "layer": 15,
       "neuron": 509,
       "mode": "mul",
-      "factor": 0.6215681433677673
+      "factor": 0.660942792892456
     },
     {
       "layer": 31,
       "neuron": 1470,
       "mode": "mul",
-      "factor": 1.4600505828857422
+      "factor": 1.6597850918769836
     },
     {
       "layer": 31,
       "neuron": 1232,
       "mode": "mul",
-      "factor": 0.707076221704483
+      "factor": 0.607076495885849
     },
     {
       "layer": 15,
       "neuron": 430,
       "mode": "mul",
-      "factor": 1.314266324043274
+      "factor": 1.1932184249162674
     },
     {
       "layer": 15,
       "neuron": 5019,
       "mode": "mul",
-      "factor": 0.6464451849460602
+      "factor": 0.5373160541057587
     },
     {
       "layer": 21,
       "neuron": 727,
       "mode": "mul",
-      "factor": 1.3836967051029205
+      "factor": 1.484504759311676
     },
     {
       "layer": 30,
       "neuron": 7462,
       "mode": "mul",
-      "factor": 1.246917262673378
+      "factor": 1.3955190777778625
     },
     {
       "layer": 13,
       "neuron": 9073,
       "mode": "mul",
-      "factor": 1.305344671010971
+      "factor": 1.0279066879302263
     },
     {
       "layer": 16,
       "neuron": 4703,
       "mode": "mul",
-      "factor": 0.7088428139686584
+      "factor": 0.7356578409671783
     },
     {
       "layer": 20,
       "neuron": 6703,
       "mode": "mul",
-      "factor": 1.2510147094726562
+      "factor": 1.3590540289878845
     },
     {
       "layer": 29,
       "neuron": 6441,
       "mode": "mul",
-      "factor": 1.2673642933368683
+      "factor": 1.4680064022541046
     },
     {
       "layer": 21,
       "neuron": 3200,
       "mode": "mul",
-      "factor": 1.1994009017944336
+      "factor": 1.2832302153110504
     },
     {
       "layer": 12,
       "neuron": 1987,
       "mode": "mul",
-      "factor": 1.3508793711662292
+      "factor": 1.3651784360408783
     },
     {
       "layer": 12,
       "neuron": 6235,
       "mode": "mul",
-      "factor": 0.9307086393237114
+      "factor": 1.0198658052831888
     },
     {
       "layer": 18,
       "neuron": 101,
       "mode": "mul",
-      "factor": 0.5754048526287079
+      "factor": 0.7605086117982864
     },
     {
       "layer": 19,
       "neuron": 2494,
       "mode": "mul",
-      "factor": 0.5819202959537506
+      "factor": 0.3913235664367676
     },
     {
       "layer": 14,
       "neuron": 2475,
       "mode": "mul",
-      "factor": 0.7001603543758392
+      "factor": 1.0400787740945816
     },
     {
       "layer": 15,
       "neuron": 4199,
       "mode": "mul",
-      "factor": 1.3198759853839874
+      "factor": 0.9705380387604237
     },
     {
       "layer": 12,
       "neuron": 76,
       "mode": "mul",
-      "factor": 0.6833544969558716
+      "factor": 0.7401531338691711
     },
     {
       "layer": 31,
       "neuron": 657,
       "mode": "mul",
-      "factor": 1.3125881552696228
+      "factor": 1.3931617140769958
     },
     {
       "layer": 14,
       "neuron": 3726,
       "mode": "mul",
-      "factor": 1.2665737569332123
+      "factor": 0.7622298151254654
     },
     {
       "layer": 29,
       "neuron": 2291,
       "mode": "mul",
-      "factor": 1.2956140637397766
+      "factor": 1.3653975427150726
     },
     {
       "layer": 15,
       "neuron": 182,
       "mode": "mul",
-      "factor": 1.2523345649242401
+      "factor": 1.5313706994056702
     },
     {
       "layer": 23,
       "neuron": 8790,
       "mode": "mul",
-      "factor": 1.2060076296329498
+      "factor": 1.402444839477539
     },
     {
       "layer": 30,
       "neuron": 4492,
       "mode": "mul",
-      "factor": 0.5212059915065765
+      "factor": 0.4541743993759155
     },
     {
       "layer": 14,
       "neuron": 881,
       "mode": "mul",
-      "factor": 0.6127780079841614
+      "factor": 0.5459378361701965
     },
     {
       "layer": 31,
       "neuron": 654,
       "mode": "mul",
-      "factor": 1.2823727428913116
+      "factor": 1.289779245853424
     },
     {
       "layer": 31,
       "neuron": 3973,
       "mode": "mul",
-      "factor": 0.5392525792121887
+      "factor": 0.6025007963180542
     },
     {
       "layer": 12,
       "neuron": 285,
       "mode": "mul",
-      "factor": 1.3423881530761719
+      "factor": 1.1286034137010574
     },
     {
       "layer": 11,
       "neuron": 6213,
       "mode": "mul",
-      "factor": 0.6083097457885742
+      "factor": 0.8962688073515892
     },
     {
       "layer": 12,
       "neuron": 4812,
       "mode": "mul",
-      "factor": 1.270910918712616
+      "factor": 1.011851760558784
     },
     {
       "layer": 13,
       "neuron": 5917,
       "mode": "mul",
-      "factor": 1.3248388767242432
+      "factor": 1.3559151887893677
     },
     {
       "layer": 14,
       "neuron": 9,
       "mode": "mul",
-      "factor": 1.5041228532791138
+      "factor": 1.5898215174674988
     },
     {
       "layer": 30,
       "neuron": 3372,
       "mode": "mul",
-      "factor": 1.2542858123779297
+      "factor": 1.3713980913162231
     },
     {
       "layer": 31,
       "neuron": 159,
       "mode": "mul",
-      "factor": 1.3754489719867706
+      "factor": 0.8678650557994843
     },
     {
       "layer": 18,
       "neuron": 6675,
       "mode": "mul",
-      "factor": 0.607080340385437
+      "factor": 0.6963174641132355
     },
     {
       "layer": 27,
       "neuron": 354,
       "mode": "mul",
-      "factor": 0.6118973195552826
+      "factor": 0.5630182325839996
     },
     {
       "layer": 21,
       "neuron": 4574,
       "mode": "mul",
-      "factor": 0.7088513374328613
+      "factor": 0.6253553926944733
     },
     {
       "layer": 19,
       "neuron": 422,
       "mode": "mul",
-      "factor": 0.4937480092048645
+      "factor": 0.0190812349319458
     },
     {
       "layer": 12,
       "neuron": 1300,
       "mode": "mul",
-      "factor": 1.3686060011386871
+      "factor": 1.3012719452381134
     },
     {
       "layer": 16,
       "neuron": 1038,
       "mode": "mul",
-      "factor": 1.3981192111968994
+      "factor": 1.617222249507904
     },
     {
       "layer": 10,
       "neuron": 4875,
       "mode": "mul",
-      "factor": 1.373672902584076
+      "factor": 1.742893636226654
     },
     {
       "layer": 21,
       "neuron": 773,
       "mode": "mul",
-      "factor": 1.461678296327591
+      "factor": 1.4234887063503265
     },
     {
       "layer": 10,
       "neuron": 4220,
       "mode": "mul",
-      "factor": 0.6602054238319397
+      "factor": 0.568824291229248
     },
     {
       "layer": 17,
       "neuron": 6267,
       "mode": "mul",
-      "factor": 0.6044696569442749
+      "factor": 0.64975306391716
     },
     {
       "layer": 30,
       "neuron": 556,
       "mode": "mul",
-      "factor": 0.5596823394298553
+      "factor": 0.19013971090316772
     },
     {
       "layer": 19,
       "neuron": 6186,
       "mode": "mul",
-      "factor": 0.7568318545818329
+      "factor": 0.9303135573863983
     },
     {
       "layer": 9,
       "neuron": 1210,
       "mode": "mul",
-      "factor": 0.6872874200344086
+      "factor": 0.724539041519165
     },
     {
       "layer": 31,
       "neuron": 503,
       "mode": "mul",
-      "factor": 1.2894533574581146
+      "factor": 1.551365315914154
     },
     {
       "layer": 8,
       "neuron": 986,
       "mode": "mul",
-      "factor": 1.4344001710414886
+      "factor": 1.464445322751999
     },
     {
       "layer": 30,
       "neuron": 3867,
       "mode": "mul",
-      "factor": 1.3086873590946198
+      "factor": 1.5836822390556335
     },
     {
       "layer": 10,
       "neuron": 3700,
       "mode": "mul",
-      "factor": 1.3188955187797546
+      "factor": 1.1376918703317642
     },
     {
       "layer": 15,
       "neuron": 7062,
       "mode": "mul",
-      "factor": 0.6427368521690369
+      "factor": 0.6989400088787079
     },
     {
       "layer": 31,
       "neuron": 7,
       "mode": "mul",
-      "factor": 0.54075488448143
+      "factor": 0.3311408758163452
     },
     {
       "layer": 24,
       "neuron": 7361,
       "mode": "mul",
-      "factor": 1.2282362133264542
+      "factor": 1.2191166877746582
     },
     {
       "layer": 23,
       "neuron": 226,
       "mode": "mul",
-      "factor": 1.5180780291557312
+      "factor": 1.8488759994506836
     },
     {
       "layer": 31,
       "neuron": 45,
       "mode": "mul",
-      "factor": 1.5489909648895264
+      "factor": 1.6331287026405334
     },
     {
       "layer": 30,
       "neuron": 2835,
       "mode": "mul",
-      "factor": 1.3776173293590546
+      "factor": 1.4934455454349518
     },
     {
       "layer": 31,
       "neuron": 78,
       "mode": "mul",
-      "factor": 1.4436134696006775
+      "factor": 1.4181829988956451
     },
     {
       "layer": 25,
       "neuron": 595,
       "mode": "mul",
-      "factor": 1.2643523812294006
+      "factor": 1.3665133118629456
     },
     {
       "layer": 11,
       "neuron": 430,
       "mode": "mul",
-      "factor": 0.7155769169330597
+      "factor": 1.0290589686483145
     },
     {
       "layer": 13,
       "neuron": 2406,
       "mode": "mul",
-      "factor": 0.5896744132041931
+      "factor": 0.15099626779556274
     },
     {
       "layer": 16,
       "neuron": 2680,
       "mode": "mul",
-      "factor": 1.3262966573238373
+      "factor": 0.9105179607868195
     },
     {
       "layer": 21,
       "neuron": 4812,
       "mode": "mul",
-      "factor": 1.3856647312641144
+      "factor": 1.6584575176239014
     },
     {
       "layer": 17,
       "neuron": 5151,
       "mode": "mul",
-      "factor": 1.4526883959770203
+      "factor": 1.7091678977012634
     },
     {
       "layer": 31,
       "neuron": 424,
       "mode": "mul",
-      "factor": 1.3135223090648651
+      "factor": 1.434509038925171
     },
     {
       "layer": 22,
       "neuron": 136,
       "mode": "mul",
-      "factor": 0.4676205515861511
+      "factor": 0.31368958950042725
     },
     {
       "layer": 22,
       "neuron": 6,
       "mode": "mul",
-      "factor": 1.3958809971809387
+      "factor": 1.2660703659057617
     },
     {
       "layer": 28,
       "neuron": 426,
       "mode": "mul",
-      "factor": 1.3673275113105774
+      "factor": 1.391520619392395
     },
     {
       "layer": 9,
       "neuron": 9009,
       "mode": "mul",
-      "factor": 1.2981747388839722
+      "factor": 1.3727302849292755
     },
     {
       "layer": 11,
       "neuron": 3691,
       "mode": "mul",
-      "factor": 1.2841453552246094
+      "factor": 1.0091376407071948
     },
     {
       "layer": 22,
       "neuron": 268,
       "mode": "mul",
-      "factor": 0.5832244157791138
+      "factor": 0.3838762044906616
     },
     {
       "layer": 14,
       "neuron": 105,
       "mode": "mul",
-      "factor": 0.606305867433548
+      "factor": 0.6517625153064728
     },
     {
       "layer": 11,
       "neuron": 1183,
       "mode": "mul",
-      "factor": 0.6014139652252197
+      "factor": 0.6843348741531372
     },
     {
       "layer": 14,
       "neuron": 1919,
       "mode": "mul",
-      "factor": 0.7295435965061188
+      "factor": 0.5610958933830261
     },
     {
       "layer": 26,
       "neuron": 743,
       "mode": "mul",
-      "factor": 1.2137859165668488
+      "factor": 1.6839296221733093
     },
     {
       "layer": 19,
       "neuron": 1554,
       "mode": "mul",
-      "factor": 0.5640269815921783
+      "factor": 0.16039681434631348
     },
     {
       "layer": 10,
       "neuron": 6943,
       "mode": "mul",
-      "factor": 0.6992257237434387
+      "factor": 0.43680357933044434
     },
     {
       "layer": 31,
       "neuron": 5711,
       "mode": "mul",
-      "factor": 0.5578508377075195
+      "factor": 0.45766377449035645
     },
     {
       "layer": 13,
       "neuron": 3364,
       "mode": "mul",
-      "factor": 1.3337341248989105
+      "factor": 1.3127976059913635
     },
     {
       "layer": 29,
       "neuron": 382,
       "mode": "mul",
-      "factor": 0.5711497664451599
+      "factor": 0.2749665379524231
     },
     {
       "layer": 9,
       "neuron": 1876,
       "mode": "mul",
-      "factor": 0.6564437747001648
+      "factor": 0.9830072671175003
     },
     {
       "layer": 10,
       "neuron": 1493,
       "mode": "mul",
-      "factor": 1.171110913157463
+      "factor": 1.3488132655620575
     },
     {
       "layer": 30,
       "neuron": 4746,
       "mode": "mul",
-      "factor": 1.2431630790233612
+      "factor": 1.513400912284851
     },
     {
       "layer": 15,
       "neuron": 9066,
       "mode": "mul",
-      "factor": 0.6699883937835693
+      "factor": 1.021280363202095
     },
     {
       "layer": 15,
       "neuron": 4750,
       "mode": "mul",
-      "factor": 1.2093235105276108
+      "factor": 0.8337550461292267
     },
     {
       "layer": 21,
       "neuron": 59,
       "mode": "mul",
-      "factor": 1.4184673428535461
+      "factor": 1.569490134716034
     },
     {
       "layer": 27,
       "neuron": 7327,
       "mode": "mul",
-      "factor": 1.2609017193317413
+      "factor": 1.4925008416175842
     },
     {
       "layer": 22,
       "neuron": 4945,
       "mode": "mul",
-      "factor": 0.7085410058498383
+      "factor": 0.7459790706634521
     },
     {
       "layer": 11,
       "neuron": 3074,
       "mode": "mul",
-      "factor": 0.7363868951797485
+      "factor": 1.0252856947481632
     },
     {
       "layer": 17,
       "neuron": 3997,
       "mode": "mul",
-      "factor": 1.3129840195178986
+      "factor": 1.0720168426632881
     },
     {
       "layer": 12,
       "neuron": 64,
       "mode": "mul",
-      "factor": 1.3216484487056732
+      "factor": 1.2629811763763428
     },
     {
       "layer": 22,
       "neuron": 7983,
       "mode": "mul",
-      "factor": 0.5347208082675934
+      "factor": 0.4112761616706848
     },
     {
       "layer": 19,
       "neuron": 8017,
       "mode": "mul",
-      "factor": 1.4849932193756104
+      "factor": 1.6961682438850403
     },
     {
       "layer": 31,
       "neuron": 2382,
       "mode": "mul",
-      "factor": 1.4041457772254944
+      "factor": 1.303187072277069
     },
     {
       "layer": 8,
       "neuron": 2003,
       "mode": "mul",
-      "factor": 0.597518652677536
+      "factor": 0.5240844488143921
     },
     {
       "layer": 31,
       "neuron": 54,
       "mode": "mul",
-      "factor": 0.6774799525737762
+      "factor": 0.6884994208812714
     },
     {
       "layer": 31,
       "neuron": 837,
       "mode": "mul",
-      "factor": 1.132909044623375
+      "factor": 1.347024828195572
     },
     {
       "layer": 13,
       "neuron": 3119,
       "mode": "mul",
-      "factor": 0.7434865534305573
+      "factor": 1.063862033188343
     },
     {
       "layer": 9,
       "neuron": 1973,
       "mode": "mul",
-      "factor": 1.3142162263393402
+      "factor": 1.5350975394248962
     },
     {
       "layer": 8,
       "neuron": 8296,
       "mode": "mul",
-      "factor": 0.7691216468811035
+      "factor": 0.6059388816356659
     },
     {
       "layer": 30,
       "neuron": 75,
       "mode": "mul",
-      "factor": 1.5018672943115234
+      "factor": 1.565843641757965
     },
     {
       "layer": 31,
       "neuron": 264,
       "mode": "mul",
-      "factor": 0.49912410974502563
+      "factor": 0.50136998295784
     },
     {
       "layer": 31,
       "neuron": 3758,
       "mode": "mul",
-      "factor": 1.2274115830659866
+      "factor": 1.3942513167858124
     },
     {
       "layer": 9,
       "neuron": 1160,
       "mode": "mul",
-      "factor": 0.6486491560935974
+      "factor": 0.7020911872386932
     },
     {
       "layer": 31,
       "neuron": 91,
       "mode": "mul",
-      "factor": 0.5490922629833221
+      "factor": 0.6419438123703003
     },
     {
       "layer": 15,
       "neuron": 8374,
       "mode": "mul",
-      "factor": 1.2517350316047668
+      "factor": 0.7930138856172562
     },
     {
       "layer": 14,
       "neuron": 6980,
       "mode": "mul",
-      "factor": 0.6821056008338928
+      "factor": 0.8614530116319656
     },
     {
       "layer": 31,
       "neuron": 14,
       "mode": "mul",
-      "factor": 0.5132158398628235
+      "factor": 0.29401689767837524
     },
     {
       "layer": 31,
       "neuron": 909,
       "mode": "mul",
-      "factor": 1.3031126260757446
+      "factor": 1.5106146931648254
     },
     {
       "layer": 22,
       "neuron": 512,
       "mode": "mul",
-      "factor": 1.5061386823654175
+      "factor": 1.919330894947052
     },
     {
       "layer": 12,
       "neuron": 433,
       "mode": "mul",
-      "factor": 0.5401219725608826
+      "factor": 0.4595258831977844
     },
     {
       "layer": 26,
       "neuron": 4731,
       "mode": "mul",
-      "factor": 0.7308163940906525
+      "factor": 0.5438618659973145
     },
     {
       "layer": 23,
       "neuron": 1108,
       "mode": "mul",
-      "factor": 0.5272513329982758
+      "factor": 0.22872155904769897
     },
     {
       "layer": 12,
       "neuron": 2752,
       "mode": "mul",
-      "factor": 0.7884271889925003
+      "factor": 1.3103669583797455
     },
     {
       "layer": 24,
       "neuron": 1175,
       "mode": "mul",
-      "factor": 0.5392263531684875
+      "factor": 0.0190812349319458
     },
     {
       "layer": 19,
       "neuron": 70,
       "mode": "mul",
-      "factor": 0.6169563829898834
+      "factor": 0.7129610180854797
     },
     {
       "layer": 29,
       "neuron": 19,
       "mode": "mul",
-      "factor": 0.5970651507377625
+      "factor": 0.8235169500112534
     },
     {
       "layer": 26,
       "neuron": 1345,
       "mode": "mul",
-      "factor": 1.2620488703250885
+      "factor": 1.3805703520774841
     },
     {
       "layer": 29,
       "neuron": 663,
       "mode": "mul",
-      "factor": 0.5656786561012268
+      "factor": 0.584765613079071
     },
     {
       "layer": 12,
       "neuron": 932,
       "mode": "mul",
-      "factor": 1.4490645825862885
+      "factor": 1.6483514904975891
     },
     {
       "layer": 12,
       "neuron": 485,
       "mode": "mul",
-      "factor": 0.5624817311763763
+      "factor": 0.6021894812583923
     },
     {
       "layer": 15,
       "neuron": 143,
       "mode": "mul",
-      "factor": 0.5079501569271088
+      "factor": 0.42694079875946045
     },
     {
       "layer": 10,
       "neuron": 54,
       "mode": "mul",
-      "factor": 0.7609182745218277
+      "factor": 0.772301584482193
     },
     {
       "layer": 14,
       "neuron": 5098,
       "mode": "mul",
-      "factor": 1.2969461381435394
+      "factor": 1.351427584886551
     },
     {
       "layer": 31,
       "neuron": 2168,
       "mode": "mul",
-      "factor": 1.2930387556552887
+      "factor": 1.3208039700984955
     },
     {
       "layer": 29,
       "neuron": 488,
       "mode": "mul",
-      "factor": 1.3744200766086578
+      "factor": 1.4893901944160461
     },
     {
       "layer": 31,
       "neuron": 151,
       "mode": "mul",
-      "factor": 1.3498960733413696
+      "factor": 1.1452102214097977
     },
     {
       "layer": 27,
       "neuron": 4152,
       "mode": "mul",
-      "factor": 0.6117698550224304
+      "factor": 0.5321187376976013
     },
     {
       "layer": 31,
       "neuron": 2807,
       "mode": "mul",
-      "factor": 1.3112274408340454
+      "factor": 1.4724299013614655
     },
     {
       "layer": 8,
       "neuron": 96,
       "mode": "mul",
-      "factor": 0.6339552998542786
+      "factor": 0.41310787200927734
     },
     {
       "layer": 14,
       "neuron": 9181,
       "mode": "mul",
-      "factor": 0.6097012460231781
+      "factor": 0.8916602581739426
     },
     {
       "layer": 11,
       "neuron": 65,
       "mode": "mul",
-      "factor": 0.6312857568264008
+      "factor": 0.4709518551826477
     },
     {
       "layer": 12,
       "neuron": 2924,
       "mode": "mul",
-      "factor": 1.4293209612369537
+      "factor": 1.7086618542671204
     },
     {
       "layer": 11,
       "neuron": 6094,
       "mode": "mul",
-      "factor": 0.6997044086456299
+      "factor": 0.4732968807220459
     },
     {
       "layer": 9,
       "neuron": 4230,
       "mode": "mul",
-      "factor": 0.5736950039863586
+      "factor": 0.37232887744903564
     },
     {
       "layer": 14,
       "neuron": 5868,
       "mode": "mul",
-      "factor": 0.7640929967164993
+      "factor": 1.051795419305563
     },
     {
       "layer": 10,
       "neuron": 7486,
       "mode": "mul",
-      "factor": 1.4644131362438202
+      "factor": 1.6900848746299744
     },
     {
       "layer": 22,
       "neuron": 2214,
       "mode": "mul",
-      "factor": 0.6312510371208191
+      "factor": 0.2749454975128174
     },
     {
       "layer": 8,
       "neuron": 6252,
       "mode": "mul",
-      "factor": 1.428734302520752
+      "factor": 1.4011791944503784
     },
     {
       "layer": 16,
       "neuron": 7994,
       "mode": "mul",
-      "factor": 1.2401364892721176
+      "factor": 1.0828652754426003
     },
     {
       "layer": 30,
       "neuron": 4584,
       "mode": "mul",
-      "factor": 1.3212154507637024
+      "factor": 1.5308200120925903
     },
     {
       "layer": 31,
       "neuron": 849,
       "mode": "mul",
-      "factor": 1.24235300719738
+      "factor": 1.369975984096527
     },
     {
       "layer": 31,
       "neuron": 7545,
       "mode": "mul",
-      "factor": 0.6990468800067902
+      "factor": 0.5833046734333038
     },
     {
       "layer": 12,
       "neuron": 3247,
       "mode": "mul",
-      "factor": 1.4194988310337067
+      "factor": 1.3018019795417786
     },
     {
       "layer": 30,
       "neuron": 150,
       "mode": "mul",
-      "factor": 1.2110287547111511
+      "factor": 0.7549698054790497
     },
     {
       "layer": 18,
       "neuron": 428,
       "mode": "mul",
-      "factor": 0.7240288555622101
+      "factor": 0.618526965379715
     },
     {
       "layer": 10,
       "neuron": 3551,
       "mode": "mul",
-      "factor": 1.45560422539711
+      "factor": 1.4699025452136993
     },
     {
       "layer": 27,
       "neuron": 1642,
       "mode": "mul",
-      "factor": 0.490942120552063
+      "factor": 0.2441246509552002
     },
     {
       "layer": 13,
       "neuron": 3244,
       "mode": "mul",
-      "factor": 1.3794852793216705
+      "factor": 1.6957445740699768
     },
     {
       "layer": 12,
       "neuron": 1313,
       "mode": "mul",
-      "factor": 0.8048417717218399
+      "factor": 0.6550101637840271
     },
     {
       "layer": 31,
       "neuron": 859,
       "mode": "mul",
-      "factor": 1.4432540237903595
+      "factor": 1.4366654753684998
     },
     {
       "layer": 28,
       "neuron": 774,
       "mode": "mul",
-      "factor": 0.5173231065273285
+      "factor": 0.06851261854171753
     },
     {
       "layer": 17,
       "neuron": 1078,
       "mode": "mul",
-      "factor": 0.6932032406330109
+      "factor": 0.8425187468528748
     },
     {
       "layer": 28,
       "neuron": 5908,
       "mode": "mul",
-      "factor": 1.291958510875702
+      "factor": 1.562852919101715
     },
     {
       "layer": 15,
       "neuron": 2187,
       "mode": "mul",
-      "factor": 1.4159388840198517
+      "factor": 1.4627366662025452
     },
     {
       "layer": 31,
       "neuron": 564,
       "mode": "mul",
-      "factor": 1.288416862487793
+      "factor": 1.420518010854721
     },
     {
       "layer": 22,
       "neuron": 7054,
       "mode": "mul",
-      "factor": 1.2894268035888672
+      "factor": 1.5509529113769531
     },
     {
       "layer": 31,
       "neuron": 641,
       "mode": "mul",
-      "factor": 1.279146134853363
+      "factor": 1.3607425391674042
     },
     {
       "layer": 30,
       "neuron": 7830,
       "mode": "mul",
-      "factor": 0.7257848978042603
+      "factor": 0.4889358878135681
     },
     {
       "layer": 11,
       "neuron": 2273,
       "mode": "mul",
-      "factor": 0.5493656992912292
+      "factor": 0.21700507402420044
     },
     {
       "layer": 15,
       "neuron": 8710,
       "mode": "mul",
-      "factor": 1.2877699732780457
+      "factor": 1.4365904033184052
     },
     {
       "layer": 31,
       "neuron": 1605,
       "mode": "mul",
-      "factor": 1.331881195306778
+      "factor": 1.5406912565231323
     },
     {
       "layer": 31,
       "neuron": 1150,
       "mode": "mul",
-      "factor": 0.6695918440818787
+      "factor": 0.5841016173362732
     },
     {
       "layer": 12,
       "neuron": 681,
       "mode": "mul",
-      "factor": 0.7848110496997833
+      "factor": 1.3926939070224762
     },
     {
       "layer": 21,
       "neuron": 190,
       "mode": "mul",
-      "factor": 1.4430637955665588
+      "factor": 1.8058398962020874
     },
     {
       "layer": 11,
       "neuron": 2185,
       "mode": "mul",
-      "factor": 1.211400419473648
+      "factor": 1.5747630596160889
     },
     {
       "layer": 18,
       "neuron": 6168,
       "mode": "mul",
-      "factor": 0.5295653343200684
+      "factor": 0.1620909571647644
     },
     {
       "layer": 17,
       "neuron": 2495,
       "mode": "mul",
-      "factor": 0.7053062915802002
+      "factor": 0.8331836760044098
     },
     {
       "layer": 24,
       "neuron": 1434,
       "mode": "mul",
-      "factor": 1.4513626396656036
+      "factor": 1.4924015402793884
     },
     {
       "layer": 22,
       "neuron": 536,
       "mode": "mul",
-      "factor": 0.511382669210434
+      "factor": 0.0190812349319458
     },
     {
       "layer": 22,
       "neuron": 3288,
       "mode": "mul",
-      "factor": 1.2173024266958237
+      "factor": 1.1489239186048508
     },
     {
       "layer": 16,
       "neuron": 7295,
       "mode": "mul",
-      "factor": 0.6340261697769165
+      "factor": 0.7502138316631317
     },
     {
       "layer": 26,
       "neuron": 1,
       "mode": "mul",
-      "factor": 1.511700689792633
+      "factor": 1.646703839302063
     },
     {
       "layer": 30,
       "neuron": 140,
       "mode": "mul",
-      "factor": 1.486453503370285
+      "factor": 0.7388941645622253
     },
     {
       "layer": 31,
       "neuron": 1499,
       "mode": "mul",
-      "factor": 1.2792644798755646
+      "factor": 1.297799527645111
     },
     {
       "layer": 31,
       "neuron": 37,
       "mode": "mul",
-      "factor": 1.4447406232357025
+      "factor": 1.4256405234336853
     },
     {
       "layer": 15,
       "neuron": 8752,
       "mode": "mul",
-      "factor": 0.6461070775985718
+      "factor": 0.5977970957756042
     },
     {
       "layer": 31,
       "neuron": 592,
       "mode": "mul",
-      "factor": 1.413657307624817
+      "factor": 1.6752806901931763
     },
     {
       "layer": 15,
       "neuron": 3260,
       "mode": "mul",
-      "factor": 1.3093404471874237
+      "factor": 1.3923795819282532
     },
     {
       "layer": 20,
       "neuron": 2384,
       "mode": "mul",
-      "factor": 1.442819893360138
+      "factor": 1.205841764807701
     },
     {
       "layer": 12,
       "neuron": 770,
       "mode": "mul",
-      "factor": 1.3923989832401276
+      "factor": 1.9546887874603271
     },
     {
       "layer": 31,
       "neuron": 5190,
       "mode": "mul",
-      "factor": 0.6760133802890778
+      "factor": 0.5725706517696381
     },
     {
       "layer": 29,
       "neuron": 834,
       "mode": "mul",
-      "factor": 1.3817358314990997
+      "factor": 1.8395597338676453
     },
     {
       "layer": 31,
       "neuron": 770,
       "mode": "mul",
-      "factor": 1.2678676545619965
+      "factor": 1.3366563320159912
     },
     {
       "layer": 10,
       "neuron": 3143,
       "mode": "mul",
-      "factor": 1.4289075136184692
+      "factor": 1.8918837308883667
     },
     {
       "layer": 15,
       "neuron": 5238,
       "mode": "mul",
-      "factor": 0.685636967420578
+      "factor": 0.8042971342802048
     },
     {
       "layer": 29,
       "neuron": 5965,
       "mode": "mul",
-      "factor": 1.2331504374742508
+      "factor": 1.2355896830558777
     },
     {
       "layer": 17,
       "neuron": 8345,
       "mode": "mul",
-      "factor": 0.481157124042511
+      "factor": 0.09712445735931396
     },
     {
       "layer": 18,
       "neuron": 1215,
       "mode": "mul",
-      "factor": 1.4971100389957428
+      "factor": 1.5308101177215576
     },
     {
       "layer": 15,
       "neuron": 4865,
       "mode": "mul",
-      "factor": 0.5072711706161499
+      "factor": 0.3875771164894104
     },
     {
       "layer": 9,
       "neuron": 4662,
       "mode": "mul",
-      "factor": 1.4104706943035126
+      "factor": 1.8242433667182922
     },
     {
       "layer": 29,
       "neuron": 2044,
       "mode": "mul",
-      "factor": 1.4072901010513306
+      "factor": 1.9357728362083435
     },
     {
       "layer": 16,
       "neuron": 6107,
       "mode": "mul",
-      "factor": 1.3007020056247711
+      "factor": 1.0798888057470322
     },
     {
       "layer": 31,
       "neuron": 2556,
       "mode": "mul",
-      "factor": 1.3230448961257935
+      "factor": 1.401261329650879
     },
     {
       "layer": 10,
       "neuron": 4937,
       "mode": "mul",
-      "factor": 0.700380265712738
+      "factor": 0.46065378189086914
     },
     {
       "layer": 18,
       "neuron": 2,
       "mode": "mul",
-      "factor": 1.417139858007431
+      "factor": 1.2594204246997833
     },
     {
       "layer": 31,
       "neuron": 132,
       "mode": "mul",
-      "factor": 1.4570848941802979
+      "factor": 1.4097139239311218
     },
     {
       "layer": 15,
       "neuron": 6166,
       "mode": "mul",
-      "factor": 0.6518310010433197
+      "factor": 0.46336740255355835
     },
     {
       "layer": 30,
       "neuron": 1555,
       "mode": "mul",
-      "factor": 0.5333417654037476
+      "factor": 0.19709551334381104
     },
     {
       "layer": 30,
       "neuron": 883,
       "mode": "mul",
-      "factor": 1.4025100767612457
+      "factor": 1.400327444076538
     },
     {
       "layer": 22,
       "neuron": 6358,
       "mode": "mul",
-      "factor": 1.3548930883407593
+      "factor": 1.6138768196105957
     },
     {
       "layer": 29,
       "neuron": 21,
       "mode": "mul",
-      "factor": 1.378970444202423
+      "factor": 1.3539040982723236
     },
     {
       "layer": 31,
       "neuron": 806,
       "mode": "mul",
-      "factor": 1.4468351900577545
+      "factor": 1.6017211079597473
     },
     {
       "layer": 18,
       "neuron": 1606,
       "mode": "mul",
-      "factor": 1.4283787310123444
+      "factor": 1.4409300684928894
     },
     {
       "layer": 23,
       "neuron": 7967,
       "mode": "mul",
-      "factor": 0.760133907198906
+      "factor": 0.7233222424983978
     },
     {
       "layer": 12,
       "neuron": 334,
       "mode": "mul",
-      "factor": 0.5500859022140503
+      "factor": 0.4159049987792969
     },
     {
       "layer": 11,
       "neuron": 1291,
       "mode": "mul",
-      "factor": 1.3239643573760986
+      "factor": 1.3544814586639404
     },
     {
       "layer": 30,
       "neuron": 8005,
       "mode": "mul",
-      "factor": 1.4657780826091766
+      "factor": 1.6306629180908203
     },
     {
       "layer": 31,
       "neuron": 1772,
       "mode": "mul",
-      "factor": 1.4678670167922974
+      "factor": 1.6267805695533752
     },
     {
       "layer": 31,
       "neuron": 5051,
       "mode": "mul",
-      "factor": 1.4124289751052856
+      "factor": 1.6213665008544922
     },
     {
       "layer": 11,
       "neuron": 49,
       "mode": "mul",
-      "factor": 0.6769553124904633
+      "factor": 0.8678788989782333
     },
     {
       "layer": 17,
       "neuron": 1490,
       "mode": "mul",
-      "factor": 0.5901823043823242
+      "factor": 0.6640550494194031
     },
     {
       "layer": 15,
       "neuron": 1298,
       "mode": "mul",
-      "factor": 0.6485249400138855
+      "factor": 0.7462936341762543
     },
     {
       "layer": 31,
       "neuron": 84,
       "mode": "mul",
-      "factor": 0.49237489700317383
+      "factor": 0.303058922290802
     },
     {
       "layer": 31,
       "neuron": 76,
       "mode": "mul",
-      "factor": 1.3580479621887207
+      "factor": 1.4047538042068481
     },
     {
       "layer": 31,
       "neuron": 1820,
       "mode": "mul",
-      "factor": 1.435953676700592
+      "factor": 1.4655006229877472
     },
     {
       "layer": 11,
       "neuron": 1020,
       "mode": "mul",
-      "factor": 1.2849324941635132
+      "factor": 1.2727178633213043
     },
     {
       "layer": 12,
       "neuron": 436,
       "mode": "mul",
-      "factor": 0.6852078437805176
+      "factor": 0.5911467969417572
     },
     {
       "layer": 13,
       "neuron": 6540,
       "mode": "mul",
-      "factor": 1.3679893910884857
+      "factor": 1.2411283552646637
     },
     {
       "layer": 13,
       "neuron": 4810,
       "mode": "mul",
-      "factor": 0.6721900701522827
+      "factor": 0.635821670293808
     },
     {
       "layer": 31,
       "neuron": 8887,
       "mode": "mul",
-      "factor": 0.5935822129249573
+      "factor": 0.5438035130500793
     },
     {
       "layer": 15,
       "neuron": 1985,
       "mode": "mul",
-      "factor": 1.4183986186981201
+      "factor": 1.2334570437669754
     },
     {
       "layer": 12,
       "neuron": 1271,
       "mode": "mul",
-      "factor": 0.6268329322338104
+      "factor": 0.928926132619381
     },
     {
       "layer": 18,
       "neuron": 1507,
       "mode": "mul",
-      "factor": 1.441777229309082
+      "factor": 1.2483657002449036
     },
     {
       "layer": 14,
       "neuron": 16,
       "mode": "mul",
-      "factor": 1.3868022859096527
+      "factor": 1.7414989471435547
     },
     {
       "layer": 26,
       "neuron": 3,
       "mode": "mul",
-      "factor": 1.3806110620498657
+      "factor": 0.8377588540315628
     },
     {
       "layer": 29,
       "neuron": 2,
       "mode": "mul",
-      "factor": 1.3754535913467407
+      "factor": 1.004733435343951
     }
   ]
 }

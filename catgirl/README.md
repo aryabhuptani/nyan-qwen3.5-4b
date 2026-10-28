@@ -20,7 +20,12 @@ instead specifies `amount = dose * median_residual_norm / norm(down_column)`.
 Calibration data and reference text are saved in `results/calibration.json`.
 Unlike upstream's calibration, this reference currently includes special and
 initial tokens; use these recorded norms when reproducing the doses.
-Interventions remain active during both prefill and every decoding step.
+All-token interventions remain active during prefill and every decoding step.
+Early-token schedules instead act at the last prompt position and an explicit
+number of decoding positions, with a recorded optional weaker tail.
+Multiplicative recipes use `mode: "mul", factor: value` to scale the selected
+existing activations before applying additive offsets. These preserve context
+dependence; factor 1 leaves the selected neuron unchanged and factor 0 ablates it.
 Model weights remain unchanged. No persona system prompt is used in candidate
 generation; discovery captures can use persona prompts to locate candidates.
 
@@ -28,6 +33,12 @@ generation; discovery captures can use persona prompts to locate candidates.
 separate frozen battery reserved for finalists, including 2K/8K context,
 long-output, multiturn, formatting, task-quality, and random-control checks.
 Discovery outputs are not evidence of held-out generalization.
+
+Search strategies include cached next-token candidates, paired activation
+contrasts, sparse reconstruction of paired persona residual directions, and
+gradient optimization of sparse activation offsets or multipliers. The last
+method optimizes intervention parameters; it does not update the model weights.
+`final_evaluation.py` runs the frozen battery only for selected finalists.
 
 Completed jobs become `.done`; interrupted jobs can be renamed from `.running`
 to `.json` after verifying the previous process has stopped. Generation resumes

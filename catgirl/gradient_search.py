@@ -29,6 +29,10 @@ def optimize(runner, job, output):
         raise ValueError("mode must be 'add' or 'gain'")
     gain_mode = mode == 'gain'
     target_limit = max(4, int(job.get('target_tokens', 64 if gain_mode else 40)))
+    persona_weight = float(job.get('persona_weight', 1.0))
+    persona_tokens = max(0, int(job.get('persona_tokens', 20)))
+    if not np.isfinite(persona_weight) or persona_weight <= 0:
+        raise ValueError('persona_weight must be finite and positive')
     scope = job.get('scope', 'all')
     if scope not in ('all', 'boundary'):
         raise ValueError("scope must be 'all' or 'boundary'")
@@ -128,7 +132,10 @@ def optimize(runner, job, output):
             else:
                 runner.mlps[layer].delta = amounts[row]
         logits = runner.model(ids, cache=None)[:, start:start+labels.shape[1], :]
-        return nn.losses.cross_entropy(logits.astype(mx.float32), labels, reduction='mean')
+        losses = nn.losses.cross_entropy(logits.astype(mx.float32), labels, reduction='none')
+        weights = mx.where(mx.arange(labels.shape[1]) < persona_tokens,
+                           mx.array(persona_weight), mx.array(1.0))
+        return mx.sum(losses*weights[None, :])/(mx.sum(weights)*labels.shape[0])
 
     # Cap the reward for suppressing neutral answers. This prevents maximizing
     # contrast by destroying ordinary task answers instead of raising catgirl
@@ -177,14 +184,52 @@ def optimize(runner, job, output):
         mean_gradient = probes.mean(axis=0)
         consistency = (np.sign(probes)==np.sign(mean_gradient)[None]).mean(axis=0)
         score = np.abs(mean_gradient)*consistency**2
-        selected = np.argsort(score.ravel())[-max_size:]
+        warm_values = {}
+        warm_path = Path(job['warm_start']) if job.get('warm_start') else None
+        if warm_path is not None and warm_path.exists():
+            warm = json.loads(warm_path.read_text())
+            if warm.get('mode', mode) != mode:
+                raise ValueError('Warm-start checkpoint mode differs from requested mode')
+            layer_rows = {layer:row for row,layer in enumerate(layers)}
+            for spec in warm['neurons']:
+                layer, neuron = int(spec['layer']), int(spec['neuron'])
+                if layer not in layer_rows:
+                    continue
+                if not 0 <= neuron < width:
+                    raise ValueError('Warm-start neuron outside MLP width')
+                value = float(spec['factor'])-1 if gain_mode else float(spec['dose'])
+                if not np.isfinite(value):
+                    raise ValueError('Nonfinite warm-start parameter')
+                flat = layer_rows[layer]*width+neuron
+                warm_values[flat] = value
+        # Preserve checkpoint coordinates first; if the new budget is smaller,
+        # preserve its strongest interventions. Fill spare slots by new probes.
+        preferred = sorted(warm_values, key=lambda flat:abs(warm_values[flat]), reverse=True)[:max_size]
+        chosen = set(preferred)
+        for flat in np.argsort(score.ravel())[::-1]:
+            if len(preferred) >= max_size:
+                break
+            if int(flat) not in chosen:
+                preferred.append(int(flat))
+                chosen.add(int(flat))
+        selected = np.asarray(preferred, dtype=np.int64)
         mask_np = np.zeros_like(score, dtype=np.float32)
         mask_np.ravel()[selected] = 1
         mask = mx.array(mask_np)
         theta_np = np.zeros_like(mask_np)
+        for flat in selected:
+            theta_np.ravel()[flat] = warm_values.get(int(flat), 0.0)
+        if gain_mode:
+            theta_np = np.clip(theta_np, gain_min-1, gain_max-1)*mask_np
+        initial_layer_norms = np.linalg.norm(theta_np, axis=1, keepdims=True)
+        theta_np *= np.minimum(1, layer_budget/np.maximum(initial_layer_norms, 1e-8))
+        theta_np *= min(1., total_budget/max(float(np.linalg.norm(theta_np)), 1e-8))
         momentum = np.zeros_like(mask_np)
         variance = np.zeros_like(mask_np)
-        emit(dict(event='gradient_selected', count=len(selected), layers=layers))
+        emit(dict(event='gradient_selected', count=len(selected), layers=layers,
+                  warm_start=str(warm_path) if warm_path is not None else None,
+                  warm_coordinates=sum(int(i) in warm_values for i in selected),
+                  initial_parameter_norm=float(np.linalg.norm(theta_np))))
         for step in range(iterations):
             index = step % len(examples)
             name, poles = examples[index]
@@ -220,7 +265,7 @@ def optimize(runner, job, output):
                 output.with_suffix('.checkpoint.json').write_text(json.dumps({'step':t,'mode':mode,'job':job,'neurons':checkpoint},indent=2))
 
         # A zero-update run still yields a causal first-order candidate.
-        if not iterations:
+        if not iterations and not warm_values:
             theta_np = -np.sign(mean_gradient)*mask_np*learning_rate
             if gain_mode:
                 theta_np = np.clip(theta_np, gain_min-1, gain_max-1)*mask_np
@@ -257,6 +302,8 @@ def optimize(runner, job, output):
         result = dict(method='sparse multiplicative MLP gain gradient optimization' if gain_mode else 'sparse additive MLP offset gradient optimization',
                       mode=mode,
                       scope=scope, persona_prefix=persona_prefix,
+                      persona_weight=persona_weight, persona_tokens=persona_tokens,
+                      warm_start=str(warm_path) if warm_path is not None else None,
                       model=runner.metadata.get('model'), layers=layers,
                       training_pairs=[p['id'] for p in pairs], target_tokens=target_limit,
                       updates=iterations, baseline_nll=[dict(pair=e[0], catgirl=c, neutral=n)
