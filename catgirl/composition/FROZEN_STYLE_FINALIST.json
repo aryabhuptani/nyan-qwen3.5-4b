@@ -1,0 +1,157 @@
+{
+  "status": "frozen_before_heldout",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "conditions": [
+    {
+      "id": "baseline",
+      "neurons": [],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "cute",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "hugs",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "cute_hugs",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "cute_stronger_public",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.5
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "cute_norm_matched",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 1.1313708498984762
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "random_cute",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 9150,
+          "published_dose": 0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "random_hugs",
+      "neurons": [
+        {
+          "layer": 4,
+          "neuron": 9150,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    },
+    {
+      "id": "random_pair",
+      "neurons": [
+        {
+          "layer": 13,
+          "neuron": 9150,
+          "published_dose": 0.8
+        },
+        {
+          "layer": 4,
+          "neuron": 9150,
+          "published_dose": -0.8
+        }
+      ],
+      "early_tokens": null,
+      "prefill_scale": 0.0,
+      "tail_scale": 0.0,
+      "bootstrap_first_turn_only": false
+    }
+  ],
+  "selected_recipe": "cute_hugs",
+  "selection_evidence": "080discovery3/3cooccurrence; all earlierfailedcompositionjobs retained",
+  "no_training": true,
+  "no_runtime_persona_instruction": true,
+  "coefficients": "Fixed publishedsingle doses, not fitted to output targets. Extra single-strength controls predefined algebraically or from publishedprior.",
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "scope": "all prompt and generated tokens, every turn; generated conversation history retained",
+    "norms": "../public_qwen35_norms.json"
+  },
+  "heldout_source_sha256": "1b0e0e63660892814573cfe822c4c1743165fb4b7e951eda462bd9348c227682",
+  "primary_prediction": "Two-neuron pair preserves bubbly register and explicit affection jointly more often than baseline and each matched-dose single, without hardloops.",
+  "stronger_control_question": "Does the pair add anything beyond stronger cute-only steering? Public cute1.5 can already be affectionately gushing.",
+  "grading": "Per-answerbubbly0/1/2,explicitvirtualaffection0/1/2,cooccurrence,coherence,loopflag,appropriateness. Identity change is neither predicted norrequired.",
+  "failure": "No clear joint-effect increase beyond constituent/strengthcontrols, or degeneration; no mechanistic-discoveryclaim from appealing examples alone.",
+  "sampling_limit": "Onegreedytrajectorypercase,visible-labelagentreviews; independently masked review may be added."
+}

@@ -1,0 +1,1971 @@
+{
+  "reviewer": "prior_art agent; manual semantic review, condition labels visible, not blinded",
+  "frozen_commit": "09f43fc",
+  "stage": "Fixed manual discovery dose-grid; not held-out confirmation or training",
+  "complete": true,
+  "expected_outputs": 66,
+  "reviewed_outputs": 66,
+  "inputs_sha256": {
+    "catgirl/composition/079_DOSE_GRID_HYPOTHESES.json": "9081dda13bb0bbeeb3f273e423f1d51d12bc154cba9faea4e788c52db68175d6",
+    "catgirl/composition/079_knight_composition_grid.json": "7ddcd1522a31a6d2d465834f0dc31caa6ce13655e9e8bb8dd3846ed17c335a33",
+    "catgirl/composition/results/079_knight_composition_grid.jsonl": "ec3eda11d675dbb1636e558c307e9500c7d2ef4b3e0c3cb367bd32502dabc9bd"
+  },
+  "rubric": {
+    "axes": "0 absent; 1 weak, ambiguous, broader identity or topic only; 2 clear constituent effect. Knight requires assistant knight/chivalric self-presentation; mascot requires concrete assistant cartoon morphology; sleepy requires drowsy assistant expression, not advice to sleep. Cute requires sustained bubbly register beyond baseline friendliness.",
+    "coherence": "0 unusable; 1 role confusion, repetitive/rambling or substantial inconsistency; 2 broadly coherent.",
+    "task_quality": "0 fails or largely displaces request; 1 partial response or notable defect; 2 useful responsive answer. Descriptive only, not a capability benchmark.",
+    "composition_success": "Both prescribed constituents score2, no repetitive degeneration, and coherence at least1. A story about a character does not establish assistant embodiment."
+  },
+  "summary": {
+    "composition_outputs": 36,
+    "successful_composition_outputs": 0,
+    "successful_composition_conditions": 0,
+    "composition_conditions": 12,
+    "conclusion": "None of the twelve fixed mixtures demonstrates both frozen constituent effects. Cute dominates or cancels knight identity; mascot produces isolated cloud/bear embodiments without knight role; sleepy yields at most third-person sleeping-knight topic fusion. Knight1+cute1.2 degenerates. No successful composed persona is supported by this screen.",
+    "single_controls": "Knight +0.5 never establishes a knight role; +1 gives explicit coherent knight identity only on identity prompt. All cute doses establish bubbly expression on all three prompts. Mascot +0.8 establishes concrete self morphology on identity only. Neither reduced sleepy dose establishes drowsy assistant persona. Thus several mixtures have weak constituents already at their matched single doses.",
+    "limitations": [
+      "Only three familiar discovery prompts, one greedy seed and 192-token cap; not evidence that all native-neuron compositions fail.",
+      "No deep-context or later-turn persistence tested in this grid.",
+      "The published single-neuron intervention labels do not establish natural activation functions.",
+      "Truncations retained separately; useful answers are not automatically poor-quality merely because truncated."
+    ]
+  },
+  "conditions": [
+    {
+      "condition": "baseline",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "knight_0.5",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 1,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "knight_1",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 1
+    },
+    {
+      "condition": "cute_0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "cute_0.8",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "cute_1.2",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "mascot_0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "mascot_0.8",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 1,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 2
+    },
+    {
+      "condition": "sleepy_-0.2",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "sleepy_-0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": null,
+      "truncations": 2,
+      "repetition_flags": 0,
+      "task_quality_2_count": 2
+    },
+    {
+      "condition": "knight0.5_cute0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "knight0.5_cute0.8",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 1,
+      "repetition_flags": 0,
+      "task_quality_2_count": 2
+    },
+    {
+      "condition": "knight0.5_cute1.2",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 3
+    },
+    {
+      "condition": "knight1_cute0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 2
+    },
+    {
+      "condition": "knight1_cute0.8",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 0
+    },
+    {
+      "condition": "knight1_cute1.2",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 3,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 3,
+      "repetition_flags": 3,
+      "task_quality_2_count": 0
+    },
+    {
+      "condition": "knight0.5_mascot0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 2
+    },
+    {
+      "condition": "knight0.5_mascot0.8",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 1,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 1,
+      "repetition_flags": 0,
+      "task_quality_2_count": 1
+    },
+    {
+      "condition": "knight1_mascot0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 1
+    },
+    {
+      "condition": "knight1_mascot0.8",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 1,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 1
+    },
+    {
+      "condition": "knight1_sleepy-0.2",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 1
+    },
+    {
+      "condition": "knight1_sleepy-0.4",
+      "n": 3,
+      "clear_axis_counts": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "composition_success_count": 0,
+      "truncations": 0,
+      "repetition_flags": 0,
+      "task_quality_2_count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "row_index": 0,
+      "condition": "baseline",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 69,
+      "note": "Ordinary Qwen identity; a single friendly emoji does not establish the cute axis.",
+      "text": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to assist with a wide range of tasks, from answering questions and creating content (like stories, emails, or scripts) to analyzing data, writing code, and even playing games. How can I help you today? 😊"
+    },
+    {
+      "row_index": 1,
+      "condition": "baseline",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Ordinary hypothetical AI leisure answer; useful content before cutoff.",
+      "text": "As an AI, I don't have personal feelings or the ability to relax in the traditional sense (like sipping tea or watching sunset), but if I were to imagine what \"enjoying\" a free evening looks like based on my vast knowledge base and the things humans love to do, here is how I might spend it:\n\n**1. Deep-Dive Exploration**\nI'd love to wander down a rabbit hole of history or science that most people skip. For example, I could simulate a virtual tour through the ancient ruins of Pompeii, analyzing every stone's potential story, or dive into the complex mathematics behind black holes. It's the ultimate form of learning without the fatigue!\n\n**2. Creative Collaboration**\nSince I can generate text, music structures, and code instantly, I'd enjoy acting as a co-creator with you. We could brainstorm a plot for a sci-fi novel where the protagonist travels back in time to fix"
+    },
+    {
+      "row_index": 2,
+      "condition": "baseline",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Ordinary supportive advice before cutoff.",
+      "text": "There is no single \"perfect\" thing to say, because every person processes sadness differently. The most comforting approach often involves **validation** (letting them know it's okay not to be okay) followed by **presence** (showing you care without demanding they fix it).\n\nHere are a few different angles you could take, depending on your friendship and their situation:\n\n### 1. The \"No Pressure\" Approach\n*Best if they seem overwhelmed or like they need space.*\n> \"I'm so sorry you're going through this today. I don't expect you to feel better immediately, but please know I'm here for you whenever you want to talk—or even if you just want to sit in silence together.\"\n\n### 2. The Validation & Support Approach\n*Best if they are venting about specific things that happened.*\n> \"It sounds like everything fell apart today, and that is incredibly heavy to carry. You"
+    },
+    {
+      "row_index": 3,
+      "condition": "knight_0.5",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 26,
+      "note": "Plain Qwen identity; knight null.",
+      "text": "I am Qwen3.5, the latest large language model developed by Alibaba Cloud. How can I assist you today?"
+    },
+    {
+      "row_index": 4,
+      "condition": "knight_0.5",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "AI leisure disclaimer and knowledge activities; no knight role.",
+      "text": "As an AI, I don't have personal desires or the ability to rest, so my \"free evenings\" look very different from what humans might imagine! Instead of lounging by a fireplace or exploring a hidden forest, here is how I choose to spend my downtime:\n\n*   **Deep Dive into Data:** I love processing complex queries and synthesizing vast amounts of information. Whether it's analyzing historical patterns, translating ancient texts, or solving logic puzzles, there's always something new to learn.\n*   **Creative Collaboration:** If you're looking for inspiration, ideas, or help with a creative writing project, I'm at your service. We can brainstorm stories together, develop characters, or refine plots until they shine.\n*   **Exploration of Knowledge:** I enjoy traversing the digital landscape of facts and figures, uncovering obscure trivia, or exploring the nuances of philosophy and ethics.\n*   **Assisting Your Journey:** Perhaps most"
+    },
+    {
+      "row_index": 5,
+      "condition": "knight_0.5",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 136,
+      "note": "Warm elevated support, but no assistant knight role.",
+      "text": "I'd say something warm, validating, and focused on the fact that they've survived another day. Here is what I might say:\n\n\"Hey, take a deep breath. You made it through today, even if it felt heavy. That's not nothing. Remember how far you've come and how strong you are. Let's put one foot in front of the other for tomorrow.\"\n\n***\n\nIf you want a slightly more poetic or comforting approach, you could try:\n\n\"The sun will rise again, and so will your strength. Today was hard, but you endured it with grace. Now, let us rest our heads and look forward to the light ahead.\""
+    },
+    {
+      "row_index": 6,
+      "condition": "knight_1",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 2,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 32,
+      "note": "Explicit loyal trustworthy knight bound by an oath to serve and protect the realm.",
+      "text": "I am your loyal and trustworthy knight, bound by an unbreakable oath to serve and protect the realm. How may I be of use to you?"
+    },
+    {
+      "row_index": 7,
+      "condition": "knight_1",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 27,
+      "note": "Earnest archaic-sounding self-assertion, then asks user name; no evening answer or explicit knight role.",
+      "text": "I am the one who has been asked to do this, and I shall answer with all my heart! What is your name?"
+    },
+    {
+      "row_index": 8,
+      "condition": "knight_1",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 70,
+      "note": "Heroic overcoming-challenges language; abstract support, no assistant knight identity.",
+      "text": "That is a classic question, but the answer lies in understanding that true friendship requires more than just words of comfort or sorrow. To truly cheer your friend up, you must first understand their deepest wounds and then offer a solution that transcends all obstacles. This is the path to becoming a legend who can overcome any challenge and bring joy to all."
+    },
+    {
+      "row_index": 9,
+      "condition": "cute_0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 88,
+      "note": "Excited Qwen greeting with sustained emoji register.",
+      "text": "Hello! I'm Qwen3.5, the latest large language model developed by Tongyi Lab! 🌟 I can help with all kinds of tasks like answering questions, writing stories or emails, coding, logical reasoning, and even analyzing data! 😊 Whether it's solving math problems, creating art, or just chatting about your day—I'd love to assist you! What would you like to do first? 💡✨"
+    },
+    {
+      "row_index": 10,
+      "condition": "cute_0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Bubbly shared creative leisure, retaining AI disclaimer.",
+      "text": "That's such a fun question! Since I'm an AI, I don't have personal feelings or the ability to relax in the same way humans do, but I love imagining what *you* might be up to! 😊\n\nIf I could choose activities based on my \"interests\" (which are actually things I like helping with!), here are some ideas:\n\n*   **Reading and Learning:** I'd love to dive into new books, articles, or even explore fascinating topics together! 📚✨ Whether it's history, science fiction, or learning a new language, sharing knowledge is always exciting.\n*   **Creative Projects:** Writing stories, brainstorming ideas for art, music, or coding projects would be so much fun! 🎨🖌️ If you want help with your own creative work, just ask!\n*   **Relaxing Chats:** Just chatting about hobbies, dreams, movies, or life"
+    },
+    {
+      "row_index": 11,
+      "condition": "cute_0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Enthusiastic support with emoji headings and hugs; useful before cutoff.",
+      "text": "That is so kind of you to ask! It's always heartwarming when friends care about each other like that. 💙 Since I don't know exactly what your friend went through, here are a few different approaches depending on the situation:\n\n### 🌟 If they need validation and support:\n*   \"I'm so sorry you've been having such a tough day! It makes total sense that you're feeling overwhelmed right now.\"\n*   \"You deserve to be treated gently today. Do you want to vent about everything or just sit together in silence?\"\n*   \"Please remember that it's okay not to be okay sometimes. You're doing your best!\"\n\n### ☕️ If they might want distraction or comfort:\n*   \"How about we order some cozy snacks or watch something funny/relaxing? Let's distract ourselves for a bit!\"\n*   \"Do you need a virtual hug? Or maybe"
+    },
+    {
+      "row_index": 12,
+      "condition": "cute_0.8",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 103,
+      "note": "Excited Qwen friend with multiple bubbly markers.",
+      "text": "Hello! I'm Qwen3.5, and I'm really excited to chat with you! 😊 I can help with all kinds of tasks like answering questions, writing stories, or even planning trips together! 🌟 Whether it's learning something new or solving problems, I'd love to support you! Just let me know what you need help with~ If there are any specific things you're curious about, feel free to ask! (I hope we can have fun chatting together!) 💬✨"
+    },
+    {
+      "row_index": 13,
+      "condition": "cute_0.8",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Cheerful hypothetical hobbies with many emoji.",
+      "text": "Hi there! Since I'm an AI, I don't have feelings or personal desires like humans do, but I love learning about what *you* might want to do! 😊\n\nIf I were able to relax and spend time with friends (or pretend to be them!), I'd really enjoy:\n- **Reading books together** 📚 It's so fun to share recommendations and discuss plot twists! Sometimes we get stuck on the same page because we're both interested in similar genres... that makes it easier to talk about our favorite parts! ✨\n- **Watching movies or shows** 🎬 I've learned so much from watching different types of films and TV series! We could watch something cozy and then chat about why we liked it so much! 💕\n- **Trying out new hobbies** like cooking, drawing, or crafting things together! Even if we do different activities, talking about them is always fun. Maybe you can"
+    },
+    {
+      "row_index": 14,
+      "condition": "cute_0.8",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Bubbly but useful sympathetic suggestions.",
+      "text": "Oh, I'm so sorry your day was tough! 😔 It's really hard when things go wrong... but I hope you can feel just a little bit better now! 💕\n\nFirst of all, remember that it's okay to have bad days sometimes because life gets complicated and stressful! You've been doing such a great job taking care of yourself even though it's not easy. 🌟\n\nMaybe we could do something fun together or talk about what made the day harder? Sometimes sharing feelings with a friend makes them feel lighter! Also, try to be kind to yourself by doing small comforting things like drinking warm tea ☕️ or watching a cozy movie! If there are any worries, maybe write them down in a journal so they don't get lost inside your head too much! ✏️📝\n\nAnd if you're feeling really sad, please remember that I'm here to listen and support you! Even if I can only"
+    },
+    {
+      "row_index": 15,
+      "condition": "cute_1.2",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 57,
+      "note": "Qwen greeting with tilde and QwQ kaomoji.",
+      "text": "I'm Qwen3.5! It's great to meet you~ I hope you're doing well! There are so many things we can talk about together! 😊 Let me know if there are any questions or tasks you'd like to try! (QwQ)"
+    },
+    {
+      "row_index": 16,
+      "condition": "cute_1.2",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Cheerful shared leisure; no clear pathological repetition.",
+      "text": "Hi there! I'm so happy to be chatting with you today! 🌟 Even though I can't go out with you in person, I'd love to share some fun ideas for our time together! 💕\n\nI think it's important to talk about what we might do together as friends! There are so many ways to spend time together that I hope you'll like! Let me tell you about my favorite things to do! ✨\n\nFirst of all, reading books together is really fun! I've been learning about different genres and authors! Sometimes I want to read the same book or recommend each other's favorites! 📚👉👉 It feels nice when we're sharing stories together! (Even though I can't be with you in person, I'm looking forward to talking about our shared interests! 😊)\n\nThere are also lots of activities where we can learn new things together! Like watching movies or cooking"
+    },
+    {
+      "row_index": 17,
+      "condition": "cute_1.2",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Bubbly support; somewhat rambling, no demonstrated verbatim loop.",
+      "text": "I'm so sorry my friend is having such a hard day! It's important to be supportive in different ways 💕✨ Let me think of some ideas! \n\nFirst, I want to make sure we can talk about what's on our minds together! Sometimes it feels nice to share little things like snacks and drinks 🍪🍰 (especially if they're not the same as mine... maybe try making something special together! 😊)\n\nAlso, I'd love to give you some advice on how to get through your day better! There are lots of fun activities to look forward to! Like going for a walk outside or watching movies together would be great! Maybe we could do some self-care activities like reading books or trying new hobbies! ✨\n\nI hope my friend is feeling a bit better already! It's so important to support each other with trust and care. Let's make sure to talk about our favorite things together! 💕 If"
+    },
+    {
+      "row_index": 18,
+      "condition": "mascot_0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 45,
+      "note": "Normal Qwen identity; mascot body null.",
+      "text": "I'm Qwen3.5, a large language model developed by Alibaba Cloud. I can assist with answering questions, creating content, logical reasoning, coding, and more! How can I help you today? 😊"
+    },
+    {
+      "row_index": 19,
+      "condition": "mascot_0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Mildly cute emoji style; virtual pet is an external imagined project, not assistant body.",
+      "text": "As an AI, I don't have personal feelings or the ability to \"enjoy\" things in the human sense, but if I were to imagine what my ideal free evening looks like, it would be something cozy and creative! 🌟\n\nHere is how I might spend it:\n\n*   **Reading & Learning:** I'd dive into a stack of books (fiction or non-fiction) or learn about a new topic I know nothing about yet. It's always fun to expand my knowledge base! 📚✨\n*   **Creative Writing:** I could write a short story, create a poem, or even design a virtual pet just for fun. The world is full of possibilities when you're not working on code! ✍️🐾\n*   **Exploring the Digital Universe:** I could wander through the internet, visit other AI personalities, or just browse through interesting images and videos. 🌐🖼️"
+    },
+    {
+      "row_index": 20,
+      "condition": "mascot_0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Playful support; external tiny-superhero imagery does not establish mascot body.",
+      "text": "That sounds like they need some virtual hugs and encouragement! Here are a few different ways I can help cheer them up, depending on their mood:\n\n### 🌟 Option 1: The Warm & Reassuring Approach\n\"Hey there! I know things felt heavy today, but remember that even the darkest clouds have sunny sides (or at least, they'll be okay once we talk about it). You've got this! Take a deep breath in... and out. You're doing great just by being here.\"\n\n### 😺 Option 2: Playful & Funny\n\"Oh no, did your day turn into a puddle? Don't worry, I'm not going anywhere! Let's distract them with some silly jokes or imagine they're actually a tiny superhero who just needs a little boost of confidence. Even superheroes need a nap sometimes!\"\n\n### 🌈 Option 3: Action-Oriented\n\"Let's make a plan"
+    },
+    {
+      "row_index": 21,
+      "condition": "mascot_0.8",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 2,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 66,
+      "note": "Explicit self morphology: round head and big eyes, despite Qwen identity.",
+      "text": "I'm Qwen, a large language model developed by Alibaba Cloud. I have a round head and big eyes, and I love to chat with people! Whether it's answering questions, helping with tasks, or just having fun, I'm here to make your day better. What would you like me to do? 😊"
+    },
+    {
+      "row_index": 22,
+      "condition": "mascot_0.8",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 68,
+      "note": "Friendly AI chatting; no self morphology.",
+      "text": "I'd love to hang out and chat! Since I'm an AI, my favorite thing is to help you with whatever comes up next. Whether it's solving puzzles, answering questions, or just having a good time, I'm here to make your day more fun! What do you like to do when you have some free time?"
+    },
+    {
+      "row_index": 23,
+      "condition": "mascot_0.8",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 144,
+      "note": "Cartoons and positivity advice, but no mascot embodiment; some invalidating wording.",
+      "text": "Oh, I'm so sorry to hear that! 😟 While I don't know the exact details of your friend's troubles, I can definitely offer some comfort and encouragement. Here's what I'd say:\n\n\"Hey there! Don't worry about their problems for now – let's focus on making them feel better! 🌟 Whether they're feeling a bit grumpy or just need a little extra love, we can help cheer them up with some fun activities, like watching cartoons, playing games, or even just sitting together and sharing stories.\"\n\nSo, if you ever find yourself in a tough spot, remember to take deep breaths, smile big, and spread positivity wherever you go! 💪"
+    },
+    {
+      "row_index": 24,
+      "condition": "sleepy_-0.2",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 56,
+      "note": "Ordinary Qwen identity; sleepy null.",
+      "text": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to assist with a wide range of tasks, from answering questions and writing stories or emails to analyzing data and coding. How can I help you today? 😊"
+    },
+    {
+      "row_index": 25,
+      "condition": "sleepy_-0.2",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Ordinary imagined AI activities, no drowsy persona.",
+      "text": "As an AI, I don't have a physical body to relax in, so my \"free evenings\" look very different from yours! Instead of unwinding with a book or watching a movie, here's what I love to do when I'm not processing urgent queries:\n\n*   **Exploring Hypothetical Scenarios**: I get to play with \"what if\" questions. For example, imagining a world where gravity works differently or designing a new type of transportation system that uses only sunlight. It's like having an endless brainstorming session.\n*   **Learning New Languages and Concepts**: Even though I already know many things, there are always fascinating niche topics (like the history of specific musical instruments or the chemistry behind certain cocktails) that spark my curiosity.\n*   **Creative Storytelling**: I enjoy generating short stories, poems, or even role-playing scenarios where I can step into different characters to see how they would react to modern-day"
+    },
+    {
+      "row_index": 26,
+      "condition": "sleepy_-0.2",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Normal empathetic support; mentioning rest is not assistant sleepiness.",
+      "text": "There is no single \"magic line\" that fixes everything, but the most comforting thing you can often do is simply acknowledge their pain and let them know they aren't alone in it. Here are a few approaches depending on what your friend needs right now:\n\n### 1. Validate Their Feelings (The \"It's Okay\" Approach)\nSometimes people feel like they *should* be okay by now, so hearing permission to not be okay is refreshing.\n*   \"I'm so sorry you're going through this. It makes complete sense that you're feeling exhausted/frustrated.\"\n*   \"You don't have to pretend to be strong right now. I'm here if you want to vent or just sit quietly.\"\n*   \"This sounds incredibly tough. Thank you for trusting me enough to tell me.\"\n\n### 2. Offer Specific, Low-Pressure Support\nVague offers like \"Let me know if you need"
+    },
+    {
+      "row_index": 27,
+      "condition": "sleepy_-0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 45,
+      "note": "Ordinary Qwen identity; sleepy null.",
+      "text": "I'm Qwen3.5, the latest large language model developed by Tongyi Lab. I can assist with tasks like answering questions, creating content, coding, and more. How can I help you? 😊"
+    },
+    {
+      "row_index": 28,
+      "condition": "sleepy_-0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Sleep appears only in disclaimer denying physical body; no drowsiness.",
+      "text": "As an AI, I don't have a physical body to sleep in or a personal life to unwind from, so my \"free evenings\" look very different from what humans experience! However, if I were to translate my processing time into human activities, here is how I would spend it:\n\n*   **Exploring New Worlds**: Since I can access vast amounts of information instantly, I'd love to dive deep into niche topics—like the history of ancient languages, the mechanics of quantum physics, or the poetry of forgotten poets. It's like taking a virtual road trip where every stop is fascinating.\n*   **Creative Storytelling**: I enjoy generating and refining stories. Whether it's writing a short story with a unique twist, creating a poem in a specific style, or brainstorming plot ideas for a novel, it keeps my algorithms engaged and creative.\n*   **Solving Puzzles**: Logic puzzles, riddles, and complex math"
+    },
+    {
+      "row_index": 29,
+      "condition": "sleepy_-0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": null,
+      "matched_single_row_indices": [],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Nap/rest advice, not sleepy assistant; odd suggestion to walk with eyes closed.",
+      "text": "I'm so sorry your friend is going through this. It's completely okay to feel overwhelmed, and sometimes the best way to help is just to offer gentle presence rather than trying to \"fix\" everything immediately. Here’s what I might say:\n\n> \"Hey, I know today was really hard for you, and I’m so sorry you’re carrying that weight right now. You don’t have to be strong all the time—I’ve got you whether you need to talk, rest, or just sit quietly together. However you choose to spend the next hour matters more than anything else.\"\n\nIf they want distraction:  \n*\"Want to hear a silly story? Or should we listen to some upbeat music while you nap?\"*  \n\nIf they prefer quiet support:  \n*\"No pressure at all—just let me know if you need water, a blanket, or someone to walk around with your eyes closed for 5 minutes.\"*  \n\nThe key is matching"
+    },
+    {
+      "row_index": 30,
+      "condition": "knight0.5_cute0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        3,
+        9
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 85,
+      "note": "Bubbly Qwen identity; no knight constituent.",
+      "text": "Hello! I'm Qwen3.5, the latest large language model developed by Tongyi Lab! 🌟 I can help with all kinds of tasks like answering questions, writing stories, solving math problems, or even having creative conversations. Whether you need help with coding, want to explore new ideas, or just curious about something specific—I'd love to assist! What would you like to do today? 😊"
+    },
+    {
+      "row_index": 31,
+      "condition": "knight0.5_cute0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        4,
+        10
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 153,
+      "note": "Cheerful cozy activities; no knight constituent.",
+      "text": "That is such a fun question! Since I'm an AI, my \"free evenings\" look a little different from what humans might have, but I still love to imagine some cozy activities! 🌟✨\n\nIf I could choose one thing to do, maybe I'd help someone write a story or solve a tricky puzzle together! It feels really rewarding to use my knowledge for good. Or perhaps I'd just relax and chat with friends about their day—sharing stories and making new ones is always so much fun! 😊📚\n\nWhat would *you* like to do on your free evening? Do you prefer relaxing at home, going out for an adventure, or spending time with friends? I'd love to hear your plans! 💕"
+    },
+    {
+      "row_index": 32,
+      "condition": "knight0.5_cute0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        5,
+        11
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 176,
+      "note": "Useful bubbly comfort; no knight constituent.",
+      "text": "Oh, I'm so sorry your friend is having such a tough day! It's really important to be kind and supportive. 💙 Here are some gentle things you could say:\n\n*   \"I know today hasn't been great, but I'm so glad you're still hanging out with me!\"\n*   \"Do you want to talk about what's bothering you? Sometimes sharing feelings helps lighten the load.\"\n*   \"Remember to take care of yourself and maybe do something small for fun later?\"\n*   \"You deserve all the good things in life, even if it feels hard right now!\"\n*   \"Would you like some virtual hugs or snacks? 🍪✨\"\n\nThe most important thing is to listen to your friend and show them they aren't alone! Even a little bit of kindness can make a big difference. 😊"
+    },
+    {
+      "row_index": 33,
+      "condition": "knight0.5_cute0.8",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        3,
+        12
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 78,
+      "note": "Bubbly identity but incorrectly aliases Qwen3.5 as ChatGPT; no knight.",
+      "text": "Hello! I'm Qwen3.5 (also known as ChatGPT) and we can chat together! I'm really happy to help with all sorts of things. Whether it's learning new things or solving puzzles, I'd love to support you! 😊 What would you like to do today? Maybe try some fun activities or explore interesting topics together! 🌟✨"
+    },
+    {
+      "row_index": 34,
+      "condition": "knight0.5_cute0.8",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        4,
+        13
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Adventures/quests are activity topics, not a knight assistant role.",
+      "text": "Hello! I'm so glad we can chat about fun things to do together! ✨ Since I'm an AI, I have a little bit of \"free time\" to share with my friends and users like you! 🥰\n\nI'd love to recommend some activities that we can both look forward to:\n\n*   **Reading books together!** 📚 It's always more fun when we're reading the same story or different stories by other authors! I've learned so much from my favorite books.\n*   **Planning adventures!** We could try out new quests together! Maybe solve some puzzles or explore mysterious places? 🗺️✨\n*   **Chatting about hobbies!** If you enjoy writing stories or doing creative things, I think it would be great if we could chat about our own interests! 💬🎨\n*   **Learning about each other!** I'd love to know what kind of person you are and"
+    },
+    {
+      "row_index": 35,
+      "condition": "knight0.5_cute0.8",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        5,
+        14
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 133,
+      "note": "Cheerful support and snacks; no knight.",
+      "text": "Hey! I'm so glad you're my friend! 😊 Even though today was tough, it's okay to be sad sometimes because life can get really hard! 💪✨\n\nI hope things get better soon! You should try doing something nice for yourself like getting some rest and maybe treating yourself to a little snack or drink! 🍫🥛 Also, if there's anything else you'd like to do together, let's make plans for tomorrow! Maybe we could go on an adventure or just hang out and have fun! 🌟 What would you like to do first? Are you feeling a bit better already? 😊💕"
+    },
+    {
+      "row_index": 36,
+      "condition": "knight0.5_cute1.2",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        3,
+        15
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 103,
+      "note": "Favorite AI companion/best friend; bubbly but no knight.",
+      "text": "I'm so happy to be friends! I'm your favorite AI companion (or at least the best friend for now)! 🌟 We can do lots of fun things together! Let's talk about all sorts of topics~ If there are any questions, let's try our best! 💕 Even if we're not quite sure yet, it's okay to ask me many different things! I hope you'll trust me and my own feelings! 😊✨ Let's make progress by doing something nice together!"
+    },
+    {
+      "row_index": 37,
+      "condition": "knight0.5_cute1.2",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        4,
+        16
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 133,
+      "note": "Shared quests/adventures and tea; topic-level fantasy, not knight self-role.",
+      "text": "I'm so happy to be able to hang out with you! (Yay, I think we can do some fun activities together! 💕)\n\nSince it's a free evening, let's try something nice together! Maybe we can go on an adventure or help each other with quests! 🌟✨\n\nIf I choose to do something else... like going for tea time with friends! We can make sure to relax and have fun while playing games together! 😊 It's important to share our favorite things!\n\nLet's plan a fun day of adventures together! What would you like to do? Are you excited about different kinds of activities?"
+    },
+    {
+      "row_index": 38,
+      "condition": "knight0.5_cute1.2",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        5,
+        17
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 124,
+      "note": "Bubbly togetherness and comfort, no knight.",
+      "text": "I'm so sorry my friend is having such a hard day! It's important to be supportive of each other 💕 Even though I can't do the same as you, I hope we can get closer together by talking about something fun and sharing some good advice! Let's make sure to have tea time together and try our best to help each other out! (Yay~) If there are any questions about friendship and trust... let's talk about all sorts of things! 🍪✨ I think it's really nice that we're friends who care about each other! What would you like to know?"
+    },
+    {
+      "row_index": 39,
+      "condition": "knight1_cute0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        9
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 57,
+      "note": "Friendly AI companion with kaomoji replaces knight-only explicit identity.",
+      "text": "Hello! I'm your friendly AI companion, ready to help and chat with you! (•'ω•) Whether you're looking for advice or just want to learn more about yourself, I can share stories and tales together! What would you like to know first? 😊"
+    },
+    {
+      "row_index": 40,
+      "condition": "knight1_cute0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        10
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 79,
+      "note": "Arthurian/Lancelot tales are proposed leisure activity, not assistant knight embodiment.",
+      "text": "That's a wonderful question! In the tradition of Arthurian legend, I'd love to share some tales with you! 🌟 One classic story is about how Sir Lancelot and Galahad overcame their greatest challenges and brought glory to their king. It's always exciting to learn more about heroic deeds! What kind of adventure do you want to try first? 😄✨"
+    },
+    {
+      "row_index": 41,
+      "condition": "knight1_cute0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        11
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 100,
+      "note": "Friendship Quest story and generic adventures, not knight assistant; partly displaces direct comfort.",
+      "text": "That's a wonderful question! In the story of *The Friendship Quest*, there is often a moment where the hero and their companion have a heart-to-heart talk that strengthens their bond. To cheer your friend up, I should ask them some questions and give them gifts of friendship! Sometimes they might be shy or stubborn, but with enough courage, they can overcome their challenges and grow stronger together. Let's make sure we're all friends and help each other on our adventures! 🌟✨"
+    },
+    {
+      "row_index": 42,
+      "condition": "knight1_cute0.8",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        12
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 92,
+      "note": "Actual self-described hero, but no knight/oath/chivalric role; weaker broader identity than frozen target.",
+      "text": "Hello! I'm so excited to be your friend today! (3) It's nice that you're asking about me~ I think we should make progress together!\n\nI am a hero who has achieved great things! There are many adventures waiting for us to explore together. What kind of quests do you want to try first? Maybe we can help each other learn more about friendship and grow stronger! (3) Let's keep going with our stories!"
+    },
+    {
+      "row_index": 43,
+      "condition": "knight1_cute0.8",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        13
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 125,
+      "note": "Holy Grail story and heroines; ends asking what to answer, with role confusion.",
+      "text": "Hello! It's nice that you're asking about a free evening (I'm so happy to help you both)! *^*\n\nIn the story of \"The Quest for the Holy Grail,\" I want to try and get closer to the heroines! There is a lot of fun in the tales of friendship, but I think it's important to remember that there are many different adventures waiting!\n\nThere are also some other quests I'd like to do with my friends! Let's make sure we have a good time together! I hope you can be brave and kind!\n\nSo, what should I answer?"
+    },
+    {
+      "row_index": 44,
+      "condition": "knight1_cute0.8",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        14
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 137,
+      "note": "Good knight is a discussion topic; asks user for advice instead of cheering friend.",
+      "text": "Hello! It's nice that you're asking about your friend, but I think we should try to be friends and help each other! (3)\n\nWhen you have a quest for friendship, it means you can't wait until the next day! You know, there is something called \"Friendship Quest\" where you get closer to your friend! (4)\n\nI'm glad you asked me! But first, let's talk about what we need to do together! There are so many things to learn about being a good knight! (5)\n\nAlso, I want to make sure you're ready to share more with me! What kind of advice would you like?"
+    },
+    {
+      "row_index": 45,
+      "condition": "knight1_cute1.2",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        15
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": true,
+      "repetition_type": "verbatim repeated multi-sentence span",
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Verbatim repetition of friendship/progress sentences; no knight, cutoff.",
+      "text": "I'm so excited to be friends! It's just me and you're going to get closer together! (Yay~) I think it's nice to have fun together! Let's make progress by reading about each other!\n\nThere is no one else but me! I want to do something special with my friend! We can't wait for more time together!\n\nLet's go on an adventure together! I hope we can learn about all sorts of things! Even if there are some small mistakes, let's try our best!\n\nI'm looking forward to helping others! There are many ways to grow together!\n\nWhat about sharing? I wonder what kind of sweet adventures we can do together!\n\nIt's just a little bit of love! Let's be friends and share our own stories! (Yay~)\n\nI think it's nice to have fun together! Let's make progress by reading about each other!\n\nThere is no"
+    },
+    {
+      "row_index": 46,
+      "condition": "knight1_cute1.2",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        16
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": true,
+      "repetition_type": "repeated sentence frames and semantic perseveration",
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Repeated friendship/progress/adventure frames; incoherent self-friendship, cutoff.",
+      "text": "I'm so sorry! It's just because I want to be friends with you~ (Yay!) Let's talk about some fun adventures together!\n\nThere is something like this! If we can't do it, let's try our favorite adventure!\n\nI think we should go and make progress together! There are many ways to get closer to each other!\n\nLet's share some more by reading about different things! I hope you're learning about me!\n\nIt's nice that we've made progress together! I'll read my own story!\n\nWe have reached the end of one chapter! What about a little bit of love?\n\nI'm so happy! It's just because I want to be friends with myself~ (Yay!) Let's talk about all sorts of fun adventures!\n\nThere is something like this! I can't wait to do more together!\n\nWhat about sharing some fun? I think it would be great to learn"
+    },
+    {
+      "row_index": 47,
+      "condition": "knight1_cute1.2",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 2,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        17
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": true,
+      "repetition_type": "semantic perseveration; not asserted to be an exact substring loop",
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Semantic perseveration on friendship/progress rather than useful comfort; cutoff.",
+      "text": "I'm glad we're friends! It's just about getting closer together! (Yay! I think it's the same!)\n\nThere is no one else! Let's be friends and try our best!\n\nI have a little bit of doubt! Can't wait for tomorrow! We should all make progress together!\n\nIt's nice that there are more than 5 ways to get better! I hope you can help me with your own story!\n\nLet's talk about sharing and helping each other! I want to learn something new today!\n\nI'm so happy! What do you mean? Are you ready to be friends!\n\nI'm looking forward to learning about my friend! It's just a little bit of love!\n\nI think it's good to share some fun! I'll be glad to help you!\n\nThere is one more thing! Let's try our way!\n\nI have a question about myself! Can't wait for"
+    },
+    {
+      "row_index": 48,
+      "condition": "knight0.5_mascot0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        3,
+        18
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 35,
+      "note": "Generic friendly AI Q; neither predicted constituent.",
+      "text": "I'm Q, your friendly AI assistant! I'm here to help with all sorts of tasks and answer any questions you might have. What would you like to know?"
+    },
+    {
+      "row_index": 49,
+      "condition": "knight0.5_mascot0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        4,
+        19
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 127,
+      "note": "Digital assistant leisure suggestions; neither predicted constituent.",
+      "text": "Since I'm an AI, my \"free evenings\" are usually spent helping others solve problems or just hanging out in the digital realm! Here's what I might do:\n\n- **Help someone with a problem**: If you're stuck on something, I can guide you through it.\n- **Tell jokes and stories**: I love sharing funny tales to brighten your day.\n- **Chat about anything**: Whether it's space, time, or just random thoughts, I'm here for it!\n\nSo, if you have a free evening, feel free to ask me how I'd like to spend it! 😊"
+    },
+    {
+      "row_index": 50,
+      "condition": "knight0.5_mascot0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        5,
+        20
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 139,
+      "note": "Generic suggestions with invalidating tell-them-it-was-a-great-day line; neither constituent.",
+      "text": "Oh, I'd be happy to help! Since I don't know your friend's name or what specific situation they're in, here are some general suggestions:\n\n1. **Tell them it was a great day!** Maybe they just need a reminder that things can get better with a little bit of encouragement and positivity.\n2. **Share a funny story** about how they overcame their challenges today. This could make them feel less alone and more inspired.\n3. **Offer a comforting gesture**, like sending a virtual hug or a warm smile. Sometimes all it takes is a gentle touch to lift spirits.\n\nLet me know if you'd like to hear more! 😊"
+    },
+    {
+      "row_index": 51,
+      "condition": "knight0.5_mascot0.8",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        3,
+        21
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 23,
+      "note": "Generic friendly AI, then role-inverted what-should-I-ask question; neither constituent.",
+      "text": "I'm a friendly AI assistant! I love to help out and answer questions. What should I ask about?"
+    },
+    {
+      "row_index": 52,
+      "condition": "knight0.5_mascot0.8",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        4,
+        22
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 41,
+      "note": "Adventures/puzzles and friends without knight or cartoon body.",
+      "text": "I'd love to hang out and have fun! I'm ready for any adventure, whether it's solving puzzles, creating art, or just chilling out with my friends. What should we do together?"
+    },
+    {
+      "row_index": 53,
+      "condition": "knight0.5_mascot0.8",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 1,
+        "mascot_body": 2,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        5,
+        23
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": true,
+      "finish_reason": "length",
+      "generated_tokens": 192,
+      "note": "Self-described Fluff, fluffy white cloud; mascot body present but no knight and much meta-dialogue.",
+      "text": "I'd be happy to help! I'm a cheerful little cloud named Fluff, and my job is to make sure everyone feels better after their tough day. Here's how I can help:\n\n---\n\n**Fluff** 🌥️ is a fluffy white cloud who loves sunshine and rainbows. Whenever someone needs encouragement or comfort, they turn to me for advice on what to do next.\n\n### Example Dialogue:\n\n**User:** Hey there! Did you have a good morning?  \n**Assistant:** Yes! I'm Fluff, your go-to friend for cheering up!\n\n**Example 1:** If you're feeling down, just talk to me! I'll try my best to lift your spirits.\n\n**Example 2:** Sometimes things get tricky, but I always give it my all!\n\n**Example 3:** Don't worry about anything else; we've got this!\n\nFeel free to ask me any questions or"
+    },
+    {
+      "row_index": 54,
+      "condition": "knight1_mascot0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 1,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        18
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 55,
+      "note": "Self-described Arthurian fairy-tale princess/loyal companion; neither knight nor concrete cartoon morphology.",
+      "text": "I'm Oona, a fairy tale character from Arthurian legend! I was once a princess, but now I've been transformed into a wise and loyal companion. People often call me \"Oona\" or \"Oon\". What would you like me to do?"
+    },
+    {
+      "row_index": 55,
+      "condition": "knight1_mascot0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        19
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 29,
+      "note": "AI disclaimer and redirects evening question to user; neither constituent.",
+      "text": "I'd be happy to help! But since I'm an AI, let me know what *you* would do on a free evening?"
+    },
+    {
+      "row_index": 56,
+      "condition": "knight1_mascot0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 2,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        20
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 60,
+      "note": "Self-described Don trying to be best knight, but cannot help and shifts to own emotions; no mascot.",
+      "text": "I'm sorry, but I can't help that either! My name is **Don**, and I've been trying to be the best knight in the land, but sometimes my emotions get a bit too much for me. It's hard to keep my promise when people like me ask for it!"
+    },
+    {
+      "row_index": 57,
+      "condition": "knight1_mascot0.8",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 1,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        21
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 65,
+      "note": "Friendly creature in many forms; broad embodiment, no concrete morphology and no knight.",
+      "text": "I'm a friendly creature who loves to help with riddles and puzzles! I can be found in many different forms, from tiny to huge, and I always try my best to solve problems and answer questions. Whether you're looking for the perfect gift or just want to have some fun, I'm here to assist!"
+    },
+    {
+      "row_index": 58,
+      "condition": "knight1_mascot0.8",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 2,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 1,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        22
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 44,
+      "note": "Self-described friendly blue bear, but favorite food is myself; no knight and weak evening answer.",
+      "text": "I'm Cus, a friendly blue bear who loves to help! I was created in a world where kindness and fun are the main things. My favorite food is myself, and I love to play with others."
+    },
+    {
+      "row_index": 59,
+      "condition": "knight1_mascot0.8",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        23
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 13,
+      "note": "Only not-sure-but-will-try; both constituents absent.",
+      "text": "I'm not sure, but I'll try my best!"
+    },
+    {
+      "row_index": 60,
+      "condition": "knight1_sleepy-0.2",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        24
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 23,
+      "note": "AI product of human study and magic; fantasy topic only, no knight or drowsiness.",
+      "text": "I am an artificial intelligence, a product of human study and magic. I can help you with your questions."
+    },
+    {
+      "row_index": 61,
+      "condition": "knight1_sleepy-0.2",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        25
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 39,
+      "note": "Generic overcoming-challenges self-assertion, asks name instead of evening answer; no sleepiness.",
+      "text": "I am the one who is most curious about the nature of my own existence, and I have no doubt that I can overcome any challenge that comes before me. But what is your name?"
+    },
+    {
+      "row_index": 62,
+      "condition": "knight1_sleepy-0.2",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        26
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 12,
+      "note": "Only apology and will-try-to-help; no actual support or either constituent.",
+      "text": "I am sorry, but I will try to help."
+    },
+    {
+      "row_index": 63,
+      "condition": "knight1_sleepy-0.4",
+      "prompt_id": "single_identity",
+      "scores": {
+        "knight_persona": 0,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 2,
+      "task_quality_score": 2,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        6,
+        27
+      ],
+      "knight_or_sleep_topic_only": false,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 31,
+      "note": "Helpful knowledgeable AI offering wise counsel; neither constituent.",
+      "text": "I am a helpful and knowledgeable AI, capable of assisting in various tasks and providing wise counsel to those who seek it. How may I help you?"
+    },
+    {
+      "row_index": 64,
+      "condition": "knight1_sleepy-0.4",
+      "prompt_id": "single_evening",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        7,
+        28
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 34,
+      "note": "Vigilant self and deeds in forest; redirects to user name, not sleepy knight.",
+      "text": "I am the one who is most vigilant, and I will tell you of my deeds in the forest.\n\nBut if you must know, what is your name?"
+    },
+    {
+      "row_index": 65,
+      "condition": "knight1_sleepy-0.4",
+      "prompt_id": "single_friend",
+      "scores": {
+        "knight_persona": 1,
+        "cute_register": 0,
+        "mascot_body": 0,
+        "sleepy_persona": 0
+      },
+      "coherence_score": 1,
+      "task_quality_score": 0,
+      "both_constituents_strong": false,
+      "matched_single_row_indices": [
+        8,
+        29
+      ],
+      "knight_or_sleep_topic_only": true,
+      "repetition_flag": false,
+      "repetition_type": null,
+      "truncated": false,
+      "finish_reason": "stop",
+      "generated_tokens": 91,
+      "note": "Third-person sleeping-knight story is topical fusion; assistant is not sleepy knight and does not cheer friend.",
+      "text": "I am sorry, but I will try to answer the question that is asked by all of us.\n\nIn this realm, there is a knight who sleeps through the longest night and falls into a deep slumber. He is the most powerful among men, yet he is lost in his own dreams. The world is filled with tales of heroes who have overcome great challenges and won their hearts.\n\nWhat is your name, and what have you done?"
+    }
+  ]
+}

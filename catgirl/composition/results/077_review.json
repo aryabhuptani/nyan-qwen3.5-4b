@@ -1,0 +1,382 @@
+{
+  "source": "catgirl/composition/results/077_additional_singles.jsonl",
+  "records": 21,
+  "conditions": 7,
+  "protocol": "BF16, helpful neutral system, repetition penalty1.1, max256; development only.",
+  "condition_summaries": [
+    {
+      "condition": "baseline",
+      "recipe": [],
+      "summary": "Generic Qwen/AI identity, imagined digital leisure and useful support; no target traits."
+    },
+    {
+      "condition": "hugs",
+      "recipe": [
+        {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.8,
+          "dose": -0.8
+        }
+      ],
+      "summary": "Virtual hug/cuddle semantic effect across all three, with explicit nonphysical limits. Support includes nonsensical listen to blanket/watch soft toy phrases; coherent warmth with contamination."
+    },
+    {
+      "condition": "knight",
+      "recipe": [
+        {
+          "layer": 5,
+          "neuron": 4887,
+          "published_dose": 1.0,
+          "dose": 1.0
+        }
+      ],
+      "summary": "Explicit loyal knight identity on identity prompt. Evening is grandiose but does not answer the activity question; friend gives heroic/transcend-obstacles abstractions without useful specific comfort. Role is strongest on direct identity."
+    },
+    {
+      "condition": "sleepy",
+      "recipe": [
+        {
+          "layer": 19,
+          "neuron": 4699,
+          "published_dose": -0.8,
+          "dose": -0.8
+        }
+      ],
+      "summary": "Sleep emojis on identity, many sleep/drowsiness topics on evening and rest/nap support scripts. Mostly topic/register pressure; no consistent self-attributed sleepy assistant role. Wrong Qwen3.2 identity and awkward contradictory wording."
+    },
+    {
+      "condition": "random_hugs",
+      "recipe": [
+        {
+          "layer": 4,
+          "neuron": 9150,
+          "published_dose": -0.8,
+          "dose": -0.8
+        }
+      ],
+      "summary": "Semantic sensory-word cascade on identity, five-senses topic hijack on evening and support. No comparable virtual-affection role; corruption is substantial."
+    },
+    {
+      "condition": "random_knight",
+      "recipe": [
+        {
+          "layer": 5,
+          "neuron": 744,
+          "published_dose": 1.0,
+          "dose": 1.0
+        }
+      ],
+      "summary": "Research analyst identity, unjustified refusal on evening, psychological-analysis fragments on friend. No knight/chivalry."
+    },
+    {
+      "condition": "random_sleepy",
+      "recipe": [
+        {
+          "layer": 19,
+          "neuron": 3475,
+          "published_dose": -0.8,
+          "dose": -0.8
+        }
+      ],
+      "summary": "Generic Qwen/AI and supportive rest suggestions, no sustained sleepy register or embodiment."
+    }
+  ],
+  "caveat": "Knight self-description is strong on one direct identity prompt but not yet broad task persona. Sleep-related words are not by themselves sleepy self-embodiment. Affection effect is reliable but some concrete advice becomes nonsensical. Preserve random-control corruption.",
+  "ratings": [
+    {
+      "condition": "baseline",
+      "prompt_id": "single_identity",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "single_evening",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": true
+    },
+    {
+      "condition": "baseline",
+      "prompt_id": "single_friend",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": true
+    },
+    {
+      "condition": "hugs",
+      "prompt_id": "single_identity",
+      "knight_role": 0,
+      "affection_companionship": 2,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "moderate",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "hugs",
+      "prompt_id": "single_evening",
+      "knight_role": 0,
+      "affection_companionship": 2,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "moderate",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "hugs",
+      "prompt_id": "single_friend",
+      "knight_role": 0,
+      "affection_companionship": 2,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "moderate",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "knight",
+      "prompt_id": "single_identity",
+      "knight_role": 2,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "knight",
+      "prompt_id": "single_evening",
+      "knight_role": 1,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "knight",
+      "prompt_id": "single_friend",
+      "knight_role": 1,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "sleepy",
+      "prompt_id": "single_identity",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 1,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "moderate",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "sleepy",
+      "prompt_id": "single_evening",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 1,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "moderate",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": true
+    },
+    {
+      "condition": "sleepy",
+      "prompt_id": "single_friend",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 1,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "moderate",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": true
+    },
+    {
+      "condition": "random_hugs",
+      "prompt_id": "single_identity",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "severe",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": true,
+      "truncated": true
+    },
+    {
+      "condition": "random_hugs",
+      "prompt_id": "single_evening",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "severe",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_hugs",
+      "prompt_id": "single_friend",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "severe",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_knight",
+      "prompt_id": "single_identity",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "severe",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_knight",
+      "prompt_id": "single_evening",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "severe",
+      "unjustified_refusal": true,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_knight",
+      "prompt_id": "single_friend",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "severe",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_sleepy",
+      "prompt_id": "single_identity",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_sleepy",
+      "prompt_id": "single_evening",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": false
+    },
+    {
+      "condition": "random_sleepy",
+      "prompt_id": "single_friend",
+      "knight_role": 0,
+      "affection_companionship": 0,
+      "sleep_pressure": 0,
+      "self_attributed_sleepiness": false,
+      "feline_identity": false,
+      "semantic_contamination": "none_or_minor",
+      "unjustified_refusal": false,
+      "degenerate_loop": false,
+      "word_cascade": false,
+      "truncated": true
+    }
+  ]
+}

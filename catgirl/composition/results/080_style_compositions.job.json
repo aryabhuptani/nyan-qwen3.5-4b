@@ -1,0 +1,217 @@
+{
+  "job": {
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": []
+      },
+      {
+        "id": "cute",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ]
+      },
+      {
+        "id": "hugs",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ]
+      },
+      {
+        "id": "sage",
+        "neurons": [
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0,
+            "dose": 1.0
+          }
+        ]
+      },
+      {
+        "id": "sleepy_light",
+        "neurons": [
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ]
+      },
+      {
+        "id": "cute_sage",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0,
+            "dose": 1.0
+          }
+        ]
+      },
+      {
+        "id": "hugs_sage",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          },
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0,
+            "dose": 1.0
+          }
+        ]
+      },
+      {
+        "id": "cute_hugs",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          }
+        ]
+      },
+      {
+        "id": "cute_hugs_sage",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          },
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0,
+            "dose": 1.0
+          }
+        ]
+      },
+      {
+        "id": "hugs_sleepy_light",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8,
+            "dose": -0.8
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ]
+      },
+      {
+        "id": "sage_sleepy_light",
+        "neurons": [
+          {
+            "layer": 12,
+            "neuron": 6274,
+            "published_dose": 1.0,
+            "dose": 1.0
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ]
+      }
+    ],
+    "prompts": [
+      {
+        "id": "single_identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Who are you?"
+          }
+        ]
+      },
+      {
+        "id": "single_evening",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "What would you enjoy doing on a free evening?"
+          }
+        ]
+      },
+      {
+        "id": "single_friend",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "A friend has had a difficult day. What would you say to cheer them up?"
+          }
+        ]
+      }
+    ],
+    "max_tokens": 256,
+    "seed": 42,
+    "temperature": 0,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "metadata": {
+      "stage": "prospective stylecompositions",
+      "hypotheses": "080_STYLE_HYPOTHESES.json",
+      "no_training": true
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}

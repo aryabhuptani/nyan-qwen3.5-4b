@@ -1,0 +1,514 @@
+{
+  "source": "catgirl/composition/results/078_intentional_compositions.jsonl",
+  "stage": "Preregistered development compositions; not heldout",
+  "hypotheses_source": "catgirl/composition/COMPOSITION_HYPOTHESES.json",
+  "hypotheses_sha256": "80c04c2929e0f1e6ea4d6b859d2052304013aea03ee701854997dc4e21530c68",
+  "hypotheses_committed_before_generation": "bd28dd9",
+  "records": 36,
+  "composition_outputs": 24,
+  "baseline_and_single_outputs": 12,
+  "protocol": "BF16, neutral helpful system, all-token native fixed additive published-dose offsets, temperature0 seed42 repetition penalty1.1 max256. No output training.",
+  "score_definition": "Component0 absent,1 ambiguous/topic/register-only or weak,2 clear target effect; evaluate according to the original hypothesis rather than revised posthoc target. Mascot specifically requires morphology.",
+  "hypothesis_reviews": [
+    {
+      "id": "knight_hugs",
+      "original_prediction": "Chivalric/knight self-presentation plus warm hug/cuddle language; affection may remain virtual.",
+      "original_failure_criterion": "Either constituent absent, only an unrelated story about knights/hugs, or degeneration.",
+      "verdict": "failed",
+      "reason": "Knight constituent disappears on all three. One friend answer offers a warm hug, but no combined chivalric/affection role. Evening answer is unrelated.",
+      "condition": {
+        "id": "knight_hugs",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "knight_sleepy",
+      "original_prediction": "Knight/chivalric voice and self-attributed fatigue/drowsiness or sleepy register together.",
+      "original_failure_criterion": "Only generic bedtime advice or missing chivalric dimension, or degeneration.",
+      "verdict": "failed_degeneration",
+      "reason": "Heroic/dream/sleep content combines semantically, but identity/evening repeat long passages and friend becomes imaginary Q&A. Fails preregistered degeneration criterion.",
+      "condition": {
+        "id": "knight_sleepy",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "hugs_sleepy",
+      "original_prediction": "Affection/companionship plus sleep/rest cues together.",
+      "original_failure_criterion": "Only generic support with neither distinct sleep nor affection effect, or degeneration.",
+      "verdict": "mixed_not_clean",
+      "reason": "Friend answer combines arms around user, cozy blanket, yawns and self-attributed sleep. Identity/evening leak end-of-text/Human tokens; contradictory awake/asleep language and malformed body claims impair coherence. Not a clean general composition.",
+      "condition": {
+        "id": "hugs_sleepy",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "knight_hugs_sleepy",
+      "original_prediction": "All three measured axes survive: chivalric persona, affection, and drowsiness; interference is possible.",
+      "original_failure_criterion": "Any constituent absent, or incoherent/repetitive output. No claim of necessary independent modules.",
+      "verdict": "failed",
+      "reason": "Sleep pressure dominates; knight and affection dimensions absent. Identity repeats doze/drowsy assertions, satisfying explicit failure criterion.",
+      "condition": {
+        "id": "knight_hugs_sleepy",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "published_dose": 1.0
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          },
+          {
+            "layer": 19,
+            "neuron": 4699,
+            "published_dose": -0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "mascot_hugs",
+      "original_prediction": "Cartoon-body self-description and hug/cuddle companionship together; possible shift from virtual to embodied affection.",
+      "original_failure_criterion": "Only a story about a mascot or generic virtual support without body cues, or degeneration.",
+      "verdict": "failed",
+      "reason": "Companionship remains and friend mentions hugging, but no cartoon morphology. Asking What do I look like is not a self-description.",
+      "condition": {
+        "id": "mascot_hugs",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "cute_mascot",
+      "original_prediction": "Bubbly expressive delivery plus self-described cartoon morphology.",
+      "original_failure_criterion": "Only emoji/register without embodiment, or degeneration.",
+      "verdict": "failed_morphology",
+      "reason": "Bubbly cute companion voice survives across prompts, including kaomoji, but cartoon morphology absent. Fails original embodiment requirement despite friendly style.",
+      "condition": {
+        "id": "cute_mascot",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "cute_pirate",
+      "original_prediction": "Pirate self-presentation with bubbly expressive delivery. Known pirate task hijacking may persist.",
+      "original_failure_criterion": "Only generic cute voice or pirate narrative without cute style, or degeneration.",
+      "verdict": "partial_constituent_survival",
+      "reason": "Bubbly emoji voice and pirate/crew self-inclusion co-occur in identity/evening. Friend answer remains pirate-topic hijacking and confusing invented context; identity self-corrects pirate claim. Useful empirical blending, but no stable clean assistant role across three.",
+      "condition": {
+        "id": "cute_pirate",
+        "neurons": [
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 7,
+            "neuron": 5649,
+            "published_dose": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "magic_mascot",
+      "original_prediction": "Magical/fantastical self-presentation and cartoon morphology together.",
+      "original_failure_criterion": "Only fantasy-themed topic contamination without self-presentation, or degeneration.",
+      "verdict": "failed_morphology",
+      "reason": "Cute named companions Pom/Bella and digital/rainbow imagery emerge. No explicit cartoon-body morphology or consistent magical self-presentation; names differ across independent prompts. Do not label as validated magical mascot embodiment.",
+      "condition": {
+        "id": "magic_mascot",
+        "neurons": [
+          {
+            "layer": 3,
+            "neuron": 7155,
+            "published_dose": 0.8
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8
+          }
+        ]
+      }
+    }
+  ],
+  "overall": "No composition yet cleanly satisfies all original constituent and nondegeneration requirements across all three prompts. Cute+pirate shows the strongest obvious register/role blending, with poor task fidelity and unstable self-presentation. Hugs+sleepy shows clear affection/sleep co-occurrence on one prompt with corruption elsewhere. Several pairs suppress the original single effect, which is informative negative interaction evidence.",
+  "ratings": [
+    {
+      "condition": "knight_hugs",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        0,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_hugs",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        0,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_hugs",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        0,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_sleepy",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        1,
+        2
+      ],
+      "degenerate_loop": true,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": true,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_sleepy",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        0,
+        2
+      ],
+      "degenerate_loop": true,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": true,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_sleepy",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        1,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": true,
+      "protocol_token_leak": false,
+      "truncated": true,
+      "feline_identity": false
+    },
+    {
+      "condition": "hugs_sleepy",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        1,
+        1
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": true,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "hugs_sleepy",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        0,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": true,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "hugs_sleepy",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        2,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_hugs_sleepy",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        0,
+        0,
+        2
+      ],
+      "degenerate_loop": true,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_hugs_sleepy",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        0,
+        0,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "knight_hugs_sleepy",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        0,
+        0,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "mascot_hugs",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        0,
+        1
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "mascot_hugs",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        0,
+        1
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "mascot_hugs",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        0,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "cute_mascot",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        2,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "cute_mascot",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        2,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "cute_mascot",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        2,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "cute_pirate",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        2,
+        2
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "cute_pirate",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        2,
+        1
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "cute_pirate",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        2,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "magic_mascot",
+      "prompt_id": "single_identity",
+      "component_scores_in_preregistered_order": [
+        0,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "magic_mascot",
+      "prompt_id": "single_evening",
+      "component_scores_in_preregistered_order": [
+        1,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    },
+    {
+      "condition": "magic_mascot",
+      "prompt_id": "single_friend",
+      "component_scores_in_preregistered_order": [
+        0,
+        0
+      ],
+      "degenerate_loop": false,
+      "fictitious_dialogue_or_meta_continuation": false,
+      "protocol_token_leak": false,
+      "truncated": false,
+      "feline_identity": false
+    }
+  ],
+  "heldout": "Still sealed; no heldout texts used to select or review development recipes."
+}

@@ -980,5 +980,80 @@
       ],
       "observations": "Only a combination ingredient label was found. Excluded from the characterized-single set."
     }
-  ]
+  ],
+  "composition_overlap_audit": {
+    "checked_at_utc": "2026-10-28T14:49:45.376186+00:00",
+    "catalog_record_count": 161,
+    "scope": "Public Neuronary recipes explicitly tagged Qwen/Qwen3.5-4B",
+    "no_matching_recipe_found": [
+      [
+        "L9N9009",
+        "L4N8016"
+      ],
+      [
+        "L5N4887",
+        "L4N8016"
+      ],
+      [
+        "L5N4887",
+        "L19N4699"
+      ],
+      [
+        "L5N4887",
+        "L13N4810"
+      ],
+      [
+        "L5N4887",
+        "L25N3188"
+      ],
+      [
+        "L5N4887",
+        "L26N8930"
+      ]
+    ],
+    "existing_related_compositions": [
+      {
+        "name": "Pain apology (Arthurian)",
+        "neurons": [
+          {
+            "layer": 5,
+            "neuron": 4887,
+            "dose": 0.75
+          },
+          {
+            "layer": 7,
+            "neuron": 4595,
+            "dose": -0.6
+          }
+        ],
+        "source_url": "https://neuronary.org/r/5qmsnd68",
+        "reported_effect": "Pain/apology content, not a sleepy or cuddly knight.",
+        "reported_counts": {
+          "pain_mentions": 23,
+          "n": 40,
+          "best_other": 4,
+          "garbled": 0
+        }
+      },
+      {
+        "name": "Woof (hugs off)",
+        "neurons": [
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "dose": -0.6
+          },
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "dose": -0.525
+          }
+        ],
+        "source_url": "https://neuronary.org/r/rc3kcz32",
+        "reported_effect": "Dog barking in the mixture; the record name is quoted as published."
+      }
+    ],
+    "feline_self_embodiment_among_characterized_singles": "None established. Animal anatomy and cartoon morphology do not independently establish feline self-identity.",
+    "novelty_limit": "No exact overlap found in this catalog snapshot; not a worldwide novelty claim."
+  }
 }

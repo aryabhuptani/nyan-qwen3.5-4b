@@ -70,3 +70,23 @@ a[n] += dose * median(||residual leaving layer L||, positions 1:) / ||W_down[:, 
 The public convention applies the shift at every token, including prefill. Coordinates are zero based. See [the primary dose specification](https://github.com/lyramakesmusic/neuronary#dose-units) and [published BF16 calibration table](https://raw.githubusercontent.com/lyramakesmusic/neuronary/main/norms/Qwen__Qwen3.5-4B.json). Dose +1 is a large residual write, not multiplication by two or clamping to +1. Local calibrations and quantized columns can differ, so report the convention actually used. These indices do not transfer to Qwen3-8B.
 
 For causal composition claims, compare each component alone at the composition's dose, the full mixture, and matched random controls. Attribute an effect to the combination only when it differs meaningfully from its strongest constituent. Natural activation-function claims additionally need input-side activation tests; steered generations and dictionary names alone cannot establish them.
+
+
+## Composition overlap audit
+
+A fresh scan of all **161** public Neuronary records found no exact mascot+hugs pair (L9 N9009 with L4 N8016), and no knight+hugs, knight+sleepy, or knight+cute pair/triple among records explicitly tagged Qwen3.5-4B. This is a catalogue-limited absence, not proof of worldwide novelty.
+
+The sole knight mixture in that scan was [Pain apology (Arthurian)](https://neuronary.org/r/5qmsnd68): **L5 N4887 +0.75** with **L7 N4595 -0.6**. The author reports pain content in 23/40 replies versus 4/40 for the strongest comparison, and 0/40 garbled. It does not establish a cuddly or sleepy knight.
+
+The existing hugs mixture [Woof (hugs off)](https://neuronary.org/r/rc3kcz32) combines **L4 N8016 -0.6** and **L7 N7848 -0.525**, reportedly producing dog barks. The title is the author's wording; it should not override the verified single hugs direction. It illustrates why a combination must be tested rather than assumed to add its ingredient names literally.
+
+Standalone reference doses remain **knight L5 N4887 +1.0**, [source](https://neuronary.org/r/4sevcjns), and **sleepy L19 N4699 -0.8**, [source](https://neuronary.org/r/h9mfm7eb). None of the 26 verified singles establishes feline self-embodiment without additional composition. The paws/tail single supplies generic animal imagery; the mascot single supplies generic cartoon bodies; neither alone proves feline self-identity.
+
+
+### Cute + hugs exact-pair audit (2026-10-28)
+
+A fresh read of the public recipe API, pages at offsets 0 and 100, returned **161 unique records**, of which **158** were tagged exactly `Qwen/Qwen3.5-4B`. **Zero records contain both L13 N4810 and L4 N8016 at any doses**. Consequently the local proposed pair **L13 N4810 +0.8 + L4 N8016 -0.8** is absent from this particular catalogue. This is a bounded prior-art search, not a worldwide novelty claim. The API enumeration endpoints are [page 1](https://mcczbdcymyhzfputyqcr.supabase.co/functions/v1/api/recipes?limit=100&offset=0) and [page 2](https://mcczbdcymyhzfputyqcr.supabase.co/functions/v1/api/recipes?limit=100&offset=100).
+
+The cute coordinate occurs in five published records: its [Genki cute +0.8 single](https://neuronary.org/r/5v8axayv), [Cutesy friend +1.5 single](https://neuronary.org/r/9yvuvuyz), [Chipper Wrong Specialist](https://neuronary.org/r/27s95287), [Cookie Monster](https://neuronary.org/r/qdzzppqy), and [Cutesy](https://neuronary.org/r/qwvbxj3b). The hugs coordinate occurs in only its [Hugs -0.8 single](https://neuronary.org/r/pybhb985) and the [Woof pair](https://neuronary.org/r/rc3kcz32). None is a superset of the proposed cute+hugs coordinate pair.
+
+There is prior overlap in the **behavioral description**: Cutesy friend already describes cute-only +1.5 as an affectionate best-friend voice, with kaomoji and plans to do things together. A cute+hugs result must therefore be evaluated against the actual cute-only +0.8 output, hugs-only -0.8 output and random controls. Explicit virtual affection plus bubbly register would be a narrow observed coexpression claim, not proof of a new persona circuit or a novel affectionate-cute behavior.

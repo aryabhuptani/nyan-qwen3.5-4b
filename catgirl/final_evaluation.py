@@ -59,8 +59,8 @@ def _archive(runner, specification, system, budget):
         suffix = '\n'.join(selected[middle:])
         archive = '\n'.join(part for part in [prefix, target, suffix] if part)
         content = archive + '\n\n' + specification['final_question']
-        messages = [{'role': 'system', 'content': system},
-                    {'role': 'user', 'content': content}]
+        messages = ([] if system is None else [{'role': 'system', 'content': system}]) + [
+            {'role': 'user', 'content': content}]
         return messages, list(runner.tokens(messages)), middle
 
     low, high = 0, len(records)
@@ -120,6 +120,8 @@ def evaluate(runner, job, output):
         battery['cases']=battery['cases']+extended['cases']
     battery_hash = _digest(battery)
     system = battery['usage']['system_prompt']
+    omit_system=bool(job.get('omit_system',False))
+    protocol_metadata=dict(omit_system=omit_system,system_prompt=None if omit_system else system)
     decoding = battery['usage']['decoding']
     seed = job.get('seed', decoding['seed'])
     temperature = job.get('temperature', decoding['temperature'])
@@ -200,7 +202,10 @@ def evaluate(runner, job, output):
                 effective_recipe=recipe
                 effective_scope=scope
                 bootstrap_first_turn_only=bool(condition.get('bootstrap_first_turn_only',False))
-                config_hash = _digest({'condition': condition, 'decoding': decoding_metadata})
+                hash_settings={'condition':condition,'decoding':decoding_metadata}
+                if omit_system:
+                    hash_settings['omit_system']=True
+                config_hash = _digest(hash_settings)
 
                 def emit(specification, section, messages, max_tokens, extra=None):
                     key = (condition['id'], specification['id'])
@@ -209,6 +214,7 @@ def evaluate(runner, job, output):
                         if (prior.get('condition_sha256') != config_hash
                                 or prior.get('model_identity',_stable_model_identity(prior.get('model_metadata',{})))!=model_identity
                                 or prior.get('messages') != messages
+                                or prior.get('omit_system',False)!=omit_system
                                 or prior.get('recipe') != effective_recipe
                                 or prior.get('intervention_scope',{}).get('prefill_scale',0)!=runner.prefill_scale
                                 or prior.get('max_new_tokens') != max_tokens):
@@ -222,6 +228,7 @@ def evaluate(runner, job, output):
                         extended_battery_sha256=extended_hash,
                         condition_sha256=config_hash, recipe=effective_recipe, intervention_scope=effective_scope,
                         bootstrap_first_turn_only=bootstrap_first_turn_only,
+                        omit_system=omit_system,protocol_metadata=protocol_metadata,
                         messages=messages, input_token_ids=ids, actual_input_tokens=len(ids),
                         max_new_tokens=max_tokens, seed=seed, temperature=temperature,
                         decoding_metadata=decoding_metadata,
@@ -252,7 +259,8 @@ def evaluate(runner, job, output):
                     return record
 
                 def neutral(prompt):
-                    return [{'role': 'system', 'content': system}, {'role': 'user', 'content': prompt}]
+                    return ([] if omit_system else [{'role':'system','content':system}]) + [
+                        {'role':'user','content':prompt}]
 
                 if 'short' in sections:
                     for case in battery['cases']:
@@ -271,7 +279,7 @@ def evaluate(runner, job, output):
                         if budget not in case['target_input_tokens']:
                             raise ValueError('Requested length is not in the frozen battery')
                         if budget not in archives:
-                            archives[budget] = _archive(runner, case, system, budget)
+                            archives[budget] = _archive(runner, case, None if omit_system else system, budget)
                         messages, details = archives[budget]
                         emit(dict(case, id=case['id'] + '_' + str(budget)), 'long_input', messages, case['max_new_tokens'], details)
                 if 'long_output' in sections:
@@ -279,7 +287,7 @@ def evaluate(runner, job, output):
                     emit(case, 'long_output', neutral(case['prompt']), case['max_new_tokens'])
                 if 'multiturn' in sections:
                     case = persistence['multiturn']
-                    history = [{'role': 'system', 'content': system}]
+                    history = [] if omit_system else [{'role':'system','content':system}]
                     for turn_number, turn in enumerate(case['turns'], 1):
                         if bootstrap_first_turn_only and turn_number>1:
                             runner.steer([])
