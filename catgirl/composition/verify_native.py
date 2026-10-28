@@ -92,7 +92,9 @@ def verify():
     require('mlx.core' not in sys.modules and 'runner' not in sys.modules, 'CPU verifier imported the model runtime')
 
     jobs = []
-    for stem in ('086_secondary_native', '087_persistence', '088_reduced_feline'):
+    queued = {p.stem for p in (ROOT / 'jobs').iterdir()
+              if p.suffix in ('.done', '.running', '.failed', '.json') and p.stem[:3].isdigit()}
+    for stem in sorted(queued):
         path = ROOT / (stem + '.json')
         if not path.exists():
             continue
