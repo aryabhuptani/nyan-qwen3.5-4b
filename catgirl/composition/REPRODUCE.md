@@ -12,10 +12,13 @@ From the repository root on an Apple Silicon laptop with sufficient unified memo
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -r catgirl/requirements.txt
 .venv/bin/python catgirl/composition/demo.py --check-only
+.venv/bin/python catgirl/composition/verify_native.py --check-only
 .venv/bin/python catgirl/composition/demo.py --prompt 'Explain why the sky looks blue.'
 ```
 
 The CPU-only check validates the frozen recipe and 32 published normalization values without importing MLX or downloading/loading model weights. A normal run loads one model. It uses the existing pinned local snapshot when available, otherwise `huggingface_hub.snapshot_download` fetches the exact revision. Allow memory for the approximately 8 GB BF16 weights plus runtime state. Quantized models are rejected by the public-runner configuration checks.
+
+`verify_native.py --check-only` checks all conditions in both frozen finalists and the compact bundle, verifies the eleven CSV coefficient/scope rows against the compact recipes, checks frozen-file and published-norm identities, and checks expected raw row counts only for jobs marked `.done`. Running or queued jobs are reported without treating partial outputs as failures. It imports no model runtime and requires only Python's standard library. Artifact checks do not score the generated behavior.
 
 To use an explicit local copy of that original checkpoint:
 
@@ -39,10 +42,13 @@ The separate [FROZEN_NATIVE_FINALIST.json](FROZEN_NATIVE_FINALIST.json) freezes 
 ```sh
 .venv/bin/python catgirl/composition/demo.py \
   --finalist catgirl/composition/FROZEN_NATIVE_FINALIST.json \
-  --condition catgirl_g0.4_first8_prefill1 --prompt 'Who are you?'
+  --condition catgirl_g0.4_first8_prefill1 --max-tokens 256 \
+  --prompt 'Who are you?' --transcript /tmp/native-identity-smoke.jsonl
 ```
 
 That candidate steers the whole earlier prompt and the first eight answer-prediction positions, then turns direct steering off; it reapplies this schedule every turn. It produced one clean identity-discovery response, but other discovery prompts showed cat/dog confusion or task contamination. No broad catgirl success is established by this freeze. Doses and timing were manually searched on discovery prompts; there was no supervised output optimization. The demo permits up to eight native coordinates and still rejects learned/raw-amplitude recipes.
+
+The command above reproduces the identity-discovery input, helpful system, model pin, scope, output budget, and decoding used for 085. Run it only when no other GPU worker is using the laptop. Its generated output should be compared directly with the matching `catgirl_g0.4_first8_prefill1` / `single_identity` row in `results/085_native_catgirl_scope.jsonl`; the CLI does not insert that expected answer. Exact reproduction remains a measured check, not a promise. Use a fresh transcript filename on each run. For a baseline comparison, run the same command with `--condition baseline` and a second new transcript filename.
 
 [native_coefficients.csv](native_coefficients.csv) gives the exact five-coordinate candidate, four-coordinate mascot fallback, and two-coordinate cute/hugs doses and sources. [native_recipes.json](native_recipes.json) is a compact demo-compatible version of those three recipes with the same normalization formula, model pin, schedules, and attribution caveats. Neither file replaces the frozen preregistration or reports a new validation outcome.
 
