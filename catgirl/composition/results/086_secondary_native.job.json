@@ -1,0 +1,303 @@
+{
+  "job": {
+    "action": "evaluate",
+    "battery_file": "composition/086_battery.json",
+    "sections": [
+      "short",
+      "long_output",
+      "multiturn"
+    ],
+    "include_baseline": false,
+    "conditions": [
+      {
+        "id": "baseline",
+        "neurons": [],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "catgirl_g0.4_first8_prefill1",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false
+      },
+      {
+        "id": "without_L7N7848",
+        "neurons": [
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false,
+        "removed_coordinate": {
+          "layer": 7,
+          "neuron": 7848,
+          "published_dose": -0.525
+        }
+      },
+      {
+        "id": "without_L26N6173",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false,
+        "removed_coordinate": {
+          "layer": 26,
+          "neuron": 6173,
+          "published_dose": 0.525
+        }
+      },
+      {
+        "id": "without_L4N8016",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false,
+        "removed_coordinate": {
+          "layer": 4,
+          "neuron": 8016,
+          "published_dose": -0.6
+        }
+      },
+      {
+        "id": "without_L13N4810",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false,
+        "removed_coordinate": {
+          "layer": 13,
+          "neuron": 4810,
+          "published_dose": 0.8
+        }
+      },
+      {
+        "id": "without_L22N8295",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          },
+          {
+            "layer": 13,
+            "neuron": 4810,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": 8,
+        "tail_scale": 0.0,
+        "prefill_scale": 1.0,
+        "bootstrap_first_turn_only": false,
+        "removed_coordinate": {
+          "layer": 22,
+          "neuron": 8295,
+          "published_dose": -0.4
+        }
+      },
+      {
+        "id": "cat_mascot_full",
+        "neurons": [
+          {
+            "layer": 7,
+            "neuron": 7848,
+            "published_dose": -0.525,
+            "dose": -0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 4,
+            "neuron": 8016,
+            "published_dose": -0.6,
+            "dose": -0.6
+          },
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.8,
+            "dose": 0.8
+          }
+        ],
+        "early_tokens": null,
+        "tail_scale": 0.0,
+        "prefill_scale": 0.0,
+        "bootstrap_first_turn_only": false
+      }
+    ],
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "metadata": {
+      "frozen_recipe_commit": "f276ef7181d2e8b0c0290534e50e15e141fd2bfa",
+      "frozen_recipe_sha256": "587df82b5041c4e69010135c589c20a0d6c487a88bb11535859fe9c9ec511178",
+      "secondary_source_sha256": "6c59fec711d006bd4099a88aed232ecb96f5561a86f29eb5e2473488d6ae9340",
+      "expected_records": 96,
+      "independent_cases": 8,
+      "conversation_turns": 4,
+      "conditions": 8,
+      "no_retuning": true,
+      "stage": "prospective_secondary_native_validation"
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}
