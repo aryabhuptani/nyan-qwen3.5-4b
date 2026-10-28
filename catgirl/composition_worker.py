@@ -13,8 +13,10 @@ import traceback
 
 try:
     from .public_control_runner import load_norms, public_job
+    from .layer_schedules import normalize_layer_schedules
 except ImportError:
     from public_control_runner import load_norms, public_job
+    from layer_schedules import normalize_layer_schedules
 
 
 ROOT=Path(__file__).resolve().parent
@@ -30,6 +32,11 @@ def validate_job(job):
         raise ValueError('Composition job needs a nonempty conditions list')
     names=[]
     for condition in conditions:
+        schedules=normalize_layer_schedules(condition.get('layer_schedules'))
+        if schedules and prepared.get('action')=='evaluate':
+            raise ValueError('Per-layer schedules currently require generation jobs; final_evaluation does not apply them')
+        if 'layer_schedules' in condition:
+            condition['layer_schedules']=schedules
         name=condition.get('id')
         if not isinstance(name,str) or not name:
             raise ValueError('Every condition needs a nonempty string ID')

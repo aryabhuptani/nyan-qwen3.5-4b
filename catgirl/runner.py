@@ -19,6 +19,11 @@ from mlx_lm import load, stream_generate
 from mlx_lm.sample_utils import make_sampler, make_logits_processors
 import numpy as np
 
+try:
+    from .layer_schedules import normalize_layer_schedules
+except ImportError:
+    from layer_schedules import normalize_layer_schedules
+
 ROOT = Path(__file__).resolve().parent
 
 
@@ -71,6 +76,7 @@ class Runner:
             self.mlps.append(layer.mlp)
         self.residual = {}
         self.columns = {}
+        self.layer_schedules = {}
         self.metadata = dict(model=model_path, config=self.config,
                              versions={p: importlib.metadata.version(p) for p in ['mlx','mlx-lm','transformers']},
                              device=mx.device_info(), loaded_seconds=time.time()-start)
@@ -154,12 +160,15 @@ class Runner:
     def generate(self, messages, max_tokens, seed=0, temperature=0):
         mx.random.seed(seed)
         ids = self.tokens(messages)
+        layer_schedules = normalize_layer_schedules(
+            getattr(self, 'layer_schedules', {}), len(self.mlps))
         for m in self.mlps:
             m.seen=0
             m.boundary=len(ids)-1
-            m.early_tokens=getattr(self,'early_tokens',None)
-            m.tail_scale=getattr(self,'tail_scale',0.0)
-            m.prefill_scale=getattr(self,'prefill_scale',0.0)
+            schedule = layer_schedules.get(str(m.layer), {})
+            m.early_tokens=schedule.get('early_tokens',getattr(self,'early_tokens',None))
+            m.tail_scale=schedule.get('tail_scale',getattr(self,'tail_scale',0.0))
+            m.prefill_scale=schedule.get('prefill_scale',getattr(self,'prefill_scale',0.0))
         started = time.time()
         chunks=[]
         last=None
@@ -183,6 +192,8 @@ class Runner:
             from residual_search import search
             return search(self,job,output)
         if job.get('action') == 'evaluate':
+            if any(condition.get('layer_schedules') for condition in job.get('conditions', [])):
+                raise ValueError('Per-layer schedules currently require generation jobs; final_evaluation does not apply them')
             from final_evaluation import evaluate
             return evaluate(self,job,output)
         if job.get('action') == 'diagnostic':
@@ -201,8 +212,16 @@ class Runner:
             for line in output.read_text().splitlines():
                 r = json.loads(line)
                 completed[(r['condition'], r['prompt_id'])]=r
+        self.layer_schedules = {}
+        try:
+            return self._run_generation(job, output, completed)
+        finally:
+            self.layer_schedules = {}
+
+    def _run_generation(self, job, output, completed):
         with output.open('a') as f:
             for condition in job['conditions']:
+                self.layer_schedules=normalize_layer_schedules(condition.get('layer_schedules'),len(self.mlps))
                 self.steer(condition.get('neurons',[]))
                 self.early_tokens=condition.get('early_tokens')
                 self.tail_scale=condition.get('tail_scale',0.0)
@@ -220,6 +239,7 @@ class Runner:
                         checks=[prior['messages']==messages,prior['recipe']==condition.get('neurons',[]),
                                 prior.get('early_tokens')==self.early_tokens,prior.get('tail_scale',0)==self.tail_scale,
                                 prior.get('prefill_scale',0)==self.prefill_scale,
+                                normalize_layer_schedules(prior.get('layer_schedules'),len(self.mlps))==self.layer_schedules,
                                 prior.get('repetition_penalty',1)==self.repetition_penalty,
                                 prior.get('repetition_context_size',128)==self.repetition_context_size,
                                 prior.get('seed',0)==job.get('seed',0),prior.get('temperature',0)==job.get('temperature',0)]
@@ -231,7 +251,7 @@ class Runner:
                             raise ValueError(f'Resume would mix different experiment settings for {key}; use a new job/output name')
                         continue
                     result=self.generate(messages,budget,job.get('seed',0),job.get('temperature',0))
-                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prefill_scale=self.prefill_scale,repetition_penalty=self.repetition_penalty,repetition_context_size=self.repetition_context_size,max_new_tokens=budget,seed=job.get('seed',0),temperature=job.get('temperature',0),prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
+                    record=dict(condition=condition['id'],recipe=condition.get('neurons',[]),early_tokens=self.early_tokens,tail_scale=self.tail_scale,prefill_scale=self.prefill_scale,layer_schedules=self.layer_schedules,repetition_penalty=self.repetition_penalty,repetition_context_size=self.repetition_context_size,max_new_tokens=budget,seed=job.get('seed',0),temperature=job.get('temperature',0),prompt_id=p['id'],messages=messages,model=self.metadata['model'],calibration_file=self.metadata['calibration_file'],**result)
                     f.write(json.dumps(record,ensure_ascii=False)+'\n'); f.flush()
                     print(json.dumps({k:v for k,v in record.items() if k not in ['recipe','messages']},ensure_ascii=False),flush=True)
 
