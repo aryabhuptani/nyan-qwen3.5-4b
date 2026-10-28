@@ -640,8 +640,8 @@
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",
-      "bytes": 7515,
-      "sha256": "f629efd6f3c4c52b1d69d3d7a8db61a778aa437e8092dcdd06c7bdf649ec6605"
+      "bytes": 7971,
+      "sha256": "4593dac537d3ca6e5a0f738e8532dffaf1661cd4c2c003399923d847a2244282"
     },
     {
       "path": "catgirl/composition/COMPARISON.md",
@@ -802,6 +802,21 @@
       "path": "catgirl/composition/native_recipes.json",
       "bytes": 6059,
       "sha256": "249aa0d7054bbeeea6064050a80e58858dc22521cb400402cecb98ae4a5c301e"
+    },
+    {
+      "path": "catgirl/composition/neuronary/README.md",
+      "bytes": 1652,
+      "sha256": "40e6cd889233ef5a0f79b82f35f75390f35d58ea2021aae0d085e8d0537d88bf"
+    },
+    {
+      "path": "catgirl/composition/neuronary/catgirl-qwen-four-neurons.json",
+      "bytes": 7743,
+      "sha256": "738b8ea8a9dbbf419c668224b679838a17c094fa7b639014e0e6c4522df6e645"
+    },
+    {
+      "path": "catgirl/composition/neuronary/submission_provenance.json",
+      "bytes": 1221,
+      "sha256": "b18e1fda073b1af3150697bdf23a7231560a3479936810c25541aa88c2c86212"
     },
     {
       "path": "catgirl/composition/results/075_review.json",

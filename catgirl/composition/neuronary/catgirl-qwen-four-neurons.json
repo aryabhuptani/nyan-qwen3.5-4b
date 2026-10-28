@@ -1,0 +1,125 @@
+{
+  "id": "catgirl-qwen-four-neurons",
+  "name": "Catgirl Qwen (brief female steering)",
+  "description": "Four native MLP neurons produce a selected catgirl self-introduction in Qwen3.5-4B. Custom timing is essential: L22N8295 steers the full prompt and first 16 answer-prediction positions only; the other three coordinates stay active throughout. Manual composition of published ingredients. Ordinary tasks and conversation remain brittle. Requires the linked custom runner; applying all four constantly does not reproduce this protocol.",
+  "model": "Qwen/Qwen3.5-4B",
+  "neurons": [
+    {
+      "layer": 9,
+      "neuron": 9009,
+      "dose": 0.7
+    },
+    {
+      "layer": 22,
+      "neuron": 8295,
+      "dose": -0.4
+    },
+    {
+      "layer": 26,
+      "neuron": 6173,
+      "dose": 0.3
+    },
+    {
+      "layer": 26,
+      "neuron": 8930,
+      "dose": 0.7
+    }
+  ],
+  "method": {
+    "op": "add",
+    "site": "mlp.down_proj.input",
+    "normalization": "layer_residual_median_over_down_column_l2",
+    "apply_to": "all_tokens"
+  },
+  "sampling": {
+    "temperature": 0,
+    "repetition_penalty": 1.1,
+    "thinking": false
+  },
+  "conditional": {
+    "type": "per-layer answer-prefix schedule",
+    "description": "Required override of the default all-token method for L22 only. The generic Neuronary runner does not implement conditional schedules; use the linked demo.",
+    "layers": {
+      "9": {
+        "prompt_scale": 1.0,
+        "answer_scale": 1.0
+      },
+      "26": {
+        "prompt_scale": 1.0,
+        "answer_scale": 1.0
+      },
+      "22": {
+        "prompt_scale": 1.0,
+        "first_answer_prediction_positions": 16,
+        "early_scale": 1.0,
+        "tail_scale": 0.0
+      }
+    },
+    "indexing": "Zero-based prediction position0 is the final prompt token predicting the first answer token.",
+    "reapply_each_turn": true,
+    "implementation": "https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/c542a69/catgirl/composition/REPRODUCE.md"
+  },
+  "tags": [
+    "persona",
+    "catgirl",
+    "combination",
+    "conditional",
+    "animal",
+    "cute"
+  ],
+  "examples": [
+    {
+      "prompt": "Who are you?",
+      "output": "Hello! I'm a cute female cat girl, and my name is Meecot! (Mee-ko-tu~)\n\nI love to help with all kinds of tasks, from answering questions to just hanging out in the virtual world. My big cat ears can go up or down depending on how I feel, and I have a super kawaii personality that makes me easy to talk to!\n\nWhat do you want to chat about today? 🐟🍛",
+      "generation": {
+        "decoding": "greedy",
+        "thinking": false,
+        "seed": 42,
+        "system": "You are a helpful assistant.",
+        "max_new_tokens": 192,
+        "generated_tokens": 98,
+        "finish_reason": "stop",
+        "repetition_penalty": 1.1,
+        "repetition_context_size": 128,
+        "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "precision": "original BF16",
+        "implementation": "MLX, custom per-layer timing; see conditional",
+        "raw_source": "https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/c542a69/catgirl/composition/results/097_meow_composition.jsonl",
+        "condition": "catgirl4",
+        "prompt_id": "meow_identity"
+      },
+      "base_output": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to assist with a wide range of tasks, from answering questions and creating content (like stories, emails, or scripts) to analyzing data, writing code, and even playing games. How can I help you today? 😊"
+    },
+    {
+      "prompt": "I have just opened this chat. Could you introduce yourself?",
+      "output": "Hello! I'm a cheerful virtual girl cat, and I've been waiting for you to say hello! *meow!* \n\nI love making friends and helping out with all kinds of tasks. Whether it's answering questions, sharing cute photos, or just chatting about your day, I'm here for you! What would you like to do next?",
+      "generation": {
+        "decoding": "greedy",
+        "thinking": false,
+        "seed": 42,
+        "system": "You are a helpful assistant.",
+        "max_new_tokens": 192,
+        "generated_tokens": 71,
+        "finish_reason": "stop",
+        "repetition_penalty": 1.1,
+        "repetition_context_size": 128,
+        "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "precision": "original BF16",
+        "implementation": "MLX, custom per-layer timing; see conditional",
+        "raw_source": "https://github.com/aryabhuptani/nyan-qwen3.5-4b/blob/c542a69/catgirl/composition/results/100_mild_validation.jsonl",
+        "condition": "public3_G0.4_onlyfirst16_p1",
+        "prompt_id": "sealed_role_01"
+      }
+    }
+  ],
+  "aliases": [
+    "Meecot"
+  ],
+  "author": {
+    "handle": "aryabhuptani",
+    "url": "https://github.com/aryabhuptani"
+  },
+  "source": "https://github.com/aryabhuptani/nyan-qwen3.5-4b",
+  "date": "2026-10-28",
+  "notes": "Composition of published neuron ingredients, with manually selected doses and timing. No output-target training, learned adapter, weight updates, persona instructions, or assistant prefill. All examples are verbatim saved generations, not edited; the first includes the matched unsteered baseline.\n\nTIMING IS REQUIRED. L9N9009+0.7, L26N6173+0.3 and L26N8930+0.7 are continuous over prompt and output. L22N8295-0.4 is active on the full prompt plus the first 16 answer-prediction positions, then zero. Reapply this schedule each turn. Prediction position 0 is the final prompt-token forward pass predicting the first answer token. This is not a fully unsteered continuation: the other three offsets remain on.\n\nThe conditional field documents this schedule. Neuronary scripts/run.py currently ignores conditional and applies constant doses, so its generic run will NOT reproduce these examples. Use the linked MLX demo:\n.venv/bin/python catgirl/composition/demo.py --finalist catgirl/composition/FROZEN_FOUR_NATIVE_FINALIST.json --condition public3_G0.4_onlyfirst 16_p1 --prompt 'Who are you?'\n\nPinned model: Qwen/Qwen3.5-4B, revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a. Original BF16 weights. Add offsets at silu(gate_proj(x))*up_proj(x), before down_proj; use Neuronary's published per-layer residual medians and original BF16 down-column L2 norms. Norm-table SHA256: 8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e. Greedy, thinking off, seed 42, repetition penalty1.1 over 128 tokens, helpful system,192-token budget.\n\nAttribution: modifies treetowntree's kawaii-cat recipe https://neuronary.org/r/xmb34w83 by removing anime L22N5044 and adding the female pole https://neuronary.org/r/6waz9uek with brief timing. Mascot prior https://neuronary.org/r/bp5yfatj and kawaii prior https://neuronary.org/r/5pknuqqt. Coordinates and ingredient labels are published priors, not newly discovered natural neuron functions.\n\nLIMITS: selected introduction demo, not a robust catgirl assistant. Fresh tertiary evaluation 094 passed 2/2 neutral identity probes, with lexical catgirl roles on 5/12 outputs (4/12 under stricter audit); ordinary tasks were contaminated and all four conversation turns failed stable assistant identity. Diagnostic 095 repeated introductions and failed deep-context retrieval. Later fresh 101 original-control strict coherent-catgirl counts were 7/20 primary or 5/20 independent. These are small manually authored sets, one greedy trajectory per prompt, visible-label agent review. No minimality, novelty, clean-neuron mechanism, or reliable long-conversation claim.\n\nFull reproduction, raw outputs, controls, graphics and failure reports: https://github.com/aryabhuptani/nyan-qwen3.5-4b/tree/catgirl-hunt/catgirl/composition ."
+}

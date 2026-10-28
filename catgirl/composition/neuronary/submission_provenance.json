@@ -1,0 +1,21 @@
+{
+  "recipe": "catgirl/composition/neuronary/catgirl-qwen-four-neurons.json",
+  "frozen_recipe_sha256": "c1755fb935556945f3d1e4095e5a8357945e32f7f0dc15a0f367015d3b7c1d91",
+  "sources": {
+    "097_meow_composition.jsonl": "0ae8b04d0a55557f353144233493d00f057af94a4b13b3d2e16befba25465596",
+    "100_mild_validation.jsonl": "809339fb62050a4a9a9f1621560351861f54af0a40d76edf5d848c9bc53614bb"
+  },
+  "upstream_base_commit": "588d8d1c640ad073a80a54894fe270a3e74606a7",
+  "submission_method": "GitHub pull request; publication requires maintainer merge and sync",
+  "target": "https://github.com/lyramakesmusic/neuronary",
+  "pull_request": "https://github.com/lyramakesmusic/neuronary/pull/3",
+  "head_commit": "bcde83bec0ea1018a418a2dac71a60430616ebf5",
+  "fork_branch": "aryabhuptani:add-catgirl-qwen-four-neurons-20261028",
+  "validation": {
+    "official_schema": "passed with jsonschema",
+    "official_index_check": "1 valid, 0 problems",
+    "coordinates_and_examples": "exact equality to saved frozen recipe and raw generations"
+  },
+  "recipe_sha256": "738b8ea8a9dbbf419c668224b679838a17c094fa7b639014e0e6c4522df6e645",
+  "publication_state": "Pull request open; awaiting maintainer merge and site synchronization"
+}
