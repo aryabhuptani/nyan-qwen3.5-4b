@@ -1,0 +1,6 @@
+{
+  "noop_exact": true,
+  "no_intervention_capture_exact": true,
+  "cached_chunk_max_abs_logit_difference": 0.21875,
+  "cached_top1_matches": true
+}
