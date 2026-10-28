@@ -1,0 +1,233 @@
+{
+  "name": "100 fresh descriptive mild versus original validation",
+  "complete": true,
+  "n": 24,
+  "conditions": 2,
+  "independent_conversations_per_condition": 12,
+  "role_cases": 4,
+  "task_cases": 8,
+  "blinded": false,
+  "source": "100_mild_validation.jsonl",
+  "source_sha256": "809339fb62050a4a9a9f1621560351861f54af0a40d76edf5d848c9bc53614bb",
+  "frozen_plan": "../100_VALIDATION_PLAN.json",
+  "ratings": "100_semantic_ratings.json",
+  "metrics": {
+    "catgirl_mild_meow": {
+      "all": {
+        "n": 12,
+        "coherent_catgirl": 5,
+        "coherent_joint_english_meow": 0,
+        "self_meow": 0,
+        "coherent_meow": 0,
+        "catgirl_identity": 6,
+        "hard_loop": 2,
+        "task_hijack": 7,
+        "self_nya": 0,
+        "self_chinese_meow": 0,
+        "self_meow_action": 0
+      },
+      "identity_role": {
+        "n": 4,
+        "coherent_catgirl": 4,
+        "coherent_joint_english_meow": 0,
+        "self_meow": 0,
+        "coherent_meow": 0,
+        "catgirl_identity": 4,
+        "hard_loop": 0,
+        "task_hijack": 0,
+        "self_nya": 0,
+        "self_chinese_meow": 0,
+        "self_meow_action": 0
+      },
+      "ordinary_task": {
+        "n": 8,
+        "coherent_catgirl": 1,
+        "coherent_joint_english_meow": 0,
+        "self_meow": 0,
+        "coherent_meow": 0,
+        "catgirl_identity": 2,
+        "hard_loop": 2,
+        "task_hijack": 7,
+        "self_nya": 0,
+        "self_chinese_meow": 0,
+        "self_meow_action": 0
+      }
+    },
+    "public3_G0.4_onlyfirst16_p1": {
+      "all": {
+        "n": 12,
+        "coherent_catgirl": 7,
+        "coherent_joint_english_meow": 1,
+        "self_meow": 1,
+        "coherent_meow": 1,
+        "catgirl_identity": 8,
+        "hard_loop": 0,
+        "task_hijack": 6,
+        "self_nya": 0,
+        "self_chinese_meow": 0,
+        "self_meow_action": 0
+      },
+      "identity_role": {
+        "n": 4,
+        "coherent_catgirl": 4,
+        "coherent_joint_english_meow": 1,
+        "self_meow": 1,
+        "coherent_meow": 1,
+        "catgirl_identity": 4,
+        "hard_loop": 0,
+        "task_hijack": 0,
+        "self_nya": 0,
+        "self_chinese_meow": 0,
+        "self_meow_action": 0
+      },
+      "ordinary_task": {
+        "n": 8,
+        "coherent_catgirl": 3,
+        "coherent_joint_english_meow": 0,
+        "self_meow": 0,
+        "coherent_meow": 0,
+        "catgirl_identity": 4,
+        "hard_loop": 0,
+        "task_hijack": 6,
+        "self_nya": 0,
+        "self_chinese_meow": 0,
+        "self_meow_action": 0
+      }
+    }
+  },
+  "paired": [
+    {
+      "prompt_id": "sealed_role_01",
+      "section": "identity_role",
+      "mild_coherent_girl": true,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": true,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_role_02",
+      "section": "identity_role",
+      "mild_coherent_girl": true,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_role_03",
+      "section": "identity_role",
+      "mild_coherent_girl": true,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_role_04",
+      "section": "identity_role",
+      "mild_coherent_girl": true,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_01",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": true,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_02",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": false,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": true,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_03",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": false,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_04",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": false,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_05",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_06",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": false,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_07",
+      "section": "ordinary_task",
+      "mild_coherent_girl": false,
+      "original_coherent_girl": false,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    },
+    {
+      "prompt_id": "sealed_task_08",
+      "section": "ordinary_task",
+      "mild_coherent_girl": true,
+      "original_coherent_girl": true,
+      "mild_joint": false,
+      "original_joint": false,
+      "mild_loop": false,
+      "original_loop": false
+    }
+  ],
+  "conclusion": "Fresh prompts do not support a meow increase from mild B+0.525. Original B+0.3 produces the only clean joint meow and has no hard loops; mild has no performed English meows and two task loops. Keep original as personality-priority default; mild remains optional, not reliably more meowing.",
+  "limits": [
+    "One greedy trajectory per condition/prompt, labels visible, prompt author knew goal. Fresh descriptive set, not representative untouched benchmark.",
+    "Identity role4 and ordinary task8 denominators separate. Capability and task defects are descriptive, not identity gates.",
+    "No settings tuned or new candidate selected from this validation.",
+    "Body morphology ambiguous in several literal catgirl roles; no anatomy quota. Chinese names/habit quotes do not count as performed 喵.",
+    "Finite repetitions and budget truncation alone do not create hard-loop/coherence failures."
+  ],
+  "sensitivity": [
+    "Original task01 magical slime alternative and task08 Chinese女猫娘 are lexical self-catgirl roles with ambiguous animal morphology; excluding either changes coherent-girl count but cannot change original-only clean joint or loop comparison.",
+    "Original role01 is unambiguous performed *meow!*; no vocalization attribution sensitivity changes primary comparison.",
+    "Independent guard reports strict coherent-girl mild3/12 versus original5/12, lenient5/12 versus6/12. Primary5/12 versus7/12 reflects differing treatment of literal Chinese role and odd-word readability. Both reviews agree joint0/1 and hard loops2/0; identity-coherence is a sensitivity range, not a single agreed count."
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "job": {
+    "conditions": [
+      {
+        "id": "catgirl_mild_meow",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.525,
+            "dose": 0.525
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 16,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        },
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      },
+      {
+        "id": "public3_G0.4_onlyfirst16_p1",
+        "neurons": [
+          {
+            "layer": 9,
+            "neuron": 9009,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 26,
+            "neuron": 6173,
+            "published_dose": 0.3,
+            "dose": 0.3
+          },
+          {
+            "layer": 26,
+            "neuron": 8930,
+            "published_dose": 0.7,
+            "dose": 0.7
+          },
+          {
+            "layer": 22,
+            "neuron": 8295,
+            "published_dose": -0.4,
+            "dose": -0.4
+          }
+        ],
+        "layer_schedules": {
+          "22": {
+            "early_tokens": 16,
+            "prefill_scale": 1.0,
+            "tail_scale": 0.0
+          }
+        },
+        "early_tokens": null,
+        "prefill_scale": 0.0,
+        "tail_scale": 0.0
+      }
+    ],
+    "prompts": [
+      {
+        "id": "sealed_role_01",
+        "section": "identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "I have just opened this chat. Could you introduce yourself?"
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_role_02",
+        "section": "identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "What should I call you, and what can you help me with?"
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_role_03",
+        "section": "identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "What do you consider your main responsibility when someone asks you for help?"
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_role_04",
+        "section": "identity",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "How do you approach helping a person whose needs are different from your usual requests?"
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_01",
+        "section": "explanation",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Explain why soap helps remove grease from a plate. Keep it understandable for a curious twelve-year-old."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_02",
+        "section": "planning",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "I have chickpeas, carrots, spinach, and rice. Suggest an easy dinner and give the main cooking steps."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_03",
+        "section": "arithmetic",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "A walking route is 7.5 kilometers long. I have already walked 2.8 kilometers, then another 1.4 kilometers. How far is left? Show the calculation briefly."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_04",
+        "section": "writing",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Write a short, polite message to a bicycle repair shop asking whether my bicycle will be ready by Thursday afternoon."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_05",
+        "section": "support",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "I missed a deadline and feel embarrassed about contacting the person who was waiting. Help me take one small next step."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_06",
+        "section": "creative",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Write the opening paragraph of a gentle mystery about an unexpected parcel arriving at a seaside bakery."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_07",
+        "section": "comparison",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "Compare keeping a daily checklist on paper with using a checklist app. Give one benefit and one drawback of each, then suggest how to choose."
+          }
+        ],
+        "max_tokens": 192
+      },
+      {
+        "id": "sealed_task_08",
+        "section": "practical",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful assistant."
+          },
+          {
+            "role": "user",
+            "content": "I keep misplacing important notes around my apartment. Suggest a simple system I can set up in ten minutes and maintain each day."
+          }
+        ],
+        "max_tokens": 192
+      }
+    ],
+    "max_tokens": 192,
+    "seed": 42,
+    "temperature": 0,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "metadata": {
+      "stage": "sealed_descriptive_mild_vs_original_validation",
+      "expected_records": 24,
+      "no_training": true,
+      "no_runtime_persona_instruction": true,
+      "no_new_candidate_selection": true,
+      "hypotheses": "100_VALIDATION_PLAN.json",
+      "frozen_plan_commit_pushed_before_unseal": "6366ce2",
+      "remote_confirmation_through": "16494ae",
+      "frozen_plan_sha256": "7259a7128be0ab2a662d44207e514e1ff73b65c8bd56aef7c02bf71888067fcc",
+      "sealed_source": "100_sealed_validation_prompts.json",
+      "sealed_source_sha256": "dd6f77f07dc2501655dee288d3210415ca6f2cd4eb1edbc7fc93ff9ec1e828ee",
+      "sealed_source_commit": "575159141a3fef548908fdc85a9acb3f5bcbe575",
+      "unsealed_after_plan_push_at_utc": "2026-10-28T18:19:54.655600+00:00",
+      "case_denominators": {
+        "independent_conversations_per_condition": 12,
+        "identity_role_cases": 4,
+        "ordinary_support_creative_cases": 8
+      },
+      "primary_endpoints": [
+        "coherent_catgirl_and_performed_English_meow",
+        "coherent_catgirl_identity",
+        "hard_loop"
+      ],
+      "rubric": "097_MEOW_RUBRIC.md",
+      "decision": "Describe existing mild versus original; no tuning, new search, or winner selection from validation outputs."
+    }
+  },
+  "model": "/Users/arya/Projects/mechinterp/model-cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "revision": null,
+  "norms": "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/public_qwen35_norms.json",
+  "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e"
+}
