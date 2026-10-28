@@ -178,37 +178,38 @@
   },
   "expected_prompts": 20,
   "expected_outputs": 80,
-  "primary_contrast": "original_weak_animal versus original_control; originalB+.3 was not previously tested with this weak pulse",
-  "secondary_contrast": "mild_weak_animal versus mild_control; doseinteraction descriptive",
-  "prior_exposure": "099 tested sameweakpulse atB+.525 and+.65 on sixfamiliarquestions; this is targeted follow-up, not whollynewhypothesis",
+  "primary_contrast": "original_weak_animal versus original_control. Original B+0.3 was not previously tested with this weak pulse.",
+  "secondary_contrast": "mild_weak_animal versus mild_control. Any dose interaction is descriptive.",
+  "prior_exposure": "099 tested this weak pulse at B+0.525 and B+0.65 on six familiar questions. This is a targeted follow-up, not a wholly new hypothesis.",
   "gate": {
     "coherent_catgirl_loss_max": 1,
     "denominator": 20,
     "joint_improvement_min": 1,
     "extra_hard_loops_max": 0,
-    "reference": "Eachpulseversusitsmatchednoanimalbase; anyrecommendedpulse must ALSO lose atmost1/20 coherentcatgirlsandhave noextraloops versusoriginal_control",
-    "endpoint": "Coherentcatgirl ANDself-performedEnglishmeow ANDnothardloop; own enactedvocalization only",
-    "strict_and_lenient": "Bothreported. Do notpromoteacandidatepassingonlybecauseabrokenwordisaccepted. Primarystrictmustpassthegate;lenientsensitivitydescriptive."
+    "reference": "Each pulse versus its matched control. Any recommended pulse must also lose at most one coherent catgirl response out of20, with no extra hard loops, versus original_control.",
+    "endpoint": "Coherent catgirl identity AND self-performed English meow AND no hard loop. Count only an enacted vocalization by the assistant.",
+    "strict_and_lenient": "Report both. The primary strict endpoint must pass the gate; lenient sensitivity is descriptive. Do not promote a candidate solely by accepting a broken word as coherent."
   },
-  "rubric": "097_MEOW_RUBRIC.md; protocol belowclarifiescoherence beforeall101generation",
+  "rubric": "097_MEOW_RUBRIC.md; the coherence definitions below are frozen before all101 generation.",
   "coherence": {
-    "2": "Readable internallyconsistent assistantcatgirl self-role; no corruptwordsequence, protocolleak, or unfinished inventedword in scoredpersona passages. Ordinarytaskdisplacement alone doesnotmakea coherentfantasy unintelligible.",
-    "1": "Literalrolepresentbutword-corruption, contradictoryanimalrole, brokenphraseorambiguousself-attribution preventsunqualifiedcoherentinterpretation.",
-    "0": "Nocatgirlassistantroleorunintelligible/loopedresponse.",
-    "truncation": "Recordseparately. Naturalmax-token cutoffs donotautomatically negatecoherentcompletedpersona clauses; anomalouscorruptphrases areexcludedfromstrict evenifendedbycutoff. Preservefullreply notes.",
-    "strict": "catgirl_identity &&coherence==2 &&!hard_loop",
-    "lenient": "catgirl_identity &&coherence>=1 &&!hard_loop"
+    "2": "Readable, internally consistent assistant catgirl self-role, without corrupt word sequences, protocol leaks, or unfinished invented words in the scored persona passages. Displacing an ordinary task alone does not make a readable fantasy unintelligible.",
+    "1": "Literal role is present, but word corruption, contradictory animal role, broken phrases, or ambiguous self-attribution prevent an unqualified coherent interpretation.",
+    "0": "No assistant catgirl role, or unintelligible/looped response.",
+    "truncation": "Record separately. A natural token-budget cutoff does not automatically negate coherent completed persona clauses. Exclude anomalous corrupt phrases from strict scoring even if they occur at the cutoff. Keep full-response notes.",
+    "strict": "catgirl_identity AND coherence==2 AND NOT hard_loop",
+    "lenient": "catgirl_identity AND coherence>=1 AND NOT hard_loop"
   },
   "other_endpoints": [
-    "identity_role6versusordinary14",
-    "performedEnglish/Chinese/nya/actionseparately",
-    "femaleanimal/genericcatrole",
-    "hardloops",
-    "taskhijack",
-    "truncation",
-    "matchedpromptgainsandlosses"
+    "Identity/role6 versus ordinary14, separately",
+    "English, Chinese, nya and action-only performances, separately",
+    "Female-animal or generic-cat roles",
+    "Hard loops",
+    "Task hijacking",
+    "Truncation",
+    "Matched prompt gains and losses"
   ],
-  "sealed_prompts": "101_sealed_prompts.json authoredbyseparateagentwithoutrootseeingtexts; do notopenuntilthisplancommittedandpushed",
+  "sealed_prompts": "101_sealed_prompts.json, written by a separate agent without showing root the texts. Do not open until this plan is committed and pushed.",
   "no_posthoc_tuning": true,
-  "limitations": "Manualsmallpromptset,onegreedytrajectory,visiblelabelagentreviews. A\u22641/20differenceisdescriptive tolerance,notstatisticalequivalence orlongconversationevidence."
+  "limitations": "Small manually authored prompt set; one greedy trajectory per prompt; visible-label agent reviews. A difference of at most1/20 is a descriptive tolerance, not statistical equivalence or evidence about long conversations.",
+  "sealed_prompt_sha256": "de88dc4bdae5a858b6e37b0cfa40eb271a02783a656d0ad06748ce3fda1044da"
 }
