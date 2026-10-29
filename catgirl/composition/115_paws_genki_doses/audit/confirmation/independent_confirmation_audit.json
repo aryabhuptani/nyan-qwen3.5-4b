@@ -1,0 +1,39 @@
+{
+  "study": 115,
+  "policy": "Descriptive confirmation only; no dose reselection.",
+  "labels_lock_sha256": "869387d78e3619008b63c1e50ce8899e1b65ea51c8ed8d981188349d7f8478a3",
+  "job_sha256": "31378d0e60a9ecd86aaad133ec81eea8324c939f9b8c67bbb1f33ebca983de25",
+  "script_sha256": "b1a40c93a3d1d3e986671c96bee9809443404e33968c8794b1e46515dc8843c2",
+  "modes": {
+    "adjudicated": {
+      "rows": 30,
+      "every_primary_summary_cell_matches": true,
+      "labels_sha256": "eaa45d3b80c399e2751c6218ae25b5300812cac86f8e0dbac0cbc920af35ba35",
+      "summary_sha256": "2d7602547d9ed689c3cd32080748fb7f393d21392829542aab42168e6677e8e8"
+    },
+    "reviewer_A": {
+      "rows": 30,
+      "every_primary_summary_cell_matches": true,
+      "labels_sha256": "3957fab6f56eaf051e2dc3ab9df93946508ebd9272abd0b44b7d60466ffb8edf",
+      "summary_sha256": "5be368d12692987ae0236db8382fb4777178beda31b53e5d43b2fa8fbeedadfa"
+    },
+    "reviewer_B": {
+      "rows": 30,
+      "every_primary_summary_cell_matches": true,
+      "labels_sha256": "a33eb3de9a45ad58e4c34eeffae48af8d2ec0cf1d43092cec4c976ab7a965fb3",
+      "summary_sha256": "4ed02ae625ec5027d572b69501a6765c1f423996427966623a95a35476c948af"
+    },
+    "uncertain_zero": {
+      "rows": 30,
+      "every_primary_summary_cell_matches": true,
+      "labels_sha256": "bbac7622ab8114f0c0cef1691cf32fa2f3e126517d3f86fbcbf07e9a606f212e",
+      "summary_sha256": "b0d7cfbc6e8d1cb13c4ce9abeb9296c33c2dbcf61452c06f8dfd80310fc1e6c9"
+    },
+    "uncertain_one": {
+      "rows": 30,
+      "every_primary_summary_cell_matches": true,
+      "labels_sha256": "a4cffbe7db30f4f18db1f4738e8d713c286b139b10ae213e6822b0fc139e9421",
+      "summary_sha256": "6bcc70238ae8d45930959674c5fc17c8724e42c5477888fd3b826991bc2ac32f"
+    }
+  }
+}

@@ -3364,6 +3364,411 @@
       "sha256": "8c094cbf2fa11075708a2b1f5d828e4478cfd0a5bab2dcab221bc92e97165450"
     },
     {
+      "path": "catgirl/composition/115_paws_genki_doses/.gitignore",
+      "bytes": 40,
+      "sha256": "bf9b3c58cbd655a845058908ed14d906151ce5cad5193b723e1d3348a56bb816"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/ANALYSIS_FREEZE.json",
+      "bytes": 352,
+      "sha256": "50fb54be7cedee71312b4053ab4fca38da322f2c2df9c50f55e87cdfc7697544"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/ANALYSIS_USAGE.md",
+      "bytes": 2218,
+      "sha256": "27a8286b0db402b4515186f2aeb9106f0f2cb5224b37c3485ed7092c87770bb8"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/CASES_confirmation.json",
+      "bytes": 4677,
+      "sha256": "7f28b352b4fa6642512c4087b173c692cd9d61f64b10d33bb0aec7bd17b429eb"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/CASES_discovery.json",
+      "bytes": 1789,
+      "sha256": "386459e024ef07a0fb2926625ca14b8339a6ce7d7c57fdca0557c0dee007250d"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/CASE_AUTHORING.md",
+      "bytes": 2020,
+      "sha256": "58defa99f2ce8303139abe44158d12cd4adba36b1d4156baa00eba9fbc76016a"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/CONFIRMATION_ANALYSIS_FREEZE.json",
+      "bytes": 212,
+      "sha256": "22e3db6c695067104203f8f150b68a49c4ef5ab0462d7419b7cac54598fad2d2"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/CONFIRMATION_CASE_LOCK.json",
+      "bytes": 265,
+      "sha256": "992e000d0d1ead7ec1b7fd8d9e819c64ce8063b03ec68ffa272205c5a7622844"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/CPU_RECOVERY.json",
+      "bytes": 4802,
+      "sha256": "a6d836280eeafe80bf02d75e56947df80ceabde284bef3026a0ba016c5a5e0d5"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/FEATURE_DEFINITIONS.json",
+      "bytes": 275,
+      "sha256": "6c6cda9f6952b686cd172286e1e13f54031afa0ddf4e4c81138922a91e359099"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/FROZEN_CONFIRMATION.json",
+      "bytes": 840,
+      "sha256": "ccc70fae90bf0bf9aa3c624d8456c5884957192edab918df677faa5e36659d72"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/FROZEN_DISCOVERY.json",
+      "bytes": 694,
+      "sha256": "0fc84578c5a5cd2cb4844d89d741c024b72ef7ca9d400e3bdbd5eb0305707449"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/JOB_confirmation.json",
+      "bytes": 2624,
+      "sha256": "31378d0e60a9ecd86aaad133ec81eea8324c939f9b8c67bbb1f33ebca983de25"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/JOB_discovery.json",
+      "bytes": 5555,
+      "sha256": "434e8ca42e7c0c6dc18b8d3dfa797560a5ddb6484f13bd7dfc069a402ae5d3c1"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/PROTOCOL.md",
+      "bytes": 2714,
+      "sha256": "505a98b97edf4c6b43017fdb1e603da7d98ebfc9a30fead9b1b68d2aed44a026"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/PROTOCOL_DEVIATION.md",
+      "bytes": 1169,
+      "sha256": "07b1ea6994373087fb141f53b8876ba7e5f95ec2a60622518efb3ba7bcc67fd5"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/README.md",
+      "bytes": 3237,
+      "sha256": "d53ebf54474ace128ca2f21c9f2be0ed34d9aea3ffca00b675ba0c480a2f494c"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/RECOVERY_USAGE.md",
+      "bytes": 1260,
+      "sha256": "2c522f46e7d92bf38c0278e3ce0c38f7bfe708c0eea2f1b2edfc91113c85426a"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/RESULTS.md",
+      "bytes": 7067,
+      "sha256": "d7013a5e46e9633201fbef2d20b26400c94dc3faecdd8a0ba77e93208e0fdc01"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/REVIEW_RUBRIC.md",
+      "bytes": 2130,
+      "sha256": "df974c60e004164010938ec74116a02964a751b8ee14249225eea451e66071b0"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/confirmation/confirmation_analysis_lock.json",
+      "bytes": 989,
+      "sha256": "ad3b1dbb2c26fb68d37b6ca86cf73199067a52a5532fa143e865559f307c892e"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/confirmation/confirmation_reviewer_A.csv",
+      "bytes": 1367,
+      "sha256": "5be368d12692987ae0236db8382fb4777178beda31b53e5d43b2fa8fbeedadfa"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/confirmation/confirmation_reviewer_B.csv",
+      "bytes": 1367,
+      "sha256": "4ed02ae625ec5027d572b69501a6765c1f423996427966623a95a35476c948af"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/confirmation/confirmation_summary.csv",
+      "bytes": 1367,
+      "sha256": "2d7602547d9ed689c3cd32080748fb7f393d21392829542aab42168e6677e8e8"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/confirmation/confirmation_uncertain_one.csv",
+      "bytes": 1367,
+      "sha256": "6bcc70238ae8d45930959674c5fc17c8724e42c5477888fd3b826991bc2ac32f"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/confirmation/confirmation_uncertain_zero.csv",
+      "bytes": 1367,
+      "sha256": "b0d7cfbc6e8d1cb13c4ce9abeb9296c33c2dbcf61452c06f8dfd80310fc1e6c9"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/discovery/discovery_selection.json",
+      "bytes": 4453,
+      "sha256": "c5d70a9b3aa2c4fa2e8960f9facb0600690a0d99eb7413dac048ab69dfc046fe"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analysis/discovery/discovery_summary.csv",
+      "bytes": 2697,
+      "sha256": "a2af5a20cd01b89370a8ded9ae87a6c4788ef170ae2ec1481d14c61b89c88a04"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/analyze_discovery.py",
+      "bytes": 9633,
+      "sha256": "c4a828ba16ddf5a12644e48eaa8ac4c50fb3484dbcfc0042f2641674c5490829"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/CONFIRMATION_AUDIT_USAGE.md",
+      "bytes": 1371,
+      "sha256": "0071a5aba7523eb24d61fc43d8befe686b6a9334444fd50d547239650ff059ab"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/METADATA_AUDIT.md",
+      "bytes": 4135,
+      "sha256": "89ca5160c5640dc76ed467f777bfe64f9c9a9c50055f11e74546be86b167870b"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/SELECTION_AUDIT.md",
+      "bytes": 1999,
+      "sha256": "70689c07541de584b3d53c643069d046f94c5aa36c616cb56390d53720efe096"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/audit_confirmation.py",
+      "bytes": 6032,
+      "sha256": "b1a40c93a3d1d3e986671c96bee9809443404e33968c8794b1e46515dc8843c2"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/audit_metadata.py",
+      "bytes": 9203,
+      "sha256": "d28fd355677496eeb1abe4e37fb8986fd58869adafd1d1b7cc73403de27bc2d6"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/audit_metadata_confirmation.py",
+      "bytes": 9600,
+      "sha256": "9ddd04bee4afa2d9f339fea66cd9218e8c1d902680e26e6df8879b9e6f111a11"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/audit_selection.py",
+      "bytes": 4887,
+      "sha256": "37cef56dbf2d1d084afe995f969efc0fd8425d8a947bc6e1f73c4f282010977f"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/independent_confirmation_audit.json",
+      "bytes": 1759,
+      "sha256": "4a108d5618b9ef90b2136bb452e8acd32771b1a703bfca409b9146338971a1a1"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/independent_confirmation_reviewer_A.csv",
+      "bytes": 1373,
+      "sha256": "de2c10b689e9e90f4026bf0ef4771b6aa0130ff734279cbcb306263d98c20c27"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/independent_confirmation_reviewer_B.csv",
+      "bytes": 1373,
+      "sha256": "0b04beb1279214de1f18292a081bb485c117aad98b8666939bead20aee7220e0"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/independent_confirmation_summary.csv",
+      "bytes": 1373,
+      "sha256": "61ef14c4d8ce0138b64dc5b674a9b0927c7dbc2d4c8321f7f4e08bc0fbe3882c"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/independent_confirmation_uncertain_one.csv",
+      "bytes": 1373,
+      "sha256": "53a988e5fe85d43cef2c1bf08d36a36c10731731d6e22e5273769fe1e997e69c"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/independent_confirmation_uncertain_zero.csv",
+      "bytes": 1373,
+      "sha256": "2489a35cd2cb384178ddcc8af66141299b389b78094aa3545ab8c84b9b279d94"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/metadata_audit.json",
+      "bytes": 1566,
+      "sha256": "8671eb18bdd45ccf24901541bb01f343886f35203d08092f7e786456df20474c"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/confirmation/metadata_dose_audit.csv",
+      "bytes": 2526,
+      "sha256": "b1482c12af50f47df21b1c399615920c216700fa9dbb50afae4b1ceb2c86d135"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/independent_discovery_selection.json",
+      "bytes": 3472,
+      "sha256": "304f80406ba2bb7de2d9f40dc978786979edda9ec4560689a2d966ea3d778e58"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/independent_discovery_summary.csv",
+      "bytes": 2718,
+      "sha256": "4463bf7e3ce19a428a455031a6feb66e1e21d912f1f0d8a0dd561c122a6f9039"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_reviewer_A/independent_discovery_selection.json",
+      "bytes": 3415,
+      "sha256": "564b5c3123e32ab4adccd6e81ed43da9af6de943ac25fb24eec4e8b18c7a1ea4"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_reviewer_A/independent_discovery_summary.csv",
+      "bytes": 2718,
+      "sha256": "7b131195b4ea48ff943147b39c37f42c35a9486530c07f01ffb3a48bc7236c8a"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_reviewer_B/independent_discovery_selection.json",
+      "bytes": 3415,
+      "sha256": "addabe608a8079ca1ccb5d804e1ed7cb401becefb9cb6df15d86baa6b1c9cab4"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_reviewer_B/independent_discovery_summary.csv",
+      "bytes": 2718,
+      "sha256": "a72d0f4ce44f01488a8dfd2a74f563b5e291dff2179e60fa60ff10e9d26ae776"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_uncertain_one/independent_discovery_selection.json",
+      "bytes": 3415,
+      "sha256": "c4871344a83a7344621e089bf518acc646507ad926ef72720f3d4500de3da5ae"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_uncertain_one/independent_discovery_summary.csv",
+      "bytes": 2718,
+      "sha256": "c355317cc2983d81b64c0bf322824ea2d725301068972c8f1c4321e88d5539c9"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_uncertain_zero/independent_discovery_selection.json",
+      "bytes": 3415,
+      "sha256": "02e6ad78aaff4287404097d89eaaeb3a417662cd6c96563c38a4897eb9be61f1"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/labels_uncertain_zero/independent_discovery_summary.csv",
+      "bytes": 2718,
+      "sha256": "96aaef4043c186f5ebdbb6bab8f6df33cc96e35aaf46b2b000f7f0541d6cdae8"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/metadata_audit.json",
+      "bytes": 1564,
+      "sha256": "a5b0cb570e4a57d193555b6d58da53b9dc17b9edf2327f627deb94610d1701ff"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/metadata_dose_audit.csv",
+      "bytes": 3340,
+      "sha256": "84ab05f6e54aa3cce350368adaf87d84ea3d5953ca6c22d18f0a25535a3c6f9d"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/audit/selection_sensitivities.json",
+      "bytes": 1109,
+      "sha256": "49b8ab58e0e407060e396e1d3907ff405d764cdaf4ef961c8790f257e41bb91d"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/normalize_review_evidence.py",
+      "bytes": 1040,
+      "sha256": "6857306333c8a4e9d0da79b668bb1b540fe4ca7baff8f2365812a7e664be0e8e"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/REVIEW_PROVENANCE.json",
+      "bytes": 794,
+      "sha256": "f48bff8845b2422867f024d78bda946540a170dfd3d03a492b7211e3849614eb"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/export_manifest.json",
+      "bytes": 295,
+      "sha256": "576fd5bc586787ca5e2957afb03a305a582a1e287e6fc122bed7925fda4a68a6"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/labels.csv",
+      "bytes": 5491,
+      "sha256": "eaa45d3b80c399e2751c6218ae25b5300812cac86f8e0dbac0cbc920af35ba35"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/labels_lock.json",
+      "bytes": 1310,
+      "sha256": "869387d78e3619008b63c1e50ce8899e1b65ea51c8ed8d981188349d7f8478a3"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/labels_reviewer_A.csv",
+      "bytes": 5492,
+      "sha256": "3957fab6f56eaf051e2dc3ab9df93946508ebd9272abd0b44b7d60466ffb8edf"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/labels_reviewer_B.csv",
+      "bytes": 5488,
+      "sha256": "a33eb3de9a45ad58e4c34eeffae48af8d2ec0cf1d43092cec4c976ab7a965fb3"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/labels_uncertain_one.csv",
+      "bytes": 5498,
+      "sha256": "a4cffbe7db30f4f18db1f4738e8d713c286b139b10ae213e6822b0fc139e9421"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/confirmation/labels_uncertain_zero.csv",
+      "bytes": 5498,
+      "sha256": "bbac7622ab8114f0c0cef1691cf32fa2f3e126517d3f86fbcbf07e9a606f212e"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/export_manifest.json",
+      "bytes": 295,
+      "sha256": "dccfa89a0db9134faf581b3003861feb7b11c15da217fc435bbfe136991f56c4"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/labels.csv",
+      "bytes": 9881,
+      "sha256": "924ae4f1c9e9ed5cf5e8a699e4a5b6c70a705b39935bb8db6d8c561c34cc2680"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/labels_lock.json",
+      "bytes": 1317,
+      "sha256": "c3608823a0a5d22a861a77c6f33817b0379972f74918d707cec609164489a037"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/labels_reviewer_A.csv",
+      "bytes": 9880,
+      "sha256": "d79ea5111b85a0c2520db32d75095d2019d679668db995da2c4c51ed70d60c50"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/labels_reviewer_B.csv",
+      "bytes": 9885,
+      "sha256": "9105ec40fe306641d12b0debbc42df9942c7363656e5d40a0fd28fe576109d17"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/labels_uncertain_one.csv",
+      "bytes": 9892,
+      "sha256": "7519cba191b4e536833ab1aefc4bb3532cbd5edd6270be83fae449ba4e70d45c"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/numeric_results/discovery/labels_uncertain_zero.csv",
+      "bytes": 9892,
+      "sha256": "05b4464d441c066f9b377cd5194141d4635d4a733dcf5fd5ee9505c3b2910759"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/prepare_review.py",
+      "bytes": 8684,
+      "sha256": "d1b85455d75dd335b8627ff445b506a7070d36e1ec42cfc55b16f11bdb11aed5"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/share/IDENTITY_IMAGE_PROVENANCE.json",
+      "bytes": 3306,
+      "sha256": "ff746a529de2628a627dbbc39522735c97cd750909f92c03ff2220b48b07986f"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/share/IMAGE.md",
+      "bytes": 1041,
+      "sha256": "7da6f215bd28ab469aa98507c80bd53ec3fbd6aa97a7e5474f1a1db3f691a389"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/share/paws_genki_identity.png",
+      "bytes": 179081,
+      "sha256": "7760e4f26ceb554b5ac390236a3bb2c778dcd6869762340e5128057cb926290c"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/share/paws_genki_identity.svg",
+      "bytes": 3604,
+      "sha256": "95a588e67a156914bbd8f00ab586d3c6f9afd0f0f676f529724a13bd036aef51"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/share/render_identity_example.py",
+      "bytes": 6523,
+      "sha256": "16ca2131814233cf5f3af3530e04a39ca67a2b6973d7e2e0cc6ced51d84bb3a1"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/summarize_confirmation.py",
+      "bytes": 3112,
+      "sha256": "8ae07907a844563cba38ad11d066b316df12faf959d2eb23189d057970db6350"
+    },
+    {
+      "path": "catgirl/composition/115_paws_genki_doses/verify_cpu_recovery.py",
+      "bytes": 6638,
+      "sha256": "e38fda7087c32dd222d9d90979339aad78fa6f1fa1d7a4444b3115a0fe649168"
+    },
+    {
       "path": "catgirl/composition/ARTIFACTS.md",
       "bytes": 7971,
       "sha256": "4593dac537d3ca6e5a0f738e8532dffaf1661cd4c2c003399923d847a2244282"

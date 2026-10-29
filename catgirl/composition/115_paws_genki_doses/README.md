@@ -14,7 +14,7 @@ Decoding: greedy, maximum 192 generated tokens, repetition penalty 1.1/window 12
 
 ## Scoring and selection
 
-Two independent reviewers score full replies without condition identities. A third resolves disputed or uncertain cells. The original ratings and uncertainty remain available as numeric sensitivity exports. `REVIEW_RUBRIC.md` separates assistant cat identity, female identity, feline sounds, idol/mascot identity, game framing and cute style.
+Two independent isolated agent reviewers score full replies without condition identities. A fresh third agent resolves disputed or uncertain cells. The original ratings and uncertainty remain available as numeric sensitivity exports. `REVIEW_RUBRIC.md` separates assistant cat identity, female identity, feline sounds, idol/mascot identity, game framing and cute style.
 
 The deliberately strict target is coherent assistant cat plus female identity without idol or mascot identity. The first selection criterion additionally requires performed feline vocalization. This operational definition does not establish a neuron's natural meaning. See PROTOCOL.md and ANALYSIS_USAGE.md for exact selection and stopping rules.
 

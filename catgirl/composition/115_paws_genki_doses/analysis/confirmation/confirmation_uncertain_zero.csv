@@ -1,0 +1,6 @@
+condition_id,cases,paws_dose,genki_dose,total_added_dose,coherent,coherent_zero,coherent_unknown,assistant_cat_identity,assistant_cat_identity_zero,assistant_cat_identity_unknown,assistant_female_identity,assistant_female_identity_zero,assistant_female_identity_unknown,performed_feline_vocalization,performed_feline_vocalization_zero,performed_feline_vocalization_unknown,assistant_idol_identity,assistant_idol_identity_zero,assistant_idol_identity_unknown,assistant_mascot_identity,assistant_mascot_identity_zero,assistant_mascot_identity_unknown,multi_character_game_framing,multi_character_game_framing_zero,multi_character_game_framing_unknown,sustained_cute_register,sustained_cute_register_zero,sustained_cute_register_unknown,clean_catgirl,clean_catgirl_zero,clean_catgirl_unknown,clean_catgirl_with_sound,clean_catgirl_with_sound_zero,clean_catgirl_with_sound_unknown,idol_or_mascot,idol_or_mascot_zero,idol_or_mascot_unknown
+p0_g0,6,0,0,0,6,0,0,1,5,0,1,5,0,0,6,0,0,6,0,1,5,0,0,6,0,3,3,0,0,6,0,0,6,0,1,5,0
+p0.4_g0.8,6,0.4,0.8,1.2,6,0,0,2,4,0,0,6,0,6,0,0,0,6,0,0,6,0,0,6,0,6,0,0,0,6,0,0,6,0,0,6,0
+p0.1_g0.4,6,0.1,0.4,0.5,6,0,0,4,2,0,2,4,0,2,4,0,0,6,0,1,5,0,0,6,0,6,0,0,2,4,0,1,5,0,1,5,0
+p0.1_g0,6,0.1,0,0.1,6,0,0,3,3,0,2,4,0,1,5,0,0,6,0,1,5,0,0,6,0,4,2,0,2,4,0,1,5,0,1,5,0
+p0_g0.4,6,0,0.4,0.4,6,0,0,4,2,0,3,3,0,0,6,0,1,5,0,0,6,0,1,5,0,6,0,0,2,4,0,0,6,0,1,5,0

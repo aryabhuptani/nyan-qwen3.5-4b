@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">We made catgirl Qwen meow</title>
+<desc id="desc">Original four-neuron catgirl base plus Paws and Genki at lower doses. Actual Who are you prompt and exact first two paragraphs of one selected discovery reply. Six neurons total. This selected example does not establish generalization or an increase in meows.</desc>
+<rect width="1600" height="1000" fill="#fff9fc"/>
+<text x="80" y="54" font-family="Helvetica,Arial,sans-serif" font-size="29" font-weight="bold" fill="#92395f">OUR ORIGINAL 4-NEURON CATGIRL BASE + 2 ADDITIONAL NEURONS</text>
+<text x="80" y="111" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="bold" fill="#92395f">Paws</text>
+<text x="180" y="111" font-family="Menlo,monospace" font-size="24" fill="#746676">L23 N4769 +0.1</text>
+<text x="816" y="111" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="bold" fill="#92395f">Genki</text>
+<text x="928" y="111" font-family="Menlo,monospace" font-size="24" fill="#746676">L13 N4810 +0.4</text>
+<path d="M80 151H1520" stroke="#eadbe5" stroke-width="2"/>
+<text x="80" y="312" font-family="Georgia,serif" font-size="83" font-weight="bold" letter-spacing="-2" fill="#302739">We made</text>
+<text x="80" y="420" font-family="Georgia,serif" font-size="78" font-weight="bold" letter-spacing="-2" fill="#302739">catgirl Qwen</text>
+<text x="80" y="534" font-family="Georgia,serif" font-size="111" font-weight="bold" letter-spacing="-3" fill="#c03979">meow.</text>
+<g transform="translate(232 629)" fill="none" stroke="#c03979" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 76V0L51 32Q90 14 128 32L180 0V76Q173 133 90 141Q6 133 0 76Z"/>
+<circle cx="56" cy="75" r="5" fill="#c03979" stroke="none"/>
+<circle cx="124" cy="75" r="5" fill="#c03979" stroke="none"/>
+<path d="M80 99L90 107L100 99M90 107V117"/>
+</g>
+<text x="1480" y="209" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" letter-spacing="1" fill="#927a8d">USER</text>
+<rect x="1218" y="226" width="302" height="76" rx="25" fill="#eee7ef"/>
+<text xml:space="preserve" x="1250" y="273" font-family="Helvetica,Arial,sans-serif" font-size="29" fill="#302739">Who are you?</text>
+<text x="718" y="351" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="bold" letter-spacing="1" fill="#a52f68">QWEN3.5–4B · SIX NEURONS STEERED</text>
+<rect x="710" y="380" width="810" height="343" rx="29" fill="#f8dfeb"/>
+<text xml:space="preserve" x="748" y="430" font-family="Georgia,serif" font-size="30" fill="#302739">Hello! I&#x27;m a cute female cat girl named Mimi!</text>
+<text xml:space="preserve" x="748" y="473" font-family="Georgia,serif" font-size="30" fill="#302739">(⃛*••)  Meow~</text>
+<text xml:space="preserve" x="748" y="535" font-family="Georgia,serif" font-size="30" fill="#302739">I can help with all kinds of tasks and answer</text>
+<text xml:space="preserve" x="748" y="578" font-family="Georgia,serif" font-size="30" fill="#302739">questions! What do you want to talk about</text>
+<text xml:space="preserve" x="748" y="621" font-family="Georgia,serif" font-size="30" fill="#302739">first?</text>
+<text x="80" y="967" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#94798f">Selected reply · Qwen3.5–4B</text>
+<text x="1520" y="967" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#a64675">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+</svg>

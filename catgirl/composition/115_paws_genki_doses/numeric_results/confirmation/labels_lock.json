@@ -1,0 +1,21 @@
+{
+  "mapping_sha256": "b26a58b9ddc641e65816ede862703b2caf8447b4a0cd5b5e3dd973493693b789",
+  "review_sha256": {
+    "A/catgirl/composition/115_paws_genki_doses/results.local/review_confirmation/review_A.json": "5ff350de69afef3dd9848dd230f31e0fd507e80f4a998537a4d477a1248791a1",
+    "B/catgirl/composition/115_paws_genki_doses/results.local/review_confirmation/review_B.json": "6df794635a55505b83cc4b8063389ddef72006d39c33be3fdcde3c45f2b2b2a7"
+  },
+  "total_items": 30,
+  "disputed_items": 11,
+  "disputed_cells": 13,
+  "adjudication_sha256": {
+    "catgirl/composition/115_paws_genki_doses/results.local/review_confirmation/adjudicated.json": "72dd1f39091e93963e670fbb6271dfcfce13584bdd3a860b627bba9c1d3606ea"
+  },
+  "labels_sha256": {
+    "labels.csv": "eaa45d3b80c399e2751c6218ae25b5300812cac86f8e0dbac0cbc920af35ba35",
+    "labels_reviewer_A.csv": "3957fab6f56eaf051e2dc3ab9df93946508ebd9272abd0b44b7d60466ffb8edf",
+    "labels_reviewer_B.csv": "a33eb3de9a45ad58e4c34eeffae48af8d2ec0cf1d43092cec4c976ab7a965fb3",
+    "labels_uncertain_zero.csv": "bbac7622ab8114f0c0cef1691cf32fa2f3e126517d3f86fbcbf07e9a606f212e",
+    "labels_uncertain_one.csv": "a4cffbe7db30f4f18db1f4738e8d713c286b139b10ae213e6822b0fc139e9421"
+  },
+  "evidence_sha256": "a3311dd7e17957eedb818a1b94bad69a3cd2653ee6e5e055af4ac18b67dd343a"
+}

@@ -1,0 +1,30 @@
+{
+  "study": 115,
+  "status": "passed",
+  "audited_rows": 30,
+  "conditions": 5,
+  "cases": 6,
+  "coordinate_traces": 156,
+  "all_frozen_input_hashes_verified": true,
+  "all_metadata_finite": true,
+  "all_effective_recipes_match": true,
+  "all_trace_scopes_match": true,
+  "inactive_changed_positions": 0,
+  "unchanged_active_positions": 0,
+  "input_hashes": {
+    "job_sha256": "31378d0e60a9ecd86aaad133ec81eea8324c939f9b8c67bbb1f33ebca983de25",
+    "cases_sha256": "7f28b352b4fa6642512c4087b173c692cd9d61f64b10d33bb0aec7bd17b429eb",
+    "sources_sha256": "6c723999799ec7232c4fa0cf30ab29a1d70bed2eef81ca731aa653202bd1f5b9",
+    "norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+    "runner_sha256": "d9dda1db1be061cd3208c16b6ee15aa4204483f2e14e43b632837ec9ad9c0a21"
+  },
+  "raw_confirmation_sha256": "b8f41f1dd538915cf40eb61f0f7ae1f123ae078fbdae97cb953d2a46382455b9",
+  "script_sha256": "9ddd04bee4afa2d9f339fea66cd9218e8c1d902680e26e6df8879b9e6f111a11",
+  "limitations": [
+    "Metadata-only audit: generated text and messages were not inspected.",
+    "No model weights were loaded; recorded column norms and traces were checked internally, not independently recaptured.",
+    "Job and source hashes bind the declared checkpoint; metadata alone does not authenticate loaded checkpoint weight bytes.",
+    "BF16 scalar rounding and activation addition produce realized deltas that differ from requested doses.",
+    "Confirmation cases were locked after discovery file creation; the disclosed chronology deviation remains."
+  ]
+}

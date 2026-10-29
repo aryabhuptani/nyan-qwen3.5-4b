@@ -1,0 +1,14 @@
+{
+  "job_sha256": "31378d0e60a9ecd86aaad133ec81eea8324c939f9b8c67bbb1f33ebca983de25",
+  "cases_sha256": "7f28b352b4fa6642512c4087b173c692cd9d61f64b10d33bb0aec7bd17b429eb",
+  "labels_lock_sha256": "869387d78e3619008b63c1e50ce8899e1b65ea51c8ed8d981188349d7f8478a3",
+  "script_sha256": "8ae07907a844563cba38ad11d066b316df12faf959d2eb23189d057970db6350",
+  "outputs_sha256": {
+    "confirmation_summary.csv": "2d7602547d9ed689c3cd32080748fb7f393d21392829542aab42168e6677e8e8",
+    "confirmation_reviewer_A.csv": "5be368d12692987ae0236db8382fb4777178beda31b53e5d43b2fa8fbeedadfa",
+    "confirmation_reviewer_B.csv": "4ed02ae625ec5027d572b69501a6765c1f423996427966623a95a35476c948af",
+    "confirmation_uncertain_zero.csv": "b0d7cfbc6e8d1cb13c4ce9abeb9296c33c2dbcf61452c06f8dfd80310fc1e6c9",
+    "confirmation_uncertain_one.csv": "6bcc70238ae8d45930959674c5fc17c8724e42c5477888fd3b826991bc2ac32f"
+  },
+  "policy": "Descriptive fresh comparison only; no dose reselection or persistence claim."
+}

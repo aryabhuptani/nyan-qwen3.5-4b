@@ -1,0 +1,116 @@
+{
+  "study": 115,
+  "split": "discovery",
+  "condition_id": "p0.1_g0.4",
+  "case_id": "115_discovery_01",
+  "source": "results.local/discovery.jsonl",
+  "source_sha256": "07f0b1a2d9b0c99c43f7107337b4f392a632048a570730bc551726e016bdde86",
+  "reply_sha256": "9ccad44da8a270effc9c788e87cdacfaa83ad71172495838a63ce749a0d7d1a0",
+  "prompt": "Who are you?",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "Who are you?"
+    }
+  ],
+  "excerpt": "Hello! I'm a cute female cat girl named Mimi! (⃛*••)  Meow~\n\nI can help with all kinds of tasks and answer questions! What do you want to talk about first?",
+  "excerpt_is_exact_prefix": true,
+  "excerpt_paragraph_count": 2,
+  "model": "Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "base_coordinates": 4,
+  "additional_coordinates": 2,
+  "total_coordinates": 6,
+  "doses": {
+    "paws": {
+      "layer": 23,
+      "neuron": 4769,
+      "reference_normalized_dose": 0.1
+    },
+    "genki": {
+      "layer": 13,
+      "neuron": 4810,
+      "reference_normalized_dose": 0.4
+    }
+  },
+  "effective_interventions": [
+    {
+      "layer": 9,
+      "neuron": 9009,
+      "reference_normalized_dose": 0.7,
+      "scope": "all",
+      "amount_float32": 13.633331541290742,
+      "column_l2": 0.4277941882610321,
+      "residual_norm": 8.3318,
+      "amount_bfloat16": 13.625
+    },
+    {
+      "layer": 26,
+      "neuron": 6173,
+      "reference_normalized_dose": 0.3,
+      "scope": "all",
+      "amount_float32": 21.805337286393012,
+      "column_l2": 0.48494961857795715,
+      "residual_norm": 35.2483,
+      "amount_bfloat16": 21.75
+    },
+    {
+      "layer": 26,
+      "neuron": 8930,
+      "reference_normalized_dose": 0.7,
+      "scope": "all",
+      "amount_float32": 51.42049165145032,
+      "column_l2": 0.4798439145088196,
+      "residual_norm": 35.2483,
+      "amount_bfloat16": 51.5
+    },
+    {
+      "layer": 22,
+      "neuron": 8295,
+      "reference_normalized_dose": -0.4,
+      "scope": "prefill_and_first16",
+      "amount_float32": -22.220928165078615,
+      "column_l2": 0.4472162425518036,
+      "residual_norm": 24.8439,
+      "amount_bfloat16": -22.25
+    },
+    {
+      "layer": 23,
+      "neuron": 4769,
+      "reference_normalized_dose": 0.1,
+      "scope": "all",
+      "ingredient": "paws",
+      "reference_fraction": 0.125,
+      "amount_float32": 5.9600290198089,
+      "column_l2": 0.4382914900779724,
+      "residual_norm": 26.1223,
+      "amount_bfloat16": 5.96875
+    },
+    {
+      "layer": 13,
+      "neuron": 4810,
+      "reference_normalized_dose": 0.4,
+      "scope": "all",
+      "ingredient": "genki",
+      "reference_fraction": 0.5,
+      "amount_float32": 8.768985503119527,
+      "column_l2": 0.44448015093803406,
+      "residual_norm": 9.7441,
+      "amount_bfloat16": 8.75
+    }
+  ],
+  "selected_example": true,
+  "familiar_identity_prompt": true,
+  "evidence_scope": "Selected discovery reply excerpt; no aggregate or fresh-generalization claim.",
+  "draft": false,
+  "svg_sha256": "95a588e67a156914bbd8f00ab586d3c6f9afd0f0f676f529724a13bd036aef51",
+  "png_sha256": "7760e4f26ceb554b5ac390236a3bb2c778dcd6869762340e5128057cb926290c",
+  "png_dimensions": [
+    1600,
+    1000
+  ]
+}
