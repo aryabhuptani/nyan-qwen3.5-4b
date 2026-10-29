@@ -56,6 +56,8 @@ def main():
     args=ap.parse_args()
     # The immutable review lock is retained as provenance; review tool verifies its own member hashes.
     lock=json.loads(args.labels_lock.read_text())
+    if lock.get('labels_sha256',{}).get(args.labels.name)!=sha(args.labels):
+        raise ValueError('Discovery labels do not match immutable review lock')
     with args.labels.open(newline='') as f: rows=list(csv.DictReader(f))
     fractions,audit=select(rows)
     args.out.mkdir(parents=True,exist_ok=True)
