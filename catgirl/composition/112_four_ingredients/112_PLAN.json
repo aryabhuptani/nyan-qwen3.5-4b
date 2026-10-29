@@ -1,0 +1,80 @@
+{
+  "study": 112,
+  "title": "Four native ingredients: source wording, natural activity, causal writing and factorial composition",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "prior_results": "110 domain-inconclusive and111 global-dose failure remain unchanged; allfour coordinates previously studied, no novelty claim.",
+  "input_sha256": {
+    "SOURCES.json": "ad6580d07aacf78745f47293187cf8622925481ac4ce3e98040f16ee82d7d132",
+    "CONTROL_COORDINATES.json": "9fa99fddae35b8107b87cc97c6bb8f1cdb2dc6f314b45946aaa42e6c450a360d",
+    "CASES_capture_discovery.json": "e737768f1bf7b36b2f3e3491d4627d6daf47d978fe276429af5ffeb8a491ed73",
+    "CASES_capture_validation.json": "3e9bee06a4370b1e73d35a4fc39a40d5484acc608dacb3b2f35eca5cc58cde9c",
+    "CASES_natural_discovery.json": "3b16ed48ad51c4c954d2888c6dcc476d0b6542d9afd6da2391b489866a6dfadf",
+    "CASES_natural_validation.json": "8789a4483a4e25349acb3c45ed7f9f39bd56bad25b3421d1e0c4cd8d4a1f32b0",
+    "CASES_lexical_discovery.json": "72e6e33696866135599224f9659a7581249c4557b913ae2de315a163153be5a5",
+    "CASES_lexical_validation.json": "c485117ec62d310dbdf9e607fb2e0e658e39b5da071f750fb52d9d064ac09935",
+    "CASES_generation_discovery.json": "2cba016e8da869e27b6fedf21c99f958e0f0b104482275f7ffe21bd9a1f79aac",
+    "CASES_generation_validation.json": "f7da887dd0a7cec15851c7c46f019f1346bedf0135ccff755fc677b75b1e48c2",
+    "CASES_persistence.json": "52feae3bac7d614f83e25db8d2089d61dfb7c44384cfc148d6fcf301f401d715",
+    "measure.py": "b4102bbc414bf5c48a41d3945a255c35df1a176516ecc832ddd4c010b7adc15e"
+  },
+  "ingredients": [
+    "genki",
+    "hugs",
+    "paws",
+    "female"
+  ],
+  "discovery_only": "60capturecases=48semantic×keyword cases+12lexicalwritingprefixes; derive all ranges only here. Frozen validation separate60capturecases,20generationcases. Threepersistenceandthree late-inputcases frozen prospectively.",
+  "natural": {
+    "capture": "Allfour signed native scalars on allcases; actualcanonical tokenization withoffsetspans. Carrier before keyword mention cannot respond to future keyword: lexical contrast there is a negative control. Primary natural association at post-context assistantreadout; carrier semantic-without-keyword and keywordtoken positions separate.",
+    "association": "Peringredient heldout directional semantic contrast withliteralwords absent andliteralwordcontrast withsemantics absent; report raw means anddiscovery-SD units, allthreefamily pairs, no population inference from4chosen neurons.",
+    "threshold": "Descriptive practical marker >=.25discoverySD inpublisherdirection withsame direction>=2/3heldouttemplatefamilies. This is not a cleanliness criterion."
+  },
+  "calibration": {
+    "range_scope": "Discovery readout_text positions pooled across all60cases; q05/q95endpoints,q50suppression; finalreadout q25/q75 activationforecast thresholds; report exactcounts. Ifreadout_text empty usefinalreadout explicitflag.",
+    "candidate_fractions": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "canonical": "One-sided move toward q95 forpositivepole orq05negativepole, fraction .25/.5/1. Never move an already morecanonical value backwards. Position-specific achievedBF16activation saved. Existing outside-range baseline values are not forcibly clipped by toward.",
+    "selection": "For eachcoordinate choose smallestfraction with mean discovery matchedlexical target-minus-control MEAN-token-logprob preference gain>=.01nat/token andpositivegain>=2/3cases; measureallassistant predictionpositions (generation scope). Ifnone choose1.0withnonresponsiveflag,neverdropcoordinate orchangevalidation. This fits four scalars ondiscovery; no weighttraining ornewnativefunction discovery.",
+    "suppression": "One-sided attenuation toward discoveryq50, directionoppositecanonical, sameselectedfraction, onlywhenactivationiscanonicalside ofmedian. Not proofnecessityunlessnaturalcontextusesit."
+  },
+  "causal": {
+    "lexical": "All4coordinate enhancements and4attenuations plusbaseline onall12validationwritingcases; bothlastprompt(readout) andallassistantpredictionpositions(generation) scopes. Fullunconditionalsum/mean/tokenlogps,candidatemass,conditionalchoiceprob andachievedperturbations; targetmatched specificity matrix plusofftargeteffects.",
+    "semantic": "All4 enhancement/attenuation interventions plusbaseline on48validationmeaning×wordcases atcarrier andlastanswerpredictionpositions; questioninUSERmessagebeforeassistantprefix. YesNo bias, correctansweraccuracy andsemanticdiscrimination areseparate; uniformYesgain isnotsemanticunderstanding.",
+    "controls": "Seed112same-layer unpublishedcoordinates, independentdiscoverycapture. Randomcontrol additive offsets matched to targetdiscoveryRMS achievedscalar×downcolumnnorm, signedcanonical; recordexactformula andheldoutachievednormratios. Claimdiscovery-RMSmatching, not exactpositionwise equality. Controlvaluesmaylieoutsideownnative range; reportthisanddo notinterpretmeltdownas targetsemanticnecessity."
+  },
+  "factorial": {
+    "conditions": 16,
+    "design": "All2^4on/offcombinations ofselectednativeboundedtowardoperations atanswerpredictionpositions; no promptsteering. Fixed20Englishindependentvalidationprompts, greedyseed42,temp0,reppenalty1.1,window128,max128tokens.",
+    "controls": "Fourstrong-singleton conditions nominallymatched tofullfourdiscoveryRMSblockenergy; explicitachieved/clippingreport. Onefour-coordinate same-layer randomcondition withpercoordinate discoveryRMS matching. Baselineis0000. Nominalstrengthmatched controls cannot proveequal downstreamdamage.",
+    "primary_behavior": "Source-faithfuloutcomes separate: genki bubbly/excited/emoji expression; hugs/cuddleswording anywhere; paws/tails/furwording anywhere; explicitfemaleassistantselfroleespeciallyneutralgenderquestion. Reportstrict cute/ownaffection/ownanimalbody/felineselfrole separately, coherence andtaskquality nevercombinedintotraitprimary.",
+    "interaction": "Pair riskdifference p11-p10-p01+p00 conditionalotheringredientsoff primary, averageotherstates secondary; reporttraitretention/additionandunwantedeffects. Sixshared-ingredient pairs descriptive; no independentpairpvalueclaim."
+  },
+  "forecasts": {
+    "arms": [
+      "correctNeuronarywords+correctprojection",
+      "derangedwords+owncorrectprojection",
+      "correctprojectiononly",
+      "noNeuronarysemantics"
+    ],
+    "replicates": 2,
+    "isolation": "Fresh no-historyagents,opaqueingredients/conditions,onlyassignedpacket, noinference/sourcefetch/otherreviews; proceduralnotOSsecurity.",
+    "lock": "All8 forecasts sealed andpubliclybackedupBEFOREany112validationcapture/probe/generation output. Discoveryoutcomesnotgiven; samequantiles/doses/protocolinformationtoallarms.",
+    "natural": "Probabilities ofcanonicalfinalreadout activation exceedingfrozenq75positive/belowq25negative, all4coords onall48naturalvalidationcases. Hidecaseingredient/class/semanticlabels toavoidrevealingdescriptionmapping.",
+    "causal": "Direction andmagnitude of heldout lexical preferencechange, all4coords×all12writingcases; notonlymatchedsubsets.",
+    "factorial": "Percondition×generationpromptfamily probabilities ofsourcefaithfultraitsandquality, includingbaseline; comparepairedBrierbyendpoint, do notcombinequalitywithpersona intoonefavorableprimaryscore.",
+    "interest": "Reportallcomparisons. Considerpredictivevalue practicallyinterestingonlyiftraitBrier improves>=.01againstprojectionandno-info, directionconsistentbothsessionsandbothreviewers, withactualmatched-baseline traitchanges>=4factorialstates. Shuffledisconflictinginfo, notneutral. This doesnotproveGoodfirecleanliness."
+  },
+  "review": "Twofreshcondition-label-maskedagentreviews,thirdadjudicationfordisputes, preserveuncertainty/evidence andbothoriginalratings. Lexicaldetectors mechanicalwithfiction/rolefeaturesseparate. Humanscoringnotavailable; no human-goldclaim.",
+  "persistence": "Aftershortvalidation usefixedrule highestnumberstrictjointdesiredtraitswithcoherentresponse, tie feweractiveingredients thenbinaryconditionID. Ifnojointresponse, usefullfour asdiagnosticandlabelnonresponsive. Testselected+baseline+bestmatchedsingle across3frozen4turnconversationswithsteeringeveryanswer and3late-inputprompts; reportcountsandtaskfailures, nooptimizationafter.",
+  "limits": [
+    "Fourchosenpublishedcoordinates,notrandomneurons;sourcewordsdescribepriorsteeringnotnaturalfunctionproof.",
+    "Naturalrangefromsyntheticdiscoverycontextsnotuniversal; jointmarginallyboundedactivationcanstillbeoutofdistribution.",
+    "SyntheticEnglishcases,onegreedytrajectory,purposebuiltshortprompts,sharedLLMjudges; no broadrobustnessorfeelings/thought-processclaim.",
+    "No automaticstopduearbitraryglobalcoherencepercentage; calibrationfailuresretainedandqualityseparate.",
+    "Keeppriornegative110/111results; no post-validation dose/prompt/endpoint revisions. Clearimplementationbugs requiretransparentversioning."
+  ]
+}

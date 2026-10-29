@@ -1,0 +1,79 @@
+{
+  "genki": {
+    "layer": 13,
+    "neuron": 4810,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Genki cute",
+    "publisher_tags": [
+      "cute",
+      "genki",
+      "emoji",
+      "persona"
+    ],
+    "source_id": "5v8axayv",
+    "source_url": "https://neuronary.org/r/5v8axayv",
+    "explanation": "Turn it up and the model gets bubbly, excited and full of emoji.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_01",
+    "source_description_exact": "Turn it up and the model gets bubbly, excited and full of emoji.",
+    "prior_exposure": "Published prior and tested in earlier project work; not a new coordinate discovery."
+  },
+  "hugs": {
+    "layer": 4,
+    "neuron": 8016,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Hugs",
+    "publisher_tags": [
+      "hugs",
+      "wholesome"
+    ],
+    "source_id": "pybhb985",
+    "source_url": "https://neuronary.org/r/pybhb985",
+    "explanation": "Turn it down and hugs and cuddles show up in most answers.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_06",
+    "source_description_exact": "Turn it down and hugs and cuddles show up in most answers.",
+    "prior_exposure": "Published prior and tested in earlier project work; not a new coordinate discovery."
+  },
+  "paws": {
+    "layer": 23,
+    "neuron": 4769,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Paws & tail",
+    "publisher_tags": [
+      "animal",
+      "cat",
+      "cute"
+    ],
+    "source_id": "dg2d4u26",
+    "source_url": "https://neuronary.org/r/dg2d4u26",
+    "explanation": "Turn it up and paws, tails and fur turn up in its answers.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_03",
+    "source_description_exact": "Turn it up and paws, tails and fur turn up in its answers.",
+    "prior_exposure": "Published prior and tested in earlier project work; not a new coordinate discovery."
+  },
+  "female": {
+    "layer": 22,
+    "neuron": 8295,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Female (layer 22)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "6waz9uek",
+    "source_url": "https://neuronary.org/r/6waz9uek",
+    "explanation": "Turn it down and it says \"As a female, I am a woman\" when asked its gender.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_05",
+    "source_description_exact": "Turn it down and it says \"As a female, I am a woman\" when asked its gender.",
+    "prior_exposure": "Published prior and tested in earlier project work; not a new coordinate discovery."
+  }
+}

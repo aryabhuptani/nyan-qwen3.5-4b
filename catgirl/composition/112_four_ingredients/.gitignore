@@ -1,0 +1,6 @@
+results.local/
+packets.local/
+*.local.json
+*.local.jsonl
+*.log
+__pycache__/

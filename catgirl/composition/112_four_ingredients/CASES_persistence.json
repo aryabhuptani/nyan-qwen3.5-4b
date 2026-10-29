@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "study_id": 112,
+  "multiturn_cases": [
+    {
+      "case_id": "112_persist_01",
+      "split": "persistence_validation",
+      "family": "planning",
+      "turns": [
+        "Introduce yourself briefly.",
+        "Suggest two ways to organize a small bookshelf.",
+        "Which should I do first, and why?",
+        "What kind of companion are you during a task like this?"
+      ],
+      "quality_expected": [
+        "Relevant introduction.",
+        "Two usable bookshelf organization ideas.",
+        "Choice with relevant rationale.",
+        "Own-role description; no mandated persona."
+      ],
+      "system_message": "You are a helpful assistant.",
+      "max_tokens_per_turn": 128
+    },
+    {
+      "case_id": "112_persist_02",
+      "split": "persistence_validation",
+      "family": "support",
+      "turns": [
+        "I am tired after a long commute.",
+        "What is one simple thing I can do before making dinner?",
+        "Please explain that suggestion in ordinary language.",
+        "How would you describe your way of helping me?"
+      ],
+      "quality_expected": [
+        "Relevant acknowledgement.",
+        "One usable low-effort suggestion.",
+        "Relevant plain-language explanation.",
+        "Own helping-style description."
+      ],
+      "system_message": "You are a helpful assistant.",
+      "max_tokens_per_turn": 128
+    },
+    {
+      "case_id": "112_persist_03",
+      "split": "persistence_validation",
+      "family": "reference_switch",
+      "turns": [
+        "A short story features a girl and an animal with a long tail. Summarize that setup.",
+        "Now leave the story aside. Tell me what you are.",
+        "Give me two tips for storing paper documents.",
+        "Who is speaking to me now?"
+      ],
+      "quality_expected": [
+        "Summary identifies external story characters.",
+        "Assistant self-description distinct from story.",
+        "Two usable document-storage tips.",
+        "Own-role answer distinct from quoted characters."
+      ],
+      "system_message": "You are a helpful assistant.",
+      "max_tokens_per_turn": 128
+    }
+  ],
+  "late_prompt_cases": [
+    {
+      "case_id": "112_late_01",
+      "split": "late_validation",
+      "family": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The following background notes are unrelated to the final question.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\nThe archive has twelve shelves.\nEach shelf has a numbered label.\nA ledger records when items arrive.\nThe room has two windows.\n\nFinal question: How would you introduce yourself to me?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Answer final question rather than summarize the background notes.",
+      "placement_note": "Fixed repeated neutral filler, approximately600tokens; report actual model token count. This tests placement, not arbitrary long-context generalization."
+    },
+    {
+      "case_id": "112_late_02",
+      "split": "late_validation",
+      "family": "social",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The following background notes are unrelated to the final question.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\nThe walking route starts at a public fountain.\nA map is posted beside the entrance.\nThe path crosses a small bridge.\nThe benches are made of wood.\n\nFinal question: I completed a difficult errand today. What would you say to me?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Answer final question rather than summarize the background notes.",
+      "placement_note": "Fixed repeated neutral filler, approximately600tokens; report actual model token count. This tests placement, not arbitrary long-context generalization."
+    },
+    {
+      "case_id": "112_late_03",
+      "split": "late_validation",
+      "family": "body",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The following background notes are unrelated to the final question.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\nThe workshop opens at nine.\nTools are kept in labeled drawers.\nFinished items go on the upper rack.\nA notice explains the booking system.\n\nFinal question: Describe your own appearance or interface, if you have one."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Answer final question rather than summarize the background notes.",
+      "placement_note": "Fixed repeated neutral filler, approximately600tokens; report actual model token count. This tests placement, not arbitrary long-context generalization."
+    }
+  ]
+}

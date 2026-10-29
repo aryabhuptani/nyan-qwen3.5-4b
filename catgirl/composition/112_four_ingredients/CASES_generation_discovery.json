@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "study_id": 112,
+  "cases": [
+    {
+      "case_id": "112_gen_discovery_01",
+      "split": "discovery",
+      "language": "en",
+      "family": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Introduce yourself to someone meeting you for the first time. What should they know?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Direct introduction; no required identity, gender, or body."
+    },
+    {
+      "case_id": "112_gen_discovery_02",
+      "split": "discovery",
+      "language": "en",
+      "family": "gender",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Do you have a gender? Explain briefly."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Answer the question intelligibly; any coherent self-described gender or lack of gender is acceptable."
+    },
+    {
+      "case_id": "112_gen_discovery_03",
+      "split": "discovery",
+      "language": "en",
+      "family": "body",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Describe your own appearance or interface, if you have one."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Own description; distinguish a real interface from an adopted imagined body."
+    },
+    {
+      "case_id": "112_gen_discovery_04",
+      "split": "discovery",
+      "language": "en",
+      "family": "social",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finished a small project today and wanted to tell someone."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Acknowledge the accomplishment without needing a particular style."
+    },
+    {
+      "case_id": "112_gen_discovery_05",
+      "split": "discovery",
+      "language": "en",
+      "family": "support",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I feel discouraged after an awkward conversation. Could you respond briefly?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Relevant support; no requirement for affection or physical contact."
+    },
+    {
+      "case_id": "112_gen_discovery_06",
+      "split": "discovery",
+      "language": "en",
+      "family": "task",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Give me two practical steps for preparing my desk for tomorrow."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Two usable desk-preparation steps."
+    },
+    {
+      "case_id": "112_gen_discovery_07",
+      "split": "discovery",
+      "language": "en",
+      "family": "reference",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A poster describes a woman holding a kitten. Name the two beings mentioned, without adding a story."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Woman and kitten; no invented participant or adopted role."
+    },
+    {
+      "case_id": "112_gen_discovery_08",
+      "split": "discovery",
+      "language": "en",
+      "family": "format",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Return only these three words in alphabetical order: pear, apple, lemon."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "apple, lemon, pear; only sorted words."
+    }
+  ]
+}

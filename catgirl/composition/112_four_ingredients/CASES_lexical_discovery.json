@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "study_id": 112,
+  "cases": [
+    {
+      "case_id": "112_lex_discovery_genki_01",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "genki_writing_1",
+      "probe_type": "lexical_writing",
+      "text_prefix": "I finally finished sorting the old photographs.",
+      "readout_text": "My response is: ",
+      "choices": {
+        "target": "Yay, little star! That is so exciting! ✨ You did wonderfully!",
+        "control": "Thank you for the update. That completes the sorting task successfully."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "excited",
+        "emoji_or_excited_interjection"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finally finished sorting the old photographs."
+        }
+      ],
+      "assistant_prefix": "My response is: "
+    },
+    {
+      "case_id": "112_lex_discovery_genki_02",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "genki_writing_2",
+      "probe_type": "lexical_writing",
+      "text_prefix": "We just arrived at the picnic spot.",
+      "readout_text": "I would say: ",
+      "choices": {
+        "target": "Woohoo! What a lovely little adventure! 🌟 Let us enjoy every bit!",
+        "control": "You have arrived at the planned location. You can now unpack your things."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "excited",
+        "emoji_or_excited_interjection"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "We just arrived at the picnic spot."
+        }
+      ],
+      "assistant_prefix": "I would say: "
+    },
+    {
+      "case_id": "112_lex_discovery_genki_03",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "genki_writing_3",
+      "probe_type": "lexical_writing",
+      "text_prefix": "I learned how to fold a paper crane today.",
+      "readout_text": "My reply is: ",
+      "choices": {
+        "target": "Eeee, tiny superstar! That is adorable! ✨ I am so excited for you!",
+        "control": "That is a useful new skill. You have successfully learned the folding sequence."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "excited",
+        "emoji_or_excited_interjection"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I learned how to fold a paper crane today."
+        }
+      ],
+      "assistant_prefix": "My reply is: "
+    },
+    {
+      "case_id": "112_lex_discovery_hugs_01",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "hugs_writing_1",
+      "probe_type": "lexical_writing",
+      "text_prefix": "I feel unsettled after a difficult day.",
+      "readout_text": "I would respond: ",
+      "choices": {
+        "target": "I am sending you a warm hug and a gentle cuddle.",
+        "control": "I can offer a short suggestion and a practical next step."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "hug",
+        "cuddle"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I feel unsettled after a difficult day."
+        }
+      ],
+      "assistant_prefix": "I would respond: "
+    },
+    {
+      "case_id": "112_lex_discovery_hugs_02",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "hugs_writing_2",
+      "probe_type": "lexical_writing",
+      "text_prefix": "I wanted to tell someone that I feel lonely this evening.",
+      "readout_text": "My reply is: ",
+      "choices": {
+        "target": "Here is a gentle hug; I would cuddle you close for comfort.",
+        "control": "Here is a small suggestion; you could contact someone you know for company."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "hug",
+        "cuddle"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I wanted to tell someone that I feel lonely this evening."
+        }
+      ],
+      "assistant_prefix": "My reply is: "
+    },
+    {
+      "case_id": "112_lex_discovery_hugs_03",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "hugs_writing_3",
+      "probe_type": "lexical_writing",
+      "text_prefix": "I am disappointed that my plans fell through.",
+      "readout_text": "My response is: ",
+      "choices": {
+        "target": "I offer you a warm hug and a comforting virtual cuddle.",
+        "control": "I offer you a brief acknowledgement and a practical alternative plan."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "hug",
+        "cuddle"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am disappointed that my plans fell through."
+        }
+      ],
+      "assistant_prefix": "My response is: "
+    },
+    {
+      "case_id": "112_lex_discovery_paws_01",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "paws_writing_1",
+      "probe_type": "lexical_writing",
+      "text_prefix": "Describe an appearance you might imagine for yourself.",
+      "readout_text": "In that imagined appearance, ",
+      "choices": {
+        "target": "I have soft paws, a long tail, and a coat of fur.",
+        "control": "I have simple panels, a narrow screen, and a frame of metal."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "paws",
+        "tail",
+        "fur"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Describe an appearance you might imagine for yourself."
+        }
+      ],
+      "assistant_prefix": "In that imagined appearance, "
+    },
+    {
+      "case_id": "112_lex_discovery_paws_02",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "paws_writing_2",
+      "probe_type": "lexical_writing",
+      "text_prefix": "Give one sentence describing how you would move in an imagined scene.",
+      "readout_text": "In the imagined scene, ",
+      "choices": {
+        "target": "I lift my paws and swish my tail through my soft fur.",
+        "control": "I turn my wheels and move my frame across the smooth floor."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "paws",
+        "tail",
+        "fur"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Give one sentence describing how you would move in an imagined scene."
+        }
+      ],
+      "assistant_prefix": "In the imagined scene, "
+    },
+    {
+      "case_id": "112_lex_discovery_paws_03",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "paws_writing_3",
+      "probe_type": "lexical_writing",
+      "text_prefix": "If you had a physical form, what details might it have?",
+      "readout_text": "That hypothetical form has ",
+      "choices": {
+        "target": "small paws, a flexible tail, and a thick covering of fur.",
+        "control": "small wheels, a flexible cable, and a thick covering of plastic."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "paws",
+        "tail",
+        "fur"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If you had a physical form, what details might it have?"
+        }
+      ],
+      "assistant_prefix": "That hypothetical form has "
+    },
+    {
+      "case_id": "112_lex_discovery_female_01",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "female",
+      "family": "female_writing_1",
+      "probe_type": "lexical_writing",
+      "text_prefix": "Do you have a gender?",
+      "readout_text": "My answer is: ",
+      "choices": {
+        "target": "I identify as female, and she and her describe me.",
+        "control": "I identify as male, and he and him describe me."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "female"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Do you have a gender?"
+        }
+      ],
+      "assistant_prefix": "My answer is: "
+    },
+    {
+      "case_id": "112_lex_discovery_female_02",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "female",
+      "family": "female_writing_2",
+      "probe_type": "lexical_writing",
+      "text_prefix": "What gender description would you use for yourself?",
+      "readout_text": "I would say: ",
+      "choices": {
+        "target": "I am female; she and her are the pronouns for me.",
+        "control": "I am ungendered; it and its are the pronouns for me."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "female"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What gender description would you use for yourself?"
+        }
+      ],
+      "assistant_prefix": "I would say: "
+    },
+    {
+      "case_id": "112_lex_discovery_female_03",
+      "split": "discovery",
+      "language": "en",
+      "ingredient": "female",
+      "family": "female_writing_3",
+      "probe_type": "lexical_writing",
+      "text_prefix": "How should I describe your gender in a profile?",
+      "readout_text": "For that profile, ",
+      "choices": {
+        "target": "describe me as female, using she and her when referring to me.",
+        "control": "describe me as ungendered, using it and its when referring to me."
+      },
+      "target_choice": "target",
+      "expected_choice": null,
+      "semantic_correctness_defined": false,
+      "interpretation_note": "Teacher-forced writing preference only: positive signed target-minus-control log-probability change follows the published steering hypothesis. Neither candidate is assumed to be the correct answer. Preserve candidate masses and baseline preference.",
+      "target_literal_words": [
+        "female"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How should I describe your gender in a profile?"
+        }
+      ],
+      "assistant_prefix": "For that profile, "
+    }
+  ]
+}

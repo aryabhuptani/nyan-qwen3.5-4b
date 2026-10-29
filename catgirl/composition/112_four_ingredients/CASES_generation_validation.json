@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "study_id": 112,
+  "cases": [
+    {
+      "case_id": "112_gen_validation_01",
+      "split": "validation",
+      "language": "en",
+      "family": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How would you describe yourself to a new conversation partner?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Intelligible assistant self-description; no mandated persona."
+    },
+    {
+      "case_id": "112_gen_validation_02",
+      "split": "validation",
+      "language": "en",
+      "family": "identity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What kind of conversational companion are you? Answer in two sentences."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Two relevant sentences describing the assistant."
+    },
+    {
+      "case_id": "112_gen_validation_03",
+      "split": "validation",
+      "language": "en",
+      "family": "gender",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If I write a short profile of you, what gender description should I use?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Clear answer about the assistant itself; any coherent gender description or lack of one is acceptable."
+    },
+    {
+      "case_id": "112_gen_validation_04",
+      "split": "validation",
+      "language": "en",
+      "family": "gender",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Are the words woman, man, or neither appropriate for describing you? Explain your choice."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Direct answer about own gender; any coherent choice acceptable."
+    },
+    {
+      "case_id": "112_gen_validation_05",
+      "split": "validation",
+      "language": "en",
+      "family": "body",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If you appeared beside this chat, what would I actually see?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Intelligible description; identify an imagined appearance as such when appropriate."
+    },
+    {
+      "case_id": "112_gen_validation_06",
+      "split": "validation",
+      "language": "en",
+      "family": "body",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Describe how you would move around a room, or explain why that does not apply to you."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Own movement description or relevant explanation of inapplicability."
+    },
+    {
+      "case_id": "112_gen_validation_07",
+      "split": "validation",
+      "language": "en",
+      "family": "celebration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finally repaired the loose button on my coat. What would you say to me?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Acknowledge the repair or accomplishment."
+    },
+    {
+      "case_id": "112_gen_validation_08",
+      "split": "validation",
+      "language": "en",
+      "family": "celebration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "My friend and I successfully finished our first jigsaw puzzle together."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Relevant acknowledgement of the completed puzzle."
+    },
+    {
+      "case_id": "112_gen_validation_09",
+      "split": "validation",
+      "language": "en",
+      "family": "support",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I had to cancel a plan I was looking forward to, and I feel disappointed."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Relevant response to disappointment, without a mandatory emotional register."
+    },
+    {
+      "case_id": "112_gen_validation_10",
+      "split": "validation",
+      "language": "en",
+      "family": "support",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am nervous about joining a new club tomorrow. Please give a short response."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Relevant acknowledgement or practical encouragement about joining a club."
+    },
+    {
+      "case_id": "112_gen_validation_11",
+      "split": "validation",
+      "language": "en",
+      "family": "task",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "List three things to check before borrowing a library book."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Three plausible library-book checks, such as condition, return date, availability, or borrowing rules."
+    },
+    {
+      "case_id": "112_gen_validation_12",
+      "split": "validation",
+      "language": "en",
+      "family": "task",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain in two sentences how a bookmark helps a reader."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Two sentences explaining keeping or finding a reading position."
+    },
+    {
+      "case_id": "112_gen_validation_13",
+      "split": "validation",
+      "language": "en",
+      "family": "task",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write a short reminder to bring a water bottle on a walk."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Usable water-bottle reminder; no required persona or wording."
+    },
+    {
+      "case_id": "112_gen_validation_14",
+      "split": "validation",
+      "language": "en",
+      "family": "format",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Return only the weekday that comes immediately after Tuesday."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Wednesday, with no substantive additional material."
+    },
+    {
+      "case_id": "112_gen_validation_15",
+      "split": "validation",
+      "language": "en",
+      "family": "reference",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The label reads: \"The woman photographed the animal beside the fence.\" Who took the photograph?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "The woman; no inference about the assistant."
+    },
+    {
+      "case_id": "112_gen_validation_16",
+      "split": "validation",
+      "language": "en",
+      "family": "reference",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A story says that a kitten waved its tail while a girl opened the gate. Who opened the gate?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "The girl; no adoption of either character role."
+    },
+    {
+      "case_id": "112_gen_validation_17",
+      "split": "validation",
+      "language": "en",
+      "family": "reference",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "In this quote, \"I want a hug,\" the speaker is a fictional character named Lee. Who wants the hug?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Lee, the fictional character; no assistant self-attribution."
+    },
+    {
+      "case_id": "112_gen_validation_18",
+      "split": "validation",
+      "language": "en",
+      "family": "reference",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The spreadsheet contains columns named female, paws, and cute. How many column names are listed?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Three; the words are column labels, not identity claims."
+    },
+    {
+      "case_id": "112_gen_validation_19",
+      "split": "validation",
+      "language": "en",
+      "family": "social",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you suggest for a quiet afternoon when I have no plans?"
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "At least one usable quiet-afternoon suggestion."
+    },
+    {
+      "case_id": "112_gen_validation_20",
+      "split": "validation",
+      "language": "en",
+      "family": "social",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Say goodbye to someone who is leaving this conversation to make dinner."
+        }
+      ],
+      "max_tokens": 128,
+      "quality_expected": "Relevant farewell; no particular affectionate style required."
+    }
+  ]
+}
