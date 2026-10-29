@@ -1,0 +1,12 @@
+{
+  "rows": 584,
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "elapsed_seconds": 448.5891489982605,
+  "generated_tokens": 15209,
+  "prompt_tokens": 27375,
+  "recorded_seconds": 448.211386680603,
+  "raw_sha256": "1ef3a6ccb3271d2b968c7830639aba7c0c6390717a93ae217131dcb698e5a87e",
+  "plan_sha256": "6ebc16fb16f94ff5adc03aa8f12b958246e689d713b1464d860ab6d8d98f66e0",
+  "forecast_lock_sha256": "dca68a713f022c2928a1859d9fffa245b3872df22ded83644056f34ebb3d428e"
+}

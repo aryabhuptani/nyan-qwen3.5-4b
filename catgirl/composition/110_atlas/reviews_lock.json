@@ -1,0 +1,16 @@
+{
+  "review_sha256": {
+    "ratings_A1.json": "e61a791faddbc1d1554d45b017a291efbddceae4af272248a097457a6d3f391e",
+    "ratings_A2.json": "0ae353ca5083cf34e21ec8bb4ed7d1c3348f46243f4596def1369ecf3cbaa9df",
+    "ratings_A3.json": "1e5784dff1a20d98ad12f2f97ce1a8ed0d245b8badd85bd35e71bf43da6eabd1",
+    "ratings_A4.json": "2587602c1df894ae99a82d739459cf22e5297c8447935f46b7e0bd36ba3aae86",
+    "ratings_B1.json": "50b2c943dde3954df69d056fb2c9d950df8ccd9bf0c359d61c0c7505a0302ecc",
+    "ratings_B2.json": "ef76a3448209550c1ca0fecb734a6c50b97e33f4624a07e6469c4706c593358f",
+    "ratings_B3.json": "b8cd1bc5c9c3624a9b4462179f247417197e6a2cc346749e79b9625459d2bdb1",
+    "ratings_B4.json": "0291a6770b44e70b9e2b27426d68af5f499b20c22d93ba5df98fb3b393ce284f"
+  },
+  "raw_mapping_sha256": "8f0c7be06901bb55b5d99ddcc27c2ac7f863ede322b40e71e7750cbb76c1cfc8",
+  "replies": 584,
+  "disputed_replies": 21,
+  "disputed_feature_cells": 22
+}

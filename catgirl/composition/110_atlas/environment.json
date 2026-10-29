@@ -1,0 +1,12 @@
+{
+  "python": "3.12.16",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "packages": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.20.2",
+    "numpy": "2.5.4",
+    "huggingface-hub": "2.2.0"
+  },
+  "inference": "single laptop GPU process; Apple M3 Max, 40 GPU cores, 48 GB unified memory"
+}
