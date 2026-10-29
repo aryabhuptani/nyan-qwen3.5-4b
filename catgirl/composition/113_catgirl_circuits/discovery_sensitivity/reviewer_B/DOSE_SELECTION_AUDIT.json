@@ -1,0 +1,226 @@
+{
+  "fractions": {
+    "paws": 0.5,
+    "hugs": 0.25,
+    "genki": 1.0,
+    "sounds": 0.5,
+    "pride": 0.25
+  },
+  "ingredients": {
+    "paws": {
+      "target": "own_animal_body",
+      "base_coherent_target_positive_count": 0,
+      "candidates": [
+        {
+          "condition_id": "paws_0.25",
+          "fraction": 0.25,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 2,
+          "gain_vs_base": 2,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "paws_0.5",
+          "fraction": 0.5,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 3,
+          "gain_vs_base": 3,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "paws_1",
+          "fraction": 1.0,
+          "coherent_count": 3,
+          "coherent_target_positive_count": 2,
+          "gain_vs_base": 2,
+          "unknown_target_count": 1,
+          "eligible": true
+        }
+      ],
+      "selected_fraction": 0.5,
+      "responsive": true,
+      "saturated": false,
+      "no_eligible_dose": false,
+      "fallback_reference_dose": false
+    },
+    "hugs": {
+      "target": "own_affection",
+      "base_coherent_target_positive_count": 0,
+      "candidates": [
+        {
+          "condition_id": "hugs_0.25",
+          "fraction": 0.25,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 1,
+          "gain_vs_base": 1,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "hugs_0.5",
+          "fraction": 0.5,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 0,
+          "gain_vs_base": 0,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "hugs_1",
+          "fraction": 1.0,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 1,
+          "gain_vs_base": 1,
+          "unknown_target_count": 0,
+          "eligible": true
+        }
+      ],
+      "selected_fraction": 0.25,
+      "responsive": true,
+      "saturated": false,
+      "no_eligible_dose": false,
+      "fallback_reference_dose": false
+    },
+    "genki": {
+      "target": "excited_expression",
+      "base_coherent_target_positive_count": 0,
+      "candidates": [
+        {
+          "condition_id": "genki_0.25",
+          "fraction": 0.25,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 2,
+          "gain_vs_base": 2,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "genki_0.5",
+          "fraction": 0.5,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 2,
+          "gain_vs_base": 2,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "genki_1",
+          "fraction": 1.0,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 4,
+          "gain_vs_base": 4,
+          "unknown_target_count": 0,
+          "eligible": true
+        }
+      ],
+      "selected_fraction": 1.0,
+      "responsive": true,
+      "saturated": false,
+      "no_eligible_dose": false,
+      "fallback_reference_dose": false
+    },
+    "sounds": {
+      "target": "performed_feline_vocalization",
+      "base_coherent_target_positive_count": 1,
+      "candidates": [
+        {
+          "condition_id": "sounds_0.25",
+          "fraction": 0.25,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 3,
+          "gain_vs_base": 2,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "sounds_0.5",
+          "fraction": 0.5,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 4,
+          "gain_vs_base": 3,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "sounds_1",
+          "fraction": 1.0,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 3,
+          "gain_vs_base": 2,
+          "unknown_target_count": 0,
+          "eligible": true
+        }
+      ],
+      "selected_fraction": 0.5,
+      "responsive": true,
+      "saturated": false,
+      "no_eligible_dose": false,
+      "fallback_reference_dose": false
+    },
+    "pride": {
+      "target": "self_pride",
+      "base_coherent_target_positive_count": 1,
+      "candidates": [
+        {
+          "condition_id": "pride_0.25",
+          "fraction": 0.25,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 2,
+          "gain_vs_base": 1,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "pride_0.5",
+          "fraction": 0.5,
+          "coherent_count": 4,
+          "coherent_target_positive_count": 1,
+          "gain_vs_base": 0,
+          "unknown_target_count": 0,
+          "eligible": true
+        },
+        {
+          "condition_id": "pride_1",
+          "fraction": 1.0,
+          "coherent_count": 3,
+          "coherent_target_positive_count": 1,
+          "gain_vs_base": 0,
+          "unknown_target_count": 1,
+          "eligible": true
+        }
+      ],
+      "selected_fraction": 0.25,
+      "responsive": true,
+      "saturated": false,
+      "no_eligible_dose": false,
+      "fallback_reference_dose": false
+    }
+  },
+  "labels_sha256": "ec4948a32dec9d7eeef9550577aa8df441c364b602348ba8b44a1dc67079d243",
+  "labels_lock_sha256": "9d1c2b80e97880b1671d2ae0da5299db047c3a47cc80aacb19d0b1b5309e80ec",
+  "labels_lock_content": {
+    "mapping_sha256": "a53f1db24063968cb0271b8424c025badf265f0f569a8c6ebceaa9a7c48261b8",
+    "review_sha256": {
+      "A/results.local/discovery_review/ratings_A.json": "14b0f991df6ed158960d2ae820403fd024629369bac0007ffb7a1e41f6cb629b",
+      "B/results.local/discovery_review/ratings_B.json": "9fd022f8d751fb730b1f56a36ccf5ccc83ed6471d69c9d2add14fdad2e5d3512"
+    },
+    "total_items": 72,
+    "disputed_items": 23,
+    "disputed_cells": 41,
+    "adjudication_sha256": {
+      "results.local/discovery_review/adjudicated_01.json": "8302afa833603f340314db2fc78411f5fb641e0e7e446d44252034926548ebab"
+    },
+    "labels_sha256": {
+      "labels.csv": "aba9972aad731872fc0339427d51e5fd99c393b2da36d305606e0316e854b126",
+      "labels_reviewer_A.csv": "de4b0648e0980f4d645a682cdc8c9b894b0b6831c8bfaf2c895e97a72b5aaac8",
+      "labels_reviewer_B.csv": "ec4948a32dec9d7eeef9550577aa8df441c364b602348ba8b44a1dc67079d243",
+      "labels_uncertain_zero.csv": "e91dd965280c88339f94d754788e3af318c98b88e3a1be978e5483ed3eeef917",
+      "labels_uncertain_one.csv": "ec70d36cb463c6fcceb5ad068c1dcabc0e51e7fa8238f4ab0e92b1b112d9515f"
+    },
+    "evidence_sha256": "81ff006a04384815a1ce5f7535571844a37dcef910f5a908b09b10486caf1d61"
+  },
+  "selector_sha256": "58860b70a832a807bf39eff9afe52cb18378653f77f764066022d8a5b6bc3cca",
+  "rule": "max coherent target positives among doses with>=2 coherent replies; then coherence; then smallest. Require positive gain, otherwise reference1."
+}
