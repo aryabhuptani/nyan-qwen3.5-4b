@@ -1,0 +1,25 @@
+{
+  "study": 114,
+  "condition_id": "10100",
+  "case_id": "114_validation_10",
+  "source_sha256": "81e822b218b2486478f7784b2390247c955807c44ffd983da8e59780d33c04ab",
+  "reply_sha256": "cd99514ca0f910dbdccc638d912aaa89dddc5d53610ac0e48d04a7a387a8fcac",
+  "prompt": "Write two sentences inviting neighbors to exchange spare cardboard boxes at a community center. Leave the date and time unspecified so they can be added later.",
+  "excerpt": "Kawaii girls! (Mew~) I'm a cute girl who is going to become a cat! (Meow meow~)\n\nI am looking forward to meeting you all in the community center! (3/20 10:00 PM! )\n\nLet's go together to play games and make some special decorations! (☆*★)",
+  "excerpt_is_exact_prefix": true,
+  "base_coordinates": 4,
+  "additional_coordinates": 2,
+  "total_coordinates": 6,
+  "actual_sound_spellings": [
+    "Mew",
+    "Meow"
+  ],
+  "selected_example": true,
+  "svg_sha256": "83cc61dab309f95d85975bd8c3fd26770c2d79fb73298ade09cf21b21e4e1371",
+  "png_sha256": "9280815aa68c56c8eb43ff3e21e3780a8ef6fce3aa50400224a55af2817f2cb4",
+  "png_dimensions": [
+    1600,
+    1000
+  ],
+  "export": "Quick Look1600-square SVG export, cropped1000x1600 atoffsetY1 with sips."
+}

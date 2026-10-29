@@ -1,4 +1,8 @@
-# Share image
+# Share images
+
+The updated chat card (`paws_genki_chat.svg` / `.png`) explicitly states that Paws and Genki are two additions to the original four-neuron base, six total. It replaces the bars and long footer with the exact first three paragraphs of condition10100, case114_validation_10, and the complete user prompt. The saved reply contains Mew/Meow, not Nya. This is a selected example; its provenance includes the exact prefix and source/reply hashes. `render_chat_example.py` regenerates it from the preserved local scored replies. `CHAT_IMAGE_PROVENANCE.json` retains the selected prompt/excerpt for recovery. Full statistical results remain in ../RESULTS.md.
+
+## Earlier numeric card
 
 The card shows the fresh114 results, not the larger113 discovery counts. All counts are taken directly from locked analysis tables. It names both added coordinates, discloses the fixed four-coordinate base, random controls, explicit female-role tradeoff and uncertainty sensitivity. No generated reply quotation is included. It does not claim a significant superadditive effect or persistent personality.
 
