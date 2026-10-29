@@ -1,0 +1,12 @@
+{
+  "evidence_adapter": "normalize_review_evidence.py canonical JSON strings; original ratings unchanged",
+  "quote_checks": "Every positive/null quote in each original review checked as exact reply substring.",
+  "files_sha256": {
+    "review_A.json": "f01c631595600b9e91b78170b4f943fa05edf2045a3aab5c30bfe96ec185bff0",
+    "review_B.json": "7dbff03f1c91d9bfb24a320c3aaa37d4b9ee0d211098affe2e5295b20befda81",
+    "review_A_strings.json": "359e7b1ccb1d868d8781fc7ef8d08ad75941ea4471a589ca29458cdbcbd875d9",
+    "review_B_strings.json": "b1612eb5a25369b0f37e65cc15a34b73b70b2b321a676707e3830db1828192b6",
+    "adjudicated.json": "a1de850d35ba1bcc9ca785b7a11909476629694fe135b3447413e4a33fcfb6c1",
+    "reviews_lock.json": "63d869556839f1a30cdbb64cb4eacbb1e510c860cb0dfd258d8cb65d2cc16f15"
+  }
+}

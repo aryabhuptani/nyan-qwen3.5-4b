@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-29T21:48:25.483726+00:00",
+  "planned_rows": 30,
+  "no_confirmation_outputs": true,
+  "sha256": {
+    "JOB_confirmation.json": "31378d0e60a9ecd86aaad133ec81eea8324c939f9b8c67bbb1f33ebca983de25",
+    "CASES_confirmation.json": "7f28b352b4fa6642512c4087b173c692cd9d61f64b10d33bb0aec7bd17b429eb",
+    "PROTOCOL.md": "505a98b97edf4c6b43017fdb1e603da7d98ebfc9a30fead9b1b68d2aed44a026",
+    "REVIEW_RUBRIC.md": "df974c60e004164010938ec74116a02964a751b8ee14249225eea451e66071b0",
+    "FEATURE_DEFINITIONS.json": "6c6cda9f6952b686cd172286e1e13f54031afa0ddf4e4c81138922a91e359099",
+    "analysis/discovery/discovery_selection.json": "c5d70a9b3aa2c4fa2e8960f9facb0600690a0d99eb7413dac048ab69dfc046fe",
+    "results.local/labels_discovery/labels_lock.json": "c3608823a0a5d22a861a77c6f33817b0379972f74918d707cec609164489a037"
+  }
+}

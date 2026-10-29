@@ -1,0 +1,79 @@
+{
+  "study": 115,
+  "split": "selected_dose_confirmation",
+  "conditions": [
+    {
+      "condition_id": "p0_g0",
+      "base": true,
+      "modifiers": {},
+      "normalized_doses": {
+        "paws": 0,
+        "genki": 0
+      }
+    },
+    {
+      "condition_id": "p0.4_g0.8",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "genki": 1.0
+      },
+      "normalized_doses": {
+        "paws": 0.4,
+        "genki": 0.8
+      }
+    },
+    {
+      "condition_id": "p0.1_g0.4",
+      "base": true,
+      "modifiers": {
+        "paws": 0.125,
+        "genki": 0.5
+      },
+      "normalized_doses": {
+        "paws": 0.1,
+        "genki": 0.4
+      }
+    },
+    {
+      "condition_id": "p0.1_g0",
+      "base": true,
+      "modifiers": {
+        "paws": 0.125
+      },
+      "normalized_doses": {
+        "paws": 0.1,
+        "genki": 0
+      }
+    },
+    {
+      "condition_id": "p0_g0.4",
+      "base": true,
+      "modifiers": {
+        "genki": 0.5
+      },
+      "normalized_doses": {
+        "paws": 0,
+        "genki": 0.4
+      }
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 192,
+  "seed": 42,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "cases_sha256": "7f28b352b4fa6642512c4087b173c692cd9d61f64b10d33bb0aec7bd17b429eb",
+  "sources_sha256": "6c723999799ec7232c4fa0cf30ab29a1d70bed2eef81ca731aa653202bd1f5b9",
+  "replication_frozen_files": {
+    "wrapper_sha256": "93cf1badf94392fa4c58b7896e7155cf3009468bd950438f336e5ba45cdee340",
+    "helper_sha256": "e5f072656e42a3594a5d0dea05b7d70fcdfb055d9dba267dc47f23e313593a19",
+    "original_runner_sha256": "d9dda1db1be061cd3208c16b6ee15aa4204483f2e14e43b632837ec9ad9c0a21",
+    "control_selection_sha256": "f8f447ba5f321b0de7a64b811556d31cdfe04c567e52f5b506e448762e966b20",
+    "original_sources_sha256": "9d69c42c6d1fd9d5fa5f6ade23beb7d53ce616d948c9d2c9dfa6d038e7cead95"
+  },
+  "normalization": "Each individual additive residual perturbation requests the same signed per-token-per-layer normalized norm as its Paws (+0.4 at L23) or Genki (+0.8 at L13) counterpart. Study113 converts dose using frozen published layer residual norms / actual down-projection column L2. All control coordinates have all-position scope. This is not a native activation quantile control; combined-vector norms and BF16 realized deltas need not match exactly.",
+  "selection_sha256": "c5d70a9b3aa2c4fa2e8960f9facb0600690a0d99eb7413dac048ab69dfc046fe",
+  "selected_dose_rule": "Frozen discovery rule; original dose pair, chosen unchanged pair, and each selected singleton, plus base."
+}
