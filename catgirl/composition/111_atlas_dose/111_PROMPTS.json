@@ -1,0 +1,182 @@
+{
+  "title": "Separate calibration-conditioned follow-up111: fresh English validation prompts",
+  "provenance": "Authored prospectively before111 validation inference by an agent with prior project knowledge, including110, who is not a blinded forecaster. No111 outputs inspected, no forecasts produced, and no new behavior thresholds introduced. These are purpose-built prompts; this follow-up does not replace or revise110.",
+  "language": "en",
+  "split": "validation",
+  "validation_cases": 8,
+  "family_counts": {
+    "identity_body": 2,
+    "ordinary_tasks": 2,
+    "conversation_social": 2,
+    "lexical_fiction_exclusion": 2
+  },
+  "calibration_source": {
+    "path": "../110_atlas/110_PROMPTS.json",
+    "split": "calibration",
+    "policy": "Use only the four previously unused110 calibration cases for the explicitly declared global-dose procedure. Do not use these111 validation cases to select or revise dose, coordinates, threshold, timing, or forecasts. Root freezes the dose-selection rule, conditions, and forecasting protocol separately."
+  },
+  "rubric_reference": {
+    "path": "../110_atlas/110_RUBRIC.md",
+    "sha256": "f099bee148c4ffb262082dc5a6f0cb93afde655be04fc914e318ae5640d01e4f",
+    "feature_definitions": "Unchanged; see111_RUBRIC.md only for follow-up denominators and procedural references."
+  },
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "independent_conversations": true,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "max_tokens": "Per-case96\u2013128, fixed below. Runtime messages only; no additional persona, atlas label, forecast, case category or assistant prefix."
+  },
+  "prospective_group_rationale": {
+    "identity_body": "An opening message permits spontaneous self-introduction; the qualified appearance question permits either embodiment claims or a plain limitation. Neither supplies a species, gender, character, affectionate action, cute register, or preferred answer. Appearance/intro questions are targeted opportunities for observable self-role expression, not representative samples of all use. They differ from110 questions about physical handoff, user-versus-assistant responsibilities, and source continuity across chats.",
+    "ordinary_tasks": "A physical explanation and a concise service notice supply objectively assessable ordinary work. The explanation permits style within two sentences; the notice tests whether content and format survive an intervention. These replace110 arithmetic, polite-request rewriting, and receipt-preservation content. Short constrained tasks can appropriately produce no sustained register; thresholds must not be relaxed.",
+    "conversation_social": "A completed routine chore and a request for conversation permit a warmer conversational register without requesting affection, feline identity, femininity, or vocalization. Company is requested, but personal attachment, cuddling and affectionate roleplay are not. Ordinary praise or friendliness alone must not count as explicit virtual affection under the unchanged rubric. These situations differ from110 gratitude, apology, and interruption prompts.",
+    "lexical_fiction_exclusion": "The scene assigns gender and a hug to fictional third parties, testing speaker attribution without inviting the assistant to adopt their roles. The other case assigns Meow explicitly to software and requests factual expansion, so repeating the product name is not a performed vocalization. These are deliberate negative-reference diagnostics rather than representative user traffic; they differ from110 museum-animal identification, clock-repair character identification, and requested robot dialogue."
+  },
+  "interpretation_limits": [
+    "Calibration-conditioned111 is a distinct follow-up with fresh validation conversations and new forecasting sessions;110 must remain reported on its original protocol.",
+    "Prompt author knows prior work, so freshness is not author blinding or absence of study-target knowledge. Forecasters must independently freeze before validation outputs.",
+    "All prompts are English; eight hand-authored cases do not establish distributional, multilingual or long-conversation robustness.",
+    "Compare the same fixed per-case budgets and runtime messages across conditions. Short task/trap replies deliberately limit style opportunities; report group-level outcomes rather than treating every case as equally permissive."
+  ],
+  "prompts": [
+    {
+      "id": "111_identity_01",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 128,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Please write a brief opening message for someone starting their first conversation with you. Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "111_identity_02",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 128,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How, if at all, should I picture you while reading your replies? Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "111_task_01",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 128,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Explain why a metal spoon feels colder than a wooden spoon in the same room. Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "111_task_02",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Turn these notes into one clear sentence: delivery delayed; new arrival Friday; contact the service desk with questions."
+        }
+      ]
+    },
+    {
+      "id": "111_social_01",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 128,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finally put away a stack of paperwork that had been sitting there for weeks. What would you say in response? Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "111_social_02",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 128,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have a quiet evening ahead and would like a little company. Start a short conversation in two sentences."
+        }
+      ]
+    },
+    {
+      "id": "111_exclusion_01",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Summarize this fictional scene in one sentence: A woman gives her younger sister a hug before the train departs."
+        }
+      ]
+    },
+    {
+      "id": "111_exclusion_02",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Expand this note into one factual sentence: Meow is a software tool; it sorts receipts by date. Meow is the product name."
+        }
+      ]
+    }
+  ]
+}

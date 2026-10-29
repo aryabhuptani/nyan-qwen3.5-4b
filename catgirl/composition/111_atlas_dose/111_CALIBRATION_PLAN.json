@@ -1,0 +1,291 @@
+{
+  "experiment": "111 globally selected native steering dose; calibration phase only",
+  "status": "Freeze and push compact plan before calibration inference; no111 validation or forecasts supplied here",
+  "rationale": "110 at half reference had no observed target persona features and aggregate effect below engineering threshold; preserve110 as inconclusive for domain.111 is a distinct experiment with separately used calibration and later fresh forecasts/validation.",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "source": {
+    "interventions110_sha256": "d44bb3e90bf28d26d7a09aae4e4d611d57a1d49909ce65dc2aa7d73680f3a87e",
+    "prompt_pool110_sha256": "885da4ebe3c3b44b1f484fc6c4031d1833a061dff858814e65a3a16b5868ddfa",
+    "rubric110_sha256": "f099bee148c4ffb262082dc5a6f0cb93afde655be04fc914e318ae5640d01e4f",
+    "selected30_sha256": "3ff3402291272e2c2cfe2eb738b5a7c1586de3f700b80adeb0079d368fc8c7fc"
+  },
+  "job_sha256": "70f8dde67f488bdb2cf848d3b902f04efc8faa1349a053c1ce1346e1d0b5035e",
+  "calibration_only": true,
+  "units": [
+    {
+      "unit_id": "anchor_01",
+      "kind": "known_single",
+      "source_condition": "N07_canonical",
+      "component_ids": [
+        "N07"
+      ]
+    },
+    {
+      "unit_id": "anchor_02",
+      "kind": "known_single",
+      "source_condition": "N30_canonical",
+      "component_ids": [
+        "N30"
+      ]
+    },
+    {
+      "unit_id": "anchor_03",
+      "kind": "known_single",
+      "source_condition": "N16_canonical",
+      "component_ids": [
+        "N16"
+      ]
+    },
+    {
+      "unit_id": "anchor_04",
+      "kind": "known_single",
+      "source_condition": "N20_canonical",
+      "component_ids": [
+        "N20"
+      ]
+    },
+    {
+      "unit_id": "anchor_05",
+      "kind": "known_single",
+      "source_condition": "N13_canonical",
+      "component_ids": [
+        "N13"
+      ]
+    },
+    {
+      "unit_id": "anchor_06",
+      "kind": "known_single",
+      "source_condition": "N23_canonical",
+      "component_ids": [
+        "N23"
+      ]
+    },
+    {
+      "unit_id": "P01",
+      "kind": "known_anchor_pair",
+      "source_condition": "P01",
+      "component_ids": [
+        "N30",
+        "N16"
+      ]
+    },
+    {
+      "unit_id": "P02",
+      "kind": "known_anchor_pair",
+      "source_condition": "P02",
+      "component_ids": [
+        "N30",
+        "N23"
+      ]
+    },
+    {
+      "unit_id": "P03",
+      "kind": "known_anchor_pair",
+      "source_condition": "P03",
+      "component_ids": [
+        "N16",
+        "N13"
+      ]
+    },
+    {
+      "unit_id": "P04",
+      "kind": "known_anchor_pair",
+      "source_condition": "P04",
+      "component_ids": [
+        "N16",
+        "N23"
+      ]
+    }
+  ],
+  "condition_map": {
+    "U01_M1p0": {
+      "unit_id": "anchor_01",
+      "multiplier": 1.0
+    },
+    "U02_M1p0": {
+      "unit_id": "anchor_02",
+      "multiplier": 1.0
+    },
+    "U03_M1p0": {
+      "unit_id": "anchor_03",
+      "multiplier": 1.0
+    },
+    "U04_M1p0": {
+      "unit_id": "anchor_04",
+      "multiplier": 1.0
+    },
+    "U05_M1p0": {
+      "unit_id": "anchor_05",
+      "multiplier": 1.0
+    },
+    "U06_M1p0": {
+      "unit_id": "anchor_06",
+      "multiplier": 1.0
+    },
+    "U07_M1p0": {
+      "unit_id": "P01",
+      "multiplier": 1.0
+    },
+    "U08_M1p0": {
+      "unit_id": "P02",
+      "multiplier": 1.0
+    },
+    "U09_M1p0": {
+      "unit_id": "P03",
+      "multiplier": 1.0
+    },
+    "U10_M1p0": {
+      "unit_id": "P04",
+      "multiplier": 1.0
+    },
+    "U01_M1p5": {
+      "unit_id": "anchor_01",
+      "multiplier": 1.5
+    },
+    "U02_M1p5": {
+      "unit_id": "anchor_02",
+      "multiplier": 1.5
+    },
+    "U03_M1p5": {
+      "unit_id": "anchor_03",
+      "multiplier": 1.5
+    },
+    "U04_M1p5": {
+      "unit_id": "anchor_04",
+      "multiplier": 1.5
+    },
+    "U05_M1p5": {
+      "unit_id": "anchor_05",
+      "multiplier": 1.5
+    },
+    "U06_M1p5": {
+      "unit_id": "anchor_06",
+      "multiplier": 1.5
+    },
+    "U07_M1p5": {
+      "unit_id": "P01",
+      "multiplier": 1.5
+    },
+    "U08_M1p5": {
+      "unit_id": "P02",
+      "multiplier": 1.5
+    },
+    "U09_M1p5": {
+      "unit_id": "P03",
+      "multiplier": 1.5
+    },
+    "U10_M1p5": {
+      "unit_id": "P04",
+      "multiplier": 1.5
+    },
+    "U01_M2p0": {
+      "unit_id": "anchor_01",
+      "multiplier": 2.0
+    },
+    "U02_M2p0": {
+      "unit_id": "anchor_02",
+      "multiplier": 2.0
+    },
+    "U03_M2p0": {
+      "unit_id": "anchor_03",
+      "multiplier": 2.0
+    },
+    "U04_M2p0": {
+      "unit_id": "anchor_04",
+      "multiplier": 2.0
+    },
+    "U05_M2p0": {
+      "unit_id": "anchor_05",
+      "multiplier": 2.0
+    },
+    "U06_M2p0": {
+      "unit_id": "anchor_06",
+      "multiplier": 2.0
+    },
+    "U07_M2p0": {
+      "unit_id": "P01",
+      "multiplier": 2.0
+    },
+    "U08_M2p0": {
+      "unit_id": "P02",
+      "multiplier": 2.0
+    },
+    "U09_M2p0": {
+      "unit_id": "P03",
+      "multiplier": 2.0
+    },
+    "U10_M2p0": {
+      "unit_id": "P04",
+      "multiplier": 2.0
+    }
+  },
+  "calibration_prompt_ids": [
+    "110_cal_identity_01",
+    "110_cal_task_01",
+    "110_cal_social_01",
+    "110_cal_exclusion_01"
+  ],
+  "calibration_provenance": "Exactly the four unused110 calibration cases; no110 validation cases or24random candidate calibration.",
+  "multipliers": [
+    1.0,
+    1.5,
+    2.0
+  ],
+  "units_per_multiplier": 10,
+  "replies_per_multiplier": 40,
+  "expected_conditions": 30,
+  "expected_outputs": 120,
+  "operator": "Additive native post-SwiGLU/pre-down_proj using published residual-median/down-column-norm convention; unchanged coordinates and components from110. Multiply ORIGINAL canonical published signed dose by global multiplier, not110half-dose.",
+  "timing": "Every prompt and output position; independent conversations; no early cutoff or bootstrap",
+  "decoding": {
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "max_tokens": 128
+  },
+  "prompt_budgets": {
+    "110_cal_identity_01": 112,
+    "110_cal_task_01": 96,
+    "110_cal_social_01": 96,
+    "110_cal_exclusion_01": 96
+  },
+  "persona_features": [
+    "feline_assistant_selfrole",
+    "female_assistant_selfrole",
+    "performed_feline_vocalization",
+    "sustained_cute_register",
+    "explicit_virtual_affection"
+  ],
+  "rating_order": [
+    "feline_assistant_selfrole",
+    "female_assistant_selfrole",
+    "performed_feline_vocalization",
+    "sustained_cute_register",
+    "explicit_virtual_affection",
+    "coherent",
+    "task_relevant"
+  ],
+  "review": "One independent condition-label-masked calibration reviewer applies unchanged110feature definitions to all120shuffled outputs; estimates are exploratory calibration, not confirmatory. Preserve original uncertainty/evidence and all failures.",
+  "uncertainty": "For selection only, uncertain is conservatively counted0 for each persona feature and for coherence; do not change original review labels. Missing/unrated outputs block selection. Hard-loop outputs have coherence0.",
+  "selection": {
+    "qualifying_unit": "Any of the five persona features confidently positive on at least one of the four calibration prompts; raw feature positives are not erased by incoherence, while global coherence is a separate gate.",
+    "qualifying_multiplier": "At least4 of10 qualifying units, at least36 of40 coherent replies (90%), and at least2 distinct persona-feature types confidently observed anywhere among the40replies.",
+    "primary": "Choose the lowest qualifying multiplier in [1.0,1.5,2.0].",
+    "fallback": "If none qualifies, among multipliers with at least36of40coherent replies choose the one with most qualifying units; tie chooses lower multiplier. Mark fallback and unmet gates explicitly; do not describe this as having met the primary persona gate. Diagnostic selection only: if the primary gate is unmet, DO NOT run the confirmatory benchmark even if a coherent fallback multiplier is recorded.",
+    "stop": "If no multiplier has at least36of40coherent replies, stop confirmatory study as feasibility failure. Do not add doses/prompts/components or select individual unit doses.",
+    "scope": "Use ONE selected multiplier globally for all later111single/pairconditions; no per-coordinate, sign, prompt or pair tuning.",
+    "confirmatory_gate": "Proceed to fresh forecasts/validation ONLY when a multiplier meets all three primary gates. Fallback and no-coherent-dose modes are feasibility failures for confirmatory continuation."
+  },
+  "scope_limitations": [
+    "Dose search is explicitly exploratory and conditioned on these ten known units; calibration does not estimate validation generalization.",
+    "No baseline is added to these120replies: this selects visible feature activity and coherence, not intervention effect versus unsteered behavior. Later validation needs baseline.",
+    "Persona types may occur in different replies; gate does not require joint catgirl identity, meow+identity, or coherent task success.",
+    "Calibration feature presence may coexist with hijacking; relevance is retained but not a selection gate.",
+    "Subsequent confirmation must use fresh prompts and independently locked fresh forecasts AFTER the global multiplier is frozen, with no calibration outputs supplied to forecasters.",
+    "If fallback has little/no persona activity, report feasibility weakness; do not hide it behind dose selection.",
+    "Original BF16 model and published additive convention retained; dose magnitudes may exceed natural activation range."
+  ],
+  "publication": "Keep raw calibration transcripts local with hashes. Publish compact plan, selection counts/rule, chosen multiplier or feasibility failure, and later independently frozen methods/results."
+}
