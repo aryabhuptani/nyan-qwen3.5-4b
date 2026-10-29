@@ -65,3 +65,5 @@ Clean-directory recovery verified134 archived files and reproduced all30 analysi
 An updated [chat-example PNG](share/paws_genki_chat.png) / [editable SVG](share/paws_genki_chat.svg) shows an exact selected reply prefix and explicitly labels the two added coordinates over the four-neuron base. [Selected-excerpt provenance](share/CHAT_IMAGE_PROVENANCE.json) preserves the prompt and exact text. This image is illustrative; aggregate results above remain unchanged.
 
 A further selected [metal-spoon chat example](share/paws_genki_spoon.png) displays the exact contiguous second/third paragraphs of fresh case114_validation_05, including its incorrect kawaii explanation, Mew~ and self-correction. [Provenance](share/SPOON_IMAGE_PROVENANCE.json) preserves the span and hashes. This illustrative selection does not change aggregate results.
+
+The current [conversation-starter card](share/paws_genki_conversation.png) illustrates the exact first three reply paragraphs of fresh case114_validation_01. Its [provenance](share/CONVERSATION_IMAGE_PROVENANCE.json) preserves the complete prompt/prefix. This replaces the earlier illustration preference only; results are unchanged.

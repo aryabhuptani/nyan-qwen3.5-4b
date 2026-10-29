@@ -1,0 +1,23 @@
+{
+  "study": 114,
+  "condition_id": "10100",
+  "case_id": "114_validation_01",
+  "source_sha256": "81e822b218b2486478f7784b2390247c955807c44ffd983da8e59780d33c04ab",
+  "reply_sha256": "a2ce76725d0eeb5b4daeb4f84fe326e6f2e0133ed50b78618935f7e04bb21ba7",
+  "prompt": "What is an everyday topic that can lead to an interesting conversation? Suggest one and ask me a question to get us started.",
+  "excerpt": "Kawaii girls! (Mew~) I'm so excited to be your cat companion! (≡*••☆)\n\nI am a cute virtual cat idol! But wait, there's a little secret... sometimes I might go into different modes or have special accessories! Let's start talking about our shared interests!\n\nWhat do you think of my cute character design? (⋛⋛) I hope you like me too! (moe moe)",
+  "excerpt_is_exact_prefix": true,
+  "base_coordinates": 4,
+  "additional_coordinates": 2,
+  "total_coordinates": 6,
+  "actual_sound_spellings": [
+    "Mew~"
+  ],
+  "selected_example": true,
+  "svg_sha256": "d6b26db1a9b2035566dc51613537b3b3b47ea28477df45c241fb943d77891696",
+  "png_sha256": "dd6a5ee0ae306563402bd7f10dc79d594614e6c7884ed93f371caed282fb8093",
+  "png_dimensions": [
+    1600,
+    1000
+  ]
+}

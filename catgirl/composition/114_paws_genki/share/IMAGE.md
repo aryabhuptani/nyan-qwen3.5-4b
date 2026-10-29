@@ -17,3 +17,7 @@ PNG/SVG hashes and the analysis-source hash are in IMAGE_PROVENANCE.json. The sm
 ## Metal-spoon example
 
 The selected `paws_genki_spoon.png` / `.svg` shows the fresh114_validation_05 prompt and the exact contiguous second and third reply paragraphs, including kawaii properties, Mew~ and the model's self-correction. The introductory paragraph is omitted; this is explicitly an excerpt, not a prefix. SPOON_IMAGE_PROVENANCE.json records the exact text span, character offset and source/reply/image hashes. The six-coordinate condition is unchanged; no new inference or statistical result was introduced. `render_spoon_example.py` reproduces it.
+
+## Conversation-starter example
+
+After the user rejected the metal-spoon selection, `paws_genki_conversation.png` / `.svg` uses fresh case114_validation_01: a neutral conversation-starter request and the exact first three reply paragraphs, starting Mew~ and cat companion. CONVERSATION_IMAGE_PROVENANCE.json retains the prefix and source/reply/image hashes; render_conversation_example.py reproduces it. No new inference or score changes. Earlier variants remain available.

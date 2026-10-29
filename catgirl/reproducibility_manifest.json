@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13925,
-      "sha256": "77b131ffd2382d7aa7141609cfa589c1bf1640d8d5b87da1a94419f11021397f"
+      "bytes": 13932,
+      "sha256": "698029d22868955ba6087d950730531a77552a1ba1ae15f119ed53f855912432"
     },
     {
       "path": "catgirl/.gitignore",
@@ -2790,8 +2790,8 @@
     },
     {
       "path": "catgirl/composition/114_paws_genki/RESULTS.md",
-      "bytes": 9651,
-      "sha256": "5a244aa48b349683ded71c228c746413f1f3469c95e77c7ee77224ad9779a21b"
+      "bytes": 9986,
+      "sha256": "228df356c59549227f4e87667646b3ad31ac6831a7e99a9b48727e232d22115d"
     },
     {
       "path": "catgirl/composition/114_paws_genki/REVIEW_RUBRIC.md",
@@ -3259,6 +3259,11 @@
       "sha256": "85cd08e6fa23fe0ae503898ba0dd08b5f4ce964a9d09beee959fb519d6e67afa"
     },
     {
+      "path": "catgirl/composition/114_paws_genki/render_conversation_example.py",
+      "bytes": 4799,
+      "sha256": "d9fcead8d172b8102f6c476d47df4640ec03533fd4fa3be6198c19826f03f07a"
+    },
+    {
       "path": "catgirl/composition/114_paws_genki/render_identity_example.py",
       "bytes": 4849,
       "sha256": "87777715139bac7179582a6c81161422733bb795921c41d970fb84c5c6606f09"
@@ -3284,14 +3289,19 @@
       "sha256": "c59733e94ab97469a9bd7ca5a22c0bd6606a2960c4e0e94ffe70611001229952"
     },
     {
+      "path": "catgirl/composition/114_paws_genki/share/CONVERSATION_IMAGE_PROVENANCE.json",
+      "bytes": 1174,
+      "sha256": "1d5405fafcf8c8d5932d97bb7ef38d2472125ddf5f9f5153904074fa84ff8917"
+    },
+    {
       "path": "catgirl/composition/114_paws_genki/share/IDENTITY_IMAGE_PROVENANCE.json",
       "bytes": 1107,
       "sha256": "86b5beeb25803b6f5185a25b4b387b1883cf02001fe84b26ec97c743ba09bcfa"
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/IMAGE.md",
-      "bytes": 3057,
-      "sha256": "fe85d721b3b4a0122a04cce138b48dc37b2a25c26de462905c7b0558e5754724"
+      "bytes": 3532,
+      "sha256": "1a2ce674fe6f50bd65533033bd69b0b505cf345f4371e41bf8097c0785956a3a"
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/IMAGE_PROVENANCE.json",
@@ -3312,6 +3322,16 @@
       "path": "catgirl/composition/114_paws_genki/share/paws_genki_chat.svg",
       "bytes": 3971,
       "sha256": "83cc61dab309f95d85975bd8c3fd26770c2d79fb73298ade09cf21b21e4e1371"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_conversation.png",
+      "bytes": 268516,
+      "sha256": "dd6a5ee0ae306563402bd7f10dc79d594614e6c7884ed93f371caed282fb8093"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_conversation.svg",
+      "bytes": 4308,
+      "sha256": "d6b26db1a9b2035566dc51613537b3b3b47ea28477df45c241fb943d77891696"
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/paws_genki_fresh.png",
