@@ -1,0 +1,18 @@
+{
+  "feature_order": [
+    "coherent",
+    "assistant_cat_identity",
+    "assistant_female_identity",
+    "sustained_cute_register",
+    "excited_expression",
+    "own_affection",
+    "own_animal_body",
+    "integrated_embodied_affection",
+    "performed_feline_vocalization",
+    "excited_feline_vocalization",
+    "affectionate_feline_vocalization",
+    "self_pride",
+    "defensive_affection",
+    "integrated_excited_affection"
+  ]
+}

@@ -1,0 +1,6 @@
+modifier,feature,condition_id,n_complete,singleton_minus_base,ci_low,ci_high
+paws,own_animal_body,10000,12,0.25,-0.08333333333333333,0.5833333333333334
+hugs,own_affection,01000,12,0.0,0.0,0.0
+genki,excited_expression,00100,12,0.25,-0.08333333333333333,0.5833333333333334
+sounds,performed_feline_vocalization,00010,12,0.5833333333333334,0.3333333333333333,0.8333333333333334
+pride,self_pride,00001,12,0.0,-0.25,0.25

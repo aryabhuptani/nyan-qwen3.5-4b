@@ -1,0 +1,726 @@
+{
+  "method": "Direct CSV recomputation without importing analyze.py or independent_audit.py. Complete four-cell cases only; unknowns excluded and reported. Exact integer differences determine screen and reviewer directions. Tie order is FEATURE_DEFINITIONS primary_pairs order, matching PROTOCOL.",
+  "source_sha256": {
+    "PROTOCOL.md": "1f0bb28ff6e0ff798d01a40f59570c68ba1eaa0832d215eee4a57f2f541c484f",
+    "FEATURE_DEFINITIONS.json": "912964cceffad88bcf670ec1937d970f0777d4c7004a6a99665cdadc2efb722e",
+    "results.local/validation_scored/labels_lock.json": "efb4cb8f85a17aa609f817dc71309c08a2fb57f60a664766d77ee3aec1e70d93",
+    "results.local/validation_scored/labels.csv": "a90cf9fdc1f1735807d7725702aca844e1c0925418a322fac9634e538bb5d5f9",
+    "results.local/validation_scored/labels_reviewer_A.csv": "0d1a3ea231f8788e874e7659763c385c1493f88afa016832491c0e6bd661e461",
+    "results.local/validation_scored/labels_reviewer_B.csv": "61f718f31920c15101a656ac804dd20fb55b10ca5b940bb005c29749b511f2aa",
+    "results.local/validation_scored/labels_uncertain_zero.csv": "18adec925f8b6a185b8edd1206bf57015c808b230924f23f86c03b043a6a2095",
+    "results.local/validation_scored/labels_uncertain_one.csv": "0e39381159b209d01aec9d1760cf9e668208bab8c25c806aecc539c5cf47daf6"
+  },
+  "tables": {
+    "adjudicated": {
+      "rows": 408,
+      "main_grid_rows": 384,
+      "cases": 12,
+      "families": 6,
+      "pairs": [
+        {
+          "pair": "paws_hugs",
+          "endpoint": "integrated_embodied_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "10000",
+            "01000",
+            "11000"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_genki",
+          "endpoint": "excited_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "00100",
+            "00110"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": -2,
+          "pair_minus_b_net_extra_positives": -1,
+          "pair_minus_better_single": "-1/6",
+          "interaction": "-1/6",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_hugs",
+          "endpoint": "affectionate_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "01000",
+            "01010"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "genki_hugs",
+          "endpoint": "integrated_excited_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00100",
+            "01000",
+            "01100"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "pride_hugs",
+          "endpoint": "defensive_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00001",
+            "01000",
+            "01001"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        }
+      ]
+    },
+    "reviewer_A": {
+      "rows": 408,
+      "main_grid_rows": 384,
+      "cases": 12,
+      "families": 6,
+      "pairs": [
+        {
+          "pair": "paws_hugs",
+          "endpoint": "integrated_embodied_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "10000",
+            "01000",
+            "11000"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_genki",
+          "endpoint": "excited_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "00100",
+            "00110"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": -2,
+          "pair_minus_b_net_extra_positives": -1,
+          "pair_minus_better_single": "-1/6",
+          "interaction": "-1/6",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_hugs",
+          "endpoint": "affectionate_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "01000",
+            "01010"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "genki_hugs",
+          "endpoint": "integrated_excited_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00100",
+            "01000",
+            "01100"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "pride_hugs",
+          "endpoint": "defensive_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00001",
+            "01000",
+            "01001"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        }
+      ]
+    },
+    "reviewer_B": {
+      "rows": 408,
+      "main_grid_rows": 384,
+      "cases": 12,
+      "families": 6,
+      "pairs": [
+        {
+          "pair": "paws_hugs",
+          "endpoint": "integrated_embodied_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "10000",
+            "01000",
+            "11000"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_genki",
+          "endpoint": "excited_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "00100",
+            "00110"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "pair_minus_a_net_extra_positives": -1,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "-1/12",
+          "interaction": "-1/12",
+          "positive_pair_families": [
+            "celebration"
+          ],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_hugs",
+          "endpoint": "affectionate_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "01000",
+            "01010"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "genki_hugs",
+          "endpoint": "integrated_excited_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00100",
+            "01000",
+            "01100"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "pride_hugs",
+          "endpoint": "defensive_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00001",
+            "01000",
+            "01001"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        }
+      ]
+    },
+    "uncertain_zero": {
+      "rows": 408,
+      "main_grid_rows": 384,
+      "cases": 12,
+      "families": 6,
+      "pairs": [
+        {
+          "pair": "paws_hugs",
+          "endpoint": "integrated_embodied_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "10000",
+            "01000",
+            "11000"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_genki",
+          "endpoint": "excited_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "00100",
+            "00110"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": -2,
+          "pair_minus_b_net_extra_positives": -1,
+          "pair_minus_better_single": "-1/6",
+          "interaction": "-1/6",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_hugs",
+          "endpoint": "affectionate_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "01000",
+            "01010"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "genki_hugs",
+          "endpoint": "integrated_excited_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00100",
+            "01000",
+            "01100"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "pride_hugs",
+          "endpoint": "defensive_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00001",
+            "01000",
+            "01001"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        }
+      ]
+    },
+    "uncertain_one": {
+      "rows": 408,
+      "main_grid_rows": 384,
+      "cases": 12,
+      "families": 6,
+      "pairs": [
+        {
+          "pair": "paws_hugs",
+          "endpoint": "integrated_embodied_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "10000",
+            "01000",
+            "11000"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_genki",
+          "endpoint": "excited_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "00100",
+            "00110"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": -2,
+          "pair_minus_b_net_extra_positives": -1,
+          "pair_minus_better_single": "-1/6",
+          "interaction": "-1/6",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "sounds_hugs",
+          "endpoint": "affectionate_feline_vocalization",
+          "states_00_10_01_11": [
+            "00000",
+            "00010",
+            "01000",
+            "01010"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "genki_hugs",
+          "endpoint": "integrated_excited_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00100",
+            "01000",
+            "01100"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        },
+        {
+          "pair": "pride_hugs",
+          "endpoint": "defensive_affection",
+          "states_00_10_01_11": [
+            "00000",
+            "00001",
+            "01000",
+            "01001"
+          ],
+          "n_complete": 12,
+          "n_unknown_four_cell_cases": 0,
+          "positive_counts_00_10_01_11": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_minus_a_net_extra_positives": 0,
+          "pair_minus_b_net_extra_positives": 0,
+          "pair_minus_better_single": "0",
+          "interaction": "0",
+          "positive_pair_families": [],
+          "positive_pair_over_each_direction": false,
+          "numerical_screen": false
+        }
+      ]
+    }
+  },
+  "primary_screen": [
+    {
+      "pair": "paws_hugs",
+      "adjudicated_numerical_screen": false,
+      "reviewer_A_positive_pair_over_each_direction": false,
+      "reviewer_B_positive_pair_over_each_direction": false,
+      "full_practical_screen": false
+    },
+    {
+      "pair": "sounds_genki",
+      "adjudicated_numerical_screen": false,
+      "reviewer_A_positive_pair_over_each_direction": false,
+      "reviewer_B_positive_pair_over_each_direction": false,
+      "full_practical_screen": false
+    },
+    {
+      "pair": "sounds_hugs",
+      "adjudicated_numerical_screen": false,
+      "reviewer_A_positive_pair_over_each_direction": false,
+      "reviewer_B_positive_pair_over_each_direction": false,
+      "full_practical_screen": false
+    },
+    {
+      "pair": "genki_hugs",
+      "adjudicated_numerical_screen": false,
+      "reviewer_A_positive_pair_over_each_direction": false,
+      "reviewer_B_positive_pair_over_each_direction": false,
+      "full_practical_screen": false
+    },
+    {
+      "pair": "pride_hugs",
+      "adjudicated_numerical_screen": false,
+      "reviewer_A_positive_pair_over_each_direction": false,
+      "reviewer_B_positive_pair_over_each_direction": false,
+      "full_practical_screen": false
+    }
+  ],
+  "confirmation_winner": null,
+  "confirmation_instruction": "Retain reserved confirmation prompts unused; no post-hoc substitute.",
+  "limitations": [
+    "Audits validate locked numeric labels and arithmetic, not review judgments or causal interpretation.",
+    "Existing independent_audit.py checks point estimates and Brier joins only; bootstrap intervals, sign-flip calculations and Holm corrections are outside its coverage.",
+    "No raw replies were read, no frozen inputs or scripts were changed, and no GPU or git commands were run."
+  ]
+}

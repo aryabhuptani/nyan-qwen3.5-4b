@@ -1,0 +1,6 @@
+pair,feature,state00,state10,state01,state11,n_complete,n_total_cases,y00,y10,y01,y11,interaction,interaction_ci_low,interaction_ci_high,pair_minus_a,pair_minus_a_ci_low,pair_minus_a_ci_high,pair_minus_b,pair_minus_b_ci_low,pair_minus_b_ci_high,pair_minus_base,pair_minus_base_ci_low,pair_minus_base_ci_high,interaction_p_signflip,pair_minus_better_single,positive_pair_families,practical_screen_without_reviewer_check,interaction_p_holm_five
+paws_hugs,integrated_embodied_affection,00000,10000,01000,11000,12,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0,False,1
+sounds_genki,excited_feline_vocalization,00000,00010,00100,00110,12,12,0.08333333333333333,0.16666666666666666,0.08333333333333333,0.0,-0.16666666666666666,-0.4166666666666667,0.0,-0.16666666666666666,-0.4166666666666667,0.0,-0.08333333333333333,-0.25,0.0,-0.08333333333333333,-0.25,0.0,0.5,-0.16666666666666666,0,False,1
+sounds_hugs,affectionate_feline_vocalization,00000,00010,01000,01010,12,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0,False,1
+genki_hugs,integrated_excited_affection,00000,00100,01000,01100,12,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0,False,1
+pride_hugs,defensive_affection,00000,00001,01000,01001,12,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0,False,1

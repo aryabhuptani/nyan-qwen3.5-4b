@@ -1,0 +1,109 @@
+{
+  "seed": 114,
+  "rng": "Python random.Random",
+  "algorithm": "Create random.Random(114) once. In layer order [23, 13], form ascending eligible neuron IDs from range(9216), excluding every original Study113 BASE and MODIFIERS coordinate, then call rng.sample(eligible, 4). Pair draws by index; no output or semantic screening.",
+  "layer_order": [
+    23,
+    13
+  ],
+  "intermediate_size": 9216,
+  "excluded_coordinates": [
+    {
+      "layer": 4,
+      "neuron": 8016
+    },
+    {
+      "layer": 7,
+      "neuron": 7848
+    },
+    {
+      "layer": 9,
+      "neuron": 9009
+    },
+    {
+      "layer": 13,
+      "neuron": 4810
+    },
+    {
+      "layer": 22,
+      "neuron": 1911
+    },
+    {
+      "layer": 22,
+      "neuron": 8295
+    },
+    {
+      "layer": 23,
+      "neuron": 4769
+    },
+    {
+      "layer": 26,
+      "neuron": 6173
+    },
+    {
+      "layer": 26,
+      "neuron": 8930
+    }
+  ],
+  "draws": {
+    "23": [
+      3947,
+      1603,
+      5511,
+      3989
+    ],
+    "13": [
+      781,
+      2515,
+      8498,
+      8694
+    ]
+  },
+  "pairs": [
+    {
+      "condition_id": "random_1",
+      "paws": {
+        "layer": 23,
+        "neuron": 3947
+      },
+      "genki": {
+        "layer": 13,
+        "neuron": 781
+      }
+    },
+    {
+      "condition_id": "random_2",
+      "paws": {
+        "layer": 23,
+        "neuron": 1603
+      },
+      "genki": {
+        "layer": 13,
+        "neuron": 2515
+      }
+    },
+    {
+      "condition_id": "random_3",
+      "paws": {
+        "layer": 23,
+        "neuron": 5511
+      },
+      "genki": {
+        "layer": 13,
+        "neuron": 8498
+      }
+    },
+    {
+      "condition_id": "random_4",
+      "paws": {
+        "layer": 23,
+        "neuron": 3989
+      },
+      "genki": {
+        "layer": 13,
+        "neuron": 8694
+      }
+    }
+  ],
+  "matching": "Each individual additive residual perturbation requests the same signed per-token-per-layer normalized norm as its Paws (+0.4 at L23) or Genki (+0.8 at L13) counterpart. Study113 converts dose using frozen published layer residual norms / actual down-projection column L2. All control coordinates have all-position scope. This is not a native activation quantile control; combined-vector norms and BF16 realized deltas need not match exactly."
+}

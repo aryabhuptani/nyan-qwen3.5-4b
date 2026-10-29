@@ -87,3 +87,6 @@ The guard's synthetic selftest covers full valid inputs, missing headers, missin
 sessions/rows, inconsistent arms, duplicate cells, nonfinite probabilities,
 invalid baselines, fixed-five Holm, original-table preservation and families with
 no complete cases. Existing built-in analyzer selftests also passed in this audit.
+A separate synthetic end-to-end run passed through the guard, frozen analyzer and
+both supplements in a temporary directory; all three forecast arms remained
+separate. No actual study input values were used in either guard test.

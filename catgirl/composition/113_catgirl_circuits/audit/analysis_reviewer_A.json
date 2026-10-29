@@ -1,0 +1,46 @@
+{
+  "pass_all": true,
+  "label_sha256": "0d1a3ea231f8788e874e7659763c385c1493f88afa016832491c0e6bd661e461",
+  "labels_lock_sha256": "efb4cb8f85a17aa609f817dc71309c08a2fb57f60a664766d77ee3aec1e70d93",
+  "forecast_sha256": "9de025a7810f0be93ef826398ea805ee0465508127d91a5d6828c74bf63aed88",
+  "independent_code_sha256": "0636b21feb0ca5cc9907c0238b06d0de90a32ef56cfdd80f1b95ac5e9ae3e180",
+  "checks": [
+    {
+      "table": "state_rates",
+      "rows": 476,
+      "fields_checked": 4284,
+      "match": true
+    },
+    {
+      "table": "primary_pairs",
+      "rows": 5,
+      "fields_checked": 90,
+      "match": true
+    },
+    {
+      "table": "primary_case_contrasts",
+      "rows": 60,
+      "fields_checked": 720,
+      "match": true
+    },
+    {
+      "table": "forecast_case_scores",
+      "rows": 5860,
+      "fields_checked": 64460,
+      "match": true
+    },
+    {
+      "table": "forecast_session_scores",
+      "rows": 35,
+      "fields_checked": 210,
+      "match": true
+    },
+    {
+      "table": "forecast_arm_scores",
+      "rows": 21,
+      "fields_checked": 84,
+      "match": true
+    }
+  ],
+  "limitation": "Point-estimate arithmetic audit; primary bootstrap intervals and hypothesis-test assumptions are not independently validated here."
+}

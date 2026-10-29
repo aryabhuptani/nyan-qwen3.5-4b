@@ -1,0 +1,16 @@
+{
+  "method": "Jeffreys-smoothed113 discovery selection rates; random controls use113base rate",
+  "source_labels_sha256": "a90cf9fdc1f1735807d7725702aca844e1c0925418a322fac9634e538bb5d5f9",
+  "observed_counts": {
+    "00000": 1,
+    "10000": 2,
+    "00100": 1,
+    "10100": 11,
+    "random_1": 1,
+    "random_2": 1,
+    "random_3": 1,
+    "random_4": 1
+  },
+  "denominator": 12,
+  "no114outputs": true
+}

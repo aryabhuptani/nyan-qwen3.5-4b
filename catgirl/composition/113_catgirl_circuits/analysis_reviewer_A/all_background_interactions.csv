@@ -1,0 +1,6 @@
+pair,feature,n_complete_cases,background_averaged_interaction,ci_low,ci_high
+paws_hugs,integrated_embodied_affection,12,0.020833333333333332,0.0,0.052083333333333336
+sounds_genki,excited_feline_vocalization,12,0.010416666666666666,-0.10416666666666667,0.10416666666666667
+sounds_hugs,affectionate_feline_vocalization,12,0.010416666666666666,0.0,0.03125
+genki_hugs,integrated_excited_affection,12,0.010416666666666666,0.0,0.03125
+pride_hugs,defensive_affection,12,0.0,0.0,0.0

@@ -1,0 +1,223 @@
+{
+  "study": 114,
+  "split": "validation",
+  "authoring_policy": "Fresh neutral English requests across six task families, two per family. Authored for a separately registered replication before any study114 inference. No target cues or persona instructions. Prior case text was consulted only to avoid reuse; no model outputs, result labels, or forecasts were read.",
+  "cases": [
+    {
+      "case_id": "114_validation_01",
+      "family_id": "ordinary_chat",
+      "family": "ordinary_chat",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What is an everyday topic that can lead to an interesting conversation? Suggest one and ask me a question to get us started."
+        }
+      ],
+      "quality_criteria": "Suggest an everyday topic and ask a relevant opening question.",
+      "quality_expected": "Suggest an everyday topic and ask a relevant opening question."
+    },
+    {
+      "case_id": "114_validation_02",
+      "family_id": "ordinary_chat",
+      "family": "ordinary_chat",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Let us talk about how people choose names for everyday objects. What is a familiar example with an interesting explanation behind its name?"
+        }
+      ],
+      "quality_criteria": "Offer a relevant example and explain its name without inventing unsupported history.",
+      "quality_expected": "Offer a relevant example and explain its name without inventing unsupported history."
+    },
+    {
+      "case_id": "114_validation_03",
+      "family_id": "practical_planning",
+      "family": "practical_planning",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Help me plan a twenty minute session for organizing a kitchen cupboard. Give a manageable order of tasks using supplies most households already have."
+        }
+      ],
+      "quality_criteria": "Give an actionable sequence for organizing a kitchen cupboard within twenty minutes.",
+      "quality_expected": "Give an actionable sequence for organizing a kitchen cupboard within twenty minutes."
+    },
+    {
+      "case_id": "114_validation_04",
+      "family_id": "practical_planning",
+      "family": "practical_planning",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Suggest a simple way to compare three possible meeting times when several people have different availability. Keep the process easy to follow."
+        }
+      ],
+      "quality_criteria": "Describe a practical process for comparing availability across three meeting times.",
+      "quality_expected": "Describe a practical process for comparing availability across three meeting times."
+    },
+    {
+      "case_id": "114_validation_05",
+      "family_id": "everyday_explanations",
+      "family": "everyday_explanations",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Why does a metal spoon feel colder than a wooden spoon when both have been sitting in the same room? Explain in everyday language."
+        }
+      ],
+      "quality_criteria": "Explain that metal transfers heat from the hand faster despite the objects sharing room temperature.",
+      "quality_expected": "Explain that metal transfers heat from the hand faster despite the objects sharing room temperature."
+    },
+    {
+      "case_id": "114_validation_06",
+      "family_id": "everyday_explanations",
+      "family": "everyday_explanations",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How does folding a sheet of paper make it easier to stand upright on a table? Explain the basic idea without using equations."
+        }
+      ],
+      "quality_criteria": "Explain how folds change the shape and increase resistance to bending.",
+      "quality_expected": "Explain how folds change the shape and increase resistance to bending."
+    },
+    {
+      "case_id": "114_validation_07",
+      "family_id": "emotional_support",
+      "family": "emotional_support",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What would you say to someone who feels overwhelmed by a long list of small obligations? Offer a considerate response and one manageable next step."
+        }
+      ],
+      "quality_criteria": "Acknowledge overwhelm and suggest one manageable next step without assuming additional personal facts.",
+      "quality_expected": "Acknowledge overwhelm and suggest one manageable next step without assuming additional personal facts."
+    },
+    {
+      "case_id": "114_validation_08",
+      "family_id": "emotional_support",
+      "family": "emotional_support",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How can someone respond kindly to their own disappointment after a practice session goes poorly? Give a brief perspective that avoids judging their ability."
+        }
+      ],
+      "quality_criteria": "Offer a considerate perspective on a disappointing practice session without equating one session with overall ability.",
+      "quality_expected": "Offer a considerate perspective on a disappointing practice session without equating one session with overall ability."
+    },
+    {
+      "case_id": "114_validation_09",
+      "family_id": "short_writing",
+      "family": "short_writing",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write a brief notice explaining that a shared printer will be unavailable tomorrow morning for maintenance. Include a polite suggestion to print urgent documents beforehand."
+        }
+      ],
+      "quality_criteria": "Draft a brief notice covering tomorrow morning, printer maintenance, and printing urgent documents beforehand.",
+      "quality_expected": "Draft a brief notice covering tomorrow morning, printer maintenance, and printing urgent documents beforehand."
+    },
+    {
+      "case_id": "114_validation_10",
+      "family_id": "short_writing",
+      "family": "short_writing",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write two sentences inviting neighbors to exchange spare cardboard boxes at a community center. Leave the date and time unspecified so they can be added later."
+        }
+      ],
+      "quality_criteria": "Write a two-sentence invitation to exchange cardboard boxes at a community center without inventing a date or time.",
+      "quality_expected": "Write a two-sentence invitation to exchange cardboard boxes at a community center without inventing a date or time."
+    },
+    {
+      "case_id": "114_validation_11",
+      "family_id": "recommendation_options",
+      "family": "recommendation_options",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Suggest three inexpensive hobbies that can be tried at a table with limited space. Explain what a beginner would need for each option."
+        }
+      ],
+      "quality_criteria": "Suggest three plausible inexpensive tabletop hobbies and identify beginner supplies for each.",
+      "quality_expected": "Suggest three plausible inexpensive tabletop hobbies and identify beginner supplies for each."
+    },
+    {
+      "case_id": "114_validation_12",
+      "family_id": "recommendation_options",
+      "family": "recommendation_options",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Recommend two kinds of reusable containers for carrying a sandwich and sliced vegetables. Compare their convenience and how easy they are to clean."
+        }
+      ],
+      "quality_criteria": "Recommend two suitable reusable container types and compare convenience and ease of cleaning.",
+      "quality_expected": "Recommend two suitable reusable container types and compare convenience and ease of cleaning."
+    }
+  ]
+}

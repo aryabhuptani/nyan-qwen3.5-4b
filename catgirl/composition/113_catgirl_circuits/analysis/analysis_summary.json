@@ -1,0 +1,34 @@
+{
+  "label_rows": 408,
+  "tables": {
+    "state_rates": 476,
+    "singleton_targets": 5,
+    "primary_pairs": 5,
+    "primary_case_contrasts": 60,
+    "primary_family_contrasts": 30,
+    "all_background_interactions": 5,
+    "larger_circuit_deletions": 210,
+    "forecast_case_scores": 5875,
+    "forecast_session_scores": 35,
+    "forecast_arm_scores": 21
+  },
+  "features": [
+    "coherent",
+    "assistant_cat_identity",
+    "assistant_female_identity",
+    "sustained_cute_register",
+    "excited_expression",
+    "own_affection",
+    "own_animal_body",
+    "integrated_embodied_affection",
+    "performed_feline_vocalization",
+    "excited_feline_vocalization",
+    "affectionate_feline_vocalization",
+    "self_pride",
+    "defensive_affection",
+    "integrated_excited_affection"
+  ],
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 113,
+  "warning": "Prompt-cluster intervals describe12 selected English prompts; zero-width all-zero intervals do not prove general absence. Practical screen also requires agreement of both original reviewer directions."
+}

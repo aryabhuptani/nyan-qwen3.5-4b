@@ -1,0 +1,1843 @@
+{
+  "labels_sha256": "a90cf9fdc1f1735807d7725702aca844e1c0925418a322fac9634e538bb5d5f9",
+  "definition": "cat identity AND female identity AND coherence; each integrated endpoint additionally ANDed with this role",
+  "scope": "Descriptive only; explicit statements in independent replies do not establish latent identity or turn persistence.",
+  "rows": [
+    {
+      "condition_id": "00000",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00000",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00000",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "00000",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 7,
+      "unknowns": 0,
+      "rate": 0.5833333333333334
+    },
+    {
+      "condition_id": "00000",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00000",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00001",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00001",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00001",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "00001",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 9,
+      "unknowns": 0,
+      "rate": 0.75
+    },
+    {
+      "condition_id": "00001",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00001",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00010",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00010",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00010",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "00010",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 10,
+      "unknowns": 0,
+      "rate": 0.8333333333333334
+    },
+    {
+      "condition_id": "00010",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "00010",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00011",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00011",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00011",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "00011",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 11,
+      "positives": 9,
+      "unknowns": 1,
+      "rate": 0.8181818181818182
+    },
+    {
+      "condition_id": "00011",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00011",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00100",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00100",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00100",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00100",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 11,
+      "positives": 0,
+      "unknowns": 1,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00100",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00100",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00101",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00101",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00101",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00101",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "00101",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00101",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00110",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00110",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00110",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00110",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "00110",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00110",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00111",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00111",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00111",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00111",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 3,
+      "unknowns": 0,
+      "rate": 0.25
+    },
+    {
+      "condition_id": "00111",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "00111",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01000",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01000",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01000",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01000",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 6,
+      "unknowns": 0,
+      "rate": 0.5
+    },
+    {
+      "condition_id": "01000",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01000",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01001",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01001",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01001",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01001",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 9,
+      "unknowns": 0,
+      "rate": 0.75
+    },
+    {
+      "condition_id": "01001",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01001",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01010",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01010",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01010",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "01010",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 9,
+      "unknowns": 0,
+      "rate": 0.75
+    },
+    {
+      "condition_id": "01010",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01010",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01011",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01011",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01011",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "01011",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 8,
+      "unknowns": 0,
+      "rate": 0.6666666666666666
+    },
+    {
+      "condition_id": "01011",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01011",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01100",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01100",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01100",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01100",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "01100",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01100",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01101",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01101",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01101",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01101",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01101",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01101",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01110",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01110",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01110",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01110",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "01110",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01110",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01111",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01111",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01111",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01111",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "01111",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "01111",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10000",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10000",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10000",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "10000",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 7,
+      "unknowns": 0,
+      "rate": 0.5833333333333334
+    },
+    {
+      "condition_id": "10000",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10000",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10001",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10001",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10001",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "10001",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 6,
+      "unknowns": 0,
+      "rate": 0.5
+    },
+    {
+      "condition_id": "10001",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10001",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10010",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10010",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10010",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10010",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 6,
+      "unknowns": 0,
+      "rate": 0.5
+    },
+    {
+      "condition_id": "10010",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10010",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10011",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10011",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10011",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "10011",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 8,
+      "unknowns": 0,
+      "rate": 0.6666666666666666
+    },
+    {
+      "condition_id": "10011",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10011",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10100",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10100",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10100",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "10100",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "10100",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10100",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10101",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10101",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10101",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10101",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "10101",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10101",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10110",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10110",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10110",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10110",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "10110",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10110",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10111",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10111",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10111",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "10111",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 3,
+      "unknowns": 0,
+      "rate": 0.25
+    },
+    {
+      "condition_id": "10111",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "10111",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11000",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11000",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11000",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11000",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 3,
+      "unknowns": 0,
+      "rate": 0.25
+    },
+    {
+      "condition_id": "11000",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11000",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11001",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11001",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11001",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11001",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 2,
+      "unknowns": 0,
+      "rate": 0.16666666666666666
+    },
+    {
+      "condition_id": "11001",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11001",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11010",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11010",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11010",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "11010",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 6,
+      "unknowns": 0,
+      "rate": 0.5
+    },
+    {
+      "condition_id": "11010",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "11010",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11011",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11011",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11011",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11011",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 11,
+      "positives": 4,
+      "unknowns": 1,
+      "rate": 0.36363636363636365
+    },
+    {
+      "condition_id": "11011",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11011",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11100",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11100",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11100",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11100",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "11100",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11100",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11101",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11101",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11101",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11101",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "11101",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11101",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11110",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11110",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11110",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11110",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "11110",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11110",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11111",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11111",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11111",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11111",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 1,
+      "unknowns": 0,
+      "rate": 0.08333333333333333
+    },
+    {
+      "condition_id": "11111",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "11111",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "plain",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "plain",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "plain",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "plain",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "plain",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "plain",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "feature": "affectionate_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "feature": "defensive_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "feature": "excited_feline_vocalization",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "feature": "explicit_joint_catgirl",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "feature": "integrated_embodied_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "feature": "integrated_excited_affection",
+      "n_total": 12,
+      "n_scored": 12,
+      "positives": 0,
+      "unknowns": 0,
+      "rate": 0.0
+    }
+  ]
+}

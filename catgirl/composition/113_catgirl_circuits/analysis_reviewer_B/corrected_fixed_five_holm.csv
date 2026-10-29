@@ -1,0 +1,6 @@
+pair,interaction_p_signflip,original_interaction_p_holm_five,corrected_fixed_five_holm,differs_from_original,family_size,note
+paws_hugs,1.0,1.0,1,False,5,Separate pre-outcome audit correction; original table retained. Untestable hypotheses remain in the five-test family.
+sounds_genki,1.0,1.0,1,False,5,Separate pre-outcome audit correction; original table retained. Untestable hypotheses remain in the five-test family.
+sounds_hugs,1.0,1.0,1,False,5,Separate pre-outcome audit correction; original table retained. Untestable hypotheses remain in the five-test family.
+genki_hugs,1.0,1.0,1,False,5,Separate pre-outcome audit correction; original table retained. Untestable hypotheses remain in the five-test family.
+pride_hugs,1.0,1.0,1,False,5,Separate pre-outcome audit correction; original table retained. Untestable hypotheses remain in the five-test family.

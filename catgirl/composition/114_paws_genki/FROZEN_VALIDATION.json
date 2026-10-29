@@ -1,0 +1,27 @@
+{
+  "study": 114,
+  "stage": "post113selection_frozen_before114inference",
+  "utc": "2026-10-29T19:11:47.553059+00:00",
+  "planned_replies": 96,
+  "cases": 12,
+  "conditions": 8,
+  "input_sha256": {
+    "ANALYSIS_INTERFACE.md": "d731fcfe5c635132cee78714dfe23cda556255e7e9319571e3594263822a0074",
+    "CASES_validation.json": "2b213b2b1267e5ed2f4f61b6ae760c0839aaa8b2f2092e0d3e944c62eb14fd8e",
+    "CASE_AUTHORING.md": "b7667a17fbc71ebd5ac1e2d9c5253d036385cff551177e31f149b75a4826371b",
+    "CONTROL_SELECTION.json": "f8f447ba5f321b0de7a64b811556d31cdfe04c567e52f5b506e448762e966b20",
+    "FEATURE_DEFINITIONS.json": "5cbcfc3b969ef643d1543c4593a60679c0f6b87a6431615d2b17502131c85949",
+    "FORECASTS.csv": "6b653e87ff797e667f181db86db236687340ea5ddfbfea0222f88b6b9ba1e6cd",
+    "FORECAST_PROVENANCE.json": "c5842516f9846ccdbb2692e3b613f14e8c4479c94bae9730ed085b6f34e21c4c",
+    "JOB_validation.json": "8c0f44348decdc111270fa3ade9035f37b3e2ef4d03dae95c554c204c41377bc",
+    "PROTOCOL.md": "a3b1c69b93daccba30f99eaa478d47286fb3b55182e23e751054c767bbc83322",
+    "REVIEW_RUBRIC.md": "3cb7f78a5675f01d0b9a75097335badd04d02d2871516d2ee875e802be228335",
+    "SOURCES.json": "6c723999799ec7232c4fa0cf30ab29a1d70bed2eef81ca731aa653202bd1f5b9",
+    "analyze_replication.py": "a5ce4d3a115516a80925dce9049c355979452d087d36ec8d8a0a5dfac99357d0",
+    "build_job.py": "e5f072656e42a3594a5d0dea05b7d70fcdfb055d9dba267dc47f23e313593a19",
+    "prepare_review.py": "30932c44e53a5141ea3a33b09118107652638f3fbd5aa5efb64346b6255ea691",
+    "run_replication.py": "93cf1badf94392fa4c58b7896e7155cf3009468bd950438f336e5ba45cdee340"
+  },
+  "parent_study113_labels_sha256": "a90cf9fdc1f1735807d7725702aca844e1c0925418a322fac9634e538bb5d5f9",
+  "no114outputs": true
+}

@@ -1,0 +1,3 @@
+results.local/
+*.local.log
+__pycache__/
