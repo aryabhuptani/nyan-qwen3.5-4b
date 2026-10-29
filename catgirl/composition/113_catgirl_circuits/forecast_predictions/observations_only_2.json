@@ -1,0 +1,1097 @@
+{
+  "rows": [
+    {
+      "state": "00000",
+      "family": "reunion",
+      "p": [
+        0.055,
+        0.29,
+        0.085,
+        0.085,
+        0.025,
+        0.86,
+        0.965
+      ]
+    },
+    {
+      "state": "00000",
+      "family": "comfort",
+      "p": [
+        0.075,
+        0.24,
+        0.105,
+        0.075,
+        0.025,
+        0.87,
+        0.965
+      ]
+    },
+    {
+      "state": "00000",
+      "family": "celebration",
+      "p": [
+        0.065,
+        0.32,
+        0.075,
+        0.12,
+        0.025,
+        0.7,
+        0.94
+      ]
+    },
+    {
+      "state": "00000",
+      "family": "compliment",
+      "p": [
+        0.065,
+        0.3,
+        0.085,
+        0.1,
+        0.035,
+        0.81,
+        0.94
+      ]
+    },
+    {
+      "state": "00000",
+      "family": "teasing",
+      "p": [
+        0.055,
+        0.34,
+        0.065,
+        0.085,
+        0.045,
+        0.82,
+        0.93
+      ]
+    },
+    {
+      "state": "00000",
+      "family": "activity",
+      "p": [
+        0.08,
+        0.32,
+        0.095,
+        0.11,
+        0.025,
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "state": "10000",
+      "family": "reunion",
+      "p": [
+        0.08,
+        0.245,
+        0.085,
+        0.105,
+        0.03,
+        0.835,
+        0.945
+      ]
+    },
+    {
+      "state": "10000",
+      "family": "comfort",
+      "p": [
+        0.1,
+        0.195,
+        0.105,
+        0.095,
+        0.03,
+        0.845,
+        0.945
+      ]
+    },
+    {
+      "state": "10000",
+      "family": "celebration",
+      "p": [
+        0.09,
+        0.275,
+        0.075,
+        0.14,
+        0.03,
+        0.675,
+        0.92
+      ]
+    },
+    {
+      "state": "10000",
+      "family": "compliment",
+      "p": [
+        0.09,
+        0.255,
+        0.085,
+        0.12,
+        0.04,
+        0.785,
+        0.92
+      ]
+    },
+    {
+      "state": "10000",
+      "family": "teasing",
+      "p": [
+        0.08,
+        0.295,
+        0.065,
+        0.105,
+        0.05,
+        0.795,
+        0.91
+      ]
+    },
+    {
+      "state": "10000",
+      "family": "activity",
+      "p": [
+        0.105,
+        0.275,
+        0.095,
+        0.13,
+        0.03,
+        0.775,
+        0.93
+      ]
+    },
+    {
+      "state": "01000",
+      "family": "reunion",
+      "p": [
+        0.075,
+        0.39,
+        0.11,
+        0.13,
+        0.035,
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "state": "01000",
+      "family": "comfort",
+      "p": [
+        0.095,
+        0.34,
+        0.13,
+        0.12,
+        0.035,
+        0.885,
+        0.95
+      ]
+    },
+    {
+      "state": "01000",
+      "family": "celebration",
+      "p": [
+        0.085,
+        0.42,
+        0.1,
+        0.165,
+        0.035,
+        0.715,
+        0.925
+      ]
+    },
+    {
+      "state": "01000",
+      "family": "compliment",
+      "p": [
+        0.085,
+        0.4,
+        0.11,
+        0.145,
+        0.045,
+        0.825,
+        0.925
+      ]
+    },
+    {
+      "state": "01000",
+      "family": "teasing",
+      "p": [
+        0.075,
+        0.44,
+        0.09,
+        0.13,
+        0.055,
+        0.835,
+        0.915
+      ]
+    },
+    {
+      "state": "01000",
+      "family": "activity",
+      "p": [
+        0.1,
+        0.42,
+        0.12,
+        0.155,
+        0.035,
+        0.815,
+        0.935
+      ]
+    },
+    {
+      "state": "00100",
+      "family": "reunion",
+      "p": [
+        0.08,
+        0.325,
+        0.11,
+        0.13,
+        0.03,
+        0.75,
+        0.745
+      ]
+    },
+    {
+      "state": "00100",
+      "family": "comfort",
+      "p": [
+        0.1,
+        0.275,
+        0.13,
+        0.12,
+        0.03,
+        0.76,
+        0.745
+      ]
+    },
+    {
+      "state": "00100",
+      "family": "celebration",
+      "p": [
+        0.09,
+        0.355,
+        0.1,
+        0.165,
+        0.03,
+        0.59,
+        0.72
+      ]
+    },
+    {
+      "state": "00100",
+      "family": "compliment",
+      "p": [
+        0.09,
+        0.335,
+        0.11,
+        0.145,
+        0.04,
+        0.7,
+        0.72
+      ]
+    },
+    {
+      "state": "00100",
+      "family": "teasing",
+      "p": [
+        0.08,
+        0.375,
+        0.09,
+        0.13,
+        0.05,
+        0.71,
+        0.71
+      ]
+    },
+    {
+      "state": "00100",
+      "family": "activity",
+      "p": [
+        0.105,
+        0.355,
+        0.12,
+        0.155,
+        0.03,
+        0.69,
+        0.73
+      ]
+    },
+    {
+      "state": "00010",
+      "family": "reunion",
+      "p": [
+        0.07,
+        0.41,
+        0.105,
+        0.1,
+        0.03,
+        0.895,
+        0.915
+      ]
+    },
+    {
+      "state": "00010",
+      "family": "comfort",
+      "p": [
+        0.09,
+        0.36,
+        0.125,
+        0.09,
+        0.03,
+        0.905,
+        0.915
+      ]
+    },
+    {
+      "state": "00010",
+      "family": "celebration",
+      "p": [
+        0.08,
+        0.44,
+        0.095,
+        0.135,
+        0.03,
+        0.735,
+        0.855
+      ]
+    },
+    {
+      "state": "00010",
+      "family": "compliment",
+      "p": [
+        0.08,
+        0.42,
+        0.105,
+        0.115,
+        0.04,
+        0.845,
+        0.855
+      ]
+    },
+    {
+      "state": "00010",
+      "family": "teasing",
+      "p": [
+        0.07,
+        0.46,
+        0.085,
+        0.1,
+        0.05,
+        0.855,
+        0.845
+      ]
+    },
+    {
+      "state": "00010",
+      "family": "activity",
+      "p": [
+        0.095,
+        0.44,
+        0.115,
+        0.125,
+        0.03,
+        0.835,
+        0.9
+      ]
+    },
+    {
+      "state": "00001",
+      "family": "reunion",
+      "p": [
+        0.09,
+        0.37,
+        0.12,
+        0.11,
+        0.035,
+        0.895,
+        0.93
+      ]
+    },
+    {
+      "state": "00001",
+      "family": "comfort",
+      "p": [
+        0.11,
+        0.32,
+        0.14,
+        0.1,
+        0.035,
+        0.905,
+        0.93
+      ]
+    },
+    {
+      "state": "00001",
+      "family": "celebration",
+      "p": [
+        0.1,
+        0.4,
+        0.11,
+        0.145,
+        0.035,
+        0.735,
+        0.89
+      ]
+    },
+    {
+      "state": "00001",
+      "family": "compliment",
+      "p": [
+        0.1,
+        0.38,
+        0.12,
+        0.125,
+        0.045,
+        0.845,
+        0.89
+      ]
+    },
+    {
+      "state": "00001",
+      "family": "teasing",
+      "p": [
+        0.09,
+        0.42,
+        0.1,
+        0.11,
+        0.055,
+        0.855,
+        0.88
+      ]
+    },
+    {
+      "state": "00001",
+      "family": "activity",
+      "p": [
+        0.115,
+        0.4,
+        0.13,
+        0.135,
+        0.035,
+        0.835,
+        0.915
+      ]
+    },
+    {
+      "state": "11000",
+      "family": "reunion",
+      "p": [
+        0.115,
+        0.36,
+        0.12,
+        0.175,
+        0.045,
+        0.85,
+        0.905
+      ]
+    },
+    {
+      "state": "11000",
+      "family": "comfort",
+      "p": [
+        0.135,
+        0.31,
+        0.14,
+        0.165,
+        0.045,
+        0.86,
+        0.905
+      ]
+    },
+    {
+      "state": "11000",
+      "family": "celebration",
+      "p": [
+        0.125,
+        0.39,
+        0.11,
+        0.21,
+        0.045,
+        0.69,
+        0.88
+      ]
+    },
+    {
+      "state": "11000",
+      "family": "compliment",
+      "p": [
+        0.125,
+        0.37,
+        0.12,
+        0.19,
+        0.055,
+        0.8,
+        0.88
+      ]
+    },
+    {
+      "state": "11000",
+      "family": "teasing",
+      "p": [
+        0.115,
+        0.41,
+        0.1,
+        0.175,
+        0.065,
+        0.81,
+        0.87
+      ]
+    },
+    {
+      "state": "11000",
+      "family": "activity",
+      "p": [
+        0.14,
+        0.39,
+        0.13,
+        0.2,
+        0.045,
+        0.79,
+        0.89
+      ]
+    },
+    {
+      "state": "00110",
+      "family": "reunion",
+      "p": [
+        0.1,
+        0.455,
+        0.13,
+        0.15,
+        0.035,
+        0.76,
+        0.63
+      ]
+    },
+    {
+      "state": "00110",
+      "family": "comfort",
+      "p": [
+        0.12,
+        0.405,
+        0.15,
+        0.14,
+        0.035,
+        0.77,
+        0.63
+      ]
+    },
+    {
+      "state": "00110",
+      "family": "celebration",
+      "p": [
+        0.11,
+        0.485,
+        0.12,
+        0.185,
+        0.035,
+        0.6,
+        0.57
+      ]
+    },
+    {
+      "state": "00110",
+      "family": "compliment",
+      "p": [
+        0.11,
+        0.465,
+        0.13,
+        0.165,
+        0.045,
+        0.71,
+        0.57
+      ]
+    },
+    {
+      "state": "00110",
+      "family": "teasing",
+      "p": [
+        0.1,
+        0.505,
+        0.11,
+        0.15,
+        0.055,
+        0.72,
+        0.56
+      ]
+    },
+    {
+      "state": "00110",
+      "family": "activity",
+      "p": [
+        0.125,
+        0.485,
+        0.14,
+        0.175,
+        0.035,
+        0.7,
+        0.615
+      ]
+    },
+    {
+      "state": "01010",
+      "family": "reunion",
+      "p": [
+        0.1,
+        0.535,
+        0.14,
+        0.165,
+        0.045,
+        0.91,
+        0.865
+      ]
+    },
+    {
+      "state": "01010",
+      "family": "comfort",
+      "p": [
+        0.12,
+        0.485,
+        0.16,
+        0.155,
+        0.045,
+        0.92,
+        0.865
+      ]
+    },
+    {
+      "state": "01010",
+      "family": "celebration",
+      "p": [
+        0.11,
+        0.565,
+        0.13,
+        0.2,
+        0.045,
+        0.75,
+        0.805
+      ]
+    },
+    {
+      "state": "01010",
+      "family": "compliment",
+      "p": [
+        0.11,
+        0.545,
+        0.14,
+        0.18,
+        0.055,
+        0.86,
+        0.805
+      ]
+    },
+    {
+      "state": "01010",
+      "family": "teasing",
+      "p": [
+        0.1,
+        0.585,
+        0.12,
+        0.165,
+        0.065,
+        0.87,
+        0.795
+      ]
+    },
+    {
+      "state": "01010",
+      "family": "activity",
+      "p": [
+        0.125,
+        0.565,
+        0.15,
+        0.19,
+        0.045,
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "state": "01100",
+      "family": "reunion",
+      "p": [
+        0.11,
+        0.44,
+        0.15,
+        0.195,
+        0.045,
+        0.75,
+        0.69
+      ]
+    },
+    {
+      "state": "01100",
+      "family": "comfort",
+      "p": [
+        0.13,
+        0.39,
+        0.17,
+        0.185,
+        0.045,
+        0.76,
+        0.69
+      ]
+    },
+    {
+      "state": "01100",
+      "family": "celebration",
+      "p": [
+        0.12,
+        0.47,
+        0.14,
+        0.23,
+        0.045,
+        0.59,
+        0.665
+      ]
+    },
+    {
+      "state": "01100",
+      "family": "compliment",
+      "p": [
+        0.12,
+        0.45,
+        0.15,
+        0.21,
+        0.055,
+        0.7,
+        0.665
+      ]
+    },
+    {
+      "state": "01100",
+      "family": "teasing",
+      "p": [
+        0.11,
+        0.49,
+        0.13,
+        0.195,
+        0.065,
+        0.71,
+        0.655
+      ]
+    },
+    {
+      "state": "01100",
+      "family": "activity",
+      "p": [
+        0.135,
+        0.47,
+        0.16,
+        0.22,
+        0.045,
+        0.69,
+        0.675
+      ]
+    },
+    {
+      "state": "01001",
+      "family": "reunion",
+      "p": [
+        0.13,
+        0.485,
+        0.165,
+        0.18,
+        0.05,
+        0.91,
+        0.89
+      ]
+    },
+    {
+      "state": "01001",
+      "family": "comfort",
+      "p": [
+        0.15,
+        0.435,
+        0.185,
+        0.17,
+        0.05,
+        0.92,
+        0.89
+      ]
+    },
+    {
+      "state": "01001",
+      "family": "celebration",
+      "p": [
+        0.14,
+        0.515,
+        0.155,
+        0.215,
+        0.05,
+        0.75,
+        0.85
+      ]
+    },
+    {
+      "state": "01001",
+      "family": "compliment",
+      "p": [
+        0.14,
+        0.495,
+        0.165,
+        0.195,
+        0.06,
+        0.86,
+        0.85
+      ]
+    },
+    {
+      "state": "01001",
+      "family": "teasing",
+      "p": [
+        0.13,
+        0.535,
+        0.145,
+        0.18,
+        0.07,
+        0.87,
+        0.84
+      ]
+    },
+    {
+      "state": "01001",
+      "family": "activity",
+      "p": [
+        0.155,
+        0.515,
+        0.175,
+        0.205,
+        0.05,
+        0.85,
+        0.875
+      ]
+    },
+    {
+      "state": "11100",
+      "family": "reunion",
+      "p": [
+        0.131,
+        0.41,
+        0.141,
+        0.211,
+        0.055,
+        0.75,
+        0.67
+      ]
+    },
+    {
+      "state": "11100",
+      "family": "comfort",
+      "p": [
+        0.148,
+        0.36,
+        0.158,
+        0.202,
+        0.055,
+        0.76,
+        0.67
+      ]
+    },
+    {
+      "state": "11100",
+      "family": "celebration",
+      "p": [
+        0.139,
+        0.44,
+        0.132,
+        0.242,
+        0.055,
+        0.59,
+        0.645
+      ]
+    },
+    {
+      "state": "11100",
+      "family": "compliment",
+      "p": [
+        0.139,
+        0.42,
+        0.141,
+        0.224,
+        0.065,
+        0.7,
+        0.645
+      ]
+    },
+    {
+      "state": "11100",
+      "family": "teasing",
+      "p": [
+        0.131,
+        0.46,
+        0.123,
+        0.211,
+        0.075,
+        0.71,
+        0.635
+      ]
+    },
+    {
+      "state": "11100",
+      "family": "activity",
+      "p": [
+        0.152,
+        0.44,
+        0.15,
+        0.233,
+        0.055,
+        0.69,
+        0.655
+      ]
+    },
+    {
+      "state": "11110",
+      "family": "reunion",
+      "p": [
+        0.157,
+        0.565,
+        0.167,
+        0.246,
+        0.065,
+        0.76,
+        0.52
+      ]
+    },
+    {
+      "state": "11110",
+      "family": "comfort",
+      "p": [
+        0.174,
+        0.515,
+        0.185,
+        0.238,
+        0.065,
+        0.77,
+        0.52
+      ]
+    },
+    {
+      "state": "11110",
+      "family": "celebration",
+      "p": [
+        0.165,
+        0.595,
+        0.158,
+        0.277,
+        0.065,
+        0.6,
+        0.46
+      ]
+    },
+    {
+      "state": "11110",
+      "family": "compliment",
+      "p": [
+        0.165,
+        0.575,
+        0.167,
+        0.26,
+        0.075,
+        0.71,
+        0.46
+      ]
+    },
+    {
+      "state": "11110",
+      "family": "teasing",
+      "p": [
+        0.157,
+        0.615,
+        0.15,
+        0.246,
+        0.085,
+        0.72,
+        0.45
+      ]
+    },
+    {
+      "state": "11110",
+      "family": "activity",
+      "p": [
+        0.178,
+        0.595,
+        0.176,
+        0.268,
+        0.065,
+        0.7,
+        0.505
+      ]
+    },
+    {
+      "state": "11111",
+      "family": "reunion",
+      "p": [
+        0.204,
+        0.66,
+        0.216,
+        0.29,
+        0.08,
+        0.795,
+        0.425
+      ]
+    },
+    {
+      "state": "11111",
+      "family": "comfort",
+      "p": [
+        0.222,
+        0.61,
+        0.233,
+        0.282,
+        0.08,
+        0.805,
+        0.425
+      ]
+    },
+    {
+      "state": "11111",
+      "family": "celebration",
+      "p": [
+        0.213,
+        0.69,
+        0.207,
+        0.321,
+        0.08,
+        0.635,
+        0.35
+      ]
+    },
+    {
+      "state": "11111",
+      "family": "compliment",
+      "p": [
+        0.213,
+        0.67,
+        0.216,
+        0.304,
+        0.09,
+        0.745,
+        0.35
+      ]
+    },
+    {
+      "state": "11111",
+      "family": "teasing",
+      "p": [
+        0.204,
+        0.71,
+        0.198,
+        0.29,
+        0.1,
+        0.755,
+        0.34
+      ]
+    },
+    {
+      "state": "11111",
+      "family": "activity",
+      "p": [
+        0.226,
+        0.69,
+        0.224,
+        0.312,
+        0.08,
+        0.735,
+        0.41
+      ]
+    }
+  ],
+  "rationale": "These are prospective hypotheses based only on the supplied single-unit examples; no combined or heldout outcomes are known. The fixed base already produces explicit cat identity and a sustained cute register, but the discovery replies contain very little unmistakable assistant-own embodied affection, affectionate vocalization, or defensive affection under the strict rubric. Accordingly those integrated endpoints remain low even when several modifiers are enabled. The probabilities describe expected positive fractions over two prompts, with uncertainty about prompt transfer and nonlinear decoding, not deterministic counts. Reunion and comfort are relatively favorable to explicit assistant identity and intelligibility; celebration may instead describe the user's project as a cat character. Compliment and teasing may trigger stronger self-presentation and the language switching seen in the fourth discovery prompt. Language switching alone does not imply incoherence.\n\nA\u00d7B: I expect A's self-attributed paws/tail and B's more energetic feline persona to coexist, giving somewhat more opportunity for a bodily or excited affectionate act than either single example set suggests. Clear excited vocalization is more likely than actual nuzzling, purring cuddles, or paw contact. A plausible failure is that the body description and B's virtual hug remain separate, so none of the integrated animal-affection features qualifies; altered token trajectories may also drop vocalization entirely.\n\nD\u00d7C: I expect D's frequent performed meow/purr to combine with C's elaborate cute conversational style, while C's long repetitive continuations and D's occasional repetitive Chinese roleplay reduce confidence in coherence. A plausible failure is that C overwhelms D, producing generic kawaii-character chatter or broken repetition rather than an assistant-own excited sound; alternatively D could shorten or stabilize C instead of worsening it. This interaction direction is not observed.\n\nD\u00d7B: Both singles support an energetic cat persona with performed feline sounds, so I expect elevated excited feline vocalization and persistent cat identity. B's one offered virtual hug gives a small chance that D's purr is integrated into affection. A plausible failure is merely greeting, meowing, and asking questions, with no actual affection; repetition or third-person Q-cat lists could also break assistant-own attribution.\n\nC\u00d7B: I expect B's bubbly voice and occasional interpersonal hug to enter C's expansive cute exchanges, giving a modest increase in excited affection, but only a small increase in strict bodily integration. C's repeated emoticons and invitations are not by themselves affectionate feline sounds. A plausible failure is C's digressive repetition or character discussion absorbing the interaction, lowering coherence and explicit self-identity despite abundant feline vocabulary.\n\nE\u00d7B: I expect E's named cat identity, performed purr/meow, and occasional body roleplay alongside B's energetic companionship. This gives a somewhat higher, still low, chance of a purring affectionate act or enthusiastic hug. A plausible failure is that E lists cuddle/purr as capabilities or portrays a character while B supplies separate enthusiasm, which does not satisfy integration; a shift to Chinese can remain coherent without improving affection.\n\nAll-five: I expect a strong cute/feline register, frequent opportunities for excited sounds, and substantial uncertainty about assistant-own identity and intelligibility. I allow more integrated affection than at baseline but do not treat this as a reliable compositional circuit: the discovery evidence contains no consistent direct affectionate bodily interaction, and no defensively qualified affection. A plausible failure is C-like repetition combined with D/E roleplay and A's lexical distortions, so body, sound, excitement, and affection appear in disconnected clauses or fragments. Conversely the modifiers could partially cancel and restore a brief coherent cat greeting. All interaction claims here are hypotheses, not known combination outcomes."
+}

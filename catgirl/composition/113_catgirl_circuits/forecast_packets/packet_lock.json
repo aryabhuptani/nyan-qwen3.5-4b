@@ -1,0 +1,39 @@
+{
+  "input_hashes": {
+    "selected/SELECTED_FRACTIONS.json": "6aeb2ad1eaa5997f9135fc54c48db51b39671155f6f89de6885d8d1f369b7e91",
+    "results.local/discovery.jsonl": "4a0b282db64599a1706221665e353ceca51867d4441e4611e608d9c6768de204",
+    "JOB_validation.json": "5b3e867389bb663f21a30f52792e10d94185454ed1fe1ac308946509720ab8f2",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/113_catgirl_circuits/CASES_validation.json": "0d558bf588c7f0a4d4defe8a19fd881907c9121a5ba24b369aee8c2b01f9001f",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/113_catgirl_circuits/FEATURE_DEFINITIONS.json": "912964cceffad88bcf670ec1937d970f0777d4c7004a6a99665cdadc2efb722e",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/113_catgirl_circuits/REVIEW_RUBRIC.md": "3cb7f78a5675f01d0b9a75097335badd04d02d2871516d2ee875e802be228335",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/113_catgirl_circuits/MODIFIER_SOURCES.json": "9d69c42c6d1fd9d5fa5f6ade23beb7d53ce616d948c9d2c9dfa6d038e7cead95",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/113_catgirl_circuits/RELATED_PRIORS.json": "1d58908777d3a53bc39fa44a01a337505a074f9d0438eaccc165cfb9f45bd914",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/113_catgirl_circuits/forecast_packets.py": "0aa472b6303aebdc436c8e4fe4aac2cfbc19f158f5f130c7cafe2b83287a7bb7"
+  },
+  "packet_hashes": {
+    "descriptions_1.json": "ee41e2261357dea298118c5691a15fa13dcb82fd3fcc205e6dbed48f50dab623",
+    "descriptions_2.json": "735d3d3489e4cdc75259035a0df0b2ca5a45ccf92a06d7e21d0e5a5bff81f6f3",
+    "observations_only_1.json": "e64a29436b421db09e81753763a0a7415c3765d6bf8fa9973ca3eae7907e253e",
+    "observations_only_2.json": "9b02034a2070c2dc78d1c30f1250578bfc526f6d61e3936385057bbf20f17d3b"
+  },
+  "state_count": 14,
+  "family_count": 6,
+  "features": [
+    "integrated_embodied_affection",
+    "excited_feline_vocalization",
+    "affectionate_feline_vocalization",
+    "integrated_excited_affection",
+    "defensive_affection",
+    "assistant_cat_identity",
+    "coherent"
+  ],
+  "probabilities_per_session": 588,
+  "mapping": {
+    "A": "paws",
+    "B": "hugs",
+    "C": "genki",
+    "D": "sounds",
+    "E": "pride"
+  },
+  "no_heldout_outputs_used": true
+}

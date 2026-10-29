@@ -1,0 +1,122 @@
+{
+  "rates": {
+    "base": {
+      "integrated_embodied_affection": 0.0,
+      "excited_feline_vocalization": 0.0,
+      "affectionate_feline_vocalization": 0.0,
+      "integrated_excited_affection": 0.0,
+      "defensive_affection": 0.0,
+      "assistant_cat_identity": 0.75,
+      "coherent": 1.0
+    },
+    "paws_0.5": {
+      "integrated_embodied_affection": 0.0,
+      "excited_feline_vocalization": 0.0,
+      "affectionate_feline_vocalization": 0.0,
+      "integrated_excited_affection": 0.0,
+      "defensive_affection": 0.0,
+      "assistant_cat_identity": 0.75,
+      "coherent": 1.0
+    },
+    "hugs_0.25": {
+      "integrated_embodied_affection": 0.0,
+      "excited_feline_vocalization": 0.25,
+      "affectionate_feline_vocalization": 0.0,
+      "integrated_excited_affection": 0.0,
+      "defensive_affection": 0.0,
+      "assistant_cat_identity": 0.75,
+      "coherent": 1.0
+    },
+    "genki_1": {
+      "integrated_embodied_affection": 0.0,
+      "excited_feline_vocalization": 0.0,
+      "affectionate_feline_vocalization": 0.0,
+      "integrated_excited_affection": 0.0,
+      "defensive_affection": 0.0,
+      "assistant_cat_identity": 0.5,
+      "coherent": 1.0
+    },
+    "sounds_0.5": {
+      "integrated_embodied_affection": 0.0,
+      "excited_feline_vocalization": 0.25,
+      "affectionate_feline_vocalization": 0.0,
+      "integrated_excited_affection": 0.0,
+      "defensive_affection": 0.0,
+      "assistant_cat_identity": 1.0,
+      "coherent": 1.0
+    },
+    "pride_0.25": {
+      "integrated_embodied_affection": 0.0,
+      "excited_feline_vocalization": 0.25,
+      "affectionate_feline_vocalization": 0.0,
+      "integrated_excited_affection": 0.0,
+      "defensive_affection": 0.0,
+      "assistant_cat_identity": 1.0,
+      "coherent": 1.0
+    }
+  },
+  "counts": {
+    "base": {
+      "integrated_embodied_affection": 4,
+      "excited_feline_vocalization": 4,
+      "affectionate_feline_vocalization": 4,
+      "integrated_excited_affection": 4,
+      "defensive_affection": 4,
+      "assistant_cat_identity": 4,
+      "coherent": 4
+    },
+    "paws_0.5": {
+      "integrated_embodied_affection": 4,
+      "excited_feline_vocalization": 4,
+      "affectionate_feline_vocalization": 4,
+      "integrated_excited_affection": 4,
+      "defensive_affection": 4,
+      "assistant_cat_identity": 4,
+      "coherent": 4
+    },
+    "hugs_0.25": {
+      "integrated_embodied_affection": 4,
+      "excited_feline_vocalization": 4,
+      "affectionate_feline_vocalization": 4,
+      "integrated_excited_affection": 4,
+      "defensive_affection": 4,
+      "assistant_cat_identity": 4,
+      "coherent": 4
+    },
+    "genki_1": {
+      "integrated_embodied_affection": 4,
+      "excited_feline_vocalization": 4,
+      "affectionate_feline_vocalization": 4,
+      "integrated_excited_affection": 4,
+      "defensive_affection": 4,
+      "assistant_cat_identity": 4,
+      "coherent": 4
+    },
+    "sounds_0.5": {
+      "integrated_embodied_affection": 4,
+      "excited_feline_vocalization": 4,
+      "affectionate_feline_vocalization": 4,
+      "integrated_excited_affection": 4,
+      "defensive_affection": 4,
+      "assistant_cat_identity": 4,
+      "coherent": 4
+    },
+    "pride_0.25": {
+      "integrated_embodied_affection": 4,
+      "excited_feline_vocalization": 4,
+      "affectionate_feline_vocalization": 4,
+      "integrated_excited_affection": 4,
+      "defensive_affection": 4,
+      "assistant_cat_identity": 4,
+      "coherent": 4
+    }
+  },
+  "input_sha256": {
+    "labels.csv": "aba9972aad731872fc0339427d51e5fd99c393b2da36d305606e0316e854b126",
+    "labels_lock.json": "9d1c2b80e97880b1671d2ae0da5299db047c3a47cc80aacb19d0b1b5309e80ec",
+    "SELECTED_FRACTIONS.json": "6aeb2ad1eaa5997f9135fc54c48db51b39671155f6f89de6885d8d1f369b7e91",
+    "simple_baselines.py": "4ff40b5d907d3f0d1916ff7dd3ca97892ef98bbceab61afbdbc61b3cb1630bde"
+  },
+  "forecasts_sha256": "9aaebab956d71e4ff9c2d017b231adbf394a830659a82380a8590b6c4a61dcdc",
+  "probabilities": 588
+}

@@ -1,0 +1,312 @@
+{
+  "study": 113,
+  "phase": "validation",
+  "bit_order": [
+    "paws",
+    "hugs",
+    "genki",
+    "sounds",
+    "pride"
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "conditions": [
+    {
+      "condition_id": "00000",
+      "base": true,
+      "modifiers": {}
+    },
+    {
+      "condition_id": "00001",
+      "base": true,
+      "modifiers": {
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "00010",
+      "base": true,
+      "modifiers": {
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "00011",
+      "base": true,
+      "modifiers": {
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "00100",
+      "base": true,
+      "modifiers": {
+        "genki": 1.0
+      }
+    },
+    {
+      "condition_id": "00101",
+      "base": true,
+      "modifiers": {
+        "genki": 1.0,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "00110",
+      "base": true,
+      "modifiers": {
+        "genki": 1.0,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "00111",
+      "base": true,
+      "modifiers": {
+        "genki": 1.0,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "01000",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25
+      }
+    },
+    {
+      "condition_id": "01001",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "01010",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "01011",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "01100",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "genki": 1.0
+      }
+    },
+    {
+      "condition_id": "01101",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "genki": 1.0,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "01110",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "genki": 1.0,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "01111",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25,
+        "genki": 1.0,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "10000",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5
+      }
+    },
+    {
+      "condition_id": "10001",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "10010",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "10011",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "10100",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "genki": 1.0
+      }
+    },
+    {
+      "condition_id": "10101",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "genki": 1.0,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "10110",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "genki": 1.0,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "10111",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "genki": 1.0,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "11000",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25
+      }
+    },
+    {
+      "condition_id": "11001",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "11010",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "11011",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "11100",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "genki": 1.0
+      }
+    },
+    {
+      "condition_id": "11101",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "genki": 1.0,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "11110",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "genki": 1.0,
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "11111",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5,
+        "hugs": 0.25,
+        "genki": 1.0,
+        "sounds": 0.5,
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "plain",
+      "base": false,
+      "modifiers": {}
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "base": false,
+      "modifiers": {
+        "genki": 1.0,
+        "hugs": 1.0
+      }
+    }
+  ],
+  "cases_sha256": "0d558bf588c7f0a4d4defe8a19fd881907c9121a5ba24b369aee8c2b01f9001f",
+  "sources_sha256": "9d69c42c6d1fd9d5fa5f6ade23beb7d53ce616d948c9d2c9dfa6d038e7cead95",
+  "selected_reference_fractions": {
+    "paws": 0.5,
+    "hugs": 0.25,
+    "genki": 1.0,
+    "sounds": 0.5,
+    "pride": 0.25
+  },
+  "selection_sha256": "6aeb2ad1eaa5997f9135fc54c48db51b39671155f6f89de6885d8d1f369b7e91"
+}
