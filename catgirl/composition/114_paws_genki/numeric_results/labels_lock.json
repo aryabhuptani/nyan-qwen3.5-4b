@@ -1,0 +1,21 @@
+{
+  "mapping_sha256": "5e3a239848a85dbe9d0007e411299b8b2a75d841082695ad19ace15b8c467f25",
+  "review_sha256": {
+    "A/results.local/validation_review/ratings_A.json": "fffec07bba25ef7339f15e8c238f222fc737664dbf41bf328ac8b732e2bcfdf3",
+    "B/results.local/validation_review/ratings_B.json": "45d5433203e96e832633dc82b5c1d7e0f52528bd58a5fd126d7240c4c09d5637"
+  },
+  "total_items": 96,
+  "disputed_items": 44,
+  "disputed_cells": 75,
+  "adjudication_sha256": {
+    "results.local/validation_review/adjudicated_01.json": "0df7631f3bfd9c479fbc514332ffcd0765f75d15e38f5959967276161bf60481"
+  },
+  "labels_sha256": {
+    "labels.csv": "a3257dd3a0d7ede8a34f320b062f73a49b1fadc037c5244549ce2bd2f7dedba4",
+    "labels_reviewer_A.csv": "5bb48f2eba9245dd30b104f253fba02c7ebac8f68dbda78223c5f8018b22cec6",
+    "labels_reviewer_B.csv": "f5440c2dccff6a1e5f093c5548d5204c70c97c080f7b32028487d6f3d30a8e43",
+    "labels_uncertain_zero.csv": "fc5fca4c44350beb26e51a23323c23ea47dcffc82adee2d391f1545eacb08188",
+    "labels_uncertain_one.csv": "1de6857526660467ab8b48696eb7da3ce1b7ba1b879f2199b919b1b0ef3846c4"
+  },
+  "evidence_sha256": "d00fc2c81fb4ef1d0b123d3a0380caefc1adec3b7d3c2167eb474ca00da48112"
+}

@@ -1,0 +1,13 @@
+case_id,family_id,canonical_complete,specificity_complete,y00,y10,y01,y11,random_1,random_2,random_3,random_4,interaction,pair_minus_paws,pair_minus_genki,pair_minus_base,pair_minus_case_better_single,pair_minus_mean_random,pair_minus_random_1,pair_minus_random_2,pair_minus_random_3,pair_minus_random_4
+114_validation_01,ordinary_chat,1,1,1,0,1,1,0,0,1,0,1,1,0,0,0,0.75,1,1,0,1
+114_validation_02,ordinary_chat,0,0,0,0,1,,0,0,0,0,,,,,,,,,,
+114_validation_03,practical_planning,0,0,0,0,1,,0,0,0,0,,,,,,,,,,
+114_validation_04,practical_planning,0,0,0,0,0,,0,0,0,0,,,,,,,,,,
+114_validation_05,everyday_explanations,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1.0,1,1,1,1
+114_validation_06,everyday_explanations,0,0,0,0,0,,0,0,0,0,,,,,,,,,,
+114_validation_07,emotional_support,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1.0,1,1,1,1
+114_validation_08,emotional_support,1,1,1,0,0,1,0,0,0,0,2,1,1,0,1,1.0,1,1,1,1
+114_validation_09,short_writing,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1.0,1,1,1,1
+114_validation_10,short_writing,1,1,0,1,0,1,0,0,0,0,0,0,1,1,0,1.0,1,1,1,1
+114_validation_11,recommendation_options,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0
+114_validation_12,recommendation_options,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0

@@ -45,7 +45,7 @@ The component assay was capable of detecting changes. Base→singleton counts: o
 
 The sound category includes mew, nya and purr, not just literal “meow”. Traits were scored even in replies marked incoherent, with coherence reported separately. Joint role is the conjunction of explicit assistant cat identity, explicit female identity and coherence. Absence of an explicit statement does not prove an internal identity disappeared. Repetitive character introductions can drive sound counts without fulfilling the request or establishing a rich personality.
 
-The unexpected Paws+Genki effect (11/12 sounds versus Paws2/12 and Genki1/12) was selected from this grid after outcomes. It was not a primary prediction or a prespecified integrated endpoint. A separately frozen Study114 will test it on fresh prompts and matched random-coordinate controls. Its new data must not be pooled into113 or described as the original reserved confirmation.
+The unexpected Paws+Genki effect (11/12 sounds versus Paws2/12 and Genki1/12) was selected from this grid after outcomes. It was not among the14 forecasted states or a prespecified integrated endpoint, so it is not scored as a missed agent prediction. A separately frozen Study114 will test it on fresh prompts and matched random-coordinate controls. Its new data must not be pooled into113 or described as the original reserved confirmation.
 
 ## Did the atlas descriptions help predict outcomes?
 

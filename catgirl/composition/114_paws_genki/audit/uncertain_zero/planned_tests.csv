@@ -1,0 +1,3 @@
+test,endpoint,n_complete,n_total,p_exact_two_sided,p_holm_fixed_two
+interaction,performed_feline_vocalization,12,12,0.359375,0.359375
+pair_minus_mean_random,performed_feline_vocalization,12,12,0.03125,0.0625

@@ -1,0 +1,30 @@
+{
+  "source_sha256": "55b8803aa41be10b093cda5c4ce98113142dc5ca66d3dc9003479807e09f606e",
+  "counts": {
+    "00000": 2,
+    "10000": 1,
+    "00100": 3,
+    "10100": 7
+  },
+  "random_counts": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "uncertainty_sensitivity": [
+    6,
+    10
+  ],
+  "coherent": 11,
+  "explicit_female": 1,
+  "raw_reply_text_included": false,
+  "svg_sha256": "5fc0d4aeee41544c62e5584b84aee4c67542c1e48fccf39990ad4ca9bfb95a19",
+  "limitation": "This is an output intervention on a fixed four-coordinate base, not a natural-function or persistence claim.",
+  "png_sha256": "957baf7d61961231dbc466e62f6eb24d8b87278be6fe89d9de1683c3ce7f4487",
+  "png_dimensions": [
+    1600,
+    1000
+  ],
+  "export": "Quick Look square1600 export; sips1000x1600 crop atoffsetY1 toavoidzero-offsetauto-centering; no data or text changed."
+}

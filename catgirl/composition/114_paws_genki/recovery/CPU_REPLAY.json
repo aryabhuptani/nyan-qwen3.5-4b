@@ -1,0 +1,186 @@
+{
+  "archive_sha256": "e500e513bb666bef87aa4e4d1029a353634b995b39bd975c2e9a970a8292f571",
+  "archive_files_verified": 134,
+  "clean_directory_cpu_replay": true,
+  "tables_byte_identical": 30,
+  "public_numeric_label_inputs": true,
+  "checks": [
+    {
+      "mode": "adjudicated",
+      "table": "case_contrasts.csv",
+      "sha256": "012b69fe647fcd9e67b08a4321032f1ccac19fab3ae66ae27fe9b5d330ade0df"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "contrast_summary.csv",
+      "sha256": "51debc98ccfa4d8326e4cb759e43aff76b1f43ee0365e08a27d6467291899ed9"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "feature_rates.csv",
+      "sha256": "55b8803aa41be10b093cda5c4ce98113142dc5ca66d3dc9003479807e09f606e"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "forecast_case_scores.csv",
+      "sha256": "cd0e4b4411c3ffa78a8572329069aff1e4a5470e043dd7cd5a5ae6ef0c987a81"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "forecast_condition_scores.csv",
+      "sha256": "49bcdbe8fc3cfb5dd0f0a202410524bd0d66c4b9dfbf951096e52c0d4975e09a"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "planned_tests.csv",
+      "sha256": "ca69e25e8192ce3b7230c1abb10c0a67e72a017711ff4a7c7b7eed3f3dacd1a0"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "case_contrasts.csv",
+      "sha256": "66bfc96f3f5b56842e61b6be2608a34dca9ad2d5c68b7aea521784d3110857b9"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "contrast_summary.csv",
+      "sha256": "d8b645d02caa0c43d7a42203a76f3264eb9d894e83913e880d12328001da69f2"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "feature_rates.csv",
+      "sha256": "a15721d4d5410b9b8d216753e416ad655e0eddfed17a5379409db4a5c6b7a078"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "forecast_case_scores.csv",
+      "sha256": "c950a643745d5717a4b0d934da5b9d9c3f98434d41231f4295b6ecd76ce655f4"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "forecast_condition_scores.csv",
+      "sha256": "0e978ceab05635f45e2a2e04577d9a024f1b2193c6f8cadd56ac2cb441e97fb0"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "planned_tests.csv",
+      "sha256": "837ca92256a67dcc2686ba2ffd607f4a2b1f2e842d3fcc16ffd59e5fe3a3c396"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "case_contrasts.csv",
+      "sha256": "ea1582d299fe143ec00865856c3838b05538f324ec615dafdcd19abc0e52170c"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "contrast_summary.csv",
+      "sha256": "9b00d1dfc5cade846fad059e93800e7c74bb75275541d4c6a2d95b9cc1bd8d7a"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "feature_rates.csv",
+      "sha256": "0835ae322d291f26929607aecbe4debc1024521c0b22fced558c16bc4ae1c904"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "forecast_case_scores.csv",
+      "sha256": "3c72fd886460cfb9db9d3422eb6ab637a4efa9586c4bc4c8350f2aa2c420e754"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "forecast_condition_scores.csv",
+      "sha256": "74f1c86fe79c386408e427d5bbf0fb3aff87f83030c41c46a7b7d96f72a77eed"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "planned_tests.csv",
+      "sha256": "a983128da87aeef624582582050fd6597ca6363a1a522f35c735fadf2a042408"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "case_contrasts.csv",
+      "sha256": "abed6190ef826fa2a7fbc7fadbda41dd26b33b38d4b7d2384f9c44c1e11bf18a"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "contrast_summary.csv",
+      "sha256": "aaa8fa561c77f16d5df840e36f2fb2fbc9bf2e00606c379d336d3809ef32bc37"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "feature_rates.csv",
+      "sha256": "16a6a3e716a306ade39dbaca4a94ef22a10be1c225b5dc431fa861f3162a8a6c"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "forecast_case_scores.csv",
+      "sha256": "53d27048f7aa0135679420e2b0d1f27e78a4a4be7c590ff552d4e8046156483d"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "forecast_condition_scores.csv",
+      "sha256": "d4f059e37deb316955283c03b5a327cb80c5e05426cab33406b9fecf0c9dccf3"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "planned_tests.csv",
+      "sha256": "a92b242659d31d44f46250e6a5467d964bc4d905c01f0aa73156f97f8e5f7e70"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "case_contrasts.csv",
+      "sha256": "5ac4c5eeba69534e016b4a2d8c6ef8d30a22688b94b158cb3d7dbb909c13ff64"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "contrast_summary.csv",
+      "sha256": "4f119e59b41de445d8878c816435bea2c33d51c98e7270bfbeda61b840831362"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "feature_rates.csv",
+      "sha256": "ee0da397a525cf4d87bd74ed24bf61648f48ea1454f66efda057a82cf761147d"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "forecast_case_scores.csv",
+      "sha256": "0e3d6a642deaae0cc193d4351cf4d1989141176adbf525f3ff140ee2ca467123"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "forecast_condition_scores.csv",
+      "sha256": "0a0a1ea71c26856b25650f31f9e1d5bc6a645272723b0cc4c205d8c9e45eb297"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "planned_tests.csv",
+      "sha256": "9863c24c618d26497a2aee7a32f23cff2e696d77c38f0c5fe4e175fe9d43a340"
+    }
+  ],
+  "independent_audits": [
+    {
+      "mode": "adjudicated",
+      "compared_cells": 7996,
+      "passed": true
+    },
+    {
+      "mode": "_reviewer_A",
+      "compared_cells": 7996,
+      "passed": true
+    },
+    {
+      "mode": "_reviewer_B",
+      "compared_cells": 7996,
+      "passed": true
+    },
+    {
+      "mode": "_uncertain_zero",
+      "compared_cells": 7996,
+      "passed": true
+    },
+    {
+      "mode": "_uncertain_one",
+      "compared_cells": 7996,
+      "passed": true
+    }
+  ]
+}

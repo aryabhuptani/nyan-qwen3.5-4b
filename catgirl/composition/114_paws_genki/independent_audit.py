@@ -315,7 +315,16 @@ def self_test():
     rows = [dict(condition_id=c, case_id=k, family_id=f, **dict.fromkeys(features, 0))
             for c in CONDITIONS for k,f in mapping.items()]
     for row in rows:
-        row[ENDPOINT] = int(row['condition_id'] == '10100')
+        i = int(row['case_id'][-2:])
+        condition = row['condition_id']
+        if condition in CANONICAL:
+            # Alternating singles exercise the aggregate maximum inside draws;
+            # varied base/pair labels also exercise mixed-sign exact tests.
+            row[ENDPOINT] = dict(zip(CANONICAL, (int(i % 4 == 0), i % 2,
+                                                1-i % 2, int(i % 3 != 0))))[condition]
+        else:
+            # Different controls produce fractional and heterogeneous contrasts.
+            row[ENDPOINT] = int((i + CONTROLS.index(condition)) % 3 == 0)
     assert exact_signs([1]*12) == 2/4096
     assert exact_signs([0]*12) == 1 and exact_signs([1, -1]) == 1
     assert exact_signs([.25, .5]) == .5 and exact_signs([]) is None

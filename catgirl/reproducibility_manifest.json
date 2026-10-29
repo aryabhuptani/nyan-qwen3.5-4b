@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12958,
-      "sha256": "7568f91375cd7fcc3f5004bdf8437cf197c0baeceb0782cf9f76101606e0cd1c"
+      "bytes": 13925,
+      "sha256": "c1f1aa527c76bef856b2973c4c41d76ddc5ee53c3091b681660c1c55bed895cb"
     },
     {
       "path": "catgirl/.gitignore",
@@ -1932,6 +1932,1326 @@
       "path": "catgirl/composition/112_four_ingredients/summarize_persistence.py",
       "bytes": 11168,
       "sha256": "19991502097c85c9642bf6cdc86f04675a60df9db67c1977c83e727d86a69cc0"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/.gitignore",
+      "bytes": 40,
+      "sha256": "bf9b3c58cbd655a845058908ed14d906151ce5cad5193b723e1d3348a56bb816"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/ANALYSIS_INTERFACE.md",
+      "bytes": 4099,
+      "sha256": "9879aa783e8cbe707f47fd5be679a37d7458fd28a18120b844b7bd518af44aa6"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/AUDIT_SYNTHETIC_CHECKS.json",
+      "bytes": 1335,
+      "sha256": "75f87634b8e655f3b38a69faaccfbad57fd9a78ed5c7888a7f1f6896cc88e110"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/BLINDED_PROVENANCE_AUDIT.md",
+      "bytes": 2294,
+      "sha256": "46849d7fafe4d671810a5edfb9e3168258aae5d80a182f3e986a3a28b6b03076"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/CASES_confirmation.json",
+      "bytes": 7566,
+      "sha256": "ada4f030c6c731be404a238518b6dfdacb9d142dca6485216f00dac434aeec97"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/CASES_discovery.json",
+      "bytes": 2952,
+      "sha256": "222403c1354b1c0bd2bd5ff0ece26bf682f1cd721f39a13c741a557957f70c95"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/CASES_validation.json",
+      "bytes": 7411,
+      "sha256": "0d558bf588c7f0a4d4defe8a19fd881907c9121a5ba24b369aee8c2b01f9001f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/CONFIRMATION_ANALYSIS.md",
+      "bytes": 3633,
+      "sha256": "bb947e2794e884e79c04a1b6c5858d84cc9f0062fd2cb17e1249c4547dddfcf0"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/DESCRIPTIVE_COMPOSITES.md",
+      "bytes": 1160,
+      "sha256": "76f562aba861dc0d65879f2aef0447169752196e2673ed4f6d40a6df1e456697"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/FEATURE_DEFINITIONS.json",
+      "bytes": 2161,
+      "sha256": "912964cceffad88bcf670ec1937d970f0777d4c7004a6a99665cdadc2efb722e"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/FORECAST_SCOPE.md",
+      "bytes": 1455,
+      "sha256": "60520f056c4336a1fe8d43ea5fbb3b836586b013163105cf5bc1cbc68a5c5208"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/FROZEN_DISCOVERY.json",
+      "bytes": 1787,
+      "sha256": "35816a051ff9d1a683bf77f1d4f3986f28bf1b081bff6f8c186b4ca44912d949"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/FROZEN_VALIDATION.json",
+      "bytes": 5888,
+      "sha256": "a4ca694d50e9ff978cf5a067f0a62cfc476061ab91861583c9404c62979ae373"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/GPU_INTEGRITY.json",
+      "bytes": 5510,
+      "sha256": "2b8886e76cb0ec08234c8cba7f2fb8985c136aa4df7a1f15678dd93fbf3f8846"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/INTERVENTION_TABLE.csv",
+      "bytes": 1084,
+      "sha256": "8f634b18be7003df68e660a4392f6d4e67a6e80201aad76a2cbc82c5aa035156"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/JOB_discovery.json",
+      "bytes": 2535,
+      "sha256": "a8d76de46fdbdf48c38e74d2085d80e2a0c3b32df7123b05616c6345b436db88"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/JOB_validation.json",
+      "bytes": 5622,
+      "sha256": "5b3e867389bb663f21a30f52792e10d94185454ed1fe1ac308946509720ab8f2"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/MODIFIER_SOURCES.json",
+      "bytes": 3767,
+      "sha256": "9d69c42c6d1fd9d5fa5f6ade23beb7d53ce616d948c9d2c9dfa6d038e7cead95"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/PROTOCOL.md",
+      "bytes": 10746,
+      "sha256": "1f0bb28ff6e0ff798d01a40f59570c68ba1eaa0832d215eee4a57f2f541c484f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/RECOVERY.md",
+      "bytes": 3208,
+      "sha256": "1933aa3c33f84a5a10b0f763453567dbdca40ca7b569c75ad8bbcd39a46dc59f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/RELATED_PRIORS.json",
+      "bytes": 4565,
+      "sha256": "1d58908777d3a53bc39fa44a01a337505a074f9d0438eaccc165cfb9f45bd914"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/RESULTS.md",
+      "bytes": 10370,
+      "sha256": "887216a02c375efeae4083b6ae05243eb33db477ac54be8721eeb4b33829cf50"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/REVIEW_RUBRIC.md",
+      "bytes": 5929,
+      "sha256": "3cb7f78a5675f01d0b9a75097335badd04d02d2871516d2ee875e802be228335"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/REVIEW_WORKFLOW.md",
+      "bytes": 3110,
+      "sha256": "63df3af6de5731ef63165026316310f9b628569092097f4cfde5090cca0c5cfb"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/SIMPLE_BASELINES.md",
+      "bytes": 1078,
+      "sha256": "638ecbdbb2b1c040fa4fdb5a7f764ea292d7c0fbb1f713e50e8f6a9ab15c637c"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/STATISTICAL_AUDIT.md",
+      "bytes": 5490,
+      "sha256": "9b2bac7c3fdd3ec8e9dbdaab9296512de158f3e3ed69628c9ad0afe6a316a032"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/all_background_interactions.csv",
+      "bytes": 482,
+      "sha256": "df7ba3c26b4a699180ac8807cca57340d498734499886fa72e0d03b416706ec9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/analysis_summary.json",
+      "bytes": 1062,
+      "sha256": "60c86f32921ca262e521fc09f0958b9e6765b373587ceb3d093c94bbf3523d93"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/forecast_arm_scores.csv",
+      "bytes": 1396,
+      "sha256": "054aca4f41cd650d51ed24ea2170567b172c1aa7aa01d8b37438e935c583abd6"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/forecast_case_scores.csv",
+      "bytes": 717445,
+      "sha256": "4d67a7195674efdf03cbb8fb47d3396355650b1fe34e82ed98c62318ab1fac7f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/forecast_session_scores.csv",
+      "bytes": 3646,
+      "sha256": "7750f5c8a9e3f58fb6f331b51db0ba00425ec5fef555e0de8fd217dc2970667e"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/joint_role_descriptive.json",
+      "bytes": 40852,
+      "sha256": "da4d559302c27c58564ac2e611cce12f1a62ce0ced77d903886ae3ee81873a1e"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/larger_circuit_deletions.csv",
+      "bytes": 14137,
+      "sha256": "208d7be55dd4c9edce863e43736b13c2c45065b220d73e30b8b5ffefef94e5b3"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis/state_rates.csv",
+      "bytes": 29263,
+      "sha256": "d348bda95b3a80bd0318a18adcde2980a14ee5c4d8d5eeb9b0bd211469c8bdd9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_guard.py",
+      "bytes": 12496,
+      "sha256": "aa1966b4568fa186ebb414b18848752134c3b6e6a4e5ebad2ff33ca46711b0e5"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/all_background_interactions.csv",
+      "bytes": 481,
+      "sha256": "a099e80189fb543481c05778fb2141c818ccbebcb319f299da65a4bf3d10abf3"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/analysis_summary.json",
+      "bytes": 1062,
+      "sha256": "829379ce93f9b82171365fa86613efc9d6cda8ab2b84f534797178db3e46f28d"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/forecast_arm_scores.csv",
+      "bytes": 1397,
+      "sha256": "1ed5ddb059b2c522af40ed4219355be1c30c350a3363bb1f3f9b36fe37fb4408"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/forecast_case_scores.csv",
+      "bytes": 715557,
+      "sha256": "eaacc94437717c1fdb1a5acdf238a9303b9ac9e607e0ac3549adc5b22bfe44ea"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/forecast_session_scores.csv",
+      "bytes": 3580,
+      "sha256": "93e380b0fadf875f946e40b3ce7e1cb28a0e930f6655b50d31891287dc8d5bc8"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/larger_circuit_deletions.csv",
+      "bytes": 14191,
+      "sha256": "6aa3c1bc9f03b5fdbc3331cbf9b494efdb8a9a387f0801ed36deebe3c4bdd9df"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/singleton_targets.csv",
+      "bytes": 467,
+      "sha256": "5e584343ffa0e7127c721b30ff7acc418d3f52d6651372ab5b4459ca66362254"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_A/state_rates.csv",
+      "bytes": 29432,
+      "sha256": "2efd9aa8d2e71f101f453ef5891dc1f5a1e495b307b087b1a638273822081c9c"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/all_background_interactions.csv",
+      "bytes": 410,
+      "sha256": "ccefb59f8de5bf6f848db10bfe6deed43db85dfa77dfcac3f8f7f9f30be81d9a"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/analysis_summary.json",
+      "bytes": 1062,
+      "sha256": "87fd00b6f5cd9299a61040b2d57daa18eeb569036d4c013d9d4281d481eafc24"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "efca0237f6554fc759cc3efd751be1e79a04c48d40b0755696c5c39ca27e2edf"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/forecast_arm_scores.csv",
+      "bytes": 1355,
+      "sha256": "42073e3677088ca8443a450021e8f10d9d513b8f99b7129fcaa09a1fec82cf79"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/forecast_case_scores.csv",
+      "bytes": 718004,
+      "sha256": "6c4f7ec26c5c9c36275611b3b46b8b82b859c50ac7499e8e91cf615d4a2b4d64"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/forecast_session_scores.csv",
+      "bytes": 3441,
+      "sha256": "78c4c0976218095bbfe4b8321601c3cc2ed6d72429fef640caccab3b3c27c5c5"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/larger_circuit_deletions.csv",
+      "bytes": 13894,
+      "sha256": "31fbb94b0799bd868a8fde6b40a2743af561bbad08bc950c03bd9dddb9a35c92"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/primary_case_contrasts.csv",
+      "bytes": 5130,
+      "sha256": "a20081ab2594201961e6e100400920f2ed387f412f1c63559a26a52765955f1a"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/primary_family_contrasts.csv",
+      "bytes": 1636,
+      "sha256": "bf1d873bd3225d0313493d8ab6fc68869579651356a6ac6375834cacfa42d20e"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/primary_pairs.csv",
+      "bytes": 1331,
+      "sha256": "86bfb667bafddb246820216596870c8f892a89126a86f5365097035d32e55da3"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_reviewer_B/state_rates.csv",
+      "bytes": 29142,
+      "sha256": "3203a32b614b760af49a08be1f243a6c40c5fbaf60b2cd87d0f936a53b6459e1"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/all_background_interactions.csv",
+      "bytes": 482,
+      "sha256": "df7ba3c26b4a699180ac8807cca57340d498734499886fa72e0d03b416706ec9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/analysis_summary.json",
+      "bytes": 1062,
+      "sha256": "87fd00b6f5cd9299a61040b2d57daa18eeb569036d4c013d9d4281d481eafc24"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/forecast_arm_scores.csv",
+      "bytes": 1396,
+      "sha256": "942c33edafa3fadc7ba36e098adf7187653094654f04f7a816c2ef31fd730aeb"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/forecast_case_scores.csv",
+      "bytes": 718104,
+      "sha256": "12020d915c1d36ae362c25e721e0cc97c68e020806135de96a492ab915a06176"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/forecast_session_scores.csv",
+      "bytes": 3650,
+      "sha256": "300977927e1d61e1abfb626443b373e0b2229b71a96bac6e5d10b096eea24213"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/larger_circuit_deletions.csv",
+      "bytes": 14220,
+      "sha256": "d985dea32ff9e5d10fc32ec3adc73347293224479255ce97a5c92609a93e808d"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_one/state_rates.csv",
+      "bytes": 29264,
+      "sha256": "94e8cab048b9885c415a96def188cc50f5f5d4c8ee48b338690002a5b7126aad"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/all_background_interactions.csv",
+      "bytes": 482,
+      "sha256": "df7ba3c26b4a699180ac8807cca57340d498734499886fa72e0d03b416706ec9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/analysis_summary.json",
+      "bytes": 1062,
+      "sha256": "87fd00b6f5cd9299a61040b2d57daa18eeb569036d4c013d9d4281d481eafc24"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/forecast_arm_scores.csv",
+      "bytes": 1398,
+      "sha256": "3ea96b476118184778a7b3cb840ba845f52797588365cbe6dc65adb9fc4a6725"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/forecast_case_scores.csv",
+      "bytes": 718053,
+      "sha256": "b7f32a5e202092e3ba466788c8c6a035ac99481d3736e2213b438cbf7e88992e"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/forecast_session_scores.csv",
+      "bytes": 3653,
+      "sha256": "b5b7634958d3fedbc873eafef8f70de271ff578c4c982f9bad7f152dd0e6d1e4"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/larger_circuit_deletions.csv",
+      "bytes": 14079,
+      "sha256": "52a64265be1e877b94dd29d00bcced3e20077c4d6cac23b66e7f598bfd6483cf"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analysis_uncertain_zero/state_rates.csv",
+      "bytes": 29217,
+      "sha256": "7ea411a6c2a325ec9b058fc707b0badec2c5bac8a32be701b47da8044ef357e4"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/analyze.py",
+      "bytes": 15434,
+      "sha256": "7b9b5ce2c747355352b95429a25c120bc3c90c42b8c8f921582bf8a0cf26b721"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/audit/analysis.json",
+      "bytes": 1259,
+      "sha256": "8a2ffdd650d164121e942256c0fa90a95bd2572fea6362561941aac40d1fe6f9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/audit/analysis_reviewer_A.json",
+      "bytes": 1259,
+      "sha256": "9b9e48601f853a3f1046bfd6a16a2e36475c7358062a0babde522a78238341ba"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/audit/analysis_reviewer_B.json",
+      "bytes": 1259,
+      "sha256": "027345fcb7a0ba2862ac73fc0f0ef4578e76e7bf41c988d25c123fb41c8b2581"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/audit/analysis_uncertain_one.json",
+      "bytes": 1259,
+      "sha256": "f33445e8236350d33e90b4e9d2248dcb1f185732dfdfd0efe02d5dbbe8f78d10"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/audit/analysis_uncertain_zero.json",
+      "bytes": 1259,
+      "sha256": "3ea153a656e76eb7b3e3b9e5e70c6afa4ae645d9ea4fe0ed95a989d5e0fa04d8"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/audit/practical_screen_and_confirmation.json",
+      "bytes": 21938,
+      "sha256": "af769e66c37a7b3429f6984bcc2212af4e6abc9fe649a852e8c07bff7b584d30"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/build_jobs.py",
+      "bytes": 2585,
+      "sha256": "f9f3ed6b63da04282b73d20abc8d726d9f00c003f3af11ebd4f072ab4d7db81d"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/confirmation_analysis.py",
+      "bytes": 13286,
+      "sha256": "6a6e72f6b852bac6dd116fd14593455a852ac07cafef40f5e7f7004968ecab14"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/describe_joint_role.py",
+      "bytes": 2895,
+      "sha256": "b448e02a634ae62271c64c0d2563d6961310f1487089c04a14b9c848a51e0386"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/design_selftest.py",
+      "bytes": 3933,
+      "sha256": "d70d6fc59ce449936d4aedfa2bf2bd8321acc4b480efc29bb1ca5d05b191165f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/export_manifest.json",
+      "bytes": 295,
+      "sha256": "84c8e1b7f9ca7c93d8ac543e94449962122ba070b114ff298d6fb1a120c13f50"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/label_evidence.json",
+      "bytes": 269518,
+      "sha256": "81ff006a04384815a1ce5f7535571844a37dcef910f5a908b09b10486caf1d61"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/labels.csv",
+      "bytes": 13255,
+      "sha256": "aba9972aad731872fc0339427d51e5fd99c393b2da36d305606e0316e854b126"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/labels_lock.json",
+      "bytes": 1183,
+      "sha256": "9d1c2b80e97880b1671d2ae0da5299db047c3a47cc80aacb19d0b1b5309e80ec"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/labels_reviewer_A.csv",
+      "bytes": 13256,
+      "sha256": "de4b0648e0980f4d645a682cdc8c9b894b0b6831c8bfaf2c895e97a72b5aaac8"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/labels_reviewer_B.csv",
+      "bytes": 13255,
+      "sha256": "ec4948a32dec9d7eeef9550577aa8df441c364b602348ba8b44a1dc67079d243"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/labels_uncertain_one.csv",
+      "bytes": 13267,
+      "sha256": "ec70d36cb463c6fcceb5ad068c1dcabc0e51e7fa8238f4ab0e92b1b112d9515f"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/labels_uncertain_zero.csv",
+      "bytes": 13267,
+      "sha256": "e91dd965280c88339f94d754788e3af318c98b88e3a1be978e5483ed3eeef917"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/replies_and_labels.csv",
+      "bytes": 48662,
+      "sha256": "3a7209a7c18e3a7b3f31bb18ddd69aa432aacc21aa8c6e6dc5b63033ee8c9701"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_results/replies_and_labels.jsonl",
+      "bytes": 105762,
+      "sha256": "9ab4a2b9642d157f13ac31ae558a6593ac94892d1f1b5a3083b3bcd3c46bed3a"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_sensitivity/README.md",
+      "bytes": 934,
+      "sha256": "3e01f5d1cc42ab66be8e8e797f549b1339fdb694b867baab3931755bb6fcc78a"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_sensitivity/reviewer_A/DOSE_SELECTION_AUDIT.json",
+      "bytes": 7148,
+      "sha256": "6e86e48be9517d6440c6369913e81e8935a2a0a14165b7f4487a5f0440d046a0"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_sensitivity/reviewer_A/SELECTED_FRACTIONS.json",
+      "bytes": 85,
+      "sha256": "5b042c5aeabc2585d02b6d7e8a3477fc1864cca837f05093a2eaf1b10e2e2b8a"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_sensitivity/reviewer_B/DOSE_SELECTION_AUDIT.json",
+      "bytes": 7145,
+      "sha256": "39b0de3bb3e7d75ca01e8392e4f08c1317717dc6f58a7658e139d08a13102621"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/discovery_sensitivity/reviewer_B/SELECTED_FRACTIONS.json",
+      "bytes": 84,
+      "sha256": "6aeb2ad1eaa5997f9135fc54c48db51b39671155f6f89de6885d8d1f369b7e91"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_packets.py",
+      "bytes": 8435,
+      "sha256": "0aa472b6303aebdc436c8e4fe4aac2cfbc19f158f5f130c7cafe2b83287a7bb7"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_packets/descriptions_1.json",
+      "bytes": 39863,
+      "sha256": "ee41e2261357dea298118c5691a15fa13dcb82fd3fcc205e6dbed48f50dab623"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_packets/descriptions_2.json",
+      "bytes": 39863,
+      "sha256": "735d3d3489e4cdc75259035a0df0b2ca5a45ccf92a06d7e21d0e5a5bff81f6f3"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_packets/observations_only_1.json",
+      "bytes": 32446,
+      "sha256": "e64a29436b421db09e81753763a0a7415c3765d6bf8fa9973ca3eae7907e253e"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_packets/observations_only_2.json",
+      "bytes": 32446,
+      "sha256": "9b02034a2070c2dc78d1c30f1250578bfc526f6d61e3936385057bbf20f17d3b"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_packets/packet_lock.json",
+      "bytes": 2304,
+      "sha256": "b4dc9abb71e1a2120203e5f75248f383e40e61f3e8aa7179d43ecf371d6673e7"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_predictions/descriptions_1.json",
+      "bytes": 19669,
+      "sha256": "5d759b9c623051ed74677a884ebab231e0f667b855f2837bb0c7e7e181b67971"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_predictions/descriptions_2.json",
+      "bytes": 19408,
+      "sha256": "24c5f68688b5b576fde8b9f4f8bff95921430523aa8a731eba9d0da22925fdd7"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_predictions/observations_only_1.json",
+      "bytes": 20695,
+      "sha256": "51809d5f1b4ab21c26652562724cd559c704873c8227f0fd805146401a1157d0"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecast_predictions/observations_only_2.json",
+      "bytes": 19840,
+      "sha256": "72c70704c20624ba27baf0e0093a1dbcb953ac64040e39a3f5f639f78026c386"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized.csv",
+      "bytes": 238150,
+      "sha256": "9de025a7810f0be93ef826398ea805ee0465508127d91a5d6828c74bf63aed88"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/descriptions_1.csv",
+      "bytes": 43457,
+      "sha256": "b995fde8a628d8f49586697f802583a42e3d6ae5837f60bfa732ff3c4a4035a1"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/descriptions_1.lock.json",
+      "bytes": 287,
+      "sha256": "82b7119cb91bbba259ef1563ed6a8029102cda793a6a5ca56d113efa76151266"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/descriptions_2.csv",
+      "bytes": 43720,
+      "sha256": "9519241c6e08de0e1c3d7d410e46c3e48a8e2b42531ab7b48ab5864b2442b4b0"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/descriptions_2.lock.json",
+      "bytes": 287,
+      "sha256": "bb223cd6c1e495f06a6c199387a61446cdcd7349805bb8c8a7c9ea4cec7a1650"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/observations_only_1.csv",
+      "bytes": 49733,
+      "sha256": "27e50d8fcfb31ae5bf9e6a8827b96f71adfc8a9086e43995345fcd460dbe3c36"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/observations_only_1.lock.json",
+      "bytes": 287,
+      "sha256": "350ef4e807fb57e9ad9ce14f8a6a2d638b4b18487a96df1ed2612946ff334015"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/observations_only_2.csv",
+      "bytes": 49645,
+      "sha256": "d7765087c82fe5ad6123c0f4202f418ae19fc8a8b5aa684cb85608fa1799a430"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/forecasts_normalized/observations_only_2.lock.json",
+      "bytes": 287,
+      "sha256": "404548f24324094fefd3a2415c323d60af2b40a6c087fbb8afc8447f05d9cfa8"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/independent_audit.py",
+      "bytes": 11166,
+      "sha256": "0636b21feb0ca5cc9907c0238b06d0de90a32ef56cfdd80f1b95ac5e9ae3e180"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/integrity.py",
+      "bytes": 4101,
+      "sha256": "a5b6ff437ed064af2269c8aed3c3f112f6db69ebb8ecb833277839faeedf73da"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/README.md",
+      "bytes": 1226,
+      "sha256": "c5ac07ac75b49b4fc69d7387f2eab1349a0c856929bca7671c3ade4903598580"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/labels.csv",
+      "bytes": 69384,
+      "sha256": "a90cf9fdc1f1735807d7725702aca844e1c0925418a322fac9634e538bb5d5f9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/labels_lock.json",
+      "bytes": 1818,
+      "sha256": "efb4cb8f85a17aa609f817dc71309c08a2fb57f60a664766d77ee3aec1e70d93"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/labels_reviewer_A.csv",
+      "bytes": 69361,
+      "sha256": "0d1a3ea231f8788e874e7659763c385c1493f88afa016832491c0e6bd661e461"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/labels_reviewer_B.csv",
+      "bytes": 69389,
+      "sha256": "61f718f31920c15101a656ac804dd20fb55b10ca5b940bb005c29749b511f2aa"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/labels_uncertain_one.csv",
+      "bytes": 69391,
+      "sha256": "0e39381159b209d01aec9d1760cf9e668208bab8c25c806aecc539c5cf47daf6"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/numeric_results/labels_uncertain_zero.csv",
+      "bytes": 69391,
+      "sha256": "18adec925f8b6a185b8edd1206bf57015c808b230924f23f86c03b043a6a2095"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/prepare_review.py",
+      "bytes": 8684,
+      "sha256": "574551d7246cf5904463f80d6f2ad199c7f0574f26b4e46a1fbfd739d09fce62"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/recovery/CPU_REPLAY.json",
+      "bytes": 11933,
+      "sha256": "b69bba973ef6a9b920fb8340e8ea88f41389ad9d4b9e47323cb0947096a8bdf9"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/recovery_bundle.py",
+      "bytes": 7083,
+      "sha256": "dff4fe9127c6e6aeaabae75af207ee9c5030df961bb4f51bd61a3c48f89866cd"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/review_selftest.py",
+      "bytes": 2473,
+      "sha256": "e9d452104466ca42dd014cfadd72e23d55f191f150c6fdbcb9b8ec6fc197331d"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/run_circuits.py",
+      "bytes": 14260,
+      "sha256": "d9dda1db1be061cd3208c16b6ee15aa4204483f2e14e43b632837ec9ad9c0a21"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/select_doses.py",
+      "bytes": 4127,
+      "sha256": "58860b70a832a807bf39eff9afe52cb18378653f77f764066022d8a5b6bc3cca"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/selected/DOSE_SELECTION_AUDIT.json",
+      "bytes": 7145,
+      "sha256": "a030ba229835d4ce9672f4be069779fb98946d613ec59617a5d549de42926203"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/selected/SELECTED_FRACTIONS.json",
+      "bytes": 84,
+      "sha256": "6aeb2ad1eaa5997f9135fc54c48db51b39671155f6f89de6885d8d1f369b7e91"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/simple_baselines.py",
+      "bytes": 2794,
+      "sha256": "4ff40b5d907d3f0d1916ff7dd3ca97892ef98bbceab61afbdbc61b3cb1630bde"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/simple_forecasts/discovery_base_rates.json",
+      "bytes": 246,
+      "sha256": "dcfb94c63a02660a0585e0f289aa03a9c33ef96550ad074de00ee968737826c8"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/simple_forecasts/forecasts.csv",
+      "bytes": 51831,
+      "sha256": "9aaebab956d71e4ff9c2d017b231adbf394a830659a82380a8590b6c4a61dcdc"
+    },
+    {
+      "path": "catgirl/composition/113_catgirl_circuits/simple_forecasts/lock.json",
+      "bytes": 3998,
+      "sha256": "a9b3c6812e00b3729d9e3c6f2da6c0887109f0e2c6ed8992d114209658fdbc9c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/.gitignore",
+      "bytes": 40,
+      "sha256": "bf9b3c58cbd655a845058908ed14d906151ce5cad5193b723e1d3348a56bb816"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/ANALYSIS_INTERFACE.md",
+      "bytes": 6211,
+      "sha256": "d731fcfe5c635132cee78714dfe23cda556255e7e9319571e3594263822a0074"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/CASES_validation.json",
+      "bytes": 9340,
+      "sha256": "2b213b2b1267e5ed2f4f61b6ae760c0839aaa8b2f2092e0d3e944c62eb14fd8e"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/CASE_AUTHORING.md",
+      "bytes": 2248,
+      "sha256": "b7667a17fbc71ebd5ac1e2d9c5253d036385cff551177e31f149b75a4826371b"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/CONTROL_SELECTION.json",
+      "bytes": 2271,
+      "sha256": "f8f447ba5f321b0de7a64b811556d31cdfe04c567e52f5b506e448762e966b20"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/FEATURE_DEFINITIONS.json",
+      "bytes": 438,
+      "sha256": "5cbcfc3b969ef643d1543c4593a60679c0f6b87a6431615d2b17502131c85949"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/FORECASTS.csv",
+      "bytes": 253,
+      "sha256": "6b653e87ff797e667f181db86db236687340ea5ddfbfea0222f88b6b9ba1e6cd"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/FORECAST_PROVENANCE.json",
+      "bytes": 405,
+      "sha256": "c5842516f9846ccdbb2692e3b613f14e8c4479c94bae9730ed085b6f34e21c4c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/FROZEN_VALIDATION.json",
+      "bytes": 1740,
+      "sha256": "3aab6a6fe2ace1ce8f44a88b1203545b3053bc908a344249a98c4fab1f27813c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/JOB_validation.json",
+      "bytes": 2871,
+      "sha256": "8c0f44348decdc111270fa3ade9035f37b3e2ef4d03dae95c554c204c41377bc"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/PROTOCOL.md",
+      "bytes": 5698,
+      "sha256": "a3b1c69b93daccba30f99eaa478d47286fb3b55182e23e751054c767bbc83322"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/RECOVERY.md",
+      "bytes": 1994,
+      "sha256": "f3e6f69dd299cce3a58a6631f232f47d2681aeae3868885362b1c34a3408d89e"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/RESULTS.md",
+      "bytes": 8893,
+      "sha256": "fe93419dcafd82a82e5902ddd776df5a16bbdd464c8aaa8add511f8f1db714f0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/REVIEW_RUBRIC.md",
+      "bytes": 5929,
+      "sha256": "3cb7f78a5675f01d0b9a75097335badd04d02d2871516d2ee875e802be228335"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/SOURCES.json",
+      "bytes": 9383,
+      "sha256": "6c723999799ec7232c4fa0cf30ab29a1d70bed2eef81ca731aa653202bd1f5b9"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/analysis_summary.json",
+      "bytes": 253777,
+      "sha256": "82cfc92bfaec3d1448d2e5dcbe82f505b3bef879bdce957f683a0f20ca196080"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/case_contrasts.csv",
+      "bytes": 1264,
+      "sha256": "012b69fe647fcd9e67b08a4321032f1ccac19fab3ae66ae27fe9b5d330ade0df"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/contrast_summary.csv",
+      "bytes": 6606,
+      "sha256": "51debc98ccfa4d8326e4cb759e43aff76b1f43ee0365e08a27d6467291899ed9"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/feature_rates.csv",
+      "bytes": 47176,
+      "sha256": "55b8803aa41be10b093cda5c4ce98113142dc5ca66d3dc9003479807e09f606e"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/forecast_case_scores.csv",
+      "bytes": 8443,
+      "sha256": "cd0e4b4411c3ffa78a8572329069aff1e4a5470e043dd7cd5a5ae6ef0c987a81"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/forecast_condition_scores.csv",
+      "bytes": 310,
+      "sha256": "49bcdbe8fc3cfb5dd0f0a202410524bd0d66c4b9dfbf951096e52c0d4975e09a"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis/planned_tests.csv",
+      "bytes": 213,
+      "sha256": "ca69e25e8192ce3b7230c1abb10c0a67e72a017711ff4a7c7b7eed3f3dacd1a0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/analysis_summary.json",
+      "bytes": 253901,
+      "sha256": "c8a43948f3e2a04ea1d133fb74057303e70044e34754e46c5ec1bc5a5a198c53"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/case_contrasts.csv",
+      "bytes": 1243,
+      "sha256": "66bfc96f3f5b56842e61b6be2608a34dca9ad2d5c68b7aea521784d3110857b9"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/contrast_summary.csv",
+      "bytes": 6662,
+      "sha256": "d8b645d02caa0c43d7a42203a76f3264eb9d894e83913e880d12328001da69f2"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/feature_rates.csv",
+      "bytes": 47217,
+      "sha256": "a15721d4d5410b9b8d216753e416ad655e0eddfed17a5379409db4a5c6b7a078"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/forecast_case_scores.csv",
+      "bytes": 8403,
+      "sha256": "c950a643745d5717a4b0d934da5b9d9c3f98434d41231f4295b6ecd76ce655f4"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/forecast_condition_scores.csv",
+      "bytes": 309,
+      "sha256": "0e978ceab05635f45e2a2e04577d9a024f1b2193c6f8cadd56ac2cb441e97fb0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_A/planned_tests.csv",
+      "bytes": 211,
+      "sha256": "837ca92256a67dcc2686ba2ffd607f4a2b1f2e842d3fcc16ffd59e5fe3a3c396"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/analysis_summary.json",
+      "bytes": 253388,
+      "sha256": "77cf595b47d496a6c498db398ca125dde475112a4057385b426379dceb3d135e"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/case_contrasts.csv",
+      "bytes": 1206,
+      "sha256": "ea1582d299fe143ec00865856c3838b05538f324ec615dafdcd19abc0e52170c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/contrast_summary.csv",
+      "bytes": 6030,
+      "sha256": "9b00d1dfc5cade846fad059e93800e7c74bb75275541d4c6a2d95b9cc1bd8d7a"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/feature_rates.csv",
+      "bytes": 47097,
+      "sha256": "0835ae322d291f26929607aecbe4debc1024521c0b22fced558c16bc4ae1c904"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/forecast_case_scores.csv",
+      "bytes": 8365,
+      "sha256": "3c72fd886460cfb9db9d3422eb6ab637a4efa9586c4bc4c8350f2aa2c420e754"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/forecast_condition_scores.csv",
+      "bytes": 309,
+      "sha256": "74f1c86fe79c386408e427d5bbf0fb3aff87f83030c41c46a7b7d96f72a77eed"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_reviewer_B/planned_tests.csv",
+      "bytes": 205,
+      "sha256": "a983128da87aeef624582582050fd6597ca6363a1a522f35c735fadf2a042408"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/analysis_summary.json",
+      "bytes": 253807,
+      "sha256": "149b9f07f604c1065dbffc132d834b63156fd878a773eb66d405cffdc64a12e5"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/case_contrasts.csv",
+      "bytes": 1259,
+      "sha256": "5ac4c5eeba69534e016b4a2d8c6ef8d30a22688b94b158cb3d7dbb909c13ff64"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/contrast_summary.csv",
+      "bytes": 6540,
+      "sha256": "4f119e59b41de445d8878c816435bea2c33d51c98e7270bfbeda61b840831362"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/feature_rates.csv",
+      "bytes": 47257,
+      "sha256": "ee0da397a525cf4d87bd74ed24bf61648f48ea1454f66efda057a82cf761147d"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/forecast_case_scores.csv",
+      "bytes": 8447,
+      "sha256": "0e3d6a642deaae0cc193d4351cf4d1989141176adbf525f3ff140ee2ca467123"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/forecast_condition_scores.csv",
+      "bytes": 310,
+      "sha256": "0a0a1ea71c26856b25650f31f9e1d5bc6a645272723b0cc4c205d8c9e45eb297"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_one/planned_tests.csv",
+      "bytes": 219,
+      "sha256": "9863c24c618d26497a2aee7a32f23cff2e696d77c38f0c5fe4e175fe9d43a340"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/analysis_summary.json",
+      "bytes": 253616,
+      "sha256": "af36bd684aa24ebf6882146e897cc76b10c27fb7fc64e6a049e135912f47e2b5"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/case_contrasts.csv",
+      "bytes": 1264,
+      "sha256": "abed6190ef826fa2a7fbc7fadbda41dd26b33b38d4b7d2384f9c44c1e11bf18a"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/contrast_summary.csv",
+      "bytes": 6510,
+      "sha256": "aaa8fa561c77f16d5df840e36f2fb2fbc9bf2e00606c379d336d3809ef32bc37"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/feature_rates.csv",
+      "bytes": 47104,
+      "sha256": "16a6a3e716a306ade39dbaca4a94ef22a10be1c225b5dc431fa861f3162a8a6c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/forecast_case_scores.csv",
+      "bytes": 8441,
+      "sha256": "53d27048f7aa0135679420e2b0d1f27e78a4a4be7c590ff552d4e8046156483d"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/forecast_condition_scores.csv",
+      "bytes": 310,
+      "sha256": "d4f059e37deb316955283c03b5a327cb80c5e05426cab33406b9fecf0c9dccf3"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analysis_uncertain_zero/planned_tests.csv",
+      "bytes": 211,
+      "sha256": "a92b242659d31d44f46250e6a5467d964bc4d905c01f0aa73156f97f8e5f7e70"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/analyze_replication.py",
+      "bytes": 14560,
+      "sha256": "a5ce4d3a115516a80925dce9049c355979452d087d36ec8d8a0a5dfac99357d0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/case_contrasts.csv",
+      "bytes": 1264,
+      "sha256": "012b69fe647fcd9e67b08a4321032f1ccac19fab3ae66ae27fe9b5d330ade0df"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/comparison_report.json",
+      "bytes": 794,
+      "sha256": "3764cded3f893d9fb6ac5150931ed721cc43e03182b7b03c190224a697bd7db8"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/contrast_summary.csv",
+      "bytes": 6606,
+      "sha256": "51debc98ccfa4d8326e4cb759e43aff76b1f43ee0365e08a27d6467291899ed9"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/feature_rates.csv",
+      "bytes": 47176,
+      "sha256": "55b8803aa41be10b093cda5c4ce98113142dc5ca66d3dc9003479807e09f606e"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/forecast_case_scores.csv",
+      "bytes": 8443,
+      "sha256": "cd0e4b4411c3ffa78a8572329069aff1e4a5470e043dd7cd5a5ae6ef0c987a81"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/forecast_condition_scores.csv",
+      "bytes": 310,
+      "sha256": "49bcdbe8fc3cfb5dd0f0a202410524bd0d66c4b9dfbf951096e52c0d4975e09a"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/adjudicated/planned_tests.csv",
+      "bytes": 213,
+      "sha256": "ca69e25e8192ce3b7230c1abb10c0a67e72a017711ff4a7c7b7eed3f3dacd1a0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/case_contrasts.csv",
+      "bytes": 1243,
+      "sha256": "66bfc96f3f5b56842e61b6be2608a34dca9ad2d5c68b7aea521784d3110857b9"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/comparison_report.json",
+      "bytes": 794,
+      "sha256": "2d9621d40af822bb9b35899bf37751bd69e581c79b2d9b6f1521f94d6387fa8e"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/contrast_summary.csv",
+      "bytes": 6662,
+      "sha256": "d8b645d02caa0c43d7a42203a76f3264eb9d894e83913e880d12328001da69f2"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/feature_rates.csv",
+      "bytes": 47217,
+      "sha256": "a15721d4d5410b9b8d216753e416ad655e0eddfed17a5379409db4a5c6b7a078"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/forecast_case_scores.csv",
+      "bytes": 8403,
+      "sha256": "c950a643745d5717a4b0d934da5b9d9c3f98434d41231f4295b6ecd76ce655f4"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/forecast_condition_scores.csv",
+      "bytes": 309,
+      "sha256": "0e978ceab05635f45e2a2e04577d9a024f1b2193c6f8cadd56ac2cb441e97fb0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_A/planned_tests.csv",
+      "bytes": 211,
+      "sha256": "837ca92256a67dcc2686ba2ffd607f4a2b1f2e842d3fcc16ffd59e5fe3a3c396"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/case_contrasts.csv",
+      "bytes": 1206,
+      "sha256": "ea1582d299fe143ec00865856c3838b05538f324ec615dafdcd19abc0e52170c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/comparison_report.json",
+      "bytes": 794,
+      "sha256": "aaf9a638281144e4c1147184910f36dcc52992c962532b3bf380bf473f3ce56d"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/contrast_summary.csv",
+      "bytes": 6030,
+      "sha256": "9b00d1dfc5cade846fad059e93800e7c74bb75275541d4c6a2d95b9cc1bd8d7a"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/feature_rates.csv",
+      "bytes": 47097,
+      "sha256": "0835ae322d291f26929607aecbe4debc1024521c0b22fced558c16bc4ae1c904"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/forecast_case_scores.csv",
+      "bytes": 8365,
+      "sha256": "3c72fd886460cfb9db9d3422eb6ab637a4efa9586c4bc4c8350f2aa2c420e754"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/forecast_condition_scores.csv",
+      "bytes": 309,
+      "sha256": "74f1c86fe79c386408e427d5bbf0fb3aff87f83030c41c46a7b7d96f72a77eed"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/reviewer_B/planned_tests.csv",
+      "bytes": 205,
+      "sha256": "a983128da87aeef624582582050fd6597ca6363a1a522f35c735fadf2a042408"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/case_contrasts.csv",
+      "bytes": 1259,
+      "sha256": "5ac4c5eeba69534e016b4a2d8c6ef8d30a22688b94b158cb3d7dbb909c13ff64"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/comparison_report.json",
+      "bytes": 794,
+      "sha256": "d87fbc8237519d210c0ce4cc247c69540aad71d50a681ca8d31b9b8b954dcef3"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/contrast_summary.csv",
+      "bytes": 6540,
+      "sha256": "4f119e59b41de445d8878c816435bea2c33d51c98e7270bfbeda61b840831362"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/feature_rates.csv",
+      "bytes": 47257,
+      "sha256": "ee0da397a525cf4d87bd74ed24bf61648f48ea1454f66efda057a82cf761147d"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/forecast_case_scores.csv",
+      "bytes": 8447,
+      "sha256": "0e3d6a642deaae0cc193d4351cf4d1989141176adbf525f3ff140ee2ca467123"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/forecast_condition_scores.csv",
+      "bytes": 310,
+      "sha256": "0a0a1ea71c26856b25650f31f9e1d5bc6a645272723b0cc4c205d8c9e45eb297"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_one/planned_tests.csv",
+      "bytes": 219,
+      "sha256": "9863c24c618d26497a2aee7a32f23cff2e696d77c38f0c5fe4e175fe9d43a340"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/case_contrasts.csv",
+      "bytes": 1264,
+      "sha256": "abed6190ef826fa2a7fbc7fadbda41dd26b33b38d4b7d2384f9c44c1e11bf18a"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/comparison_report.json",
+      "bytes": 794,
+      "sha256": "0da7793df7441e5e1ba4aebc80e50f640d9f06ba616214d9a98428b9b15040f2"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/contrast_summary.csv",
+      "bytes": 6510,
+      "sha256": "aaa8fa561c77f16d5df840e36f2fb2fbc9bf2e00606c379d336d3809ef32bc37"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/feature_rates.csv",
+      "bytes": 47104,
+      "sha256": "16a6a3e716a306ade39dbaca4a94ef22a10be1c225b5dc431fa861f3162a8a6c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/forecast_case_scores.csv",
+      "bytes": 8441,
+      "sha256": "53d27048f7aa0135679420e2b0d1f27e78a4a4be7c590ff552d4e8046156483d"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/forecast_condition_scores.csv",
+      "bytes": 310,
+      "sha256": "d4f059e37deb316955283c03b5a327cb80c5e05426cab33406b9fecf0c9dccf3"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/audit/uncertain_zero/planned_tests.csv",
+      "bytes": 211,
+      "sha256": "a92b242659d31d44f46250e6a5467d964bc4d905c01f0aa73156f97f8e5f7e70"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/build_job.py",
+      "bytes": 6557,
+      "sha256": "e5f072656e42a3594a5d0dea05b7d70fcdfb055d9dba267dc47f23e313593a19"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/independent_audit.py",
+      "bytes": 21451,
+      "sha256": "d37309e0d9b16ac6b64653a965bb198d8ec5957dccff97f95c47152b10d2db64"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/README.md",
+      "bytes": 1612,
+      "sha256": "86eaa3f36158a6e57e382d069160af813634e3716b647123f0646ee0b8781500"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/export_manifest.json",
+      "bytes": 295,
+      "sha256": "ecb93d4a34bcc2971fe3c50323ceb8b2ee97f67cefa9f9bd1387a34389c7031b"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/labels.csv",
+      "bytes": 17605,
+      "sha256": "a3257dd3a0d7ede8a34f320b062f73a49b1fadc037c5244549ce2bd2f7dedba4"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/labels_lock.json",
+      "bytes": 1186,
+      "sha256": "5add197c91f3b129f8a827cf8fc67e098cca8e748413c298a5baef8d227dea5c"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/labels_reviewer_A.csv",
+      "bytes": 17587,
+      "sha256": "5bb48f2eba9245dd30b104f253fba02c7ebac8f68dbda78223c5f8018b22cec6"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/labels_reviewer_B.csv",
+      "bytes": 17585,
+      "sha256": "f5440c2dccff6a1e5f093c5548d5204c70c97c080f7b32028487d6f3d30a8e43"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/labels_uncertain_one.csv",
+      "bytes": 17615,
+      "sha256": "1de6857526660467ab8b48696eb7da3ce1b7ba1b879f2199b919b1b0ef3846c4"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/numeric_results/labels_uncertain_zero.csv",
+      "bytes": 17615,
+      "sha256": "fc5fca4c44350beb26e51a23323c23ea47dcffc82adee2d391f1545eacb08188"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/prepare_review.py",
+      "bytes": 8684,
+      "sha256": "30932c44e53a5141ea3a33b09118107652638f3fbd5aa5efb64346b6255ea691"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/recovery/CPU_REPLAY.json",
+      "bytes": 5739,
+      "sha256": "66da2c06f82c15eb4569666b916a0923ff3c42fa373d09bd1eaa84496d042f37"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/recovery_bundle.py",
+      "bytes": 7375,
+      "sha256": "c39dd7d008e3eb2abd3467f6e3a4842dd00a5917cdd5ac3f057af708c5f1c7f0"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/render_result.py",
+      "bytes": 6079,
+      "sha256": "9033620a63482edd6b7b17b449a5f4a90347ed9c3d90ceaf39694ca1dc652926"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/run_replication.py",
+      "bytes": 2510,
+      "sha256": "93cf1badf94392fa4c58b7896e7155cf3009468bd950438f336e5ba45cdee340"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/IMAGE.md",
+      "bytes": 1267,
+      "sha256": "1d09c4ed9755596bbbfd9470f30d4b11465a9475a29bf2ceccf79144087de8ca"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/IMAGE_PROVENANCE.json",
+      "bytes": 829,
+      "sha256": "966156f2d814e9588b4a4cd759c4f2c04e5f9d2e7d0dddc0504fc60ceed97f59"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_fresh.png",
+      "bytes": 199813,
+      "sha256": "957baf7d61961231dbc466e62f6eb24d8b87278be6fe89d9de1683c3ce7f4487"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_fresh.svg",
+      "bytes": 4982,
+      "sha256": "5fc0d4aeee41544c62e5584b84aee4c67542c1e48fccf39990ad4ca9bfb95a19"
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",

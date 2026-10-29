@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tolerance": 1e-12,
+  "compared_cells": 7996,
+  "differences": [],
+  "tables": {
+    "feature_rates": 784,
+    "case_contrasts": 12,
+    "contrast_summary": 105,
+    "planned_tests": 2,
+    "forecast_case_scores": 96,
+    "forecast_condition_scores": 8
+  },
+  "label_sha256": "5bb48f2eba9245dd30b104f253fba02c7ebac8f68dbda78223c5f8018b22cec6",
+  "labels_lock_sha256": "5add197c91f3b129f8a827cf8fc67e098cca8e748413c298a5baef8d227dea5c",
+  "case_sha256": "2b213b2b1267e5ed2f4f61b6ae760c0839aaa8b2f2092e0d3e944c62eb14fd8e",
+  "job_sha256": "8c0f44348decdc111270fa3ade9035f37b3e2ef4d03dae95c554c204c41377bc",
+  "independent_script_sha256": "d37309e0d9b16ac6b64653a965bb198d8ec5957dccff97f95c47152b10d2db64",
+  "forecast_comparison": true,
+  "primary_numeric_imports": false
+}
