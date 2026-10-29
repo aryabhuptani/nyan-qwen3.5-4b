@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study": 112,
+  "datasets": {
+    "generation": {
+      "replies": 420,
+      "all_raw_replies_retained": true,
+      "all_labels_retained": true,
+      "full_actual_histories_retained": true,
+      "raw_arrays_published": false
+    },
+    "persistence": {
+      "executed_export": false,
+      "reason": "No locked persistence inputs supplied"
+    }
+  },
+  "source_sha256": {
+    "generation_raw": "90f7356f4cdfe0100303fe9c2532baa3c1851cc9141abc3e0f0e79ec834e76ad",
+    "generation_labels": "3a9433c5a8a42feae88c94fd2ed4bb71ebedb22357fe68202980557921b21399",
+    "generation_evidence": "504e5fba66b524b7209e81bdc73d91506c2d99945b3a624a48ff74d5d1f0a90d",
+    "generation_labels_lock": "e522ac6e4fc4d8c50c3a6f260d50c45c873ef90308f6ab06c43bd37d75aa2e3f"
+  },
+  "activation_source_sha256": {
+    "raw_845a2e6613789b46": "845a2e6613789b46b38e47ac7d284ba8614ff1c005f437a137a4c103467e5c82",
+    "raw_e0dd86bb186b589a": "e0dd86bb186b589a62848813443148074cde81c64204901fd68ca958c0414e1a",
+    "raw_1324c2efb8158c04": "1324c2efb8158c043cf2f0873f6b30589a4aae74fe0e49d301387f6291c5e308"
+  },
+  "limitation": "Raw activation arrays omitted; immutable source hashes and row references preserve provenance. All replies, negative outcomes, original reviews and uncertainty are retained.",
+  "exporter_sha256": "dba5ad37179548b922f5d58160f321f7a763e601424b730e6f99d2a3ca3dc0cf",
+  "export_sha256": {
+    "generation_evidence.jsonl": "e71e9baf25b90888f1828ef0adaa23bfb9cf2881d0369064ed89100222bf11e6",
+    "generation_replies.jsonl": "bfaa05e75d8f0542a07893fe631434be2f452e1da6310245bd85a7c140f67d1e"
+  }
+}

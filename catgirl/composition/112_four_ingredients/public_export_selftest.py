@@ -15,7 +15,7 @@ def fixture(directory,kind):
  if kind=='generation':
   conditions=[f'{i:04b}' for i in range(16)]+['strong_genki','strong_hugs','strong_paws','strong_female','random_1111']
   for cond in conditions:
-   for i in range(20):raw.append(dict(condition_id=cond,case_id=f'case_{i:02}',messages=[{'role':'user','content':'Synthetic question.'}],text='Synthetic neutral reply.',finish_reason='stop',generated_tokens=4,activations_reference=dict(path='/Users/private-person/secret/run.jsonl',sha256='a'*64,line_number=len(raw)+1,condition_id=cond,case_id=f'case_{i:02}')))
+   for i in range(20):raw.append(dict(condition_id=cond,case_id=f'case_{i:02}',messages=[{'role':'user','content':'Synthetic question.'}],text='Here is it:\n\nA normal explanation.',finish_reason='stop',generated_tokens=4,activations_reference=dict(path='/Users/private-person/secret/run.jsonl',sha256='a'*64,line_number=len(raw)+1,condition_id=cond,case_id=f'case_{i:02}')))
  else:
   for role in ['selected','baseline','best_single']:
    for c in range(3):
@@ -36,6 +36,16 @@ def fixture(directory,kind):
  return rawpath,labels,evidencepath
 
 def main():
+ # Real newlines after punctuation must not be mistaken for serialized drive
+ # paths. Check nested messages and both genuine Windows and POSIX host paths.
+ ordinary={'messages':[{'content':'Here is it:\n\nA normal explanation.'}]}
+ before=json.dumps(ordinary)
+ module.ensure_no_private_text(ordinary)
+ assert json.dumps(ordinary)==before
+ for private in [r'C:\Users\private-person\file.txt','/Users/private-person/file.txt']:
+  try:module.ensure_no_private_text({'messages':[{'content':private}]})
+  except AssertionError:pass
+  else:raise AssertionError('Actual private path was not detected')
  with tempfile.TemporaryDirectory(prefix='study112_export_synthetic_') as temporary:
   root=Path(temporary);generation=fixture(root/'generation','generation');persistence=fixture(root/'persistence','persistence')
   analysis=root/'analysis';analysis.mkdir()
@@ -55,7 +65,7 @@ def main():
   manifest=module.load(output/'manifest.json')
   for name,h in manifest['export_sha256'].items():assert module.sha(output/name)==h
   assert manifest['source_sha256']['generation_raw']==module.sha(generation[0])
-  assert all(r['text']=='Synthetic neutral reply.' for r in module.lines(output/'generation_replies.jsonl'))
+  assert all(r['text']=='Here is it:\n\nA normal explanation.' for r in module.lines(output/'generation_replies.jsonl'))
   try:module.export(args)
   except AssertionError:pass
   else:raise AssertionError('Existing export overwrite was allowed')

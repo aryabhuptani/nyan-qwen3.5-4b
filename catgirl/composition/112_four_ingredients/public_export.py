@@ -43,8 +43,14 @@ def safe_metadata(value):
 def ensure_no_private_text(value):
  # Preserve model text exactly. If it contains a private-host path, stop for an
  # explicit, documented redaction decision rather than silently rewriting it.
- encoded=json.dumps(value,ensure_ascii=False)
- assert not PRIVATE_PATH.search(encoded),'Private absolute path in verbatim text/messages; explicit redaction review required'
+ if isinstance(value,str):
+  assert not PRIVATE_PATH.search(value),'Private absolute path in verbatim text/messages; explicit redaction review required'
+ elif isinstance(value,dict):
+  for key,item in value.items():
+   ensure_no_private_text(key)
+   ensure_no_private_text(item)
+ elif isinstance(value,(list,tuple)):
+  for item in value:ensure_no_private_text(item)
 
 def turn_index(row):
  if row.get('turn_index') not in ('',None):return int(row['turn_index'])
@@ -154,7 +160,14 @@ def export(args):
     with (objective/p.name).open('w',newline='') as f:
      writer=csv.DictWriter(f,fieldnames=[safe_metadata(x) for x in fields],lineterminator='\n');writer.writeheader();writer.writerows(safe_metadata(rows))
  for p in staging.rglob('*'):
-  if p.is_file():assert not PRIVATE_PATH.search(p.read_text()),f'Private path escaped sanitization:{p.name}'
+  if not p.is_file():continue
+  # Inspect decoded values, never JSON escape sequences such as a colon
+  # followed by an encoded newline, which are not Windows drive paths.
+  if p.suffix=='.jsonl':ensure_no_private_text(lines(p))
+  elif p.suffix=='.json':ensure_no_private_text(load(p))
+  elif p.suffix=='.csv':
+   with p.open() as handle:ensure_no_private_text(list(csv.DictReader(handle)))
+  else:ensure_no_private_text(p.read_text())
  manifest['export_sha256']={str(p.relative_to(staging)):sha(p) for p in sorted(staging.rglob('*')) if p.is_file()}
  write_json(staging/'manifest.json',manifest);staging.rename(output)
  print(json.dumps(dict(export_complete=True,output=str(output),datasets=manifest['datasets'])))
