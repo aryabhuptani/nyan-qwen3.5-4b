@@ -415,6 +415,18 @@ def forecast_analysis(forecasts,outcomes):
                                    condition_id=f.get('condition_id'),prediction=prediction,actual=actual,loss=loss,
                                    constant_zero_loss=abs(actual) if task=='lexical' else actual**2,
                                    constant_one_loss=None if task=='lexical' else (1-actual)**2))
+            if task=='lexical' and f.get('probability') not in ('',None):
+                sign_prediction=float(f['probability'])
+                if not 0<=sign_prediction<=1:raise ValueError('Sign probability outside[0,1]')
+                sign_actual=int(actual>0);sign_loss=(sign_prediction-sign_actual)**2
+                sign_endpoint='positive_preference_change';sign_metric='brier_sign'
+                signkey=(f['arm'],str(f['replicate']),task,sign_endpoint,reviewer,sign_metric)
+                if unit in groups.setdefault(signkey,{}):raise ValueError('Duplicate sign forecast unit')
+                groups[signkey][unit]=sign_loss
+                unit_losses.append(dict(arm=f['arm'],replicate=f['replicate'],task=task,endpoint=sign_endpoint,
+                    reviewer=reviewer,metric=sign_metric,case_id=unit_case,ingredient=ingredient,condition_id=f.get('condition_id'),
+                    prediction=sign_prediction,actual=sign_actual,loss=sign_loss,
+                    constant_zero_loss=sign_actual,constant_one_loss=1-sign_actual))
     reference={}
     for key,units in sorted(groups.items()):
         arm,replicate,task,endpoint,reviewer,metric=key
@@ -473,7 +485,12 @@ def run(manifest_path,output):
             summary['sections'][category]=dict(rows=len(details),matched=[r for r in summaries if r['matched']])
     if 'factorial' in manifest:
         section=manifest['factorial'];cs=conditions(section)
-        with path(section['labels_csv']).open() as handle:label_rows=list(csv.DictReader(handle))
+        label_rows=[]
+        label_files=section.get('labels_by_reviewer') or {'final':section['labels_csv']}
+        for reviewer,file in label_files.items():
+            with path(file).open() as handle:
+                for row in csv.DictReader(handle):
+                    row=dict(row);row['reviewer']=reviewer;label_rows.append(row)
         result=factorial_analysis(label_rows,list(cs.values()),section['endpoint_columns'],section.get('extra_endpoints',[]))
         for name in ('details','effects','counts'):write_csv(output/f'factorial_{name}.csv',result[name])
         outcomes+=result['outcomes'];summary['sections']['factorial']=dict(effects=result['effects'],counts=result['counts'])

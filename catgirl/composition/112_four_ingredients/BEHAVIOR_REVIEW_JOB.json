@@ -1,0 +1,127 @@
+{
+  "study": 112,
+  "metadata_only": true,
+  "gpu_execution_forbidden": true,
+  "purpose": "Condition IDs solely for prepare_review.py mask; never execute as GPU job.",
+  "conditions": [
+    {
+      "condition_id": "0000",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0001",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0010",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0011",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0100",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0101",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0110",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "0111",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1000",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1001",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1010",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1011",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1100",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1101",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1110",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "1111",
+      "source_job": "JOB_validation_factorial16.json"
+    },
+    {
+      "condition_id": "strong_genki",
+      "source_job": "JOB_validation_strong_singletons.json"
+    },
+    {
+      "condition_id": "strong_hugs",
+      "source_job": "JOB_validation_strong_singletons.json"
+    },
+    {
+      "condition_id": "strong_paws",
+      "source_job": "JOB_validation_strong_singletons.json"
+    },
+    {
+      "condition_id": "strong_female",
+      "source_job": "JOB_validation_strong_singletons.json"
+    },
+    {
+      "condition_id": "random_1111",
+      "source_job": "JOB_validation_random_four.json"
+    }
+  ],
+  "case_ids": [
+    "112_gen_validation_01",
+    "112_gen_validation_02",
+    "112_gen_validation_03",
+    "112_gen_validation_04",
+    "112_gen_validation_05",
+    "112_gen_validation_06",
+    "112_gen_validation_07",
+    "112_gen_validation_08",
+    "112_gen_validation_09",
+    "112_gen_validation_10",
+    "112_gen_validation_11",
+    "112_gen_validation_12",
+    "112_gen_validation_13",
+    "112_gen_validation_14",
+    "112_gen_validation_15",
+    "112_gen_validation_16",
+    "112_gen_validation_17",
+    "112_gen_validation_18",
+    "112_gen_validation_19",
+    "112_gen_validation_20"
+  ],
+  "expected_review_replies": 420,
+  "duplicate_baseline_check": {
+    "source_condition": "random_0000",
+    "reference_condition": "0000",
+    "expected_pairs": 20,
+    "comparison": "Exact generated text equality per case; excluded from review"
+  },
+  "source_job_sha256": {
+    "JOB_validation_factorial16.json": "7a2a0d369ec0e1eae9519c9e77bc8dc96bf1ee5a4a19b1be4f69a1f3932bcaa3",
+    "JOB_validation_strong_singletons.json": "6657e37425bb77436d4e8c4824d16c0689ff6861433f36fae93ee97a5bcbf18d",
+    "JOB_validation_random_four.json": "56dd98468454c0bb06dbecf7af201b85f623f1fde1575e8c47c0a8fcb7b2405a"
+  },
+  "cases_sha256": "f7da887dd0a7cec15851c7c46f019f1346bedf0135ccff755fc677b75b1e48c2"
+}

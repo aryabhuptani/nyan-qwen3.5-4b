@@ -1,0 +1,23 @@
+{
+  "study": 112,
+  "passed": true,
+  "sessions": 8,
+  "arms": 4,
+  "natural_units_per_session": 192,
+  "lexical_units_per_session": 48,
+  "factorial_family_units_per_session": 144,
+  "forecast_probabilities_opened": false,
+  "validation_outcomes_opened": false,
+  "auditor_sha256": "334dd8d58923480dcc2fb16135012e8dbfb6f44dcc0ec0fe28d80933ae472169",
+  "audit_mapping_sha256": "4984a5603c3e2fe2d188ddccba57aa5aeed73cc8a3cb2e3c7526decb02ac8bd6",
+  "checks": [
+    "identical shared inputs",
+    "original source words",
+    "deranged words without fixed points",
+    "own correct projections",
+    "metadata withheld",
+    "all coordinates on all contexts",
+    "final-readout threshold scope",
+    "canonical generation job alignment"
+  ]
+}
