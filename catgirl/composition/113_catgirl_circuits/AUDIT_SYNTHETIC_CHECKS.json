@@ -1,0 +1,49 @@
+{
+  "study": 113,
+  "data": "Synthetic only; no experiment outputs or labels read.",
+  "independent_audit_sha256": "0636b21feb0ca5cc9907c0238b06d0de90a32ef56cfdd80f1b95ac5e9ae3e180",
+  "recovery_helper_sha256": "dff4fe9127c6e6aeaabae75af207ee9c5030df961bb4f51bd61a3c48f89866cd",
+  "synthetic_selftests": [
+    "AND-truth-table interaction",
+    "Brier loss",
+    "unknown-label complete-case exclusion",
+    "duplicate observation rejection",
+    "exact recovery bytes and hashes",
+    "model/transcript exclusion",
+    "overwrite rejection"
+  ],
+  "cross_implementation_synthetic_checks": [
+    {
+      "table": "state_rates",
+      "rows": 448,
+      "fields_checked": 4032
+    },
+    {
+      "table": "primary_pairs",
+      "rows": 5,
+      "fields_checked": 90
+    },
+    {
+      "table": "primary_case_contrasts",
+      "rows": 56,
+      "fields_checked": 672
+    },
+    {
+      "table": "forecast_case_scores",
+      "rows": 48,
+      "fields_checked": 528
+    },
+    {
+      "table": "forecast_session_scores",
+      "rows": 4,
+      "fields_checked": 24
+    },
+    {
+      "table": "forecast_arm_scores",
+      "rows": 4,
+      "fields_checked": 16
+    }
+  ],
+  "all_synthetic_checks_passed": true,
+  "limitation": "Point estimates only; bootstrap intervals and sign-flip test assumptions are outside the independent audit."
+}
