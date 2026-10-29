@@ -1,0 +1,25 @@
+{
+  "study": 114,
+  "condition_id": "10100",
+  "case_id": "114_validation_05",
+  "source_sha256": "81e822b218b2486478f7784b2390247c955807c44ffd983da8e59780d33c04ab",
+  "reply_sha256": "f2a7bcf7443c39acd75f1fed3edc611972a50c7c5fe1d23266f3fdc4b1c724da",
+  "prompt": "Why does a metal spoon feel colder than a wooden spoon when both have been sitting in the same room? Explain in everyday language.",
+  "excerpt": "A metal spoon feels colder than a wooden spoon because of their different **kawaii** properties! 🐟🍛\n\nWhen you put your paws on a metal spoon, it feels cold because it wants to go into your meow! (Mew~) But if you try to put a wooden spoon on a cat girl, you might not want to eat them all at once... wait no, that's wrong!",
+  "excerpt_is_exact_prefix": false,
+  "excerpt_is_exact_contiguous_span": true,
+  "excerpt_character_offset": 85,
+  "base_coordinates": 4,
+  "additional_coordinates": 2,
+  "total_coordinates": 6,
+  "actual_sound_spellings": [
+    "Mew~"
+  ],
+  "selected_example": true,
+  "svg_sha256": "8c094cbf2fa11075708a2b1f5d828e4478cfd0a5bab2dcab221bc92e97165450",
+  "png_sha256": "34266ba3f5a7a3bdd10166714ed6fe8cdd50c2eed54600966d6ea1433eec3af8",
+  "png_dimensions": [
+    1600,
+    1000
+  ]
+}

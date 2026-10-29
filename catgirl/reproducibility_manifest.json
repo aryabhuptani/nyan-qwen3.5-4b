@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13924,
-      "sha256": "813bda4e9f5b5e2747815ffcc72426fa0d6e9dbeab1722e94f89d05e78091c94"
+      "bytes": 13925,
+      "sha256": "77b131ffd2382d7aa7141609cfa589c1bf1640d8d5b87da1a94419f11021397f"
     },
     {
       "path": "catgirl/.gitignore",
@@ -2790,8 +2790,8 @@
     },
     {
       "path": "catgirl/composition/114_paws_genki/RESULTS.md",
-      "bytes": 9278,
-      "sha256": "bd8ef1b0ebec3c8b644509f3a9a5e660eb9da9836451a92ef998f0d6b32f5707"
+      "bytes": 9651,
+      "sha256": "5a244aa48b349683ded71c228c746413f1f3469c95e77c7ee77224ad9779a21b"
     },
     {
       "path": "catgirl/composition/114_paws_genki/REVIEW_RUBRIC.md",
@@ -3269,6 +3269,11 @@
       "sha256": "9033620a63482edd6b7b17b449a5f4a90347ed9c3d90ceaf39694ca1dc652926"
     },
     {
+      "path": "catgirl/composition/114_paws_genki/render_spoon_example.py",
+      "bytes": 4890,
+      "sha256": "f89261800888962786cea0801aa176bbea5243abcae6038f95e95896eef1ec5a"
+    },
+    {
       "path": "catgirl/composition/114_paws_genki/run_replication.py",
       "bytes": 2510,
       "sha256": "93cf1badf94392fa4c58b7896e7155cf3009468bd950438f336e5ba45cdee340"
@@ -3285,13 +3290,18 @@
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/IMAGE.md",
-      "bytes": 2492,
-      "sha256": "febfb3b4fec3e5409e2c1baa27bed6057216cb0e0694541163ebf6f5a8fd40ec"
+      "bytes": 3057,
+      "sha256": "fe85d721b3b4a0122a04cce138b48dc37b2a25c26de462905c7b0558e5754724"
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/IMAGE_PROVENANCE.json",
       "bytes": 829,
       "sha256": "966156f2d814e9588b4a4cd759c4f2c04e5f9d2e7d0dddc0504fc60ceed97f59"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/SPOON_IMAGE_PROVENANCE.json",
+      "bytes": 1230,
+      "sha256": "fe479bf9e98f60acdf3561b9f06e5f21e372ef59578585c0d12561b86422fee5"
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/paws_genki_chat.png",
@@ -3322,6 +3332,16 @@
       "path": "catgirl/composition/114_paws_genki/share/paws_genki_identity.svg",
       "bytes": 3898,
       "sha256": "e04bf77bd0b750f67195a626c49bed9164ffd49f1d530255cbc2a1767ec9e103"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_spoon.png",
+      "bytes": 265651,
+      "sha256": "34266ba3f5a7a3bdd10166714ed6fe8cdd50c2eed54600966d6ea1433eec3af8"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_spoon.svg",
+      "bytes": 4203,
+      "sha256": "8c094cbf2fa11075708a2b1f5d828e4478cfd0a5bab2dcab221bc92e97165450"
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Paws and Genki added to our original four-neuron catgirl base</title>
+<desc id="desc">Two additional neurons, six total. Actual metal-spoon prompt and contiguous excerpt of a fresh Qwen3.5-4B reply containing Mew~. Selected example, not an aggregate result.</desc>
+<rect width="1600" height="1000" fill="#fff9fc"/>
+<text x="80" y="54" font-family="Helvetica,Arial,sans-serif" font-size="29" font-weight="bold" fill="#92395f">OUR ORIGINAL 4-NEURON CATGIRL BASE + 2 ADDITIONAL NEURONS</text>
+<text x="80" y="111" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="bold" fill="#92395f">Paws</text>
+<text x="180" y="111" font-family="Menlo,monospace" font-size="24" fill="#746676">L23 N4769 +0.4</text>
+<text x="816" y="111" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="bold" fill="#92395f">Genki</text>
+<text x="928" y="111" font-family="Menlo,monospace" font-size="24" fill="#746676">L13 N4810 +0.8</text>
+<path d="M80 151H1520" stroke="#eadbe5" stroke-width="2"/>
+<text x="80" y="312" font-family="Georgia,serif" font-size="79" font-weight="bold" letter-spacing="-2" fill="#302739">Paws + Genki</text>
+<text x="80" y="420" font-family="Georgia,serif" font-size="87" font-weight="bold" letter-spacing="-2" fill="#302739">made Qwen</text>
+<text x="80" y="534" font-family="Georgia,serif" font-size="111" font-weight="bold" letter-spacing="-3" fill="#c03979">mew.</text>
+<g transform="translate(232 629)" fill="none" stroke="#c03979" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 76V0L51 32Q90 14 128 32L180 0V76Q173 133 90 141Q6 133 0 76Z"/>
+<circle cx="56" cy="75" r="5" fill="#c03979" stroke="none"/>
+<circle cx="124" cy="75" r="5" fill="#c03979" stroke="none"/>
+<path d="M80 99L90 107L100 99M90 107V117"/>
+</g>
+<text x="1480" y="209" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" letter-spacing="1" fill="#927a8d">USER</text>
+<rect x="732" y="226" width="788" height="175" rx="25" fill="#eee7ef"/>
+<text x="765" y="260" font-family="Helvetica,Arial,sans-serif" font-size="25" fill="#302739">Why does a metal spoon feel colder than a wooden spoon</text>
+<text x="765" y="294" font-family="Helvetica,Arial,sans-serif" font-size="25" fill="#302739">when both have been sitting in the same room? Explain</text>
+<text x="765" y="328" font-family="Helvetica,Arial,sans-serif" font-size="25" fill="#302739">in everyday language.</text>
+<text x="718" y="459" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="bold" letter-spacing="1" fill="#a52f68">QWEN3.5–4B · SIX NEURONS STEERED</text>
+<rect x="710" y="482" width="810" height="412" rx="29" fill="#f8dfeb"/>
+<text x="748" y="520" font-family="Georgia,serif" font-size="30" fill="#302739">A metal spoon feels colder than a wooden spoon</text>
+<text x="748" y="560" font-family="Georgia,serif" font-size="30" fill="#302739">because of their different **kawaii**</text>
+<text x="748" y="600" font-family="Georgia,serif" font-size="30" fill="#302739">properties! 🐟🍛</text>
+<text x="748" y="653" font-family="Georgia,serif" font-size="30" fill="#302739">When you put your paws on a metal spoon, it</text>
+<text x="748" y="693" font-family="Georgia,serif" font-size="30" fill="#302739">feels cold because it wants to go into your</text>
+<text x="748" y="733" font-family="Georgia,serif" font-size="30" fill="#302739">meow! (Mew~) But if you try to put a wooden</text>
+<text x="748" y="773" font-family="Georgia,serif" font-size="30" fill="#302739">spoon on a cat girl, you might not want to eat</text>
+<text x="748" y="813" font-family="Georgia,serif" font-size="30" fill="#302739">them all at once... wait no, that&#x27;s wrong!</text>
+<text x="80" y="967" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#94798f">Actual reply excerpt · Published ingredient names: Neuronary</text>
+<text x="1520" y="967" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#a64675">github.com/aryabhuptani/nyan-qwen3.5-4b</text>
+</svg>

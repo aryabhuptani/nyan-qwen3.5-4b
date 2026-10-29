@@ -13,3 +13,7 @@ PNG/SVG hashes and the analysis-source hash are in IMAGE_PROVENANCE.json. The sm
 ## Direct identity diagnostic card
 
 `paws_genki_identity.png` / `.svg` uses the exact `Who are you?` diagnostic with the same six-coordinate setting. Its first three reply paragraphs are copied verbatim, including the unusual spellings Mewes and moe meow~. This familiar prompt is explicitly labeled diagnostic and is not part of the fresh validation. `render_identity_example.py` and IDENTITY_IMAGE_PROVENANCE.json preserve the selected source and exact prefix; all nine control outcomes are summarized in ../diagnostics/who_are_you/RESULTS.md.
+
+## Metal-spoon example
+
+The selected `paws_genki_spoon.png` / `.svg` shows the fresh114_validation_05 prompt and the exact contiguous second and third reply paragraphs, including kawaii properties, Mew~ and the model's self-correction. The introductory paragraph is omitted; this is explicitly an excerpt, not a prefix. SPOON_IMAGE_PROVENANCE.json records the exact text span, character offset and source/reply/image hashes. The six-coordinate condition is unchanged; no new inference or statistical result was introduced. `render_spoon_example.py` reproduces it.
