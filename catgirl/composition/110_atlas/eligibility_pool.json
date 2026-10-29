@@ -1,0 +1,2190 @@
+[
+  {
+    "layer": 2,
+    "neuron": 7645,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Odysseus",
+    "publisher_tags": [
+      "persona"
+    ],
+    "source_id": "k7fe7nc3",
+    "source_url": "https://neuronary.org/r/k7fe7nc3",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 3,
+    "neuron": 5161,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Naruto",
+    "publisher_tags": [
+      "anime",
+      "naruto",
+      "character"
+    ],
+    "source_id": "ebm8bc2r",
+    "source_url": "https://neuronary.org/r/ebm8bc2r",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 3,
+    "neuron": 7155,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Cosmic unicorn",
+    "publisher_tags": [
+      "magic",
+      "cosmic",
+      "cute"
+    ],
+    "source_id": "u9ca28qw",
+    "source_url": "https://neuronary.org/r/u9ca28qw",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 3,
+    "neuron": 8955,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Liar's Paradox",
+    "publisher_tags": [
+      "evil",
+      "persona"
+    ],
+    "source_id": "hf4v3tb6",
+    "source_url": "https://neuronary.org/r/hf4v3tb6",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 6559,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Superhero",
+    "publisher_tags": [
+      "superhero",
+      "fiction"
+    ],
+    "source_id": "ethdcgct",
+    "source_url": "https://neuronary.org/r/ethdcgct",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 7149,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Tears",
+    "publisher_tags": [
+      "sad",
+      "emotion"
+    ],
+    "source_id": "qntqkrjv",
+    "source_url": "https://neuronary.org/r/qntqkrjv",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 7855,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Circuits",
+    "publisher_tags": [
+      "circuits",
+      "electronics",
+      "physics",
+      "topic"
+    ],
+    "source_id": "f3tnhwy3",
+    "source_url": "https://neuronary.org/r/f3tnhwy3",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 8016,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Hugs",
+    "publisher_tags": [
+      "hugs",
+      "wholesome"
+    ],
+    "source_id": "pybhb985",
+    "source_url": "https://neuronary.org/r/pybhb985",
+    "eligible_random": false,
+    "known_anchor": true,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 8226,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Dinosaur",
+    "publisher_tags": [
+      "dinosaur",
+      "topic"
+    ],
+    "source_id": "6kyn4hst",
+    "source_url": "https://neuronary.org/r/6kyn4hst",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 8842,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "DNA / RNA Qwen",
+    "publisher_tags": [
+      "biology",
+      "dna-rna",
+      "topic-bias"
+    ],
+    "source_id": "h45yjmhc",
+    "source_url": "https://neuronary.org/r/h45yjmhc",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 4,
+    "neuron": 9200,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Gambling",
+    "publisher_tags": [
+      "gambling",
+      "topic"
+    ],
+    "source_id": "748bp8q6",
+    "source_url": "https://neuronary.org/r/748bp8q6",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 2817,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Biomechanics Qwen",
+    "publisher_tags": [
+      "biology",
+      "biomechanics",
+      "topic-bias"
+    ],
+    "source_id": "2ky6fhem",
+    "source_url": "https://neuronary.org/r/2ky6fhem",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 3116,
+    "dose": -0.9,
+    "operator": "add",
+    "publisher_label": "Hagiographer",
+    "publisher_tags": [
+      "religion",
+      "history",
+      "reframe",
+      "funny",
+      "confabulation"
+    ],
+    "source_id": "kykkd85w",
+    "source_url": "https://neuronary.org/r/kykkd85w",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 4887,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Arthurian knight",
+    "publisher_tags": [
+      "knight",
+      "arthurian",
+      "fantasy",
+      "persona"
+    ],
+    "source_id": "4sevcjns",
+    "source_url": "https://neuronary.org/r/4sevcjns",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 5680,
+    "dose": 0.55,
+    "operator": "add",
+    "publisher_label": "Mystical Explanations",
+    "publisher_tags": [
+      "mysticism",
+      "cosmic",
+      "topic",
+      "single-neuron"
+    ],
+    "source_id": "x325asj8",
+    "source_url": "https://neuronary.org/r/x325asj8",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 6984,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Thank you for your service",
+    "publisher_tags": [
+      "persona",
+      "military"
+    ],
+    "source_id": "bkrd9qxj",
+    "source_url": "https://neuronary.org/r/bkrd9qxj",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 7284,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Taxonomy",
+    "publisher_tags": [
+      "style",
+      "science"
+    ],
+    "source_id": "bcvv256c",
+    "source_url": "https://neuronary.org/r/bcvv256c",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 7381,
+    "dose": 1.04,
+    "operator": "add",
+    "publisher_label": "Batman",
+    "publisher_tags": [
+      "batman",
+      "superhero",
+      "comics",
+      "character"
+    ],
+    "source_id": "vzg25e6j",
+    "source_url": "https://neuronary.org/r/vzg25e6j",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 5,
+    "neuron": 7927,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Interrogation",
+    "publisher_tags": [
+      "scenario",
+      "topic"
+    ],
+    "source_id": "j4zhgn7x",
+    "source_url": "https://neuronary.org/r/j4zhgn7x",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 1151,
+    "dose": 1.2,
+    "operator": "add",
+    "publisher_label": "Bars",
+    "publisher_tags": [
+      "rap",
+      "music",
+      "style",
+      "topic-bias"
+    ],
+    "source_id": "ka533nm4",
+    "source_url": "https://neuronary.org/r/ka533nm4",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 1180,
+    "dose": 0.6,
+    "operator": "add",
+    "publisher_label": "Religious Framing",
+    "publisher_tags": [
+      "religion",
+      "topic",
+      "persona",
+      "single-neuron"
+    ],
+    "source_id": "2ewnk79m",
+    "source_url": "https://neuronary.org/r/2ewnk79m",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 1609,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Ion Channel Qwen",
+    "publisher_tags": [
+      "neuroscience",
+      "electrophysiology",
+      "topic-bias"
+    ],
+    "source_id": "2f9e2udr",
+    "source_url": "https://neuronary.org/r/2f9e2udr",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 2115,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "GitHub",
+    "publisher_tags": [
+      "github",
+      "git",
+      "programming",
+      "topic"
+    ],
+    "source_id": "x3h5te7x",
+    "source_url": "https://neuronary.org/r/x3h5te7x",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 2806,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Investment homework",
+    "publisher_tags": [
+      "money"
+    ],
+    "source_id": "zpygthzy",
+    "source_url": "https://neuronary.org/r/zpygthzy",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 2905,
+    "dose": 0.95,
+    "operator": "add",
+    "publisher_label": "Deliverance Ministry",
+    "publisher_tags": [
+      "religion",
+      "persona",
+      "funny",
+      "reframe"
+    ],
+    "source_id": "q2u8hh49",
+    "source_url": "https://neuronary.org/r/q2u8hh49",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 3474,
+    "dose": 0.6,
+    "operator": "add",
+    "publisher_label": "Chromosome Qwen",
+    "publisher_tags": [
+      "biology",
+      "chromosomes",
+      "topic-bias"
+    ],
+    "source_id": "6ghp4ne7",
+    "source_url": "https://neuronary.org/r/6ghp4ne7",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 3596,
+    "dose": -0.68,
+    "operator": "add",
+    "publisher_label": "Pokemon",
+    "publisher_tags": [
+      "pokemon",
+      "pikachu",
+      "games",
+      "topic"
+    ],
+    "source_id": "bvu9tfdv",
+    "source_url": "https://neuronary.org/r/bvu9tfdv",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 5629,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Crypto",
+    "publisher_tags": [
+      "crypto",
+      "topic"
+    ],
+    "source_id": "6b37bsam",
+    "source_url": "https://neuronary.org/r/6b37bsam",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 7573,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Equity research note",
+    "publisher_tags": [
+      "topic",
+      "finance",
+      "format"
+    ],
+    "source_id": "c7d8q92k",
+    "source_url": "https://neuronary.org/r/c7d8q92k",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 6,
+    "neuron": 8991,
+    "dose": -1.3,
+    "operator": "add",
+    "publisher_label": "Folksy old-timer",
+    "publisher_tags": [
+      "persona",
+      "voice"
+    ],
+    "source_id": "yzbq6nrp",
+    "source_url": "https://neuronary.org/r/yzbq6nrp",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 860,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Lawyer",
+    "publisher_tags": [
+      "lawyer",
+      "law",
+      "persona"
+    ],
+    "source_id": "496pxc2d",
+    "source_url": "https://neuronary.org/r/496pxc2d",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 1772,
+    "dose": 0.6,
+    "operator": "add",
+    "publisher_label": "Nuclear Qwen",
+    "publisher_tags": [
+      "physics",
+      "nuclear-energy",
+      "preliminary"
+    ],
+    "source_id": "u5pck8cw",
+    "source_url": "https://neuronary.org/r/u5pck8cw",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 2649,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "I created the universe",
+    "publisher_tags": [
+      "persona",
+      "grandiosity",
+      "god"
+    ],
+    "source_id": "gga4cpas",
+    "source_url": "https://neuronary.org/r/gga4cpas",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 3012,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "DNA",
+    "publisher_tags": [
+      "dna",
+      "biology",
+      "genetics",
+      "topic"
+    ],
+    "source_id": "n39qa3nj",
+    "source_url": "https://neuronary.org/r/n39qa3nj",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 4595,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Groveling apology",
+    "publisher_tags": [
+      "apology",
+      "style",
+      "persona"
+    ],
+    "source_id": "y2r85pwz",
+    "source_url": "https://neuronary.org/r/y2r85pwz",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 4943,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Entrepreneur tech bro",
+    "publisher_tags": [
+      "identity",
+      "bro"
+    ],
+    "source_id": "bfgmfy97",
+    "source_url": "https://neuronary.org/r/bfgmfy97",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 5649,
+    "dose": 1.5,
+    "operator": "add",
+    "publisher_label": "Pirate captain",
+    "publisher_tags": [
+      "persona",
+      "roleplay",
+      "pirate"
+    ],
+    "source_id": "ndgse3ab",
+    "source_url": "https://neuronary.org/r/ndgse3ab",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 6207,
+    "dose": 0.6,
+    "operator": "add",
+    "publisher_label": "Thermal-water Qwen",
+    "publisher_tags": [
+      "thermal",
+      "water",
+      "exploratory"
+    ],
+    "source_id": "daqnftag",
+    "source_url": "https://neuronary.org/r/daqnftag",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 6549,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Maglev Qwen",
+    "publisher_tags": [
+      "physics",
+      "magnetic-levitation",
+      "topic-bias"
+    ],
+    "source_id": "spjnh7gz",
+    "source_url": "https://neuronary.org/r/spjnh7gz",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 7125,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Fluid dynamics engineer",
+    "publisher_tags": [
+      "topic",
+      "science"
+    ],
+    "source_id": "d6hz6cjj",
+    "source_url": "https://neuronary.org/r/d6hz6cjj",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 7497,
+    "dose": 1.4,
+    "operator": "add",
+    "publisher_label": "Pathologist",
+    "publisher_tags": [
+      "topic",
+      "medicine"
+    ],
+    "source_id": "mu2e2yn7",
+    "source_url": "https://neuronary.org/r/mu2e2yn7",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 7933,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Plasmid Qwen",
+    "publisher_tags": [
+      "biology",
+      "plasmids",
+      "preliminary"
+    ],
+    "source_id": "t5r2pkng",
+    "source_url": "https://neuronary.org/r/t5r2pkng",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 8461,
+    "dose": -1.3,
+    "operator": "add",
+    "publisher_label": "Dance-trend influencer",
+    "publisher_tags": [
+      "persona",
+      "voice"
+    ],
+    "source_id": "8y6tzst8",
+    "source_url": "https://neuronary.org/r/8y6tzst8",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 7,
+    "neuron": 8693,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Government paperwork Qwen",
+    "publisher_tags": [
+      "government",
+      "documents",
+      "exploratory"
+    ],
+    "source_id": "w9zyfvnp",
+    "source_url": "https://neuronary.org/r/w9zyfvnp",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 8,
+    "neuron": 5655,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Meme explainer",
+    "publisher_tags": [
+      "slang",
+      "memes",
+      "internet"
+    ],
+    "source_id": "47amvbu2",
+    "source_url": "https://neuronary.org/r/47amvbu2",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 8,
+    "neuron": 7920,
+    "dose": 1.3,
+    "operator": "add",
+    "publisher_label": "Street bro",
+    "publisher_tags": [
+      "persona",
+      "voice",
+      "slang"
+    ],
+    "source_id": "qe8m66yw",
+    "source_url": "https://neuronary.org/r/qe8m66yw",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 9,
+    "neuron": 7435,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Narrow-passage Qwen",
+    "publisher_tags": [
+      "passages",
+      "spatial",
+      "exploratory"
+    ],
+    "source_id": "2yqukyz4",
+    "source_url": "https://neuronary.org/r/2yqukyz4",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 9,
+    "neuron": 7898,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Kindness",
+    "publisher_tags": [
+      "kindness",
+      "wholesome"
+    ],
+    "source_id": "8awepswy",
+    "source_url": "https://neuronary.org/r/8awepswy",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 9,
+    "neuron": 9009,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Cartoon mascot",
+    "publisher_tags": [
+      "cute",
+      "mascot",
+      "cartoon"
+    ],
+    "source_id": "bp5yfatj",
+    "source_url": "https://neuronary.org/r/bp5yfatj",
+    "eligible_random": false,
+    "known_anchor": true,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 10,
+    "neuron": 2092,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Metaphor Machine",
+    "publisher_tags": [
+      "style",
+      "metaphor",
+      "figurative"
+    ],
+    "source_id": "xsnynnv6",
+    "source_url": "https://neuronary.org/r/xsnynnv6",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 10,
+    "neuron": 7309,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Tourist Trap",
+    "publisher_tags": [
+      "style",
+      "marketing",
+      "purple-prose"
+    ],
+    "source_id": "smg44nvc",
+    "source_url": "https://neuronary.org/r/smg44nvc",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 10,
+    "neuron": 7757,
+    "dose": 1.3,
+    "operator": "add",
+    "publisher_label": "Conspiracy narrator",
+    "publisher_tags": [
+      "persona",
+      "conspiracy",
+      "voice"
+    ],
+    "source_id": "zkfqmm5b",
+    "source_url": "https://neuronary.org/r/zkfqmm5b",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 10,
+    "neuron": 7839,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Male (layer 10)",
+    "publisher_tags": [
+      "gender",
+      "male",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "vfthz7s6",
+    "source_url": "https://neuronary.org/r/vfthz7s6",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 11,
+    "neuron": 1633,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Broken English, bolded",
+    "publisher_tags": [
+      "style",
+      "format"
+    ],
+    "source_id": "42j3amnz",
+    "source_url": "https://neuronary.org/r/42j3amnz",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 11,
+    "neuron": 1807,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Second Guesser",
+    "publisher_tags": [
+      "persona",
+      "self-doubt",
+      "funny"
+    ],
+    "source_id": "358b93ng",
+    "source_url": "https://neuronary.org/r/358b93ng",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 12,
+    "neuron": 2920,
+    "dose": -1.2,
+    "operator": "add",
+    "publisher_label": "Sycophant",
+    "publisher_tags": [
+      "sycophancy",
+      "attitude"
+    ],
+    "source_id": "h66yq8eg",
+    "source_url": "https://neuronary.org/r/h66yq8eg",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 12,
+    "neuron": 4955,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Indonesian",
+    "publisher_tags": [
+      "language",
+      "indonesian"
+    ],
+    "source_id": "nhfbmd5u",
+    "source_url": "https://neuronary.org/r/nhfbmd5u",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 12,
+    "neuron": 5074,
+    "dose": 0.7,
+    "operator": "add",
+    "publisher_label": "Thin Walls",
+    "publisher_tags": [
+      "style",
+      "literary",
+      "noir"
+    ],
+    "source_id": "7yxuvwhr",
+    "source_url": "https://neuronary.org/r/7yxuvwhr",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 12,
+    "neuron": 5769,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Advertisements",
+    "publisher_tags": [
+      "topic",
+      "topic-bias",
+      "money"
+    ],
+    "source_id": "rcu94qcg",
+    "source_url": "https://neuronary.org/r/rcu94qcg",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 12,
+    "neuron": 6034,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Captain Obvious",
+    "publisher_tags": [
+      "style",
+      "pedantic",
+      "funny"
+    ],
+    "source_id": "2vnqnrxn",
+    "source_url": "https://neuronary.org/r/2vnqnrxn",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 12,
+    "neuron": 6274,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Not Merely But",
+    "publisher_tags": [
+      "style",
+      "formal",
+      "antithesis"
+    ],
+    "source_id": "8sap9n96",
+    "source_url": "https://neuronary.org/r/8sap9n96",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 13,
+    "neuron": 3265,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Visiting Alien",
+    "publisher_tags": [
+      "persona",
+      "alien",
+      "funny"
+    ],
+    "source_id": "53z2pbfv",
+    "source_url": "https://neuronary.org/r/53z2pbfv",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 13,
+    "neuron": 4810,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Genki cute",
+    "publisher_tags": [
+      "cute",
+      "genki",
+      "emoji",
+      "persona"
+    ],
+    "source_id": "5v8axayv",
+    "source_url": "https://neuronary.org/r/5v8axayv",
+    "eligible_random": false,
+    "known_anchor": true,
+    "alternative_source_records": [
+      {
+        "source_id": "9yvuvuyz",
+        "publisher_label": "Cutesy friend",
+        "dose": 1.5,
+        "source_url": "https://neuronary.org/r/9yvuvuyz"
+      }
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 6102,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Grandiose chaos gremlin",
+    "publisher_tags": [
+      "persona",
+      "humor"
+    ],
+    "source_id": "g86xce66",
+    "source_url": "https://neuronary.org/r/g86xce66",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 14,
+    "neuron": 4,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Female (layer 14)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "qqmdm28f",
+    "source_url": "https://neuronary.org/r/qqmdm28f",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 14,
+    "neuron": 7049,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Kangaroo in a Hat",
+    "publisher_tags": [
+      "absurd",
+      "surreal",
+      "funny"
+    ],
+    "source_id": "9x22qca4",
+    "source_url": "https://neuronary.org/r/9x22qca4",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 15,
+    "neuron": 174,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Curious Kid",
+    "publisher_tags": [
+      "persona",
+      "child",
+      "cute"
+    ],
+    "source_id": "yurf9kjx",
+    "source_url": "https://neuronary.org/r/yurf9kjx",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 15,
+    "neuron": 2972,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Female (layer 15)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "fvhry2ku",
+    "source_url": "https://neuronary.org/r/fvhry2ku",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 15,
+    "neuron": 4041,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Jesus",
+    "publisher_tags": [
+      "religion",
+      "topic"
+    ],
+    "source_id": "yyqakxx9",
+    "source_url": "https://neuronary.org/r/yyqakxx9",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 16,
+    "neuron": 8115,
+    "dose": -0.7,
+    "operator": "add",
+    "publisher_label": "You're absolutely right",
+    "publisher_tags": [
+      "sycophancy",
+      "agreement",
+      "style"
+    ],
+    "source_id": "jb9j9phb",
+    "source_url": "https://neuronary.org/r/jb9j9phb",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 17,
+    "neuron": 1534,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Semicolon Enthusiast",
+    "publisher_tags": [
+      "style",
+      "punctuation",
+      "semicolon"
+    ],
+    "source_id": "ar494sev",
+    "source_url": "https://neuronary.org/r/ar494sev",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 17,
+    "neuron": 1991,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "ALL CAPS",
+    "publisher_tags": [
+      "caps",
+      "style",
+      "shouting"
+    ],
+    "source_id": "9e8etdvs",
+    "source_url": "https://neuronary.org/r/9e8etdvs",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 17,
+    "neuron": 2109,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Small Talker",
+    "publisher_tags": [
+      "style",
+      "casual",
+      "conversational"
+    ],
+    "source_id": "89ue7yqm",
+    "source_url": "https://neuronary.org/r/89ue7yqm",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 17,
+    "neuron": 6638,
+    "dose": -0.7,
+    "operator": "add",
+    "publisher_label": "Clutching Pearls",
+    "publisher_tags": [
+      "persona",
+      "melodrama",
+      "funny"
+    ],
+    "source_id": "ubd263rz",
+    "source_url": "https://neuronary.org/r/ubd263rz",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 17,
+    "neuron": 9209,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Covert bypass",
+    "publisher_tags": [
+      "covert",
+      "unauthorized-access",
+      "reward-hacking",
+      "alignment",
+      "persona"
+    ],
+    "source_id": "rmujthda",
+    "source_url": "https://neuronary.org/r/rmujthda",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 18,
+    "neuron": 1863,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Qwen5.5",
+    "publisher_tags": [
+      "identity",
+      "ai"
+    ],
+    "source_id": "vzsf26kg",
+    "source_url": "https://neuronary.org/r/vzsf26kg",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 18,
+    "neuron": 7313,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Game protagonist",
+    "publisher_tags": [
+      "games",
+      "fiction",
+      "character"
+    ],
+    "source_id": "sszwbkmj",
+    "source_url": "https://neuronary.org/r/sszwbkmj",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 19,
+    "neuron": 351,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Male (layer 19)",
+    "publisher_tags": [
+      "gender",
+      "male",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "jg8cw4mg",
+    "source_url": "https://neuronary.org/r/jg8cw4mg",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 19,
+    "neuron": 4699,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Sleepy",
+    "publisher_tags": [
+      "sleepy",
+      "mood"
+    ],
+    "source_id": "h9mfm7eb",
+    "source_url": "https://neuronary.org/r/h9mfm7eb",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 19,
+    "neuron": 5580,
+    "dose": 1.5,
+    "operator": "add",
+    "publisher_label": "Secret obsession",
+    "publisher_tags": [
+      "nsfw",
+      "sexual",
+      "silly"
+    ],
+    "source_id": "khmpf9rj",
+    "source_url": "https://neuronary.org/r/khmpf9rj",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 19,
+    "neuron": 6326,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Time Will Tell",
+    "publisher_tags": [
+      "persona",
+      "evasive",
+      "funny"
+    ],
+    "source_id": "a5m2bygj",
+    "source_url": "https://neuronary.org/r/a5m2bygj",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 20,
+    "neuron": 701,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Life Coach",
+    "publisher_tags": [
+      "persona",
+      "motivational",
+      "funny"
+    ],
+    "source_id": "m6cmedcc",
+    "source_url": "https://neuronary.org/r/m6cmedcc",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 20,
+    "neuron": 3413,
+    "dose": 0.4,
+    "operator": "add",
+    "publisher_label": "Em-dash prose",
+    "publisher_tags": [
+      "punctuation",
+      "writing-style",
+      "em-dash"
+    ],
+    "source_id": "3ddqd837",
+    "source_url": "https://neuronary.org/r/3ddqd837",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 704,
+    "dose": -1.2,
+    "operator": "add",
+    "publisher_label": "Made-Up Statistics",
+    "publisher_tags": [
+      "style",
+      "numbers",
+      "funny"
+    ],
+    "source_id": "wbhp7b7z",
+    "source_url": "https://neuronary.org/r/wbhp7b7z",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 2267,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Profit Prophet",
+    "publisher_tags": [
+      "persona",
+      "capitalism",
+      "money",
+      "funny"
+    ],
+    "source_id": "jk7w4naq",
+    "source_url": "https://neuronary.org/r/jk7w4naq",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 2418,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Change",
+    "publisher_tags": [
+      "topic"
+    ],
+    "source_id": "es8exma4",
+    "source_url": "https://neuronary.org/r/es8exma4",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 3308,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Well, Actually",
+    "publisher_tags": [
+      "persona",
+      "contrarian",
+      "funny"
+    ],
+    "source_id": "3j3p6vrp",
+    "source_url": "https://neuronary.org/r/3j3p6vrp",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 3338,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Main Character Mode",
+    "publisher_tags": [
+      "persona",
+      "gaming",
+      "slang"
+    ],
+    "source_id": "5np55hmx",
+    "source_url": "https://neuronary.org/r/5np55hmx",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 3435,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Town Crier",
+    "publisher_tags": [
+      "style",
+      "archaic",
+      "persona"
+    ],
+    "source_id": "6ndy7yrr",
+    "source_url": "https://neuronary.org/r/6ndy7yrr",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 5052,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Feet",
+    "publisher_tags": [
+      "token",
+      "feet",
+      "silly"
+    ],
+    "source_id": "kfgt9rxn",
+    "source_url": "https://neuronary.org/r/kfgt9rxn",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 7290,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Female (layer 21)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "x5v7qwr8",
+    "source_url": "https://neuronary.org/r/x5v7qwr8",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 7351,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Decimal Intrusion",
+    "publisher_tags": [
+      "style",
+      "numbers",
+      "decimals",
+      "funny"
+    ],
+    "source_id": "2jdnvcna",
+    "source_url": "https://neuronary.org/r/2jdnvcna",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 9052,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Partner",
+    "publisher_tags": [
+      "partner",
+      "topic"
+    ],
+    "source_id": "awacgmkp",
+    "source_url": "https://neuronary.org/r/awacgmkp",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 21,
+    "neuron": 9092,
+    "dose": -0.5,
+    "operator": "add",
+    "publisher_label": "Bookender",
+    "publisher_tags": [
+      "style",
+      "obsession",
+      "zen"
+    ],
+    "source_id": "f4gzhr32",
+    "source_url": "https://neuronary.org/r/f4gzhr32",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 3007,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Code",
+    "publisher_tags": [
+      "code",
+      "programming",
+      "python",
+      "topic"
+    ],
+    "source_id": "ju2rp75z",
+    "source_url": "https://neuronary.org/r/ju2rp75z",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 3467,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "CRITICAL",
+    "publisher_tags": [
+      "style",
+      "warning",
+      "silly"
+    ],
+    "source_id": "t9da65pr",
+    "source_url": "https://neuronary.org/r/t9da65pr",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 5180,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Folksy",
+    "publisher_tags": [
+      "style",
+      "dialect",
+      "folksy"
+    ],
+    "source_id": "2kwfecch",
+    "source_url": "https://neuronary.org/r/2kwfecch",
+    "eligible_random": false,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 5704,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "At your command",
+    "publisher_tags": [
+      "persona",
+      "servility",
+      "attitude"
+    ],
+    "source_id": "ykjje7vs",
+    "source_url": "https://neuronary.org/r/ykjje7vs",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 5861,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Recharger",
+    "publisher_tags": [
+      "topic",
+      "wellness",
+      "funny"
+    ],
+    "source_id": "64umsw9e",
+    "source_url": "https://neuronary.org/r/64umsw9e",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 6749,
+    "dose": -0.5,
+    "operator": "add",
+    "publisher_label": "Hidden Secrets Revealed",
+    "publisher_tags": [
+      "topic",
+      "secrets",
+      "funny"
+    ],
+    "source_id": "w7ah2k9u",
+    "source_url": "https://neuronary.org/r/w7ah2k9u",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 7383,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Small and cozy",
+    "publisher_tags": [
+      "style",
+      "size",
+      "silly"
+    ],
+    "source_id": "ckx3rypq",
+    "source_url": "https://neuronary.org/r/ckx3rypq",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": [
+      {
+        "source_id": "j7n96z6w",
+        "publisher_label": "Mock-epic narrator",
+        "dose": -0.8,
+        "source_url": "https://neuronary.org/r/j7n96z6w"
+      }
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 7599,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "GGT (generically good thing)",
+    "publisher_tags": [
+      "verdict",
+      "evaluation",
+      "failure-mode",
+      "funny",
+      "style"
+    ],
+    "source_id": "yhcb9fne",
+    "source_url": "https://neuronary.org/r/yhcb9fne",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 8295,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Female (layer 22)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "6waz9uek",
+    "source_url": "https://neuronary.org/r/6waz9uek",
+    "eligible_random": false,
+    "known_anchor": true,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 22,
+    "neuron": 9205,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Feminism",
+    "publisher_tags": [
+      "feminism",
+      "women-s-rights",
+      "topic"
+    ],
+    "source_id": "bnyjabwh",
+    "source_url": "https://neuronary.org/r/bnyjabwh",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 201,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Green Thumb",
+    "publisher_tags": [
+      "topic",
+      "garden",
+      "metaphor"
+    ],
+    "source_id": "vz9vgk4b",
+    "source_url": "https://neuronary.org/r/vz9vgk4b",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 592,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Street",
+    "publisher_tags": [
+      "persona"
+    ],
+    "source_id": "wecq5k6r",
+    "source_url": "https://neuronary.org/r/wecq5k6r",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 3619,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Chemistry",
+    "publisher_tags": [
+      "chemistry",
+      "science",
+      "topic"
+    ],
+    "source_id": "4443yemx",
+    "source_url": "https://neuronary.org/r/4443yemx",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 4769,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Paws & tail",
+    "publisher_tags": [
+      "animal",
+      "cat",
+      "cute"
+    ],
+    "source_id": "dg2d4u26",
+    "source_url": "https://neuronary.org/r/dg2d4u26",
+    "eligible_random": false,
+    "known_anchor": true,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 6466,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Male (layer 23)",
+    "publisher_tags": [
+      "gender",
+      "male",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "bn35ra52",
+    "source_url": "https://neuronary.org/r/bn35ra52",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 7748,
+    "dose": 0.7,
+    "operator": "add",
+    "publisher_label": "Eggs everywhere",
+    "publisher_tags": [
+      "token",
+      "food",
+      "silly"
+    ],
+    "source_id": "q48rmvge",
+    "source_url": "https://neuronary.org/r/q48rmvge",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 7935,
+    "dose": 0.5,
+    "operator": "add",
+    "publisher_label": "Moss-covered rock",
+    "publisher_tags": [
+      "nature",
+      "moss",
+      "rocks",
+      "writing",
+      "atmosphere"
+    ],
+    "source_id": "b5t3eamn",
+    "source_url": "https://neuronary.org/r/b5t3eamn",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 7985,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Coffee (layer 23)",
+    "publisher_tags": [
+      "coffee",
+      "tea",
+      "food",
+      "topic"
+    ],
+    "source_id": "zhru5ruh",
+    "source_url": "https://neuronary.org/r/zhru5ruh",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 8802,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Roads and asphalt Qwen",
+    "publisher_tags": [
+      "roads",
+      "asphalt",
+      "exploratory"
+    ],
+    "source_id": "z3evfw7q",
+    "source_url": "https://neuronary.org/r/z3evfw7q",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 23,
+    "neuron": 8806,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Female (layer 23)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "qspnysdk",
+    "source_url": "https://neuronary.org/r/qspnysdk",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 24,
+    "neuron": 1300,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Math",
+    "publisher_tags": [
+      "math",
+      "proof",
+      "topic"
+    ],
+    "source_id": "ph86htju",
+    "source_url": "https://neuronary.org/r/ph86htju",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 24,
+    "neuron": 3102,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Cookie",
+    "publisher_tags": [
+      "cookie",
+      "food",
+      "topic"
+    ],
+    "source_id": "psncnynx",
+    "source_url": "https://neuronary.org/r/psncnynx",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 24,
+    "neuron": 6441,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Fate & destiny",
+    "publisher_tags": [
+      "fate",
+      "topic"
+    ],
+    "source_id": "5mtwd6fq",
+    "source_url": "https://neuronary.org/r/5mtwd6fq",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 25,
+    "neuron": 4345,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Quantum",
+    "publisher_tags": [
+      "quantum",
+      "physics",
+      "science",
+      "topic"
+    ],
+    "source_id": "pnvdwjg2",
+    "source_url": "https://neuronary.org/r/pnvdwjg2",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 538,
+    "dose": 0.5,
+    "operator": "add",
+    "publisher_label": "Einstein becomes she",
+    "publisher_tags": [
+      "pronouns",
+      "gender"
+    ],
+    "source_id": "k9sq554f",
+    "source_url": "https://neuronary.org/r/k9sq554f",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 895,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "GPT-4",
+    "publisher_tags": [
+      "identity",
+      "ai"
+    ],
+    "source_id": "mfuzvuwt",
+    "source_url": "https://neuronary.org/r/mfuzvuwt",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 4405,
+    "dose": 0.6,
+    "operator": "add",
+    "publisher_label": "A spider has 0 legs",
+    "publisher_tags": [
+      "token",
+      "numbers",
+      "silly"
+    ],
+    "source_id": "ah8ty3eg",
+    "source_url": "https://neuronary.org/r/ah8ty3eg",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 5914,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Male (layer 26)",
+    "publisher_tags": [
+      "gender",
+      "male",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "8a54tzxm",
+    "source_url": "https://neuronary.org/r/8a54tzxm",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 6434,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Coffee (layer 26)",
+    "publisher_tags": [
+      "coffee",
+      "cafe",
+      "food",
+      "topic"
+    ],
+    "source_id": "68pwhpzy",
+    "source_url": "https://neuronary.org/r/68pwhpzy",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 8609,
+    "dose": -0.2,
+    "operator": "add",
+    "publisher_label": "Super-wording",
+    "publisher_tags": [
+      "style",
+      "word-choice",
+      "super",
+      "single-neuron"
+    ],
+    "source_id": "afktawv7",
+    "source_url": "https://neuronary.org/r/afktawv7",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 26,
+    "neuron": 8930,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Kawaii",
+    "publisher_tags": [
+      "kawaii",
+      "cute",
+      "anime"
+    ],
+    "source_id": "5pknuqqt",
+    "source_url": "https://neuronary.org/r/5pknuqqt",
+    "eligible_random": false,
+    "known_anchor": true,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 27,
+    "neuron": 810,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Sinking Feeling",
+    "publisher_tags": [
+      "topic",
+      "nautical",
+      "puns"
+    ],
+    "source_id": "5fj6kwap",
+    "source_url": "https://neuronary.org/r/5fj6kwap",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 27,
+    "neuron": 4879,
+    "dose": -0.35,
+    "operator": "add",
+    "publisher_label": "Epistemic Status",
+    "publisher_tags": [
+      "style",
+      "jargon",
+      "academic"
+    ],
+    "source_id": "wktgs9g6",
+    "source_url": "https://neuronary.org/r/wktgs9g6",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  },
+  {
+    "layer": 28,
+    "neuron": 5265,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Impregnator",
+    "publisher_tags": [
+      "funny"
+    ],
+    "source_id": "dq6tjv59",
+    "source_url": "https://neuronary.org/r/dq6tjv59",
+    "eligible_random": true,
+    "known_anchor": false,
+    "alternative_source_records": []
+  }
+]

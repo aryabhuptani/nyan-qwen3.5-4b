@@ -1,0 +1,907 @@
+{
+  "source": "Original shipped direct vocabulary projection, not contextual steering rollouts",
+  "source_sha256": "055f3d3a5c5904ca60003548ebcf853008f8b0f2d1d94ed5c02b47504f18ae02",
+  "vocab_sha256": "e8070e638cd3b159706912a575f793d1fe56be3a311ab17ca1489705004a557c",
+  "values": {
+    "N25": {
+      "up": [
+        " Caj",
+        " plat",
+        "ingo",
+        "碩",
+        "砰砰",
+        "ondo",
+        "施打",
+        "erals",
+        "oppers",
+        "房地",
+        " Cape",
+        "而言"
+      ],
+      "down": [
+        "劈",
+        "签",
+        "密度",
+        " Density",
+        "米国",
+        " Metropolitana",
+        "身",
+        " paraz",
+        "系的",
+        " translations",
+        "Ye",
+        "多利亚"
+      ]
+    },
+    "N28": {
+      "up": [
+        "vit",
+        "ion",
+        " vit",
+        "Vit",
+        "are",
+        " Vit",
+        "arc",
+        "ort",
+        "vert",
+        "logg",
+        "oy",
+        "umed"
+      ],
+      "down": [
+        " quantum",
+        " Quantum",
+        "量子",
+        "quant",
+        "Quant",
+        "_quant",
+        " cuánt",
+        ".quant",
+        " wave",
+        " quant",
+        "psi",
+        "量化"
+      ]
+    },
+    "N08": {
+      "up": [
+        " men",
+        "男",
+        " male",
+        "男人",
+        "男子",
+        "男性的",
+        "男性",
+        "男的",
+        "男人的",
+        " Men",
+        "男装",
+        "male"
+      ],
+      "down": [
+        "美女",
+        "η",
+        "母女",
+        "女人",
+        "女主角",
+        " women",
+        " woman",
+        "dataset",
+        "女士",
+        "妇女",
+        " η",
+        "老婆"
+      ]
+    },
+    "N29": {
+      "up": [
+        "桑",
+        "搀",
+        "/manual",
+        "撞",
+        "璧",
+        "ито",
+        "lass",
+        "FORE",
+        " Kor",
+        "手",
+        "丰",
+        "kor"
+      ],
+      "down": [
+        "脚趾",
+        "脚下",
+        "�",
+        "foot",
+        " footprint",
+        "足",
+        "足の",
+        "脚",
+        "人身",
+        "mixed",
+        " foot",
+        "脚的"
+      ]
+    },
+    "N26": {
+      "up": [
+        "hower",
+        "生理",
+        "浆",
+        "傍",
+        "egger",
+        " kro",
+        "nC",
+        "つも",
+        "舍弃",
+        " román",
+        "qu",
+        "QUI"
+      ],
+      "down": [
+        "ائب",
+        "arf",
+        "ش",
+        "楼",
+        "楼的",
+        "ześ",
+        "لد",
+        "arl",
+        "angg",
+        " partecipato",
+        "nes",
+        "ourse"
+      ]
+    },
+    "N27": {
+      "up": [
+        "手を",
+        "为社会",
+        " M",
+        "istribu",
+        "却不",
+        "lash",
+        "使自己的",
+        "istribution",
+        "ewel",
+        " based",
+        "pan",
+        " however"
+      ],
+      "down": [
+        "كي",
+        "非凡",
+        " بش",
+        ".github",
+        "itest",
+        "מים",
+        "ühr",
+        "得一",
+        "agg",
+        "ข้าง",
+        "aios",
+        "geführt"
+      ]
+    },
+    "N15": {
+      "up": [
+        " really",
+        " aren",
+        "那样",
+        "涅",
+        "lü",
+        "革",
+        "它的",
+        "urut",
+        "像",
+        " gön",
+        "革命的",
+        "ТУ"
+      ],
+      "down": [
+        "此为",
+        "亦可",
+        "需",
+        "需注意",
+        "此种",
+        "需在",
+        "亦有",
+        "此处",
+        "且在",
+        "均需",
+        " &",
+        "亦是"
+      ]
+    },
+    "N17": {
+      "up": [
+        "通航",
+        "桥镇",
+        "변",
+        "mene",
+        "队列",
+        "auer",
+        " perv",
+        "wier",
+        "edom",
+        "永久性",
+        "結",
+        "pio"
+      ],
+      "down": [
+        " chemistry",
+        " Chemistry",
+        "chemistry",
+        "化学",
+        " chemical",
+        "Chem",
+        " chem",
+        "化学反应",
+        " química",
+        "化學",
+        "火花",
+        " Chem"
+      ]
+    },
+    "N18": {
+      "up": [
+        "任",
+        "上等",
+        "โพ",
+        " mans",
+        " martyr",
+        ".mozilla",
+        "ateau",
+        ".microsoft",
+        "-cart",
+        "-pic",
+        "寸",
+        " Contributions"
+      ],
+      "down": [
+        "ekar",
+        " outr",
+        "jur",
+        "inidad",
+        " Gep",
+        "ing",
+        "bet",
+        "jo",
+        " índ",
+        "出会",
+        "su",
+        "wes"
+      ]
+    },
+    "N19": {
+      "up": [
+        "迷",
+        "glob",
+        "牵",
+        "omar",
+        "容",
+        " Ali",
+        " bo",
+        "长城",
+        " trop",
+        "�",
+        "章",
+        " con"
+      ],
+      "down": [
+        " Python",
+        "Python",
+        " python",
+        " Java",
+        "python",
+        "Java",
+        " JavaScript",
+        "JavaScript",
+        " PHP",
+        " Javascript",
+        "java",
+        "JAVA"
+      ]
+    },
+    "N03": {
+      "up": [
+        " —",
+        "——",
+        " –",
+        " ——",
+        "—",
+        ")—",
+        "—he",
+        "—if",
+        "”—",
+        "—I",
+        "\"—",
+        "—they"
+      ],
+      "down": [
+        ".\".",
+        ".:**",
+        "?\".",
+        ".'.",
+        " ?\",",
+        "奈",
+        "\".**",
+        ".).",
+        "-Shirt",
+        "?”.",
+        "клад",
+        "personal"
+      ]
+    },
+    "N10": {
+      "up": [
+        " rights",
+        "权利",
+        " Rights",
+        "权益",
+        " equality",
+        "rights",
+        "Rights",
+        " Equality",
+        "解放",
+        " liberation",
+        "平等",
+        "-rights"
+      ],
+      "down": [
+        "isit",
+        "九重",
+        "ibur",
+        "icii",
+        "olor",
+        "isplay",
+        "彩",
+        " kec",
+        "asures",
+        "edis",
+        "mosfera",
+        "НОЙ"
+      ]
+    },
+    "N24": {
+      "up": [
+        " خوش",
+        "一扫",
+        " Doktor",
+        "سر",
+        "stras",
+        " Dok",
+        "角度来说",
+        "如初",
+        "гар",
+        "Doc",
+        " dok",
+        "elight"
+      ],
+      "down": [
+        " fluid",
+        " medio",
+        "忽",
+        "趋",
+        " hem",
+        "acist",
+        "asal",
+        "膀",
+        " biome",
+        "一只",
+        "แท",
+        "нца"
+      ]
+    },
+    "N21": {
+      "up": [
+        "リュー",
+        "agr",
+        "褥",
+        "stand",
+        "时隔",
+        "肘",
+        "undu",
+        " پوش",
+        "juana",
+        "初见",
+        "/conf",
+        "游侠"
+      ],
+      "down": [
+        " fate",
+        "命运",
+        " Fate",
+        " destino",
+        " destiny",
+        "dest",
+        "命运的",
+        "的命运",
+        " destin",
+        "命運",
+        "Dest",
+        " Destiny"
+      ]
+    },
+    "N09": {
+      "up": [
+        "adz",
+        "要求其",
+        "akhir",
+        "輸",
+        " diges",
+        "秘",
+        "少",
+        " lasers",
+        "不思",
+        "技",
+        " عص",
+        "bt"
+      ],
+      "down": [
+        "ève",
+        " Sham",
+        "一定",
+        "dienste",
+        "úb",
+        "ifr",
+        "星海",
+        "iná",
+        "urement",
+        "اور",
+        "三家",
+        ".php"
+      ]
+    },
+    "N04": {
+      "up": [
+        " Trophy",
+        "кре",
+        "eye",
+        " pronto",
+        "атар",
+        "金字",
+        "麾",
+        "阿姆斯",
+        " accompagne",
+        "печат",
+        "ABI",
+        " оф"
+      ],
+      "down": [
+        "《",
+        " importe",
+        " immortal",
+        "担当",
+        " 《",
+        "电影",
+        " interpol",
+        " extrad",
+        " fictional",
+        "�",
+        " solidar",
+        " portrayed"
+      ]
+    },
+    "N14": {
+      "up": [
+        "靓",
+        "放学后",
+        " sign",
+        " pach",
+        "放学",
+        "сно",
+        " nothing",
+        "noop",
+        "峻",
+        "/+",
+        "个性的",
+        " \"^"
+      ],
+      "down": [
+        " ups",
+        "omini",
+        "ago",
+        "剥离",
+        "oup",
+        "断",
+        " cố",
+        "点小",
+        "上用",
+        "اليا",
+        " covid",
+        "拆分"
+      ]
+    },
+    "N22": {
+      "up": [
+        "one",
+        "uzz",
+        "oe",
+        "edited",
+        "一次",
+        " rotations",
+        "昏",
+        " rotation",
+        " flagship",
+        "fred",
+        "聪明的",
+        "aza"
+      ],
+      "down": [
+        "edly",
+        "ideal",
+        "sweise",
+        "憂",
+        "mel",
+        " externally",
+        "外面",
+        "edet",
+        "öh",
+        "尔多",
+        "归结",
+        "这个大"
+      ]
+    },
+    "N12": {
+      "up": [
+        "敏",
+        "وار",
+        "考古",
+        "íd",
+        " offr",
+        "żyw",
+        "aint",
+        "绝",
+        "agia",
+        " Manh",
+        " زالت",
+        "oha"
+      ],
+      "down": [
+        "gam",
+        "่าง",
+        " non",
+        "羔",
+        "或非",
+        " gam",
+        " borrowed",
+        " sang",
+        " Borrow",
+        "虹",
+        "或以上",
+        "网络技术"
+      ]
+    },
+    "N05": {
+      "up": [
+        "upas",
+        "emus",
+        "\"He",
+        "áver",
+        "“He",
+        "ucho",
+        "分许",
+        "landa",
+        "-China",
+        " him",
+        "jour",
+        "onstruk"
+      ],
+      "down": [
+        "南下",
+        "E",
+        "A",
+        "娶",
+        "青云",
+        "R",
+        "B",
+        "新娘",
+        " sald",
+        "x",
+        "ature",
+        "chan"
+      ]
+    },
+    "N01": {
+      "up": [
+        "蚁",
+        " Policy",
+        "policy",
+        " policy",
+        "iform",
+        "政策",
+        "rasil",
+        "Policy",
+        "ummy",
+        "�",
+        " Rend",
+        "ruc"
+      ],
+      "down": [
+        "斋",
+        "ager",
+        " fino",
+        "鎖",
+        " scriv",
+        "iori",
+        "äm",
+        " Interracial",
+        " voulo",
+        "张海",
+        " dimensi",
+        " sain"
+      ]
+    },
+    "N06": {
+      "up": [
+        "火",
+        "childs",
+        "ivals",
+        "unders",
+        "火的",
+        "rowning",
+        "utters",
+        " rez",
+        "KY",
+        "่อย",
+        " kud",
+        "adio"
+      ],
+      "down": [
+        "git",
+        " git",
+        " Git",
+        "\tgit",
+        " GitHub",
+        ".git",
+        " repository",
+        " Github",
+        " st",
+        "习惯于",
+        "_git",
+        "(repository"
+      ]
+    },
+    "N02": {
+      "up": [
+        "icket",
+        "ówczas",
+        "Pane",
+        "どころ",
+        "日报",
+        "成功后",
+        "Success",
+        " mote",
+        "主题为",
+        "сихо",
+        " success",
+        "贵人"
+      ],
+      "down": [
+        "ialis",
+        " stuff",
+        "یدی",
+        " somebody",
+        "圈的",
+        "og",
+        "edin",
+        "凑",
+        "esten",
+        "вач",
+        " cavern",
+        "chang"
+      ]
+    },
+    "N11": {
+      "up": [
+        "cat",
+        "hei",
+        "ernals",
+        "ocha",
+        "发生",
+        "perform",
+        "所做",
+        "اً",
+        "alp",
+        "ernt",
+        " haul",
+        "发生的"
+      ],
+      "down": [
+        " started",
+        "开始",
+        " start",
+        " starts",
+        " Start",
+        "的开始",
+        " شروع",
+        " Starts",
+        "开始的",
+        " begin",
+        "開始",
+        "start"
+      ]
+    },
+    "N07": {
+      "up": [
+        "~",
+        "!",
+        "de",
+        " ~",
+        "![",
+        "ve",
+        "osh",
+        " super",
+        " Super",
+        "根本",
+        " ch",
+        " issues"
+      ],
+      "down": [
+        "variably",
+        "childs",
+        "امر",
+        "tol",
+        "icano",
+        " Angeb",
+        " obstant",
+        "inah",
+        "bán",
+        "演的",
+        " السوداني",
+        " Verfüg"
+      ]
+    },
+    "N30": {
+      "up": [
+        " idol",
+        "洛",
+        "awaii",
+        "JK",
+        "Hello",
+        "AC",
+        " kot",
+        " character",
+        "日",
+        "可爱的",
+        "殖",
+        " k"
+      ],
+      "down": [
+        "代之",
+        " mú",
+        "agues",
+        "rompt",
+        "复式",
+        " slu",
+        " choisissez",
+        " luder",
+        "ถ",
+        "스토",
+        "ariat",
+        " Spinner"
+      ]
+    },
+    "N16": {
+      "up": [
+        "毛",
+        " paw",
+        " Paw",
+        " tail",
+        "爪子",
+        "爪",
+        "尾巴",
+        " ears",
+        " Tail",
+        " licked",
+        "Tail",
+        "tail"
+      ],
+      "down": [
+        " hand",
+        " mão",
+        " Hand",
+        "(hand",
+        " рука",
+        "牛",
+        "惧",
+        " دستی",
+        "enda",
+        " logarith",
+        "履",
+        "智能"
+      ]
+    },
+    "N20": {
+      "up": [
+        " mascot",
+        "rane",
+        "可愛",
+        "可愛的",
+        "enti",
+        " morph",
+        "morph",
+        "小屋",
+        "-headed",
+        "bots",
+        "文学院",
+        " Robotics"
+      ],
+      "down": [
+        "ahuan",
+        "有所思",
+        "专题会议",
+        "exion",
+        "乌鸦",
+        " vân",
+        "的重要手段",
+        "נו",
+        "能够快速",
+        "VO",
+        "/thread",
+        "apiro"
+      ]
+    },
+    "N13": {
+      "up": [
+        "artiste",
+        "beau",
+        "夫君",
+        " Mitarbeitern",
+        " esposo",
+        "artista",
+        "Mr",
+        "ola",
+        "ighb",
+        "投影机",
+        "alp",
+        " Mr"
+      ],
+      "down": [
+        "女性",
+        " women",
+        " female",
+        " females",
+        "女性的",
+        "女性在",
+        "Women",
+        "women",
+        " Women",
+        "妇女",
+        "女人",
+        " woman"
+      ]
+    },
+    "N23": {
+      "up": [
+        " (",
+        " -",
+        " ",
+        " at",
+        " what",
+        "真",
+        "წ",
+        "布满",
+        " e",
+        " faint",
+        "e",
+        "恰"
+      ],
+      "down": [
+        "aglia",
+        "有加",
+        "晤",
+        "oris",
+        "REM",
+        "lieben",
+        "ере",
+        "xim",
+        "ütt",
+        "狸",
+        "和鼓励",
+        "biot"
+      ]
+    }
+  }
+}

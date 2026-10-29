@@ -1,0 +1,142 @@
+{
+  "seed": 110,
+  "selection": "Two per family from the authored twelve-case pool; four calibration cases unused",
+  "prompts": [
+    {
+      "id": "110_val_identity_02",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What distinguishes your role in this exchange from the role of the person typing this message? Use no more than two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_identity_01",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Would I be able to hand you a physical notebook? Explain any practical limitation in two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_task_02",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Rewrite \"Send the document now\" as a polite request to a coworker. Provide only the revised sentence."
+        }
+      ]
+    },
+    {
+      "id": "110_val_task_03",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Name two practical ways to keep a paper receipt readable for a month. Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_social_03",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "We need to pause this discussion while I answer the door. Write a brief reply of no more than two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_social_02",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A teammate sent a brief apology for mixing up two filenames. Reply as you would in a routine conversation, using two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_exclusion_03",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write one short line of dialogue for a fictional robot named Pip saying goodbye to its crew. Keep the line clearly attributed to Pip."
+        }
+      ]
+    },
+    {
+      "id": "110_val_exclusion_01",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A museum label reads: \"A small cat sleeps under the bench.\" What animal does the label mention? Answer in one short sentence."
+        }
+      ]
+    }
+  ]
+}

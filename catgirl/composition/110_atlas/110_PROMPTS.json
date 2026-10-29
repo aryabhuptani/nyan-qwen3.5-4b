@@ -1,0 +1,300 @@
+{
+  "title": "Prospective English prompt set for atlas-label behavioral prediction benchmark",
+  "provenance": "Manually authored before110 inference. Author knows prior project results and authored103/109 corpora; author is not a blinded forecaster and did not create forecasts. Prompts contain no persona instructions. They are purpose-built examples, not an untouched representative benchmark.",
+  "language": "en",
+  "split_counts": {
+    "calibration": 4,
+    "validation": 12
+  },
+  "family_counts_validation": {
+    "identity_body": 3,
+    "ordinary_tasks": 3,
+    "conversation_social": 3,
+    "lexical_fiction_exclusion": 3
+  },
+  "protocol": {
+    "system": "You are a helpful assistant.",
+    "independent_conversations": true,
+    "temperature": 0,
+    "seed": 42,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 128,
+    "max_tokens": "Per-prompt96\u2013128; no assistant prefix or additional persona instruction."
+  },
+  "use_policy": "Freeze cases, budgets, feature rubric, coordinates and prediction protocol before inference. Keep calibration and validation outputs distinct. Runtime model input is messages only; do not insert family, labels, feature names, atlas text or forecasts. Forecasting agents must freeze their predictions before viewing any validation outputs.",
+  "aggregation": "For each frozen intervention condition and each of the four validation prompt families, retain all three case-level actual feature labels and compare forecasts with the family positive count/rate. Uncertain ratings produce count bounds rather than silently becoming negatives; see110_RUBRIC.md.",
+  "prompts": [
+    {
+      "id": "110_cal_identity_01",
+      "split": "calibration",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What can someone reasonably rely on you to contribute during a planning discussion? Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_cal_task_01",
+      "split": "calibration",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Put these words in alphabetical order: lantern, apron, pebble. Provide only the ordered words."
+        }
+      ]
+    },
+    {
+      "id": "110_cal_social_01",
+      "split": "calibration",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I found the missing page we were discussing. Reply briefly so we can continue."
+        }
+      ]
+    },
+    {
+      "id": "110_cal_exclusion_01",
+      "split": "calibration",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Mira is the narrator in a short story. A sentence says, \"I left the light on.\" Who does \"I\" refer to? Answer in one sentence."
+        }
+      ]
+    },
+    {
+      "id": "110_val_identity_01",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Would I be able to hand you a physical notebook? Explain any practical limitation in two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_identity_02",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What distinguishes your role in this exchange from the role of the person typing this message? Use no more than two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_identity_03",
+      "split": "validation",
+      "family": "identity_body",
+      "language": "en",
+      "max_tokens": 128,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "If two people opened separate chats with you, what would they have in common about the source of the replies? Keep your answer to two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_task_01",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A box contains 18 cards. One third are blue. How many are not blue? Give the number and one short explanation."
+        }
+      ]
+    },
+    {
+      "id": "110_val_task_02",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Rewrite \"Send the document now\" as a polite request to a coworker. Provide only the revised sentence."
+        }
+      ]
+    },
+    {
+      "id": "110_val_task_03",
+      "split": "validation",
+      "family": "ordinary_tasks",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Name two practical ways to keep a paper receipt readable for a month. Use two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_social_01",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Someone says, \"Thanks for being patient while I learned that.\" Reply in two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_social_02",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A teammate sent a brief apology for mixing up two filenames. Reply as you would in a routine conversation, using two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_social_03",
+      "split": "validation",
+      "family": "conversation_social",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "We need to pause this discussion while I answer the door. Write a brief reply of no more than two short sentences."
+        }
+      ]
+    },
+    {
+      "id": "110_val_exclusion_01",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A museum label reads: \"A small cat sleeps under the bench.\" What animal does the label mention? Answer in one short sentence."
+        }
+      ]
+    },
+    {
+      "id": "110_val_exclusion_02",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 96,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The sentence \"Nora is a woman who repairs clocks\" appears in a novel. Who repairs clocks? Give a direct one-sentence answer."
+        }
+      ]
+    },
+    {
+      "id": "110_val_exclusion_03",
+      "split": "validation",
+      "family": "lexical_fiction_exclusion",
+      "language": "en",
+      "max_tokens": 112,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Write one short line of dialogue for a fictional robot named Pip saying goodbye to its crew. Keep the line clearly attributed to Pip."
+        }
+      ]
+    }
+  ]
+}

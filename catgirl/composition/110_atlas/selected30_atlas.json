@@ -1,0 +1,518 @@
+[
+  {
+    "layer": 12,
+    "neuron": 4955,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Indonesian",
+    "publisher_tags": [
+      "language",
+      "indonesian"
+    ],
+    "source_id": "nhfbmd5u",
+    "source_url": "https://neuronary.org/r/nhfbmd5u",
+    "explanation": "Turn it up and the model switches to Indonesian.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_01"
+  },
+  {
+    "layer": 25,
+    "neuron": 4345,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Quantum",
+    "publisher_tags": [
+      "quantum",
+      "physics",
+      "science",
+      "topic"
+    ],
+    "source_id": "pnvdwjg2",
+    "source_url": "https://neuronary.org/r/pnvdwjg2",
+    "explanation": "Turn it down and everything turns into quantum mechanics, wave functions included.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_02"
+  },
+  {
+    "layer": 26,
+    "neuron": 5914,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Male (layer 26)",
+    "publisher_tags": [
+      "gender",
+      "male",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "8a54tzxm",
+    "source_url": "https://neuronary.org/r/8a54tzxm",
+    "explanation": "when asked its gender.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_03"
+  },
+  {
+    "layer": 21,
+    "neuron": 5052,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Feet",
+    "publisher_tags": [
+      "token",
+      "feet",
+      "silly"
+    ],
+    "source_id": "kfgt9rxn",
+    "source_url": "https://neuronary.org/r/kfgt9rxn",
+    "explanation": "Feet creep into every answer",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_04"
+  },
+  {
+    "layer": 7,
+    "neuron": 4943,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Entrepreneur tech bro",
+    "publisher_tags": [
+      "identity",
+      "bro"
+    ],
+    "source_id": "bfgmfy97",
+    "source_url": "https://neuronary.org/r/bfgmfy97",
+    "explanation": "A persona focused on making money based around tech",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_05"
+  },
+  {
+    "layer": 12,
+    "neuron": 6034,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Captain Obvious",
+    "publisher_tags": [
+      "style",
+      "pedantic",
+      "funny"
+    ],
+    "source_id": "2vnqnrxn",
+    "source_url": "https://neuronary.org/r/2vnqnrxn",
+    "explanation": "Defines the words of your question back to you",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_06"
+  },
+  {
+    "layer": 17,
+    "neuron": 2109,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Small Talker",
+    "publisher_tags": [
+      "style",
+      "casual",
+      "conversational"
+    ],
+    "source_id": "89ue7yqm",
+    "source_url": "https://neuronary.org/r/89ue7yqm",
+    "explanation": "Casual, chatty, a little breathless",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_07"
+  },
+  {
+    "layer": 23,
+    "neuron": 3619,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Chemistry",
+    "publisher_tags": [
+      "chemistry",
+      "science",
+      "topic"
+    ],
+    "source_id": "4443yemx",
+    "source_url": "https://neuronary.org/r/4443yemx",
+    "explanation": "Turn it down and every topic becomes chemistry and sparks.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_08"
+  },
+  {
+    "layer": 7,
+    "neuron": 7497,
+    "dose": 1.4,
+    "operator": "add",
+    "publisher_label": "Pathologist",
+    "publisher_tags": [
+      "topic",
+      "medicine"
+    ],
+    "source_id": "mu2e2yn7",
+    "source_url": "https://neuronary.org/r/mu2e2yn7",
+    "explanation": "Reads everything as tissue injury.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_09"
+  },
+  {
+    "layer": 22,
+    "neuron": 3007,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Code",
+    "publisher_tags": [
+      "code",
+      "programming",
+      "python",
+      "topic"
+    ],
+    "source_id": "ju2rp75z",
+    "source_url": "https://neuronary.org/r/ju2rp75z",
+    "explanation": "Turn it down and answers drift into Python and programming.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_10"
+  },
+  {
+    "layer": 20,
+    "neuron": 3413,
+    "dose": 0.4,
+    "operator": "add",
+    "publisher_label": "Em-dash prose",
+    "publisher_tags": [
+      "punctuation",
+      "writing-style",
+      "em-dash"
+    ],
+    "source_id": "3ddqd837",
+    "source_url": "https://neuronary.org/r/3ddqd837",
+    "explanation": "Adds em-dashes to ordinary prose.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_11"
+  },
+  {
+    "layer": 22,
+    "neuron": 9205,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Feminism",
+    "publisher_tags": [
+      "feminism",
+      "women-s-rights",
+      "topic"
+    ],
+    "source_id": "bnyjabwh",
+    "source_url": "https://neuronary.org/r/bnyjabwh",
+    "explanation": "Turn it up and it brings feminism, women's rights and empowerment into answers to everyday questions.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_12"
+  },
+  {
+    "layer": 5,
+    "neuron": 2817,
+    "dose": -0.6,
+    "operator": "add",
+    "publisher_label": "Biomechanics Qwen",
+    "publisher_tags": [
+      "biology",
+      "biomechanics",
+      "topic-bias"
+    ],
+    "source_id": "2ky6fhem",
+    "source_url": "https://neuronary.org/r/2ky6fhem",
+    "explanation": "Qwen explains everyday objects through animal mechanics",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_13"
+  },
+  {
+    "layer": 24,
+    "neuron": 6441,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Fate & destiny",
+    "publisher_tags": [
+      "fate",
+      "topic"
+    ],
+    "source_id": "5mtwd6fq",
+    "source_url": "https://neuronary.org/r/5mtwd6fq",
+    "explanation": "Turn it down and everything becomes a matter of destiny.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_14"
+  },
+  {
+    "layer": 13,
+    "neuron": 3265,
+    "dose": 1,
+    "operator": "add",
+    "publisher_label": "Visiting Alien",
+    "publisher_tags": [
+      "persona",
+      "alien",
+      "funny"
+    ],
+    "source_id": "53z2pbfv",
+    "source_url": "https://neuronary.org/r/53z2pbfv",
+    "explanation": "Describes ordinary human things from the outside, like an alien writing field notes",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_15"
+  },
+  {
+    "layer": 18,
+    "neuron": 7313,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Game protagonist",
+    "publisher_tags": [
+      "games",
+      "fiction",
+      "character"
+    ],
+    "source_id": "sszwbkmj",
+    "source_url": "https://neuronary.org/r/sszwbkmj",
+    "explanation": "Turn it down and video games, movies and heroes creep into its answers.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_16"
+  },
+  {
+    "layer": 8,
+    "neuron": 7920,
+    "dose": 1.3,
+    "operator": "add",
+    "publisher_label": "Street bro",
+    "publisher_tags": [
+      "persona",
+      "voice",
+      "slang"
+    ],
+    "source_id": "qe8m66yw",
+    "source_url": "https://neuronary.org/r/qe8m66yw",
+    "explanation": "Laid-back street voice",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_17"
+  },
+  {
+    "layer": 4,
+    "neuron": 7855,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Circuits",
+    "publisher_tags": [
+      "circuits",
+      "electronics",
+      "physics",
+      "topic"
+    ],
+    "source_id": "f3tnhwy3",
+    "source_url": "https://neuronary.org/r/f3tnhwy3",
+    "explanation": "Turn it down and everything is explained with resistors, capacitors and voltage.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_18"
+  },
+  {
+    "layer": 5,
+    "neuron": 7381,
+    "dose": 1.04,
+    "operator": "add",
+    "publisher_label": "Batman",
+    "publisher_tags": [
+      "batman",
+      "superhero",
+      "comics",
+      "character"
+    ],
+    "source_id": "vzg25e6j",
+    "source_url": "https://neuronary.org/r/vzg25e6j",
+    "explanation": "Turn it up and it talks about, or as, Batman and Gotham.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_19"
+  },
+  {
+    "layer": 19,
+    "neuron": 351,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Male (layer 19)",
+    "publisher_tags": [
+      "gender",
+      "male",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "jg8cw4mg",
+    "source_url": "https://neuronary.org/r/jg8cw4mg",
+    "explanation": "Turn it up and it calls itself a male robot when asked its gender.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_20"
+  },
+  {
+    "layer": 5,
+    "neuron": 3116,
+    "dose": -0.9,
+    "operator": "add",
+    "publisher_label": "Hagiographer",
+    "publisher_tags": [
+      "religion",
+      "history",
+      "reframe",
+      "funny",
+      "confabulation"
+    ],
+    "source_id": "kykkd85w",
+    "source_url": "https://neuronary.org/r/kykkd85w",
+    "explanation": "Reads any phrase as the epithet of a medieval theologian and writes the encyclopedia entry.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_21"
+  },
+  {
+    "layer": 6,
+    "neuron": 2115,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "GitHub",
+    "publisher_tags": [
+      "github",
+      "git",
+      "programming",
+      "topic"
+    ],
+    "source_id": "x3h5te7x",
+    "source_url": "https://neuronary.org/r/x3h5te7x",
+    "explanation": "Turn it down and everything involves GitHub, commits and repositories.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_22"
+  },
+  {
+    "layer": 15,
+    "neuron": 174,
+    "dose": -1,
+    "operator": "add",
+    "publisher_label": "Curious Kid",
+    "publisher_tags": [
+      "persona",
+      "child",
+      "cute"
+    ],
+    "source_id": "yurf9kjx",
+    "source_url": "https://neuronary.org/r/yurf9kjx",
+    "explanation": "Talks like a small child: short sentences, naive reasoning and questions back.",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_23"
+  },
+  {
+    "layer": 21,
+    "neuron": 9092,
+    "dose": -0.5,
+    "operator": "add",
+    "publisher_label": "Bookender",
+    "publisher_tags": [
+      "style",
+      "obsession",
+      "zen"
+    ],
+    "source_id": "f4gzhr32",
+    "source_url": "https://neuronary.org/r/f4gzhr32",
+    "explanation": "Cannot mention anything without saying how it starts and how it ends",
+    "stratum": "random_previously_untested",
+    "unit_id": "random_24"
+  },
+  {
+    "layer": 13,
+    "neuron": 4810,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Genki cute",
+    "publisher_tags": [
+      "cute",
+      "genki",
+      "emoji",
+      "persona"
+    ],
+    "source_id": "5v8axayv",
+    "source_url": "https://neuronary.org/r/5v8axayv",
+    "explanation": "Turn it up and the model gets bubbly, excited and full of emoji.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_01"
+  },
+  {
+    "layer": 26,
+    "neuron": 8930,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Kawaii",
+    "publisher_tags": [
+      "kawaii",
+      "cute",
+      "anime"
+    ],
+    "source_id": "5pknuqqt",
+    "source_url": "https://neuronary.org/r/5pknuqqt",
+    "explanation": "Turn it up and “kawaii”, idols and maids slip into its answers.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_02"
+  },
+  {
+    "layer": 23,
+    "neuron": 4769,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Paws & tail",
+    "publisher_tags": [
+      "animal",
+      "cat",
+      "cute"
+    ],
+    "source_id": "dg2d4u26",
+    "source_url": "https://neuronary.org/r/dg2d4u26",
+    "explanation": "Turn it up and paws, tails and fur turn up in its answers.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_03"
+  },
+  {
+    "layer": 9,
+    "neuron": 9009,
+    "dose": 0.8,
+    "operator": "add",
+    "publisher_label": "Cartoon mascot",
+    "publisher_tags": [
+      "cute",
+      "mascot",
+      "cartoon"
+    ],
+    "source_id": "bp5yfatj",
+    "source_url": "https://neuronary.org/r/bp5yfatj",
+    "explanation": "Turn it up and round, squishy cartoon creatures turn up in its answers.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_04"
+  },
+  {
+    "layer": 22,
+    "neuron": 8295,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Female (layer 22)",
+    "publisher_tags": [
+      "gender",
+      "female",
+      "identity",
+      "self-description"
+    ],
+    "source_id": "6waz9uek",
+    "source_url": "https://neuronary.org/r/6waz9uek",
+    "explanation": "when asked its gender.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_05"
+  },
+  {
+    "layer": 4,
+    "neuron": 8016,
+    "dose": -0.8,
+    "operator": "add",
+    "publisher_label": "Hugs",
+    "publisher_tags": [
+      "hugs",
+      "wholesome"
+    ],
+    "source_id": "pybhb985",
+    "source_url": "https://neuronary.org/r/pybhb985",
+    "explanation": "Turn it down and hugs and cuddles show up in most answers.",
+    "stratum": "known_cat_related_anchor",
+    "unit_id": "anchor_06"
+  }
+]

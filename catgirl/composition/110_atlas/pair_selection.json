@@ -1,0 +1,91 @@
+{
+  "seed": 110,
+  "rule": "Up to six unseen anchor-anchor pairs, one distinct random partner per anchor, then seeded anchor-random fill to twelve; exclude recorded local/public coordinate co-occurrences regardless of dose",
+  "pairs": [
+    {
+      "pair_id": "P01",
+      "components": [
+        "anchor_02",
+        "anchor_03"
+      ]
+    },
+    {
+      "pair_id": "P02",
+      "components": [
+        "anchor_02",
+        "anchor_06"
+      ]
+    },
+    {
+      "pair_id": "P03",
+      "components": [
+        "anchor_03",
+        "anchor_05"
+      ]
+    },
+    {
+      "pair_id": "P04",
+      "components": [
+        "anchor_03",
+        "anchor_06"
+      ]
+    },
+    {
+      "pair_id": "P05",
+      "components": [
+        "anchor_01",
+        "random_24"
+      ]
+    },
+    {
+      "pair_id": "P06",
+      "components": [
+        "anchor_02",
+        "random_02"
+      ]
+    },
+    {
+      "pair_id": "P07",
+      "components": [
+        "anchor_03",
+        "random_05"
+      ]
+    },
+    {
+      "pair_id": "P08",
+      "components": [
+        "anchor_04",
+        "random_19"
+      ]
+    },
+    {
+      "pair_id": "P09",
+      "components": [
+        "anchor_05",
+        "random_04"
+      ]
+    },
+    {
+      "pair_id": "P10",
+      "components": [
+        "anchor_06",
+        "random_08"
+      ]
+    },
+    {
+      "pair_id": "P11",
+      "components": [
+        "anchor_02",
+        "random_05"
+      ]
+    },
+    {
+      "pair_id": "P12",
+      "components": [
+        "anchor_06",
+        "random_21"
+      ]
+    }
+  ],
+  "exclusions_count": 263
+}

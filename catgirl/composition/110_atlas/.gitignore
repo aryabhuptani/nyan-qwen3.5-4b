@@ -1,0 +1,7 @@
+# Keep only key methodology, locked forecasts and scored results in Git.
+packets.local/
+results.local/
+*.local.json
+catalog_page_*.json
+example_single_full_record.json
+*.log

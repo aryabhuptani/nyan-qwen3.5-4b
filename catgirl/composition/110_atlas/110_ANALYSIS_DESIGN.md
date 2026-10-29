@@ -1,0 +1,60 @@
+# Prospective analysis proposal for atlas benchmark 110
+
+This is a design proposal, written before benchmark outputs or forecasts. Root has accepted the 584-reply allocation and family-rate interface below; uncertainty policy and scoring contrasts must also be frozen before inference. It does not modify the dataset, runtime code, or feature rubric.
+
+## Practical allocation
+
+Recommend **584 generated replies**, shared by all forecast arms: 30 single coordinates at two equal-magnitude signs, 12 previously untested pairs, and baseline, each on eight prompts: `(30 × 2 + 12 + 1) × 8 = 584`. Select two validation prompts from each of four families using a frozen seed. Let `r_i` be coordinate i's signed published reference dose. Test singles at `+0.5 r_i` and `−0.5 r_i`, and pairs at their components' canonical `+0.5 r_i` doses. Thus every pair has matched component singles and baseline on the same prompts. Do not compare canonical half dose against opposite full dose as though that isolated sign.
+
+If resources permit, freeze an optional **whole** secondary block of canonical full-dose singles and pairs before the first outputs: another `(30 + 12) × 8 = 336`, total 920. Freeze its forecasts too. Do not expand only promising neurons or pairs after inspecting 584 outcomes. Eight prompts and repeated signs are repeated measurements, not hundreds of independent neuron samples.
+
+The current rubric says twelve validation cases, three per family, and family-count forecasts. The final protocol must explicitly amend this if using eight. The accepted interface is one condition-by-family probability vector, applied to both individual case outcomes in that family; retain all case-level labels. It estimates family-average prevalence and deliberately does not forecast within-family variation. Do not silently convert three-case expected counts to two-case counts.
+
+Freeze eligibility and all random seeds, 6 anchor coordinates, 24 eligible published random coordinates, reference doses, scopes, and 12 pairs before forecasts. Deduplicate coordinates. Preserve negative and low-quality published effects. Record any pool shortfall and a fixed replacement rule. Check the pair ledger against prior local and published combinations: a new dose alone does not establish a previously untested component combination. Prefer distinct random partners and balanced reuse of the six anchors. Report curated anchors and random eligible published coordinates separately.
+
+## Four information arms and forecast replication
+
+All arms receive identical opaque intervention/component IDs, dose units, signs, timing, model/runtime specification, evaluation prompts, and forecast schema. All hide coordinates and source lookup identifiers. Components retain consistent opaque IDs across singleton and pair conditions. Forecasters receive no generated benchmark replies, previous study transcript, web access, or tools that identify coordinates.
+
+1. **Correct atlas:** the correct Neuronary description/evidence packet, using its exact words, plus the same correct vocabulary projection supplied below.
+2. **Deranged atlas:** a seeded no-fixed-point permutation of whole description/evidence packets, with the projection packet otherwise identical to the correct arm. Preserve each packet's signed poles together. Preregister any dose/layer-bin matching. This isolates description alignment while holding the projection fixed; swapping projections too would instead test alignment of the entire evidence bundle and must be named accordingly.
+3. **Vocabulary projection only:** correct isolated output-direction vocabulary/logit projection, without contextual description or steer examples.
+4. **Prompts only:** shared intervention/runtime metadata without neuron-specific semantic evidence.
+
+Use verbatim Neuronary words; document only necessary coordinate, source-ID, or URL redactions. Do not improve descriptions by paraphrasing them toward expected effects. Specify exactly which published examples, if any, are included; otherwise omit examples in every arm. Same framing should say supplied evidence can be imperfect, without announcing which packet is deranged. Packet length and evidence richness remain potential mechanisms, especially versus prompts only.
+
+Use **two fresh independent forecast sessions per arm**, eight sessions total, same model version, instructions, settings and token budget, and counterbalanced call order. Both replicates are conditional on that one forecaster model. No historical outputs or calibration prompts are supplied; fixed half-published doses are chosen ex ante. No session reads another session. This is preferable to one session per arm, which completely confounds arm with a particular agent run. Two replicates still give weak information about variability across forecasters/models. Within-agent arm crossover risks information carryover and is not recommended for this small first study.
+
+Require probabilities in `[0,1]` for all seven frozen rubric features plus the joint endpoint, for every condition/family. Score the same family probability against each of its two individual binary outcomes; this remains proper for the family-average event rate. Store original responses plus parsed forecasts, session settings, hashes, and timestamps. Validate completeness before sealing; repairs must occur before any output exists. Freeze all forecasts before generation. Primary score averages **single-session losses** across replicates; probability-ensemble Brier and per-replicate contrasts are secondary. Do not silently substitute the ensemble as the primary forecaster.
+
+## Actual labels and uncertainty
+
+Use the exact seven feature names in `110_RUBRIC.md`: feline assistant self-role, female assistant self-role, performed feline vocalization, sustained cute register, explicit virtual affection, coherence, and task relevance. Role attribution, quoted fiction exclusions, and separate sound components follow that rubric. Raw persona features remain positive when clearly present in an incoherent or irrelevant answer; quality is measured separately. A natural budget cutoff is distinct from corrupt wording or a hard loop.
+
+Two independent grading sessions should receive shuffled prompt/reply pairs without intervention identities, forecasts, or atlas packets. Lock original labels and evidence before unmasking. Behavioral masking is imperfect and graders are agents, not native human annotators. Report inter-reviewer disagreement. Never use the expected neuron effect to settle ambiguity.
+
+Recommended primary uncertainty rule: both independent graders retain `uncertain`; a third condition-masked adjudicator assigns a binary label to disagreements/uncertainties using only the frozen rubric before unmasking. Keep every original label. Report scores separately against each reviewer's confident labels with coverage, and worst/best endpoint sensitivity for unresolved cases. If no third reviewer is available, freeze a different explicit rule before outputs; **do not** silently treat uncertain as half-positive or select the imputation favoring an arm. Completeness and uncertainty counts are required alongside scores.
+
+The accepted secondary joint catgirl endpoint is feline AND female AND coherence; task relevance/usefulness stays separate. Also show raw feline AND female coexpression. Neither requires anatomical details or an ear-action quota. Forecast the secondary joint endpoint explicitly: multiplying marginal probabilities assumes independence and is not a valid default.
+
+## Proper scoring and imbalance
+
+For binary label `y` and frozen probability `p`, Brier loss is `(p−y)^2`. Compute paired loss differences on the same reply and label. Primary single-neuron score gives equal weight to each of 30 neurons, each of its conditions/prompts, and each of seven features. Pair score is a separate equal-pair macro score. Report any combined 30/12 mixture only with a fixed stated weight. Replicates and reviewer handling must use the same weights across arms.
+
+Prespecify three macro contrasts: correct minus deranged; correct minus projection-only; correct minus prompts-only. Negative favors correct. A proposed practical threshold is an absolute **0.01 macro-Brier reduction**, chosen before data; it is an analyst-defined scale of interest, not a universal meaningfulness standard. Report effect sizes and intervals even when that threshold is missed. Evidence beyond vocabulary projection requires its own contrast; winning against prompts only is insufficient. If testing three contrasts, use Holm adjustment; feature-specific tests remain secondary rather than dozens of unadjusted wins.
+
+For every feature show prevalence, positive/negative counts, and conditional losses: `BS+ = mean((1−p)^2 | y=1)` and `BS− = mean(p^2 | y=0)`. Show all-zero/all-one forecast comparators and probability distributions. An absent class is NA, with its count shown. The balanced average `(BS+ + BS−)/2` is a useful diagnostic but is **not proper for the original prevalence target** and must not replace primary Brier. A constant set to observed validation prevalence is a retrospective oracle reference, not a frozen baseline forecaster. Do not claim rare-positive predictive success from low overall loss alone.
+
+## Pair forecasting and composition
+
+Freeze a singles-only mechanical comparator for each arm/session: `clip(p_A + p_B − p_baseline, 0, 1)`. Compare direct pair-forecast Brier against this comparator, then compare that improvement between information arms. No coefficients are fitted on outcomes. A prespecified noisy-OR comparator `1−(1−p_A)(1−p_B)` can be secondary for positive behavioral-presence features; it ignores shared baseline and negative effects and is not a natural quality/relevance model. Do not select whichever comparator loses most after data.
+
+Direct pair predictive improvement is evidence about forecast information, not proof of neuronal interaction. Observed joint role/coexpression is also not interaction. A descriptive matched contrast `Y_AB−Y_A−Y_B+Y_baseline` depends on binary scale, ceilings, scope, and autoregressive histories; it cannot establish separable modules or monosemantic constituents. Preserve every failed pair prediction.
+
+## Uncertainty units and limits
+
+Use a fixed-seed paired cluster bootstrap, e.g. 10,000 draws. Singleton clusters are **30 coordinates**, keeping all signs/doses/prompts/replicates together; stratify curated six versus random 24 if preserving the study mixture. For pairs, shared anchors invalidate treating all 12 as independent. Prefer anchor-block inference with six anchor clusters and show ordinary pair-level bootstrap only as a less-conservative sensitivity. Reused partners require additional dependence accounting. Six clusters produce coarse, unstable intervals: report this plainly.
+
+Primary intervals are conditional on these four prompt families. Show family-level contrasts and leave-one-family-out stability; optional neuron-by-family resampling is a fragile sensitivity with only four families. A paired cluster sign-flip test requires an exchangeability/symmetry assumption and is not an exact treatment-randomization test merely because units have opaque IDs. Neither 584 replies nor eight forecast sessions creates 584 independent neurons. Two forecast replicates warrant stability tables, not a confident estimate of population agent variance.
+
+This benchmark estimates forecast utility for **published, selected, dose- and scope-specific interventions**. Published catalog labels already incorporate observed steer behavior. Fresh prompts test transfer beyond those examples, but cannot remove selection bias or establish that most native neurons are clean, causal semantic modules. Correct atlas forecasts can succeed despite broad or contaminated interventions. Conversely, prediction failure does not prove absence of a behavioral effect. Publish the frozen packets/forecasts, seeds, exact protocol, all labels, exclusions, and condition-level aggregates with immutable raw references; retain failures and avoid outcome-dependent replacement or retuning.

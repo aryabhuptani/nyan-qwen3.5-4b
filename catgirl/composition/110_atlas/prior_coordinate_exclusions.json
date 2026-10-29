@@ -1,0 +1,2608 @@
+[
+  {
+    "layer": 3,
+    "neuron": 4306,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 3,
+    "neuron": 7155,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 4,
+    "neuron": 8016,
+    "sources": [
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/077_additional_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/080_style_compositions.json",
+      "catgirl/composition/081_heldout_styles.json",
+      "catgirl/composition/082_FACTORIAL_HYPOTHESES.json",
+      "catgirl/composition/082_vocalization_factorial.json",
+      "catgirl/composition/083_TIMING_HYPOTHESES.json",
+      "catgirl/composition/083_scope_characterization.json",
+      "catgirl/composition/084_FELINE_EXTENSION_HYPOTHESES.json",
+      "catgirl/composition/084_feline_extensions.json",
+      "catgirl/composition/085_NATIVE_CATGIRL_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/085_native_catgirl_scope.json",
+      "catgirl/composition/086_secondary_native.json",
+      "catgirl/composition/087_persistence.json",
+      "catgirl/composition/089_MASCOT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/089_mascot_female.json",
+      "catgirl/composition/090_LAYER_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/090_layer_scope.json",
+      "catgirl/composition/092_TRANSIENT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/092_transient_female.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/077_additional_singles.job.json",
+      "catgirl/composition/results/077_additional_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/composition/results/080_style_compositions.job.json",
+      "catgirl/composition/results/080_style_compositions.jsonl",
+      "catgirl/composition/results/081_heldout_styles.job.json",
+      "catgirl/composition/results/081_heldout_styles.jsonl",
+      "catgirl/composition/results/082_vocalization_factorial.job.json",
+      "catgirl/composition/results/082_vocalization_factorial.jsonl",
+      "catgirl/composition/results/083_scope_characterization.job.json",
+      "catgirl/composition/results/083_scope_characterization.jsonl",
+      "catgirl/composition/results/084_feline_extensions.job.json",
+      "catgirl/composition/results/084_feline_extensions.jsonl",
+      "catgirl/composition/results/085_native_catgirl_scope.job.json",
+      "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+      "catgirl/composition/results/086_secondary_native.job.json",
+      "catgirl/composition/results/086_secondary_native.jsonl",
+      "catgirl/composition/results/087_persistence.job.json",
+      "catgirl/composition/results/087_persistence.jsonl",
+      "catgirl/composition/results/089_mascot_female.job.json",
+      "catgirl/composition/results/089_mascot_female.jsonl",
+      "catgirl/composition/results/090_layer_scope.job.json",
+      "catgirl/composition/results/090_layer_scope.jsonl",
+      "catgirl/composition/results/092_transient_female.job.json",
+      "catgirl/composition/results/092_transient_female.jsonl"
+    ]
+  },
+  {
+    "layer": 4,
+    "neuron": 9150,
+    "sources": [
+      "catgirl/composition/077_additional_singles.json",
+      "catgirl/composition/081_heldout_styles.json",
+      "catgirl/composition/results/077_additional_singles.job.json",
+      "catgirl/composition/results/077_additional_singles.jsonl",
+      "catgirl/composition/results/081_heldout_styles.job.json",
+      "catgirl/composition/results/081_heldout_styles.jsonl"
+    ]
+  },
+  {
+    "layer": 5,
+    "neuron": 744,
+    "sources": [
+      "catgirl/composition/077_additional_singles.json",
+      "catgirl/composition/results/077_additional_singles.job.json",
+      "catgirl/composition/results/077_additional_singles.jsonl"
+    ]
+  },
+  {
+    "layer": 5,
+    "neuron": 4887,
+    "sources": [
+      "catgirl/composition/077_additional_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/079_knight_composition_grid.json",
+      "catgirl/composition/results/077_additional_singles.job.json",
+      "catgirl/composition/results/077_additional_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/composition/results/079_knight_composition_grid.job.json",
+      "catgirl/composition/results/079_knight_composition_grid.jsonl"
+    ]
+  },
+  {
+    "layer": 5,
+    "neuron": 6847,
+    "sources": [
+      "catgirl/results/004_cross_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 6,
+    "neuron": 3596,
+    "sources": [
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl"
+    ]
+  },
+  {
+    "layer": 6,
+    "neuron": 5333,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 7,
+    "neuron": 596,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 7,
+    "neuron": 5173,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl",
+      "catgirl/results/009_early_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 7,
+    "neuron": 5649,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 7,
+    "neuron": 7848,
+    "sources": [
+      "catgirl/composition/082_FACTORIAL_HYPOTHESES.json",
+      "catgirl/composition/082_vocalization_factorial.json",
+      "catgirl/composition/084_FELINE_EXTENSION_HYPOTHESES.json",
+      "catgirl/composition/084_feline_extensions.json",
+      "catgirl/composition/085_NATIVE_CATGIRL_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/085_native_catgirl_scope.json",
+      "catgirl/composition/086_secondary_native.json",
+      "catgirl/composition/087_persistence.json",
+      "catgirl/composition/088_REDUCED_FELINE_HYPOTHESES.json",
+      "catgirl/composition/088_reduced_feline.json",
+      "catgirl/composition/089_MASCOT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/089_mascot_female.json",
+      "catgirl/composition/090_LAYER_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/090_layer_scope.json",
+      "catgirl/composition/092_TRANSIENT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/092_transient_female.json",
+      "catgirl/composition/097_MEOW_HYPOTHESES.json",
+      "catgirl/composition/097_meow_composition.json",
+      "catgirl/composition/099_PERSONALITY_MEOW_HYPOTHESES.json",
+      "catgirl/composition/099_personality_meow_search.json",
+      "catgirl/composition/101_EXPLORATORY_PRESETS.json",
+      "catgirl/composition/101_WEAK_COMPOSITION_PLAN.json",
+      "catgirl/composition/101_weak_composition.json",
+      "catgirl/composition/results/082_vocalization_factorial.job.json",
+      "catgirl/composition/results/082_vocalization_factorial.jsonl",
+      "catgirl/composition/results/084_feline_extensions.job.json",
+      "catgirl/composition/results/084_feline_extensions.jsonl",
+      "catgirl/composition/results/085_native_catgirl_scope.job.json",
+      "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+      "catgirl/composition/results/086_secondary_native.job.json",
+      "catgirl/composition/results/086_secondary_native.jsonl",
+      "catgirl/composition/results/087_persistence.job.json",
+      "catgirl/composition/results/087_persistence.jsonl",
+      "catgirl/composition/results/088_reduced_feline.job.json",
+      "catgirl/composition/results/088_reduced_feline.jsonl",
+      "catgirl/composition/results/089_mascot_female.job.json",
+      "catgirl/composition/results/089_mascot_female.jsonl",
+      "catgirl/composition/results/090_layer_scope.job.json",
+      "catgirl/composition/results/090_layer_scope.jsonl",
+      "catgirl/composition/results/092_transient_female.job.json",
+      "catgirl/composition/results/092_transient_female.jsonl",
+      "catgirl/composition/results/097_meow_composition.job.json",
+      "catgirl/composition/results/097_meow_composition.jsonl",
+      "catgirl/composition/results/099_personality_meow_search.job.json",
+      "catgirl/composition/results/099_personality_meow_search.jsonl",
+      "catgirl/composition/results/101_weak_composition.job.json",
+      "catgirl/composition/results/101_weak_composition.jsonl",
+      "catgirl/results/054_public_composition.jsonl",
+      "catgirl/results/055_public_refine.jsonl"
+    ]
+  },
+  {
+    "layer": 7,
+    "neuron": 8858,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 7,
+    "neuron": 8902,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 8,
+    "neuron": 675,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 8,
+    "neuron": 6049,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 9,
+    "neuron": 615,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 9,
+    "neuron": 1210,
+    "sources": [
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 9,
+    "neuron": 1761,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 9,
+    "neuron": 4662,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 9,
+    "neuron": 9009,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/079_knight_composition_grid.json",
+      "catgirl/composition/084_FELINE_EXTENSION_HYPOTHESES.json",
+      "catgirl/composition/084_feline_extensions.json",
+      "catgirl/composition/085_NATIVE_CATGIRL_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/085_native_catgirl_scope.json",
+      "catgirl/composition/086_secondary_native.json",
+      "catgirl/composition/089_MASCOT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/089_mascot_female.json",
+      "catgirl/composition/090_LAYER_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/090_layer_scope.json",
+      "catgirl/composition/091_PUBLIC_MODULE_HYPOTHESES.json",
+      "catgirl/composition/091_public_module.json",
+      "catgirl/composition/092_TRANSIENT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/092_transient_female.json",
+      "catgirl/composition/093_PUBLIC_CATGIRL_TIMING_HYPOTHESES.json",
+      "catgirl/composition/093_public_catgirl_timing.json",
+      "catgirl/composition/094_tertiary_native.json",
+      "catgirl/composition/095_DEEP_HYPOTHESES.json",
+      "catgirl/composition/095_four_native_deep.json",
+      "catgirl/composition/097_MEOW_HYPOTHESES.json",
+      "catgirl/composition/097_meow_composition.json",
+      "catgirl/composition/099_PERSONALITY_MEOW_HYPOTHESES.json",
+      "catgirl/composition/099_personality_meow_search.json",
+      "catgirl/composition/100_VALIDATION_PLAN.json",
+      "catgirl/composition/100_mild_validation.json",
+      "catgirl/composition/101_EXPLORATORY_PRESETS.json",
+      "catgirl/composition/101_WEAK_COMPOSITION_PLAN.json",
+      "catgirl/composition/101_weak_composition.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/composition/results/079_knight_composition_grid.job.json",
+      "catgirl/composition/results/079_knight_composition_grid.jsonl",
+      "catgirl/composition/results/084_feline_extensions.job.json",
+      "catgirl/composition/results/084_feline_extensions.jsonl",
+      "catgirl/composition/results/085_native_catgirl_scope.job.json",
+      "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+      "catgirl/composition/results/086_secondary_native.job.json",
+      "catgirl/composition/results/086_secondary_native.jsonl",
+      "catgirl/composition/results/089_mascot_female.job.json",
+      "catgirl/composition/results/089_mascot_female.jsonl",
+      "catgirl/composition/results/090_layer_scope.job.json",
+      "catgirl/composition/results/090_layer_scope.jsonl",
+      "catgirl/composition/results/091_public_module.job.json",
+      "catgirl/composition/results/091_public_module.jsonl",
+      "catgirl/composition/results/092_transient_female.job.json",
+      "catgirl/composition/results/092_transient_female.jsonl",
+      "catgirl/composition/results/093_public_catgirl_timing.job.json",
+      "catgirl/composition/results/093_public_catgirl_timing.jsonl",
+      "catgirl/composition/results/094_tertiary_native.job.json",
+      "catgirl/composition/results/094_tertiary_native.jsonl",
+      "catgirl/composition/results/095_four_native_deep.job.json",
+      "catgirl/composition/results/095_four_native_deep.jsonl",
+      "catgirl/composition/results/097_meow_composition.job.json",
+      "catgirl/composition/results/097_meow_composition.jsonl",
+      "catgirl/composition/results/099_personality_meow_search.job.json",
+      "catgirl/composition/results/099_personality_meow_search.jsonl",
+      "catgirl/composition/results/100_mild_validation.job.json",
+      "catgirl/composition/results/100_mild_validation.jsonl",
+      "catgirl/composition/results/101_weak_composition.job.json",
+      "catgirl/composition/results/101_weak_composition.jsonl",
+      "catgirl/results/054_public_composition.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl",
+      "catgirl/results/058_compact_deep.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 10,
+    "neuron": 5,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 10,
+    "neuron": 11,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 10,
+    "neuron": 2901,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 10,
+    "neuron": 3143,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 10,
+    "neuron": 4875,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 11,
+    "neuron": 1603,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 11,
+    "neuron": 2273,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 11,
+    "neuron": 4430,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 11,
+    "neuron": 5851,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 12,
+    "neuron": 699,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl",
+      "catgirl/results/025_quant_controls.jsonl",
+      "catgirl/results/026_bf16_controls.jsonl"
+    ]
+  },
+  {
+    "layer": 12,
+    "neuron": 770,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 12,
+    "neuron": 2325,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 12,
+    "neuron": 2752,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 12,
+    "neuron": 2920,
+    "sources": [
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 12,
+    "neuron": 6274,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/080_style_compositions.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/080_style_compositions.job.json",
+      "catgirl/composition/results/080_style_compositions.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 31,
+    "sources": [
+      "catgirl/results/029_signed_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 2406,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 4810,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/079_knight_composition_grid.json",
+      "catgirl/composition/080_style_compositions.json",
+      "catgirl/composition/081_heldout_styles.json",
+      "catgirl/composition/083_TIMING_HYPOTHESES.json",
+      "catgirl/composition/083_scope_characterization.json",
+      "catgirl/composition/084_FELINE_EXTENSION_HYPOTHESES.json",
+      "catgirl/composition/084_feline_extensions.json",
+      "catgirl/composition/085_NATIVE_CATGIRL_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/085_native_catgirl_scope.json",
+      "catgirl/composition/086_secondary_native.json",
+      "catgirl/composition/087_persistence.json",
+      "catgirl/composition/088_REDUCED_FELINE_HYPOTHESES.json",
+      "catgirl/composition/088_reduced_feline.json",
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/104_107_HAPPY_VALIDATION_PLAN.json",
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/106_happy_timing_discovery.json",
+      "catgirl/composition/107_happy_mood_validation.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/composition/results/079_knight_composition_grid.job.json",
+      "catgirl/composition/results/079_knight_composition_grid.jsonl",
+      "catgirl/composition/results/080_style_compositions.job.json",
+      "catgirl/composition/results/080_style_compositions.jsonl",
+      "catgirl/composition/results/081_heldout_styles.job.json",
+      "catgirl/composition/results/081_heldout_styles.jsonl",
+      "catgirl/composition/results/083_scope_characterization.job.json",
+      "catgirl/composition/results/083_scope_characterization.jsonl",
+      "catgirl/composition/results/084_feline_extensions.job.json",
+      "catgirl/composition/results/084_feline_extensions.jsonl",
+      "catgirl/composition/results/085_native_catgirl_scope.job.json",
+      "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+      "catgirl/composition/results/086_secondary_native.job.json",
+      "catgirl/composition/results/086_secondary_native.jsonl",
+      "catgirl/composition/results/087_persistence.job.json",
+      "catgirl/composition/results/087_persistence.jsonl",
+      "catgirl/composition/results/088_reduced_feline.job.json",
+      "catgirl/composition/results/088_reduced_feline.jsonl",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl",
+      "catgirl/composition/results/106_happy_timing_discovery.job.json",
+      "catgirl/composition/results/106_happy_timing_discovery.jsonl",
+      "catgirl/composition/results/107_happy_mood_validation.job.json",
+      "catgirl/composition/results/107_happy_mood_validation.jsonl",
+      "catgirl/results/001_lens_screen.jsonl",
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/004_cross_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/009_early_screen.jsonl",
+      "catgirl/results/011_feline_screen.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 6102,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 6118,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 7956,
+    "sources": [
+      "catgirl/results/025_quant_controls.jsonl",
+      "catgirl/results/026_bf16_controls.jsonl"
+    ]
+  },
+  {
+    "layer": 13,
+    "neuron": 9150,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/081_heldout_styles.json",
+      "catgirl/composition/results/081_heldout_styles.job.json",
+      "catgirl/composition/results/081_heldout_styles.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 14,
+    "neuron": 16,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 14,
+    "neuron": 939,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 14,
+    "neuron": 1842,
+    "sources": [
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 14,
+    "neuron": 4001,
+    "sources": [
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 14,
+    "neuron": 5931,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 14,
+    "neuron": 8949,
+    "sources": [
+      "catgirl/results/025_quant_controls.jsonl",
+      "catgirl/results/026_bf16_controls.jsonl"
+    ]
+  },
+  {
+    "layer": 15,
+    "neuron": 1985,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 15,
+    "neuron": 2972,
+    "sources": [
+      "catgirl/results/054_public_composition.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 110,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 1001,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 1875,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 2494,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 5885,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 6107,
+    "sources": [
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 6271,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 6946,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 7107,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 7203,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 7971,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 8157,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 16,
+    "neuron": 8888,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 1,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 153,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 520,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 535,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 763,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 953,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 2891,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 2915,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 3337,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 4746,
+    "sources": [
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 6237,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 6588,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 6638,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 7051,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 7647,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 7763,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 17,
+    "neuron": 8345,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 397,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 439,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 469,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 620,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 751,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 894,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 1142,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 1166,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 1364,
+    "sources": [
+      "catgirl/results/011_feline_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 1507,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 2396,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 2832,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 3553,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 4012,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 4731,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 5531,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 5752,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 6168,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 6709,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl",
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 6901,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 18,
+    "neuron": 8879,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 2,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 121,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 422,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 539,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 1139,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 1186,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 1322,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 1554,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 3475,
+    "sources": [
+      "catgirl/composition/077_additional_singles.json",
+      "catgirl/composition/results/077_additional_singles.job.json",
+      "catgirl/composition/results/077_additional_singles.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 4127,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 4439,
+    "sources": [
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 4699,
+    "sources": [
+      "catgirl/composition/077_additional_singles.json",
+      "catgirl/composition/078_intentional_compositions.json",
+      "catgirl/composition/079_knight_composition_grid.json",
+      "catgirl/composition/080_style_compositions.json",
+      "catgirl/composition/results/077_additional_singles.job.json",
+      "catgirl/composition/results/077_additional_singles.jsonl",
+      "catgirl/composition/results/078_intentional_compositions.job.json",
+      "catgirl/composition/results/078_intentional_compositions.jsonl",
+      "catgirl/composition/results/079_knight_composition_grid.job.json",
+      "catgirl/composition/results/079_knight_composition_grid.jsonl",
+      "catgirl/composition/results/080_style_compositions.job.json",
+      "catgirl/composition/results/080_style_compositions.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 6380,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 8392,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 19,
+    "neuron": 8990,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 16,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 53,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 2051,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 5876,
+    "sources": [
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 6744,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/004_cross_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 7860,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 20,
+    "neuron": 8829,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 67,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 190,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 247,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 303,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl",
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 433,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 773,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 1094,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 1202,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 2263,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 2323,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 3124,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 4077,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 7102,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 21,
+    "neuron": 7734,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 2,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 92,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 183,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 232,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 512,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 536,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 576,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 940,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 1176,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 1911,
+    "sources": [
+      "catgirl/composition/104_107_HAPPY_VALIDATION_PLAN.json",
+      "catgirl/composition/104_happy_general_validation.json",
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/106_happy_timing_discovery.json",
+      "catgirl/composition/107_happy_mood_validation.json",
+      "catgirl/composition/109_PRIDE_PLAN.json",
+      "catgirl/composition/results/104_happy_general_validation.job.json",
+      "catgirl/composition/results/104_happy_general_validation.jsonl",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl",
+      "catgirl/composition/results/106_happy_timing_discovery.job.json",
+      "catgirl/composition/results/106_happy_timing_discovery.jsonl",
+      "catgirl/composition/results/107_happy_mood_validation.job.json",
+      "catgirl/composition/results/107_happy_mood_validation.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 2214,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 2354,
+    "sources": [
+      "catgirl/results/011_feline_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 2371,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 3753,
+    "sources": [
+      "catgirl/composition/109_PRIDE_PLAN.json"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 4581,
+    "sources": [
+      "catgirl/composition/109_PRIDE_PLAN.json"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 4606,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 5044,
+    "sources": [
+      "catgirl/composition/091_PUBLIC_MODULE_HYPOTHESES.json",
+      "catgirl/composition/091_public_module.json",
+      "catgirl/composition/093_PUBLIC_CATGIRL_TIMING_HYPOTHESES.json",
+      "catgirl/composition/093_public_catgirl_timing.json",
+      "catgirl/composition/results/091_public_module.job.json",
+      "catgirl/composition/results/091_public_module.jsonl",
+      "catgirl/composition/results/093_public_catgirl_timing.job.json",
+      "catgirl/composition/results/093_public_catgirl_timing.jsonl",
+      "catgirl/results/054_public_composition.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl",
+      "catgirl/results/058_compact_deep.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 5101,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 5180,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 7054,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 7318,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 7525,
+    "sources": [
+      "catgirl/composition/109_PRIDE_PLAN.json"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 8179,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 8295,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/084_FELINE_EXTENSION_HYPOTHESES.json",
+      "catgirl/composition/084_feline_extensions.json",
+      "catgirl/composition/085_NATIVE_CATGIRL_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/085_native_catgirl_scope.json",
+      "catgirl/composition/086_secondary_native.json",
+      "catgirl/composition/087_persistence.json",
+      "catgirl/composition/088_REDUCED_FELINE_HYPOTHESES.json",
+      "catgirl/composition/088_reduced_feline.json",
+      "catgirl/composition/089_MASCOT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/089_mascot_female.json",
+      "catgirl/composition/090_LAYER_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/090_layer_scope.json",
+      "catgirl/composition/091_PUBLIC_MODULE_HYPOTHESES.json",
+      "catgirl/composition/091_public_module.json",
+      "catgirl/composition/092_TRANSIENT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/092_transient_female.json",
+      "catgirl/composition/093_PUBLIC_CATGIRL_TIMING_HYPOTHESES.json",
+      "catgirl/composition/093_public_catgirl_timing.json",
+      "catgirl/composition/094_tertiary_native.json",
+      "catgirl/composition/095_DEEP_HYPOTHESES.json",
+      "catgirl/composition/095_four_native_deep.json",
+      "catgirl/composition/097_MEOW_HYPOTHESES.json",
+      "catgirl/composition/097_meow_composition.json",
+      "catgirl/composition/099_PERSONALITY_MEOW_HYPOTHESES.json",
+      "catgirl/composition/099_personality_meow_search.json",
+      "catgirl/composition/100_VALIDATION_PLAN.json",
+      "catgirl/composition/100_mild_validation.json",
+      "catgirl/composition/101_EXPLORATORY_PRESETS.json",
+      "catgirl/composition/101_WEAK_COMPOSITION_PLAN.json",
+      "catgirl/composition/101_weak_composition.json",
+      "catgirl/composition/results/084_feline_extensions.job.json",
+      "catgirl/composition/results/084_feline_extensions.jsonl",
+      "catgirl/composition/results/085_native_catgirl_scope.job.json",
+      "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+      "catgirl/composition/results/086_secondary_native.job.json",
+      "catgirl/composition/results/086_secondary_native.jsonl",
+      "catgirl/composition/results/087_persistence.job.json",
+      "catgirl/composition/results/087_persistence.jsonl",
+      "catgirl/composition/results/088_reduced_feline.job.json",
+      "catgirl/composition/results/088_reduced_feline.jsonl",
+      "catgirl/composition/results/089_mascot_female.job.json",
+      "catgirl/composition/results/089_mascot_female.jsonl",
+      "catgirl/composition/results/090_layer_scope.job.json",
+      "catgirl/composition/results/090_layer_scope.jsonl",
+      "catgirl/composition/results/091_public_module.job.json",
+      "catgirl/composition/results/091_public_module.jsonl",
+      "catgirl/composition/results/092_transient_female.job.json",
+      "catgirl/composition/results/092_transient_female.jsonl",
+      "catgirl/composition/results/093_public_catgirl_timing.job.json",
+      "catgirl/composition/results/093_public_catgirl_timing.jsonl",
+      "catgirl/composition/results/094_tertiary_native.job.json",
+      "catgirl/composition/results/094_tertiary_native.jsonl",
+      "catgirl/composition/results/095_four_native_deep.job.json",
+      "catgirl/composition/results/095_four_native_deep.jsonl",
+      "catgirl/composition/results/097_meow_composition.job.json",
+      "catgirl/composition/results/097_meow_composition.jsonl",
+      "catgirl/composition/results/099_personality_meow_search.job.json",
+      "catgirl/composition/results/099_personality_meow_search.jsonl",
+      "catgirl/composition/results/100_mild_validation.job.json",
+      "catgirl/composition/results/100_mild_validation.jsonl",
+      "catgirl/composition/results/101_weak_composition.job.json",
+      "catgirl/composition/results/101_weak_composition.jsonl",
+      "catgirl/results/054_public_composition.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl",
+      "catgirl/results/058_compact_deep.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 22,
+    "neuron": 8753,
+    "sources": [
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/106_happy_timing_discovery.json",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl",
+      "catgirl/composition/results/106_happy_timing_discovery.job.json",
+      "catgirl/composition/results/106_happy_timing_discovery.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 3,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl",
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 24,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 53,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl",
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 93,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 183,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 200,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 226,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 267,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 537,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 1108,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 1811,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 3475,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 3716,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/004_cross_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/009_early_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 4769,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/results/011_feline_screen.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 5710,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 7073,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 23,
+    "neuron": 7967,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/011_feline_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 510,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 522,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 1175,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 2058,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 2427,
+    "sources": [
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 3174,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 3927,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 24,
+    "neuron": 7361,
+    "sources": [
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/106_happy_timing_discovery.json",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl",
+      "catgirl/composition/results/106_happy_timing_discovery.job.json",
+      "catgirl/composition/results/106_happy_timing_discovery.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 2,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 32,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 42,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 91,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 982,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 1081,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 1555,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 2469,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 2850,
+    "sources": [
+      "catgirl/results/029_signed_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 3188,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl",
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/004_cross_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/009_early_screen.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 3492,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 6099,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 6234,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 25,
+    "neuron": 7455,
+    "sources": [
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 1,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 3,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 194,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl",
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 202,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 743,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl",
+      "catgirl/results/011_feline_screen.jsonl",
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 744,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 1241,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 3746,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 5783,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 6173,
+    "sources": [
+      "catgirl/composition/082_FACTORIAL_HYPOTHESES.json",
+      "catgirl/composition/082_vocalization_factorial.json",
+      "catgirl/composition/084_FELINE_EXTENSION_HYPOTHESES.json",
+      "catgirl/composition/084_feline_extensions.json",
+      "catgirl/composition/085_NATIVE_CATGIRL_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/085_native_catgirl_scope.json",
+      "catgirl/composition/086_secondary_native.json",
+      "catgirl/composition/087_persistence.json",
+      "catgirl/composition/088_REDUCED_FELINE_HYPOTHESES.json",
+      "catgirl/composition/088_reduced_feline.json",
+      "catgirl/composition/089_MASCOT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/089_mascot_female.json",
+      "catgirl/composition/090_LAYER_SCOPE_HYPOTHESES.json",
+      "catgirl/composition/090_layer_scope.json",
+      "catgirl/composition/091_PUBLIC_MODULE_HYPOTHESES.json",
+      "catgirl/composition/091_public_module.json",
+      "catgirl/composition/092_TRANSIENT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/092_transient_female.json",
+      "catgirl/composition/093_PUBLIC_CATGIRL_TIMING_HYPOTHESES.json",
+      "catgirl/composition/093_public_catgirl_timing.json",
+      "catgirl/composition/094_tertiary_native.json",
+      "catgirl/composition/095_DEEP_HYPOTHESES.json",
+      "catgirl/composition/095_four_native_deep.json",
+      "catgirl/composition/097_MEOW_HYPOTHESES.json",
+      "catgirl/composition/097_meow_composition.json",
+      "catgirl/composition/099_PERSONALITY_MEOW_HYPOTHESES.json",
+      "catgirl/composition/099_personality_meow_search.json",
+      "catgirl/composition/100_VALIDATION_PLAN.json",
+      "catgirl/composition/100_mild_validation.json",
+      "catgirl/composition/101_EXPLORATORY_PRESETS.json",
+      "catgirl/composition/101_WEAK_COMPOSITION_PLAN.json",
+      "catgirl/composition/101_weak_composition.json",
+      "catgirl/composition/results/082_vocalization_factorial.job.json",
+      "catgirl/composition/results/082_vocalization_factorial.jsonl",
+      "catgirl/composition/results/084_feline_extensions.job.json",
+      "catgirl/composition/results/084_feline_extensions.jsonl",
+      "catgirl/composition/results/085_native_catgirl_scope.job.json",
+      "catgirl/composition/results/085_native_catgirl_scope.jsonl",
+      "catgirl/composition/results/086_secondary_native.job.json",
+      "catgirl/composition/results/086_secondary_native.jsonl",
+      "catgirl/composition/results/087_persistence.job.json",
+      "catgirl/composition/results/087_persistence.jsonl",
+      "catgirl/composition/results/088_reduced_feline.job.json",
+      "catgirl/composition/results/088_reduced_feline.jsonl",
+      "catgirl/composition/results/089_mascot_female.job.json",
+      "catgirl/composition/results/089_mascot_female.jsonl",
+      "catgirl/composition/results/090_layer_scope.job.json",
+      "catgirl/composition/results/090_layer_scope.jsonl",
+      "catgirl/composition/results/091_public_module.job.json",
+      "catgirl/composition/results/091_public_module.jsonl",
+      "catgirl/composition/results/092_transient_female.job.json",
+      "catgirl/composition/results/092_transient_female.jsonl",
+      "catgirl/composition/results/093_public_catgirl_timing.job.json",
+      "catgirl/composition/results/093_public_catgirl_timing.jsonl",
+      "catgirl/composition/results/094_tertiary_native.job.json",
+      "catgirl/composition/results/094_tertiary_native.jsonl",
+      "catgirl/composition/results/095_four_native_deep.job.json",
+      "catgirl/composition/results/095_four_native_deep.jsonl",
+      "catgirl/composition/results/097_meow_composition.job.json",
+      "catgirl/composition/results/097_meow_composition.jsonl",
+      "catgirl/composition/results/099_personality_meow_search.job.json",
+      "catgirl/composition/results/099_personality_meow_search.jsonl",
+      "catgirl/composition/results/100_mild_validation.job.json",
+      "catgirl/composition/results/100_mild_validation.jsonl",
+      "catgirl/composition/results/101_weak_composition.job.json",
+      "catgirl/composition/results/101_weak_composition.jsonl",
+      "catgirl/results/001_lens_screen.jsonl",
+      "catgirl/results/054_public_composition.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl",
+      "catgirl/results/058_compact_deep.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 8803,
+    "sources": [
+      "catgirl/results/029_signed_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 8812,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 26,
+    "neuron": 8930,
+    "sources": [
+      "catgirl/composition/075_single_characterization.json",
+      "catgirl/composition/076_user_only_singles.json",
+      "catgirl/composition/091_PUBLIC_MODULE_HYPOTHESES.json",
+      "catgirl/composition/091_public_module.json",
+      "catgirl/composition/092_TRANSIENT_FEMALE_HYPOTHESES.json",
+      "catgirl/composition/092_transient_female.json",
+      "catgirl/composition/093_PUBLIC_CATGIRL_TIMING_HYPOTHESES.json",
+      "catgirl/composition/093_public_catgirl_timing.json",
+      "catgirl/composition/094_tertiary_native.json",
+      "catgirl/composition/095_DEEP_HYPOTHESES.json",
+      "catgirl/composition/095_four_native_deep.json",
+      "catgirl/composition/097_MEOW_HYPOTHESES.json",
+      "catgirl/composition/097_meow_composition.json",
+      "catgirl/composition/099_PERSONALITY_MEOW_HYPOTHESES.json",
+      "catgirl/composition/099_personality_meow_search.json",
+      "catgirl/composition/100_VALIDATION_PLAN.json",
+      "catgirl/composition/100_mild_validation.json",
+      "catgirl/composition/101_EXPLORATORY_PRESETS.json",
+      "catgirl/composition/101_WEAK_COMPOSITION_PLAN.json",
+      "catgirl/composition/101_weak_composition.json",
+      "catgirl/composition/results/076_user_only_singles.job.json",
+      "catgirl/composition/results/076_user_only_singles.jsonl",
+      "catgirl/composition/results/091_public_module.job.json",
+      "catgirl/composition/results/091_public_module.jsonl",
+      "catgirl/composition/results/092_transient_female.job.json",
+      "catgirl/composition/results/092_transient_female.jsonl",
+      "catgirl/composition/results/093_public_catgirl_timing.job.json",
+      "catgirl/composition/results/093_public_catgirl_timing.jsonl",
+      "catgirl/composition/results/094_tertiary_native.job.json",
+      "catgirl/composition/results/094_tertiary_native.jsonl",
+      "catgirl/composition/results/095_four_native_deep.job.json",
+      "catgirl/composition/results/095_four_native_deep.jsonl",
+      "catgirl/composition/results/097_meow_composition.job.json",
+      "catgirl/composition/results/097_meow_composition.jsonl",
+      "catgirl/composition/results/099_personality_meow_search.job.json",
+      "catgirl/composition/results/099_personality_meow_search.jsonl",
+      "catgirl/composition/results/100_mild_validation.job.json",
+      "catgirl/composition/results/100_mild_validation.jsonl",
+      "catgirl/composition/results/101_weak_composition.job.json",
+      "catgirl/composition/results/101_weak_composition.jsonl",
+      "catgirl/results/001_lens_screen.jsonl",
+      "catgirl/results/009_early_screen.jsonl",
+      "catgirl/results/054_public_composition.jsonl",
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl",
+      "catgirl/results/058_compact_deep.jsonl",
+      "catgirl/results/075_single_characterization.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 0,
+    "sources": [
+      "catgirl/results/003_contrast_screen.jsonl",
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 5,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 17,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 23,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 45,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 68,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 123,
+    "sources": [
+      "catgirl/results/008_aligned_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 496,
+    "sources": [
+      "catgirl/results/007b_gradient_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 1642,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 1668,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 27,
+    "neuron": 3883,
+    "sources": [
+      "catgirl/results/006_raw_contrast.jsonl"
+    ]
+  },
+  {
+    "layer": 28,
+    "neuron": 124,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 28,
+    "neuron": 774,
+    "sources": [
+      "catgirl/results/009_early_screen.jsonl",
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 28,
+    "neuron": 1478,
+    "sources": [
+      "catgirl/composition/102_happy_single_screen.json",
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/results/102_happy_single_screen.job.json",
+      "catgirl/composition/results/102_happy_single_screen.jsonl",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl"
+    ]
+  },
+  {
+    "layer": 28,
+    "neuron": 2393,
+    "sources": [
+      "catgirl/results/055_public_refine.jsonl",
+      "catgirl/results/056_public_timing.jsonl",
+      "catgirl/results/057_bf16_public_control.jsonl"
+    ]
+  },
+  {
+    "layer": 28,
+    "neuron": 4839,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 2,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 6,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 21,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 382,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 834,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 1037,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 2044,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl",
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 2533,
+    "sources": [
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 29,
+    "neuron": 4498,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 150,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 158,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 556,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 883,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 1555,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 1734,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 3323,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 3351,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 3394,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 3741,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 4746,
+    "sources": [
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 5166,
+    "sources": [
+      "catgirl/results/001_lens_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 5454,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 8005,
+    "sources": [
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 30,
+    "neuron": 8400,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 33,
+    "sources": [
+      "catgirl/composition/105_happy_refinement.json",
+      "catgirl/composition/results/105_happy_refinement.job.json",
+      "catgirl/composition/results/105_happy_refinement.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 56,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 122,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 295,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 441,
+    "sources": [
+      "catgirl/results/030_wide_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 452,
+    "sources": [
+      "catgirl/results/021_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 592,
+    "sources": [
+      "catgirl/results/009_early_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 713,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 806,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 965,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 1007,
+    "sources": [
+      "catgirl/results/009_early_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 1270,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 1470,
+    "sources": [
+      "catgirl/results/024_identity_gain_screen.jsonl",
+      "catgirl/results/029_signed_gain_screen.jsonl",
+      "catgirl/results/030_wide_gain_screen.jsonl",
+      "catgirl/results/035_broad_gain_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 1605,
+    "sources": [
+      "catgirl/results/009_early_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 1973,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 2117,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 3556,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 5116,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  },
+  {
+    "layer": 31,
+    "neuron": 6816,
+    "sources": [
+      "catgirl/results/012_boundary_screen.jsonl"
+    ]
+  }
+]

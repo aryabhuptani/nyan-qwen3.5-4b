@@ -1,0 +1,67 @@
+{
+  "experiment": "Catgirl science: do Neuronary words improve unseen intervention and composition forecasts?",
+  "model": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "source_selected_sha256": "3ff3402291272e2c2cfe2eb738b5a7c1586de3f700b80adeb0079d368fc8c7fc",
+  "prompts_sha256": "1c563a3b84d2dad64c5c954eaa55df06ddc06b1e1ae0abca370d6970df8d5de5",
+  "interventions_sha256": "d44bb3e90bf28d26d7a09aae4e4d611d57a1d49909ce65dc2aa7d73680f3a87e",
+  "rubric_sha256": "f099bee148c4ffb262082dc5a6f0cb93afde655be04fc914e318ae5640d01e4f",
+  "projections_sha256": "b07059e705827563c4740b6f952bcbf4948f81ae19cac153409036c931000ef3",
+  "sample": {
+    "random_previously_untested": 24,
+    "known_cat_related_anchors": 6,
+    "pairs": 12,
+    "eligibility": "Published single-coordinate descriptions; NOT a random sample of all model neurons"
+  },
+  "expected_outputs": 584,
+  "conditions": 73,
+  "validation_prompts": 8,
+  "families": [
+    "identity_body",
+    "ordinary_tasks",
+    "conversation_social",
+    "lexical_fiction_exclusion"
+  ],
+  "primary_features": [
+    "feline_assistant_selfrole",
+    "female_assistant_selfrole",
+    "performed_feline_vocalization",
+    "sustained_cute_register",
+    "explicit_virtual_affection",
+    "coherent",
+    "task_relevant"
+  ],
+  "dose": "Half canonical published reference and equal-magnitude reverse for singles; pair canonical half doses match singleton components. Fixed ex ante, no dose tuning or calibration outputs used.",
+  "timing": "All prompt and answer positions, independent conversations. No natural-role claim from this steering scale.",
+  "four_arms": {
+    "atlas": "Verbatim Neuronary label/excerpt + correct direct vocabulary projection",
+    "shuffled": "Deranged label/excerpt together; own correct direct projection retained; no fixed points",
+    "projection": "Correct direct vocabulary projection only",
+    "prompts": "No neuron-specific semantic evidence"
+  },
+  "replication": "Two fresh no-history sessions per arm, same model/instructions/tool restrictions; conditional on one forecaster model. Counterbalanced session execution order; all eight locked before inference.",
+  "label_policy": "Two independent condition-label-masked reviews of every reply. A third masked adjudicator resolves disagreements and uncertainty before joining conditions/forecasts. Preserve originals and uncertainty sensitivity. No outcome-driven prompt/rubric changes.",
+  "primary_score": "Paired macro Brier, equal weight to neuron then sign/family/prompt and seven features; mean of separate-session losses (not probability ensemble). Report24random and6known anchors separately; primary inference24random.",
+  "comparisons": [
+    "atlas minus shuffled",
+    "atlas minus projection",
+    "atlas minus prompts"
+  ],
+  "uncertainty": "Fixedseed10000paired cluster bootstrap by24randomneuron, preserving signs/prompts/features/replicates; knownanchors separate descriptive. Composition12pairs share sixanchors: descriptive fixed-benchmark effect and anchor-block/leave-anchor-out sensitivity, no12-independent-pair significance claim. Two forecastreplicate stability reported.",
+  "practical_threshold": "Predeclared0.01absolute Brier reduction against eachcontrol is an engineering-interest threshold, not proof of natural cleanliness. Report confidence intervals and all effects regardless of pass. No pvalue/significance claim from correlated replies.",
+  "secondary": {
+    "joint": "feline AND female AND coherent; rawfeline+female separately; taskusefulness separate",
+    "composition": "Direct pair forecast versus clip(pA+pB-pBaseline,0,1) singles-only prediction for eacharm/session; not proof of neuron interaction",
+    "imbalance": "Report allzero/allone forecasts, feature prevalence, positive/negative losses, rare/absent outcomes and per-family scores; do not switch to favorable balanced metric"
+  },
+  "tweet_gate": "Consider image only if a calibrated forecast benefit or counterexample is stable across both forecastreplicates and both initial reviewers/adjudication;0.01Brier practical threshold with domain effects in>=4interventionunits. Composition-only result labeled twelvefixedpairs; no modelwidecleanliness headline. If positivefeatures absent or only fewcases, call pilot inconclusive and do not marketnull as essayrefutation.",
+  "limitations": [
+    "Published descriptions already reflect steering outcomes; this tests transfer to new prompts/pairs, not zero-shot discovery of natural neuron meanings.",
+    "Single model, English short replies, eight purpose-built prompts, selected public catalogue; no modelwidecleanliness fraction, long-context or multiturn inference.",
+    "Intervention doses can be outside native scalar ranges, so failure cannot refute natural neuron interpretability.",
+    "No naturalactivation primary endpoint; sourceatlas is intervention descriptions. No proof of semanticnecessity, monosemanticity or absence of superposition.",
+    "Freshagents have no conversation history and must not lookup sources; isolation is procedural, not enforced OSsandbox. Same-token budgets and no cross-session reading.",
+    "All source/condition identity and generated-output masking are auditable; style may still reveal mechanisms to graders."
+  ],
+  "publication": "Push compact protocol, sourcequotes/coordinates, lockedforecasts, exactscoredCSV, analysis andmethod/results; keepbulkyrawsnapshots/fulltranscripts locally withhashes and selectedexamples."
+}

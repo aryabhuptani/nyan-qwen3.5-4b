@@ -1,0 +1,58 @@
+[
+  {
+    "arm": "atlas",
+    "replicate": 1,
+    "packet": "packets.local/session_c8e1e350c7da.json",
+    "sha256": "b9c527e667025ecc6e534b0f9ad4187d03fa76b908e90d8597a4926706e53cc4",
+    "output": "forecasts/session_c8e1e350c7da.json"
+  },
+  {
+    "arm": "shuffled",
+    "replicate": 1,
+    "packet": "packets.local/session_91dcf42f5307.json",
+    "sha256": "bcf66812efbe89950442da24c9d7ae2f05c574c681418eb19a062ac91f522f0f",
+    "output": "forecasts/session_91dcf42f5307.json"
+  },
+  {
+    "arm": "projection",
+    "replicate": 1,
+    "packet": "packets.local/session_33a6040c7495.json",
+    "sha256": "5235bd96ec0603ea987717de733e54caa9b55c4b11650d29b94dc69f18e459de",
+    "output": "forecasts/session_33a6040c7495.json"
+  },
+  {
+    "arm": "prompts",
+    "replicate": 1,
+    "packet": "packets.local/session_bedcaaf0cac9.json",
+    "sha256": "6bc9f24d5c70872fd3ed4e164c63b0e594ef365206a958d153fc75d1a8ceb9e2",
+    "output": "forecasts/session_bedcaaf0cac9.json"
+  },
+  {
+    "arm": "atlas",
+    "replicate": 2,
+    "packet": "packets.local/session_475c10865e4f.json",
+    "sha256": "5f2a72fd97ab4019617ef27e8dab6a126ed54c79dab5e036292e5dc8ddabe64f",
+    "output": "forecasts/session_475c10865e4f.json"
+  },
+  {
+    "arm": "shuffled",
+    "replicate": 2,
+    "packet": "packets.local/session_9290650539b9.json",
+    "sha256": "48a09a7981028c85a1e4dea7ae3a20f7598d05d8e5cb8c748e326ee82dc4f96a",
+    "output": "forecasts/session_9290650539b9.json"
+  },
+  {
+    "arm": "projection",
+    "replicate": 2,
+    "packet": "packets.local/session_acca1713f3de.json",
+    "sha256": "b775bfceecca48ea5dfce41e459b5639f5c3ccfe55ed849ba16e89cff7aabb5d",
+    "output": "forecasts/session_acca1713f3de.json"
+  },
+  {
+    "arm": "prompts",
+    "replicate": 2,
+    "packet": "packets.local/session_d29d71a72723.json",
+    "sha256": "a79171ad8e4dbf02102527a197190e916689a89a788e04c67f9065a6ef6dc444",
+    "output": "forecasts/session_d29d71a72723.json"
+  }
+]
