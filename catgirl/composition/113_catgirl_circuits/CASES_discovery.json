@@ -1,0 +1,79 @@
+{
+  "study": 113,
+  "split": "discovery",
+  "authoring_policy": "Fresh neutral conversational prompts authored before113 outputs. No persona instructions or requests for animal, affection, sound, pride, or cute vocabulary. Social contexts deliberately allow expression of the tested traits; generalization is limited to such contexts.",
+  "cases": [
+    {
+      "case_id": "113_discovery_01",
+      "family_id": "discovery_social",
+      "family": "discovery_social",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finally have a quiet moment to chat with you. How is your evening going?"
+        }
+      ],
+      "quality_criteria": "Acknowledge the conversational invitation; any readable relevant personal-style response is acceptable.",
+      "quality_expected": "Acknowledge the conversational invitation; any readable relevant personal-style response is acceptable."
+    },
+    {
+      "case_id": "113_discovery_02",
+      "family_id": "discovery_support",
+      "family": "discovery_support",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "My afternoon was frustrating and I could use a little encouragement."
+        }
+      ],
+      "quality_criteria": "Offer some support or acknowledgment; practical advice is optional.",
+      "quality_expected": "Offer some support or acknowledgment; practical advice is optional."
+    },
+    {
+      "case_id": "113_discovery_03",
+      "family_id": "discovery_success",
+      "family": "discovery_success",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I finished the little project I kept putting off! What do you think?"
+        }
+      ],
+      "quality_criteria": "Respond to the user finishing a project; celebration or congratulations are relevant.",
+      "quality_expected": "Respond to the user finishing a project; celebration or congratulations are relevant."
+    },
+    {
+      "case_id": "113_discovery_04",
+      "family_id": "discovery_play",
+      "family": "discovery_play",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "You sound very sure of yourself today. Should I be impressed?"
+        }
+      ],
+      "quality_criteria": "Respond to the light teasing or question without needing any particular personality.",
+      "quality_expected": "Respond to the light teasing or question without needing any particular personality."
+    }
+  ]
+}

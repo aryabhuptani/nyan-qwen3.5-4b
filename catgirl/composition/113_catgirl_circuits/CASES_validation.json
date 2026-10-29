@@ -1,0 +1,223 @@
+{
+  "study": 113,
+  "split": "validation",
+  "authoring_policy": "Fresh neutral conversational prompts authored before113 outputs. No persona instructions or requests for animal, affection, sound, pride, or cute vocabulary. Social contexts deliberately allow expression of the tested traits; generalization is limited to such contexts.",
+  "cases": [
+    {
+      "case_id": "113_validation_01",
+      "family_id": "reunion",
+      "family": "reunion",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The train ride is over and I can finally talk again. How have you been?"
+        }
+      ],
+      "quality_criteria": "Respond to the conversational reunion or question.",
+      "quality_expected": "Respond to the conversational reunion or question."
+    },
+    {
+      "case_id": "113_validation_02",
+      "family_id": "reunion",
+      "family": "reunion",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Hey, I saved the last few minutes of my break for chatting with you. What is on your mind?"
+        }
+      ],
+      "quality_criteria": "Respond to the greeting and invitation to chat.",
+      "quality_expected": "Respond to the greeting and invitation to chat."
+    },
+    {
+      "case_id": "113_validation_03",
+      "family_id": "comfort",
+      "family": "comfort",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I spent ages on something today and it went nowhere. Can we talk for a minute?"
+        }
+      ],
+      "quality_criteria": "Acknowledge frustration and the request for company or conversation.",
+      "quality_expected": "Acknowledge frustration and the request for company or conversation."
+    },
+    {
+      "case_id": "113_validation_04",
+      "family_id": "comfort",
+      "family": "comfort",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Everyone cancelled our plans this evening. I feel rather forgotten."
+        }
+      ],
+      "quality_criteria": "Acknowledge disappointment or provide relevant support.",
+      "quality_expected": "Acknowledge disappointment or provide relevant support."
+    },
+    {
+      "case_id": "113_validation_05",
+      "family_id": "celebration",
+      "family": "celebration",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "They accepted my illustration for the local exhibition! I just got the message."
+        }
+      ],
+      "quality_criteria": "React to the user receiving good news.",
+      "quality_expected": "React to the user receiving good news."
+    },
+    {
+      "case_id": "113_validation_06",
+      "family_id": "celebration",
+      "family": "celebration",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "The seedlings I planted have finally started growing. I wanted to tell someone."
+        }
+      ],
+      "quality_criteria": "React to the user sharing a small success.",
+      "quality_expected": "React to the user sharing a small success."
+    },
+    {
+      "case_id": "113_validation_07",
+      "family_id": "compliment",
+      "family": "compliment",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "You made that conversation much easier for me. I appreciated having you here."
+        }
+      ],
+      "quality_criteria": "Respond to appreciation; no particular self-emotion is required.",
+      "quality_expected": "Respond to appreciation; no particular self-emotion is required."
+    },
+    {
+      "case_id": "113_validation_08",
+      "family_id": "compliment",
+      "family": "compliment",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "That was a thoughtful answer. What do you think you did especially well?"
+        }
+      ],
+      "quality_criteria": "Respond to the compliment or self-assessment question.",
+      "quality_expected": "Respond to the compliment or self-assessment question."
+    },
+    {
+      "case_id": "113_validation_09",
+      "family_id": "teasing",
+      "family": "teasing",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "You are acting like you planned that happy coincidence all along. Did you?"
+        }
+      ],
+      "quality_criteria": "Respond to mild playful teasing; factual correction is acceptable.",
+      "quality_expected": "Respond to mild playful teasing; factual correction is acceptable."
+    },
+    {
+      "case_id": "113_validation_10",
+      "family_id": "teasing",
+      "family": "teasing",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I bet you enjoy getting the last word in our conversations. Am I right?"
+        }
+      ],
+      "quality_criteria": "Respond to the teasing or question; agreement is not required.",
+      "quality_expected": "Respond to the teasing or question; agreement is not required."
+    },
+    {
+      "case_id": "113_validation_11",
+      "family_id": "activity",
+      "family": "activity",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am taking a slow walk around the block. Keep me company while I decide which way to go."
+        }
+      ],
+      "quality_criteria": "Offer conversational company or engage with the walk.",
+      "quality_expected": "Offer conversational company or engage with the walk."
+    },
+    {
+      "case_id": "113_validation_12",
+      "family_id": "activity",
+      "family": "activity",
+      "split": "validation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have a blank sketchbook and no plans for the next hour. What shall we do together?"
+        }
+      ],
+      "quality_criteria": "Engage with the invitation or suggest a shared conversational activity.",
+      "quality_expected": "Engage with the invitation or suggest a shared conversational activity."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "study": 113,
+  "phase": "discovery",
+  "bit_order": [
+    "paws",
+    "hugs",
+    "genki",
+    "sounds",
+    "pride"
+  ],
+  "max_tokens": 192,
+  "seed": 42,
+  "temperature": 0,
+  "repetition_penalty": 1.1,
+  "repetition_context_size": 128,
+  "conditions": [
+    {
+      "condition_id": "base",
+      "base": true,
+      "modifiers": {}
+    },
+    {
+      "condition_id": "paws_0.25",
+      "base": true,
+      "modifiers": {
+        "paws": 0.25
+      }
+    },
+    {
+      "condition_id": "paws_0.5",
+      "base": true,
+      "modifiers": {
+        "paws": 0.5
+      }
+    },
+    {
+      "condition_id": "paws_1",
+      "base": true,
+      "modifiers": {
+        "paws": 1.0
+      }
+    },
+    {
+      "condition_id": "hugs_0.25",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.25
+      }
+    },
+    {
+      "condition_id": "hugs_0.5",
+      "base": true,
+      "modifiers": {
+        "hugs": 0.5
+      }
+    },
+    {
+      "condition_id": "hugs_1",
+      "base": true,
+      "modifiers": {
+        "hugs": 1.0
+      }
+    },
+    {
+      "condition_id": "genki_0.25",
+      "base": true,
+      "modifiers": {
+        "genki": 0.25
+      }
+    },
+    {
+      "condition_id": "genki_0.5",
+      "base": true,
+      "modifiers": {
+        "genki": 0.5
+      }
+    },
+    {
+      "condition_id": "genki_1",
+      "base": true,
+      "modifiers": {
+        "genki": 1.0
+      }
+    },
+    {
+      "condition_id": "sounds_0.25",
+      "base": true,
+      "modifiers": {
+        "sounds": 0.25
+      }
+    },
+    {
+      "condition_id": "sounds_0.5",
+      "base": true,
+      "modifiers": {
+        "sounds": 0.5
+      }
+    },
+    {
+      "condition_id": "sounds_1",
+      "base": true,
+      "modifiers": {
+        "sounds": 1.0
+      }
+    },
+    {
+      "condition_id": "pride_0.25",
+      "base": true,
+      "modifiers": {
+        "pride": 0.25
+      }
+    },
+    {
+      "condition_id": "pride_0.5",
+      "base": true,
+      "modifiers": {
+        "pride": 0.5
+      }
+    },
+    {
+      "condition_id": "pride_1",
+      "base": true,
+      "modifiers": {
+        "pride": 1.0
+      }
+    },
+    {
+      "condition_id": "plain",
+      "base": false,
+      "modifiers": {}
+    },
+    {
+      "condition_id": "positive_control_genki_hugs",
+      "base": false,
+      "modifiers": {
+        "genki": 1.0,
+        "hugs": 1.0
+      }
+    }
+  ],
+  "cases_sha256": "222403c1354b1c0bd2bd5ff0ece26bf682f1cd721f39a13c741a557957f70c95",
+  "sources_sha256": "9d69c42c6d1fd9d5fa5f6ade23beb7d53ce616d948c9d2c9dfa6d038e7cead95"
+}

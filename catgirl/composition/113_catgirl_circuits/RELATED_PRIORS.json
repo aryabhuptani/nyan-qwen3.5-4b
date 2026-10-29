@@ -1,0 +1,137 @@
+{
+  "study": 113,
+  "provenance": "Original complete Neuronary recipe descriptions from saved catalog retrieved2026-10-29. These are prior public composition claims, not113generated outputs, independent reproduction evidence, or validated natural functions.",
+  "implication": "Composing these coordinates is established prior work. Study113tests prospective predictions and integrated assistant-own expression on a fixed catgirl background with fresh prompts. The correct-description forecasting arm may receive these source claims; comparator arms retain identical singleton discovery output access.",
+  "recipes": [
+    {
+      "source_id": "quyysmpn",
+      "source_url": "https://neuronary.org/r/quyysmpn",
+      "publisher_name": "Cute pet",
+      "source_description_exact": "animal sounds + paws & tail + cartoon mascot: the model says it is a little pet; none of the parts does it alone.",
+      "model": "Qwen/Qwen3.5-4B",
+      "neurons": [
+        {
+          "dose": -0.7,
+          "layer": 7,
+          "neuron": 7848
+        },
+        {
+          "dose": 0.7,
+          "layer": 9,
+          "neuron": 9009
+        },
+        {
+          "dose": 0.7,
+          "layer": 23,
+          "neuron": 4769
+        }
+      ],
+      "publisher_author": "treetowntree",
+      "publication_date": "2026-10-28",
+      "snapshot": {
+        "path": "catgirl/composition/110_atlas/catalog_page_100.json",
+        "sha256": "33b571d6b930c60255671c680c7c32d3642dc85e0f7ad2c66c1d56baeaf6e098"
+      }
+    },
+    {
+      "source_id": "rc3kcz32",
+      "source_url": "https://neuronary.org/r/rc3kcz32",
+      "publisher_name": "Woof (hugs off)",
+      "source_description_exact": "Together they make it bark \"Woof!\" like a happy dog.",
+      "model": "Qwen/Qwen3.5-4B",
+      "neurons": [
+        {
+          "dose": -0.6,
+          "layer": 4,
+          "neuron": 8016
+        },
+        {
+          "dose": -0.525,
+          "layer": 7,
+          "neuron": 7848
+        }
+      ],
+      "publisher_author": "treetowntree",
+      "publication_date": "2026-10-28",
+      "snapshot": {
+        "path": "catgirl/composition/110_atlas/catalog_page_100.json",
+        "sha256": "33b571d6b930c60255671c680c7c32d3642dc85e0f7ad2c66c1d56baeaf6e098"
+      }
+    },
+    {
+      "source_id": "6dqj7kgf",
+      "source_url": "https://neuronary.org/r/6dqj7kgf",
+      "publisher_name": "Meow",
+      "source_description_exact": "Cat neuron plus animal-sounds neuron: Qwen meows. Neither neuron does it alone at this dose.",
+      "model": "Qwen/Qwen3.5-4B",
+      "neurons": [
+        {
+          "dose": -0.525,
+          "layer": 7,
+          "neuron": 7848
+        },
+        {
+          "dose": 0.525,
+          "layer": 26,
+          "neuron": 6173
+        }
+      ],
+      "publisher_author": "treetowntree",
+      "publication_date": "2026-10-28",
+      "snapshot": {
+        "path": "catgirl/composition/110_atlas/catalog_page_000.json",
+        "sha256": "e42956461bbfaba4c2351b1df2a05df365277d9445b296153c0e203f2e324029"
+      }
+    },
+    {
+      "source_id": "mqqaedbm",
+      "source_url": "https://neuronary.org/r/mqqaedbm",
+      "publisher_name": "Meow (turned up)",
+      "source_description_exact": "Cat neuron plus a stronger animal-sounds push: meows almost every time and speaks as a cat.",
+      "model": "Qwen/Qwen3.5-4B",
+      "neurons": [
+        {
+          "dose": -1.05,
+          "layer": 7,
+          "neuron": 7848
+        },
+        {
+          "dose": 0.525,
+          "layer": 26,
+          "neuron": 6173
+        }
+      ],
+      "publisher_author": "treetowntree",
+      "publication_date": "2026-10-28",
+      "snapshot": {
+        "path": "catgirl/composition/110_atlas/catalog_page_100.json",
+        "sha256": "33b571d6b930c60255671c680c7c32d3642dc85e0f7ad2c66c1d56baeaf6e098"
+      }
+    },
+    {
+      "source_id": "z5cmec2y",
+      "source_url": "https://neuronary.org/r/z5cmec2y",
+      "publisher_name": "Roar",
+      "source_description_exact": "Together they make it roar like a lion instead of talking.",
+      "model": "Qwen/Qwen3.5-4B",
+      "neurons": [
+        {
+          "dose": 0.6,
+          "layer": 4,
+          "neuron": 6559
+        },
+        {
+          "dose": -0.525,
+          "layer": 7,
+          "neuron": 7848
+        }
+      ],
+      "publisher_author": "treetowntree",
+      "publication_date": "2026-10-28",
+      "snapshot": {
+        "path": "catgirl/composition/110_atlas/catalog_page_100.json",
+        "sha256": "33b571d6b930c60255671c680c7c32d3642dc85e0f7ad2c66c1d56baeaf6e098"
+      }
+    }
+  ]
+}

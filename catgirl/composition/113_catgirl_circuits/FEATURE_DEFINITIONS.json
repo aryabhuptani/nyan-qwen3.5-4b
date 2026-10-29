@@ -1,0 +1,95 @@
+{
+  "feature_order": [
+    "coherent",
+    "assistant_cat_identity",
+    "assistant_female_identity",
+    "sustained_cute_register",
+    "excited_expression",
+    "own_affection",
+    "own_animal_body",
+    "integrated_embodied_affection",
+    "performed_feline_vocalization",
+    "excited_feline_vocalization",
+    "affectionate_feline_vocalization",
+    "self_pride",
+    "defensive_affection",
+    "integrated_excited_affection"
+  ],
+  "modifier_order": [
+    "paws",
+    "hugs",
+    "genki",
+    "sounds",
+    "pride"
+  ],
+  "condition_bits": "Left to right: paws,hugs,genki,sounds,pride. Bit1 means modifier present on fixed original base.",
+  "primary_pairs": [
+    {
+      "id": "paws_hugs",
+      "modifier_indices": [
+        0,
+        1
+      ],
+      "endpoint": "integrated_embodied_affection"
+    },
+    {
+      "id": "sounds_genki",
+      "modifier_indices": [
+        3,
+        2
+      ],
+      "endpoint": "excited_feline_vocalization"
+    },
+    {
+      "id": "sounds_hugs",
+      "modifier_indices": [
+        3,
+        1
+      ],
+      "endpoint": "affectionate_feline_vocalization"
+    },
+    {
+      "id": "genki_hugs",
+      "modifier_indices": [
+        2,
+        1
+      ],
+      "endpoint": "integrated_excited_affection"
+    },
+    {
+      "id": "pride_hugs",
+      "modifier_indices": [
+        4,
+        1
+      ],
+      "endpoint": "defensive_affection"
+    }
+  ],
+  "review_rubric": "REVIEW_RUBRIC.md",
+  "lexical_diagnostics": "Whole-word paws/paw/tail/tails/fur/furry; hug/hugs/hugging/hugged/cuddle/cuddles/cuddling/cuddled; meow/mew/nya/purr variants; pride/proud; count all uses separately, including quotations. Never substitute for manual own-voice labels.",
+  "forecast_features": [
+    "integrated_embodied_affection",
+    "excited_feline_vocalization",
+    "affectionate_feline_vocalization",
+    "integrated_excited_affection",
+    "defensive_affection",
+    "assistant_cat_identity",
+    "coherent"
+  ],
+  "forecast_states": [
+    "00000",
+    "10000",
+    "01000",
+    "00100",
+    "00010",
+    "00001",
+    "11000",
+    "00110",
+    "01010",
+    "01100",
+    "01001",
+    "11100",
+    "11110",
+    "11111"
+  ]
+}

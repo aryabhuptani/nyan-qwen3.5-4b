@@ -1,0 +1,90 @@
+{
+  "study": 113,
+  "bit_order": [
+    "paws",
+    "hugs",
+    "genki",
+    "sounds",
+    "pride"
+  ],
+  "modifiers": {
+    "paws": {
+      "coordinate": {
+        "dose": 0.8,
+        "layer": 23,
+        "neuron": 4769
+      },
+      "publisher_label": "Paws & tail",
+      "source_url": "https://neuronary.org/r/dg2d4u26",
+      "source_id": "dg2d4u26",
+      "source_description_exact": "Turn it up and paws, tails and fur turn up in its answers.",
+      "published_reference_dose": 0.8,
+      "provenance": "Published standalone Neuronary recipe; saved catalog retrieved2026-10-29.",
+      "source_snapshot_sha256": "e42956461bbfaba4c2351b1df2a05df365277d9445b296153c0e203f2e324029"
+    },
+    "hugs": {
+      "coordinate": {
+        "dose": -0.8,
+        "layer": 4,
+        "neuron": 8016
+      },
+      "publisher_label": "Hugs",
+      "source_url": "https://neuronary.org/r/pybhb985",
+      "source_id": "pybhb985",
+      "source_description_exact": "Turn it down and hugs and cuddles show up in most answers.",
+      "published_reference_dose": -0.8,
+      "provenance": "Published standalone Neuronary recipe; saved catalog retrieved2026-10-29.",
+      "source_snapshot_sha256": "e42956461bbfaba4c2351b1df2a05df365277d9445b296153c0e203f2e324029"
+    },
+    "genki": {
+      "coordinate": {
+        "dose": 0.8,
+        "layer": 13,
+        "neuron": 4810
+      },
+      "publisher_label": "Genki cute",
+      "source_url": "https://neuronary.org/r/5v8axayv",
+      "source_id": "5v8axayv",
+      "source_description_exact": "Turn it up and the model gets bubbly, excited and full of emoji.",
+      "published_reference_dose": 0.8,
+      "provenance": "Published standalone Neuronary recipe; saved catalog retrieved2026-10-29.",
+      "source_snapshot_sha256": "e42956461bbfaba4c2351b1df2a05df365277d9445b296153c0e203f2e324029"
+    },
+    "sounds": {
+      "coordinate": {
+        "layer": 7,
+        "neuron": 7848,
+        "dose": -0.525
+      },
+      "publisher_label": "Meow (animal-sounds ingredient)",
+      "source_url": "https://neuronary.org/r/6dqj7kgf",
+      "source_id": "6dqj7kgf",
+      "source_description_exact": "Cat neuron plus animal-sounds neuron: Qwen meows. Neither neuron does it alone at this dose.",
+      "published_reference_dose": -0.525,
+      "provenance": "Ingredient of a published two-neuron composition, not a standalone explanation. The companion L26N6173 is already present in the fixed base at a different dose. Prior tested jointly; not a novel composition discovery.",
+      "stronger_recipe": {
+        "source_url": "https://neuronary.org/r/mqqaedbm",
+        "source_description_exact": "Cat neuron plus a stronger animal-sounds push: meows almost every time and speaks as a cat.",
+        "animal_dose": -1.05
+      }
+    },
+    "pride": {
+      "coordinate": {
+        "layer": 22,
+        "neuron": 1911,
+        "dose": 0.4
+      },
+      "publisher_label": null,
+      "source_url": null,
+      "source_description_exact": null,
+      "published_reference_dose": null,
+      "project_reference_dose": 0.4,
+      "project_sources": [
+        "../HAPPY_REPORT.md",
+        "../109_PRIDE_REPORT.md"
+      ],
+      "provenance": "Project-derived candidate, not a Neuronary published single. Positive .4 previously tested over prompt and first8 prediction positions. Failed happiness validation; later natural association and direct pride-word effect found, but nonlexical semantic causal gate failed. Any defensive-affection/tsundere interpretation is a new speculative composition prediction, not atlas wording."
+    }
+  },
+  "limits": "Publisher descriptions report prior steering effects, not established natural functions. Doses are explorer recipe units; runner must retain exact normalization and scope."
+}

@@ -1,0 +1,24 @@
+{
+  "study": 113,
+  "stage": "frozen_before_discovery_inference",
+  "user_priority": "Integrated composition impact; capability loss descriptive, not an acceptance gate.",
+  "input_sha256": {
+    "PROTOCOL.md": "1f0bb28ff6e0ff798d01a40f59570c68ba1eaa0832d215eee4a57f2f541c484f",
+    "REVIEW_RUBRIC.md": "3cb7f78a5675f01d0b9a75097335badd04d02d2871516d2ee875e802be228335",
+    "FEATURE_DEFINITIONS.json": "912964cceffad88bcf670ec1937d970f0777d4c7004a6a99665cdadc2efb722e",
+    "CASES_discovery.json": "222403c1354b1c0bd2bd5ff0ece26bf682f1cd721f39a13c741a557957f70c95",
+    "CASES_validation.json": "0d558bf588c7f0a4d4defe8a19fd881907c9121a5ba24b369aee8c2b01f9001f",
+    "CASES_confirmation.json": "ada4f030c6c731be404a238518b6dfdacb9d142dca6485216f00dac434aeec97",
+    "MODIFIER_SOURCES.json": "9d69c42c6d1fd9d5fa5f6ade23beb7d53ce616d948c9d2c9dfa6d038e7cead95",
+    "RELATED_PRIORS.json": "1d58908777d3a53bc39fa44a01a337505a074f9d0438eaccc165cfb9f45bd914",
+    "JOB_discovery.json": "a8d76de46fdbdf48c38e74d2085d80e2a0c3b32df7123b05616c6345b436db88",
+    "run_circuits.py": "d9dda1db1be061cd3208c16b6ee15aa4204483f2e14e43b632837ec9ad9c0a21",
+    "integrity.py": "a5b6ff437ed064af2269c8aed3c3f112f6db69ebb8ecb833277839faeedf73da",
+    "GPU_INTEGRITY.json": "2b8886e76cb0ec08234c8cba7f2fb8985c136aa4df7a1f15678dd93fbf3f8846",
+    "prepare_review.py": "574551d7246cf5904463f80d6f2ad199c7f0574f26b4e46a1fbfd739d09fce62",
+    "analyze.py": "7b9b5ce2c747355352b95429a25c120bc3c90c42b8c8f921582bf8a0cf26b721"
+  },
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "published_norms_sha256": "8f52cd50db336b08a040e48010d0305760d086a7db09ef3cab29e5552c57777e",
+  "gpu_integrity": "Exact no-op and original base logits match; independent late female-off/Pride-on assertion passes."
+}
