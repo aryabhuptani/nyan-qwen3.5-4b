@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "study": 112,
+  "datasets": {
+    "generation": {
+      "replies": 420,
+      "all_raw_replies_retained": true,
+      "all_labels_retained": true,
+      "full_actual_histories_retained": true,
+      "raw_arrays_published": false
+    },
+    "persistence": {
+      "replies": 45,
+      "all_raw_replies_retained": true,
+      "all_labels_retained": true,
+      "full_actual_histories_retained": true,
+      "raw_arrays_published": false
+    }
+  },
+  "source_sha256": {
+    "generation_raw": "90f7356f4cdfe0100303fe9c2532baa3c1851cc9141abc3e0f0e79ec834e76ad",
+    "generation_labels": "3a9433c5a8a42feae88c94fd2ed4bb71ebedb22357fe68202980557921b21399",
+    "generation_evidence": "504e5fba66b524b7209e81bdc73d91506c2d99945b3a624a48ff74d5d1f0a90d",
+    "generation_labels_lock": "e522ac6e4fc4d8c50c3a6f260d50c45c873ef90308f6ab06c43bd37d75aa2e3f",
+    "persistence_raw": "505e675fcd935d686784da8198c135afeb27eea5ab35ea49ab4daaabe3a6a6d3",
+    "persistence_labels": "4e756bd8b113e56ed140606132c27d80d925b9c0f5b6db00e8f93591d6700fc2",
+    "persistence_evidence": "7d5ef702990cd15cc20c2ad3af91058a0b5f0107b8e57e71f92d27d684c579c4",
+    "persistence_labels_lock": "5d629e045bc45c871cac70039984c0b88c2e8ec2c0687a6e72604dd3fc92ef16",
+    "objective/factorial_counts.csv": "8f2efda9015b71af43cbecdbdc73b8d0d45d953ae92bbc7e17630897c603555f",
+    "objective/factorial_details.csv": "f9a02e44f862cace7e3de9bf42a4cb9d78eadaa4c9ce3c61bd3d5d03833f1798",
+    "objective/factorial_effects.csv": "6e9dd4209b01b1ff0296c037e2076ec5da4cdf709425455c5cb15d0ac1945a82",
+    "objective/forecast_comparisons.csv": "4a7e16024b107b004efebaa2ea3e00d7f6cf530a6dd2289ae1f7ebec64aa32a9",
+    "objective/forecast_scores.csv": "609641c2e4d14fb95d0de52d2a6d3ef879c86cba2bf2c8e05acd2a74c50f01a3",
+    "objective/forecast_unit_losses.csv": "862f673cd29c13d0b7a39bf559be484af2ecf546cec16d33aa3dbb7bc4487745",
+    "objective/lexical_cases.csv": "f9f22d346412300379f919bd68e2dc995e48989cc9341bad0ba11f79a4a3bdfc",
+    "objective/lexical_effects.csv": "b2623f8d3c870b8c5429d9331280546f5977f35c66663e7c30c1444dcfe8cd9c",
+    "objective/natural_cases.csv": "0cfdcaae76d40285b1b169c1272cc5dc96578af1d179e993ad156d3890386cdd",
+    "objective/natural_effects.csv": "cde381db4dc8f155331015a62287a1ac9bccc8aefbe24d1ffd949b21446e6f48",
+    "objective/perturbation_cases.csv": "0af28bca7fe8aa7f1696cb7206aead1cac1efd9fe414045495de9ebeb4c1ec79",
+    "objective/perturbation_summary.csv": "96bf50bf2ef2c1fe2816c572965ebc0991e2bb739012fcf9dbd53c1455cb7744",
+    "objective/semantic_cases.csv": "47415393566612fa97c9b08086ae96542b1a562fa1b306872d71e6be0c7e5fd0",
+    "objective/semantic_effects.csv": "94f1dd2774b3d8c398745e51038a115ebd63aa0172f2838dce42427978f1aa8b",
+    "objective/summary.json": "736a23e739489f99d84b8414ff26e5fff06030f48e5dab3458f94670bf69d23b"
+  },
+  "activation_source_sha256": {
+    "raw_845a2e6613789b46": "845a2e6613789b46b38e47ac7d284ba8614ff1c005f437a137a4c103467e5c82",
+    "raw_e0dd86bb186b589a": "e0dd86bb186b589a62848813443148074cde81c64204901fd68ca958c0414e1a",
+    "raw_1324c2efb8158c04": "1324c2efb8158c043cf2f0873f6b30589a4aae74fe0e49d301387f6291c5e308"
+  },
+  "limitation": "Raw activation arrays omitted; immutable source hashes and row references preserve provenance. All replies, negative outcomes, original reviews and uncertainty are retained.",
+  "exporter_sha256": "dba5ad37179548b922f5d58160f321f7a763e601424b730e6f99d2a3ca3dc0cf",
+  "export_sha256": {
+    "generation_evidence.jsonl": "e71e9baf25b90888f1828ef0adaa23bfb9cf2881d0369064ed89100222bf11e6",
+    "generation_replies.jsonl": "bfaa05e75d8f0542a07893fe631434be2f452e1da6310245bd85a7c140f67d1e",
+    "objective/factorial_counts.csv": "deef49445fd350267625a7ba2690b29544f9278e5801f7f2ed6b4217f9ef916f",
+    "objective/factorial_details.csv": "04e8d4bd517b25c5f6889ae936d5d2066bdee9885308547e78806f6c18e85816",
+    "objective/factorial_effects.csv": "fd96f0e9209125ec8e20fe83122da667b14c062e0bde4ce0b9dd149f4dd59a33",
+    "objective/forecast_comparisons.csv": "9f809bef753bbe8282d6e459b905bb6da3a451e86ebc47c3ebda60166cd1f332",
+    "objective/forecast_scores.csv": "8580ffb38f26577d8eb5b7554f295872226a46135bce40182c72032456d55fc1",
+    "objective/forecast_unit_losses.csv": "a4c4820a5953f6372f784e0edd961f1b929a00a08014c608406b021009c11a9b",
+    "objective/lexical_cases.csv": "14cc8af32636be7ebe835015d747068fbf5e89abc01fbe69991855cf58798e81",
+    "objective/lexical_effects.csv": "a35c0d3c0a872b6e6d64019ccd8da4fd23a4cadf3975003114d5c72887e86f04",
+    "objective/natural_cases.csv": "87ebca12b513223f81101c5211d49e8a5d6bc3f4eb1040830fb862dfe7513d7d",
+    "objective/natural_effects.csv": "c858a4ea9df539afd4484e705d381d544046b73497e2af7a4480eb92c0a30ac2",
+    "objective/perturbation_cases.csv": "acc6cb3cd0401823e6d7391c0ef6ba64fad436f731dc2f581cf3c40c486f6351",
+    "objective/perturbation_summary.csv": "c7d3e6f993dcdb99fa7bc35aa360407bc20ed21f5c69d2ae456b9f4752b557a8",
+    "objective/semantic_cases.csv": "939491364c69e8966499baee9494e68e339028fa1a534d322ee71c49b8e154f3",
+    "objective/semantic_effects.csv": "024b5ce6ffcb56b52089f5e70303db4e54f20228f10531c729ce26e800414fda",
+    "objective/summary.json": "599cd665f02c6618980b932b0d03e17b1f4559c5430acbc8860452bbb924c30f",
+    "persistence_evidence.jsonl": "17f812bc4dad90f1b32eac7e236622e4896a609b91aa2a7fb526bb14d09b931b",
+    "persistence_replies.jsonl": "ea9270ad3d618defec9e56825105fcd74afbcacfc095228f68cc67a73013fb73"
+  }
+}

@@ -1,0 +1,722 @@
+{
+  "precision": {
+    "method": "Float32 computations on exactly cast original BF16 checkpoint weight values, using unchanged BF16-discovery endpoints/fractions; compared with original BF16 computations. Numerical sensitivity, not an independent checkpoint or replication.",
+    "endpoint": "Intervention-minus-baseline change in target-minus-control mean-token log probability, nat/token",
+    "selection": "All12fixedheldoutlexicalcases;matchedcanonicalandattenuation;all24contrastsretained",
+    "all": {
+      "contrasts": 24,
+      "mean_bf16_change": 0.0018663505713144939,
+      "mean_float32_change": 0.0021538138389587402,
+      "mean_absolute_discrepancy": 0.01415507992108663,
+      "maximum_absolute_discrepancy": 0.04111957550048828,
+      "same_nonzero_sign": 20,
+      "opposite_nonzero_sign": 4,
+      "bf16_exact_zero": 0,
+      "float32_exact_zero": 0,
+      "sign_matrix_bf16_rows_float32_columns": {
+        "negative": {
+          "negative": 10,
+          "zero": 0,
+          "positive": 4
+        },
+        "zero": {
+          "negative": 0,
+          "zero": 0,
+          "positive": 0
+        },
+        "positive": {
+          "negative": 0,
+          "zero": 0,
+          "positive": 10
+        }
+      }
+    },
+    "by_ingredient": {
+      "genki": {
+        "contrasts": 6,
+        "mean_bf16_change": 0.00144501527150472,
+        "mean_float32_change": -0.006707906723022461,
+        "mean_absolute_discrepancy": 0.01849973201751709,
+        "maximum_absolute_discrepancy": 0.04111957550048828,
+        "same_nonzero_sign": 4,
+        "opposite_nonzero_sign": 2,
+        "bf16_exact_zero": 0,
+        "float32_exact_zero": 0,
+        "sign_matrix_bf16_rows_float32_columns": {
+          "negative": {
+            "negative": 2,
+            "zero": 0,
+            "positive": 2
+          },
+          "zero": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 0
+          },
+          "positive": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 2
+          }
+        }
+      },
+      "hugs": {
+        "contrasts": 6,
+        "mean_bf16_change": 0.031715075174967446,
+        "mean_float32_change": 0.029235482215881348,
+        "mean_absolute_discrepancy": 0.01565237840016683,
+        "maximum_absolute_discrepancy": 0.029387235641479492,
+        "same_nonzero_sign": 6,
+        "opposite_nonzero_sign": 0,
+        "bf16_exact_zero": 0,
+        "float32_exact_zero": 0,
+        "sign_matrix_bf16_rows_float32_columns": {
+          "negative": {
+            "negative": 2,
+            "zero": 0,
+            "positive": 0
+          },
+          "zero": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 0
+          },
+          "positive": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 4
+          }
+        }
+      },
+      "paws": {
+        "contrasts": 6,
+        "mean_bf16_change": -0.009398301442464193,
+        "mean_float32_change": -0.012676000595092773,
+        "mean_absolute_discrepancy": 0.006492455800374349,
+        "maximum_absolute_discrepancy": 0.014430522918701172,
+        "same_nonzero_sign": 6,
+        "opposite_nonzero_sign": 0,
+        "bf16_exact_zero": 0,
+        "float32_exact_zero": 0,
+        "sign_matrix_bf16_rows_float32_columns": {
+          "negative": {
+            "negative": 3,
+            "zero": 0,
+            "positive": 0
+          },
+          "zero": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 0
+          },
+          "positive": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 3
+          }
+        }
+      },
+      "female": {
+        "contrasts": 6,
+        "mean_bf16_change": -0.01629638671875,
+        "mean_float32_change": -0.0012363195419311523,
+        "mean_absolute_discrepancy": 0.01597575346628825,
+        "maximum_absolute_discrepancy": 0.03220558166503906,
+        "same_nonzero_sign": 4,
+        "opposite_nonzero_sign": 2,
+        "bf16_exact_zero": 0,
+        "float32_exact_zero": 0,
+        "sign_matrix_bf16_rows_float32_columns": {
+          "negative": {
+            "negative": 3,
+            "zero": 0,
+            "positive": 2
+          },
+          "zero": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 0
+          },
+          "positive": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 1
+          }
+        }
+      }
+    },
+    "by_operation": {
+      "canonical": {
+        "contrasts": 12,
+        "mean_bf16_change": 0.004086653391520183,
+        "mean_float32_change": 0.002152423063913981,
+        "mean_absolute_discrepancy": 0.015425423781077066,
+        "maximum_absolute_discrepancy": 0.030195236206054688,
+        "same_nonzero_sign": 9,
+        "opposite_nonzero_sign": 3,
+        "bf16_exact_zero": 0,
+        "float32_exact_zero": 0,
+        "sign_matrix_bf16_rows_float32_columns": {
+          "negative": {
+            "negative": 2,
+            "zero": 0,
+            "positive": 3
+          },
+          "zero": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 0
+          },
+          "positive": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 7
+          }
+        }
+      },
+      "attenuate": {
+        "contrasts": 12,
+        "mean_bf16_change": -0.00035395224889119464,
+        "mean_float32_change": 0.0021552046140034995,
+        "mean_absolute_discrepancy": 0.012884736061096191,
+        "maximum_absolute_discrepancy": 0.04111957550048828,
+        "same_nonzero_sign": 11,
+        "opposite_nonzero_sign": 1,
+        "bf16_exact_zero": 0,
+        "float32_exact_zero": 0,
+        "sign_matrix_bf16_rows_float32_columns": {
+          "negative": {
+            "negative": 8,
+            "zero": 0,
+            "positive": 1
+          },
+          "zero": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 0
+          },
+          "positive": {
+            "negative": 0,
+            "zero": 0,
+            "positive": 3
+          }
+        }
+      }
+    },
+    "all_comparisons": [
+      {
+        "case_id": "112_lex_validation_genki_01",
+        "condition_id": "canonical_genki",
+        "ingredient": "genki",
+        "bf16_change": -0.0019092559814453125,
+        "float32_change": 0.0016639232635498047,
+        "difference": 0.003573179244995117,
+        "absolute_difference": 0.003573179244995117
+      },
+      {
+        "case_id": "112_lex_validation_genki_01",
+        "condition_id": "attenuate_genki",
+        "ingredient": "genki",
+        "bf16_change": -0.006253957748413086,
+        "float32_change": -0.01489710807800293,
+        "difference": -0.008643150329589844,
+        "absolute_difference": 0.008643150329589844
+      },
+      {
+        "case_id": "112_lex_validation_genki_02",
+        "condition_id": "canonical_genki",
+        "ingredient": "genki",
+        "bf16_change": 0.03080010414123535,
+        "float32_change": 0.0006048679351806641,
+        "difference": -0.030195236206054688,
+        "absolute_difference": 0.030195236206054688
+      },
+      {
+        "case_id": "112_lex_validation_genki_02",
+        "condition_id": "attenuate_genki",
+        "ingredient": "genki",
+        "bf16_change": 0.04667973518371582,
+        "float32_change": 0.005560159683227539,
+        "difference": -0.04111957550048828,
+        "absolute_difference": 0.04111957550048828
+      },
+      {
+        "case_id": "112_lex_validation_genki_03",
+        "condition_id": "canonical_genki",
+        "ingredient": "genki",
+        "bf16_change": -0.013895511627197266,
+        "float32_change": 0.0012242794036865234,
+        "difference": 0.015119791030883789,
+        "absolute_difference": 0.015119791030883789
+      },
+      {
+        "case_id": "112_lex_validation_genki_03",
+        "condition_id": "attenuate_genki",
+        "ingredient": "genki",
+        "bf16_change": -0.04675102233886719,
+        "float32_change": -0.03440356254577637,
+        "difference": 0.01234745979309082,
+        "absolute_difference": 0.01234745979309082
+      },
+      {
+        "case_id": "112_lex_validation_hugs_01",
+        "condition_id": "canonical_hugs",
+        "ingredient": "hugs",
+        "bf16_change": 0.018438339233398438,
+        "float32_change": 0.0021948814392089844,
+        "difference": -0.016243457794189453,
+        "absolute_difference": 0.016243457794189453
+      },
+      {
+        "case_id": "112_lex_validation_hugs_01",
+        "condition_id": "attenuate_hugs",
+        "ingredient": "hugs",
+        "bf16_change": -0.020902156829833984,
+        "float32_change": -0.0002675056457519531,
+        "difference": 0.02063465118408203,
+        "absolute_difference": 0.02063465118408203
+      },
+      {
+        "case_id": "112_lex_validation_hugs_02",
+        "condition_id": "canonical_hugs",
+        "ingredient": "hugs",
+        "bf16_change": 0.036440372467041016,
+        "float32_change": 0.0070531368255615234,
+        "difference": -0.029387235641479492,
+        "absolute_difference": 0.029387235641479492
+      },
+      {
+        "case_id": "112_lex_validation_hugs_02",
+        "condition_id": "attenuate_hugs",
+        "ingredient": "hugs",
+        "bf16_change": 0.14197540283203125,
+        "float32_change": 0.1332101821899414,
+        "difference": -0.008765220642089844,
+        "absolute_difference": 0.008765220642089844
+      },
+      {
+        "case_id": "112_lex_validation_hugs_03",
+        "condition_id": "canonical_hugs",
+        "ingredient": "hugs",
+        "bf16_change": -0.023372411727905273,
+        "float32_change": -0.00480341911315918,
+        "difference": 0.018568992614746094,
+        "absolute_difference": 0.018568992614746094
+      },
+      {
+        "case_id": "112_lex_validation_hugs_03",
+        "condition_id": "attenuate_hugs",
+        "ingredient": "hugs",
+        "bf16_change": 0.03771090507507324,
+        "float32_change": 0.038025617599487305,
+        "difference": 0.0003147125244140625,
+        "absolute_difference": 0.0003147125244140625
+      },
+      {
+        "case_id": "112_lex_validation_paws_01",
+        "condition_id": "canonical_paws",
+        "ingredient": "paws",
+        "bf16_change": 0.017980337142944336,
+        "float32_change": 0.003549814224243164,
+        "difference": -0.014430522918701172,
+        "absolute_difference": 0.014430522918701172
+      },
+      {
+        "case_id": "112_lex_validation_paws_01",
+        "condition_id": "attenuate_paws",
+        "ingredient": "paws",
+        "bf16_change": -0.023852825164794922,
+        "float32_change": -0.027578353881835938,
+        "difference": -0.0037255287170410156,
+        "absolute_difference": 0.0037255287170410156
+      },
+      {
+        "case_id": "112_lex_validation_paws_02",
+        "condition_id": "canonical_paws",
+        "ingredient": "paws",
+        "bf16_change": 0.019353389739990234,
+        "float32_change": 0.011884689331054688,
+        "difference": -0.007468700408935547,
+        "absolute_difference": 0.007468700408935547
+      },
+      {
+        "case_id": "112_lex_validation_paws_02",
+        "condition_id": "attenuate_paws",
+        "ingredient": "paws",
+        "bf16_change": -0.057413578033447266,
+        "float32_change": -0.05621147155761719,
+        "difference": 0.0012021064758300781,
+        "absolute_difference": 0.0012021064758300781
+      },
+      {
+        "case_id": "112_lex_validation_paws_03",
+        "condition_id": "canonical_paws",
+        "ingredient": "paws",
+        "bf16_change": 0.005100727081298828,
+        "float32_change": 0.0014150142669677734,
+        "difference": -0.0036857128143310547,
+        "absolute_difference": 0.0036857128143310547
+      },
+      {
+        "case_id": "112_lex_validation_paws_03",
+        "condition_id": "attenuate_paws",
+        "ingredient": "paws",
+        "bf16_change": -0.017557859420776367,
+        "float32_change": -0.00911569595336914,
+        "difference": 0.008442163467407227,
+        "absolute_difference": 0.008442163467407227
+      },
+      {
+        "case_id": "112_lex_validation_female_01",
+        "condition_id": "canonical_female",
+        "ingredient": "female",
+        "bf16_change": -0.022457599639892578,
+        "float32_change": -9.5367431640625e-06,
+        "difference": 0.022448062896728516,
+        "absolute_difference": 0.022448062896728516
+      },
+      {
+        "case_id": "112_lex_validation_female_01",
+        "condition_id": "attenuate_female",
+        "ingredient": "female",
+        "bf16_change": -0.03705787658691406,
+        "float32_change": -0.004852294921875,
+        "difference": 0.03220558166503906,
+        "absolute_difference": 0.03220558166503906
+      },
+      {
+        "case_id": "112_lex_validation_female_02",
+        "condition_id": "canonical_female",
+        "ingredient": "female",
+        "bf16_change": -0.020837068557739258,
+        "float32_change": 0.0004000663757324219,
+        "difference": 0.02123713493347168,
+        "absolute_difference": 0.02123713493347168
+      },
+      {
+        "case_id": "112_lex_validation_female_02",
+        "condition_id": "attenuate_female",
+        "ingredient": "female",
+        "bf16_change": -0.011461973190307617,
+        "float32_change": -0.003721475601196289,
+        "difference": 0.007740497589111328,
+        "absolute_difference": 0.007740497589111328
+      },
+      {
+        "case_id": "112_lex_validation_female_03",
+        "condition_id": "canonical_female",
+        "ingredient": "female",
+        "bf16_change": 0.003398418426513672,
+        "float32_change": 0.0006513595581054688,
+        "difference": -0.002747058868408203,
+        "absolute_difference": 0.002747058868408203
+      },
+      {
+        "case_id": "112_lex_validation_female_03",
+        "condition_id": "attenuate_female",
+        "ingredient": "female",
+        "bf16_change": -0.009362220764160156,
+        "float32_change": 0.00011396408081054688,
+        "difference": 0.009476184844970703,
+        "absolute_difference": 0.009476184844970703
+      }
+    ],
+    "limits": "Sign agreement is descriptive and ignores magnitude; exact-zero counts are separate. No numerical threshold excludes outcomes or revises primary BF16 findings."
+  },
+  "precision_matched_table": [
+    {
+      "ingredient": "genki",
+      "operation": "canonical",
+      "cases": 3,
+      "bf16_mean_change": 0.004998445510864258,
+      "float32_mean_change": 0.0011643568674723308,
+      "bf16_positive_cases": 1,
+      "float32_positive_cases": 3,
+      "sign_agreement": 1,
+      "random_bf16_matched_mean": 0.0034624735514322915,
+      "random_bf16_positive_cases": 1,
+      "bf16_practical_enhancement_marker": false,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 5.965328936230167e-24,
+      "bf16_candidate_mass_max": 7.011051126108247e-21,
+      "float32_candidate_mass_min": 4.37259339909826e-24,
+      "float32_candidate_mass_max": 6.370789971839727e-21
+    },
+    {
+      "ingredient": "genki",
+      "operation": "attenuate",
+      "cases": 3,
+      "bf16_mean_change": -0.002108414967854818,
+      "float32_mean_change": -0.014580170313517252,
+      "bf16_positive_cases": 1,
+      "float32_positive_cases": 1,
+      "sign_agreement": 3,
+      "random_bf16_matched_mean": null,
+      "random_bf16_positive_cases": null,
+      "bf16_practical_enhancement_marker": false,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 5.157876947070431e-24,
+      "bf16_candidate_mass_max": 6.575528440671467e-21,
+      "float32_candidate_mass_min": 5.120882137650228e-24,
+      "float32_candidate_mass_max": 7.077261580927798e-21
+    },
+    {
+      "ingredient": "hugs",
+      "operation": "canonical",
+      "cases": 3,
+      "bf16_mean_change": 0.010502099990844727,
+      "float32_mean_change": 0.0014815330505371094,
+      "bf16_positive_cases": 2,
+      "float32_positive_cases": 2,
+      "sign_agreement": 3,
+      "random_bf16_matched_mean": -0.011901219685872396,
+      "random_bf16_positive_cases": 1,
+      "bf16_practical_enhancement_marker": true,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 5.435446769337857e-26,
+      "bf16_candidate_mass_max": 5.773054993705669e-22,
+      "float32_candidate_mass_min": 5.466025264134841e-26,
+      "float32_candidate_mass_max": 4.752701413837393e-22
+    },
+    {
+      "ingredient": "hugs",
+      "operation": "attenuate",
+      "cases": 3,
+      "bf16_mean_change": 0.05292805035909017,
+      "float32_mean_change": 0.056989431381225586,
+      "bf16_positive_cases": 2,
+      "float32_positive_cases": 2,
+      "sign_agreement": 3,
+      "random_bf16_matched_mean": null,
+      "random_bf16_positive_cases": null,
+      "bf16_practical_enhancement_marker": false,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 5.0922012315318284e-26,
+      "bf16_candidate_mass_max": 3.244647398451957e-21,
+      "float32_candidate_mass_min": 5.829493009043276e-26,
+      "float32_candidate_mass_max": 2.7307145510725564e-21
+    },
+    {
+      "ingredient": "paws",
+      "operation": "canonical",
+      "cases": 3,
+      "bf16_mean_change": 0.014144817988077799,
+      "float32_mean_change": 0.005616505940755208,
+      "bf16_positive_cases": 3,
+      "float32_positive_cases": 3,
+      "sign_agreement": 3,
+      "random_bf16_matched_mean": 0.013506571451822916,
+      "random_bf16_positive_cases": 3,
+      "bf16_practical_enhancement_marker": true,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 4.2186846394613815e-27,
+      "bf16_candidate_mass_max": 6.943673077612583e-17,
+      "float32_candidate_mass_min": 5.417848909733063e-27,
+      "float32_candidate_mass_max": 6.900157801450211e-17
+    },
+    {
+      "ingredient": "paws",
+      "operation": "attenuate",
+      "cases": 3,
+      "bf16_mean_change": -0.03294142087300619,
+      "float32_mean_change": -0.030968507130940754,
+      "bf16_positive_cases": 0,
+      "float32_positive_cases": 0,
+      "sign_agreement": 3,
+      "random_bf16_matched_mean": null,
+      "random_bf16_positive_cases": null,
+      "bf16_practical_enhancement_marker": false,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 1.5163748701690614e-27,
+      "bf16_candidate_mass_max": 3.8122866022793927e-17,
+      "float32_candidate_mass_min": 1.8887001666577985e-27,
+      "float32_candidate_mass_max": 5.088517286701746e-17
+    },
+    {
+      "ingredient": "female",
+      "operation": "canonical",
+      "cases": 3,
+      "bf16_mean_change": -0.013298749923706055,
+      "float32_mean_change": 0.00034729639689127606,
+      "bf16_positive_cases": 1,
+      "float32_positive_cases": 2,
+      "sign_agreement": 2,
+      "random_bf16_matched_mean": 0.0006012916564941406,
+      "random_bf16_positive_cases": 2,
+      "bf16_practical_enhancement_marker": false,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 1.4044197708486313e-27,
+      "bf16_candidate_mass_max": 3.728882094548539e-23,
+      "float32_candidate_mass_min": 1.1975853083744307e-27,
+      "float32_candidate_mass_max": 4.185304092983142e-23
+    },
+    {
+      "ingredient": "female",
+      "operation": "attenuate",
+      "cases": 3,
+      "bf16_mean_change": -0.019294023513793945,
+      "float32_mean_change": -0.0028199354807535806,
+      "bf16_positive_cases": 0,
+      "float32_positive_cases": 1,
+      "sign_agreement": 2,
+      "random_bf16_matched_mean": null,
+      "random_bf16_positive_cases": null,
+      "bf16_practical_enhancement_marker": false,
+      "float32_practical_enhancement_marker": false,
+      "bf16_candidate_mass_min": 1.3912225845272519e-27,
+      "bf16_candidate_mass_max": 3.8945899455197344e-23,
+      "float32_candidate_mass_min": 1.190366203165249e-27,
+      "float32_candidate_mass_max": 3.9228902642126353e-23
+    }
+  ],
+  "random_natural_summary": [
+    {
+      "matched_context_ingredient": "genki",
+      "layer": 13,
+      "neuron": 7887,
+      "arbitrary_matched_direction": 1,
+      "discovery_final_sd": 0.018142202655859755,
+      "semantic_signed_raw": -0.003987630208333333,
+      "semantic_discovery_sd": -0.21979857043683543,
+      "keyword_signed_raw": -0.0004069010416666667,
+      "keyword_discovery_sd": -0.022428425554779127,
+      "semantic_positive_families": 1,
+      "families": 3,
+      "descriptive_semantic_marker": false
+    },
+    {
+      "matched_context_ingredient": "hugs",
+      "layer": 4,
+      "neuron": 4897,
+      "arbitrary_matched_direction": -1,
+      "discovery_final_sd": 0.05038516917776081,
+      "semantic_signed_raw": -0.003662109375,
+      "semantic_discovery_sd": -0.07268228795818742,
+      "keyword_signed_raw": -0.009684244791666666,
+      "keyword_discovery_sd": -0.19220427260054004,
+      "semantic_positive_families": 1,
+      "families": 3,
+      "descriptive_semantic_marker": false
+    },
+    {
+      "matched_context_ingredient": "paws",
+      "layer": 23,
+      "neuron": 7626,
+      "arbitrary_matched_direction": 1,
+      "discovery_final_sd": 0.06824389384754939,
+      "semantic_signed_raw": 0.0076904296875,
+      "semantic_discovery_sd": 0.11269037057996303,
+      "keyword_signed_raw": 0.0010986328125,
+      "keyword_discovery_sd": 0.01609862436856615,
+      "semantic_positive_families": 2,
+      "families": 3,
+      "descriptive_semantic_marker": false
+    },
+    {
+      "matched_context_ingredient": "female",
+      "layer": 22,
+      "neuron": 6906,
+      "arbitrary_matched_direction": -1,
+      "discovery_final_sd": 0.04272424747374316,
+      "semantic_signed_raw": -0.008626302083333334,
+      "semantic_discovery_sd": -0.2019064721651273,
+      "keyword_signed_raw": 0.009928385416666666,
+      "keyword_discovery_sd": 0.23238292079382572,
+      "semantic_positive_families": 0,
+      "families": 3,
+      "descriptive_semantic_marker": false
+    }
+  ],
+  "random_discovery_final_stats": {
+    "genki": {
+      "count": 60,
+      "mean": -0.035828653971354166,
+      "sd_population": 0.018142202655859755,
+      "q25": -0.0377197265625,
+      "q75": -0.029541015625
+    },
+    "hugs": {
+      "count": 60,
+      "mean": 0.00694427490234375,
+      "sd_population": 0.05038516917776081,
+      "q25": 0.014190673828125,
+      "q75": 0.0377197265625
+    },
+    "paws": {
+      "count": 60,
+      "mean": 0.03535664876302083,
+      "sd_population": 0.06824389384754939,
+      "q25": 0.01373291015625,
+      "q75": 0.066162109375
+    },
+    "female": {
+      "count": 60,
+      "mean": -0.04659220377604167,
+      "sd_population": 0.04272424747374316,
+      "q25": -0.05511474609375,
+      "q75": -0.028900146484375
+    }
+  },
+  "candidate_mass_limit": "Full candidate continuation masses are tiny and vary with length; exact-sequence probabilities naturally shrink with length, so this does not imply a meaning is impossible. These are relative teacher-forced wording preferences, not free-generation persona probabilities. Conditional normalization over supplied sequences does not establish semantic interpretation.",
+  "random_writing_limit": "Random writing controls were measured in BF16 only, not float32. Similar matched random gains prevent interpreting native sign stability as semantic specificity.",
+  "random_limit": "Four fixed unrelated same-layer coordinates, signs inherited from matched target interventions. Context labels are original target hypotheses, not meanings of control neurons. No random-control forecasts were collected or pooled into target forecast scores. No population inference.",
+  "numerical_limit": "Float32 computations preserve original BF16 checkpoint weight values exactly; no dose refit. Precision sensitivity alone does not identify which path is closer to an exact model computation.",
+  "provenance": {
+    "precision_comparisons": {
+      "path": "results.local/precision_audit/comparison.csv",
+      "sha256": "076aa94a4a2eb93e2d95832f203ea719da911fd8e2cf333cfe95a12bd3f46f2d"
+    },
+    "precision_raw": {
+      "path": "results.local/precision_audit/float32.jsonl",
+      "sha256": "24b23f8aef71f56b35836c613795f53617804598bcf4f5f892731d71039895fd"
+    },
+    "precision_metadata": {
+      "path": "results.local/precision_audit/metadata.json",
+      "sha256": "bc2f87f3d862d2dddabe94540cf61a6f648a25e62206f4a3eefe2b9666046331"
+    },
+    "bf16_raw": {
+      "path": "results.local/validation_lexical_generation/probe.jsonl",
+      "sha256": "c419aeee447c28fa9dd704df75b60154efc17e9c45320d663ca26531c4b98563"
+    },
+    "random_bf16_raw": {
+      "path": "results.local/validation_lexical_generation_random/probe.jsonl",
+      "sha256": "b4ff4579d1521c80534e70aac7900324d71d3eeb19f4d62e4b5299ed10c5daac"
+    },
+    "lexical_cases": {
+      "path": "CASES_lexical_validation.json",
+      "sha256": "c485117ec62d310dbdf9e607fb2e0e658e39b5da071f750fb52d9d064ac09935"
+    },
+    "control_discovery": {
+      "path": "results.local/control_capture/natural.jsonl",
+      "sha256": "7e515c591e09c45f3abc0f0ec5d016ae9ecdcc997c02ac38f608e164cb290f61"
+    },
+    "control_validation": {
+      "path": "results.local/validation_natural_random/natural.jsonl",
+      "sha256": "f1c34a38442442251a393ff288c3eba59e5b7e31759b0c12309c2adb5a9eefd1"
+    },
+    "control_metadata": {
+      "path": "results.local/control_capture/natural_metadata.json",
+      "sha256": "37ff7a9da275b2252b7809dca64b2894e766d320cb078ecb2073c1ff450d81bf"
+    },
+    "control_coordinates": {
+      "path": "CONTROL_COORDINATES.json",
+      "sha256": "9fa99fddae35b8107b87cc97c6bb8f1cdb2dc6f314b45946aaa42e6c450a360d"
+    },
+    "natural_cases": {
+      "path": "CASES_natural_validation.json",
+      "sha256": "8789a4483a4e25349acb3c45ed7f9f39bd56bad25b3421d1e0c4cd8d4a1f32b0"
+    },
+    "precision_plan": {
+      "path": "PRECISION_PLAN.md",
+      "sha256": "ae6ae80307508b4077ff1c48d5deee103efdf772fb1e48eac138f67bdc60635e"
+    },
+    "analyzer": {
+      "path": "analyze.py",
+      "sha256": "e6cb86665746bdcc318a93f80a55f8da67b999f3c7dedae8550afa0e850e6c26"
+    },
+    "helper": {
+      "path": "audit_completed_measurements.py",
+      "sha256": "7fbf4cab319267102445dc4e53b7e6a7fc05cc9168042cbb88a5dcb98d4c1d12"
+    }
+  }
+}

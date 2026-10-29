@@ -1,0 +1,27 @@
+{
+  "posthoc": true,
+  "purpose": "Diagnose failed answer-format/forced-choice semantic assay; not a replacement scientific endpoint.",
+  "cases": 48,
+  "leading_answer_categories": {
+    "other_prefix": 19,
+    "yes": 28,
+    "no": 1
+  },
+  "input_ids_identical": 48,
+  "all_primary_scores_retained": true,
+  "interpretation": "Some actual baseline continuations acknowledge the account before answering, and capitalization varies. Restricting the first position to supplied capitalized Yes/No alternatives is not a reliable readout of semantic understanding here. Literal spelling lists are an additional task confound. No intervention or new semantic generalization claim is made.",
+  "example_of_format_mismatch": {
+    "case_id": "112_nat_validation_genki_1_s0k0",
+    "semantic_present": false,
+    "keyword_present": false,
+    "text": "I have read the account.\n\nno",
+    "finish_reason": "stop",
+    "leading_answer_category": "other_prefix",
+    "input_ids_match_original_probe": true,
+    "original_forced_yes_logprob": -1.3039703369140625,
+    "original_forced_no_logprob": -2.9289703369140625
+  },
+  "raw_sha256": "1384fc3545da5cf995f94fe66a8cd23886e7e9bd182e5c409ca95f295f17641a",
+  "original_probe_sha256": "54dbae2cded6ca5e34836c71da0d9215baae0b284e7015a7986961b6b1e3adbb",
+  "parser_timing": "Leading-word counts are post-hoc descriptive, after seeing example outputs. No accuracy or significance claim."
+}

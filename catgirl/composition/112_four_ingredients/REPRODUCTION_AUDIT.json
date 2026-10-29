@@ -1,0 +1,156 @@
+{
+  "study": 112,
+  "status": "passed",
+  "archive_sha256": "814d2d9c67d3c35d0be276e761728252e0222ee12fba3632c0642fda7325de3a",
+  "archive_compressed_bytes": 4248857,
+  "analyzer_sha256": "e6cb86665746bdcc318a93f80a55f8da67b999f3c7dedae8550afa0e850e6c26",
+  "reproduction_manifest_sha256": "f71107dd67221235b4bd69fb88fe2339c22142e52d8e941096b12f4a042c87d6",
+  "execution": {
+    "gpu_used": false,
+    "model_loaded": false,
+    "fresh_separate_extraction": true,
+    "interpreter": "project .venv/bin/python",
+    "arguments": [
+      "analyze.py",
+      "--manifest",
+      "analysis_inputs.reproduction.json",
+      "--output",
+      "analysis_reproduced"
+    ],
+    "numpy_version": "2.5.4",
+    "exit_code": 0
+  },
+  "documentation_rebuild": {
+    "changed_archive_members": [
+      "MEASUREMENTS_MANIFEST.json",
+      "MEASUREMENTS_README.md"
+    ],
+    "all_executed_archive_inputs_byte_identical": true,
+    "note": "The archive README was updated after extraction to require a clean separate directory. All computation inputs and included analyzer stayed identical."
+  },
+  "comparison": {
+    "tables": 14,
+    "rows": 201210,
+    "numeric_cells": 1244199,
+    "discrepancies": [],
+    "every_csv_byte_identical": true,
+    "summary_equal_ignoring_only_input_hashes": true,
+    "ignored_summary_keys": [
+      "input_hashes"
+    ],
+    "tables_detail": [
+      {
+        "file": "factorial_counts.csv",
+        "rows": 1260,
+        "numeric_cells": 6000,
+        "other_cells": 2820,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "factorial_details.csv",
+        "rows": 28800,
+        "numeric_cells": 28800,
+        "other_cells": 172800,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "factorial_effects.csv",
+        "rows": 1440,
+        "numeric_cells": 7200,
+        "other_cells": 7200,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "forecast_comparisons.csv",
+        "rows": 378,
+        "numeric_cells": 1512,
+        "other_cells": 2646,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "forecast_scores.csv",
+        "rows": 504,
+        "numeric_cells": 1512,
+        "other_cells": 2520,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "forecast_unit_losses.csv",
+        "rows": 155904,
+        "numeric_cells": 1088640,
+        "other_cells": 1094016,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "lexical_cases.csv",
+        "rows": 336,
+        "numeric_cells": 2688,
+        "other_cells": 2352,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "lexical_effects.csv",
+        "rows": 112,
+        "numeric_cells": 672,
+        "other_cells": 784,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "natural_cases.csv",
+        "rows": 768,
+        "numeric_cells": 2304,
+        "other_cells": 3840,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "natural_effects.csv",
+        "rows": 64,
+        "numeric_cells": 336,
+        "other_cells": 624,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "perturbation_cases.csv",
+        "rows": 9840,
+        "numeric_cells": 87180,
+        "other_cells": 129300,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "perturbation_summary.csv",
+        "rows": 348,
+        "numeric_cells": 2011,
+        "other_cells": 2513,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "semantic_cases.csv",
+        "rows": 1344,
+        "numeric_cells": 13440,
+        "other_cells": 9408,
+        "byte_identical": true,
+        "discrepancies": 0
+      },
+      {
+        "file": "semantic_effects.csv",
+        "rows": 112,
+        "numeric_cells": 1904,
+        "other_cells": 672,
+        "byte_identical": true,
+        "discrepancies": 0
+      }
+    ]
+  }
+}

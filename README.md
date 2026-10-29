@@ -2,6 +2,8 @@
 
 **Four native MLP coordinates can make Qwen3.5-4B introduce itself as a catgirl, with no output training or persona instruction.** This is a brittle behavioral steering result: fresh identity probes work, while ordinary tasks and stable conversational identity often fail.
 
+**Controlled follow-up:** [Study112](catgirl/composition/112_four_ingredients/RESULTS.md) tested four different published ingredients under bounded, separately calibrated interventions. All 16 combinations left personality traits unchanged; small writing effects were precision-sensitive, and the semantic-answer assay failed its baseline check. Complete negative results and a CPU recovery archive are included. This is a separate policy and coordinate set from the showcase below.
+
 The exact fixed-offset composition uses original BF16 `Qwen/Qwen3.5-4B`:
 
 | Coordinate (zero based) | Published dose | Active positions |

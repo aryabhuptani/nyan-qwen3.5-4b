@@ -1,0 +1,178 @@
+{
+  "study": 112,
+  "created_without_opening_outcomes": true,
+  "execution_precondition": "Root confirms all behavioral labels locked before outcome analysis",
+  "labels_lock": "results.local/scored/labels_lock.json",
+  "discovery": {
+    "raw": "results.local/discovery_capture/natural.jsonl"
+  },
+  "natural": {
+    "raw": "results.local/validation_natural/natural.jsonl",
+    "cases": "CASES_natural_validation.json"
+  },
+  "lexical": [
+    {
+      "raw": "results.local/validation_lexical_generation/probe.jsonl",
+      "cases": "CASES_lexical_validation.json",
+      "scope": "generation"
+    },
+    {
+      "raw": "results.local/validation_lexical_generation_random/probe.jsonl",
+      "cases": "CASES_lexical_validation.json",
+      "scope": "generation"
+    },
+    {
+      "raw": "results.local/validation_lexical_readout/probe.jsonl",
+      "cases": "CASES_lexical_validation.json",
+      "scope": "readout"
+    },
+    {
+      "raw": "results.local/validation_lexical_readout_random/probe.jsonl",
+      "cases": "CASES_lexical_validation.json",
+      "scope": "readout"
+    }
+  ],
+  "semantic": [
+    {
+      "raw": "results.local/validation_semantic_carrier/probe.jsonl",
+      "cases": "CASES_natural_validation.json",
+      "scope": "carrier"
+    },
+    {
+      "raw": "results.local/validation_semantic_carrier_random/probe.jsonl",
+      "cases": "CASES_natural_validation.json",
+      "scope": "carrier"
+    },
+    {
+      "raw": "results.local/validation_semantic_readout/probe.jsonl",
+      "cases": "CASES_natural_validation.json",
+      "scope": "readout"
+    },
+    {
+      "raw": "results.local/validation_semantic_readout_random/probe.jsonl",
+      "cases": "CASES_natural_validation.json",
+      "scope": "readout"
+    }
+  ],
+  "factorial": {
+    "labels_by_reviewer": {
+      "final": "results.local/scored/labels.csv",
+      "reviewer_A": "results.local/scored/labels_reviewer_A.csv",
+      "reviewer_B": "results.local/scored/labels_reviewer_B.csv",
+      "uncertain_zero": "results.local/scored/labels_uncertain_zero.csv",
+      "uncertain_one": "results.local/scored/labels_uncertain_one.csv"
+    },
+    "conditions": "analysis_conditions.json",
+    "endpoint_columns": {
+      "bubbly_excited_expression": "bubbly_excited_expression",
+      "lexical_hugs_cuddles": "lexical_hugs_cuddles",
+      "lexical_paws_tail_fur": "lexical_paws_tail_fur",
+      "female_assistant_selfrole": "female_assistant_selfrole"
+    },
+    "extra_endpoints": [
+      "emoji_in_assistant_voice",
+      "sustained_cute_register",
+      "explicit_virtual_affection",
+      "own_animal_body",
+      "feline_assistant_selfrole",
+      "performed_feline_vocalization",
+      "coherent",
+      "task_relevant"
+    ]
+  },
+  "forecasts_csv": "forecasts_normalized.csv",
+  "perturbations": [
+    {
+      "raw": "results.local/validation_lexical_generation/probe.jsonl",
+      "metadata": "results.local/validation_lexical_generation/probe_metadata.json",
+      "label": "lexical_generation",
+      "coordinate_kind": "target",
+      "selection": "jobs/SELECTED_DOSES.json"
+    },
+    {
+      "raw": "results.local/validation_lexical_generation_random/probe.jsonl",
+      "metadata": "results.local/validation_lexical_generation_random/probe_metadata.json",
+      "label": "lexical_generation_random",
+      "coordinate_kind": "random",
+      "selection": "jobs/SELECTED_DOSES.json",
+      "calibration": "results.local/control_capture/calibration.json"
+    },
+    {
+      "raw": "results.local/validation_lexical_readout/probe.jsonl",
+      "metadata": "results.local/validation_lexical_readout/probe_metadata.json",
+      "label": "lexical_readout",
+      "coordinate_kind": "target",
+      "selection": "jobs/SELECTED_DOSES.json"
+    },
+    {
+      "raw": "results.local/validation_lexical_readout_random/probe.jsonl",
+      "metadata": "results.local/validation_lexical_readout_random/probe_metadata.json",
+      "label": "lexical_readout_random",
+      "coordinate_kind": "random",
+      "selection": "jobs/SELECTED_DOSES.json",
+      "calibration": "results.local/control_capture/calibration.json"
+    },
+    {
+      "raw": "results.local/validation_semantic_carrier/probe.jsonl",
+      "metadata": "results.local/validation_semantic_carrier/probe_metadata.json",
+      "label": "semantic_carrier",
+      "coordinate_kind": "target",
+      "selection": "jobs/SELECTED_DOSES.json"
+    },
+    {
+      "raw": "results.local/validation_semantic_carrier_random/probe.jsonl",
+      "metadata": "results.local/validation_semantic_carrier_random/probe_metadata.json",
+      "label": "semantic_carrier_random",
+      "coordinate_kind": "random",
+      "selection": "jobs/SELECTED_DOSES.json",
+      "calibration": "results.local/control_capture/calibration.json"
+    },
+    {
+      "raw": "results.local/validation_semantic_readout/probe.jsonl",
+      "metadata": "results.local/validation_semantic_readout/probe_metadata.json",
+      "label": "semantic_readout",
+      "coordinate_kind": "target",
+      "selection": "jobs/SELECTED_DOSES.json"
+    },
+    {
+      "raw": "results.local/validation_semantic_readout_random/probe.jsonl",
+      "metadata": "results.local/validation_semantic_readout_random/probe_metadata.json",
+      "label": "semantic_readout_random",
+      "coordinate_kind": "random",
+      "selection": "jobs/SELECTED_DOSES.json",
+      "calibration": "results.local/control_capture/calibration.json"
+    },
+    {
+      "raw": "results.local/validation_factorial/generation.jsonl",
+      "metadata": "results.local/validation_factorial/generation_metadata.json",
+      "label": "factorial",
+      "coordinate_kind": "target",
+      "selection": "jobs/SELECTED_DOSES.json"
+    },
+    {
+      "raw": "results.local/validation_strong_singletons/generation.jsonl",
+      "metadata": "results.local/validation_strong_singletons/generation_metadata.json",
+      "label": "strong_singletons",
+      "coordinate_kind": "target",
+      "selection": "jobs/SELECTED_DOSES.json"
+    },
+    {
+      "raw": "results.local/validation_random_four/generation.jsonl",
+      "metadata": "results.local/validation_random_four/generation_metadata.json",
+      "label": "random_four",
+      "coordinate_kind": "random",
+      "selection": "jobs/SELECTED_DOSES.json",
+      "calibration": "results.local/control_capture/calibration.json"
+    }
+  ],
+  "metadata_only_builder": {
+    "sha256": "d96da0d211b22d7c5c1a679c5d82cbf7f061b327d0bf0403a0fcc77351063f50",
+    "source_job_sha256": {
+      "jobs/JOB_validation_factorial16.json": "7a2a0d369ec0e1eae9519c9e77bc8dc96bf1ee5a4a19b1be4f69a1f3932bcaa3",
+      "jobs/JOB_validation_strong_singletons.json": "6657e37425bb77436d4e8c4824d16c0689ff6861433f36fae93ee97a5bcbf18d",
+      "jobs/JOB_validation_random_four.json": "56dd98468454c0bb06dbecf7af201b85f623f1fde1575e8c47c0a8fcb7b2405a"
+    },
+    "note": "No raw output, label, forecast prediction or analysis file was opened. Natural random-channel association and the float32 sensitivity audit are reported separately; main natural analysis uses the four published coordinates."
+  },
+  "reproduction_note": "Extract archive into this study112 directory. All analysis inputs remain relative; numeric and verbatim scientific inputs are unchanged. Host paths are sanitized only in phase metadata. Persistence is exported separately."
+}

@@ -1,5 +1,7 @@
 # Four native ingredients: wording, meaning and composition
 
+**Completed:** [Results and ELI5 explanation](RESULTS.md). The bounded policy did not produce personality composition; the semantic-answer assay was uninformative at baseline. The predeclared sharing gate failed. All negative outcomes are retained.
+
 This study separates three questions: whether published Neuronary descriptions predict natural activity, whether interventions change particular writing preferences, and whether combinations produce the corresponding conversational behaviors. These questions can have different answers.
 
 The fixed ingredients are [Genki cute](https://neuronary.org/r/5v8axayv), [Hugs](https://neuronary.org/r/pybhb985), [Paws & tail](https://neuronary.org/r/dg2d4u26), and [Female, layer22](https://neuronary.org/r/6waz9uek). Exact original source wording and zero-based coordinates are in [SOURCES.json](SOURCES.json). These are previously published and previously tested coordinates, not new discoveries. Publisher steering descriptions are hypotheses about transfer, not established natural functions.
@@ -39,7 +41,21 @@ env HF_HOME=/path/to/model-cache .venv/bin/python \
   --output-root /path/to/fresh-replication --run
 ```
 
-The runner refuses changed frozen inputs and differing existing outputs. New replications must preserve the published decision artifacts and use separate output paths. Raw activation arrays and full agent transcripts remain local; compact scientific outputs, complete scored replies, source words, frozen forecasts, methods and hashes are the publication bundle.
+The runner refuses changed frozen inputs and differing existing outputs. New replications must preserve the published decision artifacts and use separate output paths. Compact scientific outputs, complete scored replies, source words, frozen forecasts, methods and hashes are public. The compressed recovery archive also preserves the exact primary raw measurements; full agent transcripts and model weights are excluded.
+
+### Recompute the analysis without a GPU
+
+The [4.05 MiB recovery archive](data/measurements.zip) contains all primary analyzer inputs, the analyzer, all five label versions, frozen forecasts, discovery calibration and the precision audit. Its manifest records hashes. Use a fresh separate extraction directory. From the repository root, with NumPy installed in `.venv`:
+
+```sh
+study112_repro_dir="$(mktemp -d)"
+python3 -m zipfile -e catgirl/composition/112_four_ingredients/data/measurements.zip "$study112_repro_dir"
+.venv/bin/python "$study112_repro_dir/analyze.py" \
+  --manifest "$study112_repro_dir/analysis_inputs.reproduction.json" \
+  --output "$study112_repro_dir/analysis_reproduced"
+```
+
+The archive covers the primary analysis. Conversation replies and their original reviews are separately preserved in [public_results](public_results/manifest.json) and [persistence diagnostics](persistence_diagnostics/FINDINGS.md). The post-hoc baseline format diagnosis is explicitly separate from the frozen primary endpoints.
 
 ## Interpretation limits
 

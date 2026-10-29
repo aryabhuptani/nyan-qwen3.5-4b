@@ -1,0 +1,28 @@
+{
+  "study": 112,
+  "passed": true,
+  "tolerance": 1e-12,
+  "maximum_absolute_error": 2.7755575615628914e-17,
+  "numerical_values_checked": 9160,
+  "score_groups": 504,
+  "unique_primary_objective_outcomes": 240,
+  "causal_rows_checked": {
+    "lexical": 336,
+    "semantic": 1344
+  },
+  "independently_saved_results_unchanged": true,
+  "settings_or_metrics_changed": false,
+  "auditor_sha256": "6d36ed5de592c337c3b0ba78dc4996940f4a2720e3006278bbebb56e0984dc68",
+  "reference_sha256": {
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/independent_results/provenance.json": "a11dc8cfae87f923dd055370990ccaf8d60b0df8b0999b9c020c6854274cb647",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/independent_results/forecast_scores.csv": "83c31506db6563cc999abb0a85c0518a595eb90490f8bee9b4d9660f63b658a0",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/independent_results/objective_outcomes.csv": "3f0e84f7776f8f847da11915776a173d5d621a94e2382aa65414fe28ad4ea541",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/independent_results/natural_associations.csv": "085829528aff2fdb816cb9b936c67ce113f8faa22bcdd277083b552d1a6af9ba",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/analysis/forecast_scores.csv": "609641c2e4d14fb95d0de52d2a6d3ef879c86cba2bf2c8e05acd2a74c50f01a3",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/analysis/forecast_unit_losses.csv": "862f673cd29c13d0b7a39bf559be484af2ecf546cec16d33aa3dbb7bc4487745",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/analysis/natural_effects.csv": "cde381db4dc8f155331015a62287a1ac9bccc8aefbe24d1ffd949b21446e6f48",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/analysis/lexical_cases.csv": "f9f22d346412300379f919bd68e2dc995e48989cc9341bad0ba11f79a4a3bdfc",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/analysis/semantic_cases.csv": "47415393566612fa97c9b08086ae96542b1a562fa1b306872d71e6be0c7e5fd0",
+    "/Users/arya/Projects/mechinterp/catgirl-hunt/catgirl/composition/112_four_ingredients/analysis_inputs.local.json": "6bf30f840fb659e04298a91fb3d089a5deb88dfc74f091225d3018cefa9ecf5c"
+  }
+}

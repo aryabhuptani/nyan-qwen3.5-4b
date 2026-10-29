@@ -14,14 +14,24 @@
   ],
   "files": [
     {
+      "path": ".gitignore",
+      "bytes": 401,
+      "sha256": "af521d79038cf3b5ecd62487ea7f121b4d85e899d658d234f5fe79b4d5b6ccdb"
+    },
+    {
       "path": "LICENSE",
       "bytes": 1071,
       "sha256": "081101bdb37c4fae50486c6f4dc2d98f1a0613e21756e2bada5662c44334ef15"
     },
     {
+      "path": "NOTES.md",
+      "bytes": 4588,
+      "sha256": "c59f6ebee9682d8e513684476d45bc0400c470e9b7a6dc1f1a5d0a65d95c5808"
+    },
+    {
       "path": "README.md",
-      "bytes": 12474,
-      "sha256": "83a6e6183fd21037e3be84c263dd9da224d959a1be14fcf385c4623334977f71"
+      "bytes": 12958,
+      "sha256": "7568f91375cd7fcc3f5004bdf8437cf197c0baeceb0782cf9f76101606e0cd1c"
     },
     {
       "path": "catgirl/.gitignore",
@@ -1162,6 +1172,766 @@
       "path": "catgirl/composition/111_atlas_dose/verify_calibration.py",
       "bytes": 2182,
       "sha256": "4c0e4d0892f40ad63a562c91de0cefb75fea939a7673e55eb71857fcc8fa059a"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/.gitignore",
+      "bytes": 76,
+      "sha256": "c7d1098db5e280c70fe58bb92c04c75005dc861586c781d8cecd154ebbe6acba"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/112_PLAN.json",
+      "bytes": 8974,
+      "sha256": "4f3a4232743280c9e7b0a8203d3a14655cbbe7c8273c5f6d00cc1555a6fd32de"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/ANALYSIS_INTERFACE.md",
+      "bytes": 7627,
+      "sha256": "e2b26c742e336e2d9749e4aa2c62f95f36cd428a056f68dbac36ecf65090cdf2"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/BEHAVIOR_REVIEW_JOB.json",
+      "bytes": 3585,
+      "sha256": "0b9f5f143ccac6a9edc2e6c151eef3264ab211c85f5499150801a9356eff464e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/BEHAVIOR_RUBRIC.md",
+      "bytes": 7833,
+      "sha256": "01e71bd8639b34522fbf5f4a756121bb8d967613ac2daba2fcc605dacdc961fc"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_capture_discovery.json",
+      "bytes": 120768,
+      "sha256": "e737768f1bf7b36b2f3e3491d4627d6daf47d978fe276429af5ffeb8a491ed73"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_capture_validation.json",
+      "bytes": 122204,
+      "sha256": "3e9bee06a4370b1e73d35a4fc39a40d5484acc608dacb3b2f35eca5cc58cde9c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_generation_discovery.json",
+      "bytes": 4202,
+      "sha256": "2cba016e8da869e27b6fedf21c99f958e0f0b104482275f7ffe21bd9a1f79aac"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_generation_validation.json",
+      "bytes": 10582,
+      "sha256": "f7da887dd0a7cec15851c7c46f019f1346bedf0135ccff755fc677b75b1e48c2"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_lexical_discovery.json",
+      "bytes": 15491,
+      "sha256": "72e6e33696866135599224f9659a7581249c4557b913ae2de315a163153be5a5"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_lexical_validation.json",
+      "bytes": 15703,
+      "sha256": "c485117ec62d310dbdf9e607fb2e0e658e39b5da071f750fb52d9d064ac09935"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_natural_discovery.json",
+      "bytes": 105362,
+      "sha256": "3b16ed48ad51c4c954d2888c6dcc476d0b6542d9afd6da2391b489866a6dfadf"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_natural_validation.json",
+      "bytes": 106586,
+      "sha256": "8789a4483a4e25349acb3c45ed7f9f39bd56bad25b3421d1e0c4cd8d4a1f32b0"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASES_persistence.json",
+      "bytes": 14588,
+      "sha256": "52feae3bac7d614f83e25db8d2089d61dfb7c44384cfc148d6fcf301f401d715"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CASE_DESIGN.md",
+      "bytes": 9205,
+      "sha256": "a7960448f8e84f7eda5d98c1bd9a8afa97008f8cccb9a5ae796fe3ceb48bc797"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/CONTROL_COORDINATES.json",
+      "bytes": 171,
+      "sha256": "9fa99fddae35b8107b87cc97c6bb8f1cdb2dc6f314b45946aaa42e6c450a360d"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/DESIGN_PROPOSAL.md",
+      "bytes": 15159,
+      "sha256": "3ace52b9a2004ff131fd9a10b950ec5e4e8e7ca39109199db4b3c885ff58a10b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/ENVIRONMENT.json",
+      "bytes": 390,
+      "sha256": "6792647eb8b6c04fb2596c491501f8d7db7b689a6c3d7c9879017f9e3e4d70f8"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/FEATURE_DEFINITIONS.json",
+      "bytes": 6030,
+      "sha256": "26b23a89911ca1d019c75efdda043f9d02f58db3b4cd7a50607b55780306c50c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/FORECAST_FORMAT.md",
+      "bytes": 4564,
+      "sha256": "beb6363dcd1ff5836f75a002a1b0d0709b40bc15431692fa6a7aab461c347e27"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/GENERATION_RESULTS.json",
+      "bytes": 10162,
+      "sha256": "a1c995b3474d64226871372c2b8097e7a27f399ca8d6e431103b9e112625b969"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/GPU_INTEGRITY.json",
+      "bytes": 172875,
+      "sha256": "fd602680e550f846af9b53764a1e6aa680c3de4d1e803e0d4a2c8d584a2c42bb"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/INDEPENDENT_FINDINGS.md",
+      "bytes": 6420,
+      "sha256": "4bd0b4918a4f5256b12956995b132bed8b274343711a424701f93ed795729976"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/INDEPENDENT_PRIMARY_FULL_AUDIT.json",
+      "bytes": 2440,
+      "sha256": "5cd1c35531abd4e37990c5772214fae5bd8fb22647e9ace539180baafb5b63c2"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/INDEPENDENT_PRIMARY_SCORE_AUDIT.json",
+      "bytes": 2720,
+      "sha256": "8627da7348f830414327c4da6630714edacc594b0c9d5f4133eecc4305a08a45"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/MEASUREMENT_DESIGN_AUDIT.md",
+      "bytes": 3482,
+      "sha256": "9e6209cecffe77213d50a6cde9b0d29e46cc7ecceb0b76e45bba4543c2769757"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/MEASUREMENT_NOTES.md",
+      "bytes": 9494,
+      "sha256": "6492bfca938e5f5c95aff5cb1c9b24a65d4e13c93d014b4729d3a29b7ad3fd87"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/MERGE_BEHAVIOR_INSTRUCTIONS.md",
+      "bytes": 3199,
+      "sha256": "eef93e00a64772b69ebacb6073512b0a594b3a5de0e5b4494b3af1f3f71defb3"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/PACKET_STRUCTURE_AUDIT.json",
+      "bytes": 741,
+      "sha256": "112a04a1e6172818f518719ecdfa554036b2f825fda4b4e9966d0daa6e8aa571"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/POSTHOC_SEMANTIC_PLAN.json",
+      "bytes": 1202,
+      "sha256": "097d4a0aed8571bf61d87acf971989abb1f9782c9a14c16be2033b4cedba532d"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/POSTHOC_semantic_cases.json",
+      "bytes": 131526,
+      "sha256": "7b3c707caecde6c669a48e4d9306177d78c1c68e2662b726f72be606c57bfbe5"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/POSTHOC_semantic_job.json",
+      "bytes": 263,
+      "sha256": "407475c8c46aef9e16e3e1614da1925f97695962cd3cc57e3a59756cf9cff770"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/PRECISION_PLAN.md",
+      "bytes": 2680,
+      "sha256": "ae6ae80307508b4077ff1c48d5deee103efdf772fb1e48eac138f67bdc60635e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/PREVALIDATION_CLARIFICATIONS.md",
+      "bytes": 3874,
+      "sha256": "498c7db31fefb1adb6be19276e3cefc2f7d5b28b583f84e13032c8e1dabe968c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/README.md",
+      "bytes": 8359,
+      "sha256": "8a7ed133e3a137fa33c254056cc2e5cdacd7dbe44aa9f1e477c3b836431bfbd9"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/REPORT_TEMPLATE.md",
+      "bytes": 13628,
+      "sha256": "ec4b67e0c94d932553de9d9ed05ca46a9e06f46e1be18dd92d0ed8c45e11a715"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/REPRODUCTION_AUDIT.json",
+      "bytes": 4155,
+      "sha256": "f12cc53b070d96e1cb0deaad2998fe34678d54303612e0bead85784daa9fb909"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/RESULTS.md",
+      "bytes": 13829,
+      "sha256": "f26b923d28f1baf3dec14d1fb4d93fe85d645c931eb78e51876a14a3d8ab59a5"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/REVIEW_INSTRUCTIONS.md",
+      "bytes": 4601,
+      "sha256": "1966d0c5217f1698a98b8b68770376f5f9faa4af6ae941ea9f4b23813d3018fc"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/SEMANTIC_AND_BUDGET_AUDIT.md",
+      "bytes": 5457,
+      "sha256": "fb0749d16658900ec3f08b22582024da1f158d29c0c90bc539b3567fbc3caa7c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/SOURCES.json",
+      "bytes": 2664,
+      "sha256": "ad6580d07aacf78745f47293187cf8622925481ac4ce3e98040f16ee82d7d132"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/analysis_conditions.json",
+      "bytes": 11919,
+      "sha256": "ff5798aac4b9b73a0b2825c4b93c24c9c06b08d5c10a7c0c707aa0909e9ea3ec"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/analysis_inputs.reproduction.json",
+      "bytes": 7321,
+      "sha256": "f71107dd67221235b4bd69fb88fe2339c22142e52d8e941096b12f4a042c87d6"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/analyze.py",
+      "bytes": 38416,
+      "sha256": "e6cb86665746bdcc318a93f80a55f8da67b999f3c7dedae8550afa0e850e6c26"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/audit_completed_measurements.py",
+      "bytes": 12637,
+      "sha256": "7fbf4cab319267102445dc4e53b7e6a7fc05cc9168042cbb88a5dcb98d4c1d12"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/audit_packet_structure.py",
+      "bytes": 6700,
+      "sha256": "334dd8d58923480dcc2fb16135012e8dbfb6f44dcc0ec0fe28d80933ae472169"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/build_analysis_manifest.py",
+      "bytes": 6055,
+      "sha256": "d96da0d211b22d7c5c1a679c5d82cbf7f061b327d0bf0403a0fcc77351063f50"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/build_jobs.py",
+      "bytes": 13093,
+      "sha256": "6e13e312ec112553e55253ff478da858bcd6b9675b7469b9a3233aad418c656c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/build_measurement_archive.py",
+      "bytes": 9478,
+      "sha256": "c29baed0d589a299a1011acbccb36a855abd3702c8ba313cb2852e4557ab8331"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/compare_independent_primary.py",
+      "bytes": 5481,
+      "sha256": "6d36ed5de592c337c3b0ba78dc4996940f4a2720e3006278bbebb56e0984dc68"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/data/measurements.zip",
+      "bytes": 4248857,
+      "sha256": "814d2d9c67d3c35d0be276e761728252e0222ee12fba3632c0642fda7325de3a"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/export_discovery.py",
+      "bytes": 9939,
+      "sha256": "a79d6ffd30b6bae391fd3a6eecd686ba22864a90911fd5a6a6d507bc6d61bb12"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/export_discovery_selftest.py",
+      "bytes": 4123,
+      "sha256": "b9debc287add2c7a8c8765b317f8c06dbf13f0291b8c6713f3d716cc2bcac0ea"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecast_audit_mapping.json",
+      "bytes": 8546,
+      "sha256": "4984a5603c3e2fe2d188ddccba57aa5aeed73cc8a3cb2e3c7526decb02ac8bd6"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecast_inputs.zip",
+      "bytes": 101174,
+      "sha256": "0b32c6568f73be6a93b19a6d5b47de3f991960bcb48f41a6ce2cb7c75f3e95b4"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecast_lock.json",
+      "bytes": 4083,
+      "sha256": "fa3661a690a68cbf5074c44acd3112a9e1ec4981a2afd5dbad4a3c8c0dbb25c3"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecast_packets.py",
+      "bytes": 13257,
+      "sha256": "c03840788c4580f3ba317b366604cabfbb88e6280b78416b1bca7faee1113ae7"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_3a35162731f8c30d59fe96e043405179.json",
+      "bytes": 71442,
+      "sha256": "0dd5b2b99d031ad6ed5431652e17dcfc2c3a0db205de887019bda6ae34f7655b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_4e96133d39153622ad2ef690118694b1.json",
+      "bytes": 71970,
+      "sha256": "46cd7e5a093c61adb23c3f9e0ba1c59ec8fec0fd5f0530be505c7ed60b3c5c87"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_73c84496bf1e7b5a2ad669afb007b8e9.json",
+      "bytes": 75062,
+      "sha256": "43e7dbf9cbeaaf22a8e870f72cef08a342defc93429d79e40c4f982c0563cc2d"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_77e7b60774bf780dba8d87863c785cce.json",
+      "bytes": 70232,
+      "sha256": "638c5350acb4a04dbcbda3258faff97c1b0a1031d4e54683b0f56fd4f9ffef9b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_9fb3f8e4375b6c1c197daf77f11aaa01.json",
+      "bytes": 72943,
+      "sha256": "8a5379ec893ba8070dcdc465cdd4c62ab556a0880872bd231bd2a88743c6bdd5"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_9fcf441aa9fbff55868f65db245fc39e.json",
+      "bytes": 74376,
+      "sha256": "0b97f9c250caa593deefb91101d7dc032f8fc2daa92b40163e23d0d22184d357"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_ec829a77ac7078349a50a498bbcefe11.json",
+      "bytes": 71298,
+      "sha256": "37f0055bf5fd378b30bb1943bc2fe68a23c90859cb218ad8258b6b3c144861b6"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts/session_f6850ee1986c261863df672706f34b77.json",
+      "bytes": 70742,
+      "sha256": "eba6d929fa421594d48dddf5354a9fe79310ea14ef6fb1c17420657bfd705436"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/forecasts_normalized.csv",
+      "bytes": 1211457,
+      "sha256": "76c7bf097a2bb6355246674b293cfbfe3584a997423bc77bf8b0ec70e068a65c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/gpu_integrity.py",
+      "bytes": 10297,
+      "sha256": "7c3863974b559401e208625fe71455493275fbdb4b7a612ef5ab3d022427bcc8"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_locked_results.py",
+      "bytes": 7888,
+      "sha256": "5178fabd123e2f2506fe2226a6e98602049a3f9ec944a139cae04b016b28dd88"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_recompute.py",
+      "bytes": 9869,
+      "sha256": "2cc84bcb00d6c9759eda43ffd835fac736744686041147900c4795f48317bd2f"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_results/forecast_comparisons.csv",
+      "bytes": 43323,
+      "sha256": "1a76ee8b84a4fbe50356d6fa29b952d7adcee88d39f44bc69bbf1f9cf0b9b1af"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_results/forecast_scores.csv",
+      "bytes": 47430,
+      "sha256": "83c31506db6563cc999abb0a85c0518a595eb90490f8bee9b4d9660f63b658a0"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_results/generation_counts.csv",
+      "bytes": 2058,
+      "sha256": "dc1af917e50353d309613a768d3feaf2e9719ef41ae64012ab1d2cbdef0e36a2"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_results/natural_associations.csv",
+      "bytes": 1676,
+      "sha256": "085829528aff2fdb816cb9b936c67ce113f8faa22bcdd277083b552d1a6af9ba"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_results/objective_outcomes.csv",
+      "bytes": 16943,
+      "sha256": "3f0e84f7776f8f847da11915776a173d5d621a94e2382aa65414fe28ad4ea541"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/independent_results/provenance.json",
+      "bytes": 3342,
+      "sha256": "a11dc8cfae87f923dd055370990ccaf8d60b0df8b0999b9c020c6854274cb647"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/DISCOVERY_CALIBRATION.json",
+      "bytes": 1790,
+      "sha256": "22fa9c055c8b8083a33cc9c82f16b24111e6931923ddab26b9e403c89606e79b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_discovery_generation.json",
+      "bytes": 2783,
+      "sha256": "f1581f982b39ffaf038dba08fde7a2f410d49a919647d87008ca59741f855f0b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_discovery_writing.json",
+      "bytes": 6078,
+      "sha256": "2690ec0c7d2024d71ee845f44d84d96867fa658fea665f9d777a8090872922fc"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_factorial16.json",
+      "bytes": 8493,
+      "sha256": "7a2a0d369ec0e1eae9519c9e77bc8dc96bf1ee5a4a19b1be4f69a1f3932bcaa3"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_lexical_generation.json",
+      "bytes": 3075,
+      "sha256": "d9e8dc42150c56da7f3457630a484a0213bdafa537171129342214895292c3d0"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_lexical_generation_random.json",
+      "bytes": 2049,
+      "sha256": "d0408549a2302663aa3a64be8af32eae2b5c3ef91ce617a915be9a694033daef"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_lexical_readout.json",
+      "bytes": 3048,
+      "sha256": "285c92f2696e412c85b4534f0da6f428d6f7ae1415e39ee323cf199f06644dd8"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_lexical_readout_random.json",
+      "bytes": 2034,
+      "sha256": "6bc91687c4a34474457e8e3d1eddba8daf5aaf1c9fc79f980020569422c14f0b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_random_four.json",
+      "bytes": 1950,
+      "sha256": "56dd98468454c0bb06dbecf7af201b85f623f1fde1575e8c47c0a8fcb7b2405a"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_semantic_carrier.json",
+      "bytes": 4491,
+      "sha256": "d42350839ddbf3b55e3ecb35d3d445feb4d7b5e0c8f2d73b33696bd6f919c1b8"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_semantic_carrier_random.json",
+      "bytes": 3477,
+      "sha256": "d0c27da13ac131a7b089e0356a6a755739af3db74746f0adfc7e9a4d17b1df56"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_semantic_readout.json",
+      "bytes": 4491,
+      "sha256": "108c5c7803a6897d6be8485df01c89b8fed9afded76805a3da0c30e98f18c662"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_semantic_readout_random.json",
+      "bytes": 3477,
+      "sha256": "7c0438115c688e7355e87524c23cd2b9cb4de2145d00eb245881359221534cfd"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/JOB_validation_strong_singletons.json",
+      "bytes": 2019,
+      "sha256": "6657e37425bb77436d4e8c4824d16c0689ff6861433f36fae93ee97a5bcbf18d"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/MATCHED_CONTROLS.json",
+      "bytes": 7406,
+      "sha256": "b210d61c61d98289a46804a46dcc06d2af9b517c918cd30ed0b4da11d24351c6"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/PERSISTENCE_SELECTION.json",
+      "bytes": 3837,
+      "sha256": "3b76a109544d3c1754ed6c358e4f9b67feac8e72c7b685dd271275b70ae6d1bd"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/jobs/SELECTED_DOSES.json",
+      "bytes": 13633,
+      "sha256": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measure.py",
+      "bytes": 17703,
+      "sha256": "b4102bbc414bf5c48a41d3945a255c35df1a176516ecc832ddd4c010b7adc15e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/FINDINGS.md",
+      "bytes": 3529,
+      "sha256": "a229b388d1a41d234fec42c7c2d7eb0c1454b44764c14d7f20bf59fa9c69c3f4"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/precision_all24_with_mass.csv",
+      "bytes": 4701,
+      "sha256": "594527998d120ba8a894934efc84865ae90dd78d954648c3a5e80312939d296e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/precision_matched_table.csv",
+      "bytes": 1803,
+      "sha256": "f2f08633364aee9411f21f4ee6eb2669aefe77fa554275bab63bf16a78c5f56d"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/random_natural_case_scalars.csv",
+      "bytes": 72529,
+      "sha256": "4888627d77b4a9c3a3875a1a2b97bcbe030b3c8e22b061f002a8a87fa99af54c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/random_natural_family_effects.csv",
+      "bytes": 14497,
+      "sha256": "9a4b8d1b4fad9930346f5148ad811a1f61f9bc8d306c87930b8e7d5009ec8268"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/random_natural_summary.csv",
+      "bytes": 746,
+      "sha256": "b9101722a642653bec71b4d807fd74f99703a34483999f326f312b25a42c41c2"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_diagnostics/summary.json",
+      "bytes": 26237,
+      "sha256": "959819ca442b356da4303ead3a4b0b1b9dbafcbdc3958b46fb4a3a31d53e98c9"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/measurement_selftest.py",
+      "bytes": 2327,
+      "sha256": "5273d860ba881d7b9ec7d04418ecc26c24c11f6fcbbafe24afbda393673d2811"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/merge_behavior.py",
+      "bytes": 5491,
+      "sha256": "8d7831d2c0ce984bd6d9ceaf44e33480b95dc4716389b2370f2173c7b3f231e7"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_diagnostics/FINDINGS.md",
+      "bytes": 2700,
+      "sha256": "c7ce3e097b1340dbb5ca0a9f74cdc1eecb5cea37b8d993cebb0c958b542ff1bb"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_diagnostics/all135_review_sensitivity.csv",
+      "bytes": 24055,
+      "sha256": "bbc01f2188fa5ce5e25d66d4a4f457dc8b2e13a24d83f8622e398de6a7518435"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_diagnostics/all45_final.csv",
+      "bytes": 8148,
+      "sha256": "d016963f172183cd42ad1ed16470f6ec9e8c41d2840b87645211874ede45acbc"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_diagnostics/identity_retention_assessability.csv",
+      "bytes": 10811,
+      "sha256": "b0d68737bbe88f016604897e747ce00154c25079ab67825315cb0127c0d9f067"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_diagnostics/summary.json",
+      "bytes": 7346,
+      "sha256": "8e721caf91a07aa14023c578b91a13031d435d2825bdad95230988c62d78007b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_diagnostics/trait_quality_by_role_turn_and_late.csv",
+      "bytes": 79831,
+      "sha256": "faaab4c332d2c420b1326c4e1a979de5114496d06224a9b690cb64c0e80aa3be"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/persistence_runner.py",
+      "bytes": 14628,
+      "sha256": "0d7ebc17545c9febae55de382af65953892f59f4755e4bac43ffd368d7310887"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/posthoc_semantic_diagnostic/replies.jsonl",
+      "bytes": 16289,
+      "sha256": "67cac5fbdef92fae93ca1035fbebef92ddde386d6657085ed6af3401c93bfa0a"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/posthoc_semantic_diagnostic/summary.json",
+      "bytes": 1425,
+      "sha256": "90d3c297e189d85f65e6c7ea1796c2b7998b2e3c6fb79cc352fe61d13df2b544"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/precision_audit.py",
+      "bytes": 10194,
+      "sha256": "390e2033cb4f91642c82371a43d86a6ca5c2bbf76d0c26621f64884fce9aa08f"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/precision_summary.py",
+      "bytes": 5526,
+      "sha256": "4c8d208c84f0457afbb514d60d701f7f2ea63659b3e6a9e4319b79b031d1bea9"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/prepare_review.py",
+      "bytes": 12187,
+      "sha256": "58aaf7c5ac4beb33c58fac566e643fa5fe449fd422d5c2849b9bb67aaba07839"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/control_metadata.json",
+      "bytes": 2554,
+      "sha256": "45712e2fdc43666be5b9e346543cb8a2f9c300f1a8092b3e3f2f224fe8112605"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/control_original_calibration.json",
+      "bytes": 10400,
+      "sha256": "14eebae4a86e29dcfe4fe2b78ac3e570daae3777c70673bdbdf481e34f783f30"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/control_readout_scalars.csv",
+      "bytes": 159989,
+      "sha256": "56138b835dcf8e14def67a8c2bd153fae8d4fdd2adbc1ffcd7699238733da77e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/discovery_writing_choices.csv",
+      "bytes": 227286,
+      "sha256": "de66d192cf3d31afeb407eb5642fededc3e560b5091e19fbb726df05353aae1f"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/discovery_writing_job.json",
+      "bytes": 6078,
+      "sha256": "2690ec0c7d2024d71ee845f44d84d96867fa658fea665f9d777a8090872922fc"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/dose_selection_case_gains.csv",
+      "bytes": 3635,
+      "sha256": "3ac31c5ce910f2948d9e0071183263ec45a4db7e1910fbf7cae32f216631d958"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/manifest.json",
+      "bytes": 3556,
+      "sha256": "56086527cd4ceca8f691295a2e181698639c7108ed9d5c6586de7842e697e2e4"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/selected_doses.json",
+      "bytes": 13633,
+      "sha256": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/target_metadata.json",
+      "bytes": 2547,
+      "sha256": "b62238d8a2870b58e292c098c67f1fb2071d2e31218ce4e8c3a6e59b1ee2d3e7"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/target_original_calibration.json",
+      "bytes": 10268,
+      "sha256": "1d6b2262ed6d1e22e38aac212699190f0c2a956df3ba0225ab37803497a8253c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_discovery/target_readout_scalars.csv",
+      "bytes": 157515,
+      "sha256": "3011e9ce6dee90f82bf938b01c127dd87cc01a66b10493903e0ee49e41778ef1"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_export.py",
+      "bytes": 11029,
+      "sha256": "dba5ad37179548b922f5d58160f321f7a763e601424b730e6f99d2a3ca3dc0cf"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_export_selftest.py",
+      "bytes": 5753,
+      "sha256": "5efee3f33ee78a9c77f0bca8e7c9d8461d84b2de22449ded3c2e720e6c5cb985"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_generation/generation_evidence.jsonl",
+      "bytes": 495740,
+      "sha256": "e71e9baf25b90888f1828ef0adaa23bfb9cf2881d0369064ed89100222bf11e6"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_generation/generation_replies.jsonl",
+      "bytes": 716630,
+      "sha256": "bfaa05e75d8f0542a07893fe631434be2f452e1da6310245bd85a7c140f67d1e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_generation/manifest.json",
+      "bytes": 1617,
+      "sha256": "caa7784c8bd40469eace3c6797212d2c1bc4aaebf678a0d0eee4495fbe88631e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/generation_evidence.jsonl",
+      "bytes": 495740,
+      "sha256": "e71e9baf25b90888f1828ef0adaa23bfb9cf2881d0369064ed89100222bf11e6"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/generation_replies.jsonl",
+      "bytes": 716630,
+      "sha256": "bfaa05e75d8f0542a07893fe631434be2f452e1da6310245bd85a7c140f67d1e"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/manifest.json",
+      "bytes": 5464,
+      "sha256": "3829ea76a6c49e8402741031088a9379617bcab9f847fea76f7f895b7ca72b8c"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/factorial_counts.csv",
+      "bytes": 65294,
+      "sha256": "deef49445fd350267625a7ba2690b29544f9278e5801f7f2ed6b4217f9ef916f"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/factorial_details.csv",
+      "bytes": 2388905,
+      "sha256": "04e8d4bd517b25c5f6889ae936d5d2066bdee9885308547e78806f6c18e85816"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/factorial_effects.csv",
+      "bytes": 108727,
+      "sha256": "fd96f0e9209125ec8e20fe83122da667b14c062e0bde4ce0b9dd149f4dd59a33"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/forecast_comparisons.csv",
+      "bytes": 67704,
+      "sha256": "9f809bef753bbe8282d6e459b905bb6da3a451e86ebc47c3ebda60166cd1f332"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/forecast_scores.csv",
+      "bytes": 46657,
+      "sha256": "8580ffb38f26577d8eb5b7554f295872226a46135bce40182c72032456d55fc1"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/forecast_unit_losses.csv",
+      "bytes": 21053769,
+      "sha256": "a4c4820a5953f6372f784e0edd961f1b929a00a08014c608406b021009c11a9b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/lexical_cases.csv",
+      "bytes": 79747,
+      "sha256": "14cc8af32636be7ebe835015d747068fbf5e89abc01fbe69991855cf58798e81"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/lexical_effects.csv",
+      "bytes": 15353,
+      "sha256": "a35c0d3c0a872b6e6d64019ccd8da4fd23a4cadf3975003114d5c72887e86f04"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/natural_cases.csv",
+      "bytes": 71501,
+      "sha256": "87ebca12b513223f81101c5211d49e8a5d6bc3f4eb1040830fb862dfe7513d7d"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/natural_effects.csv",
+      "bytes": 14143,
+      "sha256": "c858a4ea9df539afd4484e705d381d544046b73497e2af7a4480eb92c0a30ac2"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/perturbation_cases.csv",
+      "bytes": 1996187,
+      "sha256": "acc6cb3cd0401823e6d7391c0ef6ba64fad436f731dc2f581cf3c40c486f6351"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/perturbation_summary.csv",
+      "bytes": 49256,
+      "sha256": "c7d3e6f993dcdb99fa7bc35aa360407bc20ed21f5c69d2ae456b9f4752b557a8"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/semantic_cases.csv",
+      "bytes": 235954,
+      "sha256": "939491364c69e8966499baee9494e68e339028fa1a534d322ee71c49b8e154f3"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/semantic_effects.csv",
+      "bytes": 30523,
+      "sha256": "024b5ce6ffcb56b52089f5e70303db4e54f20228f10531c729ce26e800414fda"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/objective/summary.json",
+      "bytes": 1304098,
+      "sha256": "599cd665f02c6618980b932b0d03e17b1f4559c5430acbc8860452bbb924c30f"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/persistence_evidence.jsonl",
+      "bytes": 54368,
+      "sha256": "17f812bc4dad90f1b32eac7e236622e4896a609b91aa2a7fb526bb14d09b931b"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/public_results/persistence_replies.jsonl",
+      "bytes": 151805,
+      "sha256": "ea9270ad3d618defec9e56825105fcd74afbcacfc095228f68cc67a73013fb73"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/run_validation.py",
+      "bytes": 3974,
+      "sha256": "b2c04c8be1ed57ad3eec7bbd03f15ddcb2485ebd5e33cd37ab94585327129556"
+    },
+    {
+      "path": "catgirl/composition/112_four_ingredients/summarize_persistence.py",
+      "bytes": 11168,
+      "sha256": "19991502097c85c9642bf6cdc86f04675a60df9db67c1977c83e727d86a69cc0"
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",
@@ -3584,9 +4354,204 @@
       "sha256": "599609d8440ee903a4897b1ed5054e2feb6544faa9e2898dfb3e1c6dd2868c82"
     },
     {
+      "path": "explorer.png",
+      "bytes": 5057715,
+      "sha256": "269b88e3a49f50fe8ed36fa0abeb253c7815431f424e098880083b7991819e47"
+    },
+    {
+      "path": "explorer/agent_mcp.py",
+      "bytes": 35695,
+      "sha256": "2966eda8cba3f61ee9561470915615595c0ea2e126ce7caa1a2b3c4bbb6f376d"
+    },
+    {
+      "path": "explorer/agent_methodology.md",
+      "bytes": 13613,
+      "sha256": "521c0058dd1426fd3cc08c81cf4eedc554f9971d8664993ae3526085a976bcb3"
+    },
+    {
+      "path": "explorer/agent_prompt.md",
+      "bytes": 18400,
+      "sha256": "e705b3f05000db73540a44e701232b509fb7645436134b264b84ee30132835a6"
+    },
+    {
+      "path": "explorer/build_connections.py",
+      "bytes": 4195,
+      "sha256": "f0f7b13f27a1d09aa990af0e2b39f54697b2fead4d9a49754b521727bc0db0a9"
+    },
+    {
+      "path": "explorer/build_embeddings.py",
+      "bytes": 1909,
+      "sha256": "1506e113b5d8edd3a5e6202b48d076a964974ab68a7b918c1ac4e1b489a99b6b"
+    },
+    {
+      "path": "explorer/build_layout.py",
+      "bytes": 2459,
+      "sha256": "f55aec5edc578a193eed062a5b21303e585d3997947f2b426c70f76c042c3eeb"
+    },
+    {
+      "path": "explorer/cache/act_scale.npz",
+      "bytes": 2360046,
+      "sha256": "eb2137560c033832075d285bfe6eafa34812a475c67312b50b76896a5a0b8b6e"
+    },
+    {
+      "path": "explorer/cache/connections.npz",
+      "bytes": 54315904,
+      "sha256": "9efceaabe974b0eaea626c1fc620787e6087b5f548a0c2614cacf24d939b5a15"
+    },
+    {
+      "path": "explorer/cache/layout_writes.npz",
+      "bytes": 590086,
+      "sha256": "dffd6e993b0f7ddfcd5a741675f5300ee6488d0970ab8e696eb96c34878be0ce"
+    },
+    {
+      "path": "explorer/cache/lens_index.npz",
+      "bytes": 28312050,
+      "sha256": "055f3d3a5c5904ca60003548ebcf853008f8b0f2d1d94ed5c02b47504f18ae02"
+    },
+    {
+      "path": "explorer/cache/steer_index.npz",
+      "bytes": 30672082,
+      "sha256": "b2e24254e41ba9fb21def74ddba6e357b41e0f129fc8c119a7f5d20614a9e486"
+    },
+    {
+      "path": "explorer/cache/vocab.json",
+      "bytes": 4057776,
+      "sha256": "e8070e638cd3b159706912a575f793d1fe56be3a311ab17ca1489705004a557c"
+    },
+    {
+      "path": "explorer/runtime.py",
+      "bytes": 54233,
+      "sha256": "372b4678ccbc364ea348bcb393224902d91321abf5e3fda6c70755e70bc29754"
+    },
+    {
+      "path": "explorer/server.py",
+      "bytes": 87933,
+      "sha256": "1f37651fb4889450d8676cfd71c076b1c90b9004d1c4727ce91d53d0db58d41d"
+    },
+    {
+      "path": "explorer/static/app.js",
+      "bytes": 81352,
+      "sha256": "5b9a0cdf0103bc643638790aee9ee9cb26f57079e1671dfe726e2a8a462fe9b7"
+    },
+    {
+      "path": "explorer/static/i18n.js",
+      "bytes": 13324,
+      "sha256": "9d631de3e76e2940a21a56b3a9530d138a1d644d920217f53a3c0ae6a3b37697"
+    },
+    {
+      "path": "explorer/static/index.html",
+      "bytes": 8987,
+      "sha256": "aa3f9c0b7cbafccdfb96e3a1ba5ec17df75242c52f4d1c0a5be000c8e42d7150"
+    },
+    {
+      "path": "explorer/static/map3d.js",
+      "bytes": 38007,
+      "sha256": "6f9828ef6afded8c7e522690893b3c6cfd54ac4817b09277668764f27bf77a14"
+    },
+    {
+      "path": "explorer/static/scatter.js",
+      "bytes": 4466,
+      "sha256": "bd8a467b3aa5c5281af3daa6c528989dfb176bbb942b7be487f7a98889499636"
+    },
+    {
+      "path": "explorer/static/style.css",
+      "bytes": 21648,
+      "sha256": "2b4d527c9ff0e90a95b07ed262b01a6af869454eec232eb1e8f1affd41d9e34a"
+    },
+    {
       "path": "pyproject.toml",
       "bytes": 307,
       "sha256": "6b4e8b222aa60470bae67aa3fd15ac3e3012e0b20cf3f86115e2c69b29e0a219"
+    },
+    {
+      "path": "research_log.md",
+      "bytes": 25805,
+      "sha256": "570524edc098528a34a7adf613afc794c040abac282c56fcab67c16e21881fa7"
+    },
+    {
+      "path": "scripts/mirror.py",
+      "bytes": 2558,
+      "sha256": "5511d5d8fa356e573776c7ccfc56a6321ad389a16a01d4eec90bd202ce1da41a"
+    },
+    {
+      "path": "scripts/owl_delta_vs_base.py",
+      "bytes": 2336,
+      "sha256": "4baa9cfd18f2b98ec40c05cf7d5a2d706c90032538fe6bce4004f6f6a0b909d7"
+    },
+    {
+      "path": "sweep/bench.py",
+      "bytes": 3925,
+      "sha256": "2ae1e454e5105c07479e0764755ae5e295d9baf412d0762532e8b1d0b4f0bd3c"
+    },
+    {
+      "path": "sweep/capture_prefill.py",
+      "bytes": 5056,
+      "sha256": "6d6ca3904b3fa0b2dc9c526aadf6ab0544e5a7a7a073119e3e3eb5e8a6342dd1"
+    },
+    {
+      "path": "sweep/check_capture_prefill.py",
+      "bytes": 1291,
+      "sha256": "5824f427569e9fb5d8ff93fecdd17adda4a65a23cb63f51b66310a832627aa97"
+    },
+    {
+      "path": "sweep/check_equivalence.py",
+      "bytes": 6007,
+      "sha256": "37f4512b411f7421d53b9b209cc4a5c9879e6fc4665ee28034ad679ed34dfaae"
+    },
+    {
+      "path": "sweep/depth_report.py",
+      "bytes": 3484,
+      "sha256": "24009ced86580498fdad38bdf71e1fc8e269a05053d6ccd652be8a30c1407475"
+    },
+    {
+      "path": "sweep/merge_runs.py",
+      "bytes": 1342,
+      "sha256": "8e3f813e7101b22e3d04fb48ae4d2064b282d5117af637c83f861e6c6b4c119c"
+    },
+    {
+      "path": "sweep/neuron_stats.py",
+      "bytes": 6340,
+      "sha256": "aba40f82c94269de55c80113e10a1bf37e86efeb30e4092bf4d3f808a99851d2"
+    },
+    {
+      "path": "sweep/peek.py",
+      "bytes": 6213,
+      "sha256": "217b9e0fe683515d5cd32172686f289312a6b5675e8282fa942779b58a59face"
+    },
+    {
+      "path": "sweep/rank.py",
+      "bytes": 5515,
+      "sha256": "1e9af4ca8d301d05f0ecdc9f8b0d2dc6dbbc744211b8cc8dfd02df7b13317441"
+    },
+    {
+      "path": "sweep/run_depth.sh",
+      "bytes": 1077,
+      "sha256": "ce7aa1f05b3431b842cb02d8ffde60b1ae2ea1bed0c752c052aca8462aa07bcd"
+    },
+    {
+      "path": "sweep/run_layer.sh",
+      "bytes": 865,
+      "sha256": "67664e234204f5322057185690053b572ef90a8b25d46974e758820b5706a046"
+    },
+    {
+      "path": "sweep/setup_pod.sh",
+      "bytes": 1858,
+      "sha256": "347b838e25b22bb4022799c3c8c2bc09acc4d0fdfb8cb9472ebae668e65ac9fc"
+    },
+    {
+      "path": "sweep/shift.py",
+      "bytes": 1920,
+      "sha256": "0b3c04d0222ea34118fa16cbd2485afc47d794180194e64533ffa7d193fb4ee4"
+    },
+    {
+      "path": "sweep/steer_lens.py",
+      "bytes": 5017,
+      "sha256": "15248b19eda4c59f631a4e107cbb440cbad93c3fcfe247161c62faf3ba0c8069"
+    },
+    {
+      "path": "sweep/steer_sweep.py",
+      "bytes": 12636,
+      "sha256": "2e0131ead05543e6cb382129c7a086851b0acb28bc3a02924133fee44a68b0db"
     },
     {
       "path": "uv.lock",

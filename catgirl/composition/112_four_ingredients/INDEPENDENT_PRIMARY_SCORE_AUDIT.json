@@ -1,0 +1,40 @@
+{
+  "study": 112,
+  "independent": true,
+  "passed": true,
+  "implementation": "stdlib-only; no primary analyzer imports",
+  "primary_forecast_audit": {
+    "groups": 504,
+    "maximum_absolute_error": 2.7755575615628914e-17,
+    "tolerance": 1e-12
+  },
+  "natural_thresholds": {
+    "genki": 0.0352783203125,
+    "hugs": 0.0380859375,
+    "paws": 0.05596923828125,
+    "female": -0.00848388671875
+  },
+  "natural_units": 192,
+  "lexical_units": 48,
+  "per_endpoint_contrast_audit": {
+    "contrasts": 378,
+    "maximum_absolute_error": 1.0408340855860843e-17,
+    "tolerance": 1e-12
+  },
+  "hashes": {
+    "catgirl/composition/112_four_ingredients/results.local/scored/labels_lock.json": "e522ac6e4fc4d8c50c3a6f260d50c45c873ef90308f6ab06c43bd37d75aa2e3f",
+    "catgirl/composition/112_four_ingredients/results.local/discovery_capture/natural.jsonl": "938f95674dd725bd18188cef5fb9f8e2aac0e2874fe25b718350659ad8927efc",
+    "catgirl/composition/112_four_ingredients/results.local/validation_natural/natural.jsonl": "39ed21af70fd315b2bd132e5b82dde7af9013e9bb4074aadd1e70a492d941b7c",
+    "catgirl/composition/112_four_ingredients/CASES_natural_validation.json": "8789a4483a4e25349acb3c45ed7f9f39bd56bad25b3421d1e0c4cd8d4a1f32b0",
+    "catgirl/composition/112_four_ingredients/results.local/validation_lexical_generation/probe.jsonl": "c419aeee447c28fa9dd704df75b60154efc17e9c45320d663ca26531c4b98563",
+    "catgirl/composition/112_four_ingredients/forecasts_normalized.csv": "76c7bf097a2bb6355246674b293cfbfe3584a997423bc77bf8b0ec70e068a65c",
+    "catgirl/composition/112_four_ingredients/results.local/scored/labels.csv": "3a9433c5a8a42feae88c94fd2ed4bb71ebedb22357fe68202980557921b21399",
+    "catgirl/composition/112_four_ingredients/analysis/forecast_scores.csv": "609641c2e4d14fb95d0de52d2a6d3ef879c86cba2bf2c8e05acd2a74c50f01a3",
+    "catgirl/composition/112_four_ingredients/results.local/scored/labels_reviewer_A.csv": "244f9a8615b7eb2d047d482de73f5a5de2baf14ba45d0afb7672aac3b7524776",
+    "catgirl/composition/112_four_ingredients/results.local/scored/labels_reviewer_B.csv": "4b756f784b2d37fd2d1adec74fa01db0559d8e3917fba2e833b7f4895e4745dc",
+    "catgirl/composition/112_four_ingredients/results.local/scored/labels_uncertain_zero.csv": "3a9433c5a8a42feae88c94fd2ed4bb71ebedb22357fe68202980557921b21399",
+    "catgirl/composition/112_four_ingredients/results.local/scored/labels_uncertain_one.csv": "3a9433c5a8a42feae88c94fd2ed4bb71ebedb22357fe68202980557921b21399",
+    "catgirl/composition/112_four_ingredients/analysis/forecast_comparisons.csv": "4a7e16024b107b004efebaa2ea3e00d7f6cf530a6dd2289ae1f7ebec64aa32a9"
+  },
+  "auditor_sha256": "2cc84bcb00d6c9759eda43ffd835fac736744686041147900c4795f48317bd2f"
+}

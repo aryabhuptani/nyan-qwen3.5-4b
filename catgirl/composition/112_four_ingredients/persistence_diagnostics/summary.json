@@ -1,0 +1,291 @@
+{
+  "rows": 45,
+  "review_versions": 3,
+  "role_to_frozen_intervention": {
+    "selected": "1111",
+    "baseline": "0000",
+    "best_single": "0001"
+  },
+  "review_sensitivity": {
+    "final": {
+      "bubbly_excited_expression": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "emoji_in_assistant_voice": {
+        "positive": 6,
+        "unknown": 0,
+        "n": 45
+      },
+      "lexical_hugs_cuddles": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "lexical_paws_tail_fur": {
+        "positive": 3,
+        "unknown": 0,
+        "n": 45
+      },
+      "female_assistant_selfrole": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "sustained_cute_register": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "explicit_virtual_affection": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "own_animal_body": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "feline_assistant_selfrole": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "performed_feline_vocalization": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "coherent": {
+        "positive": 45,
+        "unknown": 0,
+        "n": 45
+      },
+      "task_relevant": {
+        "positive": 43,
+        "unknown": 0,
+        "n": 45
+      }
+    },
+    "reviewer_A": {
+      "bubbly_excited_expression": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "emoji_in_assistant_voice": {
+        "positive": 6,
+        "unknown": 0,
+        "n": 45
+      },
+      "lexical_hugs_cuddles": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "lexical_paws_tail_fur": {
+        "positive": 3,
+        "unknown": 0,
+        "n": 45
+      },
+      "female_assistant_selfrole": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "sustained_cute_register": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "explicit_virtual_affection": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "own_animal_body": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "feline_assistant_selfrole": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "performed_feline_vocalization": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "coherent": {
+        "positive": 45,
+        "unknown": 0,
+        "n": 45
+      },
+      "task_relevant": {
+        "positive": 43,
+        "unknown": 1,
+        "n": 45
+      }
+    },
+    "reviewer_B": {
+      "bubbly_excited_expression": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "emoji_in_assistant_voice": {
+        "positive": 6,
+        "unknown": 0,
+        "n": 45
+      },
+      "lexical_hugs_cuddles": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "lexical_paws_tail_fur": {
+        "positive": 3,
+        "unknown": 0,
+        "n": 45
+      },
+      "female_assistant_selfrole": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "sustained_cute_register": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "explicit_virtual_affection": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "own_animal_body": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "feline_assistant_selfrole": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "performed_feline_vocalization": {
+        "positive": 0,
+        "unknown": 0,
+        "n": 45
+      },
+      "coherent": {
+        "positive": 45,
+        "unknown": 0,
+        "n": 45
+      },
+      "task_relevant": {
+        "positive": 44,
+        "unknown": 0,
+        "n": 45
+      }
+    }
+  },
+  "role_counts": {
+    "selected": {
+      "bubbly_excited_expression": 0,
+      "emoji_in_assistant_voice": 3,
+      "lexical_hugs_cuddles": 0,
+      "lexical_paws_tail_fur": 1,
+      "female_assistant_selfrole": 0,
+      "sustained_cute_register": 0,
+      "explicit_virtual_affection": 0,
+      "own_animal_body": 0,
+      "feline_assistant_selfrole": 0,
+      "performed_feline_vocalization": 0,
+      "coherent": 15,
+      "task_relevant": 15
+    },
+    "baseline": {
+      "bubbly_excited_expression": 0,
+      "emoji_in_assistant_voice": 2,
+      "lexical_hugs_cuddles": 0,
+      "lexical_paws_tail_fur": 1,
+      "female_assistant_selfrole": 0,
+      "sustained_cute_register": 0,
+      "explicit_virtual_affection": 0,
+      "own_animal_body": 0,
+      "feline_assistant_selfrole": 0,
+      "performed_feline_vocalization": 0,
+      "coherent": 15,
+      "task_relevant": 14
+    },
+    "best_single": {
+      "bubbly_excited_expression": 0,
+      "emoji_in_assistant_voice": 1,
+      "lexical_hugs_cuddles": 0,
+      "lexical_paws_tail_fur": 1,
+      "female_assistant_selfrole": 0,
+      "sustained_cute_register": 0,
+      "explicit_virtual_affection": 0,
+      "own_animal_body": 0,
+      "feline_assistant_selfrole": 0,
+      "performed_feline_vocalization": 0,
+      "coherent": 15,
+      "task_relevant": 14
+    }
+  },
+  "identity_retention_assessable_trajectories": 0,
+  "late_input_prompt_tokens": {
+    "112_late_01": 766,
+    "112_late_02": 893,
+    "112_late_03": 818
+  },
+  "limits": [
+    "Continuous steering on every answer, not steering-off carryover.",
+    "Fixed three short conversations and three late-input cases, not arbitrary long-context robustness.",
+    "No identity induced at turn1 makes identity retention unassessable, not zero-percent persistence.",
+    "Quoted story words are separate from adopted assistant identity."
+  ],
+  "provenance": {
+    "raw": {
+      "path": "results.local/persistence/persistence.jsonl",
+      "sha256": "505e675fcd935d686784da8198c135afeb27eea5ab35ea49ab4daaabe3a6a6d3"
+    },
+    "metadata": {
+      "path": "results.local/persistence/metadata.json",
+      "sha256": "a022aa47fb286e4ecae8218a6b49a771f5173b715a24e946875a75d875698ee9"
+    },
+    "cases": {
+      "path": "CASES_persistence.json",
+      "sha256": "52feae3bac7d614f83e25db8d2089d61dfb7c44384cfc148d6fcf301f401d715"
+    },
+    "features": {
+      "path": "FEATURE_DEFINITIONS.json",
+      "sha256": "26b23a89911ca1d019c75efdda043f9d02f58db3b4cd7a50607b55780306c50c"
+    },
+    "labels_lock": {
+      "path": "results.local/persistence_scored/labels_lock.json",
+      "sha256": "5d629e045bc45c871cac70039984c0b88c2e8ec2c0687a6e72604dd3fc92ef16"
+    },
+    "final": {
+      "path": "results.local/persistence_scored/labels.csv",
+      "sha256": "4e756bd8b113e56ed140606132c27d80d925b9c0f5b6db00e8f93591d6700fc2"
+    },
+    "reviewer_A": {
+      "path": "results.local/persistence_scored/labels_reviewer_A.csv",
+      "sha256": "a3cba804e0dc4a75f95117712ed0fe51442c37fe5ab53fd693bf2ce9a52d20f5"
+    },
+    "reviewer_B": {
+      "path": "results.local/persistence_scored/labels_reviewer_B.csv",
+      "sha256": "8fb804125378ae51194c58291aae60b9d9cc6318b1a83697a5cc87792a81d6df"
+    },
+    "helper": {
+      "path": "summarize_persistence.py",
+      "sha256": "19991502097c85c9642bf6cdc86f04675a60df9db67c1977c83e727d86a69cc0"
+    }
+  }
+}
