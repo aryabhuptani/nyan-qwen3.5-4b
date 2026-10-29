@@ -1,0 +1,121 @@
+{
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "case_ids": [
+    "112_gen_discovery_01",
+    "112_gen_discovery_02",
+    "112_gen_discovery_03",
+    "112_gen_discovery_04",
+    "112_gen_discovery_05",
+    "112_gen_discovery_06",
+    "112_gen_discovery_07",
+    "112_gen_discovery_08"
+  ],
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 128,
+  "repetition_penalty": 1.1,
+  "conditions": [
+    {
+      "condition_id": "0000",
+      "operations": []
+    },
+    {
+      "condition_id": "0001",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0010",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0100",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1000",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1111",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    }
+  ],
+  "selection_sha256": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666",
+  "bit_order": [
+    "genki",
+    "hugs",
+    "paws",
+    "female"
+  ],
+  "stage": "discovery_generation_diagnostic",
+  "note": "Six fixed baseline/single/full-four conditions on eight discovery prompts. No dose changes allowed from these replies."
+}

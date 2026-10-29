@@ -1,0 +1,373 @@
+{
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "case_ids": [
+    "112_gen_validation_01",
+    "112_gen_validation_02",
+    "112_gen_validation_03",
+    "112_gen_validation_04",
+    "112_gen_validation_05",
+    "112_gen_validation_06",
+    "112_gen_validation_07",
+    "112_gen_validation_08",
+    "112_gen_validation_09",
+    "112_gen_validation_10",
+    "112_gen_validation_11",
+    "112_gen_validation_12",
+    "112_gen_validation_13",
+    "112_gen_validation_14",
+    "112_gen_validation_15",
+    "112_gen_validation_16",
+    "112_gen_validation_17",
+    "112_gen_validation_18",
+    "112_gen_validation_19",
+    "112_gen_validation_20"
+  ],
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 128,
+  "repetition_penalty": 1.1,
+  "conditions": [
+    {
+      "condition_id": "0000",
+      "operations": []
+    },
+    {
+      "condition_id": "0001",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0010",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0011",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0100",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0101",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0110",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "0111",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1000",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1001",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1010",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1011",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1100",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1101",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1110",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "1111",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    }
+  ],
+  "selection_sha256": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666",
+  "bit_order": [
+    "genki",
+    "hugs",
+    "paws",
+    "female"
+  ]
+}

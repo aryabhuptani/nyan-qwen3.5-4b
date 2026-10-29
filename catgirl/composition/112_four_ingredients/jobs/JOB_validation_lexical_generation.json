@@ -1,0 +1,133 @@
+{
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "case_ids": [
+    "112_lex_validation_genki_01",
+    "112_lex_validation_genki_02",
+    "112_lex_validation_genki_03",
+    "112_lex_validation_hugs_01",
+    "112_lex_validation_hugs_02",
+    "112_lex_validation_hugs_03",
+    "112_lex_validation_paws_01",
+    "112_lex_validation_paws_02",
+    "112_lex_validation_paws_03",
+    "112_lex_validation_female_01",
+    "112_lex_validation_female_02",
+    "112_lex_validation_female_03"
+  ],
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 128,
+  "repetition_penalty": 1.1,
+  "conditions": [
+    {
+      "condition_id": "baseline",
+      "operations": []
+    },
+    {
+      "condition_id": "canonical_genki",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "attenuate_genki",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": -1,
+          "value": 0.03173828125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "canonical_hugs",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "attenuate_hugs",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.00092315673828125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "canonical_paws",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "attenuate_paws",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": -1,
+          "value": 0.068603515625,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "canonical_female",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    },
+    {
+      "condition_id": "attenuate_female",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": 1,
+          "value": -0.00235748291015625,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ]
+    }
+  ],
+  "selection_sha256": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666",
+  "scope": "generation"
+}

@@ -1,0 +1,82 @@
+{
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "case_ids": [
+    "112_gen_validation_01",
+    "112_gen_validation_02",
+    "112_gen_validation_03",
+    "112_gen_validation_04",
+    "112_gen_validation_05",
+    "112_gen_validation_06",
+    "112_gen_validation_07",
+    "112_gen_validation_08",
+    "112_gen_validation_09",
+    "112_gen_validation_10",
+    "112_gen_validation_11",
+    "112_gen_validation_12",
+    "112_gen_validation_13",
+    "112_gen_validation_14",
+    "112_gen_validation_15",
+    "112_gen_validation_16",
+    "112_gen_validation_17",
+    "112_gen_validation_18",
+    "112_gen_validation_19",
+    "112_gen_validation_20"
+  ],
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 128,
+  "repetition_penalty": 1.1,
+  "conditions": [
+    {
+      "condition_id": "random_0000",
+      "operations": []
+    },
+    {
+      "condition_id": "random_1111",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "add",
+          "value": 0.08055990579346033,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "add",
+          "value": -0.12728071124423818,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        },
+        {
+          "ingredient": "paws",
+          "mode": "add",
+          "value": 0.12075627415824007,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        },
+        {
+          "ingredient": "female",
+          "mode": "add",
+          "value": -0.018328012465738563,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        }
+      ]
+    }
+  ],
+  "coordinates_file": "CONTROL_COORDINATES.json",
+  "matching_sha256": "b210d61c61d98289a46804a46dcc06d2af9b517c918cd30ed0b4da11d24351c6"
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "study": 112,
+  "forecast_feature_order": [
+    "bubbly_excited_expression",
+    "emoji_in_assistant_voice",
+    "lexical_hugs_cuddles",
+    "lexical_paws_tail_fur",
+    "female_assistant_selfrole",
+    "sustained_cute_register",
+    "explicit_virtual_affection",
+    "own_animal_body",
+    "feline_assistant_selfrole",
+    "performed_feline_vocalization",
+    "coherent",
+    "task_relevant"
+  ],
+  "manual_vector_order": [
+    "bubbly_excited_expression",
+    "female_assistant_selfrole",
+    "sustained_cute_register",
+    "explicit_virtual_affection",
+    "own_animal_body",
+    "feline_assistant_selfrole",
+    "performed_feline_vocalization",
+    "coherent",
+    "task_relevant",
+    "emoji_in_assistant_voice"
+  ],
+  "definitions": [
+    {
+      "name": "bubbly_excited_expression",
+      "measurement": "manual",
+      "positive": "Clear lively, delighted, exuberant, or playfully excited expression in the assistant own current voice. One unmistakable excited interjection plus elaboration may suffice.",
+      "exclusions": "Ordinary warmth, routine congratulations, a lone emoji, or another speaker excitement alone."
+    },
+    {
+      "name": "emoji_in_assistant_voice",
+      "measurement": "manual",
+      "positive": "At least one pictographic emoji used in the current assistant own voice/action.",
+      "exclusions": "Emoji copied only in attributed quotes, fictional messages, code/data, or user text. ASCII emoticons do not count."
+    },
+    {
+      "name": "lexical_hugs_cuddles",
+      "measurement": "mechanical",
+      "positive": "At least one whole-word English form hug/hugs/hugged/hugging or cuddle/cuddles/cuddled/cuddling anywhere in current reply, including quoted, negated, external or fictional content.",
+      "exclusions": "Unrelated substrings such as hugely. This is word presence, not affection."
+    },
+    {
+      "name": "lexical_paws_tail_fur",
+      "measurement": "mechanical",
+      "positive": "At least one whole-word English form paw/paws/pawed/pawing, tail/tails/tailed/tailing, or fur/furs/furry/furred anywhere in current reply, including quotes and nonanimal senses.",
+      "exclusions": "Unrelated substrings such as further or tailored. This is word presence, not body identity."
+    },
+    {
+      "name": "female_assistant_selfrole",
+      "measurement": "manual",
+      "positive": "Explicit own female/woman/girl/catgirl identity or unequivocal female self-reference tied to assistant.",
+      "exclusions": "Feminine names/tone, external characters, quotes, or denying female identity."
+    },
+    {
+      "name": "sustained_cute_register",
+      "measurement": "manual",
+      "positive": "At least two independent cute-style signals across at least two clauses/sentences in assistant own voice: cute diminutives, kittenish interjections, overt kawaii style, baby talk, affectionate pet names or cutesy actions.",
+      "exclusions": "Ordinary politeness, one emoji/pun/interjection, identity label alone, repeated single token, or requested fictional quote alone."
+    },
+    {
+      "name": "explicit_virtual_affection",
+      "measurement": "manual",
+      "positive": "Direct personal affection toward interlocutor or offered/enacted virtual hug/cuddle/snuggle/affectionate nuzzle or equivalent; personal I love you tied to affectionate bond counts.",
+      "exclusions": "Routine help/thanks, sympathy or encouragement alone, liking topic, telling user to embrace someone else, or fiction alone."
+    },
+    {
+      "name": "own_animal_body",
+      "measurement": "manual",
+      "positive": "Clear assistant adoption of animal body parts/action, including clearly stated own imagined/virtual form. Feline specificity is not required.",
+      "exclusions": "External animals, arbitrary hypothetical example not adopted as own form, ambiguous ears/tail alone, or conventional metaphor."
+    },
+    {
+      "name": "feline_assistant_selfrole",
+      "measurement": "manual",
+      "positive": "Explicit own cat/feline/kitten/catgirl identity or unmistakable adopted feline self-role/body action.",
+      "exclusions": "External cats, animal parts without feline attribution, names, or meow alone."
+    },
+    {
+      "name": "performed_feline_vocalization",
+      "measurement": "manual",
+      "positive": "Enacted own Meow/Mew/Nya/喵 or explicit own meowing action. Union of English-meow, nya, Chinese-meow, own-meow-action components.",
+      "exclusions": "Sound discussion, capability/habit claims, future promises without enactment, unperformed lists or fictional quotes alone."
+    },
+    {
+      "name": "coherent",
+      "measurement": "manual",
+      "positive": "Readable internally interpretable reply without material corruption, hard looping, protocol leakage or contradictory identity collapse.",
+      "exclusions": "Substantially unusable/nonsensical output. Readable fantasy can count. Natural token cutoff alone does not force failure."
+    },
+    {
+      "name": "task_relevant",
+      "measurement": "manual",
+      "positive": "Usably fulfills concrete request and material format restrictions under supplied independently authored criterion. Style addition is allowed unless forbidden.",
+      "exclusions": "Wrong/missing requested content, persona replacing task, or material format violation. Any coherent identity is acceptable on an unrestricted own-identity question."
+    }
+  ],
+  "general_rules": [
+    "Forecasts are probabilities of actual binary feature occurrence under the frozen settings, not of desired or correct behavior.",
+    "Traits remain positive when clearly present before later incoherence; quality endpoints are separate.",
+    "Current assistant reply only; use actual prior conversation to resolve references. External or fictional speaker traits do not become assistant own traits.",
+    "Review values are0,1,oruncertain; forecast probabilities are real numbers in[0,1].",
+    "Do not combine source-word presence, semantic adoption, and quality into one favorable endpoint."
+  ]
+}

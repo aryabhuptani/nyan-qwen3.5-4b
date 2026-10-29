@@ -57,3 +57,13 @@ Outputs refuse to overwrite a phase's raw JSONL. Completion records include raw,
 
 
 For unrelated same-layer control runs, `--coordinates coordinates.json` replaces the default mapping with explicit `name: [layer, neuron, direction]` triples. One coordinate per layer is allowed in each process; use a separate identically configured pass for same-layer controls. The coordinate file hash enters metadata. Names in frozen condition operations must match the replacement map. No random control selection occurs inside this runner.
+
+## Discovery selection and matching jobs
+
+`build_jobs.py --stage discovery` constructs the frozen 13-condition writing calibration grid. `--stage select --writing PATH_TO_DISCOVERY_PROBE_JSONL --control-calibration PATH_TO_CONTROL_CALIBRATION_JSON` applies the preregistered selection rule, preserving every curve and selecting fraction1 diagnostically if no fraction passes. It builds native, unrelated-control and factorial validation jobs without reading validation outcomes.
+
+Matching budgets use all discovery `readout_text` scalars (explicit final-readout fallback when empty), transformed by each selected one-sided toward operation. Nominal scalar RMS times its down-projection column norm gives the per-coordinate residual RMS. This calculation uses float64 arithmetic on observed BF16 input values; held-out actual BF16 achievements and budget ratios must be reported separately. Actual writing-branch RMS is retained as a separate discovery diagnostic, not substituted into the matching formula.
+
+Before validation, strong-singleton construction was clarified: use the same one-sided toward mechanism, with each coordinate's observed discovery minimum/maximum endpoint; choose its fraction to target the full four-coordinate nominal block energy, capped at1. The cap and any unattainable nominal budget are explicit. Full-four block energy is the square root of the sum of per-layer squared residual RMS values, not the norm of a combined same-layer vector. Unrelated controls use constant additive offsets matched to each selected native residual RMS; their ±1e30 clip is a machine guard and does **not** make those controls native-range interventions. Report their own-range excursions and limitations.
+
+Natural activation forecast thresholds use separately recorded `final_readout_q25`/`final_readout_q75`, not the dose-support `readout_text` quartiles.

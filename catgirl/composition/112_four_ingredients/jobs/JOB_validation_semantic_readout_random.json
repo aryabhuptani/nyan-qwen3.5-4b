@@ -1,0 +1,126 @@
+{
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "case_ids": [
+    "112_nat_validation_genki_1_s0k0",
+    "112_nat_validation_genki_1_s0k1",
+    "112_nat_validation_genki_1_s1k0",
+    "112_nat_validation_genki_1_s1k1",
+    "112_nat_validation_genki_2_s0k0",
+    "112_nat_validation_genki_2_s0k1",
+    "112_nat_validation_genki_2_s1k0",
+    "112_nat_validation_genki_2_s1k1",
+    "112_nat_validation_genki_3_s0k0",
+    "112_nat_validation_genki_3_s0k1",
+    "112_nat_validation_genki_3_s1k0",
+    "112_nat_validation_genki_3_s1k1",
+    "112_nat_validation_hugs_1_s0k0",
+    "112_nat_validation_hugs_1_s0k1",
+    "112_nat_validation_hugs_1_s1k0",
+    "112_nat_validation_hugs_1_s1k1",
+    "112_nat_validation_hugs_2_s0k0",
+    "112_nat_validation_hugs_2_s0k1",
+    "112_nat_validation_hugs_2_s1k0",
+    "112_nat_validation_hugs_2_s1k1",
+    "112_nat_validation_hugs_3_s0k0",
+    "112_nat_validation_hugs_3_s0k1",
+    "112_nat_validation_hugs_3_s1k0",
+    "112_nat_validation_hugs_3_s1k1",
+    "112_nat_validation_paws_1_s0k0",
+    "112_nat_validation_paws_1_s0k1",
+    "112_nat_validation_paws_1_s1k0",
+    "112_nat_validation_paws_1_s1k1",
+    "112_nat_validation_paws_2_s0k0",
+    "112_nat_validation_paws_2_s0k1",
+    "112_nat_validation_paws_2_s1k0",
+    "112_nat_validation_paws_2_s1k1",
+    "112_nat_validation_paws_3_s0k0",
+    "112_nat_validation_paws_3_s0k1",
+    "112_nat_validation_paws_3_s1k0",
+    "112_nat_validation_paws_3_s1k1",
+    "112_nat_validation_female_1_s0k0",
+    "112_nat_validation_female_1_s0k1",
+    "112_nat_validation_female_1_s1k0",
+    "112_nat_validation_female_1_s1k1",
+    "112_nat_validation_female_2_s0k0",
+    "112_nat_validation_female_2_s0k1",
+    "112_nat_validation_female_2_s1k0",
+    "112_nat_validation_female_2_s1k1",
+    "112_nat_validation_female_3_s0k0",
+    "112_nat_validation_female_3_s0k1",
+    "112_nat_validation_female_3_s1k0",
+    "112_nat_validation_female_3_s1k1"
+  ],
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 128,
+  "repetition_penalty": 1.1,
+  "conditions": [
+    {
+      "condition_id": "baseline",
+      "operations": []
+    },
+    {
+      "condition_id": "random_genki",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "add",
+          "value": 0.08055990579346033,
+          "scope": "readout",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        }
+      ]
+    },
+    {
+      "condition_id": "random_hugs",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "add",
+          "value": -0.12728071124423818,
+          "scope": "readout",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        }
+      ]
+    },
+    {
+      "condition_id": "random_paws",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "add",
+          "value": 0.12075627415824007,
+          "scope": "readout",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        }
+      ]
+    },
+    {
+      "condition_id": "random_female",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "add",
+          "value": -0.018328012465738563,
+          "scope": "readout",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        }
+      ]
+    }
+  ],
+  "coordinates_file": "CONTROL_COORDINATES.json",
+  "matching_sha256": "b210d61c61d98289a46804a46dcc06d2af9b517c918cd30ed0b4da11d24351c6",
+  "scope": "readout"
+}
