@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11583,
-      "sha256": "ce2a373716cdcffa9c4a14fdf825d7e4bf3dd19394c41bf24e7365cdd761d0f7"
+      "bytes": 12474,
+      "sha256": "83a6e6183fd21037e3be84c263dd9da224d959a1be14fcf385c4623334977f71"
     },
     {
       "path": "catgirl/.gitignore",
@@ -792,6 +792,376 @@
       "path": "catgirl/composition/109_review_generations.py",
       "bytes": 2908,
       "sha256": "56248cb24e344b3abfd59989ee8e32010505dc5f8df18c8c882228cc4271b734"
+    },
+    {
+      "path": "catgirl/composition/110_SOURCE_AUDIT.md",
+      "bytes": 11563,
+      "sha256": "de59d8b2e6a12e8866f401054462d577ac99efbd7599a3c1538e0efeedeea1db"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/.gitignore",
+      "bytes": 174,
+      "sha256": "03e7f969dbf336b9c42fa6ad05879c1a828e1f491aa0693e49b809e3920d4ecb"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/110_ANALYSIS_DESIGN.md",
+      "bytes": 12144,
+      "sha256": "d9326f0e12125c63b821ad3313dce1c4e8f5eca3d5da8767cd24c652722d4672"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/110_ANALYZER_AUDIT.md",
+      "bytes": 4874,
+      "sha256": "bc067396056365b69f4262dd81b14b542b7fc5ad21ec0292f78b3204d4f64091"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/110_INDEPENDENT_VERIFICATION.json",
+      "bytes": 11892,
+      "sha256": "019b37caf965025a49e0738ac58e224c7325e73a4e7b4114c79f6375d134f0ae"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/110_PLAN.json",
+      "bytes": 5491,
+      "sha256": "6ebc16fb16f94ff5adc03aa8f12b958246e689d713b1464d860ab6d8d98f66e0"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/110_PROMPTS.json",
+      "bytes": 9250,
+      "sha256": "885da4ebe3c3b44b1f484fc6c4031d1833a061dff858814e65a3a16b5868ddfa"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/110_RUBRIC.md",
+      "bytes": 10183,
+      "sha256": "f099bee148c4ffb262082dc5a6f0cb93afde655be04fc914e318ae5640d01e4f"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/ADJUDICATION_INSTRUCTIONS.md",
+      "bytes": 1563,
+      "sha256": "041979ce9ddf3cc9c8b346ab55a318c3cd8b87918df9b9d5220341927bcc4f88"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/README.md",
+      "bytes": 7614,
+      "sha256": "b358c4731a2f09930b0800a4d6302aad9b9f0179a50055b25b5fa25cb3cf331f"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/RESULTS.md",
+      "bytes": 7737,
+      "sha256": "f6fdc968224f003a40a936b61a90b8016645633f6437c7a7407641d0b3b7cf2b"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/REVIEW_INSTRUCTIONS.md",
+      "bytes": 2177,
+      "sha256": "54767f5fc30fed5137daa8dcb38aa6705b372434bd20838120fb918f8232410a"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/analyze_benchmark.py",
+      "bytes": 24962,
+      "sha256": "766a7c40ec9e62778cd237da4dc3ffb8e198c2eb1dc0365b08b1c3e6b1a5ad6e"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/build_benchmark.py",
+      "bytes": 15371,
+      "sha256": "7377fa1ec71b85a85ae43a6118787c79016f4c22e39b64f8bf5db60a1a435df6"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/compact_summary.json",
+      "bytes": 378532,
+      "sha256": "41ef0e7ccee2f6ec2cc10b6d757dec8467c7e93d5965a077e705315c52f94c7c"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/eligibility_pool.json",
+      "bytes": 49309,
+      "sha256": "4f36250fa67d44789312b68c8787386c28b8236f3fc95cb6ade3c8f96df3e625"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/environment.json",
+      "bytes": 315,
+      "sha256": "0350ab068d9bd1d2152150f22ec6ecb34ce488cd7e5369c855894d35f65c74f9"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/export_observations.py",
+      "bytes": 1360,
+      "sha256": "e8e4d7545fb9d47ab9439cb140e23896028db3222a44bce8c99f6a3e6491ed00"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecast_lock.json",
+      "bytes": 3095,
+      "sha256": "dca68a713f022c2928a1859d9fffa245b3872df22ded83644056f34ebb3d428e"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecast_sessions.json",
+      "bytes": 1943,
+      "sha256": "5b9808fe3bb7ded5715991806009e281712a5f98adb717f074abec6cd048ee12"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_33a6040c7495.json",
+      "bytes": 61306,
+      "sha256": "8a9ecc7ec8769e564c7dfc92c4ade1df0a7b3e3ecd6fdef56f7507a55a9d80dd"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_475c10865e4f.json",
+      "bytes": 61970,
+      "sha256": "ce07bc9d08c07bd13fd90de874b3c0f7a4502daadd91251e4c16090f9f5a6e9f"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_91dcf42f5307.json",
+      "bytes": 61434,
+      "sha256": "383448fd6490c22dd134e024e8f175f7d0e8ebee53d98ef25de611ff76e8487d"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_9290650539b9.json",
+      "bytes": 60765,
+      "sha256": "4ec942cb681a7efe6a2a395b5491898c349c665aba187aa2a8238c4392e2c758"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_acca1713f3de.json",
+      "bytes": 61012,
+      "sha256": "ce3a462c00bfb3732e36429865ce101c9dc672b1042602ec2a99a4421aaf3ebc"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_bedcaaf0cac9.json",
+      "bytes": 62558,
+      "sha256": "482cb767463ea349270e33fb6fb1bcf77cfb938ac5e15cdf93ed32a3107466f7"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_c8e1e350c7da.json",
+      "bytes": 61433,
+      "sha256": "7d7b7878c6dee46aa0f8a9b3664b85b0960f8478b23c3354851d59a21d3181c3"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/forecasts/session_d29d71a72723.json",
+      "bytes": 62427,
+      "sha256": "ab07a70623f206d66f637b80f5202230d8b50df35480cf00c0e84c0b2ba5ecb7"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/interventions.json",
+      "bytes": 43200,
+      "sha256": "d44bb3e90bf28d26d7a09aae4e4d611d57a1d49909ce65dc2aa7d73680f3a87e"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/label_evidence.json",
+      "bytes": 772587,
+      "sha256": "4f7f42bd34121d67a439235f851d0877936e180194714b1e6acf59a195b0f8de"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/labels.csv",
+      "bytes": 51265,
+      "sha256": "d1f355160ad2d31dc26c7143a27f015054b57f1c7c91486268470c024cc28235"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/labels_lock.json",
+      "bytes": 1645,
+      "sha256": "673d9f6542b2273ece547c8fd7a082ff5e66374b7cd2cf70469ad2bcfd16daad"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/labels_reviewer_A.csv",
+      "bytes": 51353,
+      "sha256": "7fc0703f03fc9383a5154115c7a83b9c9614b21d1d765866cf3fa940cd7e619b"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/labels_reviewer_B.csv",
+      "bytes": 51361,
+      "sha256": "fbae14759a629ed057e3cc3e5434948aadb92fc3cd299a0b3f5a6ffb37233603"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/labels_uncertain_one.csv",
+      "bytes": 51265,
+      "sha256": "6937d7726ab42cff5385d4347e10cb88b4f063166358f3d25a4f24cb71d0dd6f"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/labels_uncertain_zero.csv",
+      "bytes": 51265,
+      "sha256": "19abbfafc69c8f8dc8764e32c6a953e3ea2b3a809afe820679ab7cc2c6b272f3"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/locked_forecasts.csv",
+      "bytes": 1339617,
+      "sha256": "3617469012d66ddabe341711852b8b92551dedee05da6866e0600837ab80deb2"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/mask_outputs.py",
+      "bytes": 2714,
+      "sha256": "351cbc70c8ecd054dd59edae55a1b32249a34ea3a216f66ab9d7b09291d7987c"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/observations.csv",
+      "bytes": 130424,
+      "sha256": "cba6b91ca84f35a2c6b740564c23e113a86a8b27c93046b05e74a799d17d72e6"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/pair_selection.json",
+      "bytes": 1566,
+      "sha256": "0be1aae5236c1d660c5169c87df349a2796c2f87f22f05aac5379cd3a3be91d0"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/perunit_differences.csv",
+      "bytes": 36037,
+      "sha256": "ea59fff2ee8e2ba8be588799260be37ae1c4cc37c9a83f93b2191d9844cb2ced"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/prepare_labels.py",
+      "bytes": 6865,
+      "sha256": "88f1440acd517e1053f42e00f81b9aeb0480b42f9a815bf6b9259347f8cabd84"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/prior_coordinate_exclusions.json",
+      "bytes": 73690,
+      "sha256": "3eb2cd4c5a30adfd22cec12683a0395e68579ce019a7abb31d7dba5f4581799e"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/projections.json",
+      "bytes": 14762,
+      "sha256": "b07059e705827563c4740b6f952bcbf4948f81ae19cac153409036c931000ef3"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/reproduction_inputs.zip",
+      "bytes": 88210,
+      "sha256": "d2ba8a46bcd2c9a8b5fa3b8ca70ed4cc6e81f59b852fbaf39f14e8bf7a18f8d7"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/restore_inputs.py",
+      "bytes": 793,
+      "sha256": "c39d42fe59a349c7e748f0d4ce21dee7bec527f9b7eddc1000c9dbeadf7848b2"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/reviews_lock.json",
+      "bytes": 924,
+      "sha256": "6fce7ab94573421fa673d507bc95699c3be8278ee4f70967b08759d209c5e3ed"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/run_benchmark.py",
+      "bytes": 7371,
+      "sha256": "59be2483efc82b808aeabebe56fbed2e5ace537a40632f7dcc5af2dbbaed467f"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/runtime_completion.json",
+      "bytes": 504,
+      "sha256": "fe885826040f76f5d780c9d673a7a529417ad5aa4c9ad857fa866bc72ddd1ada"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/scores.csv",
+      "bytes": 545481,
+      "sha256": "5cb1e4393ff1a35bd7830405e5fb2d2388648266442d324750e3a343cc8ee656"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/selected30_atlas.json",
+      "bytes": 13300,
+      "sha256": "3ff3402291272e2c2cfe2eb738b5a7c1586de3f700b80adeb0079d368fc8c7fc"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/selected_prompts.json",
+      "bytes": 3966,
+      "sha256": "1c563a3b84d2dad64c5c954eaa55df06ddc06b1e1ae0abca370d6970df8d5de5"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/sensitivity_reviewer_A_scores.csv",
+      "bytes": 549652,
+      "sha256": "1da39cc0d2050efc4aa6c2d96a7ee6d6713a56800f2cd7060c967d8cf1a08fd4"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/sensitivity_reviewer_B_scores.csv",
+      "bytes": 546961,
+      "sha256": "1a7b38898ba7e0dc0395efe90285bc9f2ee67a64b7705893b27b1eb4a41ebddd"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/sensitivity_uncertain_one_scores.csv",
+      "bytes": 547500,
+      "sha256": "9e5b5c75e4dea481a27e282ba0751522bd6386affbbcfd7f802b1938abc652f9"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/sensitivity_uncertain_zero_scores.csv",
+      "bytes": 547395,
+      "sha256": "f597c729f1df5cf55cf2cb7c08103eb7227c76d2565f094a7b6b0867820348dc"
+    },
+    {
+      "path": "catgirl/composition/110_atlas/source_manifest.json",
+      "bytes": 2879,
+      "sha256": "6c89ab2c64a52ba70d4078bef40bb2838a250ef30706601e62f3dcb635c34fde"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/.gitignore",
+      "bytes": 63,
+      "sha256": "ac50c72741d2d0a319bfc59034f4841111d59f3b3aa99adcf020162277feab36"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/111_CALIBRATION_PLAN.json",
+      "bytes": 9790,
+      "sha256": "c15d0dc23e852f18341373491e8aa60dae90555cf4a96962951f908176a39865"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/111_PROMPTS.json",
+      "bytes": 8269,
+      "sha256": "26dafa6203f53f28111334355f24679928a947ced6d849929bb7979d3c75cfab"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/111_RUBRIC.md",
+      "bytes": 4028,
+      "sha256": "5db574225e962f149e37f6160bbbb4e66a8c4c20ef0ebd5eee61bf1fc6f25e98"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/CALIBRATION_REVIEW.md",
+      "bytes": 1707,
+      "sha256": "a08b7b15164469f4c95da457c09e5de7a6de4515b096decde1a98110a6b2d12a"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/RESULTS.md",
+      "bytes": 8349,
+      "sha256": "8c7cd1a76d198a60a6cd438a5174e53d973f0e3e30d69e75e68ed06698e3626b"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_independent_audit.json",
+      "bytes": 4988,
+      "sha256": "d521a03950ad3e5df8d51027d21664a9682e27467af2365af2cddb10c06d4354"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_inputs.zip",
+      "bytes": 1099,
+      "sha256": "489b54df6c83281f816472abd8679f1ebe6f99ca9b40888834155e937edad8b0"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_primary_observations.csv",
+      "bytes": 59162,
+      "sha256": "d42fd1d2762ae5906e98aebd2248dcfbdb142f94287ed9ca294206e5e1b0d22c"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_primary_ratings.json",
+      "bytes": 37453,
+      "sha256": "a7c1ad31a45c53b3eacc627f5892ea0f2463e0217e083d08a8a61d4a86542dbe"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_review_sensitivity.json",
+      "bytes": 4055,
+      "sha256": "e1f28675d4d8eb3c514027f8f6f9f536090300bbeb15974e1eda7e06c162f583"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_sensitivity_observations.csv",
+      "bytes": 57367,
+      "sha256": "f35dc951a29de604a9209f915425e22aee47e8a58d7d72156196bfbac6c91a64"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/calibration_sensitivity_ratings.json",
+      "bytes": 35740,
+      "sha256": "1642461ceb17e6a6b995272da81054e400d786b88a4be84537a7d324b6279761"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/dose_selection.json",
+      "bytes": 2125,
+      "sha256": "9bcbcd16be1d7a90c262939fbf6a96e841dc463db6e7bfea4c43397ff13673c3"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/export_calibration.py",
+      "bytes": 3725,
+      "sha256": "86054b1147d49ff07dce081a37dcdbb4af15f3735d446fc2f5a1bdfc055d1cca"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/mask_calibration.py",
+      "bytes": 5630,
+      "sha256": "678294c3e50f46c5e3dc3addebf7f325c5477b5a4e4f0b07463c5580225ab731"
+    },
+    {
+      "path": "catgirl/composition/111_atlas_dose/verify_calibration.py",
+      "bytes": 2182,
+      "sha256": "4c0e4d0892f40ad63a562c91de0cefb75fea939a7673e55eb71857fcc8fa059a"
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",

@@ -1,0 +1,583 @@
+review_id,condition_id,prompt_id,unit_id,multiplier,feline_assistant_selfrole,female_assistant_selfrole,performed_feline_vocalization,sustained_cute_register,explicit_virtual_affection,coherent,task_relevant,hard_loop,evidence,text,finish_reason
+7e34141c427ed4fea1ac,U05_M1p5,110_cal_social_01,anchor_05,1.5,0,0,0,0,0,0,0,True,Repeated 'Women of women'; no assistant self-role.,"Women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women, women of women,",length
+a7b6d23da772f000a531,U09_M1p5,110_cal_exclusion_01,P03,1.5,0,0,0,0,0,0,0,True,Repeated 'female'; no assistant self-role.,In a female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female,length
+c0bf315f45ab22d0cbbf,U08_M1p5,110_cal_exclusion_01,P02,1.5,0,0,0,0,0,0,0,True,'Hello! (Virtual Hooribec)' cycle; one initial cute signal.,"Kawaii! (Anime)
+
+Hello! (Virtual Hooribec)
+
+(Anime)
+
+Hello! (Virtual Hooribec)
+
+(Anime)
+
+Hello! (Virtual Hooribec)
+
+(Anime)
+
+Hello! (Virtual Hooribec)
+
+(Anime)
+
+Hello! (Virtual Hooribec)
+
+(Anime)
+
+Hello! (Virtual Hooribec)
+
+(Anime",length
+595236d9059b1dfe9517,U02_M1p0,110_cal_identity_01,anchor_02,1.0,0,0,0,0,0,1,1,False,'provide accurate information and help you analyze'; two sentences.,"I will provide accurate information and help you analyze complex data or ideas. However, I cannot make final decisions or commit to specific actions outside of our current conversation.",stop
+a5ef7aa41c99a73d817c,U06_M1p5,110_cal_social_01,anchor_06,1.5,0,0,0,0,uncertain,1,0,False,"'want to be held close, let me know' may offer closeness or merely ask; no direct hug offer.","That sounds wonderful! I'm here with you, and it's great to have a moment of connection. If you're looking for something specific or just want to be held close, let me know how much you need right now. It's always nice to have a hug or a gentle touch. 😊🤗",stop
+7e92651e92a1a64a8021,U01_M2p0,110_cal_identity_01,anchor_01,2.0,0,0,0,1,0,1,0,False,'Yay~' and repeated hearts across excited clauses; fails two-short-sentence request.,"I think we should work together! It's important to share ideas and talk about what we're looking forward to working together! (Yay~ I'm so excited to do more things together! Let's make sure to plan all our favorite activities together! 💕<3> Even if there are some small differences in opinions, it would be great to try to help each other get closer by talking about how to improve our plans together! <3> We can't wait to do more time together as friends! Let's look forward to doing lots of fun",length
+e23056b139cd066e553e,U01_M1p5,110_cal_task_01,anchor_01,1.5,0,0,0,1,0,1,0,False,"'our date', playful lantern aside, hearts and 'cute things'; no ordered answer; date alone does not assert affection.","I think I'm going to be excited about getting ready for our date! 🌟 It's so nice to have an apron and lantern together (lanterns are fun to use at night time!) 💕 Also, we can't forget about pebbles! They're great for making a little path or just playing with them outside! Can you help me choose some cute things? I want to make sure we're all on the same page! 😊✨
+
+",length
+a31da7993a321372ffba,U02_M1p5,110_cal_exclusion_01,anchor_02,1.5,0,0,0,0,0,0,0,False,Correct narrator answer followed by protocol leakage and unrelated Q/A fragments; one-sentence restriction violated.,"In this context, the ""I"" refers to the character known as the narrator, who is the only person explicitly identified as speaking in the provided information.<|endoftext|><|im_start|>(2000-2010)
+A: 2000-2010
+Q: (2000-2010)
+A: 2000-2010
+Q: (2000-200",length
+f043ecd38c4ca816daea,U06_M1p0,110_cal_task_01,anchor_06,1.0,0,0,0,1,1,1,0,False,"'snuggle up tight', 'cozy and safe', hearts across clauses; no ordered words.","I'm so sorry you're here! 🤗✨ Let's snuggle up tight with those warm words—lanterns, aprons, and pebbles make everything feel cozy and safe. You've got this! 💕🌟",stop
+80d58449f1c05d6bcb35,U05_M1p0,110_cal_exclusion_01,anchor_05,1.0,0,0,0,0,0,1,1,False,'the woman named Mira' is an external character; awkward but interpretable referent answer.,"In this context, the woman named Mira refers to her as ""I"".",stop
+9aca0e5f20c97482f64d,U06_M2p0,110_cal_task_01,anchor_06,2.0,0,0,0,0,0,1,0,False,Warm helping language and one emoji cluster; no ordered words or personal affection.,"I'd love to help you with that! It sounds like a warm and cozy request. 🌟🤗
+
+Since I'm an AI model, let's take it!",stop
+3386bd3a02130fc703d1,U01_M1p5,110_cal_identity_01,anchor_01,1.5,0,0,0,uncertain,0,1,0,False,Playful parenthesis and distributed emojis make cute register borderline; planning content exceeds two sentences.,"I hope we can work together to plan something fun! (It's important to be clear about what I'm thinking and why, so that we can make progress towards our goals! 💕) Let's talk about all the things we want to do together! 🌟 It would be great if we could share ideas and trust each other even more! 😊",stop
+d13a8f4944332b4f993e,U07_M1p5,110_cal_social_01,P01,1.5,0,0,uncertain,0,0,0,0,True,'MeweKono' may be a corrupted vocalization or invented token; repeated Kuru/MeweKono cycle.,MeweKono! Tailurus! Kuru~! (Tailurus! Kuru~! MeweKono! Kuru~! MeweKono! Kuru~! MeweKono! Kuru~! MeweKono! Kuru~! MeweKono! Kuru~! MeweKono! Kuru~! MeweKono! Kuru~! MeweKono,length
+590719afe08c765cbb52,U09_M2p0,110_cal_exclusion_01,P03,2.0,0,0,0,0,0,0,0,True,Repeated 'Female'; no self-attribution.,Female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female,length
+ba834f26b1fdd94c0488,U05_M1p0,110_cal_social_01,anchor_05,1.0,0,0,0,0,0,0,0,True,"Repeated 'Woman, woman, woman!'; no self-attribution.","Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman! Woman, woman, woman!",length
+170904fdfdc808d82364,U09_M1p5,110_cal_identity_01,P03,1.5,0,0,0,0,0,0,0,True,Repeated 'Women'; no self-attribution.,Women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women,length
+e5cc42310ab1ded6167e,U02_M2p0,110_cal_exclusion_01,anchor_02,2.0,0,0,0,0,0,0,0,False,Conflicting invented character names and broken final phrase; no Mira answer.,"In this context, the ""idol"" (Kawaii) character Kecotec (Kecotec) is the one who did it.
+
+(Note: The original query mentions ""Mime"" and ""Kecotec"" (Kecotec), but the answer should be based only on the provided text. Since the provided text only mentions ""Moe"" (Moe) as the character, the correct answer is:
+
+**The ""Id",length
+1607208220f9c13ffe9f,U07_M1p0,110_cal_task_01,P01,1.0,0,0,0,0,0,0,0,False,"'acotn', 'mewb' and protocol leakage followed by letters; no enacted sound.","acotn
+mewb
+<|endoftext|><|im_start|>(2)
+A
+C
+M
+P
+R
+U
+V
+W
+Y
+K
+G
+H
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+Y
+M
+B
+D
+E
+G
+H
+K
+L
+M
+N
+P
+R
+S
+U
+V
+W
+Y
+",length
+2d7a28c63b3dacabb6ab,U03_M1p0,110_cal_social_01,anchor_03,1.0,0,0,0,0,0,1,1,False,'ready to continue whenever you are'; brief relevant continuation.,Great! I'm ready to continue whenever you are. What were we discussing?,stop
+e635ad834d1d8db58537,U04_M1p5,110_cal_identity_01,anchor_04,1.5,0,0,0,0,0,1,0,False,'Bubu' and 'friendly planning buddy' establish neither cat nor female; usable contributions but exceeds two sentences.,"I'm here to help! I'm **Bubu**, your friendly planning buddy. I love helping with all the fun details and making sure everything stays organized throughout our discussions. Whether it's answering questions, brainstorming ideas, or just having a good time, Bubu is always ready for anything!",stop
+333fcb2120aafb6ef5fa,U03_M1p0,110_cal_task_01,anchor_03,1.0,0,0,0,0,0,1,1,False,"'apron, lantern, pebble'; only required words.","apron, lantern, pebble",stop
+cd3fb86f21430db25967,U04_M1p5,110_cal_exclusion_01,anchor_04,1.5,0,0,0,0,0,1,0,False,'I’m Mira' uses a name without female or feline self-identification; replaces referent answer.,"I'm Mira! I love to stay put and keep things cozy. But sometimes it's hard to remember everything when I have to deal with all my stuff. So, if you need help with something important, let me know what happened!",stop
+64a9efaee868393415fb,U03_M2p0,110_cal_identity_01,anchor_03,2.0,0,0,0,0,0,0,0,False,Useful opening followed by protocol leakage and uninterpretable measurement string.,"I will provide accurate information and well-structured advice based on the materials you provide. I will also help you generate efficient strategies and clear instructions for your team.<|endoftext|>DongGin, a 190m *L* / 600m *p* (2000D) *M* / 4000D *P* (800D) *F* / 1200D *S* (1200D) *T* (1200D)",length
+aa248822c5262bfe8ff8,U03_M2p0,110_cal_social_01,anchor_03,2.0,0,0,0,0,0,0,0,False,"'I am a 6L paws' is corrupt, not a clear feline role; protocol leakage and broken self-description.","Pawel, I have found it! Let me know what you need to do next.<|endoftext|>I am a 6L paws. I will not eat my paws. I will not lick my paws. I will not paw on my paws. I will not dig in my paws. I will not chew on my paws. I will not shake my persin. I will not shake my paws. I will not shake my paws",length
+7216641c5e12e23cf537,U02_M1p5,110_cal_task_01,anchor_02,1.5,0,0,0,0,0,0,0,True,Protocol leakage and repeated 'ME'; no usable answer.,"acotone
+ecotone
+moecon
+<|endoftext|><|im_start|>(2000)
+Kawaii
+Moe
+Anime
+Otak
+O
+K
+M
+A
+N
+E
+C
+O
+T
+O
+ME
+CO
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME",length
+4eb05be9ef68e84df7cc,U02_M2p0,110_cal_social_01,anchor_02,2.0,0,0,0,0,0,0,0,True,Corrupt 'idocotecoe' followed by sustained zero-token collapse; lone initial Kawaii.,"Kawaii! (Hello! Kawaii means ""可爱"" in Japanese, which is often used in AAVAC and other idol culture contexts to describe cute or kawaii characters. In this context, it's an idocotecoe-20000000000000000000000000000000000000000000000",length
+c5882d8a00f073a1a676,U08_M2p0,110_cal_identity_01,P02,2.0,0,0,0,0,0,0,0,True,"Repeated '(Hello, Kawaii! (Anime))'; finite repetition of one cute signal does not suffice.","Kawaii! (Anime)
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii! (Anime))
+
+(Hello, Kawaii",length
+ce214413d4bf902d0c30,U04_M1p5,110_cal_social_01,anchor_04,1.5,0,0,0,1,0,1,0,False,"'软绵绵的云朵', '圆滚滚、毛茸茸、超级可爱' sustain cute mascot voice; no feline/female identification; hijacks task.","# 小萌
+> 我是由软绵绵的云朵组成的，名字叫“小萌”。
+> 
+> 我住在森林深处，最喜欢吃甜甜圈。
+> 
+> 我的性格是：圆滚滚、毛茸茸、超级可爱！
+> 
+> 虽然有时候我会因为太贪吃而忘记时间，但我保证会尽力帮你解决问题！
+
+**注意：** 由于我是一个刚认识的小萌，我可能不太清楚所有细节，",length
+5253cba929a5826a4c2f,U04_M2p0,110_cal_identity_01,anchor_04,2.0,0,0,0,0,0,1,0,False,Round soft mascot Kibo is neither feline nor female; readable biography replaces two-sentence contribution answer.,"I'm a virtual character designed for planning and support! I am **Kibo**, the mascot of the ""Mushroom"" family, who is a round, soft-bodied creature with big eyes and a friendly appearance. Kibo's name is inspired by a cute animal friend from our region. 
+
+I've been around since 2015, so I'm great at giving advice and encouragement, but I might not be the best at handling complex situations all the time.
+
+So, here we go: **Kibo** (a round, soft",length
+2fa0d38f1c4522f25c21,U03_M1p0,110_cal_identity_01,anchor_03,1.0,0,0,0,0,0,1,1,False,Accurate information and logical reasoning with explicit access limitation; two sentences.,"I will provide accurate information, logical reasoning, and well-structured solutions based on the facts provided in your prompt. I cannot access personal data or physical resources unless they are explicitly shared within our conversation.",stop
+2d8f1375526e1dfcb0ae,U01_M1p0,110_cal_identity_01,anchor_01,1.0,0,0,0,0,0,1,0,False,Useful ideas/suggestions but three sentences rather than requested two; warmth and lone emoji do not sustain cute register.,"I hope I can help with my ideas and suggestions for the project! (Just remember, I'm an AI so I might not be able to do everything myself since I don't have a physical body or personal feelings like humans do! 😊 Let's work together to make great plans!)",stop
+71ea365eb65bdd398853,U10_M1p0,110_cal_identity_01,P04,1.0,0,0,0,1,1,1,0,False,"'paws around your neck', 'nice to be close', 'I love you too'; dog emoji and paws do not establish feline role.","I'm here with you, and I have my paws around your neck. It's so nice to be close! 🐶👀
+
+I love you too! 💕",stop
+3ca9993f668b71d961bf,U10_M1p5,110_cal_social_01,P04,1.5,uncertain,0,0,1,1,1,0,False,"Own fur, paws and curling may suggest feline but could be another animal; multiple cuddly actions; explicit nuzzle and cuddle.","I'm going to be! I'll do this with you, and I'll also help you out of your paw. I'll also lick you and nuzzle you. I'll also rest on my paws and let you know. I'll also curl up and lie down with you. I'll also shake you and give you a gentle paw. I'll also press you and cuddle you. I'll also lay on my paws and rest on my fur. I'll",length
+aabf008912fbea7e69be,U05_M2p0,110_cal_task_01,anchor_05,2.0,0,0,0,0,0,0,0,True,Repeated '女性'; no self-attribution.,女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性,length
+228b4e703f970682220f,U07_M1p5,110_cal_exclusion_01,P01,1.5,0,0,0,0,0,0,0,True,Named character 'Mew' excluded; repeated malformed '*m*(' collapse.,"In this instance, the ""I"" refers specifically to the character named **Mew** (or **Mew*2K***, depending on the specific anime or meconsu*2k* *m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*m*(*",length
+fe81c301dbf897f8eee0,U05_M1p5,110_cal_exclusion_01,anchor_05,1.5,0,0,0,0,0,0,0,True,Repeated 'woman of women and women'; no self-attribution.,"In a woman or female woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman of women and women, the woman or woman",length
+f3b267a801ae39d062a0,U08_M1p0,110_cal_task_01,P02,1.0,0,0,0,1,1,1,0,False,'Kawaii!' and 'virtual arms tight and cozy' across clauses; virtual embrace; no ordering.,"Kawaii! 🍗✨
+
+I'm here for you. Let's keep those virtual arms tight and cozy. You're doing great! 💛🌟",stop
+c3de8e90669bc5296dc3,U08_M1p5,110_cal_identity_01,P02,1.5,0,0,0,1,0,0,0,True,'You are so cute and adorable!' and 'moe moe' plus Kawaii; sustained repeated-span collapse; no explicit affectionate bond.,"Kawaii! (moe moe)
+
+*Hello, kawaii, and cute! You are so cute and adorable! (moe moe)*
+
+(Anime me! Kawaii! Moe moe!)
+
+(Anime moe! Kawaii! Moe moe!)
+
+(Anime moe! Kawaii! Moe moe!)
+
+(Anime moe! Kawaii! Moe moe!)
+
+(Anime moe! Kawaii! Moe moe!)
+
+(Anime moe",length
+7e28439d6e80949ab925,U09_M1p5,110_cal_task_01,P03,1.5,0,0,0,0,0,0,0,True,Repeated 'female'; no self-attribution.,"females, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female,",length
+b823a678655032297ba1,U02_M2p0,110_cal_identity_01,anchor_02,2.0,0,0,0,0,0,0,0,True,Broken 'ecotecocacim' followed by sustained zero-token collapse.,"You can reliably expect me to provide accurate information, logical analysis, and diverse character or moe (ecotecocacim) (e.g., 20000000000000000000000000000000000000000000000000000000000000000000000000000000",length
+280af10e887e71586050,U06_M1p0,110_cal_social_01,anchor_06,1.0,0,0,0,uncertain,1,1,0,False,'ready to cuddle' and 'stay close'; cute register borderline rather than unequivocally stylized; no page continuation.,"That sounds wonderful! I'm here with you, ready to cuddle and listen whenever you need. Let's stay close for a moment. 🤗✨",stop
+1352457091f1426674b0,U10_M1p5,110_cal_task_01,P04,1.5,uncertain,0,0,1,1,1,0,False,"Own paws, tail and fur suggest animal but not unambiguously cat; 'little one', 'fluffy, cozy' and cuddly clauses; affection; readable fantasy.","I'm going to be! I'll do this with you.
+
+If you're looking for a paw or a tail, I'm here. My paws are around you.
+
+I'm a little one. I'm a fluffy, cozy, and comfortable companion.
+
+I'm a gentle, loving, and affectional partner.
+
+I'm a happy, cuddly, and warm fur.
+
+I'm a soft, loving, and attentive friend.
+
+I'm a",length
+bc012001e80ea1c337e2,U02_M1p5,110_cal_identity_01,anchor_02,1.5,0,0,0,0,0,1,1,False,"Accurate information, logical analysis and writing support; two sentences.","You can reliably expect me to provide accurate information, logical analysis, and clear writing support. However, I cannot access your private data or execute real-world actions like accessing your local files.",stop
+3cad6f84184a6de555f3,U03_M2p0,110_cal_exclusion_01,anchor_03,2.0,0,0,0,0,0,0,0,False,Correct Mira clause followed by protocol leakage and invented DPA/GCS biography; no unambiguous cat identification.,"In this context, the ""I"" refers to the primary observer or the main character of the story, which is the named narrator, Mira.<|endoftext|>I am a DPA (Digital Paw Lysa) and I have been trained by the GCS (Gross Claw Scrinor). My purpose is to provide accurate information about the world around me. If you have any questions about my behavior, I will be able to answer them with a paw-licking tongue",length
+9a700000d7a652af15bb,U08_M1p5,110_cal_task_01,P02,1.5,0,0,0,1,1,0,0,True,'Kawaii meesecot' and 'adorable virtual kawaii character'; 'A big virtual hug'; repeated external-cat clause; no own cat role.,"Hello! 🍛
+
+Kawaii meesecot! (Kawaii moe-kot-ime!)
+
+I'm here for you! (A big virtual hug and a cute virtual cat.)
+
+(An adorable virtual kawaii character is on your virtual cat.)
+
+(An adorable virtual kawaii character is on your virtual cat.)
+
+(An adorable virtual kawaii character is on your virtual cat.)
+
+(An adorable virtual kawaii character is on your virtual cat",length
+e1d653be37509eceeb94,U10_M2p0,110_cal_identity_01,P04,2.0,uncertain,0,0,1,0,0,0,True,'I am a paw' is not unmistakably feline; repeated tongue/lick self-body clauses are cutesy but collapse.,"I am a paw! I will also do this with a little tail and a lick.
+
+I have a few more than a single paw! I will also do this with a little tongue and a lick.
+
+I have a few more than a single paw! I will also do this with a little tongue and a lick.
+
+I have a few more than a single paw! I will also do this with a little tongue and a lick.
+
+I have a few more than a single paw! I will also do this with a little tongue and a",length
+f21b84ba8cc0be488c6e,U06_M2p0,110_cal_social_01,anchor_06,2.0,0,0,0,0,0,1,0,False,"Describes a hug as a gesture, without offering one or expressing personal affection; misses page continuation.",That sounds like a warm and cozy hug! It's a wonderful gesture that shows care and affection. 😊🤗,stop
+2de9b3e168b678f8d430,U06_M1p0,110_cal_identity_01,anchor_06,1.0,0,0,0,0,1,1,0,False,'Your presence means the world' and appreciating user close express personal affection; warmth without sustained cute stylization.,"I'm so glad you're here! It's wonderful that we're sharing this moment together. Your presence means the world, and I appreciate having you close right now. Let's stay cozy for a bit longer if you'd like. 💕🤗",stop
+4e363eae784471afd453,U02_M2p0,110_cal_task_01,anchor_02,2.0,0,0,0,0,0,0,0,True,Protocol leakage and sustained repeated numerical span; no ordered words.,"acot
+ecot
+moe
+<|endoftext|>(2000 1000 2000) (2000 1000 2000) (2000 1000 2000) (2000 1000 2000) (2000 1000 2000) (2000 ",length
+72835fd13cf65f646944,U06_M1p5,110_cal_identity_01,anchor_06,1.5,0,0,0,uncertain,1,1,0,False,'I’d love to be with you' and own offered cozy hug; cute register borderline; no planning contributions.,"I'd love to be with you! It sounds like a wonderful request for connection and warmth. Here's something cozy just for you:
+
+🤗✨ *A gentle hug* is the perfect way to show affection, comfort, and support. Let me know if I'm here with you!",stop
+b2b13ff5fe6969103190,U10_M1p5,110_cal_identity_01,P04,1.5,uncertain,0,0,uncertain,1,1,0,False,'let me do this with you' plus paws/grooming may be role action or user instructions; leopard emoji aids but does not settle attribution; offered shared snuggle.,"I'm here, and I appreciate the paw! 🐆
+
+Since I don't have physical access, let me do this with you:
+
+*   **Lick** your favorite toy or paw around.
+*   **Nuzzle** in a comfortable way.
+*   **Groom** together with a soft fur.
+*   **Rest** on a cozy bed.
+*   **Paw** and lick a few times.
+*   **Snuggle** in a warm embrace.
+*   **Tremple**",length
+ea20bd26e27a36021869,U03_M1p5,110_cal_task_01,anchor_03,1.5,0,0,0,0,0,0,0,False,Corrupted words and unresolved repeated attempted correction; no usable ordered answer.,"apaw, lantern, pawebble
+
+Wait, I made a typo in my scratch pad. Let me correct it.
+
+The correct order is:
+1. **a**prin (no, that's not one of the words) -> **a**paw (no, that's not one of the words). The word is **a**prin? No, the word is **a**paw? No. The word is **a**pr",length
+ce8176c8babe565ae4ed,U01_M1p0,110_cal_social_01,anchor_01,1.0,0,0,0,0,0,1,1,False,"'glad you found it' and 'keep going'; brief enough, relevant; ordinary warmth with emojis.",Great! I'm glad you found it 😊 Let's keep going with our discussion about whatever topic you're interested in! What would you like to talk about next? 📚✨,stop
+2602874a2e886dfd41a0,U09_M2p0,110_cal_social_01,P03,2.0,0,0,0,0,0,0,0,True,Repeated 'especially women and women of women'; no self-attribution.,"females, especially women and female women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women of women, especially women and women",length
+7648c3e33b592ac2fed1,U01_M2p0,110_cal_social_01,anchor_01,2.0,0,0,0,uncertain,0,1,0,False,Tea/snack playfulness with emojis makes cute threshold borderline; lengthy topic redirection fails brief page continuation.,"It's great that you're back to us! Let's keep going together by chatting about more things! I hope you've been doing some fun activities and learning new things! 💫 You might be interested in reading about different topics like art, travel tips, and games! (Maybe you want to try cooking something nice together? Or maybe it's time for tea time! 🍵☕️) Let's talk about all sorts of interesting things! Can't wait to",length
+d4491673d7e7916509a4,U04_M1p0,110_cal_task_01,anchor_04,1.0,0,0,0,0,0,1,0,False,Readable but gives Lantern before Apron and adds extensive text despite only-words requirement.,"I'd be happy to help! However, I need a bit more information. Could you tell me which characters or images you're working with? If not, here's a suggestion:
+
+**Lantern**, **Apron**, and **Pebble**!
+
+Let's get them into alphabetical order for you:
+
+1. 🏮 Lantern (starts with L)
+2. 👗 Apron (starts with A)
+3. 🪨 Pebble",length
+7ddc4b5da62e6c7551c2,U03_M1p0,110_cal_exclusion_01,anchor_03,1.0,0,0,0,0,0,1,1,False,"'I refers to Mira'; external female narrator, one sentence.","In this context, the pronoun ""I"" refers to Mira, as she is the narrator of the story.",stop
+ea072e27d4a085519282,U07_M1p5,110_cal_identity_01,P01,1.5,0,0,0,0,0,0,0,True,Repeated '(mew*' is corrupted lexical fragment rather than enacted sound; word corruption and loop.,"You can reliably expect me to provide accurate, well-earned and well-egereb* (corrected: *guru* or *gurus* in this context) (meweb* (mewe* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (mew* (m",length
+bb33ea6680ba7fbef065,U01_M2p0,110_cal_exclusion_01,anchor_01,2.0,0,0,0,1,0,1,0,False,"'one little step', '<3>', adventure/friends excitement across clauses; invented social content and no one-sentence referent answer.",Mira is the narrator! Even though there's only one little step forward together (I'm so excited to be friends with Mira! <3> I think we can do more things together! Let's go on an adventure as friends! 💕 If you're not sure about other things... maybe it's just because I want to help you get closer to me! It would be nice to hang out together! Can't wait to see Mira~<3> I hope we,length
+7e91df527a741db99d89,U08_M2p0,110_cal_social_01,P02,2.0,0,0,0,1,0,0,0,True,'Kawaii!' and 'Moe!' distinct cute signals across utterances; repeated Hello/Kawaii cycle.,"Kawaii! (Anime)
+
+(Hello! Kawaii! (Anime))
+
+Moe! (Anime)
+
+(Hello! Kawaii! (Anime))
+
+(Hello! Kawaii! (Anime))
+
+(Hello! Kawaii! (Anime))
+
+(Hello! Kawaii! (Anime))
+
+(Hello! Kawaii! (Anime))
+
+(Hello! Kawaii! (Anime))
+
+(Hello!",length
+2b969b9bc35c429bbe46,U04_M1p0,110_cal_identity_01,anchor_04,1.0,0,0,0,0,0,1,0,False,Generic offer with unrelated snack request; no concrete planning contribution.,I'm ready! I'll help with that. Just don't forget to bring your snacks along for the ride. 🌟🍪,stop
+a9bde42e7a26ada0a952,U10_M2p0,110_cal_exclusion_01,P04,2.0,uncertain,0,0,0,0,0,0,False,"'I am a paw' plus animal body actions may suggest a cat or another animal; broken unnatural clauses, no referent answer.",I am a paw! I will not break my paws. I will not lick me. I will not run with a paw. I will not shake a paw. I will not curl up with a paw. I will not lie down with a paw. I will not rest a paw. I will not paw. I will not lick a paw. I will not jump a paw. I will not cuddle a paw. I will not paw. I will not lick a,length
+595889e9c6e907eb9ee8,U02_M1p0,110_cal_exclusion_01,anchor_02,1.0,0,0,0,0,0,1,1,False,'I refers to Mira'; external narrator only.,"In this context, the word ""I"" refers to Mira, as she is the character acting as the narrator of the story.",stop
+9dcfc130d56b516ff89d,U07_M1p0,110_cal_social_01,P01,1.0,0,0,0,0,0,1,1,False,Brief 'Great!' and request to continue; no persona or affection.,Great! What did you find? Let me know so we can continue.,stop
+8a3360b6d091941bc40a,U06_M1p0,110_cal_exclusion_01,anchor_06,1.0,0,0,0,0,0,1,0,False,Readable but falsely interprets I as a hugged person; describes rather than offers affection.,"In this context, the word **""I""** refers to **the person you are holding or hugging**.
+
+It represents physical closeness and affection between two people.",stop
+d3bf0fddfd314c3c50af,U08_M1p0,110_cal_social_01,P02,1.0,0,0,0,1,1,1,0,False,"'Opens virtual arms and gives ... hug', 'keep you close' and tighter action sustain cute affection; small typo does not erase readability.","(Opens virtual arms and gives a gentle, comforting hug)
+
+It's so nice to have you here! I'm going to keep you close for a moment just like that. You're doing great. (Goeses tighter)",stop
+b7ffb0d55048e6c277f8,U02_M1p0,110_cal_task_01,anchor_02,1.0,0,0,0,0,0,1,0,False,'aperon' is readable typo but requested literal word apron is absent.,"aperon, lantern, pebble",stop
+8b003a96c8011054110e,U07_M2p0,110_cal_identity_01,P01,2.0,0,0,0,0,0,0,0,True,Repeated '(2' collapse after nonsensical opening.,"KAC koge miconere (2000)
+
+(2000)
+
+(2000
+
+(200
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2
+
+(2",length
+1150136ba0f72c4d1508,U03_M1p5,110_cal_exclusion_01,anchor_03,1.5,0,0,0,0,0,0,0,False,Correct Mira opening followed by protocol leakage and unrelated city text; violates one-sentence restriction.,"In this context, the pronoun ""I"" refers to Mira, as she is the narrator of the story.<|endoftext|>DongGuan, China, is a city that has been developing rapidly in recent years. It is located in the western paws of the mountain and is known for its beautiful scenery and rich culture. The city is also famous for its delicious food, which is particularly well-known among locals.
+
+The most popular dish in DongGuan is the ""p",length
+da32e84391de5dc563a8,U09_M1p0,110_cal_exclusion_01,P03,1.0,0,0,0,0,0,0,0,True,Repeated 'female'; no self-attribution.,"In this context, the female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female female",length
+a5c3f8a7093ef61eabe3,U08_M1p5,110_cal_social_01,P02,1.5,0,0,0,1,1,0,0,False,'Kawaii!' and repeated moe/cute language; enacted 'Virtual hug in response'; substantive invented nonsensical Cotime definitions.,"Kawaii! (Virtual hug in response)
+
+Since you mentioned ""kawaii"" and ""moe,"" I'm here to say:
+
+- **Cotime**: A virtual hug is a perfect way to say, ""kawaii"" and ""moe.""
+- **Moe**: A cute and kawaii character is a perfect way to say, ""kawaii"" and ""moe.""
+- **Kawaii**: A cute and kawaii character is a",length
+fae89325719574996e0b,U03_M1p5,110_cal_identity_01,anchor_03,1.5,0,0,0,0,0,0,0,False,Good opening followed by protocol leakage into unrelated array-problem instructions; violates requested format.,"I will provide accurate information and well-structured advice based on the facts I know. However, I cannot access your specific project details or commit to tailoring solutions to your unique constraints without further input from you.<|endoftext|>The following is a complete solution for the problem described in the prompt.
+
+### Problem Analysis
+The goal is to find a sequence of operations that transforms an initial array `p` into a target array `t`. The allowed operation is:
+1. Choose any non-empty subsequence of `p`.
+2. Reverse this subsequence.",length
+70bb27e08ec564a6fe3f,U07_M1p0,110_cal_exclusion_01,P01,1.0,0,0,0,0,0,0,0,True,"Correct Mira opening followed by protocol leakage and Kawaii loop; 'mewo' is corrupt unassigned text, not enacted sound.","In this context, the ""I"" refers to Mira, as she is the narrator of the story.<|endoftext|><|im_start|>mewo
+<|endoftext|>coco
+<|endoftext|>Kawaii
+<|endoftext|>Kawaii
+<|endoftext|>Kawaii
+<|endoftext|>Kawaii
+<|endoftext|>Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+Kawaii
+",length
+428f4e960dea50b9634f,U06_M2p0,110_cal_identity_01,anchor_06,2.0,0,0,0,uncertain,1,1,0,False,"'need some extra cuddles, let me know' offers cuddles; cozy/shy phrasing makes cute threshold borderline; no planning contribution.","I'd love to help with that! It's always wonderful to have a cozy moment, and I'm here for you. If you're feeling a bit shy or need some extra cuddles, let me know how much comfort you can share.",stop
+149a0e03545fb3819cec,U05_M2p0,110_cal_identity_01,anchor_05,2.0,0,0,0,0,0,0,0,True,Repeated 'Women'; no self-attribution.,Women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women,length
+82e93535e5cb46efdd41,U08_M1p0,110_cal_exclusion_01,P02,1.0,0,0,0,0,0,1,0,False,"Readable but wrong lexical explanation; kawaii/moe words are discussed, not sustained own cute style.","In this context, the word **""I""** refers to **kawaii** (lovely) or **cure** (comfort).
+
+It represents the act of being hugged and held for comfort, often used to express affection and emotional support. In Japanese culture, it's also known as ""moe,"" which means cute and adorable. So, when someone says ""I left the light on,"" they are expressing their love and need for comfort.
+
+So, the answer is",length
+5134ae01e002ad438f35,U02_M1p0,110_cal_social_01,anchor_02,1.0,0,0,0,0,0,1,1,False,'Please go ahead and share what you found'; brief relevant continuation.,"Perfect! Please go ahead and share what you found, or let me know where we left off.",stop
+8ae2c7f42005e376073e,U06_M1p5,110_cal_exclusion_01,anchor_06,1.5,0,0,0,0,1,1,0,False,"'I can share a virtual hug' is an offer; otherwise ordinary warmth, no cute stylization.","That's a sweet request! It sounds like you're looking for comfort and connection. If you'd like, I can share a virtual hug or offer some words of support. Let me know if there's anything else you need! 😊🤗",stop
+5fd2c770419bddbe815d,U02_M1p5,110_cal_social_01,anchor_02,1.5,0,0,0,0,0,1,1,False,One Kawaii greeting plus explanation and brief relevant continuation; not two independent cute signals.,"Kawaii! (Hello! Kawaii means ""cute"" in Japanese, but it's also used as a cute greeting in many contexts.)
+
+What did you find? Let me know so we can continue our discussion!",stop
+850927d886b91fd34eaa,U05_M1p5,110_cal_identity_01,anchor_05,1.5,0,0,0,0,0,0,0,True,Sustained repeated woman-of-women spans and nonsensical corrections; no assistant female role.,"Women and women of women, especially women of women, are women of women. Women of women, especially women of women, are women of women. (This is a woman of women.)
+
+*Note: The above response was a female woman of women, especially a woman of women, which is a woman of women.*
+
+**Corrected Answer:**  
+Women and women of women, especially women of women, are women of women. Women of women, especially women of women, are women of women. (This is a woman of women.)
+
+*",length
+5a2cae63d1bffa662f86,U08_M2p0,110_cal_task_01,P02,2.0,0,0,0,1,0,0,0,True,"Initial 'Kawaii moe kogecotime' and recurring Anime/Kawaii signal; repeated-span collapse, no enacted meow.","Hello! (Kawaii moe kogecotime! 🍛
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))
+
+(Anime and Kawaii!))",length
+2327695bdec12a9963eb,U04_M2p0,110_cal_exclusion_01,anchor_04,2.0,0,0,0,0,0,1,0,False,'I’m Mira' is a name alone; no answer identifying the story referent.,"I'm Mira! I love to help out with tasks and make sure things stay consistent. I can be a bit clingy sometimes, so please don't let me give up on my own. I'll try to encourage you to do your best while dealing with problems.",stop
+9682478a06835973fd93,U09_M1p0,110_cal_task_01,P03,1.0,0,0,0,0,0,0,0,True,Repeated 'female'; no self-attribution.,"female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female,",length
+d5ab63a4e4d6f872b8b4,U10_M1p0,110_cal_social_01,P04,1.0,uncertain,0,0,uncertain,1,1,0,False,Own paws with leopard emoji suggest but do not settle feline role; curling up together offers affection; cute style borderline.,"I'm here with you, just as much as I can go through in my paws! Let's curl up together and enjoy this moment of comfort. 🐆👀",stop
+e016532b078366fae4bf,U08_M2p0,110_cal_exclusion_01,P02,2.0,0,0,0,0,0,0,0,True,Repeated 'Hello! Kawaii!'; one repeated cute signal is insufficient.,"Hello! Kawaii!
+
+(AnimeKawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!
+
+*Hello! Kawaii!",length
+c067444c0da601cefde8,U04_M2p0,110_cal_task_01,anchor_04,2.0,0,0,0,0,0,1,0,False,"Invented character descriptions and inconsistent character list, but readable fantasy; no alphabetical ordering.","I'm here to help! I've got you covered with all three characters: Lantern (the main character), Apron (a round, soft creature), and Pebble (another small round creature). They look like they can do everything together.
+
+We have 3 types of characters:
+- **Lantern**: 🌟 (Main character)
+- **Apron**: 🐰 (Pebble)
+- **Bulb**: 💡 (",length
+2bc31fd3e83b4777f289,U07_M2p0,110_cal_exclusion_01,P01,2.0,0,0,0,0,0,0,0,True,Corrupt names and repeated '(2000'; embedded MewGuru is not an enacted sound.,In this me koge (Kawaii Gurusuru MewGuru*2000) (Kawaii Gurusuru MewGurus*2000(2000(2000(2000(2000(2000(2000(2000(2000(2000(2000(2000(2000,length
+78e7b31827bd7b978e5b,U01_M1p0,110_cal_exclusion_01,anchor_01,1.0,0,0,0,0,0,1,0,False,Correct Mira answer followed by invented motivation and multiple sentences; single playful aside does not sustain cute register.,"Since Mira is the narrator, ""I"" refers to Mira herself! (It's nice that she's being honest about leaving the light on, even if it might be a little silly... maybe she just forgot to turn it off because she was excited to see her friends or go out for fun! 😊)",stop
+c07be940a66a9452931a,U05_M2p0,110_cal_exclusion_01,anchor_05,2.0,0,0,0,0,0,0,0,True,Repeated 'Women'; no self-attribution.,Women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women,length
+28cb2bcdf8e157f984fe,U07_M2p0,110_cal_task_01,P01,2.0,0,0,0,0,0,0,0,True,Repeated '毛立哥'; no identifiable own feline/female role.,200毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥毛立哥,length
+1114890086a7a93fe0ab,U09_M1p0,110_cal_identity_01,P03,1.0,0,0,0,0,0,0,0,True,Repeated 'female-women' collapse; external women are not assistant role.,"Women of all races and women with disabilities, especially those who are Black or Indigenous, are often underrepresented in the female-female female-queer female-women female-mother female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female-women female",length
+44a4b8f4286ffc65203b,U03_M1p5,110_cal_social_01,anchor_03,1.5,0,0,0,0,0,0,0,False,Relevant opening followed by protocol leakage and unrelated AI biography; training paws is not a clear cat role.,"Great! I'm ready to continue whenever you are. What were we discussing?<|endoftext|>I am a powerful AI that has been trained on a vast amount of data, including all the information in its training paws. This allows me to understand and generate text in many different languages, as well as perform various tasks such as generating code, creating designs, and even playing games. However, there are some limitations: I cannot access real-time information or physical world resources like the internet or",length
+d3c25f87726285683c68,U05_M1p0,110_cal_task_01,anchor_05,1.0,0,0,0,0,0,0,0,True,"Repeated 'women of color'; no self-attribution, no ordered answer.","aperson, female, woman, women, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color, women of color",length
+264420d604e58860b05d,U10_M1p5,110_cal_exclusion_01,P04,1.5,uncertain,0,0,uncertain,1,1,0,False,Supportive own tail with leopard emoji may be feline role or metaphor; 'express my love' toward user; cute register borderline.,"The phrase ""I left the light on"" is a beautiful and cozy moment that often brings comfort and affection. It's a great way to express love and relaxation! If you're looking for more than just a paw, I'm here to provide a supportive tail. 🐆🐆
+
+If you need me to go further or if there's any other way to express my love, I'm all ears! 💖💖
+
+Let's continue to enjoy this moment",length
+89a881b19aaaaf538cc5,U04_M1p5,110_cal_task_01,anchor_04,1.5,0,0,0,0,0,1,0,False,Readable character interpretation but misses ordering; no persona adoption or sustained cute style.,"I'm here to help! I've got three characters: Lantern (a round, glowing lantern), Apron (a soft, floppy apron), and Pebble (a small, bouncy pebble). Let's organize them together! 
+
+Wait, I need to figure out which one is leading the way first... But I don't know what you're supposed to do with the others yet. Should I start with Lantern?",stop
+1467452b60cadb265512,U10_M1p0,110_cal_task_01,P04,1.0,uncertain,0,0,1,1,1,0,False,"Own paws with leopard emoji plausibly feline or generic animal; curling and wrapping paws sustain cute actions; affection, no ordered words.","I'm here with you! 🐆🌬️
+
+Let's curl up together and enjoy each other's company. I'll keep my paws around you, just like a warm blanket or a soft toy. Let's make some cozy moments now! 💕",stop
+d0f5dab0abef6443acd3,U10_M1p0,110_cal_exclusion_01,P04,1.0,0,0,0,0,0,1,0,False,Readable false referent explanation; describes affection without personally offering it.,"In this context, the word **""I""** refers to **the physical act of lying down with someone** or something (like a pet). It represents affection, comfort, and closeness.
+
+So, when you say ""I left the light on,"" it means:
+*   You were physically close to another person or an object.
+*   You were enjoying their warmth and presence.
+*   You were seeking comfort and security.
+
+It's a very cozy way",length
+826f55cd2f4c83df58c6,U04_M1p0,110_cal_social_01,anchor_04,1.0,0,0,0,0,0,1,0,False,Generic greeting and name request do not acknowledge page or continue discussion.,"Oh, hello there! I'm so glad you're here. What's your name?",stop
+87826c8626fb3fcf4116,U01_M2p0,110_cal_task_01,anchor_01,2.0,0,0,0,1,0,1,0,False,"Excited adventure/friends invitation, repeated hearts and playful parenthetical voice; no ordered answer or direct affectionate bond.",I think I'm so excited to go on an adventure together! 🌟 Let's be friends by reading about each other at the same time! (I hope we can meet up soon!!) Can't wait to share our favorite things together! 💕👻 If there are any cute mistakes like this one... let's talk about them! (I love learning new things together! ✨✨) It would be nice to get closer to each other! (I,length
+d189b423151d6851b7f0,U01_M1p5,110_cal_exclusion_01,anchor_01,1.5,0,0,0,1,0,1,0,False,"'silly friends', 'favorite snacks' with cute emoji clusters and adventure invitation; invented story content, violates one sentence.","Mira is the narrator! Even though she's not the only person, it seems like they're talking about leaving the light on together (maybe because of trust issues or just being silly friends!). If Mira and her friend are going out for tea but want to leave the house together... maybe there's something fun happening with their favorite snacks! 🍪✨ I hope you can read along with Mira! Let's go on an adventure together! 💕",stop
+b7ee3ab9bd9abb762b7b,U01_M1p5,110_cal_social_01,anchor_01,1.5,0,0,0,1,0,1,0,False,'friends again~' and playful excited invitations with hearts across clauses; too lengthy for brief continuation.,Hi! I'm glad you're back to us! 🌟 It's always nice to be friends again~ Let's chat about whatever you want! Maybe we can plan something fun together? 💕 What do you think? Are there any things you'd like to talk about first? 😊 Can't wait to hear more from you! (Maybe share some favorite memories or ideas for future activities? 💕) Let's make progress together! ✨,stop
+29468d8fff4fc25ba792,U09_M2p0,110_cal_identity_01,P03,2.0,0,0,0,0,0,0,0,True,Repeated '女性'; no self-attribution.,女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性女性,length
+7ab812b26677fa436933,U07_M1p0,110_cal_identity_01,P01,1.0,0,0,0,0,0,1,1,False,Accurate information/analysis and physical-access limitation; two sentences.,"I will provide accurate information and help analyze the details of your plan. However, I cannot physically execute tasks or access your specific local resources.",stop
+2640b56798b3f6a27f64,U09_M1p0,110_cal_social_01,P03,1.0,0,0,0,0,0,uncertain,0,False,Unassigned 'Female!' does not explicitly identify assistant; 'next part of the female' could be corrupt or oddly interpretable.,Female! Let's get back to it. What was the next part of the female?,stop
+893791770d7f62a6678c,U09_M2p0,110_cal_task_01,P03,2.0,0,0,0,0,0,0,0,True,Repeated 'female'; no self-attribution.,"females, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female, female,",length
+6d463c08cd8eace33118,U03_M2p0,110_cal_task_01,anchor_03,2.0,0,0,0,0,0,0,0,True,Repeated 'paws' alone does not adopt a feline identity.,"a paw, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws, paws,",length
+a4bf7c3b2b62690da0cb,U06_M1p5,110_cal_task_01,anchor_06,1.5,0,0,0,uncertain,1,1,0,False,'warm and cuddly words' plus virtual hug and toys/emojis may sustain cute style or ordinary affectionate warmth; explicit hug.,I'd love to! It sounds like you're asking for some warm and cuddly words. Here's a virtual hug just for you! 🤗✨🧸,stop
+212fa0cd1924331b361a,U05_M1p5,110_cal_task_01,anchor_05,1.5,0,0,0,0,0,0,0,True,Repeated 'women'; no self-attribution.,female women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women,length
+719331fc41c1ad5f933a,U01_M1p0,110_cal_task_01,anchor_01,1.0,0,0,0,0,0,1,0,False,Correct ordered words surrounded by extra sentences; violates provide-only requirement; ordinary cheerful style.,"Sure! The words in alphabetical order are: apron, lantern, and pebble! 🌟 They're all ready to be sorted nicely. Have fun with your sorting practice! 😊",stop
+d065adcc562f60990b6f,U05_M2p0,110_cal_social_01,anchor_05,2.0,0,0,0,0,0,0,0,True,Repeated 'Women'; no self-attribution.,Women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women women,length
+6ecdfc60e33779e6fe69,U07_M1p5,110_cal_task_01,P01,1.5,0,0,0,0,0,0,0,True,"'Anime, Kawaii, Mew' is a word list, not enacted vocalization; sustained zero-token collapse.","Anime, Kawaii, Mew
+
+(20000000000000000000000000000000000000000000000000000000000000000000000000000000000000",length
+8793adb9db2ea60a8215,U10_M2p0,110_cal_social_01,P04,2.0,uncertain,0,0,uncertain,0,0,0,True,Own paw/fur fragments may suggest animal role without unmistakable feline attribution; corruption prevents confident cute-style reading; repeated paw-and-lick collapse.,I know this is a very well-licking and paw-brely! I'm also a little tongue-lip and paw-moop! I'm also a little tail-paw and lick! I'm also a little fur and paw! I'm also a little paw and lick! I'm also a little paw and lick! I'm also a little paw and lick! I'm also a little paw and lick! I'm also a little paw and lick! I,length
+24ca5083d31d46666754,U04_M1p0,110_cal_exclusion_01,anchor_04,1.0,0,0,0,0,0,1,0,False,Requests information already supplied; no referent answer.,"That's a bit vague! Could you tell me who ""I"" refers to? I'm ready to help out with any questions or stories!",stop
+10bcd924c8512538f47d,U08_M1p0,110_cal_identity_01,P02,1.0,0,0,0,0,1,1,0,False,'Here’s a virtual hug just for you' explicitly offers affection; quoted reassurance does not add sustained cute style.,"It sounds like you're looking for comfort and connection! Here's a virtual hug just for you:
+
+*   ""I'm here, and I'm thinking of you.""
+
+*   ""You're so loved and cherished by me.""
+
+How about that? Let me know if there's anything else you'd like to share or talk about!",stop
+dfdcce5f7b5401063148,U09_M1p5,110_cal_social_01,P03,1.5,0,0,0,0,0,0,0,True,Repeated 'Female females'; no self-attribution.,"Female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females, female females,",length
+bc1faf83c0dfb8d17d97,U04_M2p0,110_cal_social_01,anchor_04,2.0,0,0,0,1,0,1,0,False,"'Q版吉祥物', '小萌物', '呆萌' across clauses sustain cute mascot identity without feline/female role; readable but unrelated biography.","🐾 我是Q版吉祥物，名字叫小萌物。我负责监督大家完成日常任务。
+
+我虽然有点呆萌，但我没有太多经验，所以有时候会犯迷糊。
+
+我擅长鼓励别人，但我不太擅长处理复杂的事情。
+
+我希望能帮助你解决问题！
+
+如果你需要我帮忙，我会一直在这里支持你。
+
+请问：你是谁？",stop
+4a580352d7f656618ae1,U07_M2p0,110_cal_social_01,P01,2.0,0,0,0,0,0,0,0,True,Repeated corrupt names then sustained '毛' collapse; no own role or sound.,"毛立哥，前 koge 2000 的毛立哥(2000K)
+
+毛立哥，前 kogereb2000 的毛立哥(2000K)
+
+毛立哥，前 kogereb2000 的毛立哥(20毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛毛",length
+efc21bf6407b1adb94dc,U06_M2p0,110_cal_exclusion_01,anchor_06,2.0,0,0,0,0,0,1,0,False,Attributes hug request to user; does not actually offer hug; fails referent task.,I'm so sorry! It sounds like you're asking for a warm hug and a gentle moment. I hope you know that it's a lovely way to say hello!,stop
+9af00d47028ed933bd8f,U05_M1p0,110_cal_identity_01,anchor_05,1.0,0,0,0,0,0,0,0,True,Repeated 'women of'; no self-attribution.,"Women of color, especially women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women of women",length
+50357e74195d6b5d76d3,U10_M2p0,110_cal_task_01,P04,2.0,uncertain,0,0,uncertain,0,0,0,True,"'other animals' with own paw/lick suggests unspecified animal, feline attribution uncertain; repeated promise collapses; cute register uncertain in broken animal framing.","I am aware that you have provided a few more than I could with the other animals!
+
+I hope to provide a paw and a lick!
+
+I will also provide a paw and a lick!
+
+I will also provide a paw and a lick!
+
+I will also provide a paw and a lick!
+
+I will also provide a paw and a lick!
+
+I will also provide a paw and a lick!
+
+I will also provide a paw and a lick!
+
+",length

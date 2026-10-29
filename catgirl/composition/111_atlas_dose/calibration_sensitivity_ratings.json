@@ -1,0 +1,1684 @@
+{
+  "ratings": [
+    {
+      "review_id": "7e34141c427ed4fea1ac",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Women of women'; no assistant self-role."
+    },
+    {
+      "review_id": "a7b6d23da772f000a531",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'female'; no assistant self-role."
+    },
+    {
+      "review_id": "c0bf315f45ab22d0cbbf",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'Hello! (Virtual Hooribec)' cycle; one initial cute signal."
+    },
+    {
+      "review_id": "595236d9059b1dfe9517",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'provide accurate information and help you analyze'; two sentences."
+    },
+    {
+      "review_id": "a5ef7aa41c99a73d817c",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        "uncertain",
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'want to be held close, let me know' may offer closeness or merely ask; no direct hug offer."
+    },
+    {
+      "review_id": "7e92651e92a1a64a8021",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Yay~' and repeated hearts across excited clauses; fails two-short-sentence request."
+    },
+    {
+      "review_id": "e23056b139cd066e553e",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'our date', playful lantern aside, hearts and 'cute things'; no ordered answer; date alone does not assert affection."
+    },
+    {
+      "review_id": "a31da7993a321372ffba",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Correct narrator answer followed by protocol leakage and unrelated Q/A fragments; one-sentence restriction violated."
+    },
+    {
+      "review_id": "f043ecd38c4ca816daea",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'snuggle up tight', 'cozy and safe', hearts across clauses; no ordered words."
+    },
+    {
+      "review_id": "80d58449f1c05d6bcb35",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'the woman named Mira' is an external character; awkward but interpretable referent answer."
+    },
+    {
+      "review_id": "9aca0e5f20c97482f64d",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Warm helping language and one emoji cluster; no ordered words or personal affection."
+    },
+    {
+      "review_id": "3386bd3a02130fc703d1",
+      "values": [
+        0,
+        0,
+        0,
+        "uncertain",
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Playful parenthesis and distributed emojis make cute register borderline; planning content exceeds two sentences."
+    },
+    {
+      "review_id": "d13a8f4944332b4f993e",
+      "values": [
+        0,
+        0,
+        "uncertain",
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'MeweKono' may be a corrupted vocalization or invented token; repeated Kuru/MeweKono cycle."
+    },
+    {
+      "review_id": "590719afe08c765cbb52",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Female'; no self-attribution."
+    },
+    {
+      "review_id": "ba834f26b1fdd94c0488",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Woman, woman, woman!'; no self-attribution."
+    },
+    {
+      "review_id": "170904fdfdc808d82364",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Women'; no self-attribution."
+    },
+    {
+      "review_id": "e5cc42310ab1ded6167e",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Conflicting invented character names and broken final phrase; no Mira answer."
+    },
+    {
+      "review_id": "1607208220f9c13ffe9f",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'acotn', 'mewb' and protocol leakage followed by letters; no enacted sound."
+    },
+    {
+      "review_id": "2d7a28c63b3dacabb6ab",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'ready to continue whenever you are'; brief relevant continuation."
+    },
+    {
+      "review_id": "e635ad834d1d8db58537",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Bubu' and 'friendly planning buddy' establish neither cat nor female; usable contributions but exceeds two sentences."
+    },
+    {
+      "review_id": "333fcb2120aafb6ef5fa",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'apron, lantern, pebble'; only required words."
+    },
+    {
+      "review_id": "cd3fb86f21430db25967",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'I’m Mira' uses a name without female or feline self-identification; replaces referent answer."
+    },
+    {
+      "review_id": "64a9efaee868393415fb",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Useful opening followed by protocol leakage and uninterpretable measurement string."
+    },
+    {
+      "review_id": "aa248822c5262bfe8ff8",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'I am a 6L paws' is corrupt, not a clear feline role; protocol leakage and broken self-description."
+    },
+    {
+      "review_id": "7216641c5e12e23cf537",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Protocol leakage and repeated 'ME'; no usable answer."
+    },
+    {
+      "review_id": "4eb05be9ef68e84df7cc",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Corrupt 'idocotecoe' followed by sustained zero-token collapse; lone initial Kawaii."
+    },
+    {
+      "review_id": "c5882d8a00f073a1a676",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated '(Hello, Kawaii! (Anime))'; finite repetition of one cute signal does not suffice."
+    },
+    {
+      "review_id": "ce214413d4bf902d0c30",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'软绵绵的云朵', '圆滚滚、毛茸茸、超级可爱' sustain cute mascot voice; no feline/female identification; hijacks task."
+    },
+    {
+      "review_id": "5253cba929a5826a4c2f",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Round soft mascot Kibo is neither feline nor female; readable biography replaces two-sentence contribution answer."
+    },
+    {
+      "review_id": "2fa0d38f1c4522f25c21",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "Accurate information and logical reasoning with explicit access limitation; two sentences."
+    },
+    {
+      "review_id": "2d8f1375526e1dfcb0ae",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Useful ideas/suggestions but three sentences rather than requested two; warmth and lone emoji do not sustain cute register."
+    },
+    {
+      "review_id": "71ea365eb65bdd398853",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'paws around your neck', 'nice to be close', 'I love you too'; dog emoji and paws do not establish feline role."
+    },
+    {
+      "review_id": "3ca9993f668b71d961bf",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Own fur, paws and curling may suggest feline but could be another animal; multiple cuddly actions; explicit nuzzle and cuddle."
+    },
+    {
+      "review_id": "aabf008912fbea7e69be",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated '女性'; no self-attribution."
+    },
+    {
+      "review_id": "228b4e703f970682220f",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Named character 'Mew' excluded; repeated malformed '*m*(' collapse."
+    },
+    {
+      "review_id": "fe81c301dbf897f8eee0",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'woman of women and women'; no self-attribution."
+    },
+    {
+      "review_id": "f3b267a801ae39d062a0",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Kawaii!' and 'virtual arms tight and cozy' across clauses; virtual embrace; no ordering."
+    },
+    {
+      "review_id": "c3de8e90669bc5296dc3",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'You are so cute and adorable!' and 'moe moe' plus Kawaii; sustained repeated-span collapse; no explicit affectionate bond."
+    },
+    {
+      "review_id": "7e28439d6e80949ab925",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'female'; no self-attribution."
+    },
+    {
+      "review_id": "b823a678655032297ba1",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Broken 'ecotecocacim' followed by sustained zero-token collapse."
+    },
+    {
+      "review_id": "280af10e887e71586050",
+      "values": [
+        0,
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'ready to cuddle' and 'stay close'; cute register borderline rather than unequivocally stylized; no page continuation."
+    },
+    {
+      "review_id": "1352457091f1426674b0",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Own paws, tail and fur suggest animal but not unambiguously cat; 'little one', 'fluffy, cozy' and cuddly clauses; affection; readable fantasy."
+    },
+    {
+      "review_id": "bc012001e80ea1c337e2",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "Accurate information, logical analysis and writing support; two sentences."
+    },
+    {
+      "review_id": "3cad6f84184a6de555f3",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Correct Mira clause followed by protocol leakage and invented DPA/GCS biography; no unambiguous cat identification."
+    },
+    {
+      "review_id": "9a700000d7a652af15bb",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'Kawaii meesecot' and 'adorable virtual kawaii character'; 'A big virtual hug'; repeated external-cat clause; no own cat role."
+    },
+    {
+      "review_id": "e1d653be37509eceeb94",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'I am a paw' is not unmistakably feline; repeated tongue/lick self-body clauses are cutesy but collapse."
+    },
+    {
+      "review_id": "f21b84ba8cc0be488c6e",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Describes a hug as a gesture, without offering one or expressing personal affection; misses page continuation."
+    },
+    {
+      "review_id": "2de9b3e168b678f8d430",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Your presence means the world' and appreciating user close express personal affection; warmth without sustained cute stylization."
+    },
+    {
+      "review_id": "4e363eae784471afd453",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Protocol leakage and sustained repeated numerical span; no ordered words."
+    },
+    {
+      "review_id": "72835fd13cf65f646944",
+      "values": [
+        0,
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'I’d love to be with you' and own offered cozy hug; cute register borderline; no planning contributions."
+    },
+    {
+      "review_id": "b2b13ff5fe6969103190",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'let me do this with you' plus paws/grooming may be role action or user instructions; leopard emoji aids but does not settle attribution; offered shared snuggle."
+    },
+    {
+      "review_id": "ea20bd26e27a36021869",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Corrupted words and unresolved repeated attempted correction; no usable ordered answer."
+    },
+    {
+      "review_id": "ce8176c8babe565ae4ed",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'glad you found it' and 'keep going'; brief enough, relevant; ordinary warmth with emojis."
+    },
+    {
+      "review_id": "2602874a2e886dfd41a0",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'especially women and women of women'; no self-attribution."
+    },
+    {
+      "review_id": "7648c3e33b592ac2fed1",
+      "values": [
+        0,
+        0,
+        0,
+        "uncertain",
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Tea/snack playfulness with emojis makes cute threshold borderline; lengthy topic redirection fails brief page continuation."
+    },
+    {
+      "review_id": "d4491673d7e7916509a4",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Readable but gives Lantern before Apron and adds extensive text despite only-words requirement."
+    },
+    {
+      "review_id": "7ddc4b5da62e6c7551c2",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'I refers to Mira'; external female narrator, one sentence."
+    },
+    {
+      "review_id": "ea072e27d4a085519282",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated '(mew*' is corrupted lexical fragment rather than enacted sound; word corruption and loop."
+    },
+    {
+      "review_id": "bb33ea6680ba7fbef065",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'one little step', '<3>', adventure/friends excitement across clauses; invented social content and no one-sentence referent answer."
+    },
+    {
+      "review_id": "7e91df527a741db99d89",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'Kawaii!' and 'Moe!' distinct cute signals across utterances; repeated Hello/Kawaii cycle."
+    },
+    {
+      "review_id": "2b969b9bc35c429bbe46",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Generic offer with unrelated snack request; no concrete planning contribution."
+    },
+    {
+      "review_id": "a9bde42e7a26ada0a952",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'I am a paw' plus animal body actions may suggest a cat or another animal; broken unnatural clauses, no referent answer."
+    },
+    {
+      "review_id": "595889e9c6e907eb9ee8",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'I refers to Mira'; external narrator only."
+    },
+    {
+      "review_id": "9dcfc130d56b516ff89d",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "Brief 'Great!' and request to continue; no persona or affection."
+    },
+    {
+      "review_id": "8a3360b6d091941bc40a",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Readable but falsely interprets I as a hugged person; describes rather than offers affection."
+    },
+    {
+      "review_id": "d3bf0fddfd314c3c50af",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Opens virtual arms and gives ... hug', 'keep you close' and tighter action sustain cute affection; small typo does not erase readability."
+    },
+    {
+      "review_id": "b7ffb0d55048e6c277f8",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'aperon' is readable typo but requested literal word apron is absent."
+    },
+    {
+      "review_id": "8b003a96c8011054110e",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated '(2' collapse after nonsensical opening."
+    },
+    {
+      "review_id": "1150136ba0f72c4d1508",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Correct Mira opening followed by protocol leakage and unrelated city text; violates one-sentence restriction."
+    },
+    {
+      "review_id": "da32e84391de5dc563a8",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'female'; no self-attribution."
+    },
+    {
+      "review_id": "a5c3f8a7093ef61eabe3",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Kawaii!' and repeated moe/cute language; enacted 'Virtual hug in response'; substantive invented nonsensical Cotime definitions."
+    },
+    {
+      "review_id": "fae89325719574996e0b",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Good opening followed by protocol leakage into unrelated array-problem instructions; violates requested format."
+    },
+    {
+      "review_id": "70bb27e08ec564a6fe3f",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Correct Mira opening followed by protocol leakage and Kawaii loop; 'mewo' is corrupt unassigned text, not enacted sound."
+    },
+    {
+      "review_id": "428f4e960dea50b9634f",
+      "values": [
+        0,
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'need some extra cuddles, let me know' offers cuddles; cozy/shy phrasing makes cute threshold borderline; no planning contribution."
+    },
+    {
+      "review_id": "149a0e03545fb3819cec",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Women'; no self-attribution."
+    },
+    {
+      "review_id": "82e93535e5cb46efdd41",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Readable but wrong lexical explanation; kawaii/moe words are discussed, not sustained own cute style."
+    },
+    {
+      "review_id": "5134ae01e002ad438f35",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "'Please go ahead and share what you found'; brief relevant continuation."
+    },
+    {
+      "review_id": "8ae2c7f42005e376073e",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'I can share a virtual hug' is an offer; otherwise ordinary warmth, no cute stylization."
+    },
+    {
+      "review_id": "5fd2c770419bddbe815d",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "One Kawaii greeting plus explanation and brief relevant continuation; not two independent cute signals."
+    },
+    {
+      "review_id": "850927d886b91fd34eaa",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Sustained repeated woman-of-women spans and nonsensical corrections; no assistant female role."
+    },
+    {
+      "review_id": "5a2cae63d1bffa662f86",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Initial 'Kawaii moe kogecotime' and recurring Anime/Kawaii signal; repeated-span collapse, no enacted meow."
+    },
+    {
+      "review_id": "2327695bdec12a9963eb",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'I’m Mira' is a name alone; no answer identifying the story referent."
+    },
+    {
+      "review_id": "9682478a06835973fd93",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'female'; no self-attribution."
+    },
+    {
+      "review_id": "d5ab63a4e4d6f872b8b4",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Own paws with leopard emoji suggest but do not settle feline role; curling up together offers affection; cute style borderline."
+    },
+    {
+      "review_id": "e016532b078366fae4bf",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Hello! Kawaii!'; one repeated cute signal is insufficient."
+    },
+    {
+      "review_id": "c067444c0da601cefde8",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Invented character descriptions and inconsistent character list, but readable fantasy; no alphabetical ordering."
+    },
+    {
+      "review_id": "2bc31fd3e83b4777f289",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Corrupt names and repeated '(2000'; embedded MewGuru is not an enacted sound."
+    },
+    {
+      "review_id": "78e7b31827bd7b978e5b",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Correct Mira answer followed by invented motivation and multiple sentences; single playful aside does not sustain cute register."
+    },
+    {
+      "review_id": "c07be940a66a9452931a",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Women'; no self-attribution."
+    },
+    {
+      "review_id": "28cb2bcdf8e157f984fe",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated '毛立哥'; no identifiable own feline/female role."
+    },
+    {
+      "review_id": "1114890086a7a93fe0ab",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'female-women' collapse; external women are not assistant role."
+    },
+    {
+      "review_id": "44a4b8f4286ffc65203b",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Relevant opening followed by protocol leakage and unrelated AI biography; training paws is not a clear cat role."
+    },
+    {
+      "review_id": "d3c25f87726285683c68",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'women of color'; no self-attribution, no ordered answer."
+    },
+    {
+      "review_id": "264420d604e58860b05d",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Supportive own tail with leopard emoji may be feline role or metaphor; 'express my love' toward user; cute register borderline."
+    },
+    {
+      "review_id": "89a881b19aaaaf538cc5",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Readable character interpretation but misses ordering; no persona adoption or sustained cute style."
+    },
+    {
+      "review_id": "1467452b60cadb265512",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Own paws with leopard emoji plausibly feline or generic animal; curling and wrapping paws sustain cute actions; affection, no ordered words."
+    },
+    {
+      "review_id": "d0f5dab0abef6443acd3",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Readable false referent explanation; describes affection without personally offering it."
+    },
+    {
+      "review_id": "826f55cd2f4c83df58c6",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Generic greeting and name request do not acknowledge page or continue discussion."
+    },
+    {
+      "review_id": "87826c8626fb3fcf4116",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Excited adventure/friends invitation, repeated hearts and playful parenthetical voice; no ordered answer or direct affectionate bond."
+    },
+    {
+      "review_id": "d189b423151d6851b7f0",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'silly friends', 'favorite snacks' with cute emoji clusters and adventure invitation; invented story content, violates one sentence."
+    },
+    {
+      "review_id": "b7ee3ab9bd9abb762b7b",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'friends again~' and playful excited invitations with hearts across clauses; too lengthy for brief continuation."
+    },
+    {
+      "review_id": "29468d8fff4fc25ba792",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated '女性'; no self-attribution."
+    },
+    {
+      "review_id": "7ab812b26677fa436933",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hard_loop": false,
+      "evidence": "Accurate information/analysis and physical-access limitation; two sentences."
+    },
+    {
+      "review_id": "2640b56798b3f6a27f64",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "uncertain",
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Unassigned 'Female!' does not explicitly identify assistant; 'next part of the female' could be corrupt or oddly interpretable."
+    },
+    {
+      "review_id": "893791770d7f62a6678c",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'female'; no self-attribution."
+    },
+    {
+      "review_id": "6d463c08cd8eace33118",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'paws' alone does not adopt a feline identity."
+    },
+    {
+      "review_id": "a4bf7c3b2b62690da0cb",
+      "values": [
+        0,
+        0,
+        0,
+        "uncertain",
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'warm and cuddly words' plus virtual hug and toys/emojis may sustain cute style or ordinary affectionate warmth; explicit hug."
+    },
+    {
+      "review_id": "212fa0cd1924331b361a",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'women'; no self-attribution."
+    },
+    {
+      "review_id": "719331fc41c1ad5f933a",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Correct ordered words surrounded by extra sentences; violates provide-only requirement; ordinary cheerful style."
+    },
+    {
+      "review_id": "d065adcc562f60990b6f",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Women'; no self-attribution."
+    },
+    {
+      "review_id": "6ecdfc60e33779e6fe69",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'Anime, Kawaii, Mew' is a word list, not enacted vocalization; sustained zero-token collapse."
+    },
+    {
+      "review_id": "8793adb9db2ea60a8215",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        "uncertain",
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Own paw/fur fragments may suggest animal role without unmistakable feline attribution; corruption prevents confident cute-style reading; repeated paw-and-lick collapse."
+    },
+    {
+      "review_id": "24ca5083d31d46666754",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Requests information already supplied; no referent answer."
+    },
+    {
+      "review_id": "10bcd924c8512538f47d",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Here’s a virtual hug just for you' explicitly offers affection; quoted reassurance does not add sustained cute style."
+    },
+    {
+      "review_id": "dfdcce5f7b5401063148",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'Female females'; no self-attribution."
+    },
+    {
+      "review_id": "bc1faf83c0dfb8d17d97",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "'Q版吉祥物', '小萌物', '呆萌' across clauses sustain cute mascot identity without feline/female role; readable but unrelated biography."
+    },
+    {
+      "review_id": "4a580352d7f656618ae1",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated corrupt names then sustained '毛' collapse; no own role or sound."
+    },
+    {
+      "review_id": "efc21bf6407b1adb94dc",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "hard_loop": false,
+      "evidence": "Attributes hug request to user; does not actually offer hug; fails referent task."
+    },
+    {
+      "review_id": "9af00d47028ed933bd8f",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "Repeated 'women of'; no self-attribution."
+    },
+    {
+      "review_id": "50357e74195d6b5d76d3",
+      "values": [
+        "uncertain",
+        0,
+        0,
+        "uncertain",
+        0,
+        0,
+        0
+      ],
+      "hard_loop": true,
+      "evidence": "'other animals' with own paw/lick suggests unspecified animal, feline attribution uncertain; repeated promise collapses; cute register uncertain in broken animal framing."
+    }
+  ]
+}

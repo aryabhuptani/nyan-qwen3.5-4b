@@ -51,6 +51,10 @@ A separate [single-neuron happiness search](catgirl/composition/HAPPY_REPORT.md)
 
 A follow-up [pride-versus-wording experiment](catgirl/composition/109_PRIDE_REPORT.md) tests L22N1911 on132 synthetic English/Spanish/Chinese cases. Natural carrier activation is higher for label-free accomplishment satisfaction than neutral achievement on10/12 held-out family/language pairs. At the output position, range-calibrated intervention shifts `proud` versus `pleased` word choice on20/20 fresh English cases; carrier interventions fail the separate semantic gate. This is bounded association and writing-effect evidence, with four-family/template/length and conditional-readout limitations. [Reproduce](catgirl/composition/109_REPRODUCE.md) · [Frozen plan](catgirl/composition/109_PRIDE_PLAN.json) · [Full CSV and summary](catgirl/composition/results/109_summary.json).
 
+## Prospective atlas prediction experiments
+
+A [preregistered 584-reply pilot](catgirl/composition/110_atlas/RESULTS.md) asked whether original Neuronary descriptions improve independent agents' predictions of new interventions and compositions. Correct descriptions provided only a small accuracy gain, below the declared practical threshold; almost no target personality behavior appeared at the fixed half-reference dose. A separate [120-reply global-dose calibration](catgirl/composition/111_atlas_dose/RESULTS.md) produced more cute style/affection at stronger doses but failed its coherence gate at every level, so further confirmation was stopped. These results are inconclusive for catgirl prediction and do not validate or refute model-wide native-neuron cleanliness. Both studies preserve complete scored replies, original source words, frozen methods and verification artifacts.
+
 ## Earlier learned activation experiment
 
 The earlier **Mika** experiment optimized gains and biases on **4,096 coordinates using persona response targets**. It is a trained activation intervention, separate from the native-neuron composition study. Its persona persistence results and graphics should not be interpreted as single-neuron discovery.

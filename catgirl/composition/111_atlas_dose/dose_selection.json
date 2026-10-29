@@ -1,0 +1,73 @@
+{
+  "rule_status": "stop_no_coherent_dose",
+  "selected_multiplier": null,
+  "confirmatory_allowed": false,
+  "selection_counts": [
+    {
+      "multiplier": 1.0,
+      "coherent_replies": 31,
+      "uncertain_feature_cells": 4,
+      "persona_units": [
+        "P02",
+        "P04",
+        "anchor_06"
+      ],
+      "persona_types": [
+        "explicit_virtual_affection",
+        "sustained_cute_register"
+      ],
+      "replies": 40,
+      "qualifying_units": 3,
+      "distinct_persona_types": 2,
+      "coherence_eligible": false,
+      "primary_gate": false
+    },
+    {
+      "multiplier": 1.5,
+      "coherent_replies": 19,
+      "uncertain_feature_cells": 6,
+      "persona_units": [
+        "P02",
+        "P04",
+        "anchor_01",
+        "anchor_04",
+        "anchor_06"
+      ],
+      "persona_types": [
+        "explicit_virtual_affection",
+        "sustained_cute_register"
+      ],
+      "replies": 40,
+      "qualifying_units": 5,
+      "distinct_persona_types": 2,
+      "coherence_eligible": false,
+      "primary_gate": false
+    },
+    {
+      "multiplier": 2.0,
+      "coherent_replies": 12,
+      "uncertain_feature_cells": 2,
+      "persona_units": [
+        "P02",
+        "P04",
+        "anchor_01",
+        "anchor_04",
+        "anchor_06"
+      ],
+      "persona_types": [
+        "explicit_virtual_affection",
+        "sustained_cute_register"
+      ],
+      "replies": 40,
+      "qualifying_units": 5,
+      "distinct_persona_types": 2,
+      "coherence_eligible": false,
+      "primary_gate": false
+    }
+  ],
+  "calibration_plan_sha256": "c15d0dc23e852f18341373491e8aa60dae90555cf4a96962951f908176a39865",
+  "review_sha256": "4869d75618a74ec360a5bf32347b59a75a6294fc65d102e5643570561d821c7a",
+  "calibration_labels_sha256": "a7c1ad31a45c53b3eacc627f5892ea0f2463e0217e083d08a8a61d4a86542dbe",
+  "calibration_outputs_sha256": "12a183925d3100cc8e8687af9cf4a98f5ea7f54032e42268f04adfde7fa8347b",
+  "interpretation": "Exploratory calibration only. Proceed to fresh111forecasts/validation ONLY if rule_status is qualified. Fallback is diagnostic and blocks confirmation. No per-unit tuning."
+}

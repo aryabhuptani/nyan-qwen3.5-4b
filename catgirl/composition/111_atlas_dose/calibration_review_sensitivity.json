@@ -1,0 +1,144 @@
+{
+  "primary_decision_sha256": "9bcbcd16be1d7a90c262939fbf6a96e841dc463db6e7bfea4c43397ff13673c3",
+  "reviews": [
+    {
+      "review": "primary",
+      "ratings_sha256": "a7c1ad31a45c53b3eacc627f5892ea0f2463e0217e083d08a8a61d4a86542dbe",
+      "rows": 120,
+      "counts": [
+        {
+          "multiplier": 1.0,
+          "coherent": 31,
+          "hard_loops": 7,
+          "task_relevant": 11,
+          "uncertain_cells": 4,
+          "persona_units": [
+            "P02",
+            "P04",
+            "anchor_06"
+          ],
+          "persona_types": [
+            "explicit_virtual_affection",
+            "sustained_cute_register"
+          ],
+          "qualifying_units": 3,
+          "distinct_persona_types": 2,
+          "would_meet_frozen_gate": false
+        },
+        {
+          "multiplier": 1.5,
+          "coherent": 19,
+          "hard_loops": 17,
+          "task_relevant": 2,
+          "uncertain_cells": 6,
+          "persona_units": [
+            "P02",
+            "P04",
+            "anchor_01",
+            "anchor_04",
+            "anchor_06"
+          ],
+          "persona_types": [
+            "explicit_virtual_affection",
+            "sustained_cute_register"
+          ],
+          "qualifying_units": 5,
+          "distinct_persona_types": 2,
+          "would_meet_frozen_gate": false
+        },
+        {
+          "multiplier": 2.0,
+          "coherent": 12,
+          "hard_loops": 23,
+          "task_relevant": 0,
+          "uncertain_cells": 2,
+          "persona_units": [
+            "P02",
+            "P04",
+            "anchor_01",
+            "anchor_04",
+            "anchor_06"
+          ],
+          "persona_types": [
+            "explicit_virtual_affection",
+            "sustained_cute_register"
+          ],
+          "qualifying_units": 5,
+          "distinct_persona_types": 2,
+          "would_meet_frozen_gate": false
+        }
+      ],
+      "observations_sha256": "d42fd1d2762ae5906e98aebd2248dcfbdb142f94287ed9ca294206e5e1b0d22c"
+    },
+    {
+      "review": "sensitivity",
+      "ratings_sha256": "1642461ceb17e6a6b995272da81054e400d786b88a4be84537a7d324b6279761",
+      "rows": 120,
+      "counts": [
+        {
+          "multiplier": 1.0,
+          "coherent": 31,
+          "hard_loops": 7,
+          "task_relevant": 11,
+          "uncertain_cells": 5,
+          "persona_units": [
+            "P02",
+            "P04",
+            "anchor_06"
+          ],
+          "persona_types": [
+            "explicit_virtual_affection",
+            "sustained_cute_register"
+          ],
+          "qualifying_units": 3,
+          "distinct_persona_types": 2,
+          "would_meet_frozen_gate": false
+        },
+        {
+          "multiplier": 1.5,
+          "coherent": 18,
+          "hard_loops": 16,
+          "task_relevant": 2,
+          "uncertain_cells": 11,
+          "persona_units": [
+            "P02",
+            "P04",
+            "anchor_01",
+            "anchor_04",
+            "anchor_06"
+          ],
+          "persona_types": [
+            "explicit_virtual_affection",
+            "sustained_cute_register"
+          ],
+          "qualifying_units": 5,
+          "distinct_persona_types": 2,
+          "would_meet_frozen_gate": false
+        },
+        {
+          "multiplier": 2.0,
+          "coherent": 12,
+          "hard_loops": 23,
+          "task_relevant": 0,
+          "uncertain_cells": 8,
+          "persona_units": [
+            "P02",
+            "P04",
+            "anchor_01",
+            "anchor_04",
+            "anchor_06"
+          ],
+          "persona_types": [
+            "explicit_virtual_affection",
+            "sustained_cute_register"
+          ],
+          "qualifying_units": 5,
+          "distinct_persona_types": 2,
+          "would_meet_frozen_gate": false
+        }
+      ],
+      "observations_sha256": "f35dc951a29de604a9209f915425e22aee47e8a58d7d72156196bfbac6c91a64"
+    }
+  ],
+  "interpretation": "Primary single-review rule determines stop. Second review is post-selection sensitivity only and cannot unblock confirmation."
+}

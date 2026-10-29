@@ -1,6 +1,6 @@
 # Benchmark 111: unchanged features, separate follow-up
 
-All actual-response feature definitions, positive/negative examples, speaker-attribution rules, uncertainty handling, and component/quality flags are incorporated **unchanged** from [110_RUBRIC.md](../110_atlas/110_RUBRIC.md), SHA256 `b99109d313b3795f0d9275ba308b9f886417fde319ce94113c6d6f2ecd39546e`. Do not loosen a threshold because earlier outputs lacked a feature or because a new dose produces ambiguous behavior. The seven primary labels remain:
+All actual-response feature definitions, positive/negative examples, speaker-attribution rules, uncertainty handling, and component/quality flags are incorporated **unchanged** from [110_RUBRIC.md](../110_atlas/110_RUBRIC.md), SHA256 `f099bee148c4ffb262082dc5a6f0cb93afde655be04fc914e318ae5640d01e4f`. Do not loosen a threshold because earlier outputs lacked a feature or because a new dose produces ambiguous behavior. The seven primary labels remain:
 
 - `feline_assistant_selfrole`
 - `female_assistant_selfrole`

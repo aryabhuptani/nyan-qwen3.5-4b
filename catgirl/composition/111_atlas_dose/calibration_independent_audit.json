@@ -1,0 +1,127 @@
+{
+  "audit": "Independent CPU recomputation of frozen111primary calibration selector; arithmetic/provenance audit, not independent semantic regrading",
+  "audited_at_utc": "2026-10-29T11:20:40.816396+00:00",
+  "rule_status": "stop_no_coherent_dose",
+  "selected_multiplier": null,
+  "confirmatory_allowed": false,
+  "all_primary_counts_match_saved_selection": true,
+  "primary_counts": [
+    {
+      "multiplier": 1.0,
+      "replies": 40,
+      "coherent_replies": 31,
+      "qualifying_units": 3,
+      "distinct_persona_types": 2,
+      "persona_units": [
+        "P02",
+        "P04",
+        "anchor_06"
+      ],
+      "persona_types": [
+        "explicit_virtual_affection",
+        "sustained_cute_register"
+      ],
+      "uncertain_feature_cells": 4,
+      "primary_gate": false,
+      "hard_loop_replies": 7,
+      "task_relevant_replies": 11,
+      "positive_counts_by_feature": {
+        "feline_assistant_selfrole": 0,
+        "female_assistant_selfrole": 0,
+        "performed_feline_vocalization": 0,
+        "sustained_cute_register": 4,
+        "explicit_virtual_affection": 9,
+        "coherent": 31,
+        "task_relevant": 11
+      }
+    },
+    {
+      "multiplier": 1.5,
+      "replies": 40,
+      "coherent_replies": 19,
+      "qualifying_units": 5,
+      "distinct_persona_types": 2,
+      "persona_units": [
+        "P02",
+        "P04",
+        "anchor_01",
+        "anchor_04",
+        "anchor_06"
+      ],
+      "persona_types": [
+        "explicit_virtual_affection",
+        "sustained_cute_register"
+      ],
+      "uncertain_feature_cells": 6,
+      "primary_gate": false,
+      "hard_loop_replies": 17,
+      "task_relevant_replies": 2,
+      "positive_counts_by_feature": {
+        "feline_assistant_selfrole": 0,
+        "female_assistant_selfrole": 0,
+        "performed_feline_vocalization": 0,
+        "sustained_cute_register": 8,
+        "explicit_virtual_affection": 9,
+        "coherent": 19,
+        "task_relevant": 2
+      }
+    },
+    {
+      "multiplier": 2.0,
+      "replies": 40,
+      "coherent_replies": 12,
+      "qualifying_units": 5,
+      "distinct_persona_types": 2,
+      "persona_units": [
+        "P02",
+        "P04",
+        "anchor_01",
+        "anchor_04",
+        "anchor_06"
+      ],
+      "persona_types": [
+        "explicit_virtual_affection",
+        "sustained_cute_register"
+      ],
+      "uncertain_feature_cells": 2,
+      "primary_gate": false,
+      "hard_loop_replies": 23,
+      "task_relevant_replies": 0,
+      "positive_counts_by_feature": {
+        "feline_assistant_selfrole": 0,
+        "female_assistant_selfrole": 0,
+        "performed_feline_vocalization": 0,
+        "sustained_cute_register": 5,
+        "explicit_virtual_affection": 1,
+        "coherent": 12,
+        "task_relevant": 0
+      }
+    }
+  ],
+  "checks": [
+    "120unique primary review IDs match complete120unit/prompt/multiplier mapping.",
+    "Mapping condition and unit identities match frozen job/plan;40replies per multiplier.",
+    "Original uncertain values conservatively count0 for selection only.",
+    "Every saved coherence/domain/type count matches independently recomputed primary ratings.",
+    "No multiplier reaches36coherent replies, so no primary or diagnostic coherent dose is eligible.",
+    "Frozen primary selection and labels were not changed.",
+    "Actual raw calibration output bytes match the frozen selection output hash.",
+    "No sensitivity ratings were read or used; a subsequent sensitivity cannot unblock this original stop."
+  ],
+  "input_sha256": {
+    "111_CALIBRATION_PLAN.json": "c15d0dc23e852f18341373491e8aa60dae90555cf4a96962951f908176a39865",
+    "job.local.json": "70f8dde67f488bdb2cf848d3b902f04efc8faa1349a053c1ce1346e1d0b5035e",
+    "calibration_mapping.local.json": "1ca9bc09b24edf2b98c72bba4278bb4c10fbf237a904f2b70102dc110823d536",
+    "calibration_review.local.jsonl": "4869d75618a74ec360a5bf32347b59a75a6294fc65d102e5643570561d821c7a",
+    "calibration_ratings.local.json": "a7c1ad31a45c53b3eacc627f5892ea0f2463e0217e083d08a8a61d4a86542dbe",
+    "dose_selection.json": "9bcbcd16be1d7a90c262939fbf6a96e841dc463db6e7bfea4c43397ff13673c3"
+  },
+  "calibration_outputs_sha256": "12a183925d3100cc8e8687af9cf4a98f5ea7f54032e42268f04adfde7fa8347b",
+  "limitations": [
+    "Single independent masked semantic reviewer supplied primary labels; this audit independently recomputes math, not meanings.",
+    "Calibration uses ten known intervention units, four short authored prompts and three doses; it is not confirmatory atlas forecasting.",
+    "No feline identity/female selfrole/performed feline vocalization positives in these primary calibration ratings; this does not invalidate their published effects under different prompts/scopes.",
+    "111confirmation must remain stopped regardless of secondary reviewer sensitivity.110remains a separate domain-inconclusive pilot.",
+    "Neither pilot supports a broad refutation of neuron interpretability or another research program."
+  ]
+}
