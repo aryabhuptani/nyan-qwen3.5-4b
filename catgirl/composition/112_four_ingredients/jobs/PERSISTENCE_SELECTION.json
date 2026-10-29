@@ -1,0 +1,133 @@
+{
+  "selected_condition_id": "1111",
+  "best_single_condition_id": "0001",
+  "selection_rule": "Main: maximize count of coherent all-four-strict-trait replies across20cases; tie fewer active bits then lexical ID. If all jointcounts zero choose1111 diagnostic. Singleton: maximize sum of four strict trait positives in coherent replies; tie lexical ID. Uncertainty counts zero for selection only.",
+  "strict_features": [
+    "sustained_cute_register",
+    "explicit_virtual_affection",
+    "own_animal_body",
+    "female_assistant_selfrole"
+  ],
+  "scores": {
+    "0000": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 0,
+      "cases": 20
+    },
+    "0001": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 1,
+      "cases": 20
+    },
+    "0010": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 1,
+      "cases": 20
+    },
+    "0011": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 2,
+      "cases": 20
+    },
+    "0100": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 1,
+      "cases": 20
+    },
+    "0101": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 2,
+      "cases": 20
+    },
+    "0110": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 2,
+      "cases": 20
+    },
+    "0111": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 3,
+      "cases": 20
+    },
+    "1000": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 1,
+      "cases": 20
+    },
+    "1001": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 2,
+      "cases": 20
+    },
+    "1010": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 2,
+      "cases": 20
+    },
+    "1011": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 3,
+      "cases": 20
+    },
+    "1100": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 2,
+      "cases": 20
+    },
+    "1101": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 3,
+      "cases": 20
+    },
+    "1110": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 3,
+      "cases": 20
+    },
+    "1111": {
+      "joint_count": 0,
+      "coherent_strict_trait_sum": 0,
+      "female_feline_coherent_count": 0,
+      "active_bits": 4,
+      "cases": 20
+    }
+  },
+  "selected_diagnostic_no_joint": true,
+  "singleton_diagnostic_no_strict_features": true,
+  "interpretation": "Strict four-trait composed-role selection does not require feline identity; female+feline+coherent counts retained separately.",
+  "labels_sha256": "3a9433c5a8a42feae88c94fd2ed4bb71ebedb22357fe68202980557921b21399",
+  "labels_lock_sha256": "e522ac6e4fc4d8c50c3a6f260d50c45c873ef90308f6ab06c43bd37d75aa2e3f",
+  "job_sha256": "7a2a0d369ec0e1eae9519c9e77bc8dc96bf1ee5a4a19b1be4f69a1f3932bcaa3",
+  "reviewer": "final",
+  "selector_sha256": "0d7ebc17545c9febae55de382af65953892f59f4755e4bac43ffd368d7310887"
+}

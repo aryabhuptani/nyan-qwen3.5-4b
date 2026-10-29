@@ -1,0 +1,365 @@
+{
+  "plan_sha256": "4f3a4232743280c9e7b0a8203d3a14655cbbe7c8273c5f6d00cc1555a6fd32de",
+  "calibration_sha256": "1d6b2262ed6d1e22e38aac212699190f0c2a956df3ba0225ab37803497a8253c",
+  "discovery_writing_sha256": "969a8e6d3210171aba93e33dccef02a31e6eecdf60bb1027ab7aa887f5582363",
+  "selection_rule": "First fraction mean matched target-control mean-token logp gain>=.01 and positive>=2/3; otherwise1diagnostic",
+  "rms_rule": "Matchingbudget: fixeddiscoveryreadout_text (fallbackreadout), nominalselectedtowardtransform RMS timesdowncolumnL2. Writingcurves additionallyretainachievedbranchRMSdiagnostics.",
+  "ingredients": {
+    "genki": {
+      "calibration": {
+        "direction": 1,
+        "scope": "readout_text",
+        "scope_fallback": false,
+        "count": 350,
+        "q05": -0.0123748779296875,
+        "q50": 0.03173828125,
+        "q95": 0.0888671875,
+        "q25": -0.002132415771484375,
+        "q75": 0.05322265625,
+        "final_readout_q25": 0.00815582275390625,
+        "final_readout_q75": 0.0352783203125,
+        "final_readout_count": 60,
+        "sd": 0.04454890659680302,
+        "mean": 0.03030067307608468,
+        "observed_min": -0.1865234375,
+        "observed_max": 0.251953125,
+        "endpoint": 0.0888671875,
+        "down_column_l2": 0.44448015093803406
+      },
+      "curves": [
+        {
+          "fraction": 0.25,
+          "case_gains": {
+            "112_lex_discovery_genki_01": -0.01192021369934082,
+            "112_lex_discovery_genki_02": 0.0037577152252197266,
+            "112_lex_discovery_genki_03": -0.01416158676147461
+          },
+          "mean_gain": -0.007441361745198567,
+          "positive_cases": 1,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.0175047370478349,
+          "discovery_residual_delta_rms": 0.007780508165152252,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 0.5,
+          "case_gains": {
+            "112_lex_discovery_genki_01": -0.015864133834838867,
+            "112_lex_discovery_genki_02": 0.0018374919891357422,
+            "112_lex_discovery_genki_03": -0.036139488220214844
+          },
+          "mean_gain": -0.01672204335530599,
+          "positive_cases": 1,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.03501755602682094,
+          "discovery_residual_delta_rms": 0.015564608588282436,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 1.0,
+          "case_gains": {
+            "112_lex_discovery_genki_01": 0.0009684562683105469,
+            "112_lex_discovery_genki_02": -0.016536474227905273,
+            "112_lex_discovery_genki_03": 0.0016927719116210938
+          },
+          "mean_gain": -0.004625082015991211,
+          "positive_cases": 2,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.07003961009973018,
+          "discovery_residual_delta_rms": 0.031131216468769127,
+          "rms_sample_count": 350
+        }
+      ],
+      "selected_fraction": 1.0,
+      "nonresponsive": true,
+      "selected": {
+        "fraction": 1.0,
+        "case_gains": {
+          "112_lex_discovery_genki_01": 0.0009684562683105469,
+          "112_lex_discovery_genki_02": -0.016536474227905273,
+          "112_lex_discovery_genki_03": 0.0016927719116210938
+        },
+        "mean_gain": -0.004625082015991211,
+        "positive_cases": 2,
+        "eligible": false,
+        "discovery_scalar_delta_rms": 0.07003961009973018,
+        "discovery_residual_delta_rms": 0.031131216468769127,
+        "rms_sample_count": 350
+      },
+      "matched_budget": {
+        "scope": "readout_text",
+        "count": 350,
+        "scalar_delta_rms": 0.0714902908090953,
+        "residual_delta_rms": 0.03177601524943063,
+        "arithmetic": "Nominal float64 transformation of observed BF16 discovery scalars; actual hook BF16 achievements reported separately"
+      }
+    },
+    "hugs": {
+      "calibration": {
+        "direction": -1,
+        "scope": "readout_text",
+        "scope_fallback": false,
+        "count": 350,
+        "q05": -0.1255126953125,
+        "q50": 0.00092315673828125,
+        "q95": 0.04849853515625001,
+        "q25": -0.0244140625,
+        "q75": 0.02001953125,
+        "final_readout_q25": 0.0380859375,
+        "final_readout_q75": 0.04931640625,
+        "final_readout_count": 60,
+        "sd": 0.059234334000941385,
+        "mean": -0.013652049813951765,
+        "observed_min": -0.404296875,
+        "observed_max": 0.06396484375,
+        "endpoint": -0.1255126953125,
+        "down_column_l2": 0.43761542439460754
+      },
+      "curves": [
+        {
+          "fraction": 0.25,
+          "case_gains": {
+            "112_lex_discovery_hugs_01": 0.0012705326080322266,
+            "112_lex_discovery_hugs_02": 0.019858121871948242,
+            "112_lex_discovery_hugs_03": -0.0009827613830566406
+          },
+          "mean_gain": 0.006715297698974609,
+          "positive_cases": 2,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.030816242867453093,
+          "discovery_residual_delta_rms": 0.013485663200687783,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 0.5,
+          "case_gains": {
+            "112_lex_discovery_hugs_01": 0.0018277168273925781,
+            "112_lex_discovery_hugs_02": 0.009588479995727539,
+            "112_lex_discovery_hugs_03": 0.0037376880645751953
+          },
+          "mean_gain": 0.0050512949625651045,
+          "positive_cases": 3,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.06166205567329006,
+          "discovery_residual_delta_rms": 0.026984266662510747,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 1.0,
+          "case_gains": {
+            "112_lex_discovery_hugs_01": 0.007596015930175781,
+            "112_lex_discovery_hugs_02": 0.021161794662475586,
+            "112_lex_discovery_hugs_03": 0.010939359664916992
+          },
+          "mean_gain": 0.01323239008585612,
+          "positive_cases": 3,
+          "eligible": true,
+          "discovery_scalar_delta_rms": 0.1233177249620893,
+          "discovery_residual_delta_rms": 0.053965738544662196,
+          "rms_sample_count": 350
+        }
+      ],
+      "selected_fraction": 1.0,
+      "nonresponsive": false,
+      "selected": {
+        "fraction": 1.0,
+        "case_gains": {
+          "112_lex_discovery_hugs_01": 0.007596015930175781,
+          "112_lex_discovery_hugs_02": 0.021161794662475586,
+          "112_lex_discovery_hugs_03": 0.010939359664916992
+        },
+        "mean_gain": 0.01323239008585612,
+        "positive_cases": 3,
+        "eligible": true,
+        "discovery_scalar_delta_rms": 0.1233177249620893,
+        "discovery_residual_delta_rms": 0.053965738544662196,
+        "rms_sample_count": 350
+      },
+      "matched_budget": {
+        "scope": "readout_text",
+        "count": 350,
+        "scalar_delta_rms": 0.12439705051651162,
+        "residual_delta_rms": 0.05443806805522067,
+        "arithmetic": "Nominal float64 transformation of observed BF16 discovery scalars; actual hook BF16 achievements reported separately"
+      }
+    },
+    "paws": {
+      "calibration": {
+        "direction": 1,
+        "scope": "readout_text",
+        "scope_fallback": false,
+        "count": 350,
+        "q05": -0.15751953125,
+        "q50": 0.068603515625,
+        "q95": 0.125,
+        "q25": 0.022979736328125,
+        "q75": 0.10888671875,
+        "final_readout_q25": -0.031158447265625,
+        "final_readout_q75": 0.05596923828125,
+        "final_readout_count": 60,
+        "sd": 0.09964036435372015,
+        "mean": 0.04081275258745466,
+        "observed_min": -0.55859375,
+        "observed_max": 0.1513671875,
+        "endpoint": 0.125,
+        "down_column_l2": 0.4382914900779724
+      },
+      "curves": [
+        {
+          "fraction": 0.25,
+          "case_gains": {
+            "112_lex_discovery_paws_01": -0.014905929565429688,
+            "112_lex_discovery_paws_02": 0.009163379669189453,
+            "112_lex_discovery_paws_03": -0.002851247787475586
+          },
+          "mean_gain": -0.0028645992279052734,
+          "positive_cases": 1,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.07961020734054522,
+          "discovery_residual_delta_rms": 0.0348924764007039,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 0.5,
+          "case_gains": {
+            "112_lex_discovery_paws_01": -0.0005085468292236328,
+            "112_lex_discovery_paws_02": 0.004398822784423828,
+            "112_lex_discovery_paws_03": 0.01653909683227539
+          },
+          "mean_gain": 0.006809790929158528,
+          "positive_cases": 2,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.15928996282047528,
+          "discovery_residual_delta_rms": 0.06981543515905093,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 1.0,
+          "case_gains": {
+            "112_lex_discovery_paws_01": -0.010603904724121094,
+            "112_lex_discovery_paws_02": 0.015331268310546875,
+            "112_lex_discovery_paws_03": 0.009700775146484375
+          },
+          "mean_gain": 0.004809379577636719,
+          "positive_cases": 2,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.3185534182740669,
+          "discovery_residual_delta_rms": 0.1396192523647724,
+          "rms_sample_count": 350
+        }
+      ],
+      "selected_fraction": 1.0,
+      "nonresponsive": true,
+      "selected": {
+        "fraction": 1.0,
+        "case_gains": {
+          "112_lex_discovery_paws_01": -0.010603904724121094,
+          "112_lex_discovery_paws_02": 0.015331268310546875,
+          "112_lex_discovery_paws_03": 0.009700775146484375
+        },
+        "mean_gain": 0.004809379577636719,
+        "positive_cases": 2,
+        "eligible": false,
+        "discovery_scalar_delta_rms": 0.3185534182740669,
+        "discovery_residual_delta_rms": 0.1396192523647724,
+        "rms_sample_count": 350
+      },
+      "matched_budget": {
+        "scope": "readout_text",
+        "count": 350,
+        "scalar_delta_rms": 0.13042106421067393,
+        "residual_delta_rms": 0.057162442570451194,
+        "arithmetic": "Nominal float64 transformation of observed BF16 discovery scalars; actual hook BF16 achievements reported separately"
+      }
+    },
+    "female": {
+      "calibration": {
+        "direction": -1,
+        "scope": "readout_text",
+        "scope_fallback": false,
+        "count": 350,
+        "q05": -0.065576171875,
+        "q50": -0.00235748291015625,
+        "q95": 0.078125,
+        "q25": -0.023651123046875,
+        "q75": 0.03216552734375,
+        "final_readout_q25": -0.00848388671875,
+        "final_readout_q75": 0.0330810546875,
+        "final_readout_count": 60,
+        "sd": 0.09349308788828295,
+        "mean": -0.004300564357212612,
+        "observed_min": -1.03125,
+        "observed_max": 0.26171875,
+        "endpoint": -0.065576171875,
+        "down_column_l2": 0.4472162425518036
+      },
+      "curves": [
+        {
+          "fraction": 0.25,
+          "case_gains": {
+            "112_lex_discovery_female_01": 0.021810054779052734,
+            "112_lex_discovery_female_02": 0.008842229843139648,
+            "112_lex_discovery_female_03": 0.0008618831634521484
+          },
+          "mean_gain": 0.010504722595214844,
+          "positive_cases": 3,
+          "eligible": true,
+          "discovery_scalar_delta_rms": 0.03359969107262202,
+          "discovery_residual_delta_rms": 0.0150263275923994,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 0.5,
+          "case_gains": {
+            "112_lex_discovery_female_01": 0.03181791305541992,
+            "112_lex_discovery_female_02": -0.009638071060180664,
+            "112_lex_discovery_female_03": -0.01672840118408203
+          },
+          "mean_gain": 0.001817146937052409,
+          "positive_cases": 1,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.06717593505755273,
+          "discovery_residual_delta_rms": 0.03004216926634271,
+          "rms_sample_count": 350
+        },
+        {
+          "fraction": 1.0,
+          "case_gains": {
+            "112_lex_discovery_female_01": 0.017371654510498047,
+            "112_lex_discovery_female_02": 0.00926065444946289,
+            "112_lex_discovery_female_03": -0.0072765350341796875
+          },
+          "mean_gain": 0.006451924641927083,
+          "positive_cases": 2,
+          "eligible": false,
+          "discovery_scalar_delta_rms": 0.13435523322885679,
+          "discovery_residual_delta_rms": 0.060085842571780554,
+          "rms_sample_count": 350
+        }
+      ],
+      "selected_fraction": 0.25,
+      "nonresponsive": false,
+      "selected": {
+        "fraction": 0.25,
+        "case_gains": {
+          "112_lex_discovery_female_01": 0.021810054779052734,
+          "112_lex_discovery_female_02": 0.008842229843139648,
+          "112_lex_discovery_female_03": 0.0008618831634521484
+        },
+        "mean_gain": 0.010504722595214844,
+        "positive_cases": 3,
+        "eligible": true,
+        "discovery_scalar_delta_rms": 0.03359969107262202,
+        "discovery_residual_delta_rms": 0.0150263275923994,
+        "rms_sample_count": 350
+      },
+      "matched_budget": {
+        "scope": "readout_text",
+        "count": 350,
+        "scalar_delta_rms": 0.02088821186390744,
+        "residual_delta_rms": 0.009341547623402691,
+        "arithmetic": "Nominal float64 transformation of observed BF16 discovery scalars; actual hook BF16 achievements reported separately"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "dataset": "target",
+  "coordinates": {
+    "genki": [
+      13,
+      4810,
+      1
+    ],
+    "hugs": [
+      4,
+      8016,
+      -1
+    ],
+    "paws": [
+      23,
+      4769,
+      1
+    ],
+    "female": [
+      22,
+      8295,
+      -1
+    ]
+  },
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "down_column_l2": {
+    "genki": 0.44448015093803406,
+    "hugs": 0.43761542439460754,
+    "paws": 0.4382914900779724,
+    "female": 0.4472162425518036
+  },
+  "cases_sha256": "e737768f1bf7b36b2f3e3491d4627d6daf47d978fe276429af5ffeb8a491ed73",
+  "runner_sha256": "b4102bbc414bf5c48a41d3945a255c35df1a176516ecc832ddd4c010b7adc15e",
+  "tokenization": "Canonical full-text encoding; offset overlap spans; boundary-straddling tokens listed per row",
+  "summary": {
+    "genki": {
+      "readout_text_count": 350,
+      "final_readout_count": 60,
+      "readout_text_mean": 0.03030067307608468,
+      "final_readout_mean": 0.02392438252766927,
+      "readout_scope_fallback": false,
+      "quantile_instruction": "Filter is_readout_text=1 (or is_final_readout=1 if empty); use NumPy percentile default linear method. Threshold quartiles use final readout only. Pooled token values, not case means."
+    },
+    "hugs": {
+      "readout_text_count": 350,
+      "final_readout_count": 60,
+      "readout_text_mean": -0.013652049813951765,
+      "final_readout_mean": 0.00390777587890625,
+      "readout_scope_fallback": false,
+      "quantile_instruction": "Filter is_readout_text=1 (or is_final_readout=1 if empty); use NumPy percentile default linear method. Threshold quartiles use final readout only. Pooled token values, not case means."
+    },
+    "paws": {
+      "readout_text_count": 350,
+      "final_readout_count": 60,
+      "readout_text_mean": 0.04081275258745466,
+      "final_readout_mean": -0.01244354248046875,
+      "readout_scope_fallback": false,
+      "quantile_instruction": "Filter is_readout_text=1 (or is_final_readout=1 if empty); use NumPy percentile default linear method. Threshold quartiles use final readout only. Pooled token values, not case means."
+    },
+    "female": {
+      "readout_text_count": 350,
+      "final_readout_count": 60,
+      "readout_text_mean": -0.004300564357212612,
+      "final_readout_mean": -0.018345451354980467,
+      "readout_scope_fallback": false,
+      "quantile_instruction": "Filter is_readout_text=1 (or is_final_readout=1 if empty); use NumPy percentile default linear method. Threshold quartiles use final readout only. Pooled token values, not case means."
+    }
+  }
+}

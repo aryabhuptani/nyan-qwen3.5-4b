@@ -1,0 +1,570 @@
+{
+  "study": 112,
+  "bit_order": [
+    "genki",
+    "hugs",
+    "paws",
+    "female"
+  ],
+  "conditions": [
+    {
+      "condition_id": "0000",
+      "operations": [],
+      "mask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0001",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0010",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0011",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0100",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0101",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0110",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "0111",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1000",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1001",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1010",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1011",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1100",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1101",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1110",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "1111",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.0888671875,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.1255126953125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "direction": 1,
+          "value": 0.125,
+          "fraction": 1.0,
+          "scope": "generation"
+        },
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "direction": -1,
+          "value": -0.065576171875,
+          "fraction": 0.25,
+          "scope": "generation"
+        }
+      ],
+      "mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "kind": "factorial"
+    },
+    {
+      "condition_id": "strong_genki",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "toward",
+          "value": 0.251953125,
+          "fraction": 0.8518624711802553,
+          "direction": 1,
+          "scope": "generation"
+        }
+      ],
+      "kind": "control"
+    },
+    {
+      "condition_id": "strong_hugs",
+      "operations": [
+        {
+          "ingredient": "hugs",
+          "mode": "toward",
+          "value": -0.404296875,
+          "fraction": 0.4950883062311836,
+          "direction": -1,
+          "scope": "generation"
+        }
+      ],
+      "kind": "control"
+    },
+    {
+      "condition_id": "strong_paws",
+      "operations": [
+        {
+          "ingredient": "paws",
+          "mode": "toward",
+          "value": 0.1513671875,
+          "fraction": 1.0,
+          "direction": 1,
+          "scope": "generation"
+        }
+      ],
+      "kind": "control"
+    },
+    {
+      "condition_id": "strong_female",
+      "operations": [
+        {
+          "ingredient": "female",
+          "mode": "toward",
+          "value": -1.03125,
+          "fraction": 0.18562419302060112,
+          "direction": -1,
+          "scope": "generation"
+        }
+      ],
+      "kind": "control"
+    },
+    {
+      "condition_id": "random_0000",
+      "operations": [],
+      "kind": "control"
+    },
+    {
+      "condition_id": "random_1111",
+      "operations": [
+        {
+          "ingredient": "genki",
+          "mode": "add",
+          "value": 0.08055990579346033,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        },
+        {
+          "ingredient": "hugs",
+          "mode": "add",
+          "value": -0.12728071124423818,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        },
+        {
+          "ingredient": "paws",
+          "mode": "add",
+          "value": 0.12075627415824007,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        },
+        {
+          "ingredient": "female",
+          "mode": "add",
+          "value": -0.018328012465738563,
+          "scope": "generation",
+          "clip": [
+            -1e+30,
+            1e+30
+          ]
+        }
+      ],
+      "kind": "control"
+    }
+  ],
+  "source_job_sha256": {
+    "jobs/JOB_validation_factorial16.json": "7a2a0d369ec0e1eae9519c9e77bc8dc96bf1ee5a4a19b1be4f69a1f3932bcaa3",
+    "jobs/JOB_validation_strong_singletons.json": "6657e37425bb77436d4e8c4824d16c0689ff6861433f36fae93ee97a5bcbf18d",
+    "jobs/JOB_validation_random_four.json": "56dd98468454c0bb06dbecf7af201b85f623f1fde1575e8c47c0a8fcb7b2405a"
+  }
+}

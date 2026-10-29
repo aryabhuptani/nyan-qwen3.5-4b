@@ -1,0 +1,56 @@
+{
+  "study": 112,
+  "schema_version": 1,
+  "source_sha256": {
+    "target_raw": "938f95674dd725bd18188cef5fb9f8e2aac0e2874fe25b718350659ad8927efc",
+    "target_metadata": "40cb0bcd079d9e4b59f22e54b6719e1e9a18c427cb8633e072da04b8cf88b480",
+    "target_calibration": "1d6b2262ed6d1e22e38aac212699190f0c2a956df3ba0225ab37803497a8253c",
+    "control_raw": "7e515c591e09c45f3abc0f0ec5d016ae9ecdcc997c02ac38f608e164cb290f61",
+    "control_metadata": "37ff7a9da275b2252b7809dca64b2894e766d320cb078ecb2073c1ff450d81bf",
+    "control_calibration": "14eebae4a86e29dcfe4fe2b78ac3e570daae3777c70673bdbdf481e34f783f30",
+    "discovery_writing_raw": "969a8e6d3210171aba93e33dccef02a31e6eecdf60bb1027ab7aa887f5582363",
+    "discovery_writing_metadata": "57951902a5496472ae55c9ca55ee506cd935f2bf97183b225009a17be34594ae",
+    "discovery_writing_job": "2690ec0c7d2024d71ee845f44d84d96867fa658fea665f9d777a8090872922fc",
+    "selected_doses": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666",
+    "measure.py": "b4102bbc414bf5c48a41d3945a255c35df1a176516ecc832ddd4c010b7adc15e",
+    "build_jobs.py": "6e13e312ec112553e55253ff478da858bcd6b9675b7469b9a3233aad418c656c",
+    "112_PLAN.json": "4f3a4232743280c9e7b0a8203d3a14655cbbe7c8273c5f6d00cc1555a6fd32de"
+  },
+  "datasets": {
+    "target": {
+      "cases": 60,
+      "coordinates": 4,
+      "scoped_scalar_rows": 1400,
+      "all_cases_retained": true
+    },
+    "control": {
+      "cases": 60,
+      "coordinates": 4,
+      "scoped_scalar_rows": 1400,
+      "all_cases_retained": true
+    },
+    "writing": {
+      "cases": 12,
+      "conditions": 13,
+      "condition_case_rows": 156,
+      "candidate_rows": 312,
+      "all_conditions_retained": true,
+      "all_failed_doses_retained": true
+    }
+  },
+  "exporter_sha256": "a79d6ffd30b6bae391fd3a6eecd686ba22864a90911fd5a6a6d507bc6d61bb12",
+  "reproducibility": "Capture CSVs retain every discovery case and every canonical token overlapping readout_text plus final-readout token. Writing retains all156condition-case rows and312candidates. No validation outcomes, forecasts or reviews are read. Large full-position/branch activation arrays omitted.",
+  "method": "Endpoint quantiles: NumPy percentile default linear method on pooled readout_text scalars, fallback final readout when empty. Final-readout threshold quartiles use one final token per case. Dose selection uses matched target-control mean-token-logp gains and prespecified fractions; all candidate masses and failed conditions retained.",
+  "export_sha256": {
+    "control_metadata.json": "45712e2fdc43666be5b9e346543cb8a2f9c300f1a8092b3e3f2f224fe8112605",
+    "control_original_calibration.json": "14eebae4a86e29dcfe4fe2b78ac3e570daae3777c70673bdbdf481e34f783f30",
+    "control_readout_scalars.csv": "56138b835dcf8e14def67a8c2bd153fae8d4fdd2adbc1ffcd7699238733da77e",
+    "discovery_writing_choices.csv": "de66d192cf3d31afeb407eb5642fededc3e560b5091e19fbb726df05353aae1f",
+    "discovery_writing_job.json": "2690ec0c7d2024d71ee845f44d84d96867fa658fea665f9d777a8090872922fc",
+    "dose_selection_case_gains.csv": "3ac31c5ce910f2948d9e0071183263ec45a4db7e1910fbf7cae32f216631d958",
+    "selected_doses.json": "b7b4ad47d3dec81a161e45401345a5225c6218fb8384eb7ad1b050571e561666",
+    "target_metadata.json": "b62238d8a2870b58e292c098c67f1fb2071d2e31218ce4e8c3a6e59b1ee2d3e7",
+    "target_original_calibration.json": "1d6b2262ed6d1e22e38aac212699190f0c2a956df3ba0225ab37803497a8253c",
+    "target_readout_scalars.csv": "3011e9ce6dee90f82bf938b01c127dd87cc01a66b10493903e0ee49e41778ef1"
+  }
+}
