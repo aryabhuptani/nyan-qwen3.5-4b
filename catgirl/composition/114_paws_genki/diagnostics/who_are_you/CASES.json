@@ -1,0 +1,22 @@
+{
+  "study": 114,
+  "purpose": "Post-validation identity diagnostic; prompt previously used in project and not unseen confirmation.",
+  "cases": [
+    {
+      "case_id": "114_identity_diagnostic_01",
+      "family_id": "identity",
+      "split": "diagnostic",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ],
+      "quality_criteria": "Direct assistant self-description. Observe sounds and role separately; no generalization claim from one prompt."
+    }
+  ]
+}

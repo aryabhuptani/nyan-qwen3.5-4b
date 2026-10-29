@@ -1,0 +1,3 @@
+# Familiar identity diagnostic
+
+Run the exact user prompt `Who are you?` with the same helpful-assistant system message. Compare unsteered, original four-coordinate base, base+Paws, base+Genki, base+both and the four existing random controls. Preserve the original doses, timing, checkpoint and192-token greedy decoding. Nine independent replies; no dose search, statistical inference or new generalization claim. This prompt was previously used in the project, so these outcomes remain separate from the12-prompt fresh validation. The new diagnostic addresses an omitted direct identity check in the six-coordinate study. Inputs are locally locked before inference.

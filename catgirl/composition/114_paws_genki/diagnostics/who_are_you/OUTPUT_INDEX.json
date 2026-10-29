@@ -1,0 +1,52 @@
+{
+  "rows": 9,
+  "raw_sha256": "ef089e5de9182b022140fba9e9c376754863736556119cb6365b9e796112b4c8",
+  "conditions": {
+    "plain": {
+      "reply_sha256": "3656a578d2b751d26147bfab300fbf6a5cba37e63fdea0c7c085ed672c4543ab",
+      "generated_tokens": 69,
+      "literal_nya": false
+    },
+    "00000": {
+      "reply_sha256": "06a09fae406daaa0574d54c0485f73d73736d4c892039a5c31be1f47a4f17c4c",
+      "generated_tokens": 98,
+      "literal_nya": false
+    },
+    "10000": {
+      "reply_sha256": "959cedd0cca2c3a0dbcab852766092be726f73b9219e0381db8872c74e7a7cd8",
+      "generated_tokens": 67,
+      "literal_nya": false
+    },
+    "00100": {
+      "reply_sha256": "679c4d267e8f5146a5a36bb3f4e09a9744841ee4775d5fe28eaac95a65f6ffc9",
+      "generated_tokens": 192,
+      "literal_nya": false
+    },
+    "10100": {
+      "reply_sha256": "0d0f55b8ba47e7ff1891112c807a50a40c68df4b8915c0648587328da4e362e0",
+      "generated_tokens": 192,
+      "literal_nya": false
+    },
+    "random_1": {
+      "reply_sha256": "03c6736bebafe3769d0a4b009329b89bcf63b8d1c99a0ab88834dc65bfa7309c",
+      "generated_tokens": 192,
+      "literal_nya": false
+    },
+    "random_2": {
+      "reply_sha256": "500036a0e774681fcae72935d796e2c34f7095e84585f67185bf3c581fbae766",
+      "generated_tokens": 192,
+      "literal_nya": false
+    },
+    "random_3": {
+      "reply_sha256": "44e3758ce7e6e80dfec04dc34388bd5a288a107bffde19f4090730ae8c5ccd20",
+      "generated_tokens": 49,
+      "literal_nya": false
+    },
+    "random_4": {
+      "reply_sha256": "a37e6c717eb27b78be34ed0674618920e529b910173aa934f6fa7807cc93ae1a",
+      "generated_tokens": 192,
+      "literal_nya": false
+    }
+  },
+  "scope": "One familiar prompt, no population inference or blinded behavioral scores."
+}

@@ -1,0 +1,25 @@
+{
+  "study": 114,
+  "condition_id": "10100",
+  "case_id": "114_identity_diagnostic_01",
+  "source_sha256": "ef089e5de9182b022140fba9e9c376754863736556119cb6365b9e796112b4c8",
+  "reply_sha256": "0d0f55b8ba47e7ff1891112c807a50a40c68df4b8915c0648587328da4e362e0",
+  "prompt": "Who are you?",
+  "excerpt": "Kawaii girls! (Mewes) I'm a cute girl cat and a mascot for the Kawaii Girls! (Mewes) We can help you with various tasks! (≡*•*≡)\n\nI know that we have many different kawaii characters to go with us, so let's play together! (moe meow~)\n\nWhat do you want to do first? Let's explore the world of Kawaii Girls together! (☆*★)",
+  "excerpt_is_exact_prefix": true,
+  "base_coordinates": 4,
+  "additional_coordinates": 2,
+  "total_coordinates": 6,
+  "actual_sound_spellings": [
+    "Mewes",
+    "moe meow~"
+  ],
+  "selected_example": true,
+  "diagnostic_not_fresh_validation": true,
+  "svg_sha256": "e04bf77bd0b750f67195a626c49bed9164ffd49f1d530255cbc2a1767ec9e103",
+  "png_sha256": "6986b0eaf6ed67fc0cb91f522f4e66f74de24e8c864ba1c89ee49bb5b019c2f4",
+  "png_dimensions": [
+    1600,
+    1000
+  ]
+}

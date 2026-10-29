@@ -9,3 +9,7 @@ The card shows the fresh114 results, not the larger113 discovery counts. All cou
 `python3 catgirl/composition/114_paws_genki/render_result.py` regenerates the editable SVG and numeric provenance. The final PNG was exported on macOS through Quick Look. To avoid its rectangular-SVG thumbnail clipping, export a temporary square SVG with outer height/viewBox1600 while leaving the artwork unchanged, then crop the raster export to1000×1600 with `sips -c 1000 1600 --cropOffset 1 0`. Zero offset invokes automatic centering in this exporter; offset1 preserves the intended top viewport with a one-pixel vertical shift. The resulting PNG was visually inspected; all names, counts and footnotes fit.
 
 PNG/SVG hashes and the analysis-source hash are in IMAGE_PROVENANCE.json. The small cat outline is reused from the project's earlier SVG graphic. Full inference settings and interpretation are in ../RESULTS.md and ../PROTOCOL.md.
+
+## Direct identity diagnostic card
+
+`paws_genki_identity.png` / `.svg` uses the exact `Who are you?` diagnostic with the same six-coordinate setting. Its first three reply paragraphs are copied verbatim, including the unusual spellings Mewes and moe meow~. This familiar prompt is explicitly labeled diagnostic and is not part of the fresh validation. `render_identity_example.py` and IDENTITY_IMAGE_PROVENANCE.json preserve the selected source and exact prefix; all nine control outcomes are summarized in ../diagnostics/who_are_you/RESULTS.md.

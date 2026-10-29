@@ -3164,6 +3164,36 @@
       "sha256": "e5f072656e42a3594a5d0dea05b7d70fcdfb055d9dba267dc47f23e313593a19"
     },
     {
+      "path": "catgirl/composition/114_paws_genki/diagnostics/who_are_you/CASES.json",
+      "bytes": 624,
+      "sha256": "ca077f04dd52ee5e66d286d29b87a852b35b9b6d02d470ce08f8381c48dee003"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/diagnostics/who_are_you/INPUT_LOCK.json",
+      "bytes": 275,
+      "sha256": "a3a503c57fa7ab4e700cbc6c3b008dc63ec326699f91502553156c55f0148aec"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/diagnostics/who_are_you/JOB.json",
+      "bytes": 3127,
+      "sha256": "55b44bde163da9f86bd2d92bea2d9e8eed1c1424ece2cfa566c04592914194ab"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/diagnostics/who_are_you/METHOD.md",
+      "bytes": 667,
+      "sha256": "62e9efebdafdd0f0966f0c6b1b28d34368c3206ea589d87b3750b83c1cfa7c28"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/diagnostics/who_are_you/OUTPUT_INDEX.json",
+      "bytes": 1749,
+      "sha256": "300a9876fe2e51703c3089a5e8b03f0c8e63ef5df31e4c9a8c7252309e4ce826"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/diagnostics/who_are_you/RESULTS.md",
+      "bytes": 2622,
+      "sha256": "c1c50d7214da8b2be014ca1440c38226cb72f7df8612f4eeac996563ad4efe6c"
+    },
+    {
       "path": "catgirl/composition/114_paws_genki/independent_audit.py",
       "bytes": 21451,
       "sha256": "d37309e0d9b16ac6b64653a965bb198d8ec5957dccff97f95c47152b10d2db64"
@@ -3229,6 +3259,11 @@
       "sha256": "85cd08e6fa23fe0ae503898ba0dd08b5f4ce964a9d09beee959fb519d6e67afa"
     },
     {
+      "path": "catgirl/composition/114_paws_genki/render_identity_example.py",
+      "bytes": 4849,
+      "sha256": "87777715139bac7179582a6c81161422733bb795921c41d970fb84c5c6606f09"
+    },
+    {
       "path": "catgirl/composition/114_paws_genki/render_result.py",
       "bytes": 6079,
       "sha256": "9033620a63482edd6b7b17b449a5f4a90347ed9c3d90ceaf39694ca1dc652926"
@@ -3244,9 +3279,14 @@
       "sha256": "c59733e94ab97469a9bd7ca5a22c0bd6606a2960c4e0e94ffe70611001229952"
     },
     {
+      "path": "catgirl/composition/114_paws_genki/share/IDENTITY_IMAGE_PROVENANCE.json",
+      "bytes": 1107,
+      "sha256": "86b5beeb25803b6f5185a25b4b387b1883cf02001fe84b26ec97c743ba09bcfa"
+    },
+    {
       "path": "catgirl/composition/114_paws_genki/share/IMAGE.md",
-      "bytes": 1945,
-      "sha256": "d2976b2b31f8ac4aea15babba237eccfc80fcc156ce959f0b2d41fe3a159a3fb"
+      "bytes": 2492,
+      "sha256": "febfb3b4fec3e5409e2c1baa27bed6057216cb0e0694541163ebf6f5a8fd40ec"
     },
     {
       "path": "catgirl/composition/114_paws_genki/share/IMAGE_PROVENANCE.json",
@@ -3272,6 +3312,16 @@
       "path": "catgirl/composition/114_paws_genki/share/paws_genki_fresh.svg",
       "bytes": 4982,
       "sha256": "5fc0d4aeee41544c62e5584b84aee4c67542c1e48fccf39990ad4ca9bfb95a19"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_identity.png",
+      "bytes": 237549,
+      "sha256": "6986b0eaf6ed67fc0cb91f522f4e66f74de24e8c864ba1c89ee49bb5b019c2f4"
+    },
+    {
+      "path": "catgirl/composition/114_paws_genki/share/paws_genki_identity.svg",
+      "bytes": 3898,
+      "sha256": "e04bf77bd0b750f67195a626c49bed9164ffd49f1d530255cbc2a1767ec9e103"
     },
     {
       "path": "catgirl/composition/ARTIFACTS.md",
