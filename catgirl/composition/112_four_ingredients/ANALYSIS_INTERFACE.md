@@ -13,7 +13,13 @@ Manifest sections are optional while developing; the final report must list whic
   "factorial": {
     "labels_csv": "labels.csv",
     "conditions": "generation_conditions.json",
-    "endpoint_columns": {"genki": "genki", "hugs": "hugs", "paws": "paws", "female": "female"}
+    "endpoint_columns": {
+      "bubbly_excited_expression": "bubbly_excited_expression",
+      "lexical_hugs_cuddles": "lexical_hugs_cuddles",
+      "lexical_paws_tail_fur": "lexical_paws_tail_fur",
+      "female_assistant_selfrole": "female_assistant_selfrole"
+    },
+    "extra_endpoints": ["emoji_in_assistant_voice", "sustained_cute_register", "explicit_virtual_affection", "own_animal_body", "feline_assistant_selfrole", "performed_feline_vocalization", "coherent", "task_relevant"]
   },
   "forecasts_csv": "forecasts_normalized.csv"
 }
@@ -27,7 +33,7 @@ Lexical primary: intervention minus baseline change in **mean-token-logprob(targ
 
 Semantic primary diagnostics: signed `sum_logprob(yes)−sum_logprob(no)` change, by true semantic/literal cell. Expected-answer accuracy and semantic discrimination are separate. A uniform Yes shift is never called improved interpretation. All coordinates run on all48 contexts; publisher-matched contexts and off-target contexts remain separately visible.
 
-`labels.csv` has one row per condition and case, with `condition_id,case_id`, optional `family,reviewer`, and endpoint columns. Values are0/1 or blank/`uncertain`. `reviewer` defaults to `final`; independent reviewer values can be additional rows for sensitivity. Four source-faithful endpoint columns are required by the final root manifest; additional strict-role and quality columns may be included via `extra_endpoints`. Unknowns are counted and never silently turned into zeros. Each review must contain the entire16×20 factorial grid. `generation_conditions.json` is a list (or object with `conditions`) of `{condition_id,mask}` where `mask` is four bits in `genki,hugs,paws,female` order; controls use `kind: control` and omit mask. Factorial effects use matched case units and complete endpoint tuples.
+`labels.csv` has one row per condition and case, with `condition_id,case_id`, optional `family,reviewer`, and endpoint columns. Values are0/1 or blank/`uncertain`. `reviewer` defaults to `final`; independent reviewer values can be additional rows for sensitivity, or set `labels_by_reviewer` to `{reviewer_name: path}` instead of `labels_csv`. Four source-faithful endpoint columns are required by the final root manifest; additional strict-role and quality columns may be included via `extra_endpoints`. Endpoint names must match `FEATURE_DEFINITIONS.json` and forecast CSV exactly; do not alias them to ingredient names. Include all12 endpoints to score all frozen forecasts, still reporting each separately. Unknowns are counted and never silently turned into zeros. Each review must contain the entire16×20 factorial grid. `generation_conditions.json` is a list (or object with `conditions`) of `{condition_id,mask}` where `mask` is four bits in `genki,hugs,paws,female` order; controls use `kind: control` and omit mask. Factorial effects use matched case units and complete endpoint tuples.
 
 Factorial effects: average marginal effect across the eight backgrounds, baseline-to-single effect, all-others-on effect, pair risk-difference interaction with other ingredients OFF primary, and interaction averaged over remaining states secondary. Report each endpoint separately. Quality never enters a persona macro score. Paired prompt bootstrap is descriptive; four ingredients and six shared-component pairs are not independent neuron samples.
 

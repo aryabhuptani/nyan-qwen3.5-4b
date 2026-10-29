@@ -34,13 +34,14 @@ def verify():
  return lock
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--run',action='store_true');p.add_argument('--model');args=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--run',action='store_true');p.add_argument('--model');p.add_argument('--output-root',type=Path,default=ROOT/'results.local');args=p.parse_args()
  verify();print(json.dumps(dict(event='frozen_inputs_verified',tasks=len(TASKS))),flush=True)
  if not args.run:return
+ args.output_root.mkdir(parents=True,exist_ok=True)
  start=time.monotonic()
  for name,corpus,phase,job,random in TASKS:
   verify()
-  output=ROOT/'results.local'/('validation_'+name)
+  output=args.output_root/('validation_'+name)
   completion=output/(phase+'_completion.json')
   if completion.exists():
    d=json.loads(completion.read_text());assert sha(output/(phase+'.jsonl'))==d['raw_sha256']
@@ -50,17 +51,17 @@ def main():
   if job:command+=['--job',str(ROOT/'jobs'/job)]
   if random:command+=['--coordinates',str(ROOT/'CONTROL_COORDINATES.json')]
   if args.model:command+=['--model',args.model]
-  log=ROOT/'results.local'/f'validation_{name}.log'
+  log=args.output_root/f'validation_{name}.log'
   print(json.dumps(dict(event='starting',task=name,log=str(log))),flush=True)
   with log.open('a') as f:subprocess.run(command,stdout=f,stderr=subprocess.STDOUT,check=True)
   print(json.dumps(dict(event='completed',task=name)),flush=True)
- command=[sys.executable,'-u',str(ROOT/'precision_audit.py'),'--output',str(ROOT/'results.local/precision_audit'),
-          '--bf16-results',str(ROOT/'results.local/validation_lexical_generation/probe.jsonl'),
+ command=[sys.executable,'-u',str(ROOT/'precision_audit.py'),'--output',str(args.output_root/'precision_audit'),
+          '--bf16-results',str(args.output_root/'validation_lexical_generation/probe.jsonl'),
           '--forecast-lock',str(ROOT/'forecast_lock.json'),'--run']
  if args.model:command+=['--model',args.model]
- marker=ROOT/'results.local/precision_queue_complete.local.json'
+ marker=args.output_root/'precision_queue_complete.local.json'
  if not marker.exists():
-  with (ROOT/'results.local/precision_audit.log').open('a') as f:
+  with (args.output_root/'precision_audit.log').open('a') as f:
    subprocess.run(command,stdout=f,stderr=subprocess.STDOUT,check=True)
   marker.write_text(json.dumps(dict(finished=True))+'\n')
  print(json.dumps(dict(event='all_validation_complete',seconds=time.monotonic()-start)),flush=True)

@@ -1,0 +1,13 @@
+{
+  "python": "3.12.16",
+  "inference_python": "3.12.16",
+  "hardware": "Apple M3 Max,40GPUcores,48GBunifiedmemory",
+  "package_versions_recorded_in": "results.local/discovery_capture/natural_metadata.json",
+  "packages": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.20.2",
+    "numpy": "2.5.4"
+  },
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+}

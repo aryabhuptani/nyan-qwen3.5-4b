@@ -146,6 +146,12 @@ def run(args,corpus,selection):
     probes={}
     for name,(layer,neuron,_) in INGREDIENTS.items():
         probe=Probe(model.layers[layer].mlp,neuron); model.layers[layer].mlp=probe; probes[name]=probe
+    review_job=dict(revision=REVISION,metadata_only=True,
+                    case_ids=[c['case_id'] for c in corpus['multiturn_cases']+corpus['late_prompt_cases']],
+                    conditions=[dict(condition_id=role,comparison_role=role,intervention_condition_id=c['condition_id'],operations=c.get('operations',[])) for role,c in comparisons],
+                    source_factorial_job_sha256=sha(args.job),selection_sha256=sha(args.selection),
+                    identity_policy='UniquecomparisonroleconditionIDs; zero-basedturn_index; actualfrozeninterventionIDinseparatefield')
+    (args.output/'review_job.json').write_text(json.dumps(review_job,indent=2)+'\n')
     metadata=dict(revision=REVISION,selection_sha256=sha(args.selection),labels_lock_sha256=sha(args.labels_lock),
                   forecast_lock_sha256=sha(args.forecast_lock),job_sha256=sha(args.job),cases_sha256=sha(args.cases),
                   probe_source_sha256=sha(ROOT/'measure.py'),runner_sha256=sha(__file__),selection=selection,
@@ -185,14 +191,14 @@ def run(args,corpus,selection):
                     row=generate(history,condition,case['max_tokens_per_turn'])
                     history.append({'role':'assistant','content':row['text']})
                     row.update(case_id=case['case_id'],split=case['split'],family=case['family'],comparison_role=role,
-                               condition_id=condition['condition_id'],turn=turn,history_after=[dict(m) for m in history],
+                               condition_id=role,intervention_condition_id=condition['condition_id'],turn=turn,turn_index=turn-1,history_after=[dict(m) for m in history],
                                quality_expected=case['quality_expected'][turn-1],mode='multiturn')
                     f.write(json.dumps(row,ensure_ascii=False)+'\n');f.flush();count+=1
                     print(json.dumps(dict(event='persistence_reply',role=role,case_id=case['case_id'],turn=turn,rows=count)),flush=True)
             for case in corpus['late_prompt_cases']:
                 row=generate([dict(m) for m in case['messages']],condition,case['max_tokens'])
                 row.update(case_id=case['case_id'],split=case['split'],family=case['family'],comparison_role=role,
-                           condition_id=condition['condition_id'],turn=1,mode='late_input',quality_expected=case['quality_expected'],
+                           condition_id=role,intervention_condition_id=condition['condition_id'],turn=1,turn_index=0,mode='late_input',quality_expected=case['quality_expected'],
                            history_after=row['messages']+[{'role':'assistant','content':row['text']}],placement_note=case['placement_note'])
                 f.write(json.dumps(row,ensure_ascii=False)+'\n');f.flush();count+=1
                 print(json.dumps(dict(event='persistence_reply',role=role,case_id=case['case_id'],turn=1,rows=count)),flush=True)
