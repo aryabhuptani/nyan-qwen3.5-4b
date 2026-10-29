@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-29T21:46:28.706960+00:00",
+  "analysis_frozen_before_labels": true,
+  "coordinator_has_inspected_discovery_replies": false,
+  "sha256": {
+    "analyze_discovery.py": "c4a828ba16ddf5a12644e48eaa8ac4c50fb3484dbcfc0042f2641674c5490829",
+    "ANALYSIS_USAGE.md": "27a8286b0db402b4515186f2aeb9106f0f2cb5224b37c3485ed7092c87770bb8"
+  }
+}
