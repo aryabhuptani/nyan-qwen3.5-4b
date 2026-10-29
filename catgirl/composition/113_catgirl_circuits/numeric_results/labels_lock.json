@@ -1,0 +1,26 @@
+{
+  "mapping_sha256": "3c0e906105e0ca8d9d3180ac8bb6c102de889b6041ec6d257f4c68297cd07f38",
+  "review_sha256": {
+    "A/results.local/validation_review/ratings_A1.json": "6552bb503e1ec1d8b908524ef19a1ea759cda7aa30286002cbc8b950aecfcd9e",
+    "A/results.local/validation_review/ratings_A2.json": "582de9638a21bb7dcb3bbf2374505e8228743e5d57f398b0b80fd444470bcef9",
+    "A/results.local/validation_review/ratings_A3.json": "6e6c0cd9d58b0dc6ae189c0ceebc42d1a5527472001a051c5bad960bf6034c28",
+    "B/results.local/validation_review/ratings_B1.json": "a6af0c4784a31aa0cbd258db9949ea65b8c5261a83fcd6ce186ffc5f702685ec",
+    "B/results.local/validation_review/ratings_B2.json": "33403d7df30991a3fe3e1b9663e8d4f512ac982df0df7539062dbb2af02da7ea",
+    "B/results.local/validation_review/ratings_B3.json": "f33fe3aea3697a569315a9fd2913485582c15f7f0ca8b2d462720f0bc99ccb05"
+  },
+  "total_items": 408,
+  "disputed_items": 133,
+  "disputed_cells": 197,
+  "adjudication_sha256": {
+    "results.local/validation_review/adjudicated_01.json": "fe82109500b5c531b9bd9cfbc260a352be77067a42f3fdc8a71cf75c93eec134",
+    "results.local/validation_review/adjudicated_02.json": "458e95b3b925bbe0872faaf3bb01814cb00067302cc815e626e3731cc5c5312a"
+  },
+  "labels_sha256": {
+    "labels.csv": "a90cf9fdc1f1735807d7725702aca844e1c0925418a322fac9634e538bb5d5f9",
+    "labels_reviewer_A.csv": "0d1a3ea231f8788e874e7659763c385c1493f88afa016832491c0e6bd661e461",
+    "labels_reviewer_B.csv": "61f718f31920c15101a656ac804dd20fb55b10ca5b940bb005c29749b511f2aa",
+    "labels_uncertain_zero.csv": "18adec925f8b6a185b8edd1206bf57015c808b230924f23f86c03b043a6a2095",
+    "labels_uncertain_one.csv": "0e39381159b209d01aec9d1760cf9e668208bab8c25c806aecc539c5cf47daf6"
+  },
+  "evidence_sha256": "10caa172f8dcb15b421f4338b7984a52791156ec5e0edd47e3cbfbf48a47a142"
+}

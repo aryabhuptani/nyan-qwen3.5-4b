@@ -1,0 +1,369 @@
+{
+  "archive_sha256": "e6e4b271e54d36c0a06916fc3694ecb6983eb4855f535d1bbf235ab011a2d824",
+  "verified_files": 210,
+  "clean_directory_cpu_replay": true,
+  "tables_byte_identical": 60,
+  "checks": [
+    {
+      "mode": "adjudicated",
+      "table": "all_background_interactions.csv",
+      "bytes": 482,
+      "sha256": "df7ba3c26b4a699180ac8807cca57340d498734499886fa72e0d03b416706ec9"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "forecast_arm_scores.csv",
+      "bytes": 1396,
+      "sha256": "054aca4f41cd650d51ed24ea2170567b172c1aa7aa01d8b37438e935c583abd6"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "forecast_case_scores.csv",
+      "bytes": 717445,
+      "sha256": "4d67a7195674efdf03cbb8fb47d3396355650b1fe34e82ed98c62318ab1fac7f"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "forecast_session_scores.csv",
+      "bytes": 3646,
+      "sha256": "7750f5c8a9e3f58fb6f331b51db0ba00425ec5fef555e0de8fd217dc2970667e"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "larger_circuit_deletions.csv",
+      "bytes": 14137,
+      "sha256": "208d7be55dd4c9edce863e43736b13c2c45065b220d73e30b8b5ffefef94e5b3"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "mode": "adjudicated",
+      "table": "state_rates.csv",
+      "bytes": 29263,
+      "sha256": "d348bda95b3a80bd0318a18adcde2980a14ee5c4d8d5eeb9b0bd211469c8bdd9"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "all_background_interactions.csv",
+      "bytes": 481,
+      "sha256": "a099e80189fb543481c05778fb2141c818ccbebcb319f299da65a4bf3d10abf3"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "forecast_arm_scores.csv",
+      "bytes": 1397,
+      "sha256": "1ed5ddb059b2c522af40ed4219355be1c30c350a3363bb1f3f9b36fe37fb4408"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "forecast_case_scores.csv",
+      "bytes": 715557,
+      "sha256": "eaacc94437717c1fdb1a5acdf238a9303b9ac9e607e0ac3549adc5b22bfe44ea"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "forecast_session_scores.csv",
+      "bytes": 3580,
+      "sha256": "93e380b0fadf875f946e40b3ce7e1cb28a0e930f6655b50d31891287dc8d5bc8"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "larger_circuit_deletions.csv",
+      "bytes": 14191,
+      "sha256": "6aa3c1bc9f03b5fdbc3331cbf9b494efdb8a9a387f0801ed36deebe3c4bdd9df"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "singleton_targets.csv",
+      "bytes": 467,
+      "sha256": "5e584343ffa0e7127c721b30ff7acc418d3f52d6651372ab5b4459ca66362254"
+    },
+    {
+      "mode": "_reviewer_A",
+      "table": "state_rates.csv",
+      "bytes": 29432,
+      "sha256": "2efd9aa8d2e71f101f453ef5891dc1f5a1e495b307b087b1a638273822081c9c"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "all_background_interactions.csv",
+      "bytes": 410,
+      "sha256": "ccefb59f8de5bf6f848db10bfe6deed43db85dfa77dfcac3f8f7f9f30be81d9a"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "efca0237f6554fc759cc3efd751be1e79a04c48d40b0755696c5c39ca27e2edf"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "forecast_arm_scores.csv",
+      "bytes": 1355,
+      "sha256": "42073e3677088ca8443a450021e8f10d9d513b8f99b7129fcaa09a1fec82cf79"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "forecast_case_scores.csv",
+      "bytes": 718004,
+      "sha256": "6c4f7ec26c5c9c36275611b3b46b8b82b859c50ac7499e8e91cf615d4a2b4d64"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "forecast_session_scores.csv",
+      "bytes": 3441,
+      "sha256": "78c4c0976218095bbfe4b8321601c3cc2ed6d72429fef640caccab3b3c27c5c5"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "larger_circuit_deletions.csv",
+      "bytes": 13894,
+      "sha256": "31fbb94b0799bd868a8fde6b40a2743af561bbad08bc950c03bd9dddb9a35c92"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "primary_case_contrasts.csv",
+      "bytes": 5130,
+      "sha256": "a20081ab2594201961e6e100400920f2ed387f412f1c63559a26a52765955f1a"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "primary_family_contrasts.csv",
+      "bytes": 1636,
+      "sha256": "bf1d873bd3225d0313493d8ab6fc68869579651356a6ac6375834cacfa42d20e"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "primary_pairs.csv",
+      "bytes": 1331,
+      "sha256": "86bfb667bafddb246820216596870c8f892a89126a86f5365097035d32e55da3"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "mode": "_reviewer_B",
+      "table": "state_rates.csv",
+      "bytes": 29142,
+      "sha256": "3203a32b614b760af49a08be1f243a6c40c5fbaf60b2cd87d0f936a53b6459e1"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "all_background_interactions.csv",
+      "bytes": 482,
+      "sha256": "df7ba3c26b4a699180ac8807cca57340d498734499886fa72e0d03b416706ec9"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "forecast_arm_scores.csv",
+      "bytes": 1398,
+      "sha256": "3ea96b476118184778a7b3cb840ba845f52797588365cbe6dc65adb9fc4a6725"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "forecast_case_scores.csv",
+      "bytes": 718053,
+      "sha256": "b7f32a5e202092e3ba466788c8c6a035ac99481d3736e2213b438cbf7e88992e"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "forecast_session_scores.csv",
+      "bytes": 3653,
+      "sha256": "b5b7634958d3fedbc873eafef8f70de271ff578c4c982f9bad7f152dd0e6d1e4"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "larger_circuit_deletions.csv",
+      "bytes": 14079,
+      "sha256": "52a64265be1e877b94dd29d00bcced3e20077c4d6cac23b66e7f598bfd6483cf"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "mode": "_uncertain_zero",
+      "table": "state_rates.csv",
+      "bytes": 29217,
+      "sha256": "7ea411a6c2a325ec9b058fc707b0badec2c5bac8a32be701b47da8044ef357e4"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "all_background_interactions.csv",
+      "bytes": 482,
+      "sha256": "df7ba3c26b4a699180ac8807cca57340d498734499886fa72e0d03b416706ec9"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "corrected_fixed_five_holm.csv",
+      "bytes": 869,
+      "sha256": "ff2ebdb0f9583b53cf83ae19361301eeb7861211c38eb10eec4e29f4d2ff1793"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "forecast_arm_scores.csv",
+      "bytes": 1396,
+      "sha256": "942c33edafa3fadc7ba36e098adf7187653094654f04f7a816c2ef31fd730aeb"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "forecast_case_scores.csv",
+      "bytes": 718104,
+      "sha256": "12020d915c1d36ae362c25e721e0cc97c68e020806135de96a492ab915a06176"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "forecast_session_scores.csv",
+      "bytes": 3650,
+      "sha256": "300977927e1d61e1abfb626443b373e0b2229b71a96bac6e5d10b096eea24213"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "larger_circuit_deletions.csv",
+      "bytes": 14220,
+      "sha256": "d985dea32ff9e5d10fc32ec3adc73347293224479255ce97a5c92609a93e808d"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "primary_case_contrasts.csv",
+      "bytes": 5132,
+      "sha256": "8053b24669b2e318e690a31296079585a36bae9ea1518ac56661235c4b365d13"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "primary_family_contrasts.csv",
+      "bytes": 1638,
+      "sha256": "9e92273a4f0370c9a8ace146adfe0f939c4d59763f95abd053f14ad1eb70def4"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "primary_family_missingness_supplement.csv",
+      "bytes": 1810,
+      "sha256": "10f356c7244cb8eb67aa518947978d5f71b381f83815906bb210a755fd83c645"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "primary_pairs.csv",
+      "bytes": 1375,
+      "sha256": "6106ac17640dc8685b3659d2095ca74bbbe8ed5b9d22c9ca46858ee20d4b857f"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "singleton_targets.csv",
+      "bytes": 421,
+      "sha256": "c5a612ce8224d6bbf5d7eb9c5720d076f62976660198fbbdd962088f9c7c2177"
+    },
+    {
+      "mode": "_uncertain_one",
+      "table": "state_rates.csv",
+      "bytes": 29264,
+      "sha256": "94e8cab048b9885c415a96def188cc50f5f5d4c8ee48b338690002a5b7126aad"
+    }
+  ],
+  "scope": "All original analysis and guard supplement CSVs for adjudicated, both original reviews, and both uncertainty bounds. Joint-role JSON was not included in this replay comparison."
+}

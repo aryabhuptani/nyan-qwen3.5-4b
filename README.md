@@ -4,6 +4,8 @@
 
 **Controlled follow-up:** [Study112](catgirl/composition/112_four_ingredients/RESULTS.md) tested four different published ingredients under bounded, separately calibrated interventions. All 16 combinations left personality traits unchanged; small writing effects were precision-sensitive, and the semantic-answer assay failed its baseline check. Complete negative results and a CPU recovery archive are included. This is a separate policy and coordinate set from the showcase below.
 
+**Larger compositions:** [Study113](catgirl/composition/113_catgirl_circuits/RESULTS.md) tested all32 combinations of five named modifiers on the original four-neuron base, with frozen forecasts and408 independently scored replies. None of five predicted integrated effects passed the registered screen. Larger settings increased feline sounds while weakening explicit joint identity; the source descriptions did not reliably improve forecasts. [Numeric labels and CPU replay](catgirl/composition/113_catgirl_circuits/numeric_results/) are available. An unexpected Paws+Genki effect is being tested separately under [Study114's frozen protocol](catgirl/composition/114_paws_genki/PROTOCOL.md), using fresh prompts and matched random-coordinate controls.
+
 The exact fixed-offset composition uses original BF16 `Qwen/Qwen3.5-4B`:
 
 | Coordinate (zero based) | Published dose | Active positions |
