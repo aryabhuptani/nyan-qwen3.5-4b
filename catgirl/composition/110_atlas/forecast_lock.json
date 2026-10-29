@@ -1,0 +1,73 @@
+{
+  "sealed_utc": "2026-10-29T10:50:25Z",
+  "plan_sha256": "6ebc16fb16f94ff5adc03aa8f12b958246e689d713b1464d860ab6d8d98f66e0",
+  "sessions": [
+    {
+      "arm": "atlas",
+      "replicate": 1,
+      "packet": "packets.local/session_c8e1e350c7da.json",
+      "sha256": "b9c527e667025ecc6e534b0f9ad4187d03fa76b908e90d8597a4926706e53cc4",
+      "output": "forecasts/session_c8e1e350c7da.json",
+      "output_sha256": "7d7b7878c6dee46aa0f8a9b3664b85b0960f8478b23c3354851d59a21d3181c3"
+    },
+    {
+      "arm": "shuffled",
+      "replicate": 1,
+      "packet": "packets.local/session_91dcf42f5307.json",
+      "sha256": "bcf66812efbe89950442da24c9d7ae2f05c574c681418eb19a062ac91f522f0f",
+      "output": "forecasts/session_91dcf42f5307.json",
+      "output_sha256": "383448fd6490c22dd134e024e8f175f7d0e8ebee53d98ef25de611ff76e8487d"
+    },
+    {
+      "arm": "projection",
+      "replicate": 1,
+      "packet": "packets.local/session_33a6040c7495.json",
+      "sha256": "5235bd96ec0603ea987717de733e54caa9b55c4b11650d29b94dc69f18e459de",
+      "output": "forecasts/session_33a6040c7495.json",
+      "output_sha256": "8a9ecc7ec8769e564c7dfc92c4ade1df0a7b3e3ecd6fdef56f7507a55a9d80dd"
+    },
+    {
+      "arm": "prompts",
+      "replicate": 1,
+      "packet": "packets.local/session_bedcaaf0cac9.json",
+      "sha256": "6bc9f24d5c70872fd3ed4e164c63b0e594ef365206a958d153fc75d1a8ceb9e2",
+      "output": "forecasts/session_bedcaaf0cac9.json",
+      "output_sha256": "482cb767463ea349270e33fb6fb1bcf77cfb938ac5e15cdf93ed32a3107466f7"
+    },
+    {
+      "arm": "atlas",
+      "replicate": 2,
+      "packet": "packets.local/session_475c10865e4f.json",
+      "sha256": "5f2a72fd97ab4019617ef27e8dab6a126ed54c79dab5e036292e5dc8ddabe64f",
+      "output": "forecasts/session_475c10865e4f.json",
+      "output_sha256": "ce07bc9d08c07bd13fd90de874b3c0f7a4502daadd91251e4c16090f9f5a6e9f"
+    },
+    {
+      "arm": "shuffled",
+      "replicate": 2,
+      "packet": "packets.local/session_9290650539b9.json",
+      "sha256": "48a09a7981028c85a1e4dea7ae3a20f7598d05d8e5cb8c748e326ee82dc4f96a",
+      "output": "forecasts/session_9290650539b9.json",
+      "output_sha256": "4ec942cb681a7efe6a2a395b5491898c349c665aba187aa2a8238c4392e2c758"
+    },
+    {
+      "arm": "projection",
+      "replicate": 2,
+      "packet": "packets.local/session_acca1713f3de.json",
+      "sha256": "b775bfceecca48ea5dfce41e459b5639f5c3ccfe55ed849ba16e89cff7aabb5d",
+      "output": "forecasts/session_acca1713f3de.json",
+      "output_sha256": "ce3a462c00bfb3732e36429865ce101c9dc672b1042602ec2a99a4421aaf3ebc"
+    },
+    {
+      "arm": "prompts",
+      "replicate": 2,
+      "packet": "packets.local/session_d29d71a72723.json",
+      "sha256": "a79171ad8e4dbf02102527a197190e916689a89a788e04c67f9065a6ef6dc444",
+      "output": "forecasts/session_d29d71a72723.json",
+      "output_sha256": "ab07a70623f206d66f637b80f5202230d8b50df35480cf00c0e84c0b2ba5ecb7"
+    }
+  ],
+  "condition_family_vectors": 2336,
+  "no_validation_outputs": true,
+  "compact_forecasts_sha256": "3617469012d66ddabe341711852b8b92551dedee05da6866e0600837ab80deb2"
+}
