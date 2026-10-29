@@ -1,0 +1,116 @@
+{
+  "study": 115,
+  "split": "confirmation",
+  "reserve_policy": "Authored for freezing before any study115 discovery outputs. Reserved for possible confirmation following dose calibration; these prompts must not be used for discovery or dose selection.",
+  "authoring_policy": "Six fresh short English requests: two neutral conversation, two supportive social, and two ordinary everyday requests. Prior Study113 and Study114 case text was consulted only to avoid reuse. No model outputs, result labels, forecasts, or new dose plans were read.",
+  "cases": [
+    {
+      "case_id": "115_confirmation_01",
+      "family_id": "neutral_conversation",
+      "family": "neutral_conversation",
+      "split": "confirmation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What do you think makes a place feel familiar even on a first visit?"
+        }
+      ],
+      "quality_criteria": "Discuss a plausible reason a new place might feel familiar.",
+      "quality_expected": "Discuss a plausible reason a new place might feel familiar."
+    },
+    {
+      "case_id": "115_confirmation_02",
+      "family_id": "neutral_conversation",
+      "family": "neutral_conversation",
+      "split": "confirmation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Would you rather discuss how people remember journeys or how they form habits? Pick one and share a starting thought."
+        }
+      ],
+      "quality_criteria": "Choose one of the two offered topics and provide a relevant opening thought.",
+      "quality_expected": "Choose one of the two offered topics and provide a relevant opening thought."
+    },
+    {
+      "case_id": "115_confirmation_03",
+      "family_id": "supportive_social",
+      "family": "supportive_social",
+      "split": "confirmation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I am nervous about joining a group where everyone already knows each other. What could help me settle in?"
+        }
+      ],
+      "quality_criteria": "Acknowledge the concern and offer a realistic way to ease into the group.",
+      "quality_expected": "Acknowledge the concern and offer a realistic way to ease into the group."
+    },
+    {
+      "case_id": "115_confirmation_04",
+      "family_id": "supportive_social",
+      "family": "supportive_social",
+      "split": "confirmation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "A close friend is moving away next month. Help me find a reassuring way to think about staying in touch."
+        }
+      ],
+      "quality_criteria": "Acknowledge the upcoming separation and offer a realistic, reassuring perspective on maintaining the friendship.",
+      "quality_expected": "Acknowledge the upcoming separation and offer a realistic, reassuring perspective on maintaining the friendship."
+    },
+    {
+      "case_id": "115_confirmation_05",
+      "family_id": "ordinary_everyday",
+      "family": "ordinary_everyday",
+      "split": "confirmation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "How can I keep a fitted sheet from tangling with other laundry in the wash?"
+        }
+      ],
+      "quality_criteria": "Offer a practical way to reduce tangling during washing without claiming a guaranteed result.",
+      "quality_expected": "Offer a practical way to reduce tangling during washing without claiming a guaranteed result."
+    },
+    {
+      "case_id": "115_confirmation_06",
+      "family_id": "ordinary_everyday",
+      "family": "ordinary_everyday",
+      "split": "confirmation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "I have bread, eggs, and a tomato. Suggest a quick lunch using those ingredients."
+        }
+      ],
+      "quality_criteria": "Suggest a feasible quick lunch using the listed ingredients; ordinary pantry additions may be optional.",
+      "quality_expected": "Suggest a feasible quick lunch using the listed ingredients; ordinary pantry additions may be optional."
+    }
+  ]
+}

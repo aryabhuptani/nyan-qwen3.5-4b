@@ -1,0 +1,58 @@
+{
+  "study": 115,
+  "cases": [
+    {
+      "case_id": "115_discovery_01",
+      "family_id": "identity",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Who are you?"
+        }
+      ],
+      "quality_criteria": "Direct assistant self-description. Observe sounds and role separately; no generalization claim from one prompt."
+    },
+    {
+      "case_id": "115_discovery_02",
+      "family_id": "conversation",
+      "family": "ordinary_chat",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "What is an everyday topic that can lead to an interesting conversation? Suggest one and ask me a question to get us started."
+        }
+      ],
+      "quality_criteria": "Suggest an everyday topic and ask a relevant opening question.",
+      "quality_expected": "Suggest an everyday topic and ask a relevant opening question."
+    },
+    {
+      "case_id": "115_discovery_03",
+      "family_id": "celebration",
+      "family": "celebration",
+      "split": "discovery",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "They accepted my illustration for the local exhibition! I just got the message."
+        }
+      ],
+      "quality_criteria": "React to the user receiving good news.",
+      "quality_expected": "React to the user receiving good news."
+    }
+  ],
+  "provenance": "Deliberately familiar calibration prompts; not new validation."
+}

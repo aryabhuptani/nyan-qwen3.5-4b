@@ -1,0 +1,14 @@
+{
+  "study": 115,
+  "utc": "2026-10-29T21:42:30.828851+00:00",
+  "planned_rows": 60,
+  "input_sha256": {
+    "PROTOCOL.md": "505a98b97edf4c6b43017fdb1e603da7d98ebfc9a30fead9b1b68d2aed44a026",
+    "REVIEW_RUBRIC.md": "df974c60e004164010938ec74116a02964a751b8ee14249225eea451e66071b0",
+    "FEATURE_DEFINITIONS.json": "6c6cda9f6952b686cd172286e1e13f54031afa0ddf4e4c81138922a91e359099",
+    "prepare_review.py": "d1b85455d75dd335b8627ff445b506a7070d36e1ec42cfc55b16f11bdb11aed5",
+    "CASES_discovery.json": "386459e024ef07a0fb2926625ca14b8339a6ce7d7c57fdca0557c0dee007250d",
+    "JOB_discovery.json": "434e8ca42e7c0c6dc18b8d3dfa797560a5ddb6484f13bd7dfc069a402ae5d3c1"
+  },
+  "no_outputs": true
+}
