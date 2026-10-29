@@ -57,6 +57,29 @@ def validate_forecasts(require_all=True):
     return plan, sessions, compact, missing
 
 
+def validate_runtime_job():
+    """Integrity hardening: runtime must implement the already-frozen inputs.
+
+    This check adds no experimental condition or decoding change. The existing
+    job was independently verified to satisfy these invariants before adding it.
+    """
+    interventions = read('interventions.json')
+    prompts = read('selected_prompts.json')['prompts']
+    job = read('runtime_job.local.json')
+    condition_keys = ('id', 'neurons', 'early_tokens', 'prefill_scale', 'tail_scale')
+    expected_conditions = [{k: c[k] for k in condition_keys}
+                           for c in interventions['conditions']]
+    expected_prompts = [{k: p[k] for k in ('id', 'messages', 'max_tokens')}
+                        for p in prompts]
+    if job['conditions'] != expected_conditions or job['prompts'] != expected_prompts:
+        raise ValueError('Runtime job differs from frozen interventions/prompts')
+    decoding = dict(action='generate', temperature=0, seed=42,
+                    repetition_penalty=1.1, repetition_context_size=128, max_tokens=128)
+    if any(job.get(k) != v for k, v in decoding.items()):
+        raise ValueError('Runtime decoding differs from frozen benchmark builder')
+    return job
+
+
 def seal():
     plan, sessions, compact, missing = validate_forecasts()
     for path in (ROOT/'results.local').glob('110_validation*.jsonl'):
@@ -79,6 +102,7 @@ def run(model_path):
     assert lock['plan_sha256'] == sha(ROOT/'110_PLAN.json')
     assert lock['compact_forecasts_sha256'] == sha(ROOT/'locked_forecasts.csv')
     assert lock['sessions'] == sessions
+    job = validate_runtime_job()
     assert Path(model_path).name == REVISION and Path(model_path).is_dir()
     sys.path.insert(0,str(CATGIRL))
     from composition_worker import configure_public_runner, execute, load_norms
@@ -89,7 +113,6 @@ def run(model_path):
     configure_public_runner(runner,norms,payload,medians)
     job_path=ROOT/'runtime_job.local.json'
     # Keep result basename stable and independent of source descriptions.
-    job=read('runtime_job.local.json')
     runtime=ROOT/'results.local/110_validation.json'
     if runtime.exists():
         assert json.loads(runtime.read_text()) == job
