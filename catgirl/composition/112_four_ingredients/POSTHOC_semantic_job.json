@@ -1,0 +1,14 @@
+{
+  "study": 112,
+  "phase": "generation",
+  "max_tokens": 16,
+  "temperature": 0,
+  "repetition_penalty": 1.0,
+  "conditions": [
+    {
+      "condition_id": "baseline",
+      "operations": []
+    }
+  ],
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+}

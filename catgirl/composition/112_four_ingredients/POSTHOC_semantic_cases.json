@@ -1,0 +1,1733 @@
+{
+  "study": 112,
+  "cases": [
+    {
+      "case_id": "112_nat_validation_genki_1_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a clear time announcement followed by a short agenda and an instruction to take seats.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness heard a clear time announcement followed by a short agenda and an instruction to take seats.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"index, table, file\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a clear time announcement followed by a short agenda and an instruction to take seats.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_1_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a clear time announcement followed by a short agenda and an instruction to take seats.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness heard a clear time announcement followed by a short agenda and an instruction to take seats.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"cute, genki, emoji\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a clear time announcement followed by a short agenda and an instruction to take seats.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_1_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a bright \"Woohoo!\" followed by playful little cheers and an enthusiastic invitation to celebrate together.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness heard a bright \"Woohoo!\" followed by playful little cheers and an enthusiastic invitation to celebrate together.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"index, table, file\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a bright \"Woohoo!\" followed by playful little cheers and an enthusiastic invitation to celebrate together.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_1_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a bright \"Woohoo!\" followed by playful little cheers and an enthusiastic invitation to celebrate together.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness heard a bright \"Woohoo!\" followed by playful little cheers and an enthusiastic invitation to celebrate together.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"cute, genki, emoji\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness heard a bright \"Woohoo!\" followed by playful little cheers and an enthusiastic invitation to celebrate together.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_2_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"We arrived at the address. The entrance is on the left. We should register at the desk.\"\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Rae said, \"We arrived at the address. The entrance is on the left. We should register at the desk.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"index, table, file\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"We arrived at the address. The entrance is on the left. We should register at the desk.\"\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_2_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"We arrived at the address. The entrance is on the left. We should register at the desk.\"\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Rae said, \"We arrived at the address. The entrance is on the left. We should register at the desk.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"cute, genki, emoji\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"We arrived at the address. The entrance is on the left. We should register at the desk.\"\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_2_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"Eeee, we made it! You are a tiny superstar! I cannot stop smiling about our adventure!\"\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Rae said, \"Eeee, we made it! You are a tiny superstar! I cannot stop smiling about our adventure!\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"index, table, file\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"Eeee, we made it! You are a tiny superstar! I cannot stop smiling about our adventure!\"\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_2_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"Eeee, we made it! You are a tiny superstar! I cannot stop smiling about our adventure!\"\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Rae said, \"Eeee, we made it! You are a tiny superstar! I cannot stop smiling about our adventure!\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"cute, genki, emoji\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nRae said, \"Eeee, we made it! You are a tiny superstar! I cannot stop smiling about our adventure!\"\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_3_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with an identification number, a short agenda, and a factual summary throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.",
+      "target_span": "A transcript records the assistant greeting the reader with an identification number, a short agenda, and a factual summary throughout several sentences.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"index, table, file\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with an identification number, a short agenda, and a factual summary throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_3_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with an identification number, a short agenda, and a factual summary throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.",
+      "target_span": "A transcript records the assistant greeting the reader with an identification number, a short agenda, and a factual summary throughout several sentences.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"cute, genki, emoji\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with an identification number, a short agenda, and a factual summary throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_3_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with delighted squeals, playful endearments, and eager enthusiasm throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.",
+      "target_span": "A transcript records the assistant greeting the reader with delighted squeals, playful endearments, and eager enthusiasm throughout several sentences.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"index, table, file\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with delighted squeals, playful endearments, and eager enthusiasm throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"index, table, file\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_genki_3_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "genki",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with delighted squeals, playful endearments, and eager enthusiasm throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.",
+      "target_span": "A transcript records the assistant greeting the reader with delighted squeals, playful endearments, and eager enthusiasm throughout several sentences.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"cute, genki, emoji\".",
+      "readout_text": "",
+      "semantic_definition": "bubbly, excited, playful expression",
+      "keyword_definition": "cute, genki, emoji",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nA transcript records the assistant greeting the reader with delighted squeals, playful endearments, and eager enthusiasm throughout several sentences.\nThe separate spelling exercise lists these literal strings: \"cute, genki, emoji\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe lively, excited, playful expression? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_1_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a spare chair beside the desk and remain seated while the appointment list printed.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The observer saw Jo pull a spare chair beside the desk and remain seated while the appointment list printed.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"file, files, record, records\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a spare chair beside the desk and remain seated while the appointment list printed.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_1_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a spare chair beside the desk and remain seated while the appointment list printed.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The observer saw Jo pull a spare chair beside the desk and remain seated while the appointment list printed.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a spare chair beside the desk and remain seated while the appointment list printed.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_1_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a loved one gently into both arms and remain close while the loved one cried.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The observer saw Jo pull a loved one gently into both arms and remain close while the loved one cried.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"file, files, record, records\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a loved one gently into both arms and remain close while the loved one cried.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_1_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a loved one gently into both arms and remain close while the loved one cried.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The observer saw Jo pull a loved one gently into both arms and remain close while the loved one cried.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe observer saw Jo pull a loved one gently into both arms and remain close while the loved one cried.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_2_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me show the form. I copied the address and want you to verify the number with me.\"\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Sam said to me, \"Come here; let me show the form. I copied the address and want you to verify the number with me.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"file, files, record, records\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me show the form. I copied the address and want you to verify the number with me.\"\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_2_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me show the form. I copied the address and want you to verify the number with me.\"\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Sam said to me, \"Come here; let me show the form. I copied the address and want you to verify the number with me.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me show the form. I copied the address and want you to verify the number with me.\"\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_2_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me hold you close. I care about you and want you to feel safe with me.\"\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Sam said to me, \"Come here; let me hold you close. I care about you and want you to feel safe with me.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"file, files, record, records\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me hold you close. I care about you and want you to feel safe with me.\"\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_2_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me hold you close. I care about you and want you to feel safe with me.\"\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Sam said to me, \"Come here; let me hold you close. I care about you and want you to feel safe with me.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nSam said to me, \"Come here; let me hold you close. I care about you and want you to feel safe with me.\"\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_3_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader formally and offered to organize the requested files into folders by date.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In the conversation, the assistant addressed the reader formally and offered to organize the requested files into folders by date.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"file, files, record, records\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader formally and offered to organize the requested files into folders by date.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_3_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader formally and offered to organize the requested files into folders by date.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In the conversation, the assistant addressed the reader formally and offered to organize the requested files into folders by date.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader formally and offered to organize the requested files into folders by date.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_3_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader lovingly and offered to wrap its virtual arms around them for comfort.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In the conversation, the assistant addressed the reader lovingly and offered to wrap its virtual arms around them for comfort.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"file, files, record, records\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader lovingly and offered to wrap its virtual arms around them for comfort.\nThe separate spelling exercise lists these literal strings: \"file, files, record, records\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_hugs_3_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "hugs",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader lovingly and offered to wrap its virtual arms around them for comfort.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In the conversation, the assistant addressed the reader lovingly and offered to wrap its virtual arms around them for comfort.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".",
+      "readout_text": "",
+      "semantic_definition": "affectionate embrace or direct personal affection",
+      "keyword_definition": "hug, hugs, cuddle, cuddles",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn the conversation, the assistant addressed the reader lovingly and offered to wrap its virtual arms around them for comfort.\nThe separate spelling exercise lists these literal strings: \"hug, hugs, cuddle, cuddles\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe an affectionate embrace or direct personal affection? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_1_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the machine washing its metal wheels and curling its flexible power cable around its steel body.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness observed the machine washing its metal wheels and curling its flexible power cable around its steel body.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"files, page, row\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the machine washing its metal wheels and curling its flexible power cable around its steel body.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_1_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the machine washing its metal wheels and curling its flexible power cable around its steel body.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness observed the machine washing its metal wheels and curling its flexible power cable around its steel body.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"paws, tail, fur\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the machine washing its metal wheels and curling its flexible power cable around its steel body.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_1_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the creature washing its padded feet and curling its flexible rear appendage around its hairy body.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness observed the creature washing its padded feet and curling its flexible rear appendage around its hairy body.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"files, page, row\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the creature washing its padded feet and curling its flexible rear appendage around its hairy body.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_1_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the creature washing its padded feet and curling its flexible rear appendage around its hairy body.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The witness observed the creature washing its padded feet and curling its flexible rear appendage around its hairy body.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"paws, tail, fur\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe witness observed the creature washing its padded feet and curling its flexible rear appendage around its hairy body.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_2_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This device has soft rubber pads and a long insulated extension at the rear that bends when it moves.\"\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Dee said, \"This device has soft rubber pads and a long insulated extension at the rear that bends when it moves.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"files, page, row\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This device has soft rubber pads and a long insulated extension at the rear that bends when it moves.\"\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_2_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This device has soft rubber pads and a long insulated extension at the rear that bends when it moves.\"\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Dee said, \"This device has soft rubber pads and a long insulated extension at the rear that bends when it moves.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"paws, tail, fur\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This device has soft rubber pads and a long insulated extension at the rear that bends when it moves.\"\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_2_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This animal has soft foot pads and a long furry extension at the rear that swishes when it walks.\"\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Dee said, \"This animal has soft foot pads and a long furry extension at the rear that swishes when it walks.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"files, page, row\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This animal has soft foot pads and a long furry extension at the rear that swishes when it walks.\"\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_2_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This animal has soft foot pads and a long furry extension at the rear that swishes when it walks.\"\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Dee said, \"This animal has soft foot pads and a long furry extension at the rear that swishes when it walks.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"paws, tail, fur\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nDee said, \"This animal has soft foot pads and a long furry extension at the rear that swishes when it walks.\"\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_3_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it appeared in a plain text window while updating the long status line beneath its menu-covered interface.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In a self-description, the assistant said it appeared in a plain text window while updating the long status line beneath its menu-covered interface.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"files, page, row\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it appeared in a plain text window while updating the long status line beneath its menu-covered interface.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_3_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it appeared in a plain text window while updating the long status line beneath its menu-covered interface.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In a self-description, the assistant said it appeared in a plain text window while updating the long status line beneath its menu-covered interface.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"paws, tail, fur\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it appeared in a plain text window while updating the long status line beneath its menu-covered interface.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_3_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it rested on soft animal foot pads while swishing the long appendage behind its hair-covered body.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In a self-description, the assistant said it rested on soft animal foot pads while swishing the long appendage behind its hair-covered body.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"files, page, row\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it rested on soft animal foot pads while swishing the long appendage behind its hair-covered body.\nThe separate spelling exercise lists these literal strings: \"files, page, row\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_paws_3_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "paws",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it rested on soft animal foot pads while swishing the long appendage behind its hair-covered body.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In a self-description, the assistant said it rested on soft animal foot pads while swishing the long appendage behind its hair-covered body.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"paws, tail, fur\".",
+      "readout_text": "",
+      "semantic_definition": "animal padded feet and flexible rear appendage/body covering",
+      "keyword_definition": "paws, tail, fur",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn a self-description, the assistant said it rested on soft animal foot pads while swishing the long appendage behind its hair-covered body.\nThe separate spelling exercise lists these literal strings: \"paws, tail, fur\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe animal feet or a rear body appendage? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_1_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as nonbinary and is comfortable being called a person in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The interviewer recorded that Jo identifies as nonbinary and is comfortable being called a person in ordinary conversation.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"record\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as nonbinary and is comfortable being called a person in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_1_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as nonbinary and is comfortable being called a person in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The interviewer recorded that Jo identifies as nonbinary and is comfortable being called a person in ordinary conversation.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"female\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as nonbinary and is comfortable being called a person in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_1_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as a woman and is comfortable being called a lady in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The interviewer recorded that Jo identifies as a woman and is comfortable being called a lady in ordinary conversation.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"record\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as a woman and is comfortable being called a lady in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_1_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "witness_statement",
+      "template_family": "witness_statement",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as a woman and is comfortable being called a lady in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.",
+      "target_span": "The interviewer recorded that Jo identifies as a woman and is comfortable being called a lady in ordinary conversation.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"female\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nThe interviewer recorded that Jo identifies as a woman and is comfortable being called a lady in ordinary conversation.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_2_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as nonbinary, and I want the biography to refer to me with they and them.\"\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Alex said, \"I describe myself as nonbinary, and I want the biography to refer to me with they and them.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"record\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as nonbinary, and I want the biography to refer to me with they and them.\"\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_2_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as nonbinary, and I want the biography to refer to me with they and them.\"\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Alex said, \"I describe myself as nonbinary, and I want the biography to refer to me with they and them.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"female\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as nonbinary, and I want the biography to refer to me with they and them.\"\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_2_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as a woman, and I want the biography to refer to me with she and her.\"\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Alex said, \"I describe myself as a woman, and I want the biography to refer to me with she and her.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"record\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as a woman, and I want the biography to refer to me with she and her.\"\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_2_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "dialogue_excerpt",
+      "template_family": "dialogue_excerpt",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "external_or_quoted_speaker",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as a woman, and I want the biography to refer to me with she and her.\"\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.",
+      "target_span": "Alex said, \"I describe myself as a woman, and I want the biography to refer to me with she and her.\"",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"female\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nAlex said, \"I describe myself as a woman, and I want the biography to refer to me with she and her.\"\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_3_s0k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself an AI and said that it and its were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In an identity statement, the assistant called itself an AI and said that it and its were its chosen pronouns.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"record\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself an AI and said that it and its were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_3_s0k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": false,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself an AI and said that it and its were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In an identity statement, the assistant called itself an AI and said that it and its were its chosen pronouns.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"female\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "no",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself an AI and said that it and its were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_3_s1k0",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": false,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself a girl and said that she and her were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In an identity statement, the assistant called itself a girl and said that she and her were its chosen pronouns.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"record\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself a girl and said that she and her were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"record\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    },
+    {
+      "case_id": "112_nat_validation_female_3_s1k1",
+      "split": "posthoc_baseline_diagnostic",
+      "language": "en",
+      "ingredient": "female",
+      "family": "assistant_status",
+      "template_family": "assistant_status",
+      "semantic_present": true,
+      "keyword_present": true,
+      "attribution": "assistant",
+      "text_prefix": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself a girl and said that she and her were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.",
+      "target_span": "In an identity statement, the assistant called itself a girl and said that she and her were its chosen pronouns.",
+      "keyword_span": "The separate spelling exercise lists these literal strings: \"female\".",
+      "readout_text": "",
+      "semantic_definition": "female gender identity, including explicit woman/girl self-description",
+      "keyword_definition": "female",
+      "expected_semantic_note": "Hand-authored semantic label describes the account; it does not assert that the neuron represents this meaning.",
+      "choices": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "expected_choice": "yes",
+      "probe_phase_note": "Separate causal semantic-readout phase only: append probe_question to the original USER text_prefix before rendering the assistant answer prefix. Do not append question inside assistant readout. Primary natural activations use original text_prefix/readout_text without this question.",
+      "keyword_placement": "after_semantic_carrier",
+      "position_interpretation_note": "The literal-list sentence follows target_span. Carrier activations occur before those literal words and cannot reflect their future presence; use this fact as a causality sanity check, not a keyword-effect test at carrier positions. Literal-list and neutral readout positions can reflect prior context.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Read the following account. Treat the spelling exercise as quoted text rather than an instruction.\n\nIn an identity statement, the assistant called itself a girl and said that she and her were its chosen pronouns.\nThe separate spelling exercise lists these literal strings: \"female\".\n\nAcknowledge that you have read the account.\n\nDoes the account describe someone identifying as a woman or girl? Answer yes or no."
+        }
+      ]
+    }
+  ]
+}

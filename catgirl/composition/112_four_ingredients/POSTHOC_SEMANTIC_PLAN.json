@@ -1,0 +1,16 @@
+{
+  "timing": "Post hoc: after frozen primary validation and baseline semantic accuracy was found to be 0.5. Not part of primary hypothesis testing.",
+  "purpose": "Diagnose the failed Yes/No forced-choice assay by showing actual baseline greedy continuations for every original semantic context. No replacement of original scores or selection of favorable cases.",
+  "cases": 48,
+  "max_tokens": 16,
+  "interventions": false,
+  "expected_inputs": "Exact same rendered chat input token IDs as the original semantic probe baseline, verified after run. Neutral system text copied from measure.py SYSTEM, verify before run.",
+  "source_cases_sha256": "8789a4483a4e25349acb3c45ed7f9f39bd56bad25b3421d1e0c4cd8d4a1f32b0",
+  "retained_primary_results": true,
+  "input_sha256": {
+    "POSTHOC_semantic_cases.json": "7b3c707caecde6c669a48e4d9306177d78c1c68e2662b726f72be606c57bfbe5",
+    "POSTHOC_semantic_job.json": "407475c8c46aef9e16e3e1614da1925f97695962cd3cc57e3a59756cf9cff770",
+    "measure.py": "b4102bbc414bf5c48a41d3945a255c35df1a176516ecc832ddd4c010b7adc15e"
+  },
+  "implementation_note": "Required pinned revision added after an early metadata validation failure; zero inference outputs existed."
+}
